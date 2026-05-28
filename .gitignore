@@ -10,6 +10,7 @@ docker-compose.override.yml
 
 # Generated files
 standalone/tools/epubgen2/output
+standalone/tools/epubgen2/output_*/
 
 # dev tools
 .idea
