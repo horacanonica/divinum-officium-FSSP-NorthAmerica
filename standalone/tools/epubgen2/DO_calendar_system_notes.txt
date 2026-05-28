@@ -1,0 +1,121 @@
+DIVINUM OFFICIUM — CALENDAR/RUBRIC SYSTEM NOTES
+================================================
+Generated: 2026-05-28
+
+
+1. "RUBRICS" ARE NOT FOLDERS
+-----------------------------
+There are no folders starting with "Rubrics" in web/www/horas/Latin/.
+Rubric sets are pure configuration — entries in web/www/Tabulae/data.txt
+pointing to calendar files in web/www/Tabulae/Kalendaria/.
+
+
+2. data.txt — 6-COLUMN FORMAT
+-------------------------------
+  version name, kalendar code, transfer, stransfer, base version, [tbase]
+
+  Col 1 — version:    display name used in URLs and horas.dialog
+  Col 2 — kalendar:   maps to Tabulae/Kalendaria/<code>.txt (the feast file)
+  Col 3 — transfer:   moveable feast transfer rules
+  Col 4 — stransfer:  scripture transfer rules
+  Col 5 — base:       parent version for inheritance / chaining
+
+  "Newcal" in transfer/stransfer = post-1960 USA transfer tables.
+  It is NOT a calendar file; it controls how moveable feasts are transferred.
+
+  Example (our chain):
+    Rubrics 1960 - Sacramento,Sacramento,Newcal,Newcal,Rubrics 1960 - FSSP
+    Rubrics 1960 - FSSP,FSSP,Newcal,Newcal,Rubrics 1960 - USA 1960
+    Rubrics 1960 - USA 1960,USA1960,Newcal,Newcal,Rubrics 1960 - 1960
+    Rubrics 1960 - 1960,1960,1960,1960,Reduced - 1955
+
+
+3. CALENDAR CHAINING — FULLY RECURSIVE, ARBITRARY DEPTH
+---------------------------------------------------------
+get_from_directorium() in Directorium.pm (lines 210-213) is recursive:
+
+  || ($_data{$version}{$base} &&
+       get_from_directorium($subject, $_data{$version}{$base}, $key, $year, $dioecesis))
+
+When Sacramento doesn't have a feast on a given date, the engine falls
+through: FSSP -> USA 1960 -> 1960 -> Reduced 1955 (5 levels).
+Arbitrary depth is supported with no engine changes.
+
+LIMITATION: Single inheritance only. Each version has exactly one base.
+There is no multi-parent or merge support.
+
+
+4. HOW -r Newcal MAPS TO NC.txt
+---------------------------------
+In epubgen2.sh the arrays are:
+  ALL_RUBRICS_CODES=(... Newcal ...)
+  ALL_RUBRICS=(... "Rubrics 1960 - 2020 USA" ...)
+
+  -r Newcal
+    -> version string "Rubrics 1960 - 2020 USA"
+    -> data.txt lookup: kalendar code = NC
+    -> loads Tabulae/Kalendaria/NC.txt
+
+  -r Sacramento (our setup, in epubgen2_sac2.sh)
+    -> version string "Rubrics 1960 - Sacramento"
+    -> data.txt lookup: kalendar code = Sacramento
+    -> loads Tabulae/Kalendaria/Sacramento.txt
+
+
+5. ALL EXISTING 1960-BASED RUBRIC VERSIONS IN data.txt
+--------------------------------------------------------
+  Version                       Kalendar file    Base
+  ----------------------------  ---------------  --------------------------
+  Rubrics 1960 - 1960           1960.txt         Reduced - 1955
+  Rubrics 1960 - 2020 USA       NC.txt           Rubrics 1960 - 1960
+  Rubrics 1960 - USA 1960 *     USA1960.txt      Rubrics 1960 - 1960
+  Rubrics 1960 - FSSP       *   FSSP.txt         Rubrics 1960 - USA 1960
+  Rubrics 1960 - Sacramento *   Sacramento.txt   Rubrics 1960 - FSSP
+  Ordo Praedicatorum - 1962     OP1962.txt       Rubrics 1960 - 1960
+
+  * = added by this project
+
+
+6. HOW TO ADD A NEW DIOCESE OR PARISH
+---------------------------------------
+Step 1: Create the calendar file
+  web/www/Tabulae/Kalendaria/<Name>.txt
+  (only list feasts that differ from the parent — everything else inherits)
+
+Step 2: Add one line to data.txt
+  Rubrics 1960 - <Name>,<Name>,Newcal,Newcal,Rubrics 1960 - <Parent>
+
+Step 3: Register in horas.dialog  *** CRITICAL ***
+  web/www/horas/horas.dialog — add "Rubrics 1960 - <Name>" to the
+  comma-separated [versions] list.
+  WITHOUT THIS: check_version() silently falls back to base 1960 and
+  ALL custom feasts disappear from output. No error is thrown.
+
+Step 4: Add to EPUB generator arrays
+  In epubgen2.sh (or your patched epubgen2_sac2.sh), add the new code
+  to ALL_RUBRICS_CODES, ALL_RUBRICS, and ALL_RUBRICS_NAME arrays.
+
+
+7. IMPORTANT GOTCHA — horas.dialog VALIDATION
+-----------------------------------------------
+File: web/www/horas/horas.dialog, [versions] section.
+check_version() in web/cgi-bin/DivinumOfficium/RunTimeOptions.pm
+validates every version string against this list. If the string is absent,
+the version silently falls back to "Rubrics 1960 - 1960" and the custom
+calendar is completely ignored. No warning is logged.
+
+Currently registered custom versions (as of 2026-05-27):
+  Rubrics 1960 - USA 1960
+  Rubrics 1960 - FSSP
+  Rubrics 1960 - Sacramento
+
+
+8. KEY SOURCE FILES
+--------------------
+  web/www/Tabulae/data.txt                          version/calendar registry
+  web/www/Tabulae/Kalendaria/<Name>.txt             feast calendar files
+  web/www/horas/horas.dialog                        version validation list
+  web/cgi-bin/DivinumOfficium/Directorium.pm        calendar loading & chaining
+  web/cgi-bin/DivinumOfficium/RunTimeOptions.pm     check_version()
+  standalone/tools/epubgen2/epubgen2.sh             EPUB generator / -r flag
+  standalone/tools/epubgen2/epubgen2_sac2.sh        patched script (Sacramento)

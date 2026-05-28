@@ -1,0 +1,41 @@
+[Rank]
+S. Thomæ de Aquino Conf. et Eccl. Doct.;;Duplex II classis;;5;;ex C5a
+
+[Rule]
+ex C5a
+9 lectiones
+
+[Ant Magnificat]
+O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte Thoma, divínæ legis amátor, deprecáre pro nobis Fílium Dei.
+
+[Ant Benedictus]
+Euge, serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gáudium Dómini tui.
+
+[Oratio]
+Deus, qui Ecclésiam tuam beáti Thomæ Confessóris tui mira eruditióne claríficas, et sancta operatióne fœcúndas: da nobis, quæsumus; et quæ dócuit, intelléctu conspícere, et quæ egit, imitatióne complére. Per Dóminum.
+
+[Lectio4]
+Præclárum christiáni orbis decus et Ecclésiæ lumen, beatíssimus vir Thomas, Landúlpho cómite Aquináte et Theodóra Neapolitána, nobílibus paréntibus natus, futuræ in Deíparam devotiónis afféctum adhuc infántulus osténdit. Nam chártulam ab eo invéntam, in qua salutátio Angélica scripta erat, frustra adniténte nutríce, compréssa manu válide retínuit, et a matre per vim abréptam, plorátu et gestu repétiit, ac mox rédditam deglutívit. Quintum annum agens, mónachis sancti Benedícti Cassinátibus custodiéndus tráditur. Inde Neápolim studiórum causa missus, iam adoléscens fratrum Prædicatórum órdinem suscépit. Sed matre ac frátribus id indígne feréntibus, Lutétiam Parisiórum míttitur. Quem fratres in itínere per vim raptum, in arcem castri sancti Ioánnis perdúcunt : ubi várie exagitátus, ut sanctum propósitum mutáret, mulíerem étiam, quæ ad labefactándam eius constántiam introdúcta fúerat, titióne fugávit. Mox beátus iúvenis, fléxis génibus ante signum crucis orans, ibíque somno corréptus, per quiétem sentíre visus est sibi ab Angelis constríngi lumbos ; quo ex témpore omni póstea libídinis sensu cáruit. Soróribus, quæ ut eum a pio consílio removérent, in castrum vénerant, persuásit, ut, contémptis curis sæculáribus, ad exercitatiónem cæléstis vitæ se conférrent.
+
+[Responsory4]
+R. Honéstum fecit illum Dóminus, et custodívit eum ab inimícis, et a seductóribus tutávit illum : * Et dedit illi claritátem ætérnam.
+V. Iustum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei.
+R. Et dedit illi claritátem ætérnam.
+
+[Lectio5]
+Emíssus e castro per fenéstram, Neápolim redúcitur ; unde Romam, póstea Parísium a fratre Ioánne Theutónico, órdinis Prædicatórum generáli magístro, ductus, Albérto Magno doctóre, philosophíæ ac theologíæ óperam dedit. Vigínti quinque annos natus, magíster est appellátus, publicéque philósophos ac theólogos summa cum laude est interpretátus. Numquam se lectióni aut scriptióni dedit, nisi post oratiónem. In difficultátibus locórum sacræ Scriptúræ, ad oratiónem ieiúnium adhibébat. Quin étiam sodáli suo fratri Regináldo dícere solébat, quidquid sciret non tam stúdio aut labóre suo peperísse, quam divínitus tráditum accepísse. Neápoli cum ad imáginem Crucifíxi veheméntius oráret, hanc vocem audívit : Bene scripsísti de me, Thoma ; quam ergo mercédem accípies? Cui ille : Non áliam, Dómine, nisi teípsum. Collatiónes Patrum assídue pervolutábat ; et nullum fuit scriptórum genus, in quo non esset diligentíssime versátus. Scripta eius et multitúdine, et varietáte, et facilitáte explicándi res diffíciles ádeo excéllunt, ut ubérrima atque incorrúpta illíus doctrína, cum revelátis veritátibus mire conséntiens, aptíssima sit ad ómnium témporum erróres pervincéndos.
+
+[Responsory5]
+R. Amávit eum Dóminus, et ornávit eum : stolam glóriæ índuit eum, * Et ad portas paradísi coronávit eum.
+V. Induit eum Dóminus lorícam fídei, et ornávit eum.
+R. Et ad portas paradísi coronávit eum.
+
+[Lectio6]
+A summo Pontífice Urbáno quarto Romam vocátus, eius iussu ecclesiásticum lucubrávit Offícium in Córporis Christi solemnitáte celebrándum : oblátos vero honóres et Neapolitánum archiepiscopátum, étiam deferénte Cleménte quarto, recusávit. A prædicatióne divíni verbi non desistébat ; quod cum fáceret per octávam Paschæ in basílica sancti Petri, mulíerem, quæ eius fímbriam tetígerat, a fluxu sánguinis liberávit. Missus a beáto Gregório décimo ad concílium Lugdunénse, in monastério Fossæ Novæ in morbum íncidit, ubi ægrótus Cántica canticórum explanávit. Ibídem óbiit quinquagenárius, anno salútis millésimo ducentésimo septuagésimo quarto, Nonis Mártii. Miráculis étiam mórtuus cláruit ; quibus probátis, a Ioánne vigésimo secúndo in Sanctórum númerum relátus est, anno millésimo tercentésimo vigésimo tértio, transláto póstea eius córpore Tolósam, ex mandáto beáti Urbáni quinti. Cum sanctis angélicis spirítibus non minus innocéntia quam ingénio comparátus, Doctóris Angélici nomen iure est adéptus, eídem auctoritáte sancti Pii quinti confirmátum. Leo autem décimus tértius, libentíssime excípiens postulatiónes et vota ómnium pene Sacrórum antístitum orbis cathólici, ad tot præcípue philosophicórum systématum a veritáte aberrántium luem propulsándam, ad increménta scientiárum et commúnem humáni géneris utilitátem, eum, ex sacrórum Rítuum Congregatiónis consúlto, per apostólicas lítteras cæléstem patrónum scholárum ómnium catholicárum declarávit et instítuit.
+
+[Responsory6]
+R. Iste homo perfécit ómnia quæ locútus est ei Deus, et dixit ad eum : Ingrédere in réquiem meam : * Quia te vidi iustum coram me ex ómnibus géntibus.
+V. Iste est, qui contémpsit vitam mundi, et pervénit ad cæléstia regna.
+R. Quia te vidi iustum coram me ex ómnibus géntibus.
+&Gloria
+R. Quia te vidi iustum coram me ex ómnibus géntibus.

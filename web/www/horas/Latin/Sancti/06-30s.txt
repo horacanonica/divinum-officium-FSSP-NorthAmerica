@@ -1,0 +1,10 @@
+[Officium]
+In Anniversario Dedicationis Ecclesiæ Cathedralis Sacramentensis
+
+[Rank]
+In Anniversario Dedicationis Ecclesiæ Cathedralis Sacramentensis;;Duplex I classis;;6;;ex C8
+
+[Rule]
+ex C8;
+9 lectiones
+Festum Domini

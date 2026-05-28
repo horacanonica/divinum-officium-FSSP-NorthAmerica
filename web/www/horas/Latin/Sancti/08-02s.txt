@@ -1,0 +1,20 @@
+[Officium]
+De Inventione S. Stephani Protomartyris (I. Vesperae)
+
+[Rank]
+De Inventione S. Stephani Protomartyris;;Duplex I classis;;6;;ex C2
+
+[Rule]
+ex C2;
+
+[Ant Vespera]
+@Sancti/08-03s
+
+[Versum 1]
+@Sancti/08-03s
+
+[Ant 1]
+@Sancti/08-03s
+
+[Oratio]
+@Sancti/08-03s

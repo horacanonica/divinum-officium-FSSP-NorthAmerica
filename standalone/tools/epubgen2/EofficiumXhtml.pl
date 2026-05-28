@@ -270,6 +270,24 @@ if ($command =~ /setup/i) {
   $command = $';
   setuptable($command);
 
+} elsif ($command =~ /appendix/i) {
+  $pmode = 'hora';
+  require "$Bin/appendix.pl";
+  my $appendix_name = $command;
+  $appendix_name =~ s/appendix\s*//i;
+  my $title_disp = $appendix_name;
+  htmlHead($title_disp);
+  print "<body><div>\n";
+  no warnings 'redefine';
+  *main::activate_links = sub {
+    my ($text, $lang) = @_;
+    local ($_) = $$text;
+    s{%([^%]+)%}{<a href="litaniae.xhtml">$1</a>}g;
+    $_;
+  };
+  appendix($appendix_name);
+  print "</div></body></html>\n";
+
 } elsif ($command =~ /pray/) {
   load_languages_data($lang1, $lang2, $langfb, $version, $missa);
   $pmode = 'hora';

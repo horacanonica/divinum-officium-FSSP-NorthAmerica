@@ -1,0 +1,114 @@
+[Officium]
+In Cathedra S. Petri Apostoli
+
+[Rank]
+In Cathedra S. Petri Apostoli;;Duplex I classis;;6;;ex C4
+
+[Rule]
+ex C4;
+Psalmi Dominica
+Antiphonas horas
+9 lectiones
+Commemoratio3
+Sub unica concl
+Psalm5 Vespera=116
+Psalm5 Vespera3=131
+
+[Hymnus Vespera]
+@Sancti/02-22
+
+[HymnusM Vespera]
+@Sancti/02-22
+
+[Versum 1]
+@Sancti/02-22
+
+[Ant 1]
+@Sancti/02-22
+
+[Oratio]
+@Sancti/02-22
+
+[Invit]
+@Sancti/02-22
+
+[Hymnus Matutinum]
+@Sancti/02-22
+
+[HymnusM Matutinum]
+@Sancti/02-22
+
+[Lectio1]
+@Sancti/02-22
+
+[Responsory1]
+@Sancti/02-22
+
+[Lectio2]
+@Sancti/02-22
+
+[Responsory2]
+@Sancti/02-22
+
+[Lectio3]
+@Sancti/02-22
+
+[Responsory3]
+@Sancti/02-22
+
+[Lectio4]
+@Sancti/02-22
+
+[Responsory4]
+@Sancti/02-22
+
+[Lectio5]
+@Sancti/02-22
+
+[Responsory5]
+@Sancti/02-22
+
+[Lectio6]
+@Sancti/02-22
+
+[Responsory6]
+@Sancti/02-22
+
+[Lectio7]
+@Sancti/02-22
+
+[Responsory7]
+@Sancti/02-22
+
+[Lectio8]
+@Sancti/02-22
+
+[Responsory8]
+@Sancti/02-22
+
+[Lectio9]
+@Sancti/02-22
+
+[Versum 0]
+@Sancti/02-22
+
+[Hymnus Laudes]
+@Sancti/02-22
+
+[HymnusM Laudes]
+@Sancti/02-22
+
+[Versum 2]
+@Sancti/02-22
+
+[Ant 2]
+@Sancti/02-22
+
+[Versum 3]
+@Sancti/02-22
+
+[Ant 3]
+@Sancti/02-22
+
+[Commemoratio4]
+@Sancti/02-22
