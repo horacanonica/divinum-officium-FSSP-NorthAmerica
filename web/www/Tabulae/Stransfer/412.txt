@@ -15,8 +15,8 @@
 05-04=Pasc3-0~B;;1570 1888 1906 DA
 06-09=Pent01-1~B;;1954
 seant02-13=Quadp1-1;;1960
-seant02-13=Quadp1-2;;Newcal
-seant02-19=Quadp2-0;;1960 Newcal
+seant02-13=Quadp1-2;;FSSP
+seant02-19=Quadp2-0;;1960 FSSP
 seant02-19=Quadp2-2;;1570 1888 1906 DA
-seant02-20=Quadp2-0;;1960 Newcal
+seant02-20=Quadp2-0;;1960 FSSP
 seant02-20=Quadp2-2;;1888 1906 DA

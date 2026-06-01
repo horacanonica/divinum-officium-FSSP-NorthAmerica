@@ -7,6 +7,9 @@ S. Franciscæ Xaveriæ Cabrini Virginis
 [Rule]
 vide C6a;
 
+[Invit]
+Regem Vírginum Dóminum * Veníte, adorémus.
+
 [Hymnus Vespera]
 v. Beáta cæli régia
 Lætis resúltet cántibus
@@ -95,3 +98,23 @@ Deo Patri cum Fílio
 Sancto simul Paráclito
 In sæculórum sǽcula.
 Amen.
+
+[Capitulum Laudes]
+!2 Cor 10:17-18
+v. Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est; sed quem Deus comméndat.
+$Deo gratias
+
+[Versum 2]
+V. Diffúsa est grátia in lábiis tuis.
+R. Proptérea benedíxit te Deus in ætérnum.
+
+[Ant 2]
+Símile est regnum cælórum * hómini negotiatóri quærénti bonas margarítas: invénta una preciósa, dedit ómnia sua, et comparávit eam.
+
+[Capitulum Vespera]
+!2 Cor 10:17-18
+v. Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est; sed quem Deus comméndat.
+$Deo gratias
+
+[Ant 3]
+Veni, Sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum.

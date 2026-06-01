@@ -1,0 +1,11 @@
+[Officium]
+S. Mariæ Pacis
+
+[Rank]
+S. Mariæ Pacis;;Duplex;;3;;vide C11
+
+[Rule]
+vide C11;
+Psalmi Dominica
+Ipsa Virgo Virginum
+Doxology=Nat

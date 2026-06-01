@@ -1,5 +1,5 @@
 #= sunday letter: e, general rule
-01-13=Epi1-0a;;DA Newcal
+01-13=Epi1-0a;;DA FSSP
 08-11=082-0~R;;1570 1888 1906 DA
 08-17=082-0~B;;M1930
 08-20=083-0~R;;1888 1906

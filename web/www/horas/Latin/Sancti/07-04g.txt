@@ -1,0 +1,15 @@
+[Officium]
+B. Mariæ Virginis Titulo Refugium Peccatorum
+
+[Rank]
+B. Mariæ Virginis Titulo Refugium Peccatorum;;Duplex II classis;;5;;vide C11
+
+[Rule]
+vide C11;
+Psalmi Dominica
+Ipsa Virgo Virginum
+Doxology=Nat
+
+[Oratio]
+Omnípotens et miséricors Deus, qui in beáta semper Vírgine María peccatórum refúgium et auxílium collocásti: concéde; ut, ipsa protegénte, a culpis ómnibus absolúti, misericórdiæ tuæ efféctum felícem consequámur.
+$Per Dominum

@@ -25,139 +25,110 @@ $Per Dominum
 [Hymnus Matutinum]
 @Sancti/12-08
 
-[Ant 1]
-A solis ortu * usque ad occásum, magnum est nomen meum in géntibus.
+[Ant Matutinum]
+A solis ortu * usque ad occásum, magnum est nomen meum in géntibus.;;8
+Ego in altíssimis * habitávi, et thronus meus in colúmna nubis.;;18
+Invénta sum * a non quæréntibus me; palam appárui iis, qui me non interrogábant.;;23
+Signum magnum * appáruit in cælo: Múlier amícta sole, et luna sub pédibus eius.;;44
+Pópulus qui ambulábat * in ténebris, vidit lucem magnam: habitántibus in regióne umbræ mortis, lux orta est eis.;;45
+Vidérunt * omnes términi terræ salutáre Dei nostri.;;86
+Tabernáculum Dei María, * in médio Civitátis eius, et non commovébitur.;;95
+Egréssa es * in salútem pópuli tui, in salútem cum Christo tuo.;;96
+Gloriósa dicta sunt * de te, Cívitas Dei: fundávit te Dóminus in móntibus sanctis.;;97
 
-[Psalm 1]
-@Psalm(8)
-
-[Ant 2]
-Ego in altíssimis * habitávi, et thronus meus in colúmna nubis.
-
-[Psalm 2]
-@Psalm(18)
-
-[Ant 3]
-Invénta sum * a non quæréntibus me; palam appárui iis, qui me non interrogábant.
-
-[Psalm 3]
-@Psalm(23)
-
-[Versum 1]
+[Nocturn 1 Versum]
 V. Notum fecit Dóminus salutáre suum.
 R. In conspéctu géntium revelávit glóriam suam.
 
 [Lectio1]
 De libro Ecclesiástici
-Cap. 24, 5-31
-Ego ex ore Altíssimi prodívi, primogénita ante omnem creatúram: Ego feci in cælis ut orírétur lumen indefíciens, et sicut nébula texi omnem terram: Ego in altíssimis habitávi et thronus meus in colúmna nubis. Gyrum cæli circuívi sola, et profúndum abyssi penetrávi, in flúctibus maris ambulávi, et in omni terra steti: et in omni pópulo, et in omni gente primátum hábui: et ómnium excelléntium et humílium corda virtúte calcávi: et in his ómnibus réquiem quæsívi, et in hereditáte Dómini morábor. Tunc præcépit, et dixit mihi Creátor ómnium: et qui creávit me, requiévit in tabernáculo meo, et dixit mihi: In Iacob inhábita, et in Israël hæreditáre, et in eléctis meis mitte rádices.
+!Cap. 24, 5-31
+Ego ex ore Altíssimi prodívi, primogénita ante omnem creatúram: Ego feci in cælis ut orirétur lumen indefíciens, et sicut nébula texi omnem terram: Ego in altíssimis habitávi et thronus meus in colúmna nubis. Gyrum cæli circuívi sola, et profúndum abyssi penetrávi, in flúctibus maris ambulávi, et in omni terra steti: et in omni pópulo, et in omni gente primátum hábui: et ómnium excelléntium et humílium corda virtúte calcávi: et in his ómnibus réquiem quæsívi, et in hereditáte Dómini morábor. Tunc præcépit, et dixit mihi Creátor ómnium: et qui creávit me, requiévit in tabernáculo meo, et dixit mihi: In Iacob inhábita, et in Israël hæreditáre, et in eléctis meis mitte rádices.
 
 [Responsory1]
-R. Vidi speciósamm sicut colúmbam ascendéntem désuper rivos aquárum: cuius inæstimábilis odor erat nimis in vestiméntis eius: * Et sicut dies verni circúmdabant eam flores rosárum, et lília convállium.
-V. Quæ est ista, quæ ascéndit per desértum sicut vírgula fumi ex aromátibus myrrhæ et thuris? Et.
+R. Vidi speciósam sicut colúmbam ascendéntem désuper rivos aquárum: cuius inæstimábilis odor erat nimis in vestiméntis eius: * Et sicut dies verni circúmdabant eam flores rosárum, et lília convállium.
+V. Quæ est ista, quæ ascéndit per desértum sicut vírgula fumi ex aromátibus myrrhæ et thuris? 
+R. Et sicut dies verni circúmdabant eam flores rosárum, et lília convállium.
 
 [Lectio2]
 Ab inítio, et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi. Et sic in Sion firmáta sum, et in civitáte sanctificáta símiliter requiévi, et in Ierúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea. Quasi cedrus exaltáta sum in Líbano, et quasi cypréssus in monte Sion: quasi palma exaltáta sum in Cades, et quasi plantátio rosæ in Iéricho: quasi olíva speciósa in campis, et quasi plátanus exaltáta sum iuxta aquam in platéis. Sicut cinnamómum et bálsamum aromatízans odórem dedi: quasi myrrha elécta dedi suavitátem odóris: et quasi storax, et gálbanus, et úngula, et gutta, et quasi Líbanus non incísus vaporávi habitatiónem meam, et quasi bálsamum non míxtum odor meus.
 
 [Responsory2]
 R. Quæ est ista, quæ ascéndit sicut auróra consúrgens, pulchra ut luna, elécta ut sol: * Terríbilis ut castrórum ácies ordináta?
-V. Fília Sion, tota formósa et suávis es, pulchra ut luna, elécta ut sol. Terríbilis.
+V. Fília Sion, tota formósa et suávis es, pulchra ut luna, elécta ut sol. 
+R. Terríbilis ut castrórum ácies ordináta?
 
 [Lectio3]
 Ego quasi terebínthus exténdi ramos meos, et rami mei honóris et grátiæ. Ego quasi vitis fructificávi suavitátem odóris: et flores mei fructus honóris et honestátis. Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei. In me grátia omnis viæ et veritátis: in me omnis spes vitæ et virtútis. Tránsite ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini: Spíritus enim meus super mel dulcis, et heréditas mea super mel et favum. Memória mea in generatiónes sæculórum. Qui edunt me, adhuc esuriunt, et qui bibunt me, adhuc sítiunt. Qui audit me non confundétur, et qui operántur in me non peccábunt: qui elúcidant me, vitam ætérnam habébunt.
 
 [Responsory3]
 R. Quæ est ista, quæ procéssit sicut sol, et formósa tamquam Ierúsalem? * Vidérunt eam fíliæ Sion, et beatam dixérunt, et regínæ laudavérunt eam.
-V. Et sicut dies verni circúmdabant eam flores rosárum, et lília convállium. Vidérunt. Glória. Vidérunt.
+V. Et sicut dies verni circúmdabant eam flores rosárum, et lília convállium. 
+R. Vidérunt eam fíliæ Sion, et beatam dixérunt, et regínæ laudavérunt eam.
+Glória Patri, et Fílio, * et Spirítui Sancto.
+R. Vidérunt eam fíliæ Sion, et beatam dixérunt, et regínæ laudavérunt eam.
 
-[Ant 4]
-Signum magnum * appáruit in cælo: Múlier amícta sole, et luna sub pédibus eius.
-
-[Psalm 4]
-@Psalm(44)
-
-[Ant 5]
-Pópulus qui ambulábat * in ténebris, vidit lucem magnam: habitántibus in regióne umbræ mortis, lux orta est eis.
-
-[Psalm 5]
-@Psalm(45)
-
-[Ant 6]
-Vidérunt * omnes términi terræ salutáre Dei nostri.
-
-[Psalm 6]
-@Psalm(86)
-
-[Versum 2]
+[Nocturn 2 Versum]
 V. Introíbimus in tabernáculum eius.
 R. Adorábimus in loco, ubi stetérunt pedes eius.
 
 [Lectio4]
-Anno a reparáta salúte millésimo quingentésimo trigésimo primo, Deípara Virgo Ioánni Dídaco, pio rudíque neóphyto, Méxici in colle Tepeiacénsi, uti antíqua et constánti traditióne mandátur, sese vidéndam præbuit, eúmque peramánter álloquens, Epíscopum adíre, ipsíque ædem ínibi sibi sacram excitándam nuntiáre iussit. Rei veritátem solérter exploratúrus, responsiónem dístulit Ioánnes de Zumárraga, loci Antístites: ac neóphyto, Beatíssimæ Vírginis aspéctu imperiéque rursus permóto, legationémque lácrimis et précibus iteránti, præcépit, ut signum, quo magnæ Dei matris ostenderétur volúntas, eníxe péteret.
+Anno a reparáta salúte millésimo quingentésimo trigésimo primo, Deípara Virgo Ioánni Dídaco, pio rudíque neóphyto, Méxici in colle Tepeiacénsi, uti antíqua et constánti traditióne mandátur, sese vidéndam præbuit, eúmque peramánter álloquens, Epíscopum adíre, ipsíque ædem ínibi sibi sacram excitándam nuntiáre iussit. Rei veritátem solérter exploratúrus, responsiónem dístulit Ioánnes de Zumárraga, loci Antístites: ac neóphyto, Beatíssimæ Vírginis aspéctu imperióque rursus permóto, legationémque lácrimis et précibus iteránti, præcépit, ut signum, quo magnæ Dei matris ostenderétur volúntas, eníxe péteret.
 
 [Responsory4]
 R. Signum magnum appáruit in cælo: Múlier amícta sole, et luna sub pédibus eius, * Et in cápite eius coróna duódecim stellárum.
-V. Fundaménta eius in móntibus sanctis, díligit Dóminus portas Sion super ómnia tabernácula Iacob. Et.
+V. Fundaménta eius in móntibus sanctis, díligit Dóminus portas Sion super ómnia tabernácula Iacob. 
+R. Et in cápite eius coróna duódecim stellárum.
 
 [Lectio5]
-Dum viam a colle Tepeiacénsi remotiórem neóphytus arríperet, et Méxicum, ne pátruo letháli morbo corrépto extréma deéssent sacraménta, Sacerdótem advocatúrus conténderet, eídem benigníssima Virgo tértio occúrrit; mæréntem de pátrui sanitáte certiórem facit; rosásque pulchérrimas, contra loci hiemísque asperitátem, recens obórtas, in eius pállio compósitas, Epíscopo deférri iniúngit. Mandátis obséquitur Dídacus, cuius in pállio, rosis coram Epíscopo effúsis, Maríæ sanctæ imágo qua prorsus spécie in colle prope urbem sese exhibúerat, mirum in modum depícta conspícitur. Tanto percúlsi prodígio religiósamm cives effígiem in Episcopáli sacéllo rite asservándam curant: quæ, paulo post, solémni pompa ad ædem in colle Tepeiacénsi exstrúctam transláta, insígni géntium cunctárum veneratióne præfúlget.
+Dum viam a colle Tepeiacénsi remotiórem neóphytus arríperet, et Méxicum, ne pátruo letháli morbo corrépto extréma deéssent sacraménta, Sacerdótem advocatúrus conténderet, eídem benigníssima Virgo tértio occúrrit; mæréntem de pátrui sanitáte certiórem facit; rosásque pulchérrimas, contra loci hiemísque asperitátem, recens obórtas, in eius pállio compósitas, Epíscopo deférri iniúngit. Mandátis obséquitur Dídacus, cuius in pállio, rosis coram Epíscopo effúsis, Maríæ sanctæ imágo qua prorsus spécie in colle prope urbem sese exhibúerat, mirum in modum depícta conspícitur. Tanto percúlsi prodígio religiósam cives effígiem in Episcopáli sacéllo rite asservándam curant: quæ, paulo post, solémni pompa ad ædem in colle Tepeiacénsi exstrúctam transláta, insígni géntium cunctárum veneratióne præfúlget.
 
 [Responsory5]
 R. Quæ est ista, quæ progréditur sicut auróra consúrgens, * Pulchra ut luna, elécta ut sol?
-V. Quasi arcus refúlgens inter nébulas glóriæ, et quasi flos rosárum in diébus vernis. Pulchra.
+V. Quasi arcus refúlgens inter nébulas glóriæ, et quasi flos rosárum in diébus vernis. 
+R. Pulchra ut luna, elécta ut sol?
 
 [Lectio6]
-Magnífico deínceps excépta templo, cui Canonicórum Collégium Románi Pontífices ad divíni cultus splendórem addidérunt, Mexicánæ gentis pietátem in Deíparam summópere adáuxit; ingentíque abhinc quatuor sæculis cólitur populórum ac miraculórum frequéntia. Quapróper eam uti præsentíssimum advérsus públicas privatásque calamitátes præsídium Archiepíscopus Mexicánus ceteríque illárum regiónum Antístites, ómnium órdinum consensióne, in primáriam adlegérunt univérsæ Mexicánæ Natiónis Patrónam, ritéque eléctam Benedíctus décimus quartus auctoritáte apostólica declarávit, atque Offícium et Missam sub título beátæ Vírginis Guadalupénsis, recitári concéssit. Leo vero décimus tértius iterátis Mexicanórum Præsulum petitiónibus benígne ánnuens, novíssimum hoc Offícium, ex Sacrórum Rítuum Congregatiónis consúlto, recitári indúlsit, Virginísque effígiem prodígiis atque cultu célebrem áurea coróna, suo nómine et iussu, solémni ritu condecorári decrévit. Quam quidem quartus Idus octóbris anno millésimo octingentésimo nonagésimo quinto, coram Epíscopis fere ómnibus Reipúblicæ et áliis bene multis ex réliquis Américæ pártibus illuc confluéntibus, máxima incolárum advenarúmque frequéntia et gratatióne, Archiepíscopus Mexicánus pretiosíssimam impósuit. Tandem Pius décimus sacrórum Antistitum Américæ Latínæ votis satisfactúrus, eámdem beatíssimam Vírginem Guadalupénsem totíus Américæ Latínæ Patrónam præcípuam declarávit.
+Magnífico deínceps excépta templo, cui Canonicórum Collégium Románi Pontífices ad divíni cultus splendórem addidérunt, Mexicánæ gentis pietátem in Deíparam summópere adáuxit; ingentíque abhinc quatuor sæculis cólitur populórum ac miraculórum frequéntia. Quapróper eam uti præsentíssimum advérsus públicas privatásque calamitátes præsídium Archiepíscopus Mexicánus ceteríque illárum regiónum Antístites, ómnium órdinum consensióne, in primáriam adlegérunt univérsæ Mexicánæ Natiónis Patrónam, ritéque eléctam Benedíctus décimus quartus auctoritáte apostólica declarávit, atque Offícium et Missam sub título beátæ Vírginis Guadalupénsis, recitári concéssit. Leo vero décimus tértius iterátis Mexicanórum Præsulum petitiónibus benígne ánnuens, novíssimum hoc Offícium, ex Sacrórum Rítuum Congregatiónis consúlto, recitári indúlsit, Virginísque effígiem prodígiis atque cultu célebrem áurea coróna, suo nómine et iussu, solémni ritu condecorári decrévit. Quam quidem quartus Idus octóbris anno millésimo octingentésimo nonagésimo quinto, coram Epíscopis fere ómnibus Reipúblicæ et áliis bene multis ex réliquis Américæ pártibus illuc confluéntibus, máxima incolárum advenarúmque frequéntia et gratulatióne, Archiepíscopus Mexicánus pretiosíssimam impósuit. Tandem Pius décimus sacrórum Antistitum Américæ Latínæ votis satisfactúrus, eámdem beatíssimam Vírginem Guadalupénsem totíus Américæ Latínæ Patrónam præcípuam declarávit.
 
 [Responsory6]
 R. Elégi et sanctificávi locum istum; * Ut sit ibi nomen meum, et permáneant óculi mei, et cor meum ibi cunctis diébus.
-V. Non fecit táliter omni natióni: et iudícia sua non manifestávit eis. Ut. Glória. Ut.
+V. Non fecit táliter omni natióni: et iudícia sua non manifestávit eis. 
+R. Ut sit ibi nomen meum, et permáneant óculi mei, et cor meum ibi cunctis diébus.
+Glória Patri, et Fílio, * et Spirítui Sancto.
+R. Ut sit ibi nomen meum, et permáneant óculi mei, et cor meum ibi cunctis diébus.
 
-[Ant 7]
-Tabernáculum Dei María, * in médio Civitátis eius, et non commovébitur.
-
-[Psalm 7]
-@Psalm(95)
-
-[Ant 8]
-Egréssa es * in salútem pópuli tui, in salútem cum Christo tuo.
-
-[Psalm 8]
-@Psalm(96)
-
-[Ant 9]
-Gloriósa dicta sunt * de te, Cívitas Dei: fundávit te Dóminus in móntibus sanctis.
-
-[Psalm 9]
-@Psalm(97)
-
-[Versum 3]
+[Nocturn 3 Versum]
 V. Fílii tui de longe vénient.
 R. Et fíliæ tuæ de látere surgent.
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Lucam
-Cap. 1, 39-47
+!Cap. 1, 39-47
 In illo témpore: Exsúrgens autem María ábiit in montána cum festinatióne, in civitátem Iuda. Et intrávit in domum Zachariæ, et salutávit Elísabeth. Et réliqua.
 _
 Homília sancti Bernárdi Abbátis
-De verbis Apocal. cap. 12
+!De verbis Apocal. cap. 12
 _
 Mirabátur Elísabeth persónam veniéntis, dicens: Unde hoc mihi, ut véniat Mater Dómini mei ad me? Commendábat et vocem salutántis, adíciens: Ut facta est vox salutatiónis tuæ in áuribus meis, exsultávit in gáudio infans in útero meo. Et beatificábat fidem credéntis: Beáta, ínquiens, quæ credidísti. Magna quidem præcónia; sed et devóta humílitas nihil sibi passa retinére, in eum magis univérsa refúdit, cuius in se benefícia laudabántur.
 
 [Responsory7]
 R. Felix namque es, sacra Virgo María, et omni laude digníssima: * Quia ex te ortus est sol iustítiæ, Christus, Deus noster.
-V. Ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum iuvámen, quicúmque célebrant tuam sanctam festivitátem. Quia.
+V. Ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum iuvámen, quicúmque célebrant tuam sanctam festivitátem. 
+R. Quia ex te ortus est sol iustítiæ, Christus, Deus noster.
 
 [Lectio8]
-Tu, inquit, magníficas Matrem Dómini, sed magnificat ánima mea Dóminum. In voce mea fílium pérhibes exsultásse in gáudio, sed exsultávit spíritus meus in Deo salutári meo: et ipse quoque tamquam amícus Sponsi gaudet ad vocem Sponsi. Beátam me esse dicis, quæ crédidi; sed credulitátis et beatitúdinis causa, respéctus est supérnæ pietátis; ut ex hoc magis beátam me dicant omnes generatiónes, quia ancíllam húmilem et exíguam respéxit Deus. Verúmtamen numquid putámus, fratres, Elísabeth sanctam in eo quod per Spíritum útique loquebátur errásse? Absit. Beáta plane quam respéxit Deus, et beáta
+Tu, inquit, magníficas Matrem Dómini, sed magnificat ánima mea Dóminum. In voce mea fílium pérhibes exsultásse in gáudio, sed exsultávit spíritus meus in Deo salutári meo: et ipse quoque tamquam amícus Sponsi gaudet ad vocem Sponsi. Beátam me esse dicis, quæ crédidi; sed credulitátis et beatitúdinis causa, respéctus est supérnæ pietátis; ut ex hoc magis beátam me dicant omnes generatiónes, quia ancíllam húmilem et exíguam respéxit Deus. Verúmtamen numquid putámus, fratres, Elísabeth sanctam in eo quod per Spíritum útique loquebátur errásse? Absit. Beáta plane quam respéxit Deus, et beáta quæ crédidit. Hic enim magnus divínæ respectiónis exstítit fructus.
 
 [Responsory8]
 R. Beátam me dicent omnes generatiónes, * Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen eius.
-V. Et misericórdia eius a progénie in progénies timéntibus eum. Quia. Glória. Quia.
+V. Et misericórdia eius a progénie in progénies timéntibus eum. 
+R. Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen eius.
+Glória Patri, et Fílio, * et Spirítui Sancto.
+R. Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen eius.
 
 [Lectio9]
-Ineffábili síquidem artifício Spíritus supervéniens, tantæ humilitáti magnanímitas tanta in secretário vírgínei cordis accéssit, ut quod vidélicet nec humílitas tanta minúerit magnanimitátem, nec magnanímitas tanta humilitátem. Sed cum in sua æstimatióne tam húmilis esset, nihilóminus et in promissiónis credulitáte magnánimis, ut quæ nihil áliud quam exíguam sese reputábat ancíllam, ad inscrutábile sacraméntum nullátenus se dubitáret eléctam, et veram Dei et hóminis Genitrícem créderat mox futúram. Iam te, Mater misericórdiæ, per ipsum sinceríssimæ tuæ mentis afféctum tuis iacens provóluta pédibus luna, mediatrícem sibi apud solem iustítiæ constitútam, devótis supplicatiónibus interpéllat, ut in lúmine tuo vídeat lumen, et solis grátiam tuo mereátur obténtu, quam vere amávit præ ómnibus, et ornávit stola glóriæ índuens, et corónam pulchritúdinis ponens in cápite tuo.
+Ineffábili síquidem artifício Spíritus supervéniens, tantæ humilitáti magnanímitas tanta in secretário virgínei cordis accéssit, ut quod vidélicet nec humílitas tanta minúerit magnanimitátem, nec magnanímitas tanta humilitátem. Sed cum in sua æstimatióne tam húmilis esset, nihilóminus et in promissiónis credulitáte magnánimis, ut quæ nihil áliud quam exíguam sese reputábat ancíllam, ad inscrutábile sacraméntum nullátenus se dubitáret eléctam, et veram Dei et hóminis Genitrícem créderat mox futúram. Iam te, Mater misericórdiæ, per ipsum sinceríssimæ tuæ mentis afféctum tuis iacens provóluta pédibus luna, mediatrícem sibi apud solem iustítiæ constitútam, devótis supplicatiónibus interpéllat, ut in lúmine tuo vídeat lumen, et solis grátiam tuo mereátur obténtu, quam vere amávit præ ómnibus, et ornávit stola glóriæ índuens, et corónam pulchritúdinis ponens in cápite tuo.
 &teDeum
 
 [Ant Laudes]

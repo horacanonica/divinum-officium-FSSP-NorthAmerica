@@ -8,7 +8,7 @@
 05-12=Pasc3-0;;1888 1906
 06-07=Pasc6-3~Pasc6-5~B;;1570 1888 1906
 06-17=Pent01-1;;1570 1888 1906
-seant02-21=Quadp1-0;;Newcal
+seant02-21=Quadp1-0;;FSSP
 seant02-21=Quadp1-1;;1888 1906 DA
-seant02-28=Quadp2-1;;Newcal
+seant02-28=Quadp2-1;;FSSP
 seant02-28=Quadp2-3;;1570 1888 1906 DA

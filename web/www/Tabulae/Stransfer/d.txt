@@ -1,4 +1,5 @@
 #= sunday letter: d, general rule
+02-23=02-22;;FSSP
 01-12=Epi1-0a;;DA
 08-17=083-0~B;;1888 1906 DA
 09-16=093-1;;DA

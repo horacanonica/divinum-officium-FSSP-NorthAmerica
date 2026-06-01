@@ -1,0 +1,16 @@
+[Officium]
+B. Bartholomæi Laurel Martyris
+
+[Rank]
+B. Bartholomæi Laurel Martyris;;Duplex;;3;;vide C2
+
+[Rule]
+vide C2;
+
+[Oratio]
+Fac nos, quæsumus, Dómine, beáti Bartholomæi Mártyris tui ita mérita gloriósa recólere: ut, ad exémpla ejus, humilitáte tibi et fídei constántia placeámus.
+$Per Dominum
+
+[Lectio94]
+Bartholomæus Laurel, in diœcési Angelopolitána Mexíci natus, in família franciscána véteris observántiæ Morélii solémnia vota édidit. Munus ministrándi ægrótis in valetudinárium Maníliæ per quadriénnium summa humilitáte et caritáte exégens, a viro apostólico Francísco a Sancta María in Japóniam accersítus, inter fidéles occúlte medicínæ arte et fídei doctrína operam préstitit. Cum magístro deprehénsus et in vínculum conjéctus, post trium ménsium cárcerem, décimo sexto Kaléndas Septémbres anni MDCXXVII Nangasáquii una cum áliis Martyríbus constántissime lento igne intérfectus est. Leo décimus tértius offícium et missam própriam Ecclésiæ Mexicánæ concéssit. Pius Nonus eum anno MDCCCLXVII inter Beátos Cælitum recénsuit.
+&teDeum

@@ -9,7 +9,7 @@ vide C3;
 Quorum Festum
 
 [Oratio]
-Deus, qui primítias fídei in boreálibus Américæ regiónibus sanctórum Mártyrum tuórum Isaáci, Joánnis, eorúmque Sociórum prædicatióne et sánguine consecrásti: concéde propítius; ut, eórum intercessióne, flórida christianórum seges ubíque in dies augeátur. 
+Deus, qui primítias fídei in boreálibus Américæ regiónibus sanctórum Mártyrum tuórum Isaáci, Ioánnis, eorúmque Sociórum prædicatióne et sánguine consecrásti: concéde propítius; ut, eórum intercessióne, flórida christianórum seges ubíque in dies augeátur.
 $Per Dominum
 
 [Lectio4]
@@ -42,8 +42,11 @@ R. Quoniam donum et pax est electis Dei.
 R. Quoniam donum et pax est electis Dei.
 
 [Lectio94]
-Ex iis Societátis Jesu sodálibus, qui médio sǽculo décimo séptimo aspérrimam missiónem Novæ Gálliæ excoléntes, Ecclésiæ  primórdia in América Septentrionáli summópere illustrárunt, octo puríssimas hóstias sibi elégit Deus, in hodiérnis regiónibus Neo-Eboracénsi et Ontário in Cánada immolátas. In his véluti duces et magístri habéntur Joánnes de Brébeuf et Isaácus Jogues, viri strénui et apostólico animárum stúdio incénsi, mortificatióni máxime déditi, cum Deo in oratióne coniunctíssimi. Haud dispáribus virtútibus ornabántur sacerdótes Antónius Daniel, Gábriel Lalemant, Cárolus Garnier et Natális Chabanel, necnon Renátus Goupil et Joánnis de la Lande, Patrum adjutóres.  Vitam ob indigenárum Eurónum índolem miserrimámque vivéndi ratiónem, martýrio símilem, omnes cruénta more propter unam religiónis causam, etsi non uno loco nec témpore, cumulárunt; quidam vero torménta vix credibília ádeo invícta fortitúdine pertulérunt, ut ipsi bárbari carnífices eos admiraréntur. Quos Pius undécimus Beatórum, ac mox miráculis claros Sanctórum número adscrípsit.
+Ex iis Societátis Iesu sodálibus, qui médio sǽculo décimo séptimo aspérrimam missiónem Novæ Gálliæ excoléntes, Ecclésiæ primórdia in América Septentrionáli summópere illustrárunt, octo puríssimas hóstias sibi elégit Deus, in hodiérnis regiónibus Neo-Eboracénsi et Ontário in Cánada immolátas. In his velúti duces et magístri habéntur Ioánnes de Brébeuf et Isaácus Jogues, viri strénui et apostólico animárum stúdio incénsi, mortificatióni máxime déditi, cum Deo in oratióne coniunctíssimi. Haud dispáribus virtútibus ornabántur sacerdótes Antónius Daniel, Gábriel Lalemant, Cárolus Garnier et Natális Chabanel, necnon Renátus Goupil et Ioánnis de la Lande, Patrum adiutóres. Vitam ob indigenárum Eurónum índolem miserrimámque vivéndi ratiónem, martýrio símilem, omnes cruénta more propter unam religiónis causam, etsi non uno loco nec témpore, cumulárunt; quidam vero torménta vix credibília ádeo invícta fortitúdine pertulérunt, ut ipsi bárbari carnífices eos admiraréntur. Quos Pius undécimus Beatórum, ac mox miráculis claros Sanctórum número adscrípsit.
 &teDeum
+
+[Ant 2]
+Vestri capílli cápitis * omnes numeráti sunt: nolíte timére: multis passéribus melióres estis vos.
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Lucam

@@ -1,0 +1,22 @@
+[Officium]
+In Expectatione Partus Beatæ Mariæ Virginis
+
+[Rank]
+In Expectatione Partus Beatæ Mariæ Virginis;;Semiduplex;;2;;vide C11
+
+[Rule]
+vide C11;
+Psalmi Dominica
+Ipsa Virgo Virginum
+Doxology=Nat
+
+[Ant 2]
+Super sólium David, et super regnum ejus sedébit in ætérnum.
+
+[Versum 2]
+V. Spíritus sanctus supervéniet in te.
+R. Et virtus Altíssimi obumbrábit tibi.
+
+[Oratio]
+Deus, qui de beátæ Maríæ Vírginis útero Verbum tuum, Angelo nuntiánte, carnem suscípere voluísti: præsta supplícibus tuis; ut qui vere eam Genitrícem Dei crédimus, ejus apud te intercessiónibus adjuvémur.
+$Per Dominum

@@ -1,0 +1,16 @@
+[Officium]
+B. Sebastiani ab Apparitio Confessoris
+
+[Rank]
+B. Sebastiani ab Apparitio Confessoris;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5;
+
+[Oratio]
+Deus, qui beátum Sebastiánum Confessórem tuum in simplicitáte cordis ambuláre fecísti, ac cæléstibus donis cumulásti: concéde propítius; ut ejus intercessióne, et puris méntibus tibi servíre, et grátiæ tuæ múnera cónsequi valeámus.
+$Per Dominum
+
+[Lectio94]
+Sebastiánus ab Apparitio, Gudínæ in Hispánia natus, in Novam Hispániam transíit, ubi viarum strátor ópibus in pios usus distribútis dúplex matrimónium, ambóbus conjúgibus conséntientibus, intactum relíquit. Septuagenárius demum in familiam Minórum Franciscánórum excalceatórum órdinis láici adscríptus est. Solémnibus votis Deo nuncupátis, simplicitáte, humilitáte, patiéntia, et in Eucharístiæ sacraméntum pietáte insígni, Angelicísque visiónum consolatiónibus præclároque dono miraculórum floruísse perhibétur. Prope centenárius Angelópoli placidíssime réquievit. Pius sextus Pontífex Máximus eum Beatórum cœtui adscripsit.
+&teDeum

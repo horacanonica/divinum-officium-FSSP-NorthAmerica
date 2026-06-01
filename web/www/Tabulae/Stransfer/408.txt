@@ -5,5 +5,5 @@
 07-03=Pent05-0~B;;1888 1906 DA
 07-08=Pent05-0~B;;M1930
 seant02-15=Quadp2-3;;DA
-seant02-16=Quadp2-2;;1570 1888 1906 DA Newcal
-seant02-17=Quadp2-0;;Newcal
+seant02-16=Quadp2-2;;1570 1888 1906 DA FSSP
+seant02-17=Quadp2-0;;FSSP

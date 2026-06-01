@@ -1,0 +1,12 @@
+[Officium]
+S. Mariæ Virginis de Zapopan
+
+[Rank]
+S. Mariæ Virginis de Zapopan;;Duplex I classis;;6;;vide C11
+
+[Rule]
+vide C11;
+9 lectiones
+Psalmi Dominica
+Ipsa Virgo Virginum
+Doxology=Nat

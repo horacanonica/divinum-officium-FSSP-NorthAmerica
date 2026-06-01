@@ -1,0 +1,16 @@
+[Officium]
+B. Bartholomæi Gutierrez Martyris
+
+[Rank]
+B. Bartholomæi Gutierrez Martyris;;Duplex;;3;;vide C2
+
+[Rule]
+vide C2;
+
+[Oratio]
+Præsta quæsumus omnípotens Deus: ut qui beáti Bartholomæi Mártyris tui natalítia cólimus, intercessióne ejus in tui nóminis amóre roborémur.
+$Per Dominum
+
+[Lectio94]
+Bartholomæus Gutiérrez, Mexicánus, Eremitárum sancti Augustíni alumnus, Japóniam missus, magno zelo verbi Dei prædicándi innúmeros ad fidem convértit. Jussu imperatóris captus, post longum cárcerem, in monte Ungensi per trigínta dies æstuántis aquæ sulphúreæ torméntis excruciátus, tandem Nangasáquii lento igne una cum beátis Vincéntio a S. António et Francísco a Jesu Augustiniánis tértio Nonas Septémbris anno MDCXXXII intérfectus est, eorúmque relíquiæ, ne a Christiánis colligeréntur, in mare demérsæ. Pius Nonus eum anno MDCCCLXVII cum ducentis quinque aliis Japóniæ Martýribus Beatórum album recénsuit.
+&teDeum

@@ -1,0 +1,69 @@
+[Officium]
+S. Philippi a Jesu Martyris
+
+[Rank]
+S. Philippi a Jesu Martyris;;Duplex;;3;;vide C2
+
+[Rule]
+vide C2;
+
+[Hymnus Matutinum]
+v. Salve, triumphális pugil,
+Decus novi orbis máximum,
+Qui morte fecísti tua
+Beatiórem pátriam.
+_
+Athléta princeps Méxici,
+Trophæa celsa Mártyrum
+Dignámque cælo láuream
+Tu primus infers pátriæ.
+_
+Quidquid juvéntus férvida
+Peccáverat licéntia,
+Libénter in mortem ruens
+Sancta expiásti víctima.
+_
+Tui fac ut nos æmuli,
+Dolóre cordis íntimo,
+Jugíque pœniténtia,
+Nostra eluámus crímina.
+_
+Deo Patri sit glória,
+Ejúsque soli Fílio,
+Sanctóque item Paráclito
+Per omne semper sæculum.
+Amen.
+
+[Oratio]
+Deus, qui inter primos Japóniæ Mártyres beátum Philíppum cruci alligátum, triplicíque láncea confóssum, primum ómnium martýrio coronásti: concéde propítius; ut ejúsdem nos suffúlti patrocínio, cum illo páriter coronémur in cælis.
+$Per Dominum
+
+[Lectio94]
+Philíppus a Jesu, Méxici Hispánis paréntibus natus, primum hábitu Franciscáno súmpto, propter inconstántiam abíit e religióne. Sed diviníssima Dei providéntia, ad pœniténtiam commótus, Manílis denúo hábitus Franciscánus Excalceatórum petívit et impétrávit, ubi solémnia demum vota proféssus est. Dum autem navim, quæ eum in Mexícum vehi debebat, conscénderet, procellis in portum Japónicum éjectus est, ibíque, persequutióne Christiánórum ingruénte, in víncula conjéctus est. Cruci afﬁxus et tríplici láncea confóssus, primus inter socios gloriósam martyrii palmam obtínuit. Pius Papa nonus eum anno millésimo octingentésimo sexagésimo séptimo Sanctórum fastis adscripsit.
+&teDeum
+
+[Hymnus Laudes]
+v. Philíppe, Martir ínclyte,
+Jesu fidélis ássecla,
+Quem prætulísti nómine
+Ad usque vim mortis sequi.
+_
+Confóssus hasta tríplici,
+Fusóque rorans sánguine,
+Disténtus exspírans cruce
+Jesu refers imáginem.
+_
+Sodálium tu Mártyrum
+Primóris es et sígnifer,
+Agménque ducens cælitum,
+Prior profúndis sánguinem.
+_
+Audi precántum cívium
+Voces, piásque lácrimas,
+Ductórque noster sédibus
+Nos tu beátis insere.
+_
+Virtus, honor, laus, glória
+Patri sit, atque Fílio,
+Sancto simul Paráclito,
+Nunc, et per omne sæculum. Amen.

@@ -1,0 +1,16 @@
+[Officium]
+Ss. Ursulæ et Sociarum Virginum et Martyrum
+
+[Rank]
+Ss. Ursulæ et Sociarum Virginum et Martyrum;;Duplex;;3;;vide C6b
+
+[Rule]
+vide C6b;
+
+[Lectio94]
+Dum sǽculo quinto fere médio Attila Hunnórum dux a prima sua in Gállias irruptióne, ubi ad Cataláunum profligátus fúerat, in Pannóniam revertebátur, ántequam Rhenum trajíceret, nobilíssimam urbem Colóniam Agrippínam aggréditur, et ob ódium cathólicæ religiónis, quæ ibi máxime florébit, eam rapína ac cædibus vastábat. Sævíssimo autem ímpetu bárbari libídine æstuántes in vírgines puéllas irruébant, quæ a Británnia emigrántes ibídem commorabántur: inter quas præclaríssima éxstitit virgo Ursula nómine, quæ céteras hortabátur sócias, ómnia pótius subíre torménta mortémque crudelíssimam obíre, quam virginális pudicítiæ detriméntum pati. Cum nóbile hoc virgíneum agmen constantíssime Hunnis restitísset, partim ab ipsis gládio trucidátæ, partim sagíttis transfíxæ, partim véctibus contúsæ martýrium consummárunt. Ursula vero super cómitum suárum velut cæléstium margaritárum acérvum gloriósa víctima procúmbens, púrpura pro fide et castitáte fusi sánguinis decoráta, exércitum géminis virginitátis et fidei corónis insígnem in cælum triúmphans introdúxit. Postquam vero sæva barbarórum procélla deflúxit, Coloniénses supérstites Vírginum aliorúmque cívium mártyrum córpora ut pretiósa pígnora collegérunt, et summo honóre condidérunt. In agro virgíneo sánguine rubro, in quo sacra quies Martýribus data fuit, basílica ædificáta est, jam médio sǽculo séptimo sanctárum Vírginum dicta, ob quarum reveréntiam nullum exínde cadáver humánum illic tumulabátur. Quæ sǽculo nono monastérium facta, inítio décimi moniáles ob metum Hungarórum prófugas recépit, semper ab ínclitæ civitátis Præsúlibus liberáliter dotáta et pie visitáta. Conspiciúntur usque in hunc diem ecclésiæ sæpe restaurátæ muri Mártyrum lóculis úndique exornáti, dum major reliquiárum pars intra chori paríetes et sub pavménto látitant; cernúntur in próximo oratório innúmera vírginum cápita, martýrii vestigíis partim insígnita, partim crínibus sanguinolén­tis tecta. Hæc sacra pígnora præterítis tempóribus piis peregrinatiónibus fidéles prosecutí sunt.
+&teDeum
+
+[Oratio]
+Da nobis, quæsumus, Dómine Deus noster, sanctárum Vírginum et Mártyrum tuárum Ursulæ et Sociárum palmas incessábili devotióne venerári: ut quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.
+$Per Dominum

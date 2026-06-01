@@ -81,9 +81,9 @@ OPTIONAL_KINDLEGEN_PATH=/usr/local/bin/kindlegen #full path to kindlegen executa
 
 #constants
 #supported rubrics as in Eofficium.pl
-ALL_RUBRICS_CODES=(1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altovado Dominican)
-ALL_RUBRICS=("Tridentine - 1570" "Tridentine - 1888" "Tridentine - 1906" "Divino Afflatu - 1954" "Reduced - 1955" "Rubrics 1960 - 1960" "Rubrics 1960 - 2020 USA" "Monastic - 1617" "Monastic - 1930" "Monastic - 1963" "Ordo Cisterciensis - 1951" "Ordo Cisterciensis - Abbatia B.M.V. de Altovado" "Ordo Praedicatorum - 1962")
-ALL_RUBRICS_NAME=(_1570 _1888 _1906 _DA _1955 "" _NC _M1617 _M1930 Monastic _Cist _Altovado _OP)
+ALL_RUBRICS_CODES=(1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altovado Dominican FSSP USA1960 FSSPUSA Sacramento Guadalajara)
+ALL_RUBRICS=("Tridentine - 1570" "Tridentine - 1888" "Tridentine - 1906" "Divino Afflatu - 1954" "Reduced - 1955" "Rubrics 1960 - 1960" "Rubrics 1960 - 2020 USA" "Monastic - 1617" "Monastic - 1930" "Monastic - 1963" "Ordo Cisterciensis - 1951" "Ordo Cisterciensis - Abbatia B.M.V. de Altovado" "Ordo Praedicatorum - 1962" "Rubrics 1960 - FSSP" "Rubrics 1960 - USA 1960" "Rubrics 1960 - FSSP USA" "Rubrics 1960 - Sacramento" "Rubrics 1960 - Guadalajara")
+ALL_RUBRICS_NAME=(_1570 _1888 _1906 _DA _1955 "" _NC _M1617 _M1930 Monastic _Cist _Altovado _OP _FSSP _USA1960 _FSSPUSA _Sac _GLD)
 
 # Languages
 ALL_LANGUAGES_CODES=(cs da de en es fr it la la-bea hu nl pl pt pl-new)
@@ -758,7 +758,7 @@ createEPUBs() {
 convertMOBIMonth() {
 	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR-$MONTH$RUBRICS_NAME.epub"
 	echo -ne "Converting $EPUB_FILENAME                \r" >> "${EPUBDIR}/kindlegen.log"
-	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME &>> "${EPUBDIR}/kindlegen.log"
+	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME >> "${EPUBDIR}/kindlegen.log" 2>&1
 	echo -ne "Finished Converting $EPUB_FILENAME                \r" >> "${EPUBDIR}/kindlegen.log"
   echo -ne "--------------------------------------------------\r" >> "${EPUBDIR}/kindlegen.log"
 }
@@ -766,7 +766,7 @@ convertMOBIMonth() {
 convertMOBIYear() {
 	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR$RUBRICS_NAME.epub"
 	echo -ne "Converting $EPUB_FILENAME                \r" >> "${EPUBDIR}/kindlegen.log"
-	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME &>> "${EPUBDIR}/kindlegen.log"
+	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME >> "${EPUBDIR}/kindlegen.log" 2>&1
 	echo -ne "Finished Converting $EPUB_FILENAME                \r" >> "${EPUBDIR}/kindlegen.log"
 	echo -ne "--------------------------------------------------\r" >> "${EPUBDIR}/kindlegen.log"
 }

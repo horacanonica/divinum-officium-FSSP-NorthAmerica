@@ -1,0 +1,58 @@
+[Officium]
+S. Joannis Nepomucéni Martyris
+
+[Rank]
+S. Joannis Nepomucéni Martyris;;Duplex II classis;;5;;vide C2a
+
+[Rule]
+vide C2a;
+9 lectiones
+
+[Hymnus Matutinum]
+v. In profúnda noctis umbra
+Et gravi calígine
+Lustrat ædem flamma munda,
+Sic jubénte Númine.
+_
+Nocte náscitur Joánnes,
+Astra cælo dévolant:
+Nocte mérgitur Joánnes,
+Astra funus ápparant.
+_
+Hinc cor ejus igne flagrans
+Fortis urit cáritas;
+Hinc ab ejus ore manans
+Mira prodit suávitas.
+_
+Nunc amóre cor bonórum
+Ad salútem pértrahit;
+Nunc timóre cor malórum
+A gehénna rétrahit.
+_
+Páuperes solátur ære,
+Derelíctis súbvenit;
+Non sinit justos jacére;
+Damna famæ prǽpedit.
+_
+Per Joánnis sanctitátem,
+O beáta Trínitas,
+Méntibus da puritátem,
+Corde regnet cáritas.
+Amen.
+
+[Oratio]
+Deus, qui ob invíctum beáti Joánnis sacraméntale siléntium, nova Ecclésiam tuam martýrii coróna decorásti: da, ut ejus exémplo et intercessióne, ori nostro custódiam ponéntes, beátis, qui lingua non sunt lapsi, annumerémur.
+$Per Dominum
+
+[Lectio4]
+Joannes Nepomucéni, Bohemiæ oppido, unde Nepomucéni cognomen duxit, a parentibus ætate provectis, non sine futuræ sanctitatis præsagio, flammis supra nascentis domum mirabiliter collucentibus, ortus est. Cum infans in gravem morbum incidisset, beatæ Virginis ope, cui natum parentes referebant acceptum, e vitæ periculo evasit incolumis. Egrégia indole piaque institutione cælestibus indiciis obsequente, inter sanctas religiosas exercitationes pueritiam egit: nam ecclesiam frequenter adire, ac sacerdotibus ad aras operantibus ministrare in delitiis habebat. Zatecii politioribus litteris ad humanitatem informatus, Pragæ vero gravioribus disciplinis excultus, philosophiæ, theologiæ sacrorumque Canonum magisterium et lauream emeruit. Sacerdotio initiatus, atque a scientia sanctorum ad lucra animarum rite comparatus, ministerio verbi Dei se penitus addixit. Cum igitur in vitiis exstirpandis et revocandis in viam salutis errantibus, eloquentia et pietate uberes ederet fructus, inter canonicos metropolitanæ ecclesiæ Pragensis cooptatus, mox sibi demandatam Evangelii coram rege Wenceslao quarto prædicandi provinciam suscepit, eo successu, ut Joannis suasu multa rex faceret, magnoque in honore ejus virtutes haberet. Conspicuas tamen, quas ille obtulit, dignitates, Dei servus, ne a divini verbi præconio avocaretur, constantissime recusavit.
+
+[Lectio5]
+Regiis illum eleemosynis in pauperes erogandis præfectum, Joanna regina conscientiæ sibi moderatorem adscivit. Cum autem Wenceslaus ab officio, institutoque decessisset atque in vitia præceps abriperetur, piæ autem conjugis obtestationes, et monita grave ferret, contendere ausus est, ut in sacramentali judicio sacerdoti credita reginæ arcana sibi a Joanne panderentur. At Dei minister blanditiis primum, tormentis deinde, et carceris squalore tentatus, nefariæ regis cupiditati fortiter obstitit. Furentem tamen Wenceslai animum cum ab exsecrando proposito nec humana nec divina jure deterrerent, supremum agonem, quem instare sibi athleta Christi noverat, populo in concione de impendentibus etiam regni calamitatibus admonito, non obscure prænuntiavit. Mox Boslaviæ profectus, ad beatæ Virginis imaginem antiquo cultu celebrem, cæleste præsidium ad certandum bonum certamen effusis precibus imploravit. Inde vespere revertentem in pervigilio Dominicæ Ascensionis rex e fenestra conspicatus arcessit; cumque vehementius urgeret, et proximam in aquis, si obluctari pergeret, submersionem intentaret, Joannes invicta constantia terrores minasque refutavit. Itaque regis imperio in Moldavam flumen, Pragam interfluens, noctu dejectus, illustrem martyrii coronam est consecutus.
+
+[Lectio6]
+Sacrilegum facinus clam patratum, et Martyris gloriam insigne prodigium divinitus patefecit. Ubi enim exanime corpus secundo flumine vehi cœpit, ardentes faces aquis supernatantes et discurrentes apparuerunt. Quamobrem ex arena postridie mane corpus elatum, canonici deinde, regis iram nihil timentes, in metropolitanam ecclesiam solemni pompa intulerunt, et sepulturæ mandarunt. Cum autem in dies invicti sacerdotis memoria miraculis, et maxima fidelium, eorum præcipue qui fama periclitantur, veneratione cresceret, post annos demum amplius trecentos, in juridica recognitione corporis, quod sub humo tamdiu jacuerat, lingua ejus incorrupta et vivida reperta est: quæ sexto post anno judicibus a Sede Apostolica delegatis exhibita, novo prodigio repente intumuit, et subobscurum ruborem in purpureum commutavit. His itaque aliisque signis rite probatis, Benedictus decimus tertius Pontifex Maximus, die decima nona mensis Martii, anno salutis millesimo septingentesimo vigesimo nono, primum hunc sacramentalis sigilli assertorem, arcani fidem sanguine obsignantem, sanctorum Martyrum catalogo adscripsit.
+
+[Lectio94]
+Joánnes, Nepomúci Bohémiæ in óppido natus, post suscéptas philosóphiæ, theologíæ sacrorúmque Canónum laúreas sacerdótio initiátus, inter canónicos metropolitánæ ecclésiæ Pragénsis cooptátus fuit, et Evangélii coram rege Wencesláo quarto prædicándi provínciam demandátam hábuit. Joánna regína consciéntiæ sibi moderatórem ascívit. Cum autem Wencesláus arcána reginæ sibi a Joánne patefíeri exégisset, Dei mínister blandítiis, torméntis et cárceris squálore tentátus, nefáriæ regis cupiditáti fórtiter óbstitit; régisque império in Moldávam flumen noctu deféctus, illustrem martýrii palmam est consecútus. Benedíctus décimus tértius primum hunc sacramentális sigílli assértorem, arcáni fidem sánguine obsignántem, sanctórum Martýrum catálogo adscrípsit.
+&teDeum
