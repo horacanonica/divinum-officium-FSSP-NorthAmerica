@@ -9,7 +9,7 @@ Rubrics 1960 - 1960,1960,1960,1960,Reduced - 1955
 Rubrics 1960 - USA 1960,USA1960,1960,1960,Rubrics 1960 - 1960
 Rubrics 1960 - FSSP,FSSP,1960,1960,Rubrics 1960 - 1960
 Rubrics 1960 - FSSP USA,USA1960,1960,1960,Rubrics 1960 - FSSP
-Rubrics 1960 - Sacramento,Sacramento,1960,1960,Rubrics 1960 - FSSP USA
+Rubrics 1960 - Sacramento,Sacramento,Sacramento,Sacramento,Rubrics 1960 - FSSP USA,Rubrics 1960 - 1960
 Rubrics 1960 - Guadalajara,Guadalajara,1960,1960,Rubrics 1960 - FSSP
 Rubrics 1960 - Chesapeake,Chesapeake,1960,1960,Rubrics 1960 - FSSP USA
 Monastic Tridentinum 1617,M1617,M1617,M1617,Tridentine - 1570

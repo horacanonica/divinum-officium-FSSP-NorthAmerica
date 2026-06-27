@@ -1,8 +1,6 @@
-# This docker-compose file is for running local development.
-#
-# to update the base image, run 'docker-compose build'
-# and then run 'docker-compose up' to create the development environmet
-# with the current code bind-mounted into the container for fast development
+# Development compose — web is bind-mounted for fast iteration.
+# Run `docker compose up -d --build` after changes.
+# For internet access: run `tailscale serve --funnel --bg localhost:2015` on the host (once).
 
 services:
   web:
@@ -11,5 +9,44 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./web:/var/www/web:Z
+    networks:
+      - app-net
+
+  auth:
+    build: ./auth
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+      - SMTP_HOST=${SMTP_HOST:-}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+      - SMTP_FROM=${SMTP_FROM:-}
+      - SITE_URL=${SITE_URL:-https://localhost}
+      - NTFY_TOPIC=${NTFY_TOPIC:-}
+    volumes:
+      - ./auth/whitelist.txt:/app/whitelist.txt:ro
+      - auth-data:/app/data
+    restart: unless-stopped
+    networks:
+      - app-net
+
+  caddy:
+    image: caddy:alpine
     ports:
-      - "8080:8080"
+      - "2015:2015"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+    restart: unless-stopped
+    depends_on:
+      - web
+      - auth
+    networks:
+      - app-net
+
+networks:
+  app-net:
+
+volumes:
+  auth-data:
+  caddy-data:
