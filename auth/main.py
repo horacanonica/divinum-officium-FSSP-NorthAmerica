@@ -303,6 +303,13 @@ async def signup_ordo(
     )
 
 
+@app.get("/auth/signup/request", response_class=HTMLResponse)
+async def signup_request_page(request: Request):
+    return templates.TemplateResponse(
+        "signup_request.html", {"request": request, "email": "", "error": None}
+    )
+
+
 @app.post("/auth/signup/request")
 async def signup_request(
     request: Request,

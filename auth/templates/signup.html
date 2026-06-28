@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Get Access — Divinum Officium{% endblock %}
 {% block content %}
-<div class="subtitle">Get Access</div>
+<div class="subtitle">Please enter the email on file in the FSSP Ordo Administrativus</div>
 
 {% if error %}<div class="error">{{ error }}</div>{% endif %}
 
@@ -14,4 +14,9 @@
 <div class="links">
   Already have an account? <a href="/auth/login">Sign in</a>
 </div>
+
+<hr style="margin: 1.25rem 0;">
+
+<p class="section-desc" style="text-align:center;">For those who don't have access to the Ordo email</p>
+<a href="/auth/signup/request" class="btn btn-outline" style="display:block;text-align:center;text-decoration:none;margin-top:0.75rem;">Request Access</a>
 {% endblock %}

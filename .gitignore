@@ -29,3 +29,6 @@ web/ordo-cache/
 # Auth secrets and private data
 .env
 auth/whitelist.txt
+
+# Generated propers bundles (produced by GitHub Actions, not committed)
+supplement-*.json
