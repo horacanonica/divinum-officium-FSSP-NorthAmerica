@@ -1,0 +1,9 @@
+[Officium]
+S. Thomae Mori Martyris
+
+[Rank]
+S. Thomae Mori Martyris, Patroni Principalis Dioecesis Arlingtoniensis;;Duplex I classis;;6;;ex C3
+
+[Rule]
+ex C3;
+9 lectiones

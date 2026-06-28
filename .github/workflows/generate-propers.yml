@@ -1,0 +1,60 @@
+name: Generate Propers Bundle
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Liturgical year to generate (leave blank for auto-detect)'
+        required: false
+        type: string
+  schedule:
+    # Nov 1 annually at 06:00 UTC — buffer before the new liturgical year
+    - cron: '0 6 1 11 *'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # required to create GitHub Releases
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Perl dependencies
+        run: sudo apt-get install -y --no-install-recommends libcgi-pm-perl
+
+      - name: Determine target year
+        id: year
+        run: |
+          if [ -n "${{ github.event.inputs.year }}" ]; then
+            echo "year=${{ github.event.inputs.year }}" >> "$GITHUB_OUTPUT"
+          else
+            YEAR=$(python3 -c "
+          from datetime import date
+          d = date.today()
+          print(d.year + 1 if d.month >= 11 else d.year)
+          ")
+            echo "year=$YEAR" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate supplement bundle
+        run: python3 scripts/generate_supplement.py ${{ steps.year.outputs.year }}
+
+      - name: Publish GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          YEAR=${{ steps.year.outputs.year }}
+          TAG="propers-$YEAR"
+          BUNDLE="supplement-$YEAR.json"
+
+          # Replace existing release if present
+          gh release delete "$TAG" --yes 2>/dev/null || true
+
+          gh release create "$TAG" \
+            --title "Propers Supplement Bundle — $YEAR" \
+            --notes "Auto-generated supplement bundle for liturgical year $YEAR.
+Generated $(date -u +%Y-%m-%d) from the FSSP North America calendar data.
+Download \`supplement-$YEAR.json\` and open it with the DO Client app." \
+            "$BUNDLE"

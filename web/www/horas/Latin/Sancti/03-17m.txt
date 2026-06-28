@@ -1,0 +1,9 @@
+[Officium]
+S. Patritii Episcopi et Confessoris
+
+[Rank]
+S. Patritii Episcopi et Confessoris, Patroni Secundarii Dioecesis Manchestriensis;;Duplex II classis;;5;;ex C4
+
+[Rule]
+ex C4;
+9 lectiones
