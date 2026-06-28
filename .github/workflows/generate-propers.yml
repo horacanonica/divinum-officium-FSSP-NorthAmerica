@@ -30,11 +30,7 @@ jobs:
           if [ -n "${{ github.event.inputs.year }}" ]; then
             echo "year=${{ github.event.inputs.year }}" >> "$GITHUB_OUTPUT"
           else
-            YEAR=$(python3 -c "
-          from datetime import date
-          d = date.today()
-          print(d.year + 1 if d.month >= 11 else d.year)
-          ")
+            YEAR=$(python3 -c "import datetime; d=datetime.date.today(); print(d.year+1 if d.month>=11 else d.year)")
             echo "year=$YEAR" >> "$GITHUB_OUTPUT"
           fi
 
@@ -48,13 +44,12 @@ jobs:
           YEAR=${{ steps.year.outputs.year }}
           TAG="propers-$YEAR"
           BUNDLE="supplement-$YEAR.json"
+          NOTES="Auto-generated supplement bundle for liturgical year $YEAR. Generated $(date -u +%Y-%m-%d). Download supplement-$YEAR.json and open it with the DO Client app."
 
           # Replace existing release if present
           gh release delete "$TAG" --yes 2>/dev/null || true
 
           gh release create "$TAG" \
-            --title "Propers Supplement Bundle — $YEAR" \
-            --notes "Auto-generated supplement bundle for liturgical year $YEAR.
-Generated $(date -u +%Y-%m-%d) from the FSSP North America calendar data.
-Download \`supplement-$YEAR.json\` and open it with the DO Client app." \
+            --title "Propers Supplement Bundle - $YEAR" \
+            --notes "$NOTES" \
             "$BUNDLE"
