@@ -1,13 +1,57 @@
-# divinum-officium
+# divinum-officium — FSSP North America Fork
 
 Data files and source code for the
-[Divinum Officium](http://www.divinumofficium.com/) project.
+[Divinum Officium](http://www.divinumofficium.com/) project, extended with
+parish Kalendaria for **FSSP North America** communities.
 
 This document is intended for people wishing to contribute to the project. To
 pray the office, please [visit the website](http://www.divinumofficium.com/).
 
 To generate standalone files (e.g. for electronic eBook readers) see
 [How to generate Divine Office files](standalone/tools/epubgen2/README.md).
+
+---
+
+## FSSP North America — Parish Propers
+
+This fork adds custom Kalendaria for FSSP parishes and an automated workflow that
+generates a **supplement bundle** containing the Office texts for all feasts
+unique to each parish calendar.
+
+### Parish Kalendaria
+
+Custom calendar files live in `web/www/Tabulae/`:
+
+| File | Calendar |
+|---|---|
+| `Nashua.txt` | St. Augustine, Nashua NH |
+| `Arlington.txt` | FSSP Arlington |
+| `Chesapeake.txt` | FSSP Chesapeake |
+| `Sacramento.txt` | FSSP Sacramento |
+| `Guadalajara.txt` | FSSP Guadalajara |
+
+Each line follows the Divinum Officium Kalendaria format:
+```
+MM-DD=FileRef~TransferRef=Feast Name=ClassNumber=
+```
+where `ClassNumber` is `1` (I Class), `2` (II Class), or `3` (Double / III Class).
+
+### Annual Bundle Generation
+
+A GitHub Actions workflow (`.github/workflows/generate-propers.yml`) runs automatically on **November 1** each year. It:
+
+1. Reads each parish Kalendarium to find feasts that differ from the parent calendar
+2. Calls `standalone/tools/epubgen2/EofficiumXhtml.pl` for each feast × 8 canonical hours in Latin and English
+3. Assembles `supplement-YYYY.json` (~8 MB) with all Office text
+4. Publishes it as a public GitHub Release tagged `propers-YYYY`
+
+The workflow can also be triggered manually from the **Actions** tab (useful after calendar edits or for testing a specific year).
+
+### Desktop App
+
+The companion app [divinum-officium-client](https://github.com/horacanonica/divinum-officium-client) downloads the bundle and generates printable PDFs or EPUBs on the user's machine — no server connection required after the initial download.
+
+---
 
 ## Contributing to the project
 
