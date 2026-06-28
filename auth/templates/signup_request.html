@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Request Access — Divinum Officium{% endblock %}
+{% block content %}
+<div class="subtitle">Request Access</div>
+
+<p class="section-desc" style="text-align:center;">
+  If you are a member of the FSSP, enter the email listed on the Ordo Administrativus.
+</p>
+<a href="/auth/signup" class="btn" style="margin-top:0.75rem;">← Try Ordo email</a>
+
+<hr style="margin: 1.5rem 0;">
+
+<p class="section-desc" style="text-align:center;margin-bottom:0.75rem;">
+  If you do not have access to this email, please fill out the form below to request access.
+</p>
+
+{% if error %}<div class="error">{{ error }}</div>{% endif %}
+
+<form method="post" action="/auth/signup/request">
+  <label for="full_name">Full Name</label>
+  <input type="text" id="full_name" name="full_name" required autofocus autocomplete="name">
+
+  <label for="apostolate_location">Apostolate Location</label>
+  <input type="text" id="apostolate_location" name="apostolate_location" required
+         placeholder="e.g. St. Mary's FSSP, Chesapeake, VA">
+
+  <label for="parish_email">Parish Email</label>
+  <input type="email" id="parish_email" name="parish_email" required autocomplete="off">
+
+  <label for="email">Login Email</label>
+  <input type="email" id="email" name="email" required value="{{ email }}" autocomplete="email">
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required autocomplete="new-password" minlength="8">
+
+  <label for="confirm_password">Confirm Password</label>
+  <input type="password" id="confirm_password" name="confirm_password" required autocomplete="new-password" minlength="8">
+
+  <button type="submit" class="btn btn-outline">Request Access</button>
+</form>
+
+<div class="links">
+  <a href="/auth/signup">← Use a different email</a>
+</div>
+{% endblock %}

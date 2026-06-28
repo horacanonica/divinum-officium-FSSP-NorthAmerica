@@ -25,3 +25,7 @@ web/cgi-bin/DivinumOfficium/data/*.storable
 
 # Ordo cache
 web/ordo-cache/
+
+# Auth secrets and private data
+.env
+auth/whitelist.txt

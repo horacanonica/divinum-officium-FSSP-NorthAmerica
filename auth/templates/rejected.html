@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Request Declined — Divinum Officium{% endblock %}
+{% block content %}
+<div class="subtitle">Request Declined</div>
+{% if found %}
+<p style="text-align:center;line-height:1.7;margin-top:0.5rem;color:#5a4a2e;">
+  The access request has been removed.
+</p>
+{% else %}
+<p style="text-align:center;line-height:1.7;margin-top:0.5rem;color:#5a4a2e;">
+  This request was not found — it may have already been processed.
+</p>
+{% endif %}
+{% endblock %}

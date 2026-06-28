@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Get Access — Divinum Officium{% endblock %}
+{% block content %}
+<div class="subtitle">Get Access</div>
+
+{% if error %}<div class="error">{{ error }}</div>{% endif %}
+
+<form method="post" action="/auth/signup">
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" required autofocus autocomplete="email">
+  <button type="submit" class="btn">Continue</button>
+</form>
+
+<div class="links">
+  Already have an account? <a href="/auth/login">Sign in</a>
+</div>
+{% endblock %}

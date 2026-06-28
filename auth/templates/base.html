@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Divinum Officium{% endblock %}</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f5f0e8;
+      color: #2c2416;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: #fffdf7;
+      border: 1px solid #c8b99a;
+      border-radius: 4px;
+      padding: 2.5rem 2rem;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .title {
+      text-align: center;
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #7a5c2e;
+      margin-bottom: 0.25rem;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.75rem;
+      color: #2c2416;
+    }
+    .cross {
+      text-align: center;
+      font-size: 1.4rem;
+      color: #7a5c2e;
+      margin-bottom: 0.5rem;
+    }
+    label {
+      display: block;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #5a4a2e;
+      margin-bottom: 0.3rem;
+      margin-top: 1rem;
+    }
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+      width: 100%;
+      padding: 0.55rem 0.75rem;
+      border: 1px solid #c8b99a;
+      border-radius: 3px;
+      font-size: 1rem;
+      font-family: inherit;
+      background: #faf8f2;
+      color: #2c2416;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    input:focus { border-color: #7a5c2e; }
+    .btn {
+      display: block;
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 0.65rem;
+      background: #7a5c2e;
+      color: #fffdf7;
+      border: none;
+      border-radius: 3px;
+      font-family: Georgia, serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn:hover { background: #5c4320; }
+    .error {
+      background: #fdf0ee;
+      border: 1px solid #d9998a;
+      color: #8b2e1e;
+      border-radius: 3px;
+      padding: 0.6rem 0.75rem;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .message {
+      background: #f0f5ee;
+      border: 1px solid #99b88a;
+      color: #2e5c1e;
+      border-radius: 3px;
+      padding: 0.6rem 0.75rem;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .links {
+      margin-top: 1.25rem;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+    .links a { color: #7a5c2e; text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
+    .divider { color: #c8b99a; margin: 0 0.4rem; }
+    hr { border: none; border-top: 1px solid #c8b99a; margin: 1.25rem 0 0; }
+    .section-head {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7a5c2e;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+    .section-desc {
+      font-size: 0.85rem;
+      color: #5a4a2e;
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #7a5c2e;
+      border: 1px solid #7a5c2e;
+    }
+    .btn-outline:hover { background: #f5ece0; }
+  </style>
+</head>
+<body>
+<div class="card">
+  <div class="cross">&#10013;</div>
+  <div class="title">Divinum Officium</div>
+  {% block content %}{% endblock %}
+</div>
+</body>
+</html>

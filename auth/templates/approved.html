@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Access Granted — Divinum Officium{% endblock %}
+{% block content %}
+<div class="subtitle">{% if already_done %}Already Processed{% else %}Access Granted{% endif %}</div>
+{% if already_done %}
+<p style="text-align:center;line-height:1.7;margin-top:0.5rem;color:#5a4a2e;">
+  This request has already been processed.
+</p>
+{% else %}
+<div class="message" style="text-align:center;">
+  &#10003; Access approved for <strong>{{ email }}</strong>.
+</div>
+<p style="text-align:center;line-height:1.7;margin-top:1rem;color:#5a4a2e;">
+  The user may now sign in with the password they set during registration.
+</p>
+{% endif %}
+{% endblock %}
