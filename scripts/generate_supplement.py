@@ -90,15 +90,20 @@ def parse_kalendaria(filepath):
     return feasts
 
 
-def generate_hora_html(calendar_name, date_str, hora, year):
-    """Call EofficiumXhtml.pl and return the HTML string."""
+def generate_hora_html(calendar_name, date_str, hora, year, lang):
+    """Call EofficiumXhtml.pl and return the HTML string for a single language.
+
+    Passing lang2=lang (same as lang1) sets $only=1 in the Perl script,
+    which suppresses the second-language column and produces single-language output.
+    Without lang2, the script defaults lang2='English', giving bilingual output.
+    """
     month, day = date_str.split("-")
     date_param = f"{month}-{day}-{year}"
     version_enc = quote(calendar_name, safe="")
     query = (
         f"date1={date_param}&command=pray{hora}"
         f"&version={version_enc}&testmode=regular"
-        f"&lang1=Latin&nofancychars=1"
+        f"&lang1={lang}&lang2={lang}&nofancychars=1"
     )
     try:
         result = subprocess.run(
@@ -152,8 +157,12 @@ def main():
             horas_content = {}
             for hora in HORAS:
                 print(f"      {hora}...", end=" ", flush=True)
-                html = generate_hora_html(calendar_name, feast["date"], hora, year)
-                horas_content[hora] = extract_body(html)
+                html_la = generate_hora_html(calendar_name, feast["date"], hora, year, "Latin")
+                html_en = generate_hora_html(calendar_name, feast["date"], hora, year, "English")
+                horas_content[hora] = {
+                    "latin": extract_body(html_la),
+                    "english": extract_body(html_en),
+                }
                 print("done", flush=True)
 
             feast_list.append({
