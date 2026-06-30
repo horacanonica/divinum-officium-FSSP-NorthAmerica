@@ -1,4 +1,4 @@
-const CACHE = 'do-v1';
+const CACHE = 'do-v2';
 const PRECACHE = [
   '/',
   '/www/style/main.css',
@@ -22,11 +22,20 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  // Only handle GET requests — POST (form submissions) are not cacheable
+  if (e.request.method !== 'GET') return;
+
   const url = e.request.url;
+
   if (url.includes('/cgi-bin/')) {
-    // Network-first for dynamic pages; fall back to cached home on offline
+    // Network-first: fetch live, save to cache, serve cache when offline
     e.respondWith(
-      fetch(e.request).catch(() => caches.match('/'))
+      caches.open(CACHE).then(cache =>
+        fetch(e.request).then(response => {
+          if (response.ok) cache.put(e.request, response.clone());
+          return response;
+        }).catch(() => caches.match(e.request))
+      )
     );
   } else {
     // Cache-first for static assets
