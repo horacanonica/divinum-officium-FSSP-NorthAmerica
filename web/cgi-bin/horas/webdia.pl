@@ -49,6 +49,9 @@ $viewport_tag
   <META NAME="keywords" CONTENT="Divine Office, Breviarium, Liturgy, Traditional, Zsolozsma">
   <META NAME="Copyright" CONTENT="Like GNU">
   <meta name="color-scheme" content="dark light">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#800000">
+  <link rel="apple-touch-icon" href="/apple-icon-180x180.png">
   <STYLE>
     /* https://www.30secondsofcode.org/css/s/offscreen/ */
     .offscreen {
@@ -151,7 +154,7 @@ sub htmlEnd {
   if ($error) { print "<P ALIGN='CENTER'><FONT COLOR='red'>$error</FONT></P>\n"; }
   if ($debug) { print "<P ALIGN='center'><FONT COLOR='blue'>$debug</FONT></P>\n"; }
   horasjsend();
-  print "</FORM></BODY></HTML>";
+  print "<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js');</script></FORM></BODY></HTML>";
 }
 
 #*** htmlInput()
