@@ -45,7 +45,8 @@ $days = 90 if $days > 90;
 my $lang_raw = $cgi->param('lang') // 'lat';
 json_error(400, "Invalid lang — use lat, en, or both") unless $lang_raw =~ /^(lat|en|both)$/;
 my $lang1 = ($lang_raw eq 'en') ? 'English' : 'Latin';
-my $lang2 = ($lang_raw eq 'both') ? 'English' : '';
+# When lang2 == lang1, DO engine sets $only=1 (single-column). Empty lang2 defaults to English.
+my $lang2 = ($lang_raw eq 'both') ? 'English' : $lang1;
 
 my $start_raw = $cgi->param('start') // '';
 my ($sy, $sm, $sd);
