@@ -9,7 +9,7 @@
 #     → save token as GitHub secret FLY_API_TOKEN_EPUB
 #   fly deploy --config fly-epub.toml --remote-only
 
-app = "divinum-officium-epub"   # ← change to your chosen name
+app = "divinum-officium-epub"
 primary_region = "iad"
 
 [build]

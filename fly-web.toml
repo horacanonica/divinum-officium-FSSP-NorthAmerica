@@ -7,7 +7,7 @@
 #     → save token as GitHub secret FLY_API_TOKEN_WEB
 #   fly deploy --config fly-web.toml --remote-only
 
-app = "divinum-officium-fssp"   # ← change to your chosen name
+app = "divinum-officium-fssp"
 primary_region = "iad"
 
 [build]
