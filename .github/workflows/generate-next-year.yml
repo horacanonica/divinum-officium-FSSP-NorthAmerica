@@ -14,7 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - name: Install flyctl
+        run: curl -L https://fly.io/install.sh | sh && echo "$HOME/.fly/bin" >> "$GITHUB_PATH"
       - name: Generate EPUBs
         run: |
           APP=$(sed -n 's/^app = "\(.*\)"/\1/p' fly-epub.toml)
@@ -23,7 +24,7 @@ jobs:
             YEAR=$(date -d '+1 year' +%Y)
           fi
           echo "Generating EPUBs for year $YEAR in app: $APP"
-          fly ssh console --app "$APP" -C "python3 /app/gen_all.py --year $YEAR"
+          flyctl ssh console --app "$APP" -C "python3 /app/gen_all.py --year $YEAR"
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_EPUB }}
         timeout-minutes: 60
