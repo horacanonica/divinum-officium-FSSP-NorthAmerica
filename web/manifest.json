@@ -2,7 +2,7 @@
   "name": "Divinum Officium",
   "short_name": "Div. Officium",
   "description": "Traditional Roman Catholic Divine Office — FSSP North America",
-  "start_url": "/",
+  "start_url": "/cgi-bin/horas/Pofficium.pl?interlinear=0",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#800000",

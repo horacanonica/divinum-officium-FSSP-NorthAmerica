@@ -33,7 +33,7 @@ PrintTag
   $onload && ($onload = " onload=\"$onload\";");
 
   my $is_mobile = ($officium eq 'Pofficium.pl');
-  my $viewport_tag = $is_mobile ? '  <META NAME="viewport" CONTENT="width=device-width, initial-scale=0.75">' : '';
+  my $viewport_tag = '  <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">';
   my $gf = our $glossfont;
   my $gloss_color = ($gf =~ /(\#[0-9a-fA-F]+)\s*$/ || $gf =~ /([a-zA-Z]+)\s*$/) ? $1 : '';
   $gloss_color = '' if $gloss_color eq 'italic' || $gloss_color eq 'bold';
@@ -63,6 +63,32 @@ $viewport_tag
       padding: 0;
       position: absolute;
       width: 1px;
+    }
+    .pwa-nav {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #800000;
+      z-index: 9999;
+      justify-content: space-around;
+      align-items: center;
+      padding: 6px 0;
+      padding-bottom: max(6px, env(safe-area-inset-bottom));
+    }
+    \@media (display-mode: standalone) {
+      .pwa-nav { display: flex; }
+      body { padding-bottom: 56px; }
+    }
+    .pwa-nav button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.6em;
+      padding: 4px 20px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
     }
     h1, h2 {
       text-align: center;
@@ -154,7 +180,7 @@ sub htmlEnd {
   if ($error) { print "<P ALIGN='CENTER'><FONT COLOR='red'>$error</FONT></P>\n"; }
   if ($debug) { print "<P ALIGN='center'><FONT COLOR='blue'>$debug</FONT></P>\n"; }
   horasjsend();
-  print "<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js');</script></FORM></BODY></HTML>";
+  print "<div class='pwa-nav'><button onclick='history.back()' title='Back'>&#8592;</button><button onclick=\"location.href='/cgi-bin/horas/Pofficium.pl'\" title='Home'>&#8962;</button><button onclick='history.forward()' title='Forward'>&#8594;</button></div><script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js');</script></FORM></BODY></HTML>";
 }
 
 #*** htmlInput()
