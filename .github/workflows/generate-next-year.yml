@@ -27,4 +27,4 @@ jobs:
           flyctl ssh console --app "$APP" -C "python3 /app/gen_all.py --year $YEAR"
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_EPUB }}
-        timeout-minutes: 60
+        timeout-minutes: 120
