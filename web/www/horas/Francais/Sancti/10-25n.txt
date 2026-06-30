@@ -1,0 +1,34 @@
+[Officium]
+Saint Isidore le Laboureur, Confesseur
+
+[Rank]
+Saint Isidore le Laboureur, Confesseur;;Duplex;;3;;vide C5
+
+[Oratio]
+Ô Dieu miséricordieux, accordez-nous, par l'intercession du bienheureux Isidore le Laboureur, votre confesseur, de ne point nourrir de sentiments d'orgueil ; mais que, aidés par ses mérites et guidés par son exemple, nous vous servions toujours avec l'humilité qui vous est agréable.
+$Per Dominum
+
+[Lectio94]
+Isidore, né à Madrid, travaillait la terre comme journalier ; mais, comme un vrai laboureur prospère connaissant ses véritables biens, il sut aussi enrichir le champ de son âme d'une récolte de vertus. Car il cherchait d'abord le royaume de Dieu, en visitant les églises, surtout celles dédiées à la Sainte Vierge, très tôt le matin, avant d'aller au travail. Agacé par ces retards, son maître monta un matin à un endroit d'où il l'attendait pour le réprimander. Mais il vit Isidore entre deux anges qui labouraient pour lui avec deux attelages de bœufs. Servant Dieu dans ses frères, il distribuait le salaire de son travail aux nécessiteux. Un jour, ayant invité des pauvres à dîner, il put les rassasier tous avec la portion de nourriture qui lui avait été réservée. En une autre occasion, par un été brûlant, en frappant le sol avec son aiguillon, il fit jaillir une source et étancha la soif de son maître. Parvenu à un âge avancé, il s'endormit dans le Seigneur ; son corps, encore incorrupt, fut transféré du cimetière de Saint-André à l'église, placé en un lieu d'honneur, et des miracles attestèrent sa gloire. Grégoire XV l'inscrivit dans le catalogue des Saints quatre cents ans plus tard ; et le Pape Pie XII le déclara Patron des agriculteurs des États-Unis d'Amérique du Nord.
+&teDeum
+
+[Capitulum Laudes]
+!Jac 5:7-8
+v. Voici que le laboureur attend le précieux fruit de la terre, prenant patience jusqu'à ce qu'il reçoive la pluie de la première et de l'arrière-saison. Soyez vous aussi patients ; affermissez vos cœurs, car la venue du Seigneur est proche.
+$Deo gratias
+
+[Ant 2]
+Le semeur sortit * pour semer sa semence, et une partie tomba en bonne terre et, ayant levé, porta du fruit au centuple.
+
+[Capitulum Sexta]
+!Jac 5:11
+v. Voici que nous appelons heureux ceux qui ont souffert. Vous avez entendu parler de la patience de Job et vous avez vu la fin que le Seigneur lui a accordée, car le Seigneur est miséricordieux et compatissant.
+$Deo gratias
+
+[Capitulum Nona]
+!Jac 5:16-18
+v. Car la prière persévérante du juste est d'une grande efficacité. Élie était un homme de même nature que nous ; il pria avec instance pour qu'il ne plût pas sur la terre, et il ne plut pas pendant trois ans et six mois. Il pria de nouveau, et le ciel donna de la pluie et la terre produisit son fruit.
+$Deo gratias
+
+[Ant 3]
+Voici un homme * qui fut laboureur, car il prit Adam pour modèle dès sa jeunesse afin de servir le Dieu vivant.

@@ -1,0 +1,19 @@
+[Officium]
+San Pedro Claver, Confesor
+
+[Rank]
+San Pedro Claver, Confesor;;Duplex;;3;;vide C5
+
+[Oratio]
+Oh Dios, que, para llamar al conocimiento de tu nombre a los africanos reducidos a esclavitud, fortaleciste al bienaventurado Pedro con admirable caridad y paciencia en su asistencia: concédenos por su intercesión; que, buscando las cosas de Jesucristo, amemos al prójimo de obra y de verdad.
+$Per eumdem
+
+[Lectio94]
+Pedro Claver, nacido en Cataluña, se entregó a la Compañía de Jesús siendo aún joven de costumbres muy inocentes. Mientras estudiaba filosofía, fue instruido en los misterios de la virtud más elevada por San Alfonso Rodríguez. Ordenado sacerdote en Cartagena de Indias, en América Meridional, se consagró plenamente, por juramento solemne, a los africanos traídos allí por un vergonzoso comercio de esclavos. En socorrerles, nutrirles, cuidarles, catequizarles y bautizarles, casi no puede decirse con qué paciencia y caridad trabajó durante más de cuarenta años, siendo también ilustrado por Dios con el don de sanación. Después de sus fatigas diarias, se entregaba a la oración hasta bien entrada la noche y a áspera penitencia, de la que tenía un apetito insaciable. Había alcanzado los setenta y un años cuando, aquejado de dolencia corporal, se vio obligado a languidecer en su aposento durante cuatro años; y al fin, en el día natal de la Madre de Dios, a quien había venerado con ternísimo afecto, partió hacia los santos. León XIII le inscribió en el catálogo de los Santos y le constituyó patrón celestial especial de las sagradas misiones entre los africanos.
+&teDeum
+
+[Ant 2]
+Bien hecho, * siervo bueno y fiel; porque fuiste fiel en lo poco, te pondré sobre lo mucho: entra en el gozo de tu Señor.
+
+[Ant 3]
+Este varón, * despreciando el mundo y triunfando de las cosas terrenas, atesoró riquezas en el cielo con su palabra y sus obras.

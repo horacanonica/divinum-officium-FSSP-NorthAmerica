@@ -1,0 +1,9 @@
+[Officium]
+San Isidro Labrador, Confesor
+
+[Rank]
+San Isidro Labrador, Confesor;;Duplex;;3;;vide C5
+
+[Oratio]
+Oh Dios misericordioso, concédenos, por la intercesión del bienaventurado Isidro Labrador, tu confesor, no enorgullecernos; sino que, ayudados por sus méritos y guiados por su ejemplo, te sirvamos siempre con la humildad que te agrada.
+$Per Dominum

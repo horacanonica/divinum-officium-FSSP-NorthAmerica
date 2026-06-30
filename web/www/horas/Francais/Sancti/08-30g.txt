@@ -1,0 +1,37 @@
+[Officium]
+Sainte Rose de Sainte-Marie de Lima, Vierge
+
+[Rank]
+Sainte Rose de Sainte-Marie de Lima, Vierge et Patronne de toutes les Amériques;;Duplex I classis;;6;;vide C6a
+
+[Oratio]
+Ô Dieu, généreux donateur de tous les biens, tout-puissant, qui avez voulu que la bienheureuse Rose, prévenue par la rosée de la grâce céleste, fleurît parmi les peuples des Indes par la beauté de la virginité et de la patience : accordez à nous vos serviteurs que, courant dans le parfum de sa douceur, nous soyons jugés dignes de devenir la bonne odeur du Christ.
+$Qui tecum
+
+[Lectio4]
+Première fleur de sainteté de l'Amérique du Sud, la vierge Rose, née à Lima de parents chrétiens, brilla dès son berceau par les signes de sa future sainteté. Car le visage de l'enfant fut miraculeusement transfiguré en l'image d'une rose, donnant occasion à ce nom ; auquel la Vierge Mère de Dieu ajouta ensuite un surnom, lui enjoignant d'être désormais appelée Rose de Sainte-Marie. À l'âge de cinq ans, elle fit le vœu de virginité perpétuelle. Étant devenue plus grande, de peur que ses parents ne la contraignissent au mariage, elle se coupa secrètement sa très belle chevelure. Adonnée à des jeûnes au-delà de toute mesure humaine, elle passa des Carêmes entiers sans pain, ne subsistant chaque jour que sur cinq grains de citron.
+_
+
+[Lectio5]
+Ayant pris l'habit du Tiers-Ordre de saint Dominique, elle doubla ses anciennes austérités de vie : elle entremêla çà et là de petites aiguilles dans un cilice long et très rude ; sous son voile elle portait nuit et jour une couronne armée en dedans de pointes aiguës. Marchant sur les pas ardus de sainte Catherine de Sienne, elle ceignit ses reins d'une chaîne de fer enroulée en trois tours. Elle se fit un lit de rondins noueux, remplissant les vides de leurs jointures de fragments de tessons. Elle se construisit une cellule très étroite dans le coin le plus reculé du jardin, où, adonnée à la contemplation des choses célestes, consumant son pauvre corps par de fréquentes disciplines, le jeûne et les veilles, mais vivifiée en esprit, elle écrasa et vainquit intrépidement les illusions des démons, sortant victorieuse de fréquents combats.
+_
+
+[Lectio6]
+Cruellement tourmentée par les souffrances des maladies, les insultes de ses proches et les morsures des langues, elle se plaignait de ne pas encore souffrir suffisamment selon ses mérites. Pendant quinze ans, dépérissant misérablement pendant plusieurs heures chaque jour dans la désolation de l'esprit et l'aridité, elle supporta courageusement des angoisses plus amères que toute mort. Dès lors elle commença à abonder en délices célestes, à être éclairée de visions, à se fondre en ardeurs séraphiques. Merveilleusement familière dans ses fréquentes apparitions avec son ange gardien, avec sainte Catherine de Sienne et avec la Vierge Mère de Dieu, elle mérita d'entendre du Christ ces paroles : Rose de mon cœur, sois mon épouse. Enfin, heureusement introduite dans le paradis de cet Époux et resplendissant de très nombreux miracles avant et après sa mort, le Souverain Pontife Clément X l'inscrivit par un rite solennel dans le catalogue des saintes Vierges.
+_
+
+[Lectio7]
+@Commune/C6a:Lectio7
+
+[Lectio8]
+@Commune/C6a:Lectio8
+
+[Lectio9]
+@Commune/C6a:Lectio9
+
+[Lectio94]
+Première fleur de sainteté de l'Amérique du Sud, la vierge Rose, née à Lima de parents chrétiens, brilla dès son berceau par les signes de sa future sainteté ; car le visage de l'enfant fut miraculeusement transfiguré en l'image d'une rose, donnant occasion à ce nom. De peur que ses parents ne la contraignissent au mariage, elle se coupa secrètement sa très belle chevelure. Singulière fut l'austérité de sa vie. Ayant pris l'habit du Tiers-Ordre de saint Dominique, elle marcha sur les pas ardus de sainte Catherine de Sienne. Pendant quinze ans, dépérissant misérablement plusieurs heures par jour dans la désolation de l'esprit et l'aridité, elle porta d'une âme courageuse des angoisses plus amères que toute mort. Merveilleusement familière dans ses fréquentes apparitions avec son ange gardien, avec sainte Catherine de Sienne et avec la Vierge Mère de Dieu, elle mérita d'entendre du Christ ces paroles : Rose de mon cœur, sois mon épouse. Le pape Clément X l'inscrivit, illustre par de nombreux miracles avant et après sa mort, dans le catalogue des saintes Vierges.
+&teDeum
+
+[Versum 0]
+@Commune/C6::s/N\./Rosa/

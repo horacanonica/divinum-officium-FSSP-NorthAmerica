@@ -1,0 +1,37 @@
+[Officium]
+Die heilige Rosa von der heiligen Maria von Lima, Jungfrau
+
+[Rank]
+Hl. Rosa von der hl. Maria von Lima, Jungfrau und Patronin aller Amerika;;Duplex I classis;;6;;vide C6a
+
+[Oratio]
+O Gott, freigebiger Spender aller Güter, Allmächtiger, der du wolltest, dass die selige Rosa, durch den Tau der himmlischen Gnade zuvorkommend begnadigt, unter den Völkern der Indianer im Schmuck der Jungfräulichkeit und Geduld erblühe: gewähre uns deinen Knechten, dass wir, im Duft ihrer Süßigkeit laufend, gewürdigt werden, ein guter Duft Christi zu werden.
+$Qui tecum
+
+[Lectio4]
+Die erste Blume der Heiligkeit Südamerikas, die Jungfrau Rosa, von christlichen Eltern in Lima geboren, glänzte schon von der Wiege an durch Zeichen ihrer zukünftigen Heiligkeit. Denn das Antlitz des Kindes wurde wunderbar in das Bild einer Rose verwandelt, was Anlass zu diesem Namen gab; dem die Jungfrau und Gottesmutter nachher einen Beinamen hinzufügte, indem sie gebot, sie fortan Rosa von der heiligen Maria zu nennen. Im Alter von fünf Jahren legte sie das Gelübde der ewigen Jungfräulichkeit ab. Als sie herangewachsen war, schnitt sie sich, damit die Eltern sie nicht zur Ehe zwingen könnten, heimlich ihr schönstes Haar ab. Dem Fasten über menschliches Maß hinaus hingegeben, verbrachte sie ganze Fastenzeiten ohne Brot und nährte sich täglich von nur fünf Körnern einer Zitrusfrucht.
+_
+
+[Lectio5]
+Nachdem sie das Gewand des Dritten Ordens des heiligen Dominikus angenommen hatte, verdoppelte sie ihre bisherigen Abtötungen des Lebens: in ein langes und sehr raues Bußhemd fügte sie hier und dort kleine Nadeln ein; unter dem Schleier trug sie bei Tag und Nacht eine Krone, die innen mit scharfen Spitzen besetzt war. Auf den steilen Pfaden der heiligen Katharina von Siena wandelnd, umgürtete sie ihre Lenden mit einer eisernen Kette, die dreifach gewunden war. Sie baute sich ein Lager aus knorrigen Holzblöcken und füllte die Hohlräume in ihren Fugen mit Scherben zerbrochener Tonwaren. Sie errichtete sich eine sehr enge Zelle im hintersten Winkel des Gartens, wo sie, der Betrachtung himmlischer Dinge hingegeben und ihren schwachen Leib durch häufige Bußübungen, Fasten und Nachtwachen abtötend, aber im Geiste gestärkt, die Erscheinungen der Dämonen furchtlos zermalmt und besiegt und sie in häufigen Kämpfen überwunden hat.
+_
+
+[Lectio6]
+Von den Qualen der Krankheiten, den Beleidigungen der Hausgenossen und dem Stachel böser Zungen hart bedrängt, beklagte sie sich, noch nicht genug nach Verdienst zu leiden. Fünfzehn Jahre lang, mehrere Stunden täglich in der Trostlosigkeit des Geistes und der Dürre auf erbärmlichste Weise hinsechend, trug sie mit starkem Mut Kämpfe, die bitterer waren als jeder Tod. Von da an begann sie an himmlischen Wonnen zu überströmen, durch Visionen erleuchtet zu werden und in seraphischen Gluten zu zerschmelzen. Ihrem Schutzengel, der heiligen Katharina von Siena und der Jungfrau und Gottesmutter in deren häufigen Erscheinungen wunderbar vertraut, verdiente sie es, von Christus diese Worte zu hören: Rosa meines Herzens, sei meine Braut. Endlich, glücklich in das Paradies dieses Bräutigams eingeführt und durch sehr viele Wunder vor und nach ihrem Tod leuchtend, schrieb der Papst Klemens X. sie mit feierlichem Ritus in den Katalog der heiligen Jungfrauen ein.
+_
+
+[Lectio7]
+@Commune/C6a:Lectio7
+
+[Lectio8]
+@Commune/C6a:Lectio8
+
+[Lectio9]
+@Commune/C6a:Lectio9
+
+[Lectio94]
+Die erste Blume der Heiligkeit Südamerikas, die Jungfrau Rosa, von christlichen Eltern in Lima geboren, glänzte schon von der Wiege an durch Zeichen zukünftiger Heiligkeit; denn das Antlitz des Kindes wurde wunderbar in das Bild einer Rose verwandelt, was Anlass zu ihrem Namen gab. Damit die Eltern sie nicht zur Ehe zwingen könnten, schnitt sie sich heimlich ihr schönstes Haar ab. Einzigartig war die Strenge ihres Lebens. Nachdem sie das Gewand des Dritten Ordens des heiligen Dominikus angenommen hatte, wandelte sie auf den steilen Pfaden der heiligen Katharina von Siena. Fünfzehn Jahre lang, mehrere Stunden täglich in der Trostlosigkeit des Geistes und der Dürre hinsechend, trug sie mit starkem Mut Kämpfe, die bitterer waren als jeder Tod. Ihrem Schutzengel, der heiligen Katharina von Siena und der Jungfrau und Gottesmutter in deren häufigen Erscheinungen wunderbar vertraut, verdiente sie es, von Christus diese Worte zu hören: Rosa meines Herzens, sei meine Braut. Papst Klemens X. schrieb sie, durch viele Wunder vor und nach ihrem Tod berühmt, in den Katalog der heiligen Jungfrauen ein.
+&teDeum
+
+[Versum 0]
+@Commune/C6::s/N\./Rosa/

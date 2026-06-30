@@ -1,0 +1,13 @@
+[Officium]
+Blessed Bartholomew Gutierrez, Martyr
+
+[Rank]
+Blessed Bartholomew Gutierrez, Martyr;;Duplex;;3;;vide C2
+
+[Oratio]
+Grant, we beseech Thee, O almighty God, that we who keep the festival of Blessed Bartholomew Thy Martyr may be strengthened by his intercession in love of Thy Name.
+$Per Dominum
+
+[Lectio94]
+Bartholomew Gutierrez, a Mexican, a member of the Order of Hermits of Saint Augustine, sent to Japan, converted countless souls to the faith with great zeal for preaching the word of God. Seized by command of the emperor and after a long imprisonment, he was tortured for thirty days with boiling sulphurous water on Mount Unzen; and at last at Nagasaki, together with the Blessed Vincent de Saint Anthony and Francis de Jesus of the Augustinian Order, he was put to death by slow fire on the third of the Nones of September in the year 1632, and their relics were cast into the sea lest they be gathered by Christians. Pius IX enrolled him in the year 1867, together with two hundred and five other Martyrs of Japan, in the catalogue of the Blessed.
+&teDeum

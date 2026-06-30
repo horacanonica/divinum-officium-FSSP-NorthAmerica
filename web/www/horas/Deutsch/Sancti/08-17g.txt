@@ -1,0 +1,13 @@
+[Officium]
+Der selige Bartholomäus Laurel, Märtyrer
+
+[Rank]
+Sel. Bartholomäus Laurel, Märtyrer;;Duplex;;3;;vide C2
+
+[Oratio]
+Gib uns, wir bitten dich, o Herr, die ruhmreichen Verdienste des seligen Bartholomäus, deines Märtyrers, so zu verehren, dass wir nach seinem Beispiel dir durch Demut und Standhaftigkeit im Glauben gefallen.
+$Per Dominum
+
+[Lectio94]
+Bartholomäus Laurel, geboren in der Diözese Puebla de los Ángeles in Mexiko, legte seine feierlichen Gelübde in der franziskanischen Familie der alten Observanz in Morelia ab. Nachdem er vier Jahre lang mit größter Demut und Liebe das Amt des Krankenpflegers in einem Hospital in Manila versehen hatte, wurde er von dem apostolischen Mann Franz von Santa María nach Japan gerufen; wo er heimlich unter den Gläubigen in der Heilkunst und im Glaubensunterricht wirkte, bis er zusammen mit seinem Lehrer gefangen genommen und in Haft geworfen wurde. Nach drei Monaten Gefangenschaft wurde er am sechzehnten Tage vor den Kalenden des September im Jahre 1627 in Nagasaki standhaft zusammen mit anderen Märtyrern durch langsames Feuer hingerichtet. Leo XIII. gewährte der Kirche von Mexiko ein eigenes Offizium und eine eigene Messe. Pius IX. nahm ihn im Jahre 1867 in die Zahl der Seligen auf.
+&teDeum

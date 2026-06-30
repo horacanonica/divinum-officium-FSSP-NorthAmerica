@@ -1,0 +1,13 @@
+[Officium]
+Beato Sebastián de Aparicio, Confesor
+
+[Rank]
+Beato Sebastián de Aparicio, Confesor;;Duplex;;3;;vide C5
+
+[Oratio]
+Oh Dios, que hiciste que el beato Sebastián, tu confesor, caminase en sencillez de corazón y le colmaste de dones celestiales: concede propicio que, por su intercesión, podamos servirte con corazones puros y alcanzar los dones de tu gracia.
+$Per Dominum
+
+[Lectio94]
+Sebastián de Aparicio, nacido en Gudiña, en España, pasó a la Nueva España, donde, repartiendo sus bienes en obras pías, contrajo dos matrimonios que, con el consentimiento de ambas esposas, dejó sin consumar. Al llegar a los setenta años fue admitido como hermano lego en la familia de los Frailes Menores Descalzos. Tras su profesión solemne, se distinguió por notable simplicidad, humildad, paciencia y singular piedad hacia el Santísimo Sacramento; también se refiere que fue adornado con visiones angélicas y el don de los milagros. Descansó en el Señor en Puebla de los Ángeles, cerca de los cien años de edad. El Papa Pío VI le inscribió en el número de los Bienaventurados.
+&teDeum

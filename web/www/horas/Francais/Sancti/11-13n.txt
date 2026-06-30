@@ -1,0 +1,114 @@
+[Officium]
+Sainte Françoise-Xavière Cabrini, Vierge
+
+[Invit]
+Le Roi des Vierges, le Seigneur, * Venez, adorons-le.
+
+[Hymnus Vespera]
+v. Que la cour des bienheureux du ciel
+Retentisse de joyeux cantiques ;
+Que la terre soumise ajoute ses applaudissements
+D'un pôle à l'autre en harmonie.
+_
+Françoise, couverte d'une nuée de gloire,
+Suivant diligemment les traces de Xavier,
+Triomphe désormais parmi les célestes,
+Revêtue de sa couronne éternelle.
+_
+Dès la plus tendre enfance,
+Consumée d'amour pour Jésus,
+Elle méditait en son cœur avec constance
+De le porter à toutes les nations.
+_
+Voici qu'une voix divine poussa la colombe
+Loin du nid de sa patrie ;
+Vers les confins les plus lointains du monde
+Elle s'élança, encore et encore, sans relâche.
+_
+Honneur, gloire et louange au Père,
+Au Fils et au Saint-Esprit,
+Maintenant et dans tous les siècles,
+Dans les siècles des siècles. Amen.
+Amen.
+
+[Oratio]
+Seigneur Jésus-Christ, qui, pour gagner des âmes à vous-même, avez conduit votre sainte vierge Françoise, embrasée de l'amour de votre Très Saint Cœur, à travers les contrées du monde, et par elle avez suscité dans votre Église une nouvelle famille de vierges : faites, nous vous supplions, que par son intercession nous revêtions les vertus de ce même Cœur et soyons trouvés dignes de parvenir à l'éternel port du bonheur.
+$Qui vivis
+
+[Hymnus Matutinum]
+v. Du Cœur de Jésus Françoise reçoit des flammes
+Qui la poussent, messagère fidèle, en tout hâte,
+Vers les contrées les plus lointaines de la terre,
+Portant la foi avec son ardeur et sa grâce.
+_
+Partout où elle passe, à l'instant
+S'exhalent les lys d'un doux parfum ;
+La terre, autrefois hérissée d'épines,
+Revêt de verdure sous son sillage bénin.
+_
+Les emigrants d'Italie, dispersés
+À travers toutes les contrées du monde,
+Ont trouvé en elle une mère dévouée,
+Prompte à alléger leurs fardeaux de leur vie profonde.
+_
+Ni la fureur des mers en furie,
+Ni les sommets couverts de neige,
+Ni les régions brûlantes du midi
+N'ont pu arrêter cette vaillante femme en son égide.
+_
+Honneur, gloire et louange au Père,
+Au Fils et au Saint-Esprit,
+Maintenant et dans tous les siècles,
+Dans les siècles des siècles. Amen.
+Amen.
+
+[Lectio94]
+Françoise-Xavière, née dans la ville de Sant'Angelo, dans le diocèse de Lodi, dès ses premières années consacra sa vie à Dieu. À l'âge de treize ans, elle fit vœu de virginité au Très Saint Cœur de Jésus. Ensuite institutrice à Lodi, l'évêque la nomma directrice d'un orphelinat et l'encouragea également à fonder une nouvelle congrégation religieuse dédiée aux missions. Ainsi, à l'âge de trente ans, dans la chapelle de Notre-Dame des Grâces à Codogno, elle posa les fondements de l'Institut des Sœurs Missionnaires du Sacré-Cœur. Incertaine quant au lieu de son œuvre missionnaire, elle reconnut dans la parole de Léon XIII lui ordonnant d'aller en Occident la volonté de Dieu. Elle traversa l'océan vingt-quatre fois et mérita en Amérique du Nord le titre de mère des Italiens. Son esprit et son cœur étaient en union constante avec Dieu, en qui elle mettait toute sa confiance. Elle saluait la Bienheureuse Vierge Marie comme la Mère de sa Congrégation. Elle propagea merveilleusement son Institut, comme en témoignent les soixante-sept maisons qu'elle fonda elle-même. Sa vie s'acheva à Chicago le 22 décembre 1917, et ses restes furent transférés à New York. Elle fut béatifiée par Pie XI et canonisée par Pie XII.
+&teDeum
+
+[Hymnus Laudes]
+v. L'amour divin de Jésus,
+Toi seul accomplis de grandes œuvres,
+Faisant même des vierges de fervents apôtres,
+Enflammés du zèle des envoyés.
+_
+Par toi la noble Françoise a brillé,
+Méprisant le siècle, forte dans la foi,
+Dépassant les faiblesses de son sexe,
+Elle répandit la gloire de Dieu jusqu'aux confins.
+_
+Ô Bienheureuse Mère, regarde
+Du ciel avec bonté tes filles,
+Fais croître et fleurir ton œuvre,
+Que la vertu resplandisse sans cesse.
+_
+Va fléchir le Cœur de Jésus,
+Pour qu'il rassemble tous les peuples en un,
+Et obtiens-nous la grâce que nous désirons :
+Des flammes d'amour semblables aux tiennes.
+_
+Honneur, gloire et louange au Père,
+Au Fils et au Saint-Esprit,
+Maintenant et dans tous les siècles,
+Dans les siècles des siècles. Amen.
+Amen.
+
+[Capitulum Laudes]
+!2 Cor 10:17-18
+v. Frères : Que celui qui se glorifie se glorifie dans le Seigneur. Car ce n'est pas celui qui se recommande lui-même qui est approuvé, mais celui que Dieu recommande.
+$Deo gratias
+
+[Versum 2]
+V. La grâce a été répandue sur vos lèvres.
+R. C'est pourquoi Dieu vous a bénie pour toujours.
+
+[Ant 2]
+Le royaume des cieux * est semblable à un marchand qui cherche de belles perles ; ayant trouvé une perle de grand prix, il s'en alla vendre tout ce qu'il avait et l'acheta.
+
+[Capitulum Vespera]
+!2 Cor 10:17-18
+v. Frères : Que celui qui se glorifie se glorifie dans le Seigneur. Car ce n'est pas celui qui se recommande lui-même qui est approuvé, mais celui que Dieu recommande.
+$Deo gratias
+
+[Ant 3]
+Viens, Épouse du Christ, * reçois la couronne que le Seigneur t'a préparée pour l'éternité.

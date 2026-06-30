@@ -1,0 +1,37 @@
+[Officium]
+Santa Rosa de Santa María de Lima, Virgen
+
+[Rank]
+Santa Rosa de Santa María de Lima, Virgen y Patrona de las Américas;;Duplex I classis;;6;;vide C6a
+
+[Oratio]
+Oh Dios, dador generoso de todos los bienes, omnipotente, que quisiste que la bienaventurada Rosa, prevenida por el rocío de la gracia celestial, floreciera entre los pueblos de las Indias con el adorno de la virginidad y de la paciencia: concede a nosotros, tus siervos, que, corriendo en el olor de su suavidad, seamos hechos dignos de ser buen olor de Cristo.
+$Qui tecum
+
+[Lectio4]
+La primera flor de santidad de la América Meridional, la virgen Rosa, nacida en Lima de padres cristianos, brilló desde sus mismos pañales con señales de su futura santidad. Pues el rostro de la infante fue milagrosamente transfigurado en imagen de una rosa, lo que dio ocasión a este nombre; al cual la Virgen Madre de Dios añadió después el sobrenombre, mandando que en adelante se la llamara Rosa de Santa María. A los cinco años de edad hizo voto de virginidad perpetua. Al crecer, para que sus padres no la obligasen a contraer matrimonio, se cortó en secreto su hermosísima cabellera. Entregada a ayunos que superaban toda medida humana, pasó enteras Cuaresmas absteniéndose del pan y sustentándose cada día con solos cinco granos de lima.
+_
+
+[Lectio5]
+Habiendo tomado el hábito del Tercer Orden de Santo Domingo, redobló sus antiguas austeridades de vida: en un cilicio largo y muy áspero entretejió acá y allá pequeñísimas agujas; bajo el velo llevaba de día y de noche una corona armada por dentro con agudas espinas. Siguiendo los arduos pasos de Santa Catalina de Siena, ciñó sus lomos con una cadena de hierro enrollada en tres vueltas. Se preparó un lecho de troncos nudosos, rellenando sus cavidades vacías con fragmentos de tiestos. Se construyó una celdilla muy estrecha en el rincón más apartado del huerto, donde, entregada a la contemplación de las cosas celestiales, macerando su cuerpecillo con frecuentes disciplinas, ayunos y vigilias, pero fortalecida en el espíritu, aplastó y venció sin miedo las ilusiones de los demonios, saliéndole victoriosa en frecuentes combates.
+_
+
+[Lectio6]
+Cruelmente agitada por los tormentos de las enfermedades, los insultos de los de casa y las mordeduras de las lenguas, se quejaba de no ser todavía suficientemente afligida según sus merecimientos. Durante quince años, consumiéndose miserablemente durante largas horas en desolación de espíritu y aridez, soportó con ánimo fuerte agonías más amargas que cualquier muerte. Desde entonces comenzó a abundar en delicias celestiales, a ser iluminada por visiones, a derretirse en ardores seráficos. Admirablemente familiar con su ángel custodio, con Santa Catalina de Siena y con la Virgen Madre de Dios en sus frecuentes apariciones, mereció oír de Cristo estas palabras: Rosa de mi corazón, sé mi esposa. Por fin, llevada felizmente al paraíso de este Esposo y resplandeciente con numerosísimos milagros antes y después de su muerte, el Sumo Pontífice Clemente X la inscribió con rito solemne en el catálogo de las santas Vírgenes.
+_
+
+[Lectio7]
+@Commune/C6a:Lectio7
+
+[Lectio8]
+@Commune/C6a:Lectio8
+
+[Lectio9]
+@Commune/C6a:Lectio9
+
+[Lectio94]
+La primera flor de santidad de América Meridional, la virgen Rosa, nacida de padres cristianos en Lima, brilló desde sus mismos pañales con señales de futura santidad; pues el rostro de la infante fue milagrosamente transfigurado en imagen de una rosa, lo que dio ocasión a su nombre. Para que sus padres no la obligasen a casarse, se cortó en secreto su hermosísima cabellera. Singular fue la austeridad de su vida. Tomado el hábito del Tercer Orden de Santo Domingo, siguió los arduos pasos de Santa Catalina de Siena. Durante quince años, consumiéndose miserablemente largas horas en desolación de espíritu y aridez, soportó con ánimo fuerte agonías más amargas que cualquier muerte. Admirablemente familiar con su ángel custodio, con Santa Catalina de Siena y con la Virgen Madre de Dios en sus frecuentes apariciones, mereció oír de Cristo estas palabras: Rosa de mi corazón, sé mi esposa. El Papa Clemente X la inscribió, ilustre por numerosos milagros antes y después de su muerte, en el catálogo de las santas Vírgenes.
+&teDeum
+
+[Versum 0]
+@Commune/C6::s/N\./Rosa/

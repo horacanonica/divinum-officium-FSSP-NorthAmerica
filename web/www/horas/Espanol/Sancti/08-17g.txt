@@ -1,0 +1,13 @@
+[Officium]
+Beato Bartolomé Laurel, Mártir
+
+[Rank]
+Beato Bartolomé Laurel, Mártir;;Duplex;;3;;vide C2
+
+[Oratio]
+Concédenos, te rogamos, oh Señor, venerar de tal modo los méritos gloriosos del beato Bartolomé, tu mártir, que, siguiendo su ejemplo, te agrademos con humildad y constancia en la fe.
+$Per Dominum
+
+[Lectio94]
+Bartolomé Laurel, nacido en la diócesis de Puebla de los Ángeles en México, profesó solemnemente en la familia franciscana de la antigua observancia en Morelia. Habiendo desempeñado durante cuatro años, con suma humildad y caridad, el oficio de enfermero en un hospital de Manila, fue llamado a Japón por el varón apostólico Francisco de Santa María; donde, prestando servicio en secreto entre los fieles en el arte de la medicina y en la enseñanza de la fe, fue aprehendido junto con su maestro y puesto en prisión. Después de tres meses de cautiverio, el decimosexto día antes de las Calendas de septiembre del año 1627, en Nagasaki, fue ejecutado con la mayor constancia a fuego lento junto con otros mártires. León XIII concedió un Oficio y Misa propios a la Iglesia de México. Pío IX le inscribió entre los Bienaventurados en el año 1867.
+&teDeum

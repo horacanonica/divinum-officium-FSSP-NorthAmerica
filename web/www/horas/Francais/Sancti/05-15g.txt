@@ -1,0 +1,9 @@
+[Officium]
+Saint Isidore le Laboureur, Confesseur
+
+[Rank]
+Saint Isidore le Laboureur, Confesseur;;Duplex;;3;;vide C5
+
+[Oratio]
+Ô Dieu miséricordieux, accordez-nous, par l'intercession du bienheureux Isidore le Laboureur, votre confesseur, de ne point nourrir de sentiments d'orgueil ; mais que, aidés par ses mérites et guidés par son exemple, nous vous servions toujours avec l'humilité qui vous est agréable.
+$Per Dominum

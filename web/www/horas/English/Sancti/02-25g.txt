@@ -1,0 +1,13 @@
+[Officium]
+Blessed Sebastian de Aparicio, Confessor
+
+[Rank]
+Blessed Sebastian de Aparicio, Confessor;;Duplex;;3;;vide C5
+
+[Oratio]
+O God, who didst cause Blessed Sebastian, Thy Confessor, to walk in simplicity of heart, and didst heap upon him heavenly gifts: mercifully grant that, by his intercession, we may both serve Thee with pure minds and obtain the gifts of Thy grace.
+$Per Dominum
+
+[Lectio94]
+Sebastian de Aparicio, born at Gudiña in Spain, crossed to New Spain, where, having given away his wealth to pious uses, he contracted two marriages which, with the consent of both spouses, he left without consummation. At last, at the age of seventy, he was received as a lay brother into the family of the Friars Minor Discalced. After his solemn profession he was renowned for outstanding simplicity, humility, patience, and singular piety toward the Most Holy Sacrament; he is also reported to have been adorned with angelic visions and the gift of miracles. He rested in the Lord at Puebla de los Ángeles, nigh upon a hundred years of age. Pope Pius VI enrolled him among the Blessed.
+&teDeum

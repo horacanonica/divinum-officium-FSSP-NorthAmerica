@@ -1,0 +1,37 @@
+[Officium]
+St. Rose of Saint Mary of Lima, Virgin
+
+[Rank]
+St. Rose of Saint Mary of Lima, Virgin and Patroness of all the Americas;;Duplex I classis;;6;;vide C6a
+
+[Oratio]
+O God, the bountiful giver of all good things, who wast pleased that blessed Rose, anticipated by the dew of heavenly grace, should flourish among the peoples of the Indies in the beauty of virginity and patience: grant unto us thy servants that, running in the fragrance of her sweetness, we may be made worthy to become the good odour of Christ.
+$Qui tecum
+
+[Lectio4]
+The first flower of holiness in South America, the virgin Rose, born of Christian parents at Lima, shone from her very cradle with tokens of her future sanctity. For the face of the infant was miraculously transfigured into the likeness of a rose, giving occasion for that name: whereto the Virgin Mother of God afterwards added a surname, bidding her henceforth be called Rose of Saint Mary. At the age of five years she made a vow of perpetual virginity. When she was older, lest her parents should compel her to wed, she secretly cut off her most beautiful hair. Being given to fasting beyond all human measure, she passed whole Lents abstaining from bread, and sustained herself day by day on five grains of citron only.
+_
+
+[Lectio5]
+Having taken the habit of the Third Order of Saint Dominic, she doubled her former austerities of life: she threaded small needles throughout a long and very rough hairshirt; beneath her veil, both day and night, she wore a crown armed inwardly with sharp points. Treading the arduous footsteps of Saint Catherine of Siena, she girt her loins with an iron chain wound in three coils. She fashioned herself a pallet from knotted logs, filling their empty joints with shards of broken pottery. She built herself a very narrow cell in the furthest corner of the garden, wherein, given over to the contemplation of heavenly things, and wearing down her poor body with frequent disciplines, fasting, and watching, yet invigorated in spirit, she fearlessly crushed and overcame the apparitions of demons, conquering them in frequent combat.
+_
+
+[Lectio6]
+Sorely vexed by the torments of sicknesses, the insults of her household, and the biting of tongues, she complained that she was not yet suffering in full measure according to her deserts. For fifteen years, most wretchedly languishing several hours each day in desolation of spirit and aridity, she bore with strong soul agonies more bitter than any death. Thenceforth she began to abound in heavenly delights, to be illumined by visions, and to be dissolved in seraphic ardours. She was wondrously familiar in her constant apparitions with her guardian angel, with Saint Catherine of Siena, and with the Virgin Mother of God, and was found worthy to hear from Christ these words: Rose of my heart, be thou my spouse. At last, having been borne happily into the paradise of this Spouse and resplendent with very many miracles both before and after her death, the Supreme Pontiff Clement X enrolled her in the catalogue of the holy Virgins with solemn rite.
+_
+
+[Lectio7]
+@Commune/C6a:Lectio7
+
+[Lectio8]
+@Commune/C6a:Lectio8
+
+[Lectio9]
+@Commune/C6a:Lectio9
+
+[Lectio94]
+The first flower of holiness in South America, the virgin Rose, born of Christian parents at Lima, shone from her very cradle with tokens of future sanctity; for the face of the infant was miraculously transfigured into the likeness of a rose, giving occasion for that name. Lest her parents should compel her to wed, she secretly cut off her most beautiful hair. Her austerity of life was singular. Having taken the habit of the Third Order of Saint Dominic, she trod the arduous footsteps of Saint Catherine of Siena. For fifteen years, most wretchedly languishing several hours daily in desolation of spirit and aridity, she bore with strong soul agonies more bitter than any death. Wondrously familiar in her constant apparitions with her guardian angel, with Saint Catherine of Siena, and with the Virgin Mother of God, she was found worthy to hear from Christ these words: Rose of my heart, be thou my spouse. Clement X, Pope, enrolled her, renowned for many miracles before and after her death, in the catalogue of the holy Virgins.
+&teDeum
+
+[Versum 0]
+@Commune/C6::s/N\./Rosa/

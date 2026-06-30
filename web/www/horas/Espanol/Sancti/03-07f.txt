@@ -1,0 +1,51 @@
+[Officium]
+Santo Tomás de Aquino, Confesor y Doctor de la Iglesia
+
+[Rank]
+Santo Tomás de Aquino, Confesor y Doctor de la Iglesia;;Duplex II classis;;5;;ex C5a
+
+[Ant Magnificat]
+Oh Doctor óptimo, * luz de la santa Iglesia, bienaventurado Tomás, amante de la ley divina, intercede por nosotros ante el Hijo de Dios.
+
+[Ant Benedictus]
+Muy bien, siervo bueno * y fiel: porque en lo poco fuiste fiel, sobre mucho te pondré; entra en el gozo de tu Señor.
+
+[Oratio]
+Oh Dios, que ilustras a tu Iglesia con la admirable erudición del bienaventurado Tomás, tu Confesor, y la enriqueces con su santa conducta: concédenos, te rogamos, que contemplemos con la inteligencia lo que enseñó, y que cumplamos con la imitación lo que obró.
+$Per Dominum
+
+[Lectio4]
+El más ilustre ornamento del orbe cristiano y luz de la Iglesia, el bienaventurísimo Tomás, nacido de nobles padres —Landulfo, conde de Aquino, y Teodora napolitana— manifestó desde su más tierna infancia el afecto de su futura devoción hacia la Madre de Dios. Pues una hoja de papel que había encontrado, en la que estaba escrita la Salutación Angélica, la retuvo firmemente apretada en su mano, aunque la nodriza se esforzaba en vano por quitársela; y cuando su madre se la arrebató por la fuerza, la reclamó llorando y haciendo gestos, y al serle devuelta se la tragó. A los cinco años de edad fue encomendado a los monjes de San Benedicto de Montecassino. Enviado desde allí a Nápoles para sus estudios, siendo ya joven ingresó en la Orden de los Frailes Predicadores. Pero como su madre y sus hermanos lo llevaran a mal, fue enviado hacia París; sus hermanos, sin embargo, habiéndolo arrestado por la fuerza en el camino, lo condujeron a la fortaleza del castillo de San Juan, donde, perseguido de diversas maneras para que cambiara su santo propósito, ahuyentó incluso con un tizón a la mujer que habían introducido para quebrantar su constancia. Poco después, el bienaventurado joven, orando de rodillas ante el signo de la Cruz y vencido por el sueño, le pareció en sueños sentir sus lomos ceñidos por ángeles; desde aquel momento quedó libre para siempre de todo impulso de lascivia. A sus hermanas, que habían venido al castillo para apartarle de su pío propósito, las persuadió para que, desdeñadas las preocupaciones mundanas, se entregasen a la práctica de la vida celestial.
+_
+
+[Responsory4]
+R. Honéstum fecit illum Dóminus, et custodívit eum ab inimícis, et a seductóribus tutávit illum :
+* Et dedit illi claritátem ætérnam.
+V. Iustum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei.
+R. Et dedit illi claritátem ætérnam.
+
+[Lectio5]
+Habiendo salido del castillo por una ventana, fue conducido de nuevo a Nápoles; de allí llevado a Roma y después a París por el hermano Juan el Teutónico, maestro general de la Orden de Predicadores, se dedicó bajo la enseñanza de Alberto Magno al estudio de la filosofía y la teología. A los veinticinco años fue llamado maestro y públicamente interpretó a filósofos y teólogos con máxima alabanza. Nunca se aplicó a la lectura o a la escritura sino después de la oración. En las dificultades de los pasajes de la Sagrada Escritura, añadía el ayuno a la oración. Es más, solía decir a su compañero, el hermano Reginaldo, que cuanto sabía no lo había adquirido tanto por su propio estudio y esfuerzo, cuanto que lo había recibido como dado por Dios. Orando fervientemente en Nápoles ante la imagen del Crucificado, oyó esta voz: Bien has escrito de mí, Tomás; ¿qué recompensa recibirás? A lo cual respondió: Ninguna otra, Señor, sino Tú mismo. Leía asiduamente las Colaciones de los Padres y no hubo clase de escritores en la que no estuviese versadísimo. Sus escritos sobresalen tanto por su número, variedad y facilidad para explicar cosas difíciles, que su doctrina, copiosísima e incorrupta, maravillosamente consonante con las verdades reveladas, es la más apta para vencer los errores de todos los tiempos.
+_
+
+[Responsory5]
+R. Amávit eum Dóminus, et ornávit eum : stolam glóriæ índuit eum,
+* Et ad portas paradísi coronávit eum.
+V. Induit eum Dóminus lorícam fídei, et ornávit eum.
+R. Et ad portas paradísi coronávit eum.
+
+[Lectio6]
+Llamado a Roma por el Sumo Pontífice Urbano IV, compuso por encargo de éste el Oficio eclesiástico que había de celebrarse en la solemnidad del Corpus Christi; rechazó, sin embargo, los honores que le fueron ofrecidos y el arzobispado de Nápoles, incluso cuando Clemente IV se lo proponía. No cesaba de predicar la palabra de Dios; y haciéndolo durante la octava de Pascua en la basílica de San Pedro, libró de un flujo de sangre a una mujer que había tocado el borde de su vestido. Enviado por el bienaventurado Gregorio X al Concilio de Lyon, cayó enfermo en el monasterio de Fossa Nuova, donde, estando enfermo, explicó el Cantar de los Cantares. Allí murió pasada la cincuentena, en el año de la salvación de 1274, en las nonas de marzo. También después de su muerte fue ilustre por milagros; probados éstos, fue incluido en el número de los Santos por Juan XXII, en el año 1323, siendo trasladado después su cuerpo a Toulouse por mandato del bienaventurado Urbano V. Comparado con los santos espíritus angélicos no menos en inocencia que en ingenio, adquirió con razón el nombre de Doctor Angélico, que le fue confirmado por la autoridad de San Pío V. León XIII, por su parte, acogiendo con grandísima benevolencia las peticiones y deseos de casi todos los prelados sagrados del orbe católico, principalmente para combatir el contagio de tantos sistemas filosóficos que se alejaban de la verdad y para el incremento de las ciencias y el bien común del género humano, lo declaró e instituyó, tras consultar a la Congregación de Sagrados Ritos, por letras apostólicas, patrono celestial de todas las escuelas católicas.
+_
+
+[Responsory6]
+R. Iste homo perfécit ómnia quæ locútus est ei Deus, et dixit ad eum : Ingrédere in réquiem meam :
+* Quia te vidi iustum coram me ex ómnibus géntibus.
+V. Iste est, qui contémpsit vitam mundi, et pervénit ad cæléstia regna.
+R. Quia te vidi iustum coram me ex ómnibus géntibus.
+&Gloria
+R. Quia te vidi iustum coram me ex ómnibus géntibus.
+
+[Lectio94]
+Tomás de Aquino, de noble linaje de Aquino en el reino de Nápoles, recibió el hábito de la Orden de Predicadores contra la voluntad de su familia y, resistiendo su oposición con heroica constancia, se consagró enteramente a la ciencia sagrada. A los veinticinco años era ya famoso como maestro. Nunca se dedicó a la lectura o a la escritura sin haber orado antes. Compuso el Oficio del Corpus Christi por encargo de Urbano IV. Ilustre después de su muerte por milagros, fue canonizado por Juan XXII en el año 1323. Su doctrina, copiosísima e incorrupta, maravillosamente consonante con las verdades reveladas, es la más apta para vencer los errores de todos los tiempos; por lo cual León XIII lo declaró patrono celestial de todas las escuelas católicas.
+&teDeum

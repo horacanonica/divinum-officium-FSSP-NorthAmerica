@@ -1,0 +1,16 @@
+[Officium]
+L'Attente de l'Accouchement de la Bienheureuse Vierge Marie
+
+[Rank]
+L'Attente de l'Accouchement de la Bienheureuse Vierge Marie;;Semiduplex;;2;;vide C11
+
+[Ant 2]
+Il siégera * sur le trône de David et sur son royaume pour toujours.
+
+[Versum 2]
+V. Le Saint-Esprit viendra sur vous.
+R. Et la puissance du Très-Haut vous couvrira de son ombre.
+
+[Oratio]
+Ô Dieu, qui avez voulu que votre Verbe, annoncé par un Ange, prît chair dans le sein de la bienheureuse Vierge Marie : accordez à vos suppliants que nous qui croyons vraiment qu'elle est la Mère de Dieu, nous soyons assistés par ses intercessions auprès de vous.
+$Per Dominum

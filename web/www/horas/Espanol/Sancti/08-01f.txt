@@ -1,0 +1,122 @@
+[Officium]
+San Pedro ad Víncula
+
+[Rank]
+San Pedro ad Víncula;;Duplex;;3;;ex C1
+
+[Rule]
+ex C1;
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+
+[Ant Vespera]
+@Sancti/08-01
+
+[Hymnus Vespera]
+@Sancti/08-01
+
+[HymnusM Vespera]
+@Sancti/08-01
+
+[Versum 1]
+@Sancti/08-01
+
+[Ant 1]
+@Sancti/08-01
+
+[Oratio]
+Oh Dios, que hiciste que el bienaventurado apóstol Pedro, libre de sus cadenas, saliese sin daño: desata, te suplicamos, las cadenas de nuestros pecados; y aleja de nosotros propicio todos los males.
+$Per Dominum
+_
+@Sancti/02-22:Commemoratio4:s/\$Per Dominum//
+
+[Hymnus Matutinum]
+@Sancti/08-01
+
+[HymnusM Matutinum]
+@Sancti/08-01
+
+[Lectio1]
+@Sancti/08-01
+
+[Responsory1]
+@Sancti/08-01
+
+[Lectio2]
+@Sancti/08-01
+
+[Responsory2]
+@Sancti/08-01
+
+[Lectio3]
+@Sancti/08-01
+
+[Responsory3]
+@Sancti/08-01
+
+[Lectio4]
+@Sancti/08-01
+
+[Responsory4]
+@Sancti/08-01
+
+[Lectio5]
+@Sancti/08-01
+
+[Responsory5]
+@Sancti/08-01
+
+[Lectio6]
+@Sancti/08-01
+
+[Responsory6]
+@Sancti/08-01
+
+[Lectio94]
+@Sancti/08-01
+
+[Lectio7]
+@Sancti/08-01
+
+[Responsory7]
+@Sancti/08-01
+
+[Lectio8]
+@Sancti/08-01
+
+[Responsory8]
+@Sancti/08-01
+
+[Ant Laudes]
+@Sancti/08-01
+
+[Capitulum Laudes]
+@Sancti/08-01
+
+[Hymnus Laudes]
+@Sancti/08-01
+
+[HymnusM Laudes]
+@Sancti/08-01
+
+[Versum 2]
+@Sancti/08-01
+
+[Ant 2]
+@Sancti/08-01
+
+[Lectio Prima]
+@Sancti/08-01
+
+[Capitulum Sexta]
+@Sancti/08-01
+
+[Capitulum Nona]
+@Sancti/08-01
+
+[Ant Vespera 3]
+@Sancti/08-01
+
+[Ant 3]
+@Sancti/08-01

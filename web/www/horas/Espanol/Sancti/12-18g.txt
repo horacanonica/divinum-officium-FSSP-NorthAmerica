@@ -1,0 +1,16 @@
+[Officium]
+La Expectación del Parto de la Bienaventurada Virgen María
+
+[Rank]
+La Expectación del Parto de la Bienaventurada Virgen María;;Semiduplex;;2;;vide C11
+
+[Ant 2]
+Se sentará * sobre el trono de David y sobre su reino para siempre.
+
+[Versum 2]
+V. El Espíritu Santo vendrá sobre ti.
+R. Y el poder del Altísimo te cubrirá con su sombra.
+
+[Oratio]
+Oh Dios, que quisiste que tu Verbo tomase carne en el seno de la Bienaventurada Virgen María, anunciado por el Ángel: concede a tus suplicantes que, creyendo verdaderamente que ella es la Madre de Dios, seamos ayudados por sus intercesiones ante ti.
+$Per Dominum

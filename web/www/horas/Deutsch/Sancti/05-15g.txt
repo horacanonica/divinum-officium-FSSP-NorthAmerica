@@ -1,0 +1,9 @@
+[Officium]
+Der heilige Isidor, der Ackersmann, Bekenner
+
+[Rank]
+Der heilige Isidor, der Ackersmann, Bekenner;;Duplex;;3;;vide C5
+
+[Oratio]
+O barmherziger Gott, verleihe uns auf die Fürsprache des seligen Isidor, des Ackersmannes, deines Bekenners, dass wir keine hochmütigen Gedanken hegen, sondern durch seine Verdienste und nach seinem Vorbild dir stets in der Demut dienen, die dir wohlgefällig ist.
+$Per Dominum

@@ -1,0 +1,13 @@
+[Officium]
+Le Bienheureux Barthélemy Gutiérrez, Martyr
+
+[Rank]
+Bienheureux Barthélemy Gutiérrez, Martyr;;Duplex;;3;;vide C2
+
+[Oratio]
+Faites, nous vous supplions, ô Dieu tout-puissant, que nous qui célébrons la fête du bienheureux Barthélemy, votre martyr, soyons affermis par son intercession dans l'amour de votre Nom.
+$Per Dominum
+
+[Lectio94]
+Barthélemy Gutiérrez, mexicain, membre de l'Ordre des Ermites de Saint Augustin, envoyé au Japon, convertit à la foi d'innombrables âmes avec un grand zèle pour la prédication de la Parole de Dieu. Arrêté par ordre de l'empereur et après une longue captivité, il fut torturé pendant trente jours avec de l'eau sulfureuse bouillante sur le mont Unzen ; et finalement à Nagasaki, avec les bienheureux Vincent de Saint-Antoine et François de Jésus, de l'Ordre augustinien, il fut mis à mort par un feu lent, le troisième des Nones de septembre de l'an 1632, et leurs reliques furent jetées à la mer de peur que les chrétiens ne les recueillent. Pie IX l'inscrivit en 1867, avec deux cent cinq autres martyrs du Japon, dans le catalogue des Bienheureux.
+&teDeum

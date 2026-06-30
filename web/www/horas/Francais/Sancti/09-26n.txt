@@ -1,6 +1,10 @@
 [Officium]
-Ss. Isaaci Jogues, Joannis de Brébeuf et Sociorum Martyrum
+Saints Isaac Jogues, Jean de Brébeuf et leurs Compagnons, Martyrs
 
 [Oratio]
 Ô Dieu, qui avez consacré les prémices de la foi dans les régions d'Amérique du Nord par la prédication et le sang de vos saints martyrs Jean, Isaac et de leurs compagnons, accordez-nous, nous vous en prions, que par leur intercession, grandisse partout de jour en jour une abondante moisson de chrétiens.
 $Per Dominum
+
+[Lectio94]
+Parmi les membres de la Compagnie de Jésus qui, au milieu du XVIIe siècle, cultivèrent la difficile mission de la Nouvelle-France et illustrèrent grandement la primitive Église d'Amérique du Nord, Dieu choisit pour lui-même huit victimes très pures, immolées dans les régions actuelles de New York et de l'Ontario, au Canada. Parmi ces nobles chefs et maîtres se trouvent Jean de Brébeuf et Isaac Jogues, hommes vigoureux et apostoliques, brûlants de zèle pour les âmes, très dévoués à la mortification et très unis à Dieu dans la prière. Les prêtres Antoine Daniel, Gabriel Lalemant, Charles Garnier et Noël Chabanel, ainsi que René Goupil et Jean de la Lande, auxiliaires des Pères, furent ornés de vertus non médiocres. En raison de la condition et du misérable mode de vie des indigènes Hurons, tous versèrent leur sang à la manière des martyrs pour une seule cause de la religion, bien que non dans un même lieu ni au même moment ; certains cependant endurèrent des tourments à peine croyables avec une invincible constance, de sorte que les bourreaux barbares eux-mêmes en furent frappés d'admiration. Illustres par leurs miracles, Pie XI les inscrivit parmi les bienheureux, et peu après dans le nombre des Saints.
+&teDeum

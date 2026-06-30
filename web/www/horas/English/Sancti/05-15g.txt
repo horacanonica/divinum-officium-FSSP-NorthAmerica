@@ -1,0 +1,9 @@
+[Officium]
+St. Isidore the Farmer, Confessor
+
+[Rank]
+St. Isidore the Farmer, Confessor;;Duplex;;3;;vide C5
+
+[Oratio]
+God of mercy, at the intercession of St. Isidore the Farmer, grant that we may not have feelings of pride, but may be helped by his merits and guided by his example to serve Thee always with the humility which pleaseth Thee.
+$Per Dominum

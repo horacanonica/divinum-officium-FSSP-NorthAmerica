@@ -1,0 +1,34 @@
+[Officium]
+San Isidro Labrador, Confesor
+
+[Rank]
+San Isidro Labrador, Confesor;;Duplex;;3;;vide C5
+
+[Oratio]
+Oh Dios misericordioso, concédenos, por la intercesión del bienaventurado Isidro Labrador, tu confesor, no enorgullecernos; sino que, ayudados por sus méritos y guiados por su ejemplo, te sirvamos siempre con la humildad que te es grata.
+$Per Dominum
+
+[Lectio94]
+Isidro, nacido en Madrid, trabajaba la tierra a jornal; pero, siendo verdaderamente un labrador próspero que conocía sus verdaderos bienes, supo enriquecer también el campo de su alma con una cosecha de virtudes. Pues buscaba primero el reino de Dios, visitando los templos, sobre todo los marianos, muy de mañana, antes de ir al trabajo. Molesto por estos retrasos, su amo fue un día al lugar desde donde le esperaba para reprenderle; pero vio a Isidro entre dos ángeles que labraban por él con dos yuntas de bueyes. Sirviendo a Dios en sus hermanos, repartía el salario de su trabajo entre los necesitados. Una vez, habiendo invitado a unos pobres a comer, sacióllos a todos con la porción de comida que él se había reservado. En otra ocasión, en el calor del verano, al golpear el suelo con el aguijón de los bueyes, hizo brotar agua con la que aplacó la sed de su amo. Llegado a una edad avanzada, se durmió en el Señor; trasladado su cuerpo aún incorrupto desde el cementerio de San Andrés a la iglesia, fue colocado en lugar prominente, donde los milagros acreditaron su gloria. Gregorio XV le inscribió en el catálogo de los Santos cuatrocientos años después; y el Papa Pío XII le declaró Patrón de los agricultores de los Estados Unidos de América del Norte.
+&teDeum
+
+[Capitulum Laudes]
+!Jac 5:7-8
+v. He aquí que el labrador aguarda el precioso fruto de la tierra, esperando pacientemente hasta que reciba la lluvia temprana y tardía. Sed también vosotros pacientes; fortaleced vuestros corazones, porque la venida del Señor está próxima.
+$Deo gratias
+
+[Ant 2]
+Salió el sembrador * a sembrar su semilla, y una parte cayó en tierra buena y, brotando, dio fruto al ciento por uno.
+
+[Capitulum Sexta]
+!Jac 5:11
+v. He aquí que llamamos bienaventurados a los que sufrieron. Habéis oído de la paciencia de Job, y habéis visto el fin que el Señor le dio, porque el Señor es misericordioso y compasivo.
+$Deo gratias
+
+[Capitulum Nona]
+!Jac 5:16-18
+v. Mucho puede la oración continua del justo. Elías era un hombre de la misma condición que nosotros; oró con instancia para que no lloviese sobre la tierra, y no llovió por tres años y seis meses. Oró de nuevo, y el cielo dio lluvia y la tierra produjo su fruto.
+$Deo gratias
+
+[Ant 3]
+He aquí un hombre * que fue labrador, pues tomó a Adán como su modelo desde su juventud para servir al Dios viviente.

@@ -1,0 +1,13 @@
+[Officium]
+Santas Úrsula y Compañeras, Vírgenes y Mártires
+
+[Rank]
+Santas Úrsula y Compañeras, Vírgenes y Mártires;;Duplex;;3;;vide C6b
+
+[Lectio94]
+Cuando Atila, caudillo de los hunos, al regresar a Panonia de su primera irrupción en la Galia, donde había sido derrotado en los campos Cataláunicos, se acercó a la nobilísima ciudad de Colonia antes de cruzar el Rin; y, por odio a la religión católica que allí florecía grandemente, la devastó con pillaje y matanzas. Los más feroces bárbaros, ardiendo en lascivia, se arrojaron sobre las vírgenes y doncellas que allí residían, llegadas de Britania: entre las cuales descollaba la virgen llamada Úrsula, quien exhortaba a sus compañeras a sufrir todos los tormentos antes que consentir en el menoscabo de su pureza virginal. Como este noble ejército de vírgenes resistiera con suma constancia a los hunos, unas fueron pasadas a cuchillo, otras traspasadas con flechas, otras apaleadas, consumando así su martirio. Pero la propia Úrsula, cayendo como víctima gloriosa sobre un montón de perlas celestiales que eran sus compañeras, adornada con la púrpura de la sangre derramada por la fe y la castidad, introdujo en triunfo al cielo un ejército enaltecido con las dobles coronas de la virginidad y la fe. Una vez que hubo pasado la feroz tormenta de los bárbaros, los colonenses supervivientes recogieron como preciadas prendas los cuerpos de las Vírgenes y de los demás ciudadanos mártires, y los sepultaron con sumo honor. En el campo enrojecido con la sangre de las Vírgenes, en el que sus sagrados restos encontraron reposo, se edificó una basílica, denominada de las santas Vírgenes desde mediados del siglo VII, por reverencia hacia las cuales desde entonces ningún cadáver humano fue sepultado allí. Convertida en monasterio en el siglo IX, acogió a comienzos del X a las monjas que huían de los húngaros, siempre generosamente dotada y piadosamente visitada por los obispos de la insigne ciudad. Aún hoy en día pueden verse los muros de la iglesia tantas veces restaurada, adornados por doquier con los nichos de los Mártires, mientras que la mayor parte de sus reliquias yacen ocultas bajo el suelo y entre las paredes del coro; y en el oratorio adyacente se contemplan innumerables cabezas de vírgenes, unas con huellas del martirio, otras cubiertas de cabellos ensangrentados. Estas sagradas prendas fueron honradas en tiempos pasados por los fieles con piadosas peregrinaciones.
+&teDeum
+
+[Oratio]
+Concédenos, te suplicamos, oh Señor Dios nuestro, venerar con incesante devoción los triunfos de tus santas Vírgenes y Mártires Úrsula y Compañeras: que lo que no podemos celebrar con mente digna, al menos lo frecuentemos con humilde servicio.
+$Per Dominum

@@ -1,0 +1,114 @@
+[Officium]
+Santa Francisca Javier Cabrini, Virgen
+
+[Invit]
+Al Rey de las Vírgenes, el Señor, * Venid, adorémosle.
+
+[Himnus Vespera]
+v. Que el reino del cielo resuene
+Con gozosos cánticos sin par,
+Y la tierra que a su Dios pertenece
+De polo a polo le proclame.
+_
+Francisca, ceñida de gloria,
+Triunfa entre los ángeles del cielo,
+Siguiendo fiel, con pecho denodado,
+Las huellas de Javier en su gran celo.
+_
+Desde su más tierna edad
+Arde su corazón en amor de Jesús,
+Y medita con suma lealtad
+Llevar su nombre a todos con la luz.
+_
+Una voz divina la impelió
+A dejar el nido de su hogar natal;
+A los confines del orbe ella voló,
+Una y otra vez, sin vacilar.
+_
+Al Padre, al Hijo, loor y honor,
+Y al Espíritu Santo, Dios también,
+Ahora y por los siglos, con fervor,
+Por los siglos de los siglos. Amén.
+Amén.
+
+[Oratio]
+Señor Jesucristo, que, para ganar almas para ti, guiaste a tu santa virgen Francisca, inflamada de amor por tu Sacratísimo Corazón, por los confines del mundo, y por medio de ella suscitaste en tu Iglesia una nueva familia de vírgenes: te suplicamos que, por su intercesión, nos revistamos de las virtudes de ese mismo Corazón y merezcamos llegar al eterno puerto de la bienaventuranza.
+$Qui vivis
+
+[Himnus Matutinum]
+v. Del Corazón de Jesús concibe Francisca
+Llamas que la impelen, mensajera fiel;
+A las más remotas tierras la invocan
+Las almas que buscan su amoroso papel.
+_
+Dondequiera que va, al instante
+Exhalan perfume los lirios en flor;
+La tierra, antes llena de abrojos y espanto,
+Se viste de verde con su puro amor.
+_
+Los emigrantes de Italia, dispersos
+Por todos los climas del vasto confín,
+Hallaron en ella una madre, una luz,
+Que aliviaba sus penas con amor sin fin.
+_
+Ni el furor embravecido del océano,
+Ni la cima nevada de altísimos montes,
+Ni las tierras ardientes de lejano verano
+Detuvieron a esta mujer valerosa en sus horizontes.
+_
+Al Padre, al Hijo, loor y honor,
+Y al Espíritu Santo, Dios también,
+Ahora y por los siglos, con fervor,
+Por los siglos de los siglos. Amén.
+Amén.
+
+[Lectio94]
+Francisca Javier, nacida en el pueblo de Sant'Angelo, de la diócesis de Lodi, desde sus primeros años consagró su vida a Dios. A los trece años hizo voto de virginidad al Sacratísimo Corazón de Jesús. Ejerció después el magisterio en Lodi, y el obispo la nombró directora de un orfanato, animándola también a fundar una nueva congregación religiosa dedicada a las misiones. Así pues, cuando tenía treinta años, en la capilla de Nuestra Señora de las Gracias en Codogno, puso los fundamentos del Instituto de las Hermanas Misioneras del Sagrado Corazón. Incierta sobre dónde realizar la labor misionera, reconoció en las palabras de León XIII, que le ordenó ir a Occidente, la voluntad de Dios. Cruzó el océano veinticuatro veces y mereció en América del Norte el título de madre de los italianos. Su mente y su corazón estaban en unión constante con Dios, en quien ponía toda su confianza. Saludaba a la Santísima Virgen María como Madre de su Congregación. Propagó maravillosamente su Instituto, como lo demuestran los sesenta y siete conventos que ella misma fundó. Por último, su vida se consumó en Chicago el 22 de diciembre de 1917, y sus restos fueron trasladados a Nueva York. Fue beatificada por Pío XI y canonizada por Pío XII.
+&teDeum
+
+[Himnus Laudes]
+v. La divina caridad de Jesús,
+Tú solo realizas las obras más altas,
+Haciendo incluso de las vírgenes apóstoles ardientes,
+Que llevan al mundo su luz y su alba.
+_
+Por ti brilló la ínclita Francisca,
+Despreciando el siglo con valiente fe,
+Superando las flaquezas de su sexo,
+Extendió la gloria de Dios hasta el confín y más.
+_
+Oh Bienaventurada Madre, mira
+Con ojos benignos a tus hijas desde el cielo,
+Haz florecer y crecer tu obra buena,
+Para que la virtud resplandezca sin recelo.
+_
+Mueve el Corazón de Jesús con tus ruegos,
+Para que congegue a todos los pueblos en uno,
+Y alcánzanos tú la gracia que anhelamos:
+Llamas de amor, ardientes, uno a uno.
+_
+Al Padre, al Hijo, loor y honor,
+Y al Espíritu Santo, Dios también,
+Ahora y por los siglos, con fervor,
+Por los siglos de los siglos. Amén.
+Amén.
+
+[Capitulum Laudes]
+!2 Cor 10:17-18
+v. Hermanos: El que se gloría, gloríese en el Señor. Porque no el que se alaba a sí mismo es aprobado, sino aquel a quien Dios alaba.
+$Deo gratias
+
+[Versum 2]
+V. La gracia se derramó en tus labios.
+R. Por eso Dios te bendijo para siempre.
+
+[Ant 2]
+El reino de los cielos * es semejante a un mercader que busca perlas preciosas; habiendo encontrado una de gran valor, vendió todo lo que tenía y la compró.
+
+[Capitulum Vespera]
+!2 Cor 10:17-18
+v. Hermanos: El que se gloría, gloríese en el Señor. Porque no el que se alaba a sí mismo es aprobado, sino aquel a quien Dios alaba.
+$Deo gratias
+
+[Ant 3]
+Ven, Esposa de Cristo, * recibe la corona que el Señor te ha preparado para siempre.

@@ -1,0 +1,13 @@
+[Officium]
+Le Bienheureux Sébastien de Aparicio, Confesseur
+
+[Rank]
+Bienheureux Sébastien de Aparicio, Confesseur;;Duplex;;3;;vide C5
+
+[Oratio]
+Ô Dieu, qui avez fait marcher le bienheureux Sébastien, votre confesseur, dans la simplicité du cœur et l'avez comblé de dons célestes : accordez-nous dans votre bonté que, par son intercession, nous puissions vous servir avec des esprits purs et obtenir les dons de votre grâce.
+$Per Dominum
+
+[Lectio94]
+Sébastien de Aparicio, né à Gudiña en Espagne, passa en Nouvelle-Espagne, où, ayant distribué ses biens à des œuvres pieuses, il contracta deux mariages qu'il laissa, avec le consentement des deux épouses, sans consommation. Parvenu à l'âge de soixante-dix ans, il fut reçu comme frère lai dans la famille des Frères Mineurs Déchaux. Après sa profession solennelle, il se distingua par une remarquable simplicité, humilité, patience et une singulière piété envers le Très Saint Sacrement ; on rapporte qu'il fut aussi orné de visions angéliques et du don des miracles. Il s'endormit dans le Seigneur à Puebla de los Ángeles, à l'âge d'environ cent ans. Le Pape Pie VI l'inscrivit au nombre des Bienheureux.
+&teDeum

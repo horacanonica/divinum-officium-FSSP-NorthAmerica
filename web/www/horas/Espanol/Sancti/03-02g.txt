@@ -1,0 +1,13 @@
+[Officium]
+Beato Bartolomé Gutiérrez, Mártir
+
+[Rank]
+Beato Bartolomé Gutiérrez, Mártir;;Duplex;;3;;vide C2
+
+[Oratio]
+Te suplicamos, oh Dios omnipotente, que nosotros que celebramos el día natalicio del beato Bartolomé, tu mártir, seamos fortalecidos por su intercesión en el amor de tu nombre.
+$Per Dominum
+
+[Lectio94]
+Bartolomé Gutiérrez, mexicano, miembro de la Orden de los Ermitaños de San Agustín, enviado a Japón, convirtió a la fe a innumerables almas con gran celo por la predicación de la palabra de Dios. Apresado por orden del emperador y tras larga prisión, fue tormentado durante treinta días con agua hirviente azufrada en el monte Unzen; y al fin en Nagasaki, junto con los beatos Vicente de San Antonio y Francisco de Jesús, de la misma Orden agustiniana, fue ejecutado a fuego lento el tercero de las Nonas de Septiembre del año 1632, y sus reliquias fueron arrojadas al mar para que los cristianos no pudiesen recogerlas. Pío IX le inscribió en el año 1867, junto con doscientos cinco mártires más de Japón, en el catálogo de los Bienaventurados.
+&teDeum

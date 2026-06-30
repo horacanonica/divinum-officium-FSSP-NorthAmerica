@@ -1,0 +1,65 @@
+[Officium]
+St. Philip of Jesus, Martyr
+
+[Rank]
+St. Philip of Jesus, Martyr;;Duplex;;3;;vide C2
+
+[Hymnus Matutinum]
+v. Hail, warrior of triumph, glory
+Of the new world's shining shore,
+Who by thy death didst bless thy country,
+Making her more blest than before.
+_
+Champion and prince of Mexico,
+The Martyrs' trophies high
+Thou, first of all thy native land,
+Didst bear to courts on high.
+_
+Whatsoever fervent youth
+Had sinned through licence's chain,
+Rushing gladly to thy death,
+A holy victim thou didst expiate.
+_
+Grant us who strive to follow thee,
+With grief and penance due,
+To wash away our every crime
+And make our consciences anew.
+_
+To God the Father be all glory,
+And to His only Son the same,
+And to the Holy Paraclete
+Through all the ages of all time. Amen.
+
+[Oratio]
+O God, who, among the first Martyrs of Japan, didst first of all crown Blessed Philip, nailed to the cross and pierced with a threefold lance, with the palm of martyrdom: grant in Thy mercy that, sustained by his patronage, we may likewise be crowned with him in the heavens.
+$Per Dominum
+
+[Lectio94]
+Philip of Jesus, born at Mexico of Spanish parents, first put on the Franciscan habit; but through inconstancy he departed from the Order. Yet, moved to repentance by divine providence, he once more sought and obtained the habit of the Friars Minor Discalced at Manila, where he at last made his solemn profession. While embarking on a ship that was to carry him back to Mexico, he was driven by storms into a Japanese port; and there, with the persecution of Christians breaking out, he was cast into chains. Fixed to the cross and pierced with a threefold lance, he was the first among his companions to obtain the glorious palm of martyrdom. Pope Pius IX inscribed him in the catalogue of the Saints in the year 1867.
+&teDeum
+
+[Hymnus Laudes]
+v. O Philip, Martyr renowned,
+Faithful follower of Jesus' name,
+Whom thou didst choose, before all else,
+To follow even to death's hard flame.
+_
+Pierced with a triple lance and streaming
+With thine outpoured blood so bright,
+Stretched on the cross, expiring, glorious,
+Thou bearest Jesus' image right.
+_
+Thou art the leader and the standard
+Of thy fellow Martyrs' band,
+Who led the company of heavenly ones
+And first didst pour thy blood on that strand.
+_
+Hear thou the voices and the teardrops
+Of those who pray to thee this day;
+As our leader, write our names among
+The blessed in that court for aye.
+_
+To God the Father, Son, and Spirit,
+Be power, honour, laud, and praise,
+Now and in every age hereafter,
+Through all eternity of days. Amen.

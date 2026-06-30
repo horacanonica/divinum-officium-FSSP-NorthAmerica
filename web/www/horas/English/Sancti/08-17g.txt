@@ -1,0 +1,13 @@
+[Officium]
+Blessed Bartholomew Laurel, Martyr
+
+[Rank]
+Blessed Bartholomew Laurel, Martyr;;Duplex;;3;;vide C2
+
+[Oratio]
+Grant us, we beseech Thee, O Lord, so to honour the glorious deeds of Blessed Bartholomew Thy Martyr, that, following his example, we may please Thee by humility and steadfastness in faith.
+$Per Dominum
+
+[Lectio94]
+Bartholomew Laurel, born in the diocese of Puebla de los Ángeles in Mexico, made his solemn profession in the Franciscan Order of the Old Observance at Morelia. Having fulfilled for four years, with the greatest humility and charity, the office of infirmarian in a hospital at Manila, he was summoned to Japan by the apostolic man Francis of Saint Mary; where, secretly labouring among the faithful in the healing arts and in teaching the faith, he was apprehended together with his master and cast into bonds. After three months' captivity, on the sixteenth day before the Kalends of September in the year 1627, at Nagasaki, he was put to death most steadfastly by slow fire together with other Martyrs. Leo XIII granted a proper Office and Mass to the Church of Mexico. Pius IX enrolled him among the Blessed in the year 1867.
+&teDeum

@@ -1,0 +1,51 @@
+[Officium]
+St. Thomas Aquinas, Confessor and Doctor of the Church
+
+[Rank]
+St. Thomas Aquinas, Confessor and Doctor of the Church;;Duplex II classis;;5;;ex C5a
+
+[Ant Magnificat]
+O most excellent Doctor, * light of holy Church, blessed Thomas, lover of the divine law, make intercession for us with the Son of God.
+
+[Ant Benedictus]
+Well done, good * and faithful servant: because thou hast been faithful over a few things, I will set thee over many things; enter thou into the joy of thy Lord.
+
+[Oratio]
+O God, who dost make glorious Thy Church with the wondrous learning of Blessed Thomas, Thy Confessor, and dost make her fruitful with his holy works: grant us, we beseech Thee, both to perceive by understanding what he taught, and to fulfil by imitation what he did.
+$Per Dominum
+
+[Lectio4]
+The most illustrious glory of the Christian world and light of the Church, the most blessed Thomas, was born of noble parents, Landulph, Count of Aquino, and Theodora of Naples, and showed even in his infancy the devotion to the Mother of God that was to mark his future life. For a slip of paper that he had found, whereon the Angelic Salutation was written, he clasped tightly in his hand, though his nurse struggled in vain to take it from him; and when it was torn away by force by his mother, he wept and besought it back by word and gesture, and when it was restored swallowed it. At the age of five he was entrusted to the monks of Saint Benedict at Monte Cassino. Thence sent to Naples for his studies, he entered as a young man the Order of Friars Preachers. His mother and brothers taking this ill, he was sent toward Paris; but his brethren, seizing him by force on the journey, brought him to the fortress of the castle of Saint John, where, vexed in various ways to make him alter his holy purpose, he drove away with a burning brand even the woman who had been brought in to shake his constancy. Soon the blessed youth, kneeling in prayer before the sign of the Cross and overcome with sleep, seemed in his dream to feel his loins girt by angels; from which time he was altogether free from every sensation of lust. He persuaded his sisters, who had come to the castle to turn him from his pious resolve, to forsake worldly cares and give themselves to the pursuit of the heavenly life.
+_
+
+[Responsory4]
+R. Honéstum fecit illum Dóminus, et custodívit eum ab inimícis, et a seductóribus tutávit illum :
+* Et dedit illi claritátem ætérnam.
+V. Iustum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei.
+R. Et dedit illi claritátem ætérnam.
+
+[Lectio5]
+Let out of the castle by a window, he was brought back to Naples; thence led to Rome, and afterward to Paris by Brother John the Teuton, Master General of the Order of Preachers, he devoted himself under the teacher Albert the Great to the study of philosophy and theology. At the age of twenty-five he was called Master, and publicly expounded philosophers and theologians with the highest praise. He never applied himself to reading or writing save after prayer. In difficulties concerning passages of Sacred Scripture he joined fasting to prayer. Moreover he was wont to say to his companion Brother Reginald that whatsoever he knew he had not so much gained by his own study and labour as received as a gift from God. When he was praying most earnestly before the image of the Crucified at Naples, he heard this voice: Thou hast written well of me, Thomas; what reward shalt thou receive? To which he replied: None other, Lord, save Thyself. He diligently pored over the Conferences of the Fathers, and there was no kind of writer in whom he was not most carefully versed. His writings excel so greatly in their number, variety, and facility of explaining difficult matters, that his most copious and uncorrupted doctrine, wonderfully consonant with revealed truths, is most fitted to overthrow the errors of every age.
+_
+
+[Responsory5]
+R. Amávit eum Dóminus, et ornávit eum : stolam glóriæ índuit eum,
+* Et ad portas paradísi coronávit eum.
+V. Induit eum Dóminus lorícam fídei, et ornávit eum.
+R. Et ad portas paradísi coronávit eum.
+
+[Lectio6]
+Called to Rome by the Supreme Pontiff Urban IV, he composed at that Pontiff's command the ecclesiastical Office to be celebrated on the solemnity of Corpus Christi; yet the honours offered him, and the Archbishopric of Naples even when proffered by Clement IV, he refused. He did not cease from the preaching of the divine word; and while doing so through the octave of Easter in the basilica of Saint Peter, he freed from a flow of blood a woman who had touched the hem of his garment. Sent by Blessed Gregory X to the Council of Lyons, he fell ill in the monastery of Fossa Nuova, where, though sick, he expounded the Canticle of Canticles. There he died, having passed his fiftieth year, in the year of salvation 1274, on the Nones of March. He was also renowned for miracles after his death; these being duly proved, he was enrolled in the number of the Saints by John XXII in the year 1323, his body being afterward translated to Toulouse at the command of Blessed Urban V. Being compared with the holy angelic spirits no less in innocence than in genius, he rightly gained the name of Angelic Doctor, confirmed to him by the authority of Saint Pius V. Moreover Leo XIII, most willingly receiving the petitions and desires of almost all the sacred rulers of the Catholic world, chiefly to repel the blight of so many philosophical systems wandering from truth, for the increase of the sciences and the common welfare of mankind, declared and established him by apostolic letters, after consulting the Congregation of Sacred Rites, as the heavenly patron of all Catholic schools.
+_
+
+[Responsory6]
+R. Iste homo perfécit ómnia quæ locútus est ei Deus, et dixit ad eum : Ingrédere in réquiem meam :
+* Quia te vidi iustum coram me ex ómnibus géntibus.
+V. Iste est, qui contémpsit vitam mundi, et pervénit ad cæléstia regna.
+R. Quia te vidi iustum coram me ex ómnibus géntibus.
+&Gloria
+R. Quia te vidi iustum coram me ex ómnibus géntibus.
+
+[Lectio94]
+Thomas Aquinas, of noble birth from Aquino in the Kingdom of Naples, received the habit of the Order of Preachers against the will of his family and, withstanding their opposition with heroic constancy, devoted himself wholly to sacred learning. At the age of five-and-twenty he was renowned as a Master. He never took up reading or writing save after prayer. He composed the Office of Corpus Christi at the command of Urban IV. Renowned after his death for miracles, he was canonized by John XXII in the year 1323. His most copious and uncorrupted doctrine, wonderfully consonant with revealed truths, is most apt for overcoming the errors of every age; for which cause Leo XIII declared him the heavenly patron of all Catholic schools.
+&teDeum

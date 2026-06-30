@@ -1,0 +1,91 @@
+[Rank]
+Unsere Liebe Frau von Guadalupe;;Duplex;;3;;vide C11
+
+[Ant Vespera]
+Wer ist sie, * die hervortritt wie die Morgenröte, schön wie die Sonne, herrlich wie Jerusalem?;;109
+Die Töchter Sions * sahen sie im Blütenglanz der Rosen und priesen sie überglücklich.;;112
+Blumen sind erschienen * in unserem Lande: Wir loben dich, heilige Gottesmutter.;;121
+Singet ihr * ein neues Lied: Verkündet unter den Völkern seinen Ruhm.;;126
+Du bist * die Herrlichkeit Jerusalems, du die Freude Israels, du die Ehre deines Volkes.;;147
+
+[Versum 1]
+V. Er hat nicht also getan mit jedem Volke.
+R. Und seine Gerichte hat er ihnen nicht kundgetan.
+
+[Ant 1]
+Ich habe diesen Ort erwählt und geheiligt, * damit mein Name dort sei und meine Augen und mein Herz allezeit daselbst verweilen.
+
+[Oratio]
+O Gott, der du uns unter den besonderen Schutz der allerseligsten Jungfrau Maria gestellt und uns mit immerwährenden Wohltaten überhäufen wolltest: gewähre deinen Bittenden; dass wir, die wir heute durch ihr Andenken auf Erden erfreut werden, ihres Anblickes in den Himmeln teilhaftig werden mögen.
+$Per Dominum
+
+[Lectio94]
+In Mexiko, auf dem Hügel von Tepeyac, erschien im Jahre 1531 die gottgebärende Jungfrau Maria dem Neugetauften Juan Diego, wie fromme Überlieferung berichtet, und übermittelte ihm eine Botschaft an den Bischof Juan de Zumárraga, die sie mit Nachdruck wiederholte, über den Bau einer ihr geweihten Kirche an jenem Orte. Der Bischof aber verlangte ein Zeichen. Als der Neugetaufte, von einem sterbenden Onkel Sakramente suchend, einen weiten Weg von der Erscheinungsstätte machte, erschien ihm die gütige Mutter zum dritten Mal, versicherte ihn der Genesung seines Onkels und befahl ihm, die außerhalb der Jahreszeit erblühten Rosen, in seinem Mantel gesammelt, zum Bischof zu tragen. Als in seiner Gegenwart die Rosen ausgeschüttet wurden, erschien das Bild Marias, wie es heißt, in wunderbarer Weise auf dem Mantel selbst den Anwesenden. Zunächst in der bischöflichen Kapelle aufbewahrt, dann auf den errichteten Bau auf dem Hügel von Tepeyac übertragen und schließlich in einem prächtigen Tempel aufgenommen, strömte das mexikanische Volk dorthin in immer größeren Scharen, um zu verehren und Wunder zu erleben. So wählten die mexikanischen Bischöfe mit allgemeinem Beifall des Volkes die selige Jungfrau Maria von Guadalupe als die erste Schutzpatronin des mexikanischen Volkes, was Benedikt XIV. mit apostolischer Vollmacht ordnungsgemäß bestätigte. Leo XIII. ließ das heilige Bild am Kolumbustag des Jahres 1895 durch den Erzbischof von Mexiko mit einer goldenen Krone schmücken. Und der heilige Pius X. erklärte die selige Jungfrau von Guadalupe zur Patronin ganz Lateinamerikas.
+&teDeum
+
+[Hymnus Matutinum]
+@Sancti/12-08
+
+[Ant Laudes]
+@:Ant Vespera:s/109/92/ s/112/99/ s/121/62/ s/126/210/ s/147/148/
+
+[Capitulum Laudes]
+!Prov 8:34-35
+v. Selig der Mensch, der auf mich hört, der täglich an meinen Toren wacht und die Pfosten meiner Türe hütet. Wer mich findet, findet das Leben und empfängt Heil vom Herrn.
+$Deo gratias
+
+[Hymnus Laudes]
+!Aus dem hl. Anselm, Bischof von Canterbury
+v. Güt'ge Mutter, frei von aller
+Sündenmakel, rein und hehr,
+Die der Mann erwählt, der spaltend
+Brach des grimmen Todes Heer.
+_
+Mildreich! Gib, dass deine Feste
+Freudig feiern alle Welt,
+Dass wir danken und uns freuen
+Im Licht, das nimmer fällt.
+_
+Mehre uns den Glauben innig
+Durch dein Bittgebet allzeit,
+Stärk' in Hoffnung Schwankende,
+Befest'ge uns in Herzenslieb'.
+_
+Gottesmutter! Du der Hoffnung
+Urgrund und Beginn allein,
+Nimm von uns die Kriege, Plagen,
+Hunger, Pest und Schwert und Pein.
+_
+Tröste Arme und Gefang'ne
+In der Not und im Verlies;
+Hör' die Bitten, hilf den Kranken,
+Dass sie finden, was verließ.
+_
+Fried' und Ruh' und helle Tage
+Gib uns, lass uns froh bestehn;
+Mach aus Feinden uns Freunde,
+Zähme böses Menschentun.
+_
+O Maria, fromme Mutter,
+Gib uns deinen heil'gen Bei,
+Dass wir herrschen und stets loben
+Deinen Sohn in Ewigkeit.
+_
+Vater, Sohn, o Gott der Güte,
+Gott, der heil'ge Geist, du auch,
+Führ' uns durch die Ewigkeiten,
+Gott, du heil'ge Dreieinheit. Amen.
+Amen.
+
+[Versum 2]
+V. Alle Lande sollen dich anbeten und dir lobsingen.
+R. Sie sollen deinem Namen, o Herr, Psalmen singen.
+
+[Ant 2]
+Wie ein leuchtender Regenbogen * zwischen Wolken der Herrlichkeit, und wie eine Rosenblüte in den Frühlingstagen.
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+Erhebe ringsum deine Augen * und sieh: alle diese sind versammelt und kommen zu dir; deine Söhne kommen von ferne, und deine Töchter stehen an deiner Seite auf.

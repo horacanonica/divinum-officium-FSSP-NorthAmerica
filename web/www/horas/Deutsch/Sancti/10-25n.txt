@@ -1,0 +1,34 @@
+[Officium]
+Der heilige Isidor, der Ackersmann, Bekenner
+
+[Rank]
+Der heilige Isidor, der Ackersmann, Bekenner;;Duplex;;3;;vide C5
+
+[Oratio]
+O barmherziger Gott, verleihe uns auf die Fürsprache des seligen Isidor, des Ackersmannes, deines Bekenners, dass wir keine hochmütigen Gedanken hegen, sondern durch seine Verdienste und nach seinem Vorbild dir stets in der Demut dienen, die dir wohlgefällig ist.
+$Per Dominum
+
+[Lectio94]
+Isidor, in Madrid geboren, bestellte als Taglöhner die Felder; doch als ein wahrhaft glücklicher Landmann, der seine wahren Güter kannte, verstand er es auch, den Acker seiner Seele mit einer Ernte von Tugenden zu bereichern. Er suchte nämlich zuerst das Reich Gottes, indem er die Kirchen, besonders die marianischen, schon früh am Morgen besuchte, bevor er zur Arbeit ging. Über diese Verzögerungen erzürnt, stieg sein Herr einmal auf einen erhöhten Aussichtspunkt, um ihn zu tadeln; doch sah er Isidor zwischen zwei Engeln, die für ihn mit je einem Ochsengespann pflügten. Gott in seinen Brüdern dienend, verteilte er seinen Arbeitslohn an die Armen. Einmal hatte er einige Arme zu Tisch geladen und vermochte sie alle mit dem für ihn selbst zurückbehaltenen Anteil zu sättigen. Ein anderes Mal ließ er an einem heißen Sommertag durch einen Stich mit dem Ochsenstab eine Quelle aus der Erde sprudeln und stillte damit den Durst seines Herrn. Im hohen Alter entschlief er im Herrn; sein noch unversehrter Leib wurde aus dem Friedhof von Sankt Andreas in die Kirche übertragen, an ehrenvollen Ort gestellt, und Wunder bezeugte seine Herrlichkeit. Vierhundert Jahre später schrieb ihn Gregor XV. in das Verzeichnis der Heiligen ein; und Papst Pius XII. erklärte ihn zum Patron der Landwirte in den Vereinigten Staaten von Nordamerika.
+&teDeum
+
+[Capitulum Laudes]
+!Jac 5:7-8
+v. Siehe, der Ackersmann wartet auf die kostbare Frucht der Erde und hat Geduld, bis er den Früh- und Spätregen empfängt. Habt auch ihr Geduld und stärket eure Herzen, denn die Ankunft des Herrn naht.
+$Deo gratias
+
+[Ant 2]
+Der Sämann ging aus, * seinen Samen zu säen, und ein Teil fiel in gutes Land und trug, aufgegangen, hundertfältige Frucht.
+
+[Capitulum Sexta]
+!Jac 5:11
+v. Sehet, wir preisen selig, die Geduld gehabt haben. Von der Geduld Hiobs habt ihr gehört und das Ende gesehen, das der Herr ihm beschied, denn der Herr ist barmherzig und gnädig.
+$Deo gratias
+
+[Capitulum Nona]
+!Jac 5:16-18
+v. Denn das beharrliche Gebet des Gerechten vermag viel. Elias war ein Mensch von gleicher Schwachheit wie wir; und er betete inständig, dass es nicht regnen möge auf Erden, und es regnete nicht drei Jahre und sechs Monate lang. Und er betete abermals, und der Himmel gab Regen, und die Erde brachte ihre Frucht hervor.
+$Deo gratias
+
+[Ant 3]
+Hier ist ein Mann, * der ein Ackersmann war, denn er nahm Adam von Jugend auf als sein Vorbild, um dem lebendigen Gott zu dienen.

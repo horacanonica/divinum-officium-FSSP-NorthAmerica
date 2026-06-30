@@ -1,0 +1,13 @@
+[Officium]
+Der selige Sebastian de Aparicio, Bekenner
+
+[Rank]
+Sel. Sebastian de Aparicio, Bekenner;;Duplex;;3;;vide C5
+
+[Oratio]
+O Gott, der du den seligen Sebastian, deinen Bekenner, in der Einfalt des Herzens wandeln ließest und ihn mit himmlischen Gaben überhäuftest: gib gnädig, dass wir durch seine Fürsprache dir mit lauterem Geist dienen und die Gaben deiner Gnade erlangen können.
+$Per Dominum
+
+[Lectio94]
+Sebastian de Aparicio, geboren zu Gudiña in Spanien, zog nach Neuspanien über, wo er sein Vermögen frommen Zwecken zuwandte und zwei Ehen einging, die er mit Einwilligung beider Ehegattinnen unvollzogen ließ. Im Alter von siebzig Jahren wurde er als Laienbruder in die Familie der Franziskaner-Unbeschuhten aufgenommen. Nach seiner feierlichen Profess zeichnete er sich durch außerordentliche Einfalt, Demut, Geduld und eine einzigartige Frömmigkeit gegenüber dem Allerheiligsten Sakrament aus; auch soll er durch Engelerscheinungen und die Gnadengabe der Wunder ausgezeichnet worden sein. Er entschlief im Herrn zu Puebla de los Ángeles nahezu hundertjährig. Papst Pius VI. schrieb ihn in das Verzeichnis der Seligen ein.
+&teDeum

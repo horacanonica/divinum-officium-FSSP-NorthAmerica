@@ -1,0 +1,9 @@
+[Officium]
+Nuestra Señora, Refugio de Pecadores
+
+[Rank]
+Nuestra Señora, Refugio de Pecadores;;Duplex II classis;;5;;vide C11
+
+[Oratio]
+Oh Dios omnipotente y misericordioso, que pusiste en la bienaventurada Virgen María, siempre virgen, un refugio y auxilio para los pecadores: concédenos que, bajo su amparo, absueltos de todas nuestras culpas, alcancemos el dichoso efecto de tu misericordia.
+$Per Dominum

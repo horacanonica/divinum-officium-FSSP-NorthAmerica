@@ -1,0 +1,67 @@
+[Officium]
+Saint Philippe de Jésus, Martyr
+
+[Rank]
+Saint Philippe de Jésus, Martyr;;Duplex;;3;;vide C2
+
+[Hymnus Matutinum]
+v. Salut, guerrier du triomphe,
+Gloire insigne du nouveau monde,
+Qui par ta mort embellis ta patrie
+Et la rendit plus heureuse et féconde.
+_
+Champion et prince du Mexique,
+Le premier de toute ta terre,
+Tu apportas les trophées des Martyrs
+Et la couronne digne du ciel sans frontières.
+_
+Tout ce que l'ardente jeunesse
+Avait péché par licence effrénée,
+En te précipitant vers la mort,
+Sainte victime, tu as expié.
+_
+Fais que, imitateurs de ta vie,
+Avec un douleur profonde et longue pénitence,
+Nous lavions tous nos crimes passés
+Et vivions dans la sainte obéissance.
+_
+A Dieu le Père soit la gloire,
+Et à son unique Fils aussi,
+Et au Saint Paraclet pareillement
+Dans les siècles des siècles. Amen.
+Amen.
+
+[Oratio]
+Ô Dieu, qui, parmi les premiers martyrs du Japon, avez couronné le premier de tous le bienheureux Philippe, cloué à la croix et percé d'une triple lance, de la palme du martyre : accordez dans votre bonté que, soutenus par son patronage, nous soyons pareillement couronnés avec lui dans les cieux.
+$Per Dominum
+
+[Lectio94]
+Philippe de Jésus, né au Mexique de parents espagnols, revêtit d'abord l'habit franciscain ; mais par inconstance il quitta l'Ordre. Toutefois, mu à la pénitence par la divine providence, il demanda et obtint de nouveau l'habit des Frères Mineurs Déchaux à Manille, où il fit finalement sa profession solennelle. Alors qu'il s'embarquait sur le navire qui devait le ramener au Mexique, des tempêtes le poussèrent dans un port japonais ; et là, la persécution des chrétiens s'étant déclarée, il fut jeté en prison. Cloué à la croix et percé d'une triple lance, il fut le premier parmi ses compagnons à obtenir la glorieuse palme du martyre. Le Pape Pie IX l'inscrivit dans le catalogue des Saints en l'année 1867.
+&teDeum
+
+[Hymnus Laudes]
+v. Ô Philippe, Martyr illustre,
+Fidèle disciple du nom de Jésus,
+Que tu as préféré sur toutes choses
+Suivre jusqu'à la violence de la mort.
+_
+Percé d'une triple lance et ruisselant
+De ton sang répandu avec éclat,
+Étendu sur la croix, expirant dans la gloire,
+Tu portes l'image de Jésus en tes bras.
+_
+Tu es le chef et le porte-étendard
+De tes frères dans le martyre,
+Toi qui menas la troupe des célestes
+Et le premier versa ton sang sur cette lyre.
+_
+Entends les voix et les larmes pieuses
+De ceux qui aujourd'hui t'implorent avec foi ;
+Comme notre guide, inscris nos noms parmi
+Les bienheureux en ta cour, pour toi.
+_
+À Dieu le Père, au Fils et à l'Esprit,
+Puissance, honneur, louange et gloire soient,
+Maintenant et dans tous les siècles à venir,
+Dans l'éternité entière. Amen.
+Amen.

@@ -1,0 +1,5 @@
+[Officium]
+Heilige Maria des Friedens
+
+[Rank]
+Heilige Maria des Friedens;;Duplex;;3;;vide C11

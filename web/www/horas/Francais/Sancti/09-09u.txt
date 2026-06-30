@@ -1,0 +1,19 @@
+[Officium]
+Saint Pierre Claver, Confesseur
+
+[Rank]
+Saint Pierre Claver, Confesseur;;Duplex;;3;;vide C5
+
+[Oratio]
+Ô Dieu, qui, pour appeler à la connaissance de votre Nom les Africains réduits en esclavage, avez fortifié le bienheureux Pierre d'une admirable charité et patience dans leur assistance : accordez-nous par son intercession ; que, cherchant les choses de Jésus-Christ, nous aimions le prochain en œuvre et en vérité.
+$Per eumdem
+
+[Lectio94]
+Pierre Claver, né en Catalogne, entra dans la Compagnie de Jésus encore jeune, avec une conduite très innocente. Pendant ses études de philosophie, il fut instruit dans les mystères d'une vertu plus élevée par saint Alphonse Rodriguez. Ordonné prêtre à Carthagène en Amérique du Sud, il se consacra entièrement par vœu solennel aux Africains amenés là par une honteuse traite d'esclaves. Dans leur assistance, leur nourriture, leurs soins, leur instruction dans la foi chrétienne et leur baptême, il serait presque impossible de dire avec quelle patience et quelle charité il travailla pendant plus de quarante ans, étant aussi illustré par Dieu du don de guérison. Après ses labeurs quotidiens, il s'adonnait à la prière jusqu'à une heure avancée de la nuit et à une sévère pénitence, pour laquelle il avait un appétit insatiable. Il avait atteint l'âge de soixante et onze ans lorsque, accablé d'infirmité corporelle, il fut contraint de languir dans sa chambre pendant quatre ans ; et finalement, en la fête natale de la Mère de Dieu qu'il avait vénérée avec une très tendre affection, il passa vers les saints. Léon XIII l'inscrivit dans le catalogue des Saints et l'établit patron céleste spécial des saintes missions auprès des Africains.
+&teDeum
+
+[Ant 2]
+C'est bien, * bon et fidèle serviteur ; parce que tu as été fidèle en peu de choses, je t'établirai sur beaucoup : entre dans la joie de ton Seigneur.
+
+[Ant 3]
+Cet homme, * méprisant le monde et triomphant des choses terrestres, a amassé des richesses dans le ciel par sa parole et ses œuvres.

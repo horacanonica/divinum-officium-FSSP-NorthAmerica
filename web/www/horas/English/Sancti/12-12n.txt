@@ -24,9 +24,15 @@ In Mexico, on the hill of Tepeyac, in the year 1531, the God-bearing Virgin Mary
 &teDeum
 
 [Capitulum Laudes]
-!Prov 8:34-36
+!Prov 8:34-35
 v. Blessed is the man that heareth me, and that watcheth daily at my gates, and waiteth at the posts of my doors.He that shall find me, shall find life, and shall have salvation from the Lord.
 $Deo gratias
+
+[Hymnus Matutinum]
+@Sancti/12-08
+
+[Ant Laudes]
+@:Ant Vespera:s/109/92/ s/112/99/ s/121/62/ s/126/210/ s/147/148/
 
 [Hymnus Laudes]
 !From St. Anselm, Bishop of Canterbury
@@ -76,6 +82,9 @@ R. Let them sing praises to thy Name, O Lord.
 
 [Ant 2]
 As the rainbow * giving light in the bright clouds of glory, and as the flower of roses in the spring of the year.
+
+[Versum 3]
+@:Versum 1
 
 [Ant 3]
 Lift up thine eyes * round about, and see: all they gather themselves together, they come to thee: thy sons shall come from far, and thy daughters shall rise up at thy side.

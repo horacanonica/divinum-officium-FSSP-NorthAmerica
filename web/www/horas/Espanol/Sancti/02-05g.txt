@@ -1,0 +1,67 @@
+[Officium]
+San Felipe de Jesús, Mártir
+
+[Rank]
+San Felipe de Jesús, Mártir;;Duplex;;3;;vide C2
+
+[Himnus Matutinum]
+v. Salve, paladín del triunfo,
+Honor del nuevo mundo sin igual,
+Que con tu muerte diste a la patria
+Una gloria eterna e inmortal.
+_
+Príncipe y campeón de México,
+Tú fuiste el primero en tu tierra natal
+En ofrecer los trofeos del Martirio
+Y la corona que da el cielo eternal.
+_
+Cuanto la ardiente juventud
+Pecó por su licencia y extravío,
+Lanzándote gustoso a la muerte,
+Lo expiaste como víctima, vasallo pío.
+_
+Haz que, émulos tuyos en verdad,
+Con íntimo dolor y larga penitencia,
+Lavemos nuestros crímenes del pasado
+Y vivamos en santa obediencia.
+_
+A Dios Padre sea la gloria,
+Y a su único Hijo también,
+Y al Santo Paráclito igualmente
+Por todos los siglos. Amén.
+Amén.
+
+[Oratio]
+Oh Dios, que entre los primeros mártires de Japón coronaste primero de todos al bienaventurado Felipe, clavado en la cruz y traspasado por triple lanza, con la palma del martirio: concede propicio que, sostenidos por su patrocinio, seamos igualmente coronados con él en los cielos.
+$Per Dominum
+
+[Lectio94]
+Felipe de Jesús, nacido en México de padres españoles, vistió primero el hábito franciscano; pero, por inconstancia, abandonó la Orden. Mas, movido a penitencia por la divina providencia, solicitó y obtuvo de nuevo el hábito de los Frailes Menores Descalzos en Manila, donde al fin hizo su profesión solemne. Mientras embarcaba en el navío que debía llevarle a México, fue arrojado por las tormentas a un puerto japonés; y allí, sobreviniendo la persecución de los cristianos, fue echado en prisión. Clavado en la cruz y traspasado por triple lanza, fue el primero entre sus compañeros en obtener la gloriosa palma del martirio. El Papa Pío IX le inscribió en el catálogo de los Santos en el año 1867.
+&teDeum
+
+[Himnus Laudes]
+v. Oh Felipe, mártir insigne,
+Fiel seguidor del nombre de Jesús,
+A quien preferiste sobre todo
+Seguir aun hasta la muerte en cruz.
+_
+Traspasado por triple lanza,
+Bañado en el rojo de tu sangre fiel,
+Extendido en la cruz, expirando,
+Llevas la imagen de Jesús en él.
+_
+Tú eres el jefe y el estandarte
+De tus compañeros en el martirio,
+Que guiaste la hueste de los santos
+Y primero derramaste tu fulgido auxilio.
+_
+Oye las voces y las lágrimas
+De quienes hoy te imploran con fervor;
+Como nuestro guía, escribe nuestros nombres
+Entre los santos de tu celestial alcázar.
+_
+A Dios Padre, al Hijo y al Espíritu,
+Poder, honor, alabanza y gloria sean,
+Ahora y en todo siglo venidero,
+Por toda la eternidad. Amén.
+Amén.

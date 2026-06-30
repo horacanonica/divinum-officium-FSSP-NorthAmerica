@@ -1,0 +1,13 @@
+[Officium]
+Le Bienheureux Barthélemy Laurel, Martyr
+
+[Rank]
+Bienheureux Barthélemy Laurel, Martyr;;Duplex;;3;;vide C2
+
+[Oratio]
+Accordez-nous, nous vous supplions, Seigneur, de vénérer les mérites glorieux du bienheureux Barthélemy, votre martyr, de telle sorte que, suivant son exemple, nous vous plaisions par l'humilité et la constance dans la foi.
+$Per Dominum
+
+[Lectio94]
+Barthélemy Laurel, né dans le diocèse de Puebla de los Ángeles au Mexique, fit sa profession solennelle dans la famille franciscaine de l'ancienne observance à Morelia. Ayant exercé pendant quatre ans, avec la plus grande humilité et charité, la charge d'infirmier dans un hôpital de Manille, il fut appelé au Japon par l'homme apostolique François de Sainte-Marie ; où, œuvrant secrètement parmi les fidèles dans l'art de la médecine et dans l'enseignement de la foi, il fut saisi avec son maître et jeté en captivité. Après trois mois de prison, le seizième jour avant les Calendes de septembre de l'an 1627, à Nagasaki, il fut mis à mort très constamment par le feu lent avec d'autres martyrs. Léon XIII accorda un Office et une Messe propres à l'Église du Mexique. Pie IX l'inscrivit parmi les Bienheureux en l'an 1867.
+&teDeum

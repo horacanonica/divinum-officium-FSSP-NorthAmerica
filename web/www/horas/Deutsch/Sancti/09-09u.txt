@@ -1,0 +1,19 @@
+[Officium]
+Der heilige Petrus Claver, Bekenner
+
+[Rank]
+Der heilige Petrus Claver, Bekenner;;Duplex;;3;;vide C5
+
+[Oratio]
+O Gott, der du, um die in die Sklaverei gerissenen Afrikaner zur Erkenntnis deines Namens zu rufen, den seligen Petrus mit wunderbarer Liebe und Geduld in ihrer Betreuung gestärkt hast: gewähre uns durch seine Fürsprache; dass wir, das Seinige Jesu Christi suchend, unsere Nächsten in Tat und Wahrheit lieben.
+$Per eumdem
+
+[Lectio94]
+Petrus Claver, in Katalonien geboren, trat noch als Jüngling von untadeligem Lebenswandel in die Gesellschaft Jesu ein. Während er Philosophie studierte, wurde er von dem heiligen Alphonsus Rodriguez in die Geheimnisse höherer Tugend eingeführt. In Cartagena in Südamerika zum Priester geweiht, weihte er sein Leben durch feierliches Gelöbnis vollständig den durch einen schmachvollen Handel dorthin gebrachten afrikanischen Sklaven. Im Betreuen, Nähren, Pflegen, in der Unterweisung im christlichen Glauben und im Taufen derselben ist kaum zu sagen, mit welcher Geduld und Liebe er über vierzig Jahre lang arbeitete, von Gott auch noch mit der Gabe der Heilung ausgezeichnet. Nach seinen täglichen Mühen widmete er sich bis tief in die Nacht dem Gebet und strenger Buße, nach der er ein unstillbares Verlangen hatte. Er hatte das einundsiebzigste Lebensjahr erreicht, als er von körperlichem Siechtum überwältigt vier Jahre lang in seiner Zelle darniederliegen musste; und schließlich zog er am Geburtstag der Gottesmutter, die er mit zärtlichster Zuneigung verehrt hatte, zu den Heiligen heim. Leo XIII. schrieb ihn in das Verzeichnis der Heiligen ein und bestimmte ihn zum besonderen himmlischen Patron der heiligen Missionen unter den Afrikanern.
+&teDeum
+
+[Ant 2]
+Wohl dir, * guter und getreuer Knecht; weil du über Wenigem getreu warst, will ich dich über Vieles setzen: geh ein in die Freude deines Herrn.
+
+[Ant 3]
+Dieser Mann, * die Welt verachtend und über das Irdische triumphierend, häufte Schätze im Himmel auf durch Wort und Tat.

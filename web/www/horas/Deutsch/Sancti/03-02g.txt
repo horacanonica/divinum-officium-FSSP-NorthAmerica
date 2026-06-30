@@ -1,0 +1,13 @@
+[Officium]
+Der selige Bartholomäus Gutiérrez, Märtyrer
+
+[Rank]
+Sel. Bartholomäus Gutiérrez, Märtyrer;;Duplex;;3;;vide C2
+
+[Oratio]
+Wir bitten dich, allmächtiger Gott: verleihe, dass wir, die wir den Geburtstag des seligen Bartholomäus, deines Märtyrers, feiern, durch seine Fürsprache in der Liebe zu deinem Namen gestärkt werden.
+$Per Dominum
+
+[Lectio94]
+Bartholomäus Gutiérrez, ein Mexikaner, Mitglied des Ordens der Eremiten des heiligen Augustinus, nach Japan gesandt, bekehrte unzählige Seelen mit großem Eifer für die Predigt des Wortes Gottes zum Glauben. Auf Befehl des Kaisers gefangen genommen und nach langer Haft dreißig Tage lang mit siedend heißem Schwefelwasser auf dem Berg Unzen gemartert, wurde er zuletzt in Nagasaki zusammen mit den Seligen Vincenz von Sankt Anton und Franz von Jesus, Augustinern, am dritten der Nonen des September des Jahres 1632 durch langsames Feuer hingerichtet, und ihre Reliquien wurden ins Meer geworfen, damit die Christen sie nicht sammeln konnten. Pius IX. schrieb ihn im Jahr 1867 zusammen mit zweihundertfünf anderen Märtyrern Japans in das Verzeichnis der Seligen ein.
+&teDeum

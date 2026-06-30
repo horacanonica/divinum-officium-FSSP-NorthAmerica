@@ -1,0 +1,16 @@
+[Officium]
+Die Erwartung der Geburt der Seligen Jungfrau Maria
+
+[Rank]
+Die Erwartung der Geburt der Seligen Jungfrau Maria;;Semiduplex;;2;;vide C11
+
+[Ant 2]
+Er wird sitzen * auf dem Throne Davids und über sein Reich in Ewigkeit.
+
+[Versum 2]
+V. Der Heilige Geist wird über dich kommen.
+R. Und die Kraft des Höchsten wird dich überschatten.
+
+[Oratio]
+O Gott, der du wolltest, dass dein Wort durch die Verkündigung eines Engels Fleisch annahm im Schoß der seligen Jungfrau Maria: gewähre deinen Bittenden, dass wir, die wir wahrhaft glauben, dass sie die Gottesmutter ist, durch ihre Fürsprache bei dir unterstützt werden mögen.
+$Per Dominum

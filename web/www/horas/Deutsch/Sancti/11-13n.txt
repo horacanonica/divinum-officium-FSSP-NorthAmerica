@@ -1,2 +1,114 @@
 [Officium]
-Hl. Franziska Xaviera Cabrini
+Hl. Franziska Xaviera Cabrini, Jungfrau
+
+[Rank]
+;;Duplex;;3;;vide C6a
+
+[Invit]
+Den König der Jungfrauen, den Herrn, * Kommet, lasset uns anbeten.
+
+[Hymnus Vespera]
+v. Das selige Reich des Himmels
+Ertöne von frohen Gesängen,
+Und die der Erde untertane Welt
+Stimme ein mit Lob von beiden Polen.
+_
+Mit dem Glanz der Herrlichkeit umhüllt
+Eilt Franziska, seinem Vorbilde treu,
+In Xaverius' Fußstapfen unermüdlich
+Und triumphiert im Kreise der Himmlischen.
+_
+Schon in zartester Kindeszeit
+Verzehrt sie sich in Liebe zu Jesus
+Und sinnt im Herzen, ihn zu bringen
+Allen Völkern in der Welt.
+_
+Sieh, eine Gottesstimme treibt
+Die Taube aus dem Heimatnest;
+Bis an die fernsten Enden der Erde
+Eilt sie unaufhörlich.
+_
+Kraft, Ehre, Lob und Ruhm
+Sei Gott dem Vater mit dem Sohne
+Und dem heiligen Tröster zugleich
+In alle Ewigkeit. Amen.
+
+[Oratio]
+Herr Jesus Christus, der du die heilige Jungfrau Franziska Xaviera, entflammt von der Liebe deines heiligsten Herzens, durch die weiten Gefilde der Welt geführt hast, um Seelen für dich zu gewinnen, und durch sie eine neue Familie von Jungfrauen in deiner Kirche aufgerichtet hast: gewähre uns, wir bitten dich, dass wir durch ihre Fürsprache mit den Tugenden eben dieses deines Herzens bekleidet werden und gewürdigt werden, den ewigen Hafen der Seligkeit zu erreichen.
+$Qui vivis
+
+[Hymnus Matutinum]
+v. Vom Herzen Jesu schöpft sie Flammen,
+Franziska, von gewaltiger Triebkraft,
+Die sie im Glauben an Christus zu den fernsten
+Gestaden eilen lässt als Botin.
+_
+Wo immer sie hindurchzieht, verbreitet sich
+Sogleich der Duft der Lilien;
+Und das zuvor von Dornengestrüpp starrende
+Land erglänzt in frischem Grün.
+_
+Die ausgewanderten Italiener,
+Über alle Länder zerstreut,
+Erkannten in ihr eine eifrige Mutter,
+Die Sorgen der Verbannten zu lindern.
+_
+Nicht der rasende Zorn der Wogen,
+Nicht schneebedeckte Gipfel,
+Noch Landstriche, glühend vor Hitze,
+Halten die starke Frau auf.
+_
+Kraft, Ehre, Lob und Ruhm
+Sei Gott dem Vater mit dem Sohne
+Und dem heiligen Tröster zugleich
+In alle Ewigkeit. Amen.
+
+[Lectio94]
+Franziska Xaviera, geboren in der Stadt Sant'Angelo in der Diözese Lodi, widmete ihr Leben von frühester Kindheit an Gott. Als sie dreizehn Jahre alt war, gelobte sie dem heiligsten Herzen Jesu die Jungfräulichkeit. Sie unterrichtete in Lodi, und danach betraute sie der Bischof mit der Leitung eines Waisenhauses und ermunterte sie auch, eine neue missionarische Ordensgemeinschaft zu gründen. So legte sie mit dreißig Jahren in der Kapelle Unserer Lieben Frau von der Gnade zu Codogno den Grundstein zum Institut der Missionarinnen vom Heiligsten Herzen Jesu. Als sie unschlüssig war, wo sie ihre Missionsarbeit aufnehmen sollte, erkannte sie in dem Wort Leos XIII., der ihr riet, nach Westen zu fahren, den Willen Gottes. Sie überquerte den Ozean vierundzwanzig Mal und erwarb sich den Titel Mutter der Italiener in Nordamerika. Geist und Herz waren ihr in beständiger Vereinigung mit Gott, auf den sie unerschütterliches Vertrauen setzte. Die seligste Jungfrau Maria grüßte sie als die Mutter ihrer Gemeinschaft. Ihr Institut verbreitete sie auf wunderbare Weise, da sie siebenundsechzig Häuser gründete. Schließlich vollendete sie zu Chicago am 22. Dezember 1917 ihren Lauf; ihre sterblichen Überreste wurden nach New York überführt. Pius XI. sprach sie selig, Pius XII. aber zählte sie zu den heiligen Jungfrauen.
+&teDeum
+
+[Hymnus Laudes]
+v. Göttliche Liebe Jesu, einzige Vollbringerin
+der großen Taten,
+Die selbst Jungfrauen verwandelst
+In glühende Apostel.
+_
+Durch dich erstrahlte die berühmte Franziska,
+Die die Welt verachtete,
+Und über ihr Geschlecht hinausgehend
+Gottes Ruhm über die Erde verbreitete.
+_
+Selige Mutter, schau gnädig vom Himmel
+Auf deine Töchter herab,
+Und lass dein Werk durch Tugenden
+Aufblühen und gedeihen.
+_
+Schreite fort, das Herz Jesu zu bewegen,
+Dass er alle Völker versammle,
+Und erlange uns in deiner Güte
+Gleichgesinnte Flammen der Liebe.
+_
+Kraft, Ehre, Lob und Ruhm
+Sei Gott dem Vater mit dem Sohne
+Und dem heiligen Tröster zugleich
+In alle Ewigkeit. Amen.
+
+[Capitulum Laudes]
+!2 Cor 10:17-18
+v. Brüder: Wer sich rühmt, der rühme sich im Herrn. Denn nicht der ist bewährt, der sich selbst empfiehlt, sondern den Gott empfiehlt.
+$Deo gratias
+
+[Versum 2]
+V. Gnade ist ausgegossen über deine Lippen.
+R. Darum hat Gott dich gesegnet in Ewigkeit.
+
+[Ant 2]
+Das Himmelreich * gleicht einem Kaufmann, der gute Perlen sucht; als er eine kostbare Perle gefunden hatte, ging er hin und verkaufte alles, was er hatte, und kaufte sie.
+
+[Capitulum Vespera]
+!2 Cor 10:17-18
+v. Brüder: Wer sich rühmt, der rühme sich im Herrn. Denn nicht der ist bewährt, der sich selbst empfiehlt, sondern den Gott empfiehlt.
+$Deo gratias
+
+[Ant 3]
+Komm, Braut Christi, * empfange die Krone, die der Herr dir bereitet hat in Ewigkeit.

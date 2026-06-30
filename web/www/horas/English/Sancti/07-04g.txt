@@ -1,0 +1,9 @@
+[Officium]
+Our Lady, Refuge of Sinners
+
+[Rank]
+Our Lady, Refuge of Sinners;;Duplex II classis;;5;;vide C11
+
+[Oratio]
+O almighty and merciful God, who hast placed in the Blessed Virgin Mary ever a refuge and help for sinners: grant that, sheltered beneath her protection, and loosed from all our offences, we may obtain the happy effect of Thy mercy.
+$Per Dominum

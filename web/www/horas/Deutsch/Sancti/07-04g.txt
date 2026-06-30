@@ -1,0 +1,9 @@
+[Officium]
+Unsere Liebe Frau, Zuflucht der Sünder
+
+[Rank]
+Unsere Liebe Frau, Zuflucht der Sünder;;Duplex II classis;;5;;vide C11
+
+[Oratio]
+O allmächtiger und barmherziger Gott, der du in der seligen Jungfrau Maria, der immerwährenden Jungfrau, eine Zuflucht und Hilfe für die Sünder bereitet hast: gib, dass wir, unter ihrem Schutze geborgen und von allen Sünden losgesprochen, die glückselige Wirkung deiner Barmherzigkeit erlangen mögen.
+$Per Dominum

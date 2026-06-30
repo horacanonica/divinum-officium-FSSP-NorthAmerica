@@ -1,0 +1,9 @@
+[Officium]
+Notre-Dame, Refuge des Pécheurs
+
+[Rank]
+Notre-Dame, Refuge des Pécheurs;;Duplex II classis;;5;;vide C11
+
+[Oratio]
+Ô Dieu tout-puissant et miséricordieux, qui avez établi dans la bienheureuse Vierge Marie, toujours vierge, un refuge et un secours pour les pécheurs : accordez que, sous sa protection, absous de toutes nos fautes, nous obtenions l'heureux effet de votre miséricorde.
+$Per Dominum

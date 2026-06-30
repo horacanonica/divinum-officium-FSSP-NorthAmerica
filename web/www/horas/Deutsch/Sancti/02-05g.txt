@@ -1,0 +1,67 @@
+[Officium]
+Der heilige Philipp von Jesus, Märtyrer
+
+[Rank]
+Hl. Philipp von Jesus, Märtyrer;;Duplex;;3;;vide C2
+
+[Hymnus Matutinum]
+v. Sei gegrüßt, du Held des Sieges,
+Größter Ruhm der neuen Welt,
+Der durch seinen Tod die Heimat
+Reicher und gesegneter gestellt.
+_
+Mexikos erster Kämpfer und Fürst,
+Du, als Erster deines Vaterlandes,
+Trugst den Märtyrerkranz des Himmels
+Heim von fremder Küste Strandes.
+_
+Was die heiße Jugend jemals
+Durch Leichtfertigkeit gesündigt,
+Hast du, jubelnd in den Tod eilend,
+Als heiliges Opfer ausgetilgt.
+_
+Mach, dass wir als deine Jünger
+Mit innigem Schmerz und Buß bereit
+All unsere Sünden rein abwaschen
+Und leben in Heiligkeit.
+_
+Gott dem Vater sei die Ehre,
+Seinem einz'gen Sohne gleich,
+Und dem heil'gen Parakleten
+In der Ewigkeit. Amen.
+Amen.
+
+[Oratio]
+O Gott, der du unter den ersten Märtyrern Japans den seligen Philipp, an das Kreuz genagelt und von dreifacher Lanze durchbohrt, als allerersten mit der Palme des Martyriums bekrönt hast: gewähre gnädig, dass wir, von seinem Schutze getragen, mit ihm zugleich im Himmel gekrönt werden.
+$Per Dominum
+
+[Lectio94]
+Philipp von Jesus, in Mexiko von spanischen Eltern geboren, legte zunächst das Franziskanergewand an; doch verließ er aus Unbeständigkeit den Orden. Durch die göttliche Vorsehung jedoch zur Buße bewogen, erbat und empfing er erneut das Habit der Franziskaner-Unbeschuhten in Manila, wo er schließlich seine feierlichen Gelübde ablegte. Während er auf das Schiff stieg, das ihn nach Mexiko zurückbringen sollte, wurde er durch Stürme in einen japanischen Hafen getrieben; und dort, als die Christenverfolgung ausbrach, wurde er in Ketten gelegt. Ans Kreuz geschlagen und von dreifacher Lanze durchbohrt, erlangte er als Erster unter seinen Gefährten die glorreiche Palme des Martyriums. Papst Pius IX. schrieb ihn im Jahre 1867 in den Katalog der Heiligen ein.
+&teDeum
+
+[Hymnus Laudes]
+v. O Philipp, berühmter Märtyrer,
+Treuer Nachfolger des Namens Jesu,
+Den du über alles vorgezogen hast,
+Selbst bis zum gewaltsamen Tod ihm treu.
+_
+Dreifach durchbohrt von der Lanze,
+Triefend vom vergoss'nen Blut,
+Am Kreuz ausgespannt, da sterbend,
+Trägst du Jesu Bild als heiliges Gut.
+_
+Du bist der Führer und Bannerträger
+Deiner Märtyrergenossen all,
+Der die Schar der Himmelsbürger führte
+Und als Erster sein Blut vergoss im Kampfesschall.
+_
+Höre die Stimmen und die Tränen
+Derer, die heut zu dir flehen voll Vertrau'n;
+Als unser Führer schreib unsere Namen
+Unter die Seligen in deinen Himmelsau'n.
+_
+Gott dem Vater, Sohn und Geiste
+Sei Macht, Ehre, Lob und Preis,
+Jetzt und in allen künftigen Zeiten,
+In alle Ewigkeit. Amen.
+Amen.
