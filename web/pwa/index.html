@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="la">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="DO Offline">
+  <title>Divinum Officium Offline</title>
+  <link rel="manifest" href="/pwa/manifest.json">
+  <link rel="apple-touch-icon" href="/android-icon-192x192.png">
+  <link rel="stylesheet" href="/pwa/styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SCREEN: Download / Home
+     ═══════════════════════════════════════════════════════════════════════ -->
+<div id="screen-download" class="screen">
+  <header class="app-header">
+    <h1>Divinum Officium</h1>
+    <span class="status-dot" title=""></span>
+  </header>
+
+  <main class="download-form">
+
+    <div class="field-group">
+      <label>Calendar</label>
+      <select id="cal-picker"></select>
+    </div>
+
+    <div class="field-row">
+      <div class="field-group">
+        <label>Start date</label>
+        <input type="date" id="start-date">
+      </div>
+      <div class="field-group">
+        <label>Days</label>
+        <select id="days-count">
+          <option value="3">3</option>
+          <option value="7" selected>7</option>
+          <option value="14">14</option>
+          <option value="30">30</option>
+          <option value="60">60</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label>Language</label>
+      <div class="radio-group">
+        <label><input type="radio" name="lang" value="lat" checked> Latin</label>
+        <label><input type="radio" name="lang" value="en"> English</label>
+        <label><input type="radio" name="lang" value="both"> Both</label>
+      </div>
+    </div>
+
+    <button id="btn-download" class="btn-primary">
+      <span id="download-label">⬇ Download 7 days</span>
+    </button>
+
+    <div id="download-progress" class="progress-bar hidden">
+      <div id="progress-fill"></div>
+    </div>
+
+    <!-- Shown when cached data exists for selected calendar -->
+    <div id="cached-section" class="cached-section hidden">
+      <div class="cached-header">
+        <h2>Cached</h2>
+        <button id="btn-storage" class="btn-text">Manage ›</button>
+      </div>
+      <div id="cached-dates"></div>
+      <button id="btn-go-reading" class="btn-primary">Open Office ›</button>
+    </div>
+
+  </main>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SCREEN: Reading
+     ═══════════════════════════════════════════════════════════════════════ -->
+<div id="screen-reading" class="screen">
+
+  <header id="reading-header" class="reading-header">
+
+    <!-- Full header row: date nav + status + settings -->
+    <div class="header-full">
+      <button id="btn-back-to-home" class="btn-icon" title="Home">⌂</button>
+      <div class="date-nav">
+        <button id="btn-prev-day" class="btn-icon" title="Previous day">◀</button>
+        <button id="btn-date" class="date-display" title="Jump to date"></button>
+        <button id="btn-next-day" class="btn-icon" title="Next day">▶</button>
+      </div>
+      <div class="header-actions">
+        <span class="status-dot" title=""></span>
+        <button id="btn-settings" class="btn-icon" title="Settings">⚙</button>
+      </div>
+    </div>
+
+    <!-- Hour tabs (8 canonical hours) -->
+    <div class="hora-tabs" id="hora-tabs">
+      <button class="hora-tab" data-key="matins">
+        <span class="tab-dot">·</span>Mat
+      </button>
+      <button class="hora-tab" data-key="lauds">
+        <span class="tab-dot">·</span>Lau
+      </button>
+      <button class="hora-tab" data-key="prime">
+        <span class="tab-dot">·</span>Pri
+      </button>
+      <button class="hora-tab" data-key="terce">
+        <span class="tab-dot">·</span>Ter
+      </button>
+      <button class="hora-tab" data-key="sext">
+        <span class="tab-dot">·</span>Sex
+      </button>
+      <button class="hora-tab" data-key="none">
+        <span class="tab-dot">·</span>Non
+      </button>
+      <button class="hora-tab" data-key="vespers">
+        <span class="tab-dot">·</span>Ves
+      </button>
+      <button class="hora-tab" data-key="compline">
+        <span class="tab-dot">·</span>Com
+      </button>
+    </div>
+
+    <!-- Collapsed pill strip (visible when header is collapsed) -->
+    <div class="header-pill" id="header-pill"></div>
+
+  </header>
+
+  <main id="content-area" class="content-area">
+    <div id="office-content"></div>
+    <div id="mark-read-bar" class="mark-read-bar hidden">
+      <button id="btn-mark-read" class="btn-mark-read">✓ Mark as read</button>
+    </div>
+  </main>
+
+  <!-- Date picker modal -->
+  <div id="date-picker-modal" class="modal hidden">
+    <div class="modal-inner">
+      <h3>Jump to date</h3>
+      <input type="date" id="modal-date-input">
+      <div class="modal-actions">
+        <button id="btn-date-cancel" class="btn-text">Cancel</button>
+        <button id="btn-date-go" class="btn-primary" style="width:auto;padding:10px 20px;">Go</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SCREEN: Storage management
+     ═══════════════════════════════════════════════════════════════════════ -->
+<div id="screen-storage" class="screen">
+  <header class="app-header">
+    <button id="btn-back-from-storage" class="btn-icon">◀</button>
+    <h2>Storage</h2>
+  </header>
+  <div id="storage-content" class="storage-content"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     Settings bottom sheet (overlays any screen)
+     ═══════════════════════════════════════════════════════════════════════ -->
+<div id="settings-sheet" class="bottom-sheet hidden">
+  <div class="sheet-handle"></div>
+  <h3>Reading settings</h3>
+  <div class="setting-row">
+    <label>Font size</label>
+    <div class="font-controls">
+      <button id="btn-font-down" class="btn-font">A−</button>
+      <span id="font-size-label">1.0×</span>
+      <button id="btn-font-up" class="btn-font">A+</button>
+    </div>
+  </div>
+  <div class="setting-row">
+    <label>Theme</label>
+    <div class="radio-group">
+      <label><input type="radio" name="theme" value="dark" checked> Dark</label>
+      <label><input type="radio" name="theme" value="light"> Light</label>
+    </div>
+  </div>
+  <button id="btn-close-settings" class="btn-text" style="text-align:center;">Done</button>
+</div>
+<div id="sheet-backdrop" class="backdrop hidden"></div>
+
+<!-- Toast notification -->
+<div id="toast" class="toast hidden"></div>
+
+<script src="/pwa/db.js"></script>
+<script src="/pwa/app.js"></script>
+</body>
+</html>

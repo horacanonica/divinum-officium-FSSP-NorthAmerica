@@ -1,4 +1,4 @@
-const CACHE = 'do-v2';
+const CACHE = 'do-v3';
 const PRECACHE = [
   '/',
   '/www/style/main.css',
@@ -26,6 +26,9 @@ self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
 
   const url = e.request.url;
+
+  // Never intercept the offline-pack API — handled by PWA app.js into IndexedDB
+  if (url.includes('/offline_pack')) return;
 
   if (url.includes('/cgi-bin/')) {
     // Network-first: fetch live, save to cache, serve cache when offline
