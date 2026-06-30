@@ -81,7 +81,8 @@ for my $i (0 .. $days - 1) {
     }
 
     my $iso_date = sprintf('%04d-%02d-%02d', $cy, $cm, $cd);
-    my $do_date  = sprintf('%02d/%02d/%04d', $cm, $cd, $cy);
+    # DO engine expects M-D-YYYY with no leading zeros
+    my $do_date  = sprintf('%d-%d-%04d', $cm, $cd, $cy);
 
     my %hours_out;
     for my $h (@HORAS) {
@@ -117,16 +118,16 @@ sub call_hora {
     my ($date, $hora, $version, $lang, $lang2) = @_;
     $lang2 //= '';
 
+    # Correct DO engine params: command=pray$hora, date1=M-D-YYYY (no leading zeros)
     my $qs = join('&',
-        'date='    . uri_encode($date),
-        'hora='    . uri_encode($hora),
+        'command=' . uri_encode("pray$hora"),
+        'date1='   . uri_encode($date),
         'version=' . uri_encode($version),
-        'lang='    . uri_encode($lang),
+        'lang1='   . uri_encode($lang),
         'lang2='   . uri_encode($lang2),
+        'votive=Hodie',
     );
 
-    # Use a temp file so subprocess stdout capture works regardless of
-    # how PSGI/CGI::Emulate may have tied STDOUT in the parent process.
     require File::Temp;
     my ($tmpfh, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => '.html');
     close $tmpfh;
@@ -135,7 +136,6 @@ sub call_hora {
     unless (defined $pid) { return ''; }
 
     if ($pid == 0) {
-        # Child: wire FD 1 to the temp file at the OS level (bypasses any Perl STDOUT ties)
         open(my $out, '>', $tmpfile) or POSIX::_exit(1);
         require POSIX;
         POSIX::dup2(fileno($out), 1);
@@ -172,43 +172,49 @@ sub strip_html {
     return '' unless $html;
 
     # 1. Strip all CGI/HTTP headers up to the first blank line
-    #    (Output always starts with one or more header lines, then \n\n, then HTML)
     $html =~ s/\A.+?\n\n//s;
 
     # 2. Strip everything up to and including </HEAD>
     $html =~ s/.*?<\/HEAD>//si;
 
-    # 3. Strip the opening BODY tag
+    # 3. Strip opening BODY and all FORM opening tags (page has nested forms)
     $html =~ s/\s*<BODY[^>]*>//i;
+    $html =~ s/\s*<FORM\b[^>]*>//gi;
 
-    # 4. Strip the opening FORM tag
-    $html =~ s/\s*<FORM[^>]*>//i;
-
-    # 5. Strip from pwa-nav bar to end (nav bar + scroll script + /FORM/BODY/HTML)
+    # 4. Strip pwa-nav bar onwards (nav + scroll script + /FORM/BODY/HTML)
     $html =~ s/<div class='pwa-nav'>.*//si;
 
-    # 6. Catch-all: strip any remaining structural close tags
+    # 5. Catch-all structural close tags
     $html =~ s/<\/FORM>//gi;
     $html =~ s/<\/BODY>//gi;
     $html =~ s/<\/HTML>//gi;
 
-    # 7. Strip script blocks
+    # 6. Strip script blocks
     $html =~ s/<script\b[^>]*>.*?<\/script>//gsi;
 
-    # 8. Strip DO site-title H1 ("Divinum Officium ... FSSP")
+    # 7. Strip DO site-title H1
     $html =~ s/<H1\b[^>]*>.*?<\/H1>\s*//gsi;
 
-    # 9. Strip navigation paragraphs that link to Pofficium.pl
-    #    (date prev/next bar and hora selection bar)
+    # 8. Strip INPUT tags (hidden form fields from nested settings form)
+    $html =~ s/<INPUT\b[^>]*\/?>//gi;
+
+    # 9. Strip navigation paragraphs that link to Pofficium.pl (hour/date nav bars)
     1 while $html =~ s/<P\b[^>]*>(?:(?!<\/P>).)*?Pofficium\.pl\?(?:(?!<\/P>).)*?<\/P>\s*//gsi;
 
-    # 10. Strip remaining A tags but keep their visible text (links are dead offline)
+    # 10. Strip footer P containing "Credits" or "Technical" or "Help" links
+    1 while $html =~ s/<P\b[^>]*>(?:(?!<\/P>).)*?(?:Credits|Technical|Rubrics)(?:(?!<\/P>).)*?<\/P>\s*//gsi;
+
+    # 12. Strip the versions/settings TABLE (has no CELLPADDING attribute)
+    #    Prayer content tables have CELLPADDING='8'; settings table does not.
+    1 while $html =~ s/<TABLE\b(?=[^>]*class="contrastbg")(?![^>]*CELLPADDING)[^>]*>.*?<\/TABLE>\s*//gsi;
+
+    # 13. Strip remaining A tags but keep their visible text
     $html =~ s/<A\b[^>]*>(.*?)<\/A>/$1/gsi;
 
-    # 11. Strip inline STYLE attributes so the PWA's own CSS controls typography
+    # 15. Strip inline STYLE attributes
     $html =~ s/\s+STYLE="[^"]*"//gi;
 
-    # 12. Trim
+    # 16. Trim
     $html =~ s/\A\s+//;
     $html =~ s/\s+\z//;
 
