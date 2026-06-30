@@ -39,6 +39,11 @@ Rubrics 1960 - 1960           (stock DO — base for all 1960 rubrics)
     |       (inherits from FSSP USA)       Sep 14 (Cathedral Dedication, I cl.)
     |                                      Dec 12 (Guadalupe promoted to I cl.)
     |
+    └── Rubrics 1960 - Maple Hill  adds everything in FSSP USA, plus:
+    |       (inherits from FSSP USA)       Jun 2  (Cathedral Dedication, I cl.)
+    |                                      Aug 8  (St. John Vianney, I cl. — Patron of chapel)
+    |                                      Nov 17 (St. Philippine Duchesne, III cl.)
+    |
     └── Rubrics 1960 - Guadalajara  adds everything in FSSP (not USA), plus:
             (inherits from FSSP)           Jan 24 (S. Mariæ Pacis, III cl.)
                                            Feb 5  (S. Philippus a Jesu, III cl.)
@@ -69,6 +74,7 @@ A new diocese or parish = one small `.txt` file + one line in `data.txt`.
 | `Sacramento.txt` | Example diocese/parish calendar |
 | `Guadalajara.txt` | Archdiocese of Guadalajara, MX (13 feasts, inherits FSSP not USA) |
 | `OLGSeminary.txt` | Our Lady of Guadalupe Seminary, Denton NE (2 feasts, inherits FSSP USA) |
+| `MapleHill.txt` | Maple Hill chapel (3 feasts, inherits FSSP USA) |
 
 ### Sancti/ (office text files)
 | File | Saint | Notes |
@@ -83,6 +89,9 @@ A new diocese or parish = one small `.txt` file + one line in `data.txt`.
 | `08-02s.txt` | Inventio S. Stephani Protomartyris — I Vespers (Aug 2) | Sacramento-specific |
 | `08-03s.txt` | Inventio S. Stephani Protomartyris (Aug 3) | Sacramento-specific |
 | `09-14olg.txt` | Dedicatio Ecclesiae Cathedralis Lincolniensis (Sep 14) | OLG Seminary-specific |
+| `06-02mh.txt` | Dedicatio Ecclesiae Cathedralis (Jun 2) | Maple Hill-specific |
+| `08-08mh.txt` | S. Joannis Mariae Vianney, Patroni Capellae (Aug 8) — I cl. | Promotes III cl. to I cl. for chapel patron |
+| `11-17mh.txt` | S. Philippinae Duchesne Virginis (Nov 17) — III cl. | New proper; proper Oratio + Lectio94; Common C6a |
 
 #### Guadalajara proper offices (`g` suffix)
 | File | Saint | Rank | Notes |
@@ -232,6 +241,9 @@ bash epubgen2.sh -y 2026 -r Guadalajara -o /path/to/output/Guadalajara
 
 # OLG Seminary — Our Lady of Guadalupe Seminary (FSSP USA base)
 bash epubgen2.sh -y 2026 -r OLGSeminary -o /path/to/output/OLGSeminary
+
+# Maple Hill chapel (FSSP USA base)
+bash epubgen2.sh -y 2026 -r MapleHill -o /path/to/output/MapleHill
 ```
 
 Each run produces 12 monthly EPUBs and one full-year EPUB.

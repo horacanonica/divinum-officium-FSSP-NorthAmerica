@@ -1,0 +1,13 @@
+[Officium]
+S. Joannis Mariæ Vianney Confessoris
+
+[Rank]
+S. Joannis Mariæ Vianney Confessoris, Patroni Capellæ;;Duplex I classis;;6;;ex C5
+
+[Rule]
+ex C5;
+9 lectiones
+
+[Oratio]
+Omnípotens et miséricors Deus, qui sanctum Joánnem Maríam pastoráli stúdio et jugi oratiónis ac pœniténtiæ ardóre mirábilem effecísti: da, quǽsumus; ut, ejus exémplo et intercessióne, ánimas fratrum lucrári Christo, et cum eis ætérnam glóriam cónsequi valeámus.
+$Per eumdem

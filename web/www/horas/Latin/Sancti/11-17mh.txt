@@ -1,0 +1,16 @@
+[Officium]
+S. Philippinæ Duchesne Virginis
+
+[Rank]
+S. Philippinæ Duchesne Virginis;;Duplex;;3;;vide C6a
+
+[Rule]
+vide C6a;
+
+[Oratio]
+Deus, qui beátam Vírginem Philippínam, apostolicæ charitátis ardóre et assídua oratióne insignem, inter Americæ Septentrionális gentes tuam glóriam nuntiáre voluísti: ejus nobis intercessióne concéde; ut et ipsi in tuo servítio constántes maneámus, et ætérnam glóriam obtineámus.
+$Per Dominum
+
+[Lectio94]
+Philippína Rosália Duchesne Gratiánopoli in Gállia anno MDCCLXIX nata, ab infántia religiosæ vitæ dedíta fuit. Inter Visitatiónis moniáles institúta, sed monastério per Revolutiónem Gállicam dissoluto, Societáti Sacri Cordis Jesu, a beáta Magdaléna Sophia Barat nuper fundátæ, anno MDCCCIV sese addíxit. Anno MDCCCXVIII Americam Septentrionálem petíit; ibi, trans flúmen Mississíppium in ópido Sancti Cároli, prímam suæ Societátis in Novo Mundo scholam condidit, et múltos post annos in Missúria et Louisiana érudiéndo et evangelizándo impendit. Septuagésimum secúndum agens annum, ad Potouatomiénsium géntem in Cansatia se cóntulit, ibíque tam assídua oratióni incúmbebat, ut a nativis ipsis Mulíer Quæ Semper Orat nuncuparétur. Die décima octáva novémbris anno MDCCCLII Sancti Cároli in Dómino quiévit. Pius XII eam beátis, Joánnes vero Paulus II anno MCMLXXXVIII sanctis Vírginum accénsuit.
+&teDeum
