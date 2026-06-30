@@ -8,7 +8,7 @@ use POSIX qw(strftime);
 use Time::Local qw(timelocal);
 use FindBin qw($Bin);
 
-my $cgi = CGI->new;
+my $cgi  = CGI->new;
 my $json = JSON::PP->new->utf8->canonical(0);
 
 # --- Valid calendars (from data.txt) ---
@@ -38,14 +38,13 @@ my $calendar = $cgi->param('calendar') // '';
 json_error(400, "Missing calendar parameter") unless $calendar ne '';
 json_error(400, "Unknown calendar: $calendar") unless $valid_calendars{$calendar};
 
-my $days_raw = $cgi->param('days') // '7';
-my $days = int($days_raw);
+my $days = int($cgi->param('days') // 7);
 $days = 7  if $days < 1;
 $days = 90 if $days > 90;
 
 my $lang_raw = $cgi->param('lang') // 'lat';
 json_error(400, "Invalid lang — use lat, en, or both") unless $lang_raw =~ /^(lat|en|both)$/;
-my $lang1 = ($lang_raw eq 'en')   ? 'English' : 'Latin';
+my $lang1 = ($lang_raw eq 'en') ? 'English' : 'Latin';
 my $lang2 = ($lang_raw eq 'both') ? 'English' : '';
 
 my $start_raw = $cgi->param('start') // '';
@@ -126,24 +125,23 @@ sub call_hora {
         'lang2='   . uri_encode($lang2),
     );
 
-    pipe(my $reader, my $writer) or return '';
+    # Use a temp file so subprocess stdout capture works regardless of
+    # how PSGI/CGI::Emulate may have tied STDOUT in the parent process.
+    require File::Temp;
+    my ($tmpfh, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => '.html');
+    close $tmpfh;
 
     my $pid = fork();
-    unless (defined $pid) {
-        close $reader; close $writer;
-        return '';
-    }
+    unless (defined $pid) { return ''; }
 
     if ($pid == 0) {
-        close $reader;
-
-        # Redirect STDOUT to pipe so parent can capture it
-        open(STDOUT, '>&', $writer) or exit 1;
-        close $writer;
-        # Suppress STDERR from the DO engine
+        # Child: wire FD 1 to the temp file at the OS level (bypasses any Perl STDOUT ties)
+        open(my $out, '>', $tmpfile) or POSIX::_exit(1);
+        require POSIX;
+        POSIX::dup2(fileno($out), 1);
+        close $out;
         open(STDERR, '>', '/dev/null');
 
-        # CGI environment for the DO engine
         $ENV{REQUEST_METHOD}    = 'GET';
         $ENV{QUERY_STRING}      = $qs;
         $ENV{HTTP_HOST}         = 'localhost';
@@ -155,48 +153,62 @@ sub call_hora {
         $ENV{HTTP_COOKIE}       = '';
         delete $ENV{HTTP_ACCEPT_ENCODING};
 
-        chdir "$Bin";
+        chdir $Bin;
         exec 'perl', "$Bin/Pofficium.pl";
-        exit 1;
+        POSIX::_exit(1);
     }
 
-    close $writer;
-    my $output = '';
-    while (<$reader>) { $output .= $_; }
-    close $reader;
     waitpid($pid, 0);
+
+    open my $fh, '<:encoding(UTF-8)', $tmpfile or return '';
+    my $output = do { local $/; <$fh> };
+    close $fh;
 
     return strip_html($output);
 }
 
 sub strip_html {
     my $html = shift;
+    return '' unless $html;
 
-    # Strip HTTP/CGI headers (everything up to the blank line)
-    $html =~ s/\A[^\r\n]*[\r\n]+(?:[^\r\n]*[\r\n]+)*?[\r\n]//;
+    # 1. Strip all CGI/HTTP headers up to the first blank line
+    #    (Output always starts with one or more header lines, then \n\n, then HTML)
+    $html =~ s/\A.+?\n\n//s;
 
-    # Extract content between <BODY> and </BODY>
-    if ($html =~ /<BODY[^>]*>(.*?)<\/BODY>/si) {
-        $html = $1;
-    }
+    # 2. Strip everything up to and including </HEAD>
+    $html =~ s/.*?<\/HEAD>//si;
 
-    # Remove the opening FORM tag
-    $html =~ s/<FORM\b[^>]*>//gi;
-    # Remove the closing FORM tag
+    # 3. Strip the opening BODY tag
+    $html =~ s/\s*<BODY[^>]*>//i;
+
+    # 4. Strip the opening FORM tag
+    $html =~ s/\s*<FORM[^>]*>//i;
+
+    # 5. Strip from pwa-nav bar to end (nav bar + scroll script + /FORM/BODY/HTML)
+    $html =~ s/<div class='pwa-nav'>.*//si;
+
+    # 6. Catch-all: strip any remaining structural close tags
     $html =~ s/<\/FORM>//gi;
+    $html =~ s/<\/BODY>//gi;
+    $html =~ s/<\/HTML>//gi;
 
-    # Remove pwa-nav bar
-    $html =~ s/<div class='pwa-nav'>.*?<\/div>//si;
-
-    # Remove all SCRIPT blocks
-    $html =~ s/<SCRIPT\b[^>]*>.*?<\/SCRIPT>//gsi;
+    # 7. Strip script blocks
     $html =~ s/<script\b[^>]*>.*?<\/script>//gsi;
 
-    # Remove inline style attributes (replace with nothing)
-    $html =~ s/\s+style="[^"]*"//gi;
+    # 8. Strip DO site-title H1 ("Divinum Officium ... FSSP")
+    $html =~ s/<H1\b[^>]*>.*?<\/H1>\s*//gsi;
+
+    # 9. Strip navigation paragraphs that link to Pofficium.pl
+    #    (date prev/next bar and hora selection bar)
+    1 while $html =~ s/<P\b[^>]*>(?:(?!<\/P>).)*?Pofficium\.pl\?(?:(?!<\/P>).)*?<\/P>\s*//gsi;
+
+    # 10. Strip remaining A tags but keep their visible text (links are dead offline)
+    $html =~ s/<A\b[^>]*>(.*?)<\/A>/$1/gsi;
+
+    # 11. Strip inline STYLE attributes so the PWA's own CSS controls typography
     $html =~ s/\s+STYLE="[^"]*"//gi;
 
-    # Trim leading/trailing whitespace
+    # 12. Trim
     $html =~ s/\A\s+//;
     $html =~ s/\s+\z//;
 
