@@ -77,13 +77,15 @@ RUBRICS_CODE=1960
 RUBRICS=Rubrics%201960%20%2D%201960
 RUBRICS_NAME=
 NOFANCYCHARS=1 #0 or 1; when 1, "fancy" characters such as  ℟ ℣ +︎ ✠ ✙︎ are replaced with R. V. + + +
+MONTH_FROM=1  #first month to generate (1–12)
+MONTH_TO=12   #last month to generate (1–12)
 OPTIONAL_KINDLEGEN_PATH=/usr/local/bin/kindlegen #full path to kindlegen executable, if exists, used to convert the resulting EPUB files to MOBI format as well
 
 #constants
 #supported rubrics as in Eofficium.pl
-ALL_RUBRICS_CODES=(1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altovado Dominican FSSP USA1960 FSSPUSA Sacramento Guadalajara Chesapeake)
-ALL_RUBRICS=("Tridentine - 1570" "Tridentine - 1888" "Tridentine - 1906" "Divino Afflatu - 1954" "Reduced - 1955" "Rubrics 1960 - 1960" "Rubrics 1960 - 2020 USA" "Monastic - 1617" "Monastic - 1930" "Monastic - 1963" "Ordo Cisterciensis - 1951" "Ordo Cisterciensis - Abbatia B.M.V. de Altovado" "Ordo Praedicatorum - 1962" "Rubrics 1960 - FSSP" "Rubrics 1960 - USA 1960" "Rubrics 1960 - FSSP USA" "Rubrics 1960 - Sacramento" "Rubrics 1960 - Guadalajara" "Rubrics 1960 - Chesapeake")
-ALL_RUBRICS_NAME=(_1570 _1888 _1906 _DA _1955 "" _NC _M1617 _M1930 Monastic _Cist _Altovado _OP _FSSP _USA1960 _FSSPUSA _Sac _GLD _Ches)
+ALL_RUBRICS_CODES=(1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altovado Dominican FSSP USA1960 FSSPUSA Sacramento Guadalajara Chesapeake Nashua)
+ALL_RUBRICS=("Tridentine - 1570" "Tridentine - 1888" "Tridentine - 1906" "Divino Afflatu - 1954" "Reduced - 1955" "Rubrics 1960 - 1960" "Rubrics 1960 - 2020 USA" "Monastic - 1617" "Monastic - 1930" "Monastic - 1963" "Ordo Cisterciensis - 1951" "Ordo Cisterciensis - Abbatia B.M.V. de Altovado" "Ordo Praedicatorum - 1962" "Rubrics 1960 - FSSP" "Rubrics 1960 - USA 1960" "Rubrics 1960 - FSSP USA" "Rubrics 1960 - Sacramento" "Rubrics 1960 - Guadalajara" "Rubrics 1960 - Chesapeake" "Rubrics 1960 - Nashua")
+ALL_RUBRICS_NAME=(_1570 _1888 _1906 _DA _1955 "" _NC _M1617 _M1930 Monastic _Cist _Altovado _OP _FSSP _USA1960 _FSSPUSA _Sac _GLD _Ches _Nas)
 
 # Languages
 ALL_LANGUAGES_CODES=(cs da de en es fr it la la-bea hu nl pl pt pl-new)
@@ -92,7 +94,7 @@ ALL_LANGUAGES_NAMES=(Czech Danish German English Spanish French Italian Latin La
 YEAR_RE='^[0-9]+$'
 
 #parse parameters
-while getopts "hy:t:pvmr:c:o:l:b:f" OPTION
+while getopts "hy:t:pvmr:c:o:l:b:fM:N:" OPTION
 do
      case $OPTION in
          h)
@@ -125,15 +127,20 @@ do
              ;;
          r)
              RUBRICS_CODE=$OPTARG
-             #make sure the value is one of the expected values
+             FOUND_RUBRICS=0
              for i in $(seq 0 ${#ALL_RUBRICS_CODES[@]}); do
                 if [[ ${ALL_RUBRICS_CODES[$i]} == $RUBRICS_CODE ]]; then
                   RUBRICS=${ALL_RUBRICS[$i]}
                   RUBRICS_NAME=${ALL_RUBRICS_NAME[$i]}
-                  continue 2
+                  FOUND_RUBRICS=1
+                  break
                 fi
              done
-             echo "Invalid version." >&2; exit 1
+             if [[ $FOUND_RUBRICS -eq 0 ]]; then
+               # Accept any custom parish calendar code not in the static list
+               RUBRICS="Rubrics 1960 - ${RUBRICS_CODE}"
+               RUBRICS_NAME="_${RUBRICS_CODE}"
+             fi
              ;;
          c)
              COVER_FILENAME=$OPTARG
@@ -167,6 +174,12 @@ do
              ;;
          f)
              NOFANCYCHARS=0
+             ;;
+         M)
+             MONTH_FROM=$OPTARG
+             ;;
+         N)
+             MONTH_TO=$OPTARG
              ;;
          ?)
              usage
@@ -251,10 +264,8 @@ foreachYear() {
 
 #This method calls $1 (the parameter given to this method - a command) for every month in the year that is set in $YEAR variable.
 foreachMonthInYear() {
-	MONTH_NUM_INDEX=-1 #note we cannot count using MONTH, because it is zero padded (and bash consides it an octal literal)
-	for MONTH in $(seq -w 12); do
-		MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
-
+	for MONTH in $(seq -f '%02g' $MONTH_FROM $MONTH_TO); do
+		MONTH_NUM_INDEX=$(( 10#$MONTH - 1 ))
 		formatFilename #needed to set the TOC filename
 		$1
 	done
@@ -276,10 +287,8 @@ foreachDayInMonth() {
 }
 
 foreachDayInYear() {
-	MONTH_NUM_INDEX=-1 #note we cannot count using MONTH, because it is zero padded (and bash consides it an octal literal)
-	for MONTH in $(seq -w 12); do
-		MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
-
+	for MONTH in $(seq -f '%02g' $MONTH_FROM $MONTH_TO); do
+		MONTH_NUM_INDEX=$(( 10#$MONTH - 1 ))
 		DAYN=$(cal $MONTH $YEAR|grep -E -v [a-z]|wc -w)
 		for DAY in $(seq -w $DAYN); do
 				formatFilename
@@ -289,10 +298,8 @@ foreachDayInYear() {
 }
 
 foreachHourInYear() {
-	MONTH_NUM_INDEX=-1 #note we cannot count using MONTH, because it is zero padded (and bash consides it an octal literal)
-	for MONTH in $(seq -w 12); do
-		MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
-
+	for MONTH in $(seq -f '%02g' $MONTH_FROM $MONTH_TO); do
+		MONTH_NUM_INDEX=$(( 10#$MONTH - 1 ))
 		DAYN=$(cal $MONTH $YEAR|grep -E -v [a-z]|wc -w)
 		for DAY in $(seq -w $DAYN); do
 			for H in $(seq 0 $HORA_INDEX_LAST); do
@@ -316,9 +323,8 @@ foreachHourInRange() {
 	#so using this instead
 
 	for YEAR in $(seq $YEAR_FROM $YEAR_TO); do
-		MONTH_NUM_INDEX=-1 #note we cannot count using MONTH, because it is zero padded (and bash consides it an octal literal)
-		for MONTH in $(seq -w 12); do
-			MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
+		for MONTH in $(seq -f '%02g' $MONTH_FROM $MONTH_TO); do
+			MONTH_NUM_INDEX=$(( 10#$MONTH - 1 ))
 			DAYN=$(cal $MONTH $YEAR|grep -E -v [a-z]|wc -w)
 			for DAY in $(seq -w $DAYN); do
 				for H in $(seq 0 $HORA_INDEX_LAST); do
@@ -429,8 +435,10 @@ generateTOCs() {
 	#generate OPF per month
 	foreachMonthInRange outputMonthToFile
 
-	#generate OPF per year
-	foreachYear outputYearToFile
+	#generate OPF per year (skip when generating a partial month range)
+	if [[ $MONTH_FROM -eq 1 && $MONTH_TO -eq 12 ]]; then
+		foreachYear outputYearToFile
+	fi
 
 	echo -e "\033[1m:: Finished the creating of TOCs\033[0m"
 }
@@ -552,8 +560,10 @@ generateOPF() {
 	#generate OPF per month
 	foreachMonthInRange outputMonthToFileOPF
 
-	#generate OPF per year
-	foreachYear outputYearToFileOPF
+	#generate OPF per year (skip when generating a partial month range)
+	if [[ $MONTH_FROM -eq 1 && $MONTH_TO -eq 12 ]]; then
+		foreachYear outputYearToFileOPF
+	fi
 
 	echo -e "\033[1m:: Finished the creating of OPFs\033[0m"
 }
@@ -745,8 +755,11 @@ createEPUBYear() {
 createEPUBs() {
 	echo -e "\033[1m:: Starting to create EPUBs for each month\033[0m"
 	foreachMonthInRange createEPUBMonth
-	echo -e "\033[1m:: Starting to create EPUBs for each year\033[0m"
-	foreachYear createEPUBYear
+	#skip full-year epub when generating a partial month range
+	if [[ $MONTH_FROM -eq 1 && $MONTH_TO -eq 12 ]]; then
+		echo -e "\033[1m:: Starting to create EPUBs for each year\033[0m"
+		foreachYear createEPUBYear
+	fi
 	echo -e "\033[1m:: Finished the creation of EPUBs\033[0m"
 }
 

@@ -30,10 +30,23 @@ services:
     networks:
       - app-net
 
+  epubweb:
+    build:
+      context: ./
+      dockerfile: epubweb/Dockerfile
+    volumes:
+      - ./web:/var/www/web:Z
+      - ./standalone/tools/epubgen2:/var/www/standalone/tools/epubgen2:Z
+      - epub-output:/epub-output
+    restart: unless-stopped
+    networks:
+      - app-net
+
   caddy:
     image: caddy:alpine
     ports:
       - "2015:2015"
+      - "2016:2016"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data
@@ -41,6 +54,7 @@ services:
     depends_on:
       - web
       - auth
+      - epubweb
     networks:
       - app-net
 
@@ -50,3 +64,4 @@ networks:
 volumes:
   auth-data:
   caddy-data:
+  epub-output:

@@ -1,0 +1,32 @@
+:2015 {
+    # Auth service pages are served directly — no auth check on these
+    handle /auth/* {
+        reverse_proxy auth:8081
+    }
+
+    # Everything else requires a valid session
+    handle {
+        forward_auth auth:8081 {
+            uri /auth/check
+            header_up X-Forwarded-Uri {uri}
+            copy_headers X-Auth-Email
+        }
+        reverse_proxy web:8080
+    }
+}
+
+# EPUB generator — Tailscale-only (not Funneled)
+:2016 {
+    handle /auth/* {
+        reverse_proxy auth:8081
+    }
+
+    handle {
+        forward_auth auth:8081 {
+            uri /auth/check
+            header_up X-Forwarded-Uri {uri}
+            copy_headers X-Auth-Email
+        }
+        reverse_proxy epubweb:8090
+    }
+}
