@@ -14,6 +14,7 @@ Rubrics 1960 - Guadalajara,Guadalajara,1960,1960,Rubrics 1960 - FSSP
 Rubrics 1960 - Chesapeake,Chesapeake,1960,1960,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Nashua,Nashua,1960,1960,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Arlington,Arlington,1960,1960,Rubrics 1960 - FSSP USA
+Rubrics 1960 - OLG Seminary,OLGSeminary,1960,1960,Rubrics 1960 - FSSP USA
 Monastic Tridentinum 1617,M1617,M1617,M1617,Tridentine - 1570
 Monastic Divino 1930,M1930,M1930,M1930,Monastic Tridentinum 1617
 Monastic - 1963,M1963,M1963,M1963,Monastic Divino 1930

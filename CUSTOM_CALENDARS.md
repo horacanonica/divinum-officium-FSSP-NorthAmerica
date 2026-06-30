@@ -35,6 +35,10 @@ Rubrics 1960 - 1960           (stock DO — base for all 1960 rubrics)
     |                                      Aug 3  (Finding of St. Stephen, I cl.)
     |                                      Dec 12 (Guadalupe promoted to I cl.)
     |
+    └── Rubrics 1960 - OLG Seminary adds everything in FSSP USA, plus:
+    |       (inherits from FSSP USA)       Sep 14 (Cathedral Dedication, I cl.)
+    |                                      Dec 12 (Guadalupe promoted to I cl.)
+    |
     └── Rubrics 1960 - Guadalajara  adds everything in FSSP (not USA), plus:
             (inherits from FSSP)           Jan 24 (S. Mariæ Pacis, III cl.)
                                            Feb 5  (S. Philippus a Jesu, III cl.)
@@ -64,6 +68,7 @@ A new diocese or parish = one small `.txt` file + one line in `data.txt`.
 | `USA1960.txt` | North American supplement (5 feasts) |
 | `Sacramento.txt` | Example diocese/parish calendar |
 | `Guadalajara.txt` | Archdiocese of Guadalajara, MX (13 feasts, inherits FSSP not USA) |
+| `OLGSeminary.txt` | Our Lady of Guadalupe Seminary, Denton NE (2 feasts, inherits FSSP USA) |
 
 ### Sancti/ (office text files)
 | File | Saint | Notes |
@@ -77,6 +82,7 @@ A new diocese or parish = one small `.txt` file + one line in `data.txt`.
 | `06-30s.txt` | Dedicatio Ecclesiae Cathedralis Sacramentensis (Jun 30) | Sacramento-specific |
 | `08-02s.txt` | Inventio S. Stephani Protomartyris — I Vespers (Aug 2) | Sacramento-specific |
 | `08-03s.txt` | Inventio S. Stephani Protomartyris (Aug 3) | Sacramento-specific |
+| `09-14olg.txt` | Dedicatio Ecclesiae Cathedralis Lincolniensis (Sep 14) | OLG Seminary-specific |
 
 #### Guadalajara proper offices (`g` suffix)
 | File | Saint | Rank | Notes |
@@ -181,10 +187,10 @@ ALL_RUBRICS_CODES=(1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altova
 ALL_RUBRICS=("Tridentine - 1570" ... "Ordo Praedicatorum - 1962")
 ALL_RUBRICS_NAME=(_1570 _1888 _1906 _DA _1955 "" _NC _M1617 _M1930 Monastic _Cist _Altovado _OP)
 
-# After (append the four new entries to each array):
-ALL_RUBRICS_CODES=(1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altovado Dominican FSSP USA1960 FSSPUSA Sacramento)
-ALL_RUBRICS=("Tridentine - 1570" ... "Ordo Praedicatorum - 1962" "Rubrics 1960 - FSSP" "Rubrics 1960 - USA 1960" "Rubrics 1960 - FSSP USA" "Rubrics 1960 - Sacramento")
-ALL_RUBRICS_NAME=(_1570 _1888 _1906 _DA _1955 "" _NC _M1617 _M1930 Monastic _Cist _Altovado _OP _FSSP _USA1960 _FSSPUSA _Sac)
+# After (append the new entries to each array):
+ALL_RUBRICS_CODES=(1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altovado Dominican FSSP USA1960 FSSPUSA Sacramento Guadalajara Chesapeake Nashua OLGSeminary)
+ALL_RUBRICS=("Tridentine - 1570" ... "Ordo Praedicatorum - 1962" "Rubrics 1960 - FSSP" "Rubrics 1960 - USA 1960" "Rubrics 1960 - FSSP USA" "Rubrics 1960 - Sacramento" "Rubrics 1960 - Guadalajara" "Rubrics 1960 - Chesapeake" "Rubrics 1960 - Nashua" "Rubrics 1960 - OLG Seminary")
+ALL_RUBRICS_NAME=(_1570 _1888 _1906 _DA _1955 "" _NC _M1617 _M1930 Monastic _Cist _Altovado _OP _FSSP _USA1960 _FSSPUSA _Sac _GLD _Ches _Nas _OLG)
 ```
 
 #### 5b — Fix bash 3.2 compatibility (macOS only)
@@ -223,6 +229,9 @@ bash epubgen2.sh -y 2026 -r Sacramento -o /path/to/output/Sacramento
 
 # Guadalajara — Archdiocese of Guadalajara (FSSP base, no North American feasts)
 bash epubgen2.sh -y 2026 -r Guadalajara -o /path/to/output/Guadalajara
+
+# OLG Seminary — Our Lady of Guadalupe Seminary (FSSP USA base)
+bash epubgen2.sh -y 2026 -r OLGSeminary -o /path/to/output/OLGSeminary
 ```
 
 Each run produces 12 monthly EPUBs and one full-year EPUB.
