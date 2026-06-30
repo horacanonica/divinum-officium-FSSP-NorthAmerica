@@ -96,6 +96,11 @@ builder {
                 $env->{PATH_INFO} = '/index.html';
             }
 
+            # Serve index.html for directory requests under /pwa/
+            if ($env->{PATH_INFO} =~ m|^/pwa/?$|) {
+                $env->{PATH_INFO} = '/pwa/index.html';
+            }
+
             return $app->($env);
         };
     };
