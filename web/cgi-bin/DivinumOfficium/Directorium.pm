@@ -249,7 +249,7 @@ sub transfered {
       if ($val =~ /Tempora/i && $val !~ /Epi1\-0/i) { next; }
 
       if ( $val !~ /^$key/
-        && (($str =~ /$val/i && $val =~ /^$strFolder/) || $val =~ /$str/i)
+        && (($str =~ /$val/i && $val =~ /^$strFolder/) || $val =~ /(?:^|~)\Q$str\E(?:~|;;|$)/i)
         && $transfer{$key} !~ /v\s*$/i)
       {
         return $key;

@@ -30,7 +30,7 @@ Rubrics 1960 - 1960           (stock DO — base for all 1960 rubrics)
     |
     └── Rubrics 1960 - Sacramento   adds everything above, plus:
     |       (inherits from FSSP USA)       Mar 17 (St. Patrick, I cl.)
-    |                                      Jun 30 (Cathedral Dedication, I cl.)
+    |                                      Jun 30* (Cathedral Dedication, I cl. — nearest Sunday to Jun 30)
     |                                      Aug 2  (St. Stephen — I Vespers, I cl.)
     |                                      Aug 3  (Finding of St. Stephen, I cl.)
     |                                      Dec 12 (Guadalupe promoted to I cl.)
@@ -85,7 +85,7 @@ A new diocese or parish = one small `.txt` file + one line in `data.txt`.
 | `11-13n.txt` | S. Frances Xavier Cabrini (Nov 13) | Added Invit, Ant 2/3, Capitula |
 | `12-12n.txt` | B.M.V. de Guadalupe (Dec 12) — III cl. | USA-only; corrected spelling, removed erroneous 9-lesson rule |
 | `12-12s.txt` | B.M.V. de Guadalupe (Dec 12) — I cl. | Sacramento-only override |
-| `06-30s.txt` | Dedicatio Ecclesiae Cathedralis Sacramentensis (Jun 30) | Sacramento-specific |
+| `06-30s.txt` | In Anniversario Dedicationis Ecclesiæ Cathedralis Sacramentensis (nearest Sunday to Jun 30) | Sacramento-specific; celebrated on nearest Sunday via Transfer table |
 | `08-02s.txt` | Inventio S. Stephani Protomartyris — I Vespers (Aug 2) | Sacramento-specific |
 | `08-03s.txt` | Inventio S. Stephani Protomartyris (Aug 3) | Sacramento-specific |
 | `09-14olg.txt` | Dedicatio Ecclesiae Cathedralis Lincolniensis (Sep 14) | OLG Seminary-specific |
