@@ -3,12 +3,7 @@ name: Deploy to Fly.io
 on:
   push:
     branches: [master]
-  workflow_dispatch:
-    inputs:
-      regenerate:
-        description: 'Regenerate EPUBs after deploy'
-        type: boolean
-        default: true
+  workflow_dispatch: {}
 
 jobs:
   deploy-web:
@@ -21,24 +16,3 @@ jobs:
         run: flyctl deploy --config fly-web.toml --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_WEB }}
-
-  deploy-epub:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Install flyctl
-        run: curl -L https://fly.io/install.sh | sh && echo "$HOME/.fly/bin" >> "$GITHUB_PATH"
-      - name: Deploy epub app
-        run: flyctl deploy --config fly-epub.toml --remote-only
-        env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_EPUB }}
-      - name: Regenerate EPUBs for current year
-        if: github.event_name == 'push' || github.event.inputs.regenerate == 'true'
-        run: |
-          APP=$(sed -n 's/^app = "\(.*\)"/\1/p' fly-epub.toml)
-          YEAR=$(date +%Y)
-          echo "Regenerating EPUBs for $YEAR in app: $APP"
-          flyctl ssh console --app "$APP" -C "python3 /app/gen_all.py --year $YEAR"
-        env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_EPUB }}
-        timeout-minutes: 120
