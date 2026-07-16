@@ -226,12 +226,13 @@ select, input[type="date"] {
   transition: none;
 }
 
-/* Full header row */
+/* Full header row: date + status only (nav lives in the bottom bar) */
 .header-full {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 6px 8px;
-  gap: 4px;
+  gap: 8px;
   overflow: hidden;
   max-height: 52px;
   opacity: 1;
@@ -242,14 +243,6 @@ select, input[type="date"] {
   opacity: 0;
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.date-nav {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
 }
 
 .date-display {
@@ -265,13 +258,6 @@ select, input[type="date"] {
   -webkit-tap-highlight-color: transparent;
 }
 .date-display:hover { background: var(--surface); }
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  flex-shrink: 0;
-}
 
 /* Hour tabs row */
 .hora-tabs {
@@ -431,6 +417,66 @@ select, input[type="date"] {
 }
 .btn-mark-read:active { background: var(--surface); }
 
+/* ── Bottom nav bar (reading screen) ─────────────────────────────────────── */
+.bottom-bar {
+  position: relative;
+  display: flex;
+  background: var(--header-bg);
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.bottom-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 10px 4px;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-family: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.bottom-btn:disabled { opacity: 0.3; cursor: default; }
+.bottom-btn:active { background: var(--surface); }
+
+.bottom-btn-icon { font-size: 1.5rem; line-height: 1; }
+#btn-prev-day .bottom-btn-icon, #btn-next-day .bottom-btn-icon { font-size: 1.7rem; }
+.bottom-btn-label { font-size: 0.72rem; letter-spacing: 0.02em; }
+#btn-font-quick .bottom-btn-label { font-size: 1.1rem; font-weight: bold; letter-spacing: 0; }
+
+/* Quick font-size popover, anchored above the Aa button */
+.font-popover {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--modal-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+  z-index: 150;
+}
+.font-popover.hidden { display: none; }
+.font-popover::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--modal-bg);
+}
+
 /* ── Date picker modal ───────────────────────────────────────────────────── */
 .modal {
   position: fixed;
@@ -460,45 +506,7 @@ select, input[type="date"] {
   gap: 12px;
 }
 
-/* ── Settings bottom sheet ───────────────────────────────────────────────── */
-.bottom-sheet {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: var(--modal-bg);
-  border-radius: 16px 16px 0 0;
-  padding: 16px 20px 32px;
-  z-index: 200;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: max(32px, env(safe-area-inset-bottom));
-}
-.bottom-sheet.hidden { display: none; }
-
-.sheet-handle {
-  width: 36px;
-  height: 4px;
-  background: var(--border);
-  border-radius: 2px;
-  margin: 0 auto 4px;
-}
-.bottom-sheet h3 { font-size: 1rem; font-weight: normal; text-align: center; }
-
-.setting-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-.setting-row label { color: var(--text-muted); font-size: 0.9rem; }
-
-.font-controls {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+/* ── Font size controls (used inside .font-popover) ──────────────────────── */
 .btn-font {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -515,14 +523,6 @@ select, input[type="date"] {
   font-size: 0.9rem;
   color: var(--text-muted);
 }
-
-.backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-  z-index: 199;
-}
-.backdrop.hidden { display: none; }
 
 /* ── Storage screen ──────────────────────────────────────────────────────── */
 .storage-content {

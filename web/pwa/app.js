@@ -349,14 +349,12 @@ async function showStorage() {
   });
 }
 
-// --- Settings sheet ---
-function openSettings() {
-  document.getElementById('settings-sheet').classList.remove('hidden');
-  document.getElementById('sheet-backdrop').classList.remove('hidden');
+// --- Font popover (quick access from bottom bar) ---
+function openFontPopover() {
+  document.getElementById('font-popover').classList.remove('hidden');
 }
-function closeSettings() {
-  document.getElementById('settings-sheet').classList.add('hidden');
-  document.getElementById('sheet-backdrop').classList.add('hidden');
+function closeFontPopover() {
+  document.getElementById('font-popover').classList.add('hidden');
 }
 
 // --- Wire all events ---
@@ -440,10 +438,17 @@ function wireEvents() {
     document.getElementById('mark-read-bar').classList.add('hidden');
   });
 
-  // Settings
-  document.getElementById('btn-settings').addEventListener('click', openSettings);
-  document.getElementById('btn-close-settings').addEventListener('click', closeSettings);
-  document.getElementById('sheet-backdrop').addEventListener('click', closeSettings);
+  // Font popover
+  document.getElementById('btn-font-quick').addEventListener('click', (e) => {
+    e.stopPropagation();
+    openFontPopover();
+  });
+  document.addEventListener('click', (e) => {
+    const popover = document.getElementById('font-popover');
+    if (!popover.classList.contains('hidden') && !popover.contains(e.target)) {
+      closeFontPopover();
+    }
+  });
 
   document.getElementById('btn-font-up').addEventListener('click', () => {
     fontSize = parseFloat((fontSize + 0.1).toFixed(1));
