@@ -9,6 +9,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./web:/var/www/web:Z
+    restart: unless-stopped
     networks:
       - app-net
 
