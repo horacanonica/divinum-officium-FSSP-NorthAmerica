@@ -9,6 +9,7 @@ const CALENDARS = [
   { label: 'Sacramento',   version: 'Rubrics 1960 - Sacramento' },
   { label: 'Guadalajara',  version: 'Rubrics 1960 - Guadalajara' },
   { label: 'Chesapeake',   version: 'Rubrics 1960 - Chesapeake' },
+  { label: 'Richmond',     version: 'Rubrics 1960 - Richmond' },
   { label: 'Nashua',       version: 'Rubrics 1960 - Nashua' },
   { label: 'Arlington',    version: 'Rubrics 1960 - Arlington' },
 ];
