@@ -276,7 +276,7 @@ async function updateNavButtons(cal, date) {
   document.getElementById('btn-next-day').disabled = !nextData;
 }
 
-// --- Header collapse ---
+// --- Header / bottom bar collapse on scroll ---
 let lastScrollTop = 0;
 
 function initHeaderCollapse() {
@@ -284,10 +284,14 @@ function initHeaderCollapse() {
   area.addEventListener('scroll', () => {
     const cur = area.scrollTop;
     const header = document.getElementById('reading-header');
+    const bar = document.getElementById('bottom-bar');
     if (cur > lastScrollTop && cur > 80) {
       header.classList.add('collapsed');
+      bar.classList.add('bar-hidden');
+      closeFontPopover();
     } else if (cur < lastScrollTop - 10) {
       header.classList.remove('collapsed');
+      bar.classList.remove('bar-hidden');
     }
     lastScrollTop = Math.max(0, cur);
   }, { passive: true });
@@ -295,6 +299,7 @@ function initHeaderCollapse() {
 
 function expandHeader() {
   document.getElementById('reading-header').classList.remove('collapsed');
+  document.getElementById('bottom-bar').classList.remove('bar-hidden');
 }
 
 // --- Storage screen ---

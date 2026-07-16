@@ -338,6 +338,7 @@ select, input[type="date"] {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
+  padding-bottom: calc(72px + env(safe-area-inset-bottom));
 }
 
 #office-content {
@@ -418,13 +419,22 @@ select, input[type="date"] {
 .btn-mark-read:active { background: var(--surface); }
 
 /* ── Bottom nav bar (reading screen) ─────────────────────────────────────── */
+/* Fixed (not in normal flow) so it can slide off-screen on scroll without
+   leaving a gap; .content-area reserves space for it via padding-bottom. */
 .bottom-bar {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   background: var(--header-bg);
   border-top: 1px solid var(--border);
-  flex-shrink: 0;
   padding-bottom: env(safe-area-inset-bottom);
+  z-index: 60;
+  transition: transform 0.25s ease;
+}
+.bottom-bar.bar-hidden {
+  transform: translateY(100%);
 }
 
 .bottom-btn {

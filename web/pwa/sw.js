@@ -1,4 +1,4 @@
-const SHELL_CACHE = 'do-offline-shell-v1';
+const SHELL_CACHE = 'do-offline-shell-v2';
 const SHELL_FILES = [
   '/pwa/index.html',
   '/pwa/app.js',
