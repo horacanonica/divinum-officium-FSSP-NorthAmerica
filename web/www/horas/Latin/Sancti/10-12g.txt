@@ -2,10 +2,10 @@
 S. Mariæ Virginis de Zapopan
 
 [Rank]
-S. Mariæ Virginis de Zapopan;;Duplex I classis;;6;;vide C11
+S. Mariæ Virginis de Zapopan;;Duplex I classis;;6;;ex C11
 
 [Rule]
-vide C11;
+ex C11;
 9 lectiones
 Psalmi Dominica
 Ipsa Virgo Virginum
