@@ -7,6 +7,8 @@ S. Benedícti Abbátis, Patróni Paróeciæ;;Duplex I classis;;6;;vide C5b
 [Rule]
 vide C5b;
 9 lectiones;
+Psalmi Dominica
+Antiphonas horas
 
 [Name]
 Benedícti

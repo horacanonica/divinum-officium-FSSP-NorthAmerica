@@ -7,6 +7,8 @@ S. Vincéntii a Paulo Confessóris, Patróni principális Diœcésis;;Duplex I c
 [Rule]
 vide C5-1;mtv
 9 lectiones;
+Psalmi Dominica
+Antiphonas horas
 
 [Oratio]
 Deus, qui, ad evangelizándum paupéribus et ecclesiástici órdinis decórem promovéndum, beátum Vincéntium apostólica virtúte roborásti: præsta, quǽsumus; ut, cujus pia mérita venerámur, virtútum quoque instruámur exémplis.
