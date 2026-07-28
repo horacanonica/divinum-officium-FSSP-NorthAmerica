@@ -1,0 +1,11 @@
+@Sancti/09-03
+
+[Officium]
+S. Pii X Papæ et Confessoris, Patroni principalis Diœcesis Scrantonensis
+
+[Rank]
+S. Pii X Papæ et Confessoris, Patroni principalis Diœcesis Scrantonensis;;Duplex I classis;;6;;ex C4b
+
+[Rule]
+ex C4b;mtv
+9 lectiones
