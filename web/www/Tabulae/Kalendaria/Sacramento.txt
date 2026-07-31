@@ -8,8 +8,7 @@
 *June*
 *July*
 *Augustus*
-08-02=08-02s~08-02=Inventionis S. Stephani Protomartyris (I Vesperae)=1=
-08-03=08-03s~08-03=Inventionis S. Stephani Protomartyris=1=
+08-03=08-03s=Inventionis S. Stephani Protomartyris=1=
 *September*
 *October*
 *November*
