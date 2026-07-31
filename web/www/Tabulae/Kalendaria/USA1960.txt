@@ -9,11 +9,11 @@
 *July*
 *Augustus*
 *September*
-09-09=09-09u=S. Petri Claver Confessoris=3=
-09-26=09-26n=SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum=3=
+09-09=09-09u~09-09=S. Petri Claver Confessoris=3=
+09-26=09-26n~09-26=SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum=3=
 *October*
-10-25=10-25n=S. Isidori Agricolae Confessoris=3=
+10-25=10-25n~10-25=S. Isidori Agricolae Confessoris=3=
 *November*
-11-13=11-13n=S. Franciscae Xaveriae Cabrini Virginis=3=
+11-13=11-13n~11-13=S. Franciscae Xaveriae Cabrini Virginis=3=
 *December*
 12-12=12-12n=Beatae Mariae Virginis de Guadalupe=3=

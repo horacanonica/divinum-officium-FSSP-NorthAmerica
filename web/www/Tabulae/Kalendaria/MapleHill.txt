@@ -5,12 +5,12 @@
 *April*
 *May*
 *June*
-06-02=06-02mh=Anniversarium Dedicationis Ecclesiae Cathedralis Sancti Petri Apostoli=1=
+06-02=06-02mh~06-02=Anniversarium Dedicationis Ecclesiae Cathedralis Sancti Petri Apostoli=1=
 *July*
 *Augustus*
 08-08=08-08mh=S. Joannis Mariae Vianney Confessoris, Patroni Capellae=1=
 *September*
 *October*
 *November*
-11-17=11-17mh=S. Philippinae Duchesne Virginis=3=
+11-17=11-17mh~11-17=S. Philippinae Duchesne Virginis=3=
 *December*
