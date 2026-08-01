@@ -1,0 +1,18 @@
+[Officium]
+St. Patrick, Bishop and Confessor
+
+[Rank]
+St. Patrick, Bishop and Confessor;;Duplex I classis;;6;;ex C4
+
+[Oratio]
+O God, who didst graciously vouchsafe to send Blessed Patrick, Thy Confessor and Bishop, to preach Thy glory to the nations: grant, through his merits and intercession, that by Thy mercy we may be able to fulfil what Thou dost command us to do.
+$Per Dominum
+
+[Lectio4]
+Patrick, called the Apostle of Ireland, was born in Greater Britain, the son of Calphurnius, his mother Conchessa being, as is related, a kinswoman of St. Martin, Bishop of Tours. As a boy he fell more than once into captivity among barbarians. In that condition, being set to feed flocks, he already gave a token of his future holiness: for, filled with the spirit of faith and of the fear and love of God, he rose eagerly before dawn, through snow, frost, and rain, to pour forth prayers to God, being wont to pray to God a hundred times by day and a hundred times by night. Delivered from servitude a third time, and numbered among the clergy, he exercised himself for a long time in sacred studies. Having travelled with the utmost labour through Gaul, Italy, and the islands of the Tyrrhenian Sea, he was at length called by a divine warning to the salvation of the Irish; and having received from the blessed Pope Celestine the power of preaching the Gospel, and being consecrated bishop, he set out for Ireland.
+
+[Lectio5]
+In that office it is wonderful how many evils, how many hardships and labours, how many adversaries this apostolic man endured. But by the breathing of God's goodness, that land, formerly a worshipper of idols, soon, at Patrick's preaching, bore such fruit that it was thereafter called the Island of Saints. Very many peoples were by him regenerated in the sacred font; very many bishops and clergy were ordained; virgins and widows were established under the laws of continence. By the authority of the Roman Pontiff he established the see of Armagh as the chief metropolitan see of the whole island, and adorned it with relics of the saints brought from the City. Adorned by God with heavenly visions, the gift of prophecy, and mighty signs and wonders, he shone forth so brightly that the fame of Patrick spread abroad far and wide.
+
+[Lectio6]
+Besides his daily care of the churches, he never relaxed his unwearied spirit of prayer. For it is said that he was wont daily to recite the whole Psalter, together with Canticles and Hymns, and two hundred prayers; to adore God on bended knee three hundred times each day; and at every canonical hour of the day to arm himself a hundred times with the sign of the Cross. Dividing the night into three parts, he spent the first in running through a hundred Psalms with two hundred genuflections; the second, immersed in icy waters, with heart, eyes, and hands lifted up to heaven, in completing the remaining fifty Psalms; the third he gave to brief rest, lying upon the bare stone. A most eminent practiser of humility, he did not, after the apostolic manner, abstain from the labour of his own hands. At length, worn out by unceasing cares for the Church, illustrious in word and work, refreshed in extreme old age by the divine mysteries, he fell asleep in the Lord, and was buried at Down in Ulster, in the fifth century of the Christian era.
