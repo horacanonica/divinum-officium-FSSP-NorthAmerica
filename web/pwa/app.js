@@ -197,15 +197,13 @@ async function loadAndRender(cal, date) {
 
   document.getElementById('btn-date').textContent = formatDateDisplay(date);
 
-  // Prev/next nav: disable if no data cached in that direction
-  await updateNavButtons(cal, date);
-
   updateHoraTabs(cal, date);
 
   if (!dayData) {
     document.getElementById('office-content').innerHTML =
       '<p class="error-msg">No data cached for this date.<br>Go back and download it first.</p>';
     document.getElementById('mark-read-bar').classList.add('hidden');
+    document.getElementById('btn-nav-forward').disabled = true;
     return;
   }
 
@@ -239,6 +237,8 @@ function renderHora(horaKey) {
     markBar.classList.remove('hidden');
     document.getElementById('btn-mark-read').textContent = `✓ Mark ${horaLabel} as read`;
   }
+
+  updateForwardButtonState();
 }
 
 function updateHoraTabs(cal, date) {
@@ -264,16 +264,78 @@ function updatePillStrip(cal, date) {
     btn.addEventListener('click', () => {
       expandHeader();
       renderHora(btn.dataset.key);
+      pushNavState();
     });
   });
 }
 
-async function updateNavButtons(cal, date) {
-  const prevDate = addDaysISO(date, -1);
-  const nextDate = addDaysISO(date, 1);
-  const [prevData, nextData] = await Promise.all([getDay(cal, prevDate), getDay(cal, nextDate)]);
-  document.getElementById('btn-prev-day').disabled = !prevData;
-  document.getElementById('btn-next-day').disabled = !nextData;
+// --- Navigation history (back button mirrors the browser's own back button;
+// forward advances to the next canonical hour instead of browser history) ---
+let backStackDepth = 0;
+
+function currentNavState() {
+  const active = document.querySelector('.screen.active');
+  const screen = active ? active.id.replace('screen-', '') : 'download';
+  if (screen === 'reading') {
+    return { screen, cal: state.calendar, version: state.version, date: state.date, hora: state.hora };
+  }
+  return { screen };
+}
+
+function pushNavState() {
+  backStackDepth++;
+  history.pushState(currentNavState(), '');
+  updateBackButtonState();
+}
+
+function updateBackButtonState() {
+  const btn = document.getElementById('btn-nav-back');
+  if (btn) btn.disabled = backStackDepth <= 0;
+}
+
+async function applyNavState(s) {
+  if (!s || s.screen === 'download') {
+    showScreen('download');
+  } else if (s.screen === 'storage') {
+    showScreen('storage');
+  } else if (s.screen === 'reading') {
+    state.calendar = s.cal;
+    state.version = s.version;
+    state.date = s.date;
+    state.hora = s.hora;
+    showScreen('reading');
+    await loadAndRender(s.cal, s.date);
+    expandHeader();
+  }
+}
+
+async function updateForwardButtonState() {
+  const btn = document.getElementById('btn-nav-forward');
+  if (!btn) return;
+  const idx = HORAS.findIndex(h => h.key === state.hora);
+  if (idx < HORAS.length - 1) {
+    btn.disabled = false;
+    return;
+  }
+  const nextDate = addDaysISO(state.date, 1);
+  const nextData = await getDay(state.calendar, nextDate);
+  btn.disabled = !nextData;
+}
+
+async function navigateForward() {
+  const idx = HORAS.findIndex(h => h.key === state.hora);
+  if (idx < HORAS.length - 1) {
+    renderHora(HORAS[idx + 1].key);
+    pushNavState();
+    return;
+  }
+  const nextDate = addDaysISO(state.date, 1);
+  const nextData = await getDay(state.calendar, nextDate);
+  if (!nextData) return;
+  state.date = nextDate;
+  state.hora = 'matins';
+  await loadAndRender(state.calendar, nextDate);
+  pushNavState();
 }
 
 // --- Header / bottom bar collapse on scroll ---
@@ -391,25 +453,28 @@ function wireEvents() {
     const dates = await listCachedDates(cal);
     const date = todayData ? today : (dates[0] || today);
     await openReading(cal, ver, date);
+    pushNavState();
   });
 
-  document.getElementById('btn-storage').addEventListener('click', showStorage);
+  document.getElementById('btn-storage').addEventListener('click', () => {
+    showStorage();
+    pushNavState();
+  });
 
   // Reading screen
-  document.getElementById('btn-back-to-home').addEventListener('click', () => showScreen('download'));
+  document.getElementById('btn-back-to-home').addEventListener('click', () => {
+    showScreen('download');
+    pushNavState();
+  });
 
-  document.getElementById('btn-prev-day').addEventListener('click', async () => {
-    const prev = addDaysISO(state.date, -1);
-    state.date = prev;
-    lastScrollTop = 0;
-    await loadAndRender(state.calendar, prev);
+  // Back: behaves like a normal browser back button — unwinds whatever hour/
+  // date/screen navigation happened in this session via popstate.
+  document.getElementById('btn-nav-back').addEventListener('click', () => {
+    if (backStackDepth > 0) history.back();
   });
-  document.getElementById('btn-next-day').addEventListener('click', async () => {
-    const next = addDaysISO(state.date, 1);
-    state.date = next;
-    lastScrollTop = 0;
-    await loadAndRender(state.calendar, next);
-  });
+  // Forward: advances to the next canonical hour (crossing into the next
+  // cached day once Compline is reached), not browser-forward history.
+  document.getElementById('btn-nav-forward').addEventListener('click', navigateForward);
 
   // Tap date label → date picker modal
   document.getElementById('btn-date').addEventListener('click', () => {
@@ -426,12 +491,16 @@ function wireEvents() {
       state.date = d;
       lastScrollTop = 0;
       await loadAndRender(state.calendar, d);
+      pushNavState();
     }
   });
 
   // Hora tabs
   document.querySelectorAll('.hora-tab').forEach(tab => {
-    tab.addEventListener('click', () => renderHora(tab.dataset.key));
+    tab.addEventListener('click', () => {
+      renderHora(tab.dataset.key);
+      pushNavState();
+    });
   });
 
   // Mark as read
@@ -469,11 +538,23 @@ function wireEvents() {
   });
 
   // Storage screen
-  document.getElementById('btn-back-from-storage').addEventListener('click', () => showScreen('download'));
+  document.getElementById('btn-back-from-storage').addEventListener('click', () => {
+    showScreen('download');
+    pushNavState();
+  });
 
   // Online/offline
   window.addEventListener('online', updateStatusDots);
   window.addEventListener('offline', updateStatusDots);
+
+  // Hardware/gesture back (Android back button, browser back) drives the
+  // same restore path as the in-app Back button.
+  window.addEventListener('popstate', async (e) => {
+    backStackDepth = Math.max(0, backStackDepth - 1);
+    updateBackButtonState();
+    lastScrollTop = 0;
+    await applyNavState(e.state);
+  });
 }
 
 // --- Init ---
@@ -499,6 +580,7 @@ async function init() {
 
   wireEvents();
   initHeaderCollapse();
+  history.replaceState({ screen: 'download' }, '');
 
   await refreshCachedSection();
   showScreen('download');
