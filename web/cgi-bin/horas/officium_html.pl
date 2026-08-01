@@ -144,7 +144,8 @@ sub pmenu {
 <A HREF="Pofficium.pl?date1=$date1&command=setupparameters&pcommand=$command&version=$version&lang2=$lang2&votive=$votive">
 Options</A>&ensp;
 <A HREF="#" onclick="callmissa();">Sancta Missa</A>&ensp;
-<A HREF="#" onclick="callkalendar();">Ordo</A>
+<A HREF="#" onclick="callkalendar();">Ordo</A>&ensp;
+<A HREF="/pwa/">Offline</A>
 PrintTag
 }
 

@@ -1000,6 +1000,7 @@ sub bottom_links_menu {
 
   my @options = map { "<A HREF=\"../../www/horas/Help/" . lcfirst($_) . ".html\" TARGET=\"_BLANK\">$_</A>\n"; }
     qw(Versions Credits Download Rubrics Technical Help);
+  push(@options, "<A HREF=\"/pwa/\">Offline</A>\n");
   join("&emsp;\n", @options);
 }
 
