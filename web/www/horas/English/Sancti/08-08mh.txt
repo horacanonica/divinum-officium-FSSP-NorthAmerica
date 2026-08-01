@@ -1,0 +1,9 @@
+[Officium]
+St. John Mary Vianney, Confessor
+
+[Rank]
+St. John Mary Vianney, Confessor, Patron of the Chapel;;Duplex I classis;;6;;ex C5
+
+[Oratio]
+Almighty and merciful God, who didst make Saint John Mary wonderful in his pastoral zeal and the unceasing ardour of his prayer and penance: grant, we beseech Thee, that by his example and intercession we may be able to win the souls of our brethren for Christ, and with them attain to everlasting glory.
+$Per eumdem
