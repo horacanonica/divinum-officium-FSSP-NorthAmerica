@@ -1,0 +1,11 @@
+@Sancti/08-30
+
+[Officium]
+S. Rosæ a S. Maria Limanæ Virginis, Patronæ Paroeciæ
+
+[Rank]
+S. Rosæ a S. Maria Limanæ Virginis, Patronæ Paroeciæ;;Duplex I classis;;6;;vide C6a
+
+[Rule]
+vide C6a;
+9 lectiones
