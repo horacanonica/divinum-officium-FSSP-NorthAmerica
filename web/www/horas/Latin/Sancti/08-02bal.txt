@@ -1,0 +1,11 @@
+@Sancti/08-02
+
+[Officium]
+S. Alfonsi Mariæ de Ligorio Episcopi Confessoris et Ecclesiæ Doctoris, Patroni Archidiœcesis Baltimorensis
+
+[Rank]
+S. Alfonsi Mariæ de Ligorio Episcopi Confessoris et Ecclesiæ Doctoris, Patroni Archidiœcesis Baltimorensis;;Duplex I classis;;6;;ex C4a
+
+[Rule]
+ex C4a;mtv
+9 lectiones
