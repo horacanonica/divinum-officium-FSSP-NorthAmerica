@@ -1,0 +1,11 @@
+@Sancti/11-25
+
+[Officium]
+S. Catharinæ Virginis et Martyris, Patronæ principalis Diœcesis Niagarensis
+
+[Rank]
+S. Catharinæ Virginis et Martyris, Patronæ principalis Diœcesis Niagarensis;;Duplex I classis;;6;;ex C6
+
+[Rule]
+ex C6;
+9 lectiones

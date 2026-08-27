@@ -1,0 +1,11 @@
+@Sancti/06-21
+
+[Officium]
+S. Aloisii Gonzagæ Confessoris, Patroni Parœciæ
+
+[Rank]
+S. Aloisii Gonzagæ Confessoris, Patroni Parœciæ;;Duplex I classis;;6;;ex C5
+
+[Rule]
+ex C5;
+9 lectiones
