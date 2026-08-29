@@ -30,7 +30,7 @@ sub psalmi_minor {
 
   my $lang = shift;
   our (
-    $version, $hora, $dayofweek, $winner, %winner, @dayname, $rule,
+    $version, $hora, $dayofweek, $vespera, $winner, %winner, @dayname, $rule,
     $communerule, $rank, $laudes, $day, $year, %winner2, $label,
   );
   my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi/Psalmi minor.txt')};
@@ -89,11 +89,12 @@ sub psalmi_minor {
     if ($lang =~ /gabc/i) { $psalmTone = chompd($a[2]); }    # GABC: retrieve Psalm Tone
   } else {
     @psalmi = split("\n", $psalmi{$hora});
-    my $i = 2 * $dayofweek;
 
-    if ($hora eq 'Completorium' && $dayofweek == 6 && $winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat/) {
-      $i = 12;
-    }
+    # Compline belongs to the liturgical day already begun at Vespers: when
+    # tonight's Vespers were First Vespers of tomorrow, Compline takes
+    # tomorrow's weekday psalms, not tonight's civil weekday.
+    my $completoriumDow = ($hora eq 'Completorium' && $vespera == 1) ? ($dayofweek + 1) % 7 : $dayofweek;
+    my $i = 2 * $completoriumDow;
 
     if ( $rule =~ /Psalmi\s*(minores)*\s*Dominica/i
       || $communerule =~ /Psalmi\s*(minores)*\s*Dominica/i && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i)
@@ -111,12 +112,9 @@ sub psalmi_minor {
           && $hora ne 'Completorium')
       )
     ) {
-      $i = 2 * $dayofweek;
+      $i = 2 * $completoriumDow;
     }
 
-    if ($hora eq 'Completorium' && $dayofweek == 6 && $winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat/) {
-      $i = 12;
-    }
     $ant = chompd($psalmi[$i]);
     $psalms = chompd($psalmi[$i + 1]);
     if (($version =~ /196/ && $psalms =~ /117/ && $laudes == 2) || $rule =~ /Prima=53/i) { $psalms =~ s/117/53/; }
