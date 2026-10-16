@@ -1,0 +1,2 @@
+#Propria Officia St. Damien Catholic Church, Edmond, OK (generated from fssp/na_province.yaml)
+05-10=05-10ncedmond~05-10~05-10o=S. Damiáni de Molokai Confessoris=1=

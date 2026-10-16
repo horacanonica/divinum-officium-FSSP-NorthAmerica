@@ -1,0 +1,11 @@
+@Sancti/06-13
+
+[Officium]
+S. Antonii de Padua Confessoris et Ecclesiæ Doctoris
+
+[Rank]
+S. Antonii de Padua Confessoris et Ecclesiæ Doctoris;;Duplex I classis;;6;;ex C5a
+
+[Rule]
+ex C5a;
+9 lectiones

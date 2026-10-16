@@ -1,0 +1,12 @@
+[Officium]
+S. Theodoræ Guérin Virginis
+
+[Rank]
+S. Theodoræ Guérin Virginis;;Duplex I classis;;6;;ex C6a
+
+[Rule]
+ex C6a;
+9 lectiones
+
+[Name]
+Theodóræ

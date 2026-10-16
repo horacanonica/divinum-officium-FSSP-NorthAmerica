@@ -1,0 +1,2 @@
+#Propria Officia St. Francis of Assisi Church, Lincoln, NE (generated from fssp/na_province.yaml)
+10-04=10-04nl1=S. Francisci Confessoris=1=

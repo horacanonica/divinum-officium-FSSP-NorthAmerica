@@ -1,0 +1,12 @@
+@Sancti/09-26n
+
+[Officium]
+Ss. Isaaci Jogues, Joannis de Brébeuf et Sociorum Martyrum
+
+[Rank]
+Ss. Isaaci Jogues, Joannis de Brébeuf et Sociorum Martyrum;;Duplex I classis;;6;;ex C3
+
+[Rule]
+ex C3;
+Quorum Festum
+9 lectiones

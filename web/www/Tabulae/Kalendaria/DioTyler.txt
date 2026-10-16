@@ -1,0 +1,2 @@
+#Propria Officia Diocese of Tyler (generated from fssp/na_province.yaml)
+02-24=02-24ndc~02-24=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

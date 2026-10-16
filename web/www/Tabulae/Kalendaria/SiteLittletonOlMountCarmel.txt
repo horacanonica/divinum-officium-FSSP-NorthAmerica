@@ -1,0 +1,2 @@
+#Propria Officia Our Lady of Mount Carmel, Littleton, CO (generated from fssp/na_province.yaml)
+07-16=07-16nl1=Beatæ Mariæ Virginis de Monte Carmelo=1=

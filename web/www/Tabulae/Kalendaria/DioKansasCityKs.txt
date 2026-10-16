@@ -1,0 +1,3 @@
+#Propria Officia Archdiocese of Kansas City in Kansas (generated from fssp/na_province.yaml)
+06-02=06-02ndc~06-02=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+11-17=11-17mh~11-17=S. Philippinæ Duchesne Virginis=3=

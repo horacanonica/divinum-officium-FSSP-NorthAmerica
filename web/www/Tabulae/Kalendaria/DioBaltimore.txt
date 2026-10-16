@@ -1,0 +1,2 @@
+#Propria Officia Archdiocese of Baltimore (generated from fssp/na_province.yaml)
+11-15=11-15ndc~11-15=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

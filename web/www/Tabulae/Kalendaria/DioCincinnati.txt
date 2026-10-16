@@ -1,0 +1,5 @@
+#Propria Officia Archdiocese of Cincinnati (generated from fssp/na_province.yaml)
+01-29=01-29nl1=S. Francisci Salesii Episcopi Confessoris et Ecclesiæ Doctoris=1=
+05-13=05-13nl2=S. Roberti Bellarmino Episcopi Confessoris et Ecclesiæ Doctoris=2=
+11-03=11-03ndc~XXXXX=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+11-15=11-15nl2=S. Alberti Magni Episcopi Confessoris et Ecclesiæ Doctoris=2=

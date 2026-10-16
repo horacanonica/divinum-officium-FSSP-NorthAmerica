@@ -1,0 +1,2 @@
+#Propria Officia Archdiocese of Denver (generated from fssp/na_province.yaml)
+10-27=10-27ndc~XXXXX=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

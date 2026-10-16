@@ -1,0 +1,15 @@
+@Sancti/05-31
+
+[Officium]
+Beatæ Mariæ Virginis Reginæ
+
+[Rank]
+Beatæ Mariæ Virginis Reginæ;;Duplex I classis;;6;;ex C11
+
+[Rule]
+ex C11;
+9 lectiones
+Ipsa Virgo Virginum
+Doxology=Nat
+Antiphonas horas
+Psalmi Dominica

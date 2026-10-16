@@ -1,0 +1,11 @@
+@Sancti/07-19
+
+[Officium]
+S. Vincentii a Paulo Confessoris
+
+[Rank]
+S. Vincentii a Paulo Confessoris;;Duplex I classis;;6;;ex C5-1
+
+[Rule]
+ex C5-1;mtv
+9 lectiones;

@@ -1,0 +1,2 @@
+#Propria Officia St. Benedict's Church, Fort Worth, TX (generated from fssp/na_province.yaml)
+03-21=03-21nl1=S. Benedicti Abbatis=1=

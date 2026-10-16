@@ -1,0 +1,3 @@
+#Propria Officia Archdiocese of Saint Paul & Minneapolis (generated from fssp/na_province.yaml)
+01-25=01-25nl1r=In Conversione S. Pauli Apostoli=1=
+10-14=10-14ndc~10-14=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

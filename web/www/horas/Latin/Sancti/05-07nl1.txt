@@ -1,0 +1,11 @@
+@Sancti/05-07
+
+[Officium]
+S. Stanislai Episcopi et Martyris
+
+[Rank]
+S. Stanislai Episcopi et Martyris;;Duplex I classis;;6;;ex C2-1
+
+[Rule]
+ex C2-1;
+9 lectiones

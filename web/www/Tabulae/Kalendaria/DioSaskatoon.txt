@@ -1,0 +1,3 @@
+#Propria Officia Diocese of Saskatoon (generated from fssp/na_province.yaml)
+05-13=05-13ndc~05-13=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+06-30=06-30nl1=In Commemoratione S. Pauli Apostoli=1=

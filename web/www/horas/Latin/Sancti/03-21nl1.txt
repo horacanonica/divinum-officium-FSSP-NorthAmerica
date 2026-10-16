@@ -1,0 +1,11 @@
+@Sancti/03-21
+
+[Officium]
+S. Benedicti Abbatis
+
+[Rank]
+S. Benedicti Abbatis;;Duplex I classis;;6;;ex C5b
+
+[Rule]
+ex C5b;
+9 lectiones;

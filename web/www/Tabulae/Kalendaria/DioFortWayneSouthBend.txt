@@ -1,0 +1,2 @@
+#Propria Officia Diocese of Fort Wayne–South Bend (generated from fssp/na_province.yaml)
+12-09=12-09ndc~XXXXX=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

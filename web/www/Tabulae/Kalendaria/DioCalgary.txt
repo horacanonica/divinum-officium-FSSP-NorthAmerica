@@ -1,0 +1,3 @@
+#Propria Officia Diocese of Calgary (generated from fssp/na_province.yaml)
+10-16=10-16nccalgar~10-16=S. Gerárdi Majella Confessoris=2=
+12-11=12-11ndc~12-11=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

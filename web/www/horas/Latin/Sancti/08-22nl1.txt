@@ -1,0 +1,12 @@
+@Sancti/08-22
+
+[Officium]
+Immaculati Cordis Beatæ Mariæ Virginis
+
+[Rank]
+Immaculati Cordis Beatæ Mariæ Virginis;;Duplex I classis;;6;;ex C11
+
+[Rule]
+ex C11;
+9 lectiones
+Doxology=Nat

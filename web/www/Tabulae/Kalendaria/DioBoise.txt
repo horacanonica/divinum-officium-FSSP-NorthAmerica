@@ -1,0 +1,3 @@
+#Propria Officia Diocese of Boise (generated from fssp/na_province.yaml)
+10-16=10-16ndc~10-16=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+12-27=12-27nl1=S. Joannis Apostoli et Evangelistæ=1=

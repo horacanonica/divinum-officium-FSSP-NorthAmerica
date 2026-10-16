@@ -1,0 +1,3 @@
+#Propria Officia Archdiocese of Omaha (generated from fssp/na_province.yaml)
+04-09=04-09ndc=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+11-22=11-22nl1=S. Cæciliæ Virginis et Martyris=1=

@@ -1,0 +1,5 @@
+#Propria Officia Archdiocese of Indianapolis (generated from fssp/na_province.yaml)
+10-03=10-03ncindian~10-03=S. Theodoræ Guérin Virginis=1=
+12-03=12-03nl1=S. Francisci Xaverii Confessoris=1=
+12-21=12-21ndc=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+12-22=12-21=S. Thomæ Apostoli=2=

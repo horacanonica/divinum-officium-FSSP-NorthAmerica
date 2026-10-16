@@ -1,0 +1,3 @@
+#Propria Officia Diocese of Joliet (generated from fssp/na_province.yaml)
+05-26=05-26ndc~05-26~05-26o=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+12-03=12-03nl1=S. Francisci Xaverii Confessoris=1=

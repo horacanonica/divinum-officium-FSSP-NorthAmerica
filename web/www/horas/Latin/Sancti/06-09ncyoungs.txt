@@ -1,0 +1,12 @@
+[Officium]
+S. Columbæ Abbatis
+
+[Rank]
+S. Columbæ Abbatis;;Duplex I classis;;6;;ex C5b
+
+[Rule]
+ex C5b;
+9 lectiones
+
+[Name]
+Columbæ

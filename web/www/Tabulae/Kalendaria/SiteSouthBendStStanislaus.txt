@@ -1,0 +1,2 @@
+#Propria Officia St. Stanislaus Church, South Bend, IN (generated from fssp/na_province.yaml)
+05-07=05-07nl1=S. Stanislai Episcopi et Martyris=1=

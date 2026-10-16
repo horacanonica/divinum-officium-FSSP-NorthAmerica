@@ -1,0 +1,11 @@
+@Sancti/06-28
+
+[Officium]
+S. Irenæi Episcopi et Martyris
+
+[Rank]
+S. Irenæi Episcopi et Martyris;;Duplex I classis;;6;;ex C2
+
+[Rule]
+ex C2;
+9 lectiones

@@ -1,0 +1,2 @@
+#Propria Officia Archdiocese of Galveston-Houston (generated from fssp/na_province.yaml)
+04-13=04-13ndc~04-13=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

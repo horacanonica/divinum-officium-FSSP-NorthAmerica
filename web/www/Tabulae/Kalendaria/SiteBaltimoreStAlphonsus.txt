@@ -1,0 +1,2 @@
+#Propria Officia National Shrine of St. Alphonsus Liguori, Baltimore, MD (generated from fssp/na_province.yaml)
+08-02=08-02nl1~08-02o=S. Alfonsi Mariæ de Ligorio Episcopi Confessoris et Ecclesiæ Doctoris=1=

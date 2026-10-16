@@ -1,0 +1,12 @@
+[Officium]
+Beatæ Mariæ Virginis de Perpetuo Succursu
+
+[Rank]
+Beatæ Mariæ Virginis de Perpetuo Succursu;;Duplex I classis;;6;;ex C11
+
+[Rule]
+ex C11;
+9 lectiones
+Psalmi Dominica
+Ipsa Virgo Virginum
+Doxology=Nat

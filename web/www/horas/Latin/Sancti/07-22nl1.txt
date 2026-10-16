@@ -1,0 +1,12 @@
+@Sancti/07-22
+
+[Officium]
+S. Mariæ Magdalenæ Pœnitentis
+
+[Rank]
+S. Mariæ Magdalenæ Pœnitentis;;Duplex I classis;;6;;ex C7a
+
+[Rule]
+ex C7a;
+9 lectiones;
+scriptura1960

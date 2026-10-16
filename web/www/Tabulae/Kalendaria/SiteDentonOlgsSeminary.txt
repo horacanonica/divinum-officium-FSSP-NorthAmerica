@@ -1,0 +1,3 @@
+#Propria Officia Our Lady of Guadalupe Seminary, Denton, NE (generated from fssp/na_province.yaml)
+12-12=12-12s=Beatæ Mariæ Virginis de Guadalupe=1=
+11-04=11-04nl1~11-04cc=S. Caroli Episcopi et Confessoris=1=

@@ -1,0 +1,3 @@
+#Propria Officia Archdiocese of Seattle (generated from fssp/na_province.yaml)
+07-25=07-25nl1~07-25cc=S. Jacobi Apostoli=1=
+12-22=12-22ndc=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

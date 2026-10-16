@@ -1,0 +1,3 @@
+#Propria Officia Archdiocese of Los Angeles (generated from fssp/na_province.yaml)
+09-02=09-02ndc~09-02=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+09-04=09-04nclosang=Beatæ Mariæ Virginis Reginæ Angelorum=1=

@@ -1,0 +1,3 @@
+#Propria Officia Diocese of St. Catharines (generated from fssp/na_province.yaml)
+11-25=11-25nl1=S. Catharinæ Virginis et Martyris=1=
+11-26=11-26ndc~11-26~11-26t=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

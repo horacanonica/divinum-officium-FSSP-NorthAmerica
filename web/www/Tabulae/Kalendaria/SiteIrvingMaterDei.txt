@@ -1,0 +1,2 @@
+#Propria Officia Mater Dei Catholic Parish, Irving, TX (generated from fssp/na_province.yaml)
+10-11=10-11nl1=Maternitatis Beatæ Mariæ Virginis=1=

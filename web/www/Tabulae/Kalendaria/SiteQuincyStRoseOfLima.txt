@@ -1,0 +1,2 @@
+#Propria Officia St. Rose of Lima Parish, Quincy, IL (generated from fssp/na_province.yaml)
+08-30=08-30nl1~08-30o=S. Rosæ a Sancta Maria Limanæ Virginis=1=

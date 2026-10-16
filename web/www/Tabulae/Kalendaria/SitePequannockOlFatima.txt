@@ -1,0 +1,2 @@
+#Propria Officia Our Lady of Fatima Chapel, Pequannock, NJ (generated from fssp/na_province.yaml)
+05-13=05-13ncpequan~05-13=Beatæ Mariæ Virginis a Rosario de Fatima=1=

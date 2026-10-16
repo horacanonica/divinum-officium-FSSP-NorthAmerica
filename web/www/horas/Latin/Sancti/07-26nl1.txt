@@ -1,0 +1,11 @@
+@Sancti/07-26
+
+[Officium]
+S. Annæ Matris B.M.V.
+
+[Rank]
+S. Annæ Matris B.M.V.;;Duplex I classis;;6;;ex C7a
+
+[Rule]
+ex C7a;
+9 lectiones;

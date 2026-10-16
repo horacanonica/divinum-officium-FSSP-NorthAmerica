@@ -1,0 +1,12 @@
+@Sancti/11-22
+
+[Officium]
+S. Cæciliæ Virginis et Martyris
+
+[Rank]
+S. Cæciliæ Virginis et Martyris;;Duplex I classis;;6;;ex C6
+
+[Rule]
+ex C6;
+9 lectiones
+in 1 Nocturno Lectiones ex Commune 1 loco

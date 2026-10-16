@@ -1,0 +1,3 @@
+#Propria Officia Diocese of Fresno (generated from fssp/na_province.yaml)
+06-07=06-07ndc=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+10-03=10-03nl1=S. Theresiæ a Jesu Infante Virginis=1=

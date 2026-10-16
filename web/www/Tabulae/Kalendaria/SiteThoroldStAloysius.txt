@@ -1,0 +1,2 @@
+#Propria Officia St. Aloysius Parish, Thorold, ON (generated from fssp/na_province.yaml)
+06-21=06-21nl1=S. Aloisii Gonzagæ Confessoris=1=

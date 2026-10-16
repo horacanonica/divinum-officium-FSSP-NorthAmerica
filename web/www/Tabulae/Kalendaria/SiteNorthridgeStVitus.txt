@@ -1,0 +1,2 @@
+#Propria Officia St. Vitus Catholic Church, Northridge, CA (generated from fssp/na_province.yaml)
+06-15=06-15nl1=Ss. Viti, Modesti atque Crescentiæ Martyrum=1=

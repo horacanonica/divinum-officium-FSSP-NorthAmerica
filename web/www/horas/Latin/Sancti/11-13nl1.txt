@@ -1,0 +1,11 @@
+@Sancti/11-13
+
+[Officium]
+S. Didaci Confessoris
+
+[Rank]
+S. Didaci Confessoris;;Duplex I classis;;6;;ex C5-1
+
+[Rule]
+ex C5-1;mtv
+9 lectiones

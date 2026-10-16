@@ -1,0 +1,3 @@
+#Propria Officia Diocese of Manchester (generated from fssp/na_province.yaml)
+03-17=03-17nl2=S. Patricii Episcopi et Confessoris=2=
+04-18=04-18ndc=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

@@ -1,0 +1,3 @@
+#Propria Officia Diocese of Richmond (generated from fssp/na_province.yaml)
+07-19=07-19nl1=S. Vincentii a Paulo Confessoris=1=
+11-29=11-29ndc~11-29r=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

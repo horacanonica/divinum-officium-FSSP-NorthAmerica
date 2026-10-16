@@ -1,0 +1,11 @@
+@Sancti/03-17
+
+[Officium]
+S. Patricii Episcopi et Confessoris
+
+[Rank]
+S. Patricii Episcopi et Confessoris;;Duplex II classis;;5;;vide C4
+
+[Rule]
+vide C4;
+9 lectiones;

@@ -1,0 +1,14 @@
+@Sancti/10-07
+
+[Officium]
+Beatæ Mariæ Virginis a Rosario
+
+[Rank]
+Beatæ Mariæ Virginis a Rosario;;Duplex I classis;;6;;ex C11
+
+[Rule]
+ex C11;
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Doxology=Nat

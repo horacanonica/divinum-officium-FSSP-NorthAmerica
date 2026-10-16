@@ -1,0 +1,11 @@
+@Sancti/08-30
+
+[Officium]
+S. Rosæ a Sancta Maria Limanæ Virginis
+
+[Rank]
+S. Rosæ a Sancta Maria Limanæ Virginis;;Duplex I classis;;6;;ex C6a
+
+[Rule]
+ex C6a;
+9 lectiones

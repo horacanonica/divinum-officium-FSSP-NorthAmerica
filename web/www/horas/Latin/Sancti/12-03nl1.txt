@@ -1,0 +1,11 @@
+@Sancti/12-03
+
+[Officium]
+S. Francisci Xaverii Confessoris
+
+[Rank]
+S. Francisci Xaverii Confessoris;;Duplex I classis;;6;;ex C5-1
+
+[Rule]
+ex C5-1;mtv
+9 lectiones;

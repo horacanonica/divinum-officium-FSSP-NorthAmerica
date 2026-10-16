@@ -1,0 +1,11 @@
+@Sancti/09-03
+
+[Officium]
+S. Pii X Papæ Confessoris
+
+[Rank]
+S. Pii X Papæ Confessoris;;Duplex II classis;;5;;vide C4b
+
+[Rule]
+vide C4b;mtv
+9 lectiones

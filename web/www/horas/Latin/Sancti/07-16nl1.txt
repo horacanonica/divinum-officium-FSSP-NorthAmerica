@@ -1,0 +1,12 @@
+@Sancti/07-16
+
+[Officium]
+Beatæ Mariæ Virginis de Monte Carmelo
+
+[Rank]
+Beatæ Mariæ Virginis de Monte Carmelo;;Duplex I classis;;6;;ex C11
+
+[Rule]
+ex C11;
+9 lectiones;
+Doxology=Nat

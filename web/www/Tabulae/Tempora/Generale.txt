@@ -177,3 +177,5 @@ TemporaCist/Pent03-2=TemporaCist/Pent03-2Feriao;;C1951 CAV
 TemporaCist/Pent03-3=TemporaCist/Pent03-3Feria;;C1951 CAV
 TemporaCist/Pent03-4=TemporaCist/Pent03-4Feria;;C1951 CAV
 TemporaCist/Pent03-5=TemporaCist/Pent03-5Feriao;;C1951 CAV
+Tempora/Epi1-0=Tempora/Epi1-0nhf;;NAP-site-dayton-holy-family
+Tempora/Epi1-0=Tempora/Epi1-0nhf;;NAP-site-vancouver-holy-family

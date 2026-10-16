@@ -1,0 +1,3 @@
+#Propria Officia Diocese of San Diego (generated from fssp/na_province.yaml)
+01-26=01-26ndc~01-26=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+11-13=11-13nl1~11-13n=S. Didaci Confessoris=1=

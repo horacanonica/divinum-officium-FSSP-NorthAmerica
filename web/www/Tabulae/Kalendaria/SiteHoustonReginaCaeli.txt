@@ -1,0 +1,2 @@
+#Propria Officia Regina Caeli Parish, Houston, TX (generated from fssp/na_province.yaml)
+05-31=05-31nl1~05-31o=Beatæ Mariæ Virginis Reginæ=1=

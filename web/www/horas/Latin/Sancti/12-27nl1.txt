@@ -1,0 +1,13 @@
+@Sancti/12-27
+
+[Officium]
+S. Joannis Apostoli et Evangelistæ
+
+[Rank]
+S. Joannis Apostoli et Evangelistæ;;Duplex I classis;;6;;ex C1
+
+[Rule]
+ex C1;
+Psalmi Dominica
+Antiphonas horas
+9 lectiones

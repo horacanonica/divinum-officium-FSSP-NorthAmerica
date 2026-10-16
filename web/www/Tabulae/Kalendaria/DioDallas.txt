@@ -1,0 +1,3 @@
+#Propria Officia Diocese of Dallas (generated from fssp/na_province.yaml)
+10-26=10-26ndc~10-26=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+12-12=12-12s=Beatæ Mariæ Virginis de Guadalupe=1=

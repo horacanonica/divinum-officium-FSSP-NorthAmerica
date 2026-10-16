@@ -1,0 +1,11 @@
+@Sancti/01-29
+
+[Officium]
+S. Francisci Salesii Episcopi Confessoris et Ecclesiæ Doctoris
+
+[Rank]
+S. Francisci Salesii Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex I classis;;6;;ex C4a
+
+[Rule]
+ex C4a;mtv
+9 lectiones

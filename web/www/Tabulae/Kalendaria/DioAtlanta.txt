@@ -1,0 +1,4 @@
+#Propria Officia Archdiocese of Atlanta (generated from fssp/na_province.yaml)
+01-18=01-18ndc~01-18r=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+08-22=08-22nl1~08-22cc=Immaculati Cordis Beatæ Mariæ Virginis=1=
+09-03=09-03nl2=S. Pii X Papæ Confessoris=2=

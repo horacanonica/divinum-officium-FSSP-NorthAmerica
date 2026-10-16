@@ -1,0 +1,2 @@
+#Propria Officia St. Anthony Church (+ FSSP Calgary House), Calgary, AB (generated from fssp/na_province.yaml)
+06-13=06-13nl1=S. Antonii de Padua Confessoris et Ecclesiæ Doctoris=1=

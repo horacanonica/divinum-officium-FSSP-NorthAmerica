@@ -1,0 +1,2 @@
+#Propria Officia St. Francis de Sales Church, Mableton, GA (generated from fssp/na_province.yaml)
+01-29=01-29nl1=S. Francisci Salesii Episcopi Confessoris et Ecclesiæ Doctoris=1=
