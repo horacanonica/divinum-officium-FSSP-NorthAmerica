@@ -68,11 +68,22 @@ h1 {
   max-width: 38rem;
 }
 
+.edition {
+  margin: 0.85rem 0 0;
+  font-size: 0.98rem;
+}
+
+.edition .current {
+  color: var(--maroon);
+  border-bottom: 2px solid var(--maroon);
+  padding-bottom: 0.05rem;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 1.25rem;
-  margin-top: 0.8rem;
+  margin-top: 0.7rem;
   font-size: 0.95rem;
 }
 
@@ -98,14 +109,49 @@ input[type="search"] {
   color: var(--ink);
 }
 
-.jump {
+.contents {
+  margin: 0 0 1.4rem;
+  padding: 0.85rem 0.95rem 0.7rem;
+  border: 1px solid var(--line);
+  background: white;
+}
+
+.contents:empty {
+  display: none;
+}
+
+.contents h2 {
+  margin: 0 0 0.45rem;
+  color: var(--maroon);
+  font-size: 1.15rem;
+  font-weight: normal;
+}
+
+.toc-region {
+  margin: 0.35rem 0 0.15rem;
+}
+
+.toc-region h3 {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.toc-region ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 0.8rem;
-  margin: 0;
+  gap: 0.1rem 0.9rem;
+  margin: 0.05rem 0 0.35rem;
   padding: 0;
   list-style: none;
-  font-size: 0.92rem;
+}
+
+.toc-region a {
+  display: inline-block;
+  padding: 0.35rem 0;
 }
 
 .region {
@@ -123,7 +169,8 @@ input[type="search"] {
 
 .card {
   margin: 0 0 1rem;
-  padding: 0.85rem 0 0.4rem;
+  padding: 0.85rem 0 0.35rem;
+  scroll-margin-top: 0.75rem;
 }
 
 .card h3 {
@@ -170,6 +217,11 @@ input[type="search"] {
 
 .year-link {
   margin-left: 0.35rem;
+}
+
+.top-link {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
 }
 
 .chip:hover,
@@ -222,5 +274,19 @@ footer {
 
   h1 {
     font-size: 1.7rem;
+  }
+
+  .contents {
+    padding: 0.75rem 0.8rem 0.55rem;
+  }
+
+  .toc-region a {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .year-label {
+    display: block;
+    margin-bottom: 0.15rem;
   }
 }

@@ -2,9 +2,10 @@ name: EPUB downloads
 
 # Rebuilds Divine Office EPUBs and refreshes the GitHub Pages catalog.
 # A push rebuilds only the calendars the diff can affect (shared Office data
-# rebuilds all of them; one Kalendaria file rebuilds that apostolate). The
-# nightly run fills anything still missing and moves the two-year window
-# forward, which is also what adds a newly reached month or year.
+# rebuilds all of them; one Kalendaria file rebuilds that apostolate). Each
+# of those calendars is rebuilt in Latin (-la) and in Latin–English (-la-en).
+# The nightly run fills anything still missing, including a variant that was
+# never built, and moves the two-year window forward.
 
 on:
   push:
@@ -72,10 +73,12 @@ jobs:
             --target "${{ github.sha }}" \
             --latest=false \
             --title "Divine Office EPUBs" \
-            --notes "Latin and English Divine Office EPUBs for the FSSP North America calendars.
+            --notes "Latin and Latin–English Divine Office EPUBs for the FSSP North America calendars.
 
-          Monthly files are named {calendar}-{year}-{month}.epub.
-          Full-year files are named {calendar}-{year}.epub.
+          Latin monthly files are named {calendar}-{year}-{month}-la.epub.
+          Latin full-year files are named {calendar}-{year}-la.epub.
+          Latin–English files use the same names with -la-en.
+          Older Latin–English files without a suffix stay until that year is rebuilt.
 
           These assets are replaced as calendars are rebuilt. The public list is the GitHub Pages site."
 
@@ -131,11 +134,12 @@ jobs:
             if python3 scripts/epub_library/cli.py build \
               --slug "${{ matrix.slug }}" \
               --year "${{ matrix.year }}" \
+              --variant "${{ matrix.variant }}" \
               --output "${RUNNER_TEMP}/epub"; then
               ok=1
               break
             fi
-            echo "generation failed for ${{ matrix.slug }} ${{ matrix.year }}, attempt ${attempt}" >&2
+            echo "generation failed for ${{ matrix.slug }} ${{ matrix.year }} ${{ matrix.variant }}, attempt ${attempt}" >&2
             sleep $((attempt * 20))
           done
           [ "$ok" = 1 ]
@@ -166,7 +170,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: fragment-${{ matrix.slug }}-${{ matrix.year }}
+          name: fragment-${{ matrix.slug }}-${{ matrix.year }}-${{ matrix.variant }}
           path: ${{ runner.temp }}/epub/fragment.json
           if-no-files-found: error
           retention-days: 14
@@ -207,7 +211,7 @@ jobs:
               --target "${{ github.sha }}" \
               --latest=false \
               --title "Divine Office EPUBs" \
-              --notes "Latin and English Divine Office EPUBs for the FSSP North America calendars."
+              --notes "Latin and Latin–English Divine Office EPUBs for the FSSP North America calendars. Latin assets end in -la. Latin–English assets end in -la-en."
           fi
           for attempt in 1 2 3 4 5; do
             if gh release upload epub-library docs/catalog.json --clobber; then

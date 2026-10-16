@@ -600,9 +600,115 @@
       "region": "West",
       "place": "Sacramento, California",
       "built": {
-        "2026": "48a59e7ab56ed64745aeed426ddd3ab9593ee701547372a09196422494c3ffa5"
+        "2026": {
+          "la-en": "eeffc32a688dac9f6cf874c8731b0f71dee7f395e9475cf54df4b7409fef94c8",
+          "la": "eeffc32a688dac9f6cf874c8731b0f71dee7f395e9475cf54df4b7409fef94c8"
+        }
       },
       "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "sacramento-2026-la.epub",
+          "bytes": 14820722,
+          "variant": "la"
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-01-la.epub",
+          "bytes": 1528101,
+          "variant": "la",
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-02-la.epub",
+          "bytes": 1407008,
+          "variant": "la",
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-03-la.epub",
+          "bytes": 1546388,
+          "variant": "la",
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-04-la.epub",
+          "bytes": 1432373,
+          "variant": "la",
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-05-la.epub",
+          "bytes": 1525218,
+          "variant": "la",
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-06-la.epub",
+          "bytes": 1490270,
+          "variant": "la",
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-07-la.epub",
+          "bytes": 1528927,
+          "variant": "la",
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-08-la.epub",
+          "bytes": 1539332,
+          "variant": "la",
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-09-la.epub",
+          "bytes": 1496840,
+          "variant": "la",
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-10-la.epub",
+          "bytes": 1527496,
+          "variant": "la",
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-11-la.epub",
+          "bytes": 1487607,
+          "variant": "la",
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-12-la.epub",
+          "bytes": 1545344,
+          "variant": "la",
+          "month": 12
+        },
         {
           "type": "year",
           "year": 2026,

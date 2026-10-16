@@ -22,13 +22,18 @@ Office text:
   or Niagara (those inherit FSSP directly).
 
 The rolling window is the current month through the same month two years
-ahead. Each calendar-year job produces all twelve monthly EPUBs and the
-full-year EPUB. Months outside the window are kept on the release so the
-nightly job can advance the page without regenerating a year that is already
-built. A year that leaves the window is deleted.
+ahead. Each job produces all twelve monthly EPUBs and the full-year EPUB for
+one variant of one calendar-year. ``la`` is Latin only. ``la-en`` is Latin
+with English. Both variants use the same fingerprint, so a calendar edit
+rebuilds both and a shared Office edit rebuilds both for every calendar.
 
-Fingerprints are stored per year. A run that finishes only some years of a
-calendar does not mark the unfinished years as current.
+Release names stay distinct: ``{calendar}-{year}-{month}-la.epub`` and
+``{calendar}-{year}-la.epub`` for Latin, and the same with ``-la-en`` for
+bilingual. Files already published without a suffix are the bilingual
+edition; they are kept until a real content change replaces that year.
+
+Fingerprints are stored per year and variant. A run that finishes only some
+years does not mark the unfinished years as current.
 """
 
 from __future__ import annotations
@@ -83,6 +88,16 @@ SKIP_DIR_NAMES = {"output", "screenshots", "__pycache__", ".git"}
 
 LANGS = ("Latin", "English")
 SANCTI_DIRS = ("Sancti", "SanctiM")
+
+# Latin is the edition the download page leads with. Latin-English stays
+# available and is what unsuffixed release assets already are.
+VARIANTS = ("la", "la-en")
+LEGACY_VARIANT = "la-en"
+VARIANT_SUFFIX = {"la": "-la", "la-en": "-la-en"}
+VARIANT_LANGS = {"la": ("Latin", "Latin"), "la-en": ("Latin", "English")}
+_ASSET_RE = re.compile(
+    r"^(?P<slug>.+)-(?P<year>\d{4})(?:-(?P<month>\d{2}))?(?:-(?P<variant>la-en|la))?\.epub$"
+)
 
 _file_digest_cache: dict[str, str] = {}
 _shared_digest: str | None = None
@@ -440,15 +455,68 @@ def load_catalog(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def _files_for_year(files: list[dict], year: int) -> list[dict]:
-    return [item for item in files if int(item.get("year", 0)) == year]
+def file_variant(item: dict) -> str:
+    """Variant of a catalog file. Unsuffixed assets are the existing bilingual set."""
+    variant = item.get("variant")
+    if variant in VARIANT_SUFFIX:
+        return variant
+    return LEGACY_VARIANT
 
 
-def year_complete(files: list[dict], year: int) -> bool:
-    have = {(item.get("type"), int(item.get("month") or 0)) for item in _files_for_year(files, year)}
+def asset_name(slug: str, year: int, month: int | None, variant: str) -> str:
+    suffix = VARIANT_SUFFIX[variant]
+    if month is None:
+        return f"{slug}-{year}{suffix}.epub"
+    return f"{slug}-{year}-{month:02d}{suffix}.epub"
+
+
+def year_complete(files: list[dict], year: int, variant: str = LEGACY_VARIANT) -> bool:
+    have: set[tuple[str, int]] = set()
+    for item in files:
+        if int(item.get("year") or 0) != int(year):
+            continue
+        if file_variant(item) != variant:
+            continue
+        if item.get("type") == "year":
+            have.add(("year", 0))
+        elif item.get("type") == "month":
+            have.add(("month", int(item.get("month") or 0)))
     if ("year", 0) not in have:
         return False
     return all(("month", month) in have for month in range(1, 13))
+
+
+def _stamp_map(value) -> tuple[dict[str, str], bool]:
+    """Return variant hashes and whether this is a pre-variant bilingual stamp.
+
+    Older catalogs stored one string per year for the unsuffixed Latin-English
+    files. A mapping stores each variant on its own.
+    """
+    if isinstance(value, str) and value:
+        return {LEGACY_VARIANT: value}, True
+    if isinstance(value, dict):
+        stamps = {
+            key: item
+            for key, item in value.items()
+            if key in VARIANT_SUFFIX and isinstance(item, str) and item
+        }
+        return stamps, False
+    return {}, False
+
+
+def variant_fresh(files: list[dict], year: int, stamp_value, variant: str, current: str) -> bool:
+    """True when this variant's year is complete and matches the current fingerprint.
+
+    A legacy string stamp counts as a fresh bilingual year so those files are
+    not deleted and regenerated when only the planner changes.
+    """
+    if not year_complete(files, year, variant):
+        return False
+    stamps, legacy = _stamp_map(stamp_value)
+    recorded = stamps.get(variant)
+    if recorded == current:
+        return True
+    return bool(legacy and variant == LEGACY_VARIANT and recorded)
 
 
 def plan_jobs(
@@ -461,42 +529,47 @@ def plan_jobs(
     force_slugs: set[str] | None = None,
     max_jobs: int = MAX_JOBS,
 ) -> list[dict]:
-    """Return calendar-year jobs that are missing or fingerprint-stale.
+    """Return variant jobs that are missing or fingerprint-stale.
 
-    ``affected`` limits a push to calendars the diff can change. A calendar
-    that has never been built is still queued, so the first push fills the
-    library and a later push still finishes anything the nightly job missed.
-    ``affected is None`` (the nightly run) considers every calendar.
+    ``affected`` limits a content rebuild to calendars the diff can change.
+    Both variants of those calendars are queued. Years that have never been
+    built, including the Latin edition of a calendar that already has
+    bilingual files, are queued even when this push did not touch them, so a
+    later push still finishes what an earlier run left behind. ``affected is
+    None`` (the nightly run) considers every calendar.
+
+    Latin jobs come first. Within that, calendars keep their region order.
     """
     force_slugs = force_slugs or set()
     by_slug = {item.get("slug"): item for item in catalog.get("calendars", [])}
-    jobs: list[dict] = []
-    for cal in calendars:
+    priority: list[tuple[int, int, int, dict]] = []
+    gaps: list[tuple[int, int, int, dict]] = []
+    for order, cal in enumerate(calendars):
         entry = by_slug.get(cal.slug) or {}
         files = entry.get("files") or []
-        built = {str(key): value for key, value in (entry.get("built") or {}).items()}
-        never = not files
-        if affected is not None and cal.slug not in affected and not never and cal.slug not in force_slugs:
-            continue
+        built = entry.get("built") or {}
         current = hashes[cal.slug]
+        in_scope = affected is None or cal.slug in affected or cal.slug in force_slugs
         for year in window.years:
-            stale = (
-                cal.slug in force_slugs
-                or built.get(str(year)) != current
-                or not year_complete(files, year)
-            )
-            if not stale:
-                continue
-            jobs.append(
-                {
+            stamp_value = built.get(str(year))
+            for variant_index, variant in enumerate(VARIANTS):
+                forced = cal.slug in force_slugs
+                if not forced and variant_fresh(files, year, stamp_value, variant, current):
+                    continue
+                incomplete = not year_complete(files, year, variant)
+                if not in_scope and not incomplete:
+                    continue
+                job = {
                     "slug": cal.slug,
                     "year": year,
                     "version": cal.version,
+                    "variant": variant,
                 }
-            )
-            if len(jobs) >= max_jobs:
-                return jobs
-    return jobs
+                bucket = priority if in_scope or forced else gaps
+                bucket.append((variant_index, order, year, job))
+    priority.sort(key=lambda item: (item[0], item[1], item[2]))
+    gaps.sort(key=lambda item: (item[0], item[1], item[2]))
+    return [item[3] for item in priority + gaps][:max_jobs]
 
 
 def classify_generated(name: str, year: int) -> tuple[str, int | None] | None:
@@ -509,8 +582,12 @@ def classify_generated(name: str, year: int) -> tuple[str, int | None] | None:
     return None
 
 
-def _validate_epub(path: Path, kind: str) -> None:
-    if path.stat().st_size < (2_000_000 if kind == "year" else 200_000):
+def _validate_epub(path: Path, kind: str, variant: str) -> None:
+    minimum_bytes = 2_000_000 if kind == "year" else 200_000
+    if variant == "la":
+        # A Latin-only year is smaller than the bilingual edition.
+        minimum_bytes = 1_000_000 if kind == "year" else 120_000
+    if path.stat().st_size < minimum_bytes:
         raise RuntimeError(f"{path.name} is unexpectedly small ({path.stat().st_size} bytes)")
     with zipfile.ZipFile(path) as archive:
         bad = archive.testzip()
@@ -523,10 +600,26 @@ def _validate_epub(path: Path, kind: str) -> None:
         minimum = 2500 if kind == "year" else 200
         if html_count < minimum:
             raise RuntimeError(f"{path.name} has {html_count} html files, expected at least {minimum}")
+        opf = archive.read("content.opf").decode("utf-8", errors="replace")
+        if "<dc:language>la</dc:language>" not in opf:
+            raise RuntimeError(f"{path.name} is missing the Latin language")
+        has_english = "<dc:language>en</dc:language>" in opf
+        if variant == "la" and has_english:
+            raise RuntimeError(f"{path.name} includes English; expected Latin only")
+        if variant == "la-en" and not has_english:
+            raise RuntimeError(f"{path.name} is missing English")
 
 
-def build_year(cal: Calendar, year: int, output: Path, versions: dict[str, Version] | None = None) -> dict:
-    """Run epubgen2 for one calendar-year and write stable filenames."""
+def build_year(
+    cal: Calendar,
+    year: int,
+    output: Path,
+    versions: dict[str, Version] | None = None,
+    variant: str = "la",
+) -> dict:
+    """Run epubgen2 for one calendar-year variant and write stable filenames."""
+    if variant not in VARIANT_SUFFIX:
+        raise RuntimeError(f"Unknown EPUB variant {variant}")
     output.mkdir(parents=True, exist_ok=True)
     raw = output / "_raw"
     if raw.exists():
@@ -535,6 +628,7 @@ def build_year(cal: Calendar, year: int, output: Path, versions: dict[str, Versi
                 child.unlink()
     raw.mkdir(parents=True, exist_ok=True)
     code = cal.version.split(" - ", 1)[1] if " - " in cal.version else cal.version
+    base, second = VARIANT_LANGS[variant]
     env = os.environ.copy()
     env["LC_ALL"] = "C.UTF-8"
     env["LANG"] = "C.UTF-8"
@@ -547,14 +641,14 @@ def build_year(cal: Calendar, year: int, output: Path, versions: dict[str, Versi
         "-r",
         code,
         "-b",
-        "Latin",
+        base,
         "-l",
-        "English",
+        second,
         "-o",
         str(raw),
     ]
     log_path = output / "epubgen.log"
-    print(f"Building {cal.version} {year}", flush=True)
+    print(f"Building {cal.version} {year} ({variant})", flush=True)
     with log_path.open("w", encoding="utf-8", errors="replace") as log:
         try:
             proc = subprocess.run(
@@ -582,15 +676,21 @@ def build_year(cal: Calendar, year: int, output: Path, versions: dict[str, Versi
             continue
         file_kind, month = kind
         if file_kind == "month":
-            dest_name = f"{cal.slug}-{year}-{month:02d}.epub"
+            dest_name = asset_name(cal.slug, year, month, variant)
             seen_months.add(month)
         else:
-            dest_name = f"{cal.slug}-{year}.epub"
+            dest_name = asset_name(cal.slug, year, None, variant)
             saw_year = True
         dest = output / dest_name
         dest.write_bytes(source.read_bytes())
-        _validate_epub(dest, file_kind)
-        record = {"type": file_kind, "year": year, "name": dest_name, "bytes": dest.stat().st_size}
+        _validate_epub(dest, file_kind, variant)
+        record = {
+            "type": file_kind,
+            "year": year,
+            "name": dest_name,
+            "bytes": dest.stat().st_size,
+            "variant": variant,
+        }
         if month is not None:
             record["month"] = month
         files.append(record)
@@ -602,6 +702,7 @@ def build_year(cal: Calendar, year: int, output: Path, versions: dict[str, Versi
         "version": cal.version,
         "slug": cal.slug,
         "year": year,
+        "variant": variant,
         "content_hash": content_hash(cal, versions),
         "files": files,
     }
@@ -622,6 +723,37 @@ def _blank_entry(cal: Calendar) -> dict:
     }
 
 
+def _current_hash(cal: Calendar, versions: dict[str, Version], cache: dict[str, str]) -> str:
+    cached = cache.get(cal.slug)
+    if cached is None:
+        cached = content_hash(cal, versions)
+        cache[cal.slug] = cached
+    return cached
+
+
+def _adopt_legacy_stamp(
+    stamps: dict[str, str],
+    legacy: bool,
+    files: list[dict],
+    year: int,
+    cal: Calendar,
+    versions: dict[str, Version],
+    hash_cache: dict[str, str],
+) -> dict[str, str]:
+    """Record today's fingerprint for bilingual files that predate variant names.
+
+    The bytes stay on the release. Rewriting the stamp stops the next run from
+    treating the planner edit itself as a reason to rebuild them.
+    """
+    if not legacy:
+        return stamps
+    if not year_complete(files, year, LEGACY_VARIANT):
+        return {}
+    adopted = dict(stamps)
+    adopted[LEGACY_VARIANT] = _current_hash(cal, versions, hash_cache)
+    return adopted
+
+
 def merge_catalog(
     old: dict,
     calendars: list[Calendar],
@@ -632,6 +764,9 @@ def merge_catalog(
     repo: str,
     updated: str,
 ) -> dict:
+    versions = load_versions()
+    hash_cache: dict[str, str] = {}
+    by_calendar = {cal.slug: cal for cal in calendars}
     by_slug: dict[str, dict] = {}
     for item in old.get("calendars", []):
         slug = item.get("slug")
@@ -643,22 +778,47 @@ def merge_catalog(
     for fragment in fragments:
         slug = fragment["slug"]
         year = str(fragment["year"])
+        variant = fragment.get("variant") or LEGACY_VARIANT
+        if variant not in VARIANT_SUFFIX:
+            variant = LEGACY_VARIANT
         entry = by_slug.setdefault(slug, {"built": {}, "files": []})
-        entry["built"][year] = fragment["content_hash"]
-        entry["files"] = [item for item in entry["files"] if int(item.get("year", 0)) != int(year)]
-        entry["files"].extend(fragment["files"])
+        stamps, legacy = _stamp_map(entry["built"].get(year))
+        cal = by_calendar.get(slug)
+        if legacy and cal is not None:
+            stamps = _adopt_legacy_stamp(stamps, True, entry["files"], int(year), cal, versions, hash_cache)
+        elif legacy:
+            stamps = {}
+        stamps[variant] = fragment["content_hash"]
+        entry["built"][year] = stamps
+        entry["files"] = [
+            item
+            for item in entry["files"]
+            if not (int(item.get("year") or 0) == int(year) and file_variant(item) == variant)
+        ]
+        for item in fragment["files"]:
+            tagged = dict(item)
+            tagged["variant"] = variant
+            entry["files"].append(tagged)
 
     window_years = set(window.years)
     published: list[dict] = []
     for cal in calendars:
         previous = by_slug.get(cal.slug, {"built": {}, "files": []})
-        files = [item for item in previous["files"] if int(item.get("year", 0)) in window_years]
-        files.sort(key=lambda item: (int(item["year"]), 0 if item["type"] == "year" else int(item.get("month") or 0)))
-        built = {
-            year: digest
-            for year, digest in previous["built"].items()
-            if year.isdigit() and int(year) in window_years
-        }
+        files = [item for item in previous["files"] if int(item.get("year") or 0) in window_years]
+        files.sort(
+            key=lambda item: (
+                int(item["year"]),
+                0 if file_variant(item) == "la" else 1,
+                0 if item["type"] == "year" else int(item.get("month") or 0),
+            )
+        )
+        built: dict[str, dict[str, str]] = {}
+        for year in window.years:
+            raw = previous["built"].get(str(year))
+            stamps, legacy = _stamp_map(raw)
+            stamps = _adopt_legacy_stamp(stamps, legacy, files, year, cal, versions, hash_cache)
+            if stamps:
+                built[str(year)] = stamps
         entry = _blank_entry(cal)
         entry["built"] = built
         entry["files"] = files
@@ -668,7 +828,11 @@ def merge_catalog(
         "repo": repo,
         "release": RELEASE_TAG,
         "updated": updated,
-        "languages": "Latin and English",
+        "languages": "Latin",
+        "variants": [
+            {"id": "la", "label": "Latin"},
+            {"id": "la-en", "label": "Latin and English"},
+        ],
         "rubrics": "1960",
         "window": window.as_dict(),
         "region_order": region_order,
@@ -688,23 +852,38 @@ def write_catalog(path: Path, catalog: dict) -> None:
     path.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def parse_asset_name(name: str) -> tuple[str, int, str | None] | None:
+    """Split a release filename into slug, year, and variant (None if unsuffixed)."""
+    match = _ASSET_RE.match(name)
+    if not match:
+        return None
+    return match.group("slug"), int(match.group("year")), match.group("variant")
+
+
 def assets_to_prune(catalog: dict, remote_names: list[str]) -> list[str]:
-    """Release assets for calendars or years the page no longer publishes."""
+    """Release assets the catalog no longer links to.
+
+    Unsuffixed bilingual files stay while the catalog still names them. A
+    suffixed file is removed once its year has left the window or its name
+    is no longer listed, which is how a rebuilt year drops the old asset
+    after the catalog points at the new name.
+    """
     calendars = catalog.get("calendars") or []
     if not calendars:
         return []
-    slugs = {item["slug"] for item in calendars}
-    years = set(catalog.get("window", {}).get("years") or [])
+    published: set[str] = set()
+    for item in calendars:
+        for file in item.get("files") or []:
+            name = file.get("name")
+            if name:
+                published.add(name)
     doomed = []
     for name in remote_names:
-        if not name.endswith(".epub"):
+        if not name.endswith(".epub") or name in published:
             continue
-        match = re.match(r"^(.+)-(\d{4})(?:-\d{2})?\.epub$", name)
-        if not match:
+        if parse_asset_name(name) is None:
             continue
-        slug, year = match.group(1), int(match.group(2))
-        if slug not in slugs or year not in years:
-            doomed.append(name)
+        doomed.append(name)
     return sorted(doomed)
 
 

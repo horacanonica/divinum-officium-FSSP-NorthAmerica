@@ -188,10 +188,16 @@ class WindowAndPlanTest(unittest.TestCase):
     def test_empty_catalog_plans_every_year_up_to_the_cap(self):
         window = library.rolling_window(date(2026, 10, 16))
         hashes = {cal.slug: "abc" for cal in self.calendars}
-        jobs = library.plan_jobs(self.calendars, {}, window, hashes, affected=None, max_jobs=100)
-        self.assertEqual(len(jobs), len(self.calendars) * len(window.years))
+        jobs = library.plan_jobs(self.calendars, {}, window, hashes, affected=None, max_jobs=200)
+        self.assertEqual(len(jobs), len(self.calendars) * len(window.years) * len(library.VARIANTS))
+        self.assertEqual(jobs[0]["variant"], "la")
+        self.assertLess(
+            max(index for index, job in enumerate(jobs) if job["variant"] == "la"),
+            min(index for index, job in enumerate(jobs) if job["variant"] == "la-en"),
+        )
         capped = library.plan_jobs(self.calendars, {}, window, hashes, affected=None, max_jobs=5)
         self.assertEqual(len(capped), 5)
+        self.assertTrue(all(job["variant"] == "la" for job in capped))
 
     def test_push_rebuilds_only_the_affected_calendar(self):
         window = library.rolling_window(date(2026, 10, 16))
@@ -206,7 +212,9 @@ class WindowAndPlanTest(unittest.TestCase):
             affected={"sacramento"},
         )
         self.assertEqual({job["slug"] for job in jobs}, {"sacramento"})
-        self.assertEqual(sorted(job["year"] for job in jobs), [2026, 2027, 2028])
+        self.assertEqual(sorted(job["year"] for job in jobs if job["variant"] == "la"), [2026, 2027, 2028])
+        self.assertEqual(sorted(job["year"] for job in jobs if job["variant"] == "la-en"), [2026, 2027, 2028])
+        self.assertEqual([job["variant"] for job in jobs], ["la", "la", "la", "la-en", "la-en", "la-en"])
 
     def test_complete_catalog_plans_nothing(self):
         window = library.rolling_window(date(2026, 10, 16))
@@ -214,6 +222,33 @@ class WindowAndPlanTest(unittest.TestCase):
         catalog = _complete_catalog(self.calendars, window, "same")
         jobs = library.plan_jobs(self.calendars, catalog, window, hashes, affected=None)
         self.assertEqual(jobs, [])
+
+    def test_legacy_bilingual_files_are_not_rebuilt(self):
+        window = library.rolling_window(date(2026, 10, 16))
+        hashes = {cal.slug: "planner-changed" for cal in self.calendars}
+        catalog = _legacy_catalog(self.calendars, window, "original-bilingual-hash")
+        jobs = library.plan_jobs(self.calendars, catalog, window, hashes, affected=set(hashes))
+        self.assertTrue(jobs)
+        self.assertTrue(all(job["variant"] == "la" for job in jobs))
+        self.assertEqual(len(jobs), len(self.calendars) * len(window.years))
+
+    def test_missing_years_are_filled_even_when_the_push_is_unrelated(self):
+        window = library.rolling_window(date(2026, 10, 16))
+        hashes = {cal.slug: "same" for cal in self.calendars}
+        catalog = _legacy_catalog(self.calendars, window, "same")
+        niagara = next(item for item in catalog["calendars"] if item["slug"] == "niagara")
+        niagara["files"] = [item for item in niagara["files"] if item["year"] != 2028]
+        niagara["built"].pop("2028", None)
+        jobs = library.plan_jobs(self.calendars, catalog, window, hashes, affected=set())
+        niagara_bilingual = [
+            job for job in jobs if job["slug"] == "niagara" and job["variant"] == "la-en"
+        ]
+        other_bilingual = [
+            job for job in jobs if job["slug"] != "niagara" and job["variant"] == "la-en"
+        ]
+        self.assertEqual([job["year"] for job in niagara_bilingual], [2028])
+        self.assertEqual(other_bilingual, [])
+        self.assertTrue(any(job["slug"] == "guadalajara" and job["variant"] == "la" for job in jobs))
 
     def test_partial_year_does_not_stamp_the_other_years(self):
         window = library.rolling_window(date(2026, 10, 16))
@@ -223,8 +258,9 @@ class WindowAndPlanTest(unittest.TestCase):
             "version": sacramento.version,
             "slug": "sacramento",
             "year": 2026,
+            "variant": "la-en",
             "content_hash": "new",
-            "files": _year_files("sacramento", 2026),
+            "files": _year_files("sacramento", 2026, "la-en"),
         }
         merged = library.merge_catalog(
             old,
@@ -236,14 +272,41 @@ class WindowAndPlanTest(unittest.TestCase):
             updated="2026-10-16T00:00:00Z",
         )
         entry = next(item for item in merged["calendars"] if item["slug"] == "sacramento")
-        self.assertEqual(entry["built"], {"2026": "new"})
+        self.assertEqual(entry["built"], {"2026": {"la-en": "new"}})
         hashes = {cal.slug: "new" for cal in self.calendars}
         jobs = library.plan_jobs(self.calendars, merged, window, hashes, affected={"sacramento"})
         sacramento_jobs = [job for job in jobs if job["slug"] == "sacramento"]
-        self.assertEqual(sorted(job["year"] for job in sacramento_jobs), [2027, 2028])
+        self.assertEqual(
+            sorted(job["year"] for job in sacramento_jobs if job["variant"] == "la"),
+            [2026, 2027, 2028],
+        )
+        self.assertEqual(
+            sorted(job["year"] for job in sacramento_jobs if job["variant"] == "la-en"),
+            [2027, 2028],
+        )
         # Calendars that have never been built are still queued, so one push
         # cannot leave a new apostolate waiting for the nightly run.
         self.assertIn("guadalajara", {job["slug"] for job in jobs})
+
+    def test_merge_adopts_legacy_bilingual_stamps_without_dropping_files(self):
+        window = library.rolling_window(date(2026, 10, 16))
+        old = _legacy_catalog([self.by_slug["sacramento"]], window, "original")
+        # The helper only built one calendar; merge still publishes every calendar.
+        merged = library.merge_catalog(
+            old,
+            self.calendars,
+            self.order,
+            window,
+            [],
+            repo="horacanonica/divinum-officium-FSSP-NorthAmerica",
+            updated="2026-10-16T00:00:00Z",
+        )
+        entry = next(item for item in merged["calendars"] if item["slug"] == "sacramento")
+        self.assertEqual(len(entry["files"]), len(window.years) * 13)
+        self.assertTrue(all(item["name"].endswith(".epub") and "-la" not in item["name"] for item in entry["files"]))
+        current = library.content_hash(self.by_slug["sacramento"])
+        self.assertEqual(entry["built"]["2026"]["la-en"], current)
+        self.assertNotIn("la", entry["built"]["2026"])
 
     def test_merge_refreshes_metadata_and_drops_old_years(self):
         window = library.rolling_window(date(2027, 1, 1))
@@ -263,9 +326,35 @@ class WindowAndPlanTest(unittest.TestCase):
         self.assertEqual(merged["window"]["start"], "2027-01")
         doomed = library.assets_to_prune(
             merged,
-            ["niagara-2026-10.epub", "niagara-2027.epub", "catalog.json", "notes.txt"],
+            [
+                "niagara-2026-10.epub",
+                "niagara-2026-10-la.epub",
+                "niagara-2027-la.epub",
+                "niagara-2027-la-en.epub",
+                "catalog.json",
+                "notes.txt",
+            ],
         )
-        self.assertEqual(doomed, ["niagara-2026-10.epub"])
+        self.assertEqual(doomed, ["niagara-2026-10-la.epub", "niagara-2026-10.epub"])
+
+    def test_prune_keeps_listed_legacy_names(self):
+        window = library.rolling_window(date(2026, 10, 16))
+        catalog = _legacy_catalog([self.by_slug["niagara"]], window, "same")
+        catalog["window"] = window.as_dict()
+        doomed = library.assets_to_prune(
+            catalog,
+            ["niagara-2026.epub", "niagara-2026-10.epub", "niagara-2026-10-la.epub", "notes.txt"],
+        )
+        self.assertEqual(doomed, ["niagara-2026-10-la.epub"])
+
+    def test_asset_names_keep_hyphenated_slugs(self):
+        self.assertEqual(
+            library.parse_asset_name("fssp-usa-2026-01-la-en.epub"),
+            ("fssp-usa", 2026, "la-en"),
+        )
+        self.assertEqual(library.parse_asset_name("maple-hill-2028-la.epub"), ("maple-hill", 2028, "la"))
+        self.assertEqual(library.parse_asset_name("sacramento-2026-10.epub"), ("sacramento", 2026, None))
+        self.assertIsNone(library.parse_asset_name("catalog.json"))
 
     def test_classify_generated_names(self):
         self.assertEqual(library.classify_generated("breviarium2026-10_Sac.epub", 2026), ("month", 10))
@@ -274,29 +363,47 @@ class WindowAndPlanTest(unittest.TestCase):
         self.assertIsNone(library.classify_generated("breviarium2025-10_Sac.epub", 2026))
 
 
-def _year_files(slug: str, year: int) -> list[dict]:
-    files = [{"type": "year", "year": year, "name": f"{slug}-{year}.epub", "bytes": 10}]
+def _year_files(slug: str, year: int, variant: str = "la-en", legacy: bool = False) -> list[dict]:
+    def name(month: int | None) -> str:
+        if legacy:
+            if month is None:
+                return f"{slug}-{year}.epub"
+            return f"{slug}-{year}-{month:02d}.epub"
+        return library.asset_name(slug, year, month, variant)
+
+    files = [{"type": "year", "year": year, "name": name(None), "bytes": 10, "variant": variant}]
+    if legacy:
+        files[0].pop("variant")
     for month in range(1, 13):
-        files.append(
-            {
-                "type": "month",
-                "year": year,
-                "month": month,
-                "name": f"{slug}-{year}-{month:02d}.epub",
-                "bytes": 10,
-            }
-        )
+        record = {
+            "type": "month",
+            "year": year,
+            "month": month,
+            "name": name(month),
+            "bytes": 10,
+            "variant": variant,
+        }
+        if legacy:
+            record.pop("variant")
+        files.append(record)
     return files
 
 
-def _complete_catalog(calendars, window, digest: str) -> dict:
+def _catalog_with(calendars, window, digest: str, *, legacy: bool) -> dict:
     entries = []
     for cal in calendars:
         files = []
         built = {}
         for year in window.years:
-            files.extend(_year_files(cal.slug, year))
-            built[str(year)] = digest
+            if legacy:
+                files.extend(_year_files(cal.slug, year, legacy=True))
+                built[str(year)] = digest
+            else:
+                year_files = []
+                for variant in library.VARIANTS:
+                    year_files.extend(_year_files(cal.slug, year, variant))
+                files.extend(year_files)
+                built[str(year)] = {variant: digest for variant in library.VARIANTS}
         entries.append(
             {
                 "version": cal.version,
@@ -309,6 +416,14 @@ def _complete_catalog(calendars, window, digest: str) -> dict:
             }
         )
     return {"calendars": entries, "window": window.as_dict()}
+
+
+def _complete_catalog(calendars, window, digest: str) -> dict:
+    return _catalog_with(calendars, window, digest, legacy=False)
+
+
+def _legacy_catalog(calendars, window, digest: str) -> dict:
+    return _catalog_with(calendars, window, digest, legacy=True)
 
 
 if __name__ == "__main__":
