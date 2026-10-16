@@ -136,10 +136,12 @@ function render(catalog) {
       groupByYear(windowMonths).forEach(function (group) {
         const block = el("div", "year-block");
         block.appendChild(el("span", "year-label", String(group.year)));
-        group.months.forEach(function (month) {
-          const file = files["m" + group.year + "-" + month];
-          block.appendChild(linkOrPending(catalog, file, "chip", MONTHS[month - 1]));
-        });
+        if (calendar.monthly !== false) {
+          group.months.forEach(function (month) {
+            const file = files["m" + group.year + "-" + month];
+            block.appendChild(linkOrPending(catalog, file, "chip", MONTHS[month - 1]));
+          });
+        }
         block.appendChild(linkOrPending(catalog, files["y" + group.year], "year-link", "Full year"));
         card.appendChild(block);
       });

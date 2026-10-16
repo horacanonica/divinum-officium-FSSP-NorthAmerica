@@ -96,7 +96,10 @@ SANCTI_DIRS = ("Sancti", "SanctiM")
 
 # Latin is the edition the download page leads with. Latin-English stays
 # available and is what unsuffixed release assets already are.
-VARIANTS = ("la", "la-en")
+# Latin only. The Latin–English edition was dropped to stay under the release
+# asset cap; parse and naming code still understands its -la-en files so they
+# can be pruned.
+VARIANTS = ("la",)
 LEGACY_VARIANT = "la-en"
 VARIANT_SUFFIX = {"la": "-la", "la-en": "-la-en"}
 VARIANT_LANGS = {"la": ("Latin", "Latin"), "la-en": ("Latin", "English")}
@@ -125,6 +128,7 @@ class Calendar:
     region: str
     place: str
     chain: tuple[str, ...]
+    monthly: bool = True
 
 
 @dataclass(frozen=True)
@@ -212,12 +216,29 @@ def load_regions(path: Path | None = None) -> tuple[list[str], dict[str, tuple[s
     return order, places
 
 
+def load_year_only(path: Path | None = None) -> set[str]:
+    """Versions whose regions.tsv row has ``year`` in the fourth column.
+
+    Those calendars publish the full-year EPUB only. Monthly files for every
+    calendar would pass GitHub's 1,000 assets per release.
+    """
+    found: set[str] = set()
+    for line in (path or REGIONS_TSV).read_text(encoding="utf-8").splitlines():
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split("\t")
+        if len(parts) > 3 and parts[3].strip().lower() == "year":
+            found.add(parts[0].strip())
+    return found
+
+
 def load_calendars(
     versions: dict[str, Version] | None = None,
     regions_path: Path | None = None,
 ) -> tuple[list[Calendar], list[str]]:
     versions = versions if versions is not None else load_versions()
     order, places = load_regions(regions_path)
+    year_only = load_year_only(regions_path)
     calendars: list[Calendar] = []
     used_slugs: set[str] = set()
     for name, version in versions.items():
@@ -238,6 +259,7 @@ def load_calendars(
                 region=region,
                 place=place,
                 chain=chain_of(name, versions),
+                monthly=name not in year_only,
             )
         )
 
@@ -475,7 +497,9 @@ def asset_name(slug: str, year: int, month: int | None, variant: str) -> str:
     return f"{slug}-{year}-{month:02d}{suffix}.epub"
 
 
-def year_complete(files: list[dict], year: int, variant: str = LEGACY_VARIANT) -> bool:
+def year_complete(
+    files: list[dict], year: int, variant: str = LEGACY_VARIANT, monthly: bool = True
+) -> bool:
     have: set[tuple[str, int]] = set()
     for item in files:
         if int(item.get("year") or 0) != int(year):
@@ -488,7 +512,7 @@ def year_complete(files: list[dict], year: int, variant: str = LEGACY_VARIANT) -
             have.add(("month", int(item.get("month") or 0)))
     if ("year", 0) not in have:
         return False
-    return all(("month", month) in have for month in range(1, 13))
+    return not monthly or all(("month", month) in have for month in range(1, 13))
 
 
 def _stamp_map(value) -> tuple[dict[str, str], bool]:
@@ -517,6 +541,7 @@ def variant_fresh(
     current: str,
     *,
     adopt_complete: bool = False,
+    monthly: bool = True,
 ) -> bool:
     """True when this variant's year is complete and matches the current fingerprint.
 
@@ -525,7 +550,7 @@ def variant_fresh(
     catalog written by this version also keeps complete years, then records
     the current fingerprint so a later Office edit still rebuilds them.
     """
-    if not year_complete(files, year, variant):
+    if not year_complete(files, year, variant, monthly):
         return False
     if adopt_complete:
         return True
@@ -573,10 +598,10 @@ def plan_jobs(
             for variant_index, variant in enumerate(VARIANTS):
                 forced = cal.slug in force_slugs
                 if not forced and variant_fresh(
-                    files, year, stamp_value, variant, current, adopt_complete=adopt_complete
+                    files, year, stamp_value, variant, current, adopt_complete=adopt_complete, monthly=cal.monthly
                 ):
                     continue
-                incomplete = not year_complete(files, year, variant)
+                incomplete = not year_complete(files, year, variant, cal.monthly)
                 if not in_scope and not incomplete:
                     continue
                 job = {
@@ -695,6 +720,8 @@ def build_year(
         if kind is None:
             continue
         file_kind, month = kind
+        if file_kind == "month" and not cal.monthly:
+            continue
         if file_kind == "month":
             dest_name = asset_name(cal.slug, year, month, variant)
             seen_months.add(month)
@@ -714,7 +741,7 @@ def build_year(
         if month is not None:
             record["month"] = month
         files.append(record)
-    missing = [month for month in range(1, 13) if month not in seen_months]
+    missing = [month for month in range(1, 13) if month not in seen_months] if cal.monthly else []
     if missing or not saw_year:
         raise RuntimeError(f"{cal.slug} {year} did not produce every EPUB (missing months {missing}, year={saw_year})")
     files.sort(key=lambda item: (item["type"] != "year", item.get("month") or 0))
@@ -740,6 +767,7 @@ def _blank_entry(cal: Calendar) -> dict:
         "place": cal.place,
         "built": {},
         "files": [],
+        **({} if cal.monthly else {"monthly": False}),
     }
 
 
@@ -767,7 +795,7 @@ def _adopt_legacy_stamp(
     """
     if not legacy:
         return stamps
-    if not year_complete(files, year, LEGACY_VARIANT):
+    if not year_complete(files, year, LEGACY_VARIANT, cal.monthly):
         return {}
     adopted = dict(stamps)
     adopted[LEGACY_VARIANT] = _current_hash(cal, versions, hash_cache)
@@ -827,7 +855,13 @@ def merge_catalog(
     published: list[dict] = []
     for cal in calendars:
         previous = by_slug.get(cal.slug, {"built": {}, "files": []})
-        files = [item for item in previous["files"] if int(item.get("year") or 0) in window_years]
+        files = [
+            item
+            for item in previous["files"]
+            if int(item.get("year") or 0) in window_years
+            and file_variant(item) in VARIANTS
+            and (cal.monthly or item.get("type") == "year")
+        ]
         files.sort(
             key=lambda item: (
                 int(item["year"]),
@@ -844,7 +878,7 @@ def merge_catalog(
                 for variant in VARIANTS:
                     if (cal.slug, str(year), variant) in refreshed:
                         continue
-                    if year_complete(files, year, variant):
+                    if year_complete(files, year, variant, cal.monthly):
                         stamps[variant] = _current_hash(cal, versions, hash_cache)
             if stamps:
                 built[str(year)] = stamps
