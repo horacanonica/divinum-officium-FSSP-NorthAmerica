@@ -1,7 +1,11 @@
 {
   "repo": "horacanonica/divinum-officium-FSSP-NorthAmerica",
   "release": "epub-library",
-  "updated": "2026-10-16T21:22:37Z",
+  "releases": {
+    "la": "epub-library-la",
+    "la-en": "epub-library"
+  },
+  "updated": "2026-10-16T21:52:51Z",
   "languages": "Latin",
   "variants": [
     {
@@ -13,6 +17,7 @@
       "label": "Latin and English"
     }
   ],
+  "fingerprint": "v2",
   "rubrics": "1960",
   "window": {
     "start": "2026-10",
@@ -43,16 +48,16 @@
       "place": "General calendar of the Fraternity",
       "built": {
         "2026": {
-          "la-en": "110b5e1cc4d499f8da6bcff1711e2ea6c76f548665f972b4d1398d10b9709bf4",
-          "la": "110b5e1cc4d499f8da6bcff1711e2ea6c76f548665f972b4d1398d10b9709bf4"
+          "la-en": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5",
+          "la": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5"
         },
         "2027": {
-          "la-en": "110b5e1cc4d499f8da6bcff1711e2ea6c76f548665f972b4d1398d10b9709bf4",
-          "la": "110b5e1cc4d499f8da6bcff1711e2ea6c76f548665f972b4d1398d10b9709bf4"
+          "la-en": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5",
+          "la": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5"
         },
         "2028": {
-          "la-en": "110b5e1cc4d499f8da6bcff1711e2ea6c76f548665f972b4d1398d10b9709bf4",
-          "la": "110b5e1cc4d499f8da6bcff1711e2ea6c76f548665f972b4d1398d10b9709bf4"
+          "la-en": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5",
+          "la": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5"
         }
       },
       "files": [
@@ -645,16 +650,16 @@
       "place": "FSSP calendar for the United States",
       "built": {
         "2026": {
-          "la-en": "92319652cbfdbb61369ca19d05051bb6699af973566eb37e5f71b2a10c3d4918",
-          "la": "92319652cbfdbb61369ca19d05051bb6699af973566eb37e5f71b2a10c3d4918"
+          "la-en": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de",
+          "la": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de"
         },
         "2027": {
-          "la-en": "92319652cbfdbb61369ca19d05051bb6699af973566eb37e5f71b2a10c3d4918",
-          "la": "92319652cbfdbb61369ca19d05051bb6699af973566eb37e5f71b2a10c3d4918"
+          "la-en": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de",
+          "la": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de"
         },
         "2028": {
-          "la-en": "92319652cbfdbb61369ca19d05051bb6699af973566eb37e5f71b2a10c3d4918",
-          "la": "92319652cbfdbb61369ca19d05051bb6699af973566eb37e5f71b2a10c3d4918"
+          "la-en": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de",
+          "la": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de"
         }
       },
       "files": [
@@ -1247,14 +1252,16 @@
       "place": "Sacramento, California",
       "built": {
         "2026": {
-          "la-en": "eeffc32a688dac9f6cf874c8731b0f71dee7f395e9475cf54df4b7409fef94c8",
-          "la": "eeffc32a688dac9f6cf874c8731b0f71dee7f395e9475cf54df4b7409fef94c8"
+          "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439",
+          "la": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
         },
         "2027": {
-          "la": "eeffc32a688dac9f6cf874c8731b0f71dee7f395e9475cf54df4b7409fef94c8"
+          "la": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439",
+          "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
         },
         "2028": {
-          "la": "eeffc32a688dac9f6cf874c8731b0f71dee7f395e9475cf54df4b7409fef94c8"
+          "la": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439",
+          "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
         }
       },
       "files": [
@@ -1556,6 +1563,109 @@
         },
         {
           "type": "year",
+          "year": 2027,
+          "name": "sacramento-2027-la-en.epub",
+          "bytes": 26485151,
+          "variant": "la-en"
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-01-la-en.epub",
+          "bytes": 2516767,
+          "variant": "la-en",
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-02-la-en.epub",
+          "bytes": 2321847,
+          "variant": "la-en",
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-03-la-en.epub",
+          "bytes": 2478726,
+          "variant": "la-en",
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-04-la-en.epub",
+          "bytes": 2380322,
+          "variant": "la-en",
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-05-la-en.epub",
+          "bytes": 2537636,
+          "variant": "la-en",
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-06-la-en.epub",
+          "bytes": 2438399,
+          "variant": "la-en",
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-07-la-en.epub",
+          "bytes": 2516692,
+          "variant": "la-en",
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-08-la-en.epub",
+          "bytes": 2534342,
+          "variant": "la-en",
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-09-la-en.epub",
+          "bytes": 2455156,
+          "variant": "la-en",
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-10-la-en.epub",
+          "bytes": 2527364,
+          "variant": "la-en",
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-11-la-en.epub",
+          "bytes": 2449903,
+          "variant": "la-en",
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "sacramento-2027-12-la-en.epub",
+          "bytes": 2562419,
+          "variant": "la-en",
+          "month": 12
+        },
+        {
+          "type": "year",
           "year": 2028,
           "name": "sacramento-2028-la.epub",
           "bytes": 14855364,
@@ -1656,6 +1766,109 @@
           "bytes": 1545690,
           "variant": "la",
           "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "sacramento-2028-la-en.epub",
+          "bytes": 26542929,
+          "variant": "la-en"
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-01-la-en.epub",
+          "bytes": 2507860,
+          "variant": "la-en",
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-02-la-en.epub",
+          "bytes": 2339219,
+          "variant": "la-en",
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-03-la-en.epub",
+          "bytes": 2560369,
+          "variant": "la-en",
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-04-la-en.epub",
+          "bytes": 2363898,
+          "variant": "la-en",
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-05-la-en.epub",
+          "bytes": 2502131,
+          "variant": "la-en",
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-06-la-en.epub",
+          "bytes": 2464265,
+          "variant": "la-en",
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-07-la-en.epub",
+          "bytes": 2528108,
+          "variant": "la-en",
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-08-la-en.epub",
+          "bytes": 2548599,
+          "variant": "la-en",
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-09-la-en.epub",
+          "bytes": 2440458,
+          "variant": "la-en",
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-10-la-en.epub",
+          "bytes": 2530221,
+          "variant": "la-en",
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-11-la-en.epub",
+          "bytes": 2431444,
+          "variant": "la-en",
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "sacramento-2028-12-la-en.epub",
+          "bytes": 2560861,
+          "variant": "la-en",
+          "month": 12
         }
       ]
     },
@@ -1667,16 +1880,16 @@
       "place": "Arlington, Virginia",
       "built": {
         "2026": {
-          "la-en": "47128095d3fd614e3191d5eb2c48fffc856002961a6a2ab9bdd435dede864086",
-          "la": "47128095d3fd614e3191d5eb2c48fffc856002961a6a2ab9bdd435dede864086"
+          "la-en": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93",
+          "la": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93"
         },
         "2027": {
-          "la-en": "47128095d3fd614e3191d5eb2c48fffc856002961a6a2ab9bdd435dede864086",
-          "la": "47128095d3fd614e3191d5eb2c48fffc856002961a6a2ab9bdd435dede864086"
+          "la-en": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93",
+          "la": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93"
         },
         "2028": {
-          "la-en": "47128095d3fd614e3191d5eb2c48fffc856002961a6a2ab9bdd435dede864086",
-          "la": "47128095d3fd614e3191d5eb2c48fffc856002961a6a2ab9bdd435dede864086"
+          "la-en": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93",
+          "la": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93"
         }
       },
       "files": [
@@ -2269,16 +2482,16 @@
       "place": "Baltimore, Maryland",
       "built": {
         "2026": {
-          "la-en": "b38b0d7c2318e083020bbc1188384ed9303be5cf839c621db9a2062f406be652",
-          "la": "b38b0d7c2318e083020bbc1188384ed9303be5cf839c621db9a2062f406be652"
+          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
+          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
         },
         "2027": {
-          "la-en": "b38b0d7c2318e083020bbc1188384ed9303be5cf839c621db9a2062f406be652",
-          "la": "b38b0d7c2318e083020bbc1188384ed9303be5cf839c621db9a2062f406be652"
+          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
+          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
         },
         "2028": {
-          "la-en": "b38b0d7c2318e083020bbc1188384ed9303be5cf839c621db9a2062f406be652",
-          "la": "b38b0d7c2318e083020bbc1188384ed9303be5cf839c621db9a2062f406be652"
+          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
+          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
         }
       },
       "files": [
@@ -2871,16 +3084,16 @@
       "place": "Chesapeake, Virginia",
       "built": {
         "2026": {
-          "la-en": "275a8d4bcd3142103680c0a3a428020c568b8faf741ea43a59c96794c69a051d",
-          "la": "275a8d4bcd3142103680c0a3a428020c568b8faf741ea43a59c96794c69a051d"
+          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
+          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
         },
         "2027": {
-          "la-en": "275a8d4bcd3142103680c0a3a428020c568b8faf741ea43a59c96794c69a051d",
-          "la": "275a8d4bcd3142103680c0a3a428020c568b8faf741ea43a59c96794c69a051d"
+          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
+          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
         },
         "2028": {
-          "la-en": "275a8d4bcd3142103680c0a3a428020c568b8faf741ea43a59c96794c69a051d",
-          "la": "275a8d4bcd3142103680c0a3a428020c568b8faf741ea43a59c96794c69a051d"
+          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
+          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
         }
       },
       "files": [
@@ -3473,16 +3686,16 @@
       "place": "Nashua, New Hampshire",
       "built": {
         "2026": {
-          "la-en": "2bebf19192c3208497d7664a371e996c087c4a858baffca7e9d563e31598a2dd",
-          "la": "2bebf19192c3208497d7664a371e996c087c4a858baffca7e9d563e31598a2dd"
+          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
+          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
         },
         "2027": {
-          "la-en": "2bebf19192c3208497d7664a371e996c087c4a858baffca7e9d563e31598a2dd",
-          "la": "2bebf19192c3208497d7664a371e996c087c4a858baffca7e9d563e31598a2dd"
+          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
+          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
         },
         "2028": {
-          "la-en": "2bebf19192c3208497d7664a371e996c087c4a858baffca7e9d563e31598a2dd",
-          "la": "2bebf19192c3208497d7664a371e996c087c4a858baffca7e9d563e31598a2dd"
+          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
+          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
         }
       },
       "files": [
@@ -4075,16 +4288,16 @@
       "place": "Richmond, Virginia",
       "built": {
         "2026": {
-          "la-en": "7a909ab6f8a1c78755b569c5f9fd61b24df7a1821386f2494440752819eb65d2",
-          "la": "7a909ab6f8a1c78755b569c5f9fd61b24df7a1821386f2494440752819eb65d2"
+          "la-en": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9",
+          "la": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9"
         },
         "2027": {
-          "la-en": "7a909ab6f8a1c78755b569c5f9fd61b24df7a1821386f2494440752819eb65d2",
-          "la": "7a909ab6f8a1c78755b569c5f9fd61b24df7a1821386f2494440752819eb65d2"
+          "la-en": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9",
+          "la": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9"
         },
         "2028": {
-          "la-en": "7a909ab6f8a1c78755b569c5f9fd61b24df7a1821386f2494440752819eb65d2",
-          "la": "7a909ab6f8a1c78755b569c5f9fd61b24df7a1821386f2494440752819eb65d2"
+          "la-en": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9",
+          "la": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9"
         }
       },
       "files": [
@@ -4677,16 +4890,16 @@
       "place": "Scranton, Pennsylvania",
       "built": {
         "2026": {
-          "la-en": "07db18196289ed62a350e698d347009d4caa59183adadcdfb0a50cfb65d63ba7",
-          "la": "07db18196289ed62a350e698d347009d4caa59183adadcdfb0a50cfb65d63ba7"
+          "la-en": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7",
+          "la": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7"
         },
         "2027": {
-          "la-en": "07db18196289ed62a350e698d347009d4caa59183adadcdfb0a50cfb65d63ba7",
-          "la": "07db18196289ed62a350e698d347009d4caa59183adadcdfb0a50cfb65d63ba7"
+          "la-en": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7",
+          "la": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7"
         },
         "2028": {
-          "la-en": "07db18196289ed62a350e698d347009d4caa59183adadcdfb0a50cfb65d63ba7",
-          "la": "07db18196289ed62a350e698d347009d4caa59183adadcdfb0a50cfb65d63ba7"
+          "la-en": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7",
+          "la": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7"
         }
       },
       "files": [
@@ -5279,16 +5492,16 @@
       "place": "Maple Hill, Kansas",
       "built": {
         "2026": {
-          "la-en": "dcac4c9782b13ad0950c94a984d95cca553c539afdbb42f3d8d7efe7b002aef4",
-          "la": "dcac4c9782b13ad0950c94a984d95cca553c539afdbb42f3d8d7efe7b002aef4"
+          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
+          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
         },
         "2027": {
-          "la-en": "dcac4c9782b13ad0950c94a984d95cca553c539afdbb42f3d8d7efe7b002aef4",
-          "la": "dcac4c9782b13ad0950c94a984d95cca553c539afdbb42f3d8d7efe7b002aef4"
+          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
+          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
         },
         "2028": {
-          "la-en": "dcac4c9782b13ad0950c94a984d95cca553c539afdbb42f3d8d7efe7b002aef4",
-          "la": "dcac4c9782b13ad0950c94a984d95cca553c539afdbb42f3d8d7efe7b002aef4"
+          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
+          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
         }
       },
       "files": [
@@ -5881,16 +6094,16 @@
       "place": "Denton, Nebraska",
       "built": {
         "2026": {
-          "la-en": "f5b15bb1e224d7869d2eb2273ba63b8096f612bb0b3f7ac54b23c3590dec4c83",
-          "la": "f5b15bb1e224d7869d2eb2273ba63b8096f612bb0b3f7ac54b23c3590dec4c83"
+          "la-en": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3",
+          "la": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3"
         },
         "2027": {
-          "la-en": "f5b15bb1e224d7869d2eb2273ba63b8096f612bb0b3f7ac54b23c3590dec4c83",
-          "la": "f5b15bb1e224d7869d2eb2273ba63b8096f612bb0b3f7ac54b23c3590dec4c83"
+          "la-en": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3",
+          "la": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3"
         },
         "2028": {
-          "la-en": "f5b15bb1e224d7869d2eb2273ba63b8096f612bb0b3f7ac54b23c3590dec4c83",
-          "la": "f5b15bb1e224d7869d2eb2273ba63b8096f612bb0b3f7ac54b23c3590dec4c83"
+          "la-en": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3",
+          "la": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3"
         }
       },
       "files": [
@@ -6483,16 +6696,16 @@
       "place": "Quincy, Illinois",
       "built": {
         "2026": {
-          "la-en": "e9d2502a030e61d0025378d15b5e3772e80cfa854652e1c6c3330e33bb13c625",
-          "la": "e9d2502a030e61d0025378d15b5e3772e80cfa854652e1c6c3330e33bb13c625"
+          "la-en": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f",
+          "la": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f"
         },
         "2027": {
-          "la-en": "e9d2502a030e61d0025378d15b5e3772e80cfa854652e1c6c3330e33bb13c625",
-          "la": "e9d2502a030e61d0025378d15b5e3772e80cfa854652e1c6c3330e33bb13c625"
+          "la-en": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f",
+          "la": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f"
         },
         "2028": {
-          "la-en": "e9d2502a030e61d0025378d15b5e3772e80cfa854652e1c6c3330e33bb13c625",
-          "la": "e9d2502a030e61d0025378d15b5e3772e80cfa854652e1c6c3330e33bb13c625"
+          "la-en": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f",
+          "la": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f"
         }
       },
       "files": [
@@ -7085,16 +7298,122 @@
       "place": "Niagara, Ontario",
       "built": {
         "2026": {
-          "la-en": "109736170463e2586113656c529bae42fcec325e15fb649ad4ffa1e42e56db8e"
+          "la-en": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958",
+          "la": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958"
         },
         "2027": {
-          "la-en": "109736170463e2586113656c529bae42fcec325e15fb649ad4ffa1e42e56db8e"
+          "la-en": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958",
+          "la": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958"
         },
         "2028": {
-          "la-en": "109736170463e2586113656c529bae42fcec325e15fb649ad4ffa1e42e56db8e"
+          "la-en": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958",
+          "la": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958"
         }
       },
       "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "niagara-2026-la.epub",
+          "bytes": 14808469,
+          "variant": "la"
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-01-la.epub",
+          "bytes": 1528118,
+          "variant": "la",
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-02-la.epub",
+          "bytes": 1407025,
+          "variant": "la",
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-03-la.epub",
+          "bytes": 1540241,
+          "variant": "la",
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-04-la.epub",
+          "bytes": 1432390,
+          "variant": "la",
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-05-la.epub",
+          "bytes": 1525236,
+          "variant": "la",
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-06-la.epub",
+          "bytes": 1489705,
+          "variant": "la",
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-07-la.epub",
+          "bytes": 1528943,
+          "variant": "la",
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-08-la.epub",
+          "bytes": 1534541,
+          "variant": "la",
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-09-la.epub",
+          "bytes": 1494975,
+          "variant": "la",
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-10-la.epub",
+          "bytes": 1527512,
+          "variant": "la",
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-11-la.epub",
+          "bytes": 1493440,
+          "variant": "la",
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-12-la.epub",
+          "bytes": 1540701,
+          "variant": "la",
+          "month": 12
+        },
         {
           "type": "year",
           "year": 2026,
@@ -7188,6 +7507,109 @@
         {
           "type": "year",
           "year": 2027,
+          "name": "niagara-2027-la.epub",
+          "bytes": 14811574,
+          "variant": "la"
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-01-la.epub",
+          "bytes": 1526447,
+          "variant": "la",
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-02-la.epub",
+          "bytes": 1415979,
+          "variant": "la",
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-03-la.epub",
+          "bytes": 1500073,
+          "variant": "la",
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-04-la.epub",
+          "bytes": 1454272,
+          "variant": "la",
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-05-la.epub",
+          "bytes": 1535982,
+          "variant": "la",
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-06-la.epub",
+          "bytes": 1485543,
+          "variant": "la",
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-07-la.epub",
+          "bytes": 1527926,
+          "variant": "la",
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-08-la.epub",
+          "bytes": 1532969,
+          "variant": "la",
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-09-la.epub",
+          "bytes": 1492972,
+          "variant": "la",
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-10-la.epub",
+          "bytes": 1532892,
+          "variant": "la",
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-11-la.epub",
+          "bytes": 1494572,
+          "variant": "la",
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-12-la.epub",
+          "bytes": 1546335,
+          "variant": "la",
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
           "name": "niagara-2027.epub",
           "bytes": 26463671
         },
@@ -7273,6 +7695,109 @@
           "year": 2027,
           "name": "niagara-2027-12.epub",
           "bytes": 2560990,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "niagara-2028-la.epub",
+          "bytes": 14840594,
+          "variant": "la"
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-01-la.epub",
+          "bytes": 1522491,
+          "variant": "la",
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-02-la.epub",
+          "bytes": 1430899,
+          "variant": "la",
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-03-la.epub",
+          "bytes": 1543780,
+          "variant": "la",
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-04-la.epub",
+          "bytes": 1443336,
+          "variant": "la",
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-05-la.epub",
+          "bytes": 1521351,
+          "variant": "la",
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-06-la.epub",
+          "bytes": 1498292,
+          "variant": "la",
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-07-la.epub",
+          "bytes": 1531021,
+          "variant": "la",
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-08-la.epub",
+          "bytes": 1539822,
+          "variant": "la",
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-09-la.epub",
+          "bytes": 1485447,
+          "variant": "la",
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-10-la.epub",
+          "bytes": 1534880,
+          "variant": "la",
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-11-la.epub",
+          "bytes": 1486184,
+          "variant": "la",
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-12-la.epub",
+          "bytes": 1537564,
+          "variant": "la",
           "month": 12
         },
         {
@@ -7375,16 +7900,122 @@
       "place": "Guadalajara, Mexico",
       "built": {
         "2026": {
-          "la-en": "f7ee20cbfe0aa909ed3fc991dc43bdb73ca6d986908041e73051ec3e5ca21f9d"
+          "la-en": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042",
+          "la": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042"
         },
         "2027": {
-          "la-en": "f7ee20cbfe0aa909ed3fc991dc43bdb73ca6d986908041e73051ec3e5ca21f9d"
+          "la-en": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042",
+          "la": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042"
         },
         "2028": {
-          "la-en": "f7ee20cbfe0aa909ed3fc991dc43bdb73ca6d986908041e73051ec3e5ca21f9d"
+          "la-en": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042",
+          "la": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042"
         }
       },
       "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "guadalajara-2026-la.epub",
+          "bytes": 14824970,
+          "variant": "la"
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-01-la.epub",
+          "bytes": 1528092,
+          "variant": "la",
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-02-la.epub",
+          "bytes": 1408053,
+          "variant": "la",
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-03-la.epub",
+          "bytes": 1541197,
+          "variant": "la",
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-04-la.epub",
+          "bytes": 1432377,
+          "variant": "la",
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-05-la.epub",
+          "bytes": 1528018,
+          "variant": "la",
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-06-la.epub",
+          "bytes": 1485404,
+          "variant": "la",
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-07-la.epub",
+          "bytes": 1529166,
+          "variant": "la",
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-08-la.epub",
+          "bytes": 1538115,
+          "variant": "la",
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-09-la.epub",
+          "bytes": 1494962,
+          "variant": "la",
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-10-la.epub",
+          "bytes": 1540973,
+          "variant": "la",
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-11-la.epub",
+          "bytes": 1486918,
+          "variant": "la",
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-12-la.epub",
+          "bytes": 1545920,
+          "variant": "la",
+          "month": 12
+        },
         {
           "type": "year",
           "year": 2026,
@@ -7478,6 +8109,109 @@
         {
           "type": "year",
           "year": 2027,
+          "name": "guadalajara-2027-la.epub",
+          "bytes": 14824268,
+          "variant": "la"
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-01-la.epub",
+          "bytes": 1526434,
+          "variant": "la",
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-02-la.epub",
+          "bytes": 1418326,
+          "variant": "la",
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-03-la.epub",
+          "bytes": 1500545,
+          "variant": "la",
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-04-la.epub",
+          "bytes": 1454259,
+          "variant": "la",
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-05-la.epub",
+          "bytes": 1535969,
+          "variant": "la",
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-06-la.epub",
+          "bytes": 1482526,
+          "variant": "la",
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-07-la.epub",
+          "bytes": 1528443,
+          "variant": "la",
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-08-la.epub",
+          "bytes": 1536222,
+          "variant": "la",
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-09-la.epub",
+          "bytes": 1492959,
+          "variant": "la",
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-10-la.epub",
+          "bytes": 1545141,
+          "variant": "la",
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-11-la.epub",
+          "bytes": 1490039,
+          "variant": "la",
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-12-la.epub",
+          "bytes": 1547657,
+          "variant": "la",
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
           "name": "guadalajara-2027.epub",
           "bytes": 26486468
         },
@@ -7563,6 +8297,109 @@
           "year": 2027,
           "name": "guadalajara-2027-12.epub",
           "bytes": 2563241,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "guadalajara-2028-la.epub",
+          "bytes": 14860245,
+          "variant": "la"
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-01-la.epub",
+          "bytes": 1522448,
+          "variant": "la",
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-02-la.epub",
+          "bytes": 1432135,
+          "variant": "la",
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-03-la.epub",
+          "bytes": 1544740,
+          "variant": "la",
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-04-la.epub",
+          "bytes": 1443322,
+          "variant": "la",
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-05-la.epub",
+          "bytes": 1523652,
+          "variant": "la",
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-06-la.epub",
+          "bytes": 1494982,
+          "variant": "la",
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-07-la.epub",
+          "bytes": 1532338,
+          "variant": "la",
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-08-la.epub",
+          "bytes": 1542116,
+          "variant": "la",
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-09-la.epub",
+          "bytes": 1485432,
+          "variant": "la",
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-10-la.epub",
+          "bytes": 1544995,
+          "variant": "la",
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-11-la.epub",
+          "bytes": 1482140,
+          "variant": "la",
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-12-la.epub",
+          "bytes": 1546275,
+          "variant": "la",
           "month": 12
         },
         {
