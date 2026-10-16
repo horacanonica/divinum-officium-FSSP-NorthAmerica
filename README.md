@@ -51,6 +51,18 @@ The workflow can also be triggered manually from the **Actions** tab (useful aft
 
 The companion app [divinum-officium-client](https://github.com/horacanonica/divinum-officium-client) downloads the bundle and generates printable PDFs or EPUBs on the user's machine — no server connection required after the initial download.
 
+### Offline EPUB downloads
+
+Latin–English monthly and full-year breviaries for every FSSP calendar in
+this fork are listed at
+[horacanonica.github.io/divinum-officium-FSSP-NorthAmerica](https://horacanonica.github.io/divinum-officium-FSSP-NorthAmerica/).
+The EPUB files are GitHub Release assets (tag `epub-library`), not files in
+the git tree. `.github/workflows/epub-downloads.yml` rebuilds a calendar when
+its own data changes, rebuilds every calendar when shared Office data
+changes, and runs a nightly catch-up that also extends the two-year window.
+Adding a calendar is a `data.txt` row in the FSSP chain; an optional place
+and region go in `scripts/epub_library/regions.tsv`.
+
 ---
 
 ## Contributing to the project

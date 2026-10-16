@@ -137,9 +137,12 @@ do
                 fi
              done
              if [[ $FOUND_RUBRICS -eq 0 ]]; then
-               # Accept any custom parish calendar code not in the static list
+               # Accept any custom parish calendar not in the static list.
+               # The code is the data.txt name after "Rubrics 1960 - ", so
+               # "Maple Hill" and "FSSP USA" resolve without an array edit.
+               # Strip spaces from the filename suffix ("Maple Hill" -> _MapleHill).
                RUBRICS="Rubrics 1960 - ${RUBRICS_CODE}"
-               RUBRICS_NAME="_${RUBRICS_CODE}"
+               RUBRICS_NAME="_$(printf '%s' "$RUBRICS_CODE" | tr -d '[:space:]')"
              fi
              ;;
          c)

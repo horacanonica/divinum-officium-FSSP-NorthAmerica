@@ -1,0 +1,248 @@
+{
+  "repo": "horacanonica/divinum-officium-FSSP-NorthAmerica",
+  "release": "epub-library",
+  "updated": "2026-10-16T18:38:44Z",
+  "languages": "Latin and English",
+  "rubrics": "1960",
+  "window": {
+    "start": "2026-10",
+    "end": "2028-10",
+    "years": [
+      2026,
+      2027,
+      2028
+    ]
+  },
+  "region_order": [
+    "General",
+    "West",
+    "South Central",
+    "Southeast",
+    "Northeast & Mid-Atlantic",
+    "Midwest",
+    "Canada",
+    "Mexico",
+    "Other"
+  ],
+  "calendars": [
+    {
+      "version": "Rubrics 1960 - FSSP",
+      "slug": "fssp",
+      "name": "FSSP",
+      "region": "General",
+      "place": "General calendar of the Fraternity",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - FSSP USA",
+      "slug": "fssp-usa",
+      "name": "FSSP USA",
+      "region": "General",
+      "place": "FSSP calendar for the United States",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - Sacramento",
+      "slug": "sacramento",
+      "name": "Sacramento",
+      "region": "West",
+      "place": "Sacramento, California",
+      "built": {
+        "2026": "48a59e7ab56ed64745aeed426ddd3ab9593ee701547372a09196422494c3ffa5"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "sacramento-2026.epub",
+          "bytes": 26483314
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-01.epub",
+          "bytes": 2519583,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-02.epub",
+          "bytes": 2302250,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-03.epub",
+          "bytes": 2566329,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-04.epub",
+          "bytes": 2336556,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-05.epub",
+          "bytes": 2519058,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-06.epub",
+          "bytes": 2447299,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-07.epub",
+          "bytes": 2517454,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-08.epub",
+          "bytes": 2534862,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-09.epub",
+          "bytes": 2458739,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-10.epub",
+          "bytes": 2511594,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-11.epub",
+          "bytes": 2443703,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "sacramento-2026-12.epub",
+          "bytes": 2560291,
+          "month": 12
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Arlington",
+      "slug": "arlington",
+      "name": "Arlington",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Arlington, Virginia",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - Baltimore",
+      "slug": "baltimore",
+      "name": "Baltimore",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Baltimore, Maryland",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - Chesapeake",
+      "slug": "chesapeake",
+      "name": "Chesapeake",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Chesapeake, Virginia",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - Nashua",
+      "slug": "nashua",
+      "name": "Nashua",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Nashua, New Hampshire",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - Richmond",
+      "slug": "richmond",
+      "name": "Richmond",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Richmond, Virginia",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - Scranton",
+      "slug": "scranton",
+      "name": "Scranton",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Scranton, Pennsylvania",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - Maple Hill",
+      "slug": "maple-hill",
+      "name": "Maple Hill",
+      "region": "Midwest",
+      "place": "Maple Hill, Kansas",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - OLG Seminary",
+      "slug": "olg-seminary",
+      "name": "OLG Seminary",
+      "region": "Midwest",
+      "place": "Denton, Nebraska",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - Quincy",
+      "slug": "quincy",
+      "name": "Quincy",
+      "region": "Midwest",
+      "place": "Quincy, Illinois",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - Niagara",
+      "slug": "niagara",
+      "name": "Niagara",
+      "region": "Canada",
+      "place": "Niagara, Ontario",
+      "built": {},
+      "files": []
+    },
+    {
+      "version": "Rubrics 1960 - Guadalajara",
+      "slug": "guadalajara",
+      "name": "Guadalajara",
+      "region": "Mexico",
+      "place": "Guadalajara, Mexico",
+      "built": {},
+      "files": []
+    }
+  ]
+}
