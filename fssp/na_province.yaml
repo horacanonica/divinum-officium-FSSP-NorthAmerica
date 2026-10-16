@@ -1,0 +1,696 @@
+# FSSP North American Province — local calendars
+# Source: FSSP 2026 Ordo (NA Province), Supplement pp. 47–54, Directory pp. 55–59.
+# Dates are MM-DD. Ranks per 1960 rubrics. "as_on_feast" = already I class universally; no change.
+# propers: base     -> exists in 1962 base with own texts; raise rank only (build 9 lessons if needed)
+#          commons  -> not in 1962 calendar; build from commune; register in LOCAL_PROPERS_REGISTRY
+#          pending  -> do not implement until confirmed/supplied
+# bishop_commemorations: Mass-only "pro Episcopo" collect; no Office effect.
+#
+# Pasted verbatim from the task; the only edits are two YAML syntax fixes
+# (brookville-ss-philomena-cecilia and ottawa-st-clement `titulars` were a block
+# sequence inside a flow mapping, which does not parse — converted to flow lists).
+# Anything carrying CONFIRM / pending is an open question: it is NOT generated and
+# its location is hidden until answered. See docs/ai/OPEN_QUESTIONS.md.
+
+meta:
+  ordo_year: 2026
+  fssp_layer_items:
+    - {date: "02-22", title: "Chair of St. Peter", rank: I, note: "FSSP; 2026 transferred to 02-23"}
+    - {date: "03-07", title: "St. Thomas Aquinas, Confessor & Doctor", rank: II}
+    - {date: "08-01", title: "St. Peter in Chains", rank: III, note: "comm. St. Paul under one conclusion; comm. Holy Machabees"}
+    - {date: "06-29", title: "Ss. Peter & Paul (FSSP titular)", rank: I, note: "External Solemnity is Mass-only"}
+    - {date: "11-04", title: "St. Charles Borromeo, Principal Patron", rank: I, applies_to_kind: seminary}
+  usa_only_items_2026_ordo:   # must never appear in Canadian calendars
+    - {date: "01-04", title: "St. Elizabeth Ann Seton (1964)"}
+    - {date: "01-05", title: "St. John Neumann (1963)"}
+    - {date: "01-22", title: "Votive Mass for Peace"}
+    - {date: "09-09", title: "St. Peter Claver"}
+    - {date: "09-26", title: "North American Martyrs (USA form, III class, Jogues first)"}
+    - {date: "11-13", title: "St. Frances Xavier Cabrini"}
+    - {date: "movable", title: "External Solemnity of Corpus Christi (Sunday after)"}
+  shared_can_usa_items:
+    - {date: "12-12", title: "Our Lady of Guadalupe", rank: III, note: "Ordo tags CAN & USA; CDW decree 25 Mar 1999"}
+  canada_known_pending:
+    - {date: "09-26", title: "Canadian Martyrs (Brébeuf first)", rank: II, propers: pending}
+
+dioceses:
+  # ---------------- USA ----------------
+  - id: phoenix
+    name: Diocese of Phoenix
+    country: US
+    feasts:
+      - {date: "12-11", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "12-12", title: "Our Lady of Guadalupe, Principal Patroness", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "06-08", text: "Episcopal consecration, Bp. John Patrick Dolan"}
+      - {date: "08-02", text: "Appointment, Bp. John Patrick Dolan"}
+
+  - id: little-rock
+    name: Diocese of Little Rock
+    country: US
+    feasts:
+      - {date: "02-03", title: "Dedication of Consecrated Churches", rank: I, kind: dedication_consecrated_churches, condition: "only in consecrated churches — CONFIRM whether Cabot/Springdale churches are consecrated; default: do not implement"}
+      - {date: "11-30", title: "St. Andrew, Apostle, Principal Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "12-01", title: "Dedication of the Cathedral Church (transferred from 11-30)", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "03-18", text: "Appointment, Bp. Anthony B. Taylor"}
+      - {date: "06-05", text: "Episcopal consecration, Bp. Anthony B. Taylor"}
+
+  - id: fresno
+    name: Diocese of Fresno
+    country: US
+    feasts:
+      - {date: "06-07", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "10-03", title: "St. Thérèse of Lisieux, Principal Patroness", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "05-02", text: "Installation, Bp. Joseph V. Brennan"}
+      - {date: "09-08", text: "Episcopal consecration, Bp. Joseph V. Brennan"}
+
+  - id: los-angeles
+    name: Archdiocese of Los Angeles
+    country: US
+    feasts:
+      - {date: "09-02", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "09-04", title: "Our Lady of the Angels, Principal Patroness", rank: I, kind: patron_principal, propers: commons, commune: "Common of Feasts of the BVM"}
+    bishop_commemorations:
+      - {date: "03-01", text: "Succession to the See, Abp. José Gomez"}
+      - {date: "03-26", text: "Episcopal consecration, Abp. José Gomez"}
+
+  - id: sacramento
+    name: Diocese of Sacramento
+    country: US
+    note: "Layer already exists in repo — reconcile, do not duplicate."
+    feasts:
+      - {date: "03-17", title: "St. Patrick", rank: I, kind: other, propers: base}
+      - {date: "06-30", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral, note: "When not on Sunday, transferred to Sunday before or after at the Bishop's direction — CONFIRM which; default keep 06-30"}
+      - {date: "12-12", title: "Our Lady of Guadalupe, Principal Patroness", rank: I, kind: patron_principal, propers: base, note: "existing 3-nocturn override"}
+    bishop_commemorations:
+      - {date: "05-31", text: "Episcopal consecration, Bp. Jaime Soto"}
+      - {date: "11-29", text: "Appointment, Bp. Jaime Soto"}
+
+  - id: san-diego
+    name: Diocese of San Diego
+    country: US
+    feasts:
+      - {date: "01-26", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "11-13", title: "St. Didacus of Alcalá, Principal Patron", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "05-22", text: "Appointment, Bp. Michael Pham"}
+      - {date: "09-28", text: "Episcopal consecration, Bp. Michael Pham"}
+
+  - id: colorado-springs
+    name: Diocese of Colorado Springs
+    country: US
+    feasts:
+      - {date: "12-12", title: "Our Lady of Guadalupe, Principal Patroness", rank: I, kind: patron_principal, propers: base}
+      - {date: "12-19", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "04-30", text: "Appointment, Bp. James R. Golka"}
+      - {date: "06-29", text: "Episcopal consecration, Bp. James R. Golka"}
+
+  - id: denver
+    name: Archdiocese of Denver
+    country: US
+    feasts:
+      - {date: "10-27", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "12-08", title: "Immaculate Conception, Principal Patroness", rank: as_on_feast, kind: patron_principal}
+    bishop_commemorations:
+      - {date: "05-29", text: "Appointment, Abp. Samuel J. Aquila"}
+      - {date: "08-24", text: "Episcopal consecration, Abp. Samuel J. Aquila"}
+
+  - id: orlando
+    name: Diocese of Orlando
+    country: US
+    feasts:
+      - {date: "03-09", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "05-11", title: "St. James (the Less), Principal Patron — i.e. Ss. Philip & James", rank: I, kind: patron_principal, propers: base, note: "1962 feast of 05-11 is Ss. Philip & James; elevate that feast"}
+    bishop_commemorations:
+      - {date: "08-24", text: "Episcopal consecration, Bp. John Noonan"}
+      - {date: "10-23", text: "Appointment, Bp. John Noonan"}
+
+  - id: venice
+    name: Diocese of Venice (FL)
+    country: US
+    feasts:
+      - {date: "12-11", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "12-12", title: "Our Lady of Guadalupe, Principal Patroness", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "01-19", text: "Appointment, Bp. Frank J. Dewane"}
+      - {date: "07-25", text: "Episcopal consecration, Bp. Frank J. Dewane"}
+
+  - id: miami
+    name: Archdiocese of Miami
+    country: US
+    note: "NOT LISTED in the Ordo supplement although an apostolate is listed in the directory. Feasts unknown — CONFIRM (principal patron + cathedral dedication date). Create empty layer with TODO."
+    feasts: []
+    bishop_commemorations: []
+
+  - id: atlanta
+    name: Archdiocese of Atlanta
+    country: US
+    feasts:
+      - {date: "01-18", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "08-22", title: "Immaculate Heart of Mary, Principal Patroness", rank: I, kind: patron_principal, propers: base}
+      - {date: "09-03", title: "St. Pius X, Secondary Patron", rank: II, kind: patron_secondary, propers: base}
+    bishop_commemorations:
+      - {date: "03-05", text: "Appointment, Abp. Gregory J. Hartmayer, OFM Conv."}
+      - {date: "10-18", text: "Episcopal consecration, Abp. Gregory J. Hartmayer, OFM Conv."}
+
+  - id: boise
+    name: Diocese of Boise
+    country: US
+    feasts:
+      - {date: "10-16", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "12-27", title: "St. John the Evangelist, Principal Patron", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "09-14", text: "Episcopal consecration, Bp. Peter F. Christensen"}
+      - {date: "11-04", text: "Appointment, Bp. Peter F. Christensen"}
+
+  - id: joliet
+    name: Diocese of Joliet
+    country: US
+    feasts:
+      - {date: "05-26", title: "Dedication of the Cathedral of St. Raymond Nonnatus", rank: I, kind: dedication_cathedral}
+      - {date: "12-03", title: "St. Francis Xavier, Patron", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "07-17", text: "Appointment, Bp. Ronald Hicks"}
+    note: "09-29 Installation anniversary is listed without asterisk — no commemoration."
+
+  - id: springfield-il
+    name: Diocese of Springfield in Illinois
+    country: US
+    feasts:
+      - {date: "12-02", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "12-08", title: "Immaculate Conception, Principal Patroness", rank: as_on_feast, kind: patron_principal}
+    bishop_commemorations:
+      - {date: "03-19", text: "Episcopal consecration, Bp. Thomas J. Paprocki"}
+      - {date: "04-20", text: "Appointment, Bp. Thomas J. Paprocki"}
+
+  - id: fort-wayne-south-bend
+    name: Diocese of Fort Wayne–South Bend
+    country: US
+    feasts:
+      - {date: "12-08", title: "Immaculate Conception, Principal Patroness", rank: as_on_feast, kind: patron_principal}
+      - {date: "12-09", title: "Dedication of the Cathedral Church (permanently transferred from 12-08)", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "12-09", text: "Episcopal consecration, Bp. Kevin C. Rhoades"}
+    note: "11-14 appointment anniversary listed without asterisk — no commemoration."
+
+  - id: indianapolis
+    name: Archdiocese of Indianapolis
+    country: US
+    feasts:
+      - {date: "10-03", title: "St. Theodora Guérin, Virgin, Principal Patroness", rank: I, kind: patron_principal, propers: commons, commune: "Common of a Virgin not a Martyr", note: "St. Thérèse (10-03 in 1962) commemorated"}
+      - {date: "12-03", title: "St. Francis Xavier, Principal Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "12-21", title: "Dedication of SS. Peter and Paul Cathedral", rank: I, kind: dedication_cathedral}
+      - {date: "12-22", title: "St. Thomas the Apostle (transferred from 12-21)", rank: II, kind: other, propers: base, note: "comm. of the Advent feria"}
+    bishop_commemorations:
+      - {date: "06-13", text: "Appointment, Abp. Charles C. Thompson"}
+      - {date: "06-29", text: "Episcopal consecration, Abp. Charles C. Thompson"}
+
+  - id: kansas-city-ks
+    name: Archdiocese of Kansas City in Kansas
+    country: US
+    feasts:
+      - {date: "06-02", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "11-17", title: "St. Philippine Duchesne, Virgin", rank: III, kind: other, propers: commons, commune: "Common of a Virgin not a Martyr", note: "St. Gregory Thaumaturgus (11-17 in 1962) commemorated"}
+    bishop_commemorations:
+      - {date: "02-06", text: "Episcopal consecration, Abp. Shawn McKnight"}
+      - {date: "04-08", text: "Appointment, Abp. Shawn McKnight"}
+
+  - id: lexington
+    name: Diocese of Lexington
+    country: US
+    feasts:
+      - {date: "03-02", title: "Dedication of the Cathedral of Christ the King", rank: I, kind: dedication_cathedral}
+      - {date: "08-22", title: "Queenship of Mary", rank: I, kind: other, propers: base, note: "ANOMALY: 1962 Queenship is 05-31; 08-22 is Immaculate Heart. Ordo lists 08-22. Default: celebrate Queenship texts on 08-22 with comm. of Immaculate Heart; CONFIRM"}
+    bishop_commemorations:
+      - {date: "03-12", text: "Appointment, Bp. John Stowe, OFM Conv."}
+      - {date: "05-05", text: "Episcopal consecration, Bp. John Stowe, OFM Conv."}
+
+  - id: baltimore
+    name: Archdiocese of Baltimore
+    country: US
+    feasts:
+      - {date: "11-15", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "12-08", title: "Immaculate Conception, Principal Patroness", rank: I, kind: patron_principal}
+    bishop_commemorations:
+      - {date: "03-20", text: "Appointment, Abp. William E. Lori"}
+      - {date: "04-20", text: "Episcopal consecration, Abp. William E. Lori"}
+
+  - id: st-paul-minneapolis
+    name: Archdiocese of Saint Paul & Minneapolis
+    country: US
+    feasts:
+      - {date: "01-25", title: "Conversion of St. Paul, Principal Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "10-14", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "03-24", text: "Appointment, Abp. Bernard A. Hebda"}
+      - {date: "12-01", text: "Episcopal consecration, Abp. Bernard A. Hebda"}
+
+  - id: lincoln
+    name: Diocese of Lincoln
+    country: US
+    feasts:
+      - {date: "08-18", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "12-08", title: "Immaculate Conception, Principal Patroness", rank: as_on_feast, kind: patron_principal}
+    bishop_commemorations:
+      - {date: "05-30", text: "Episcopal consecration, Bp. James D. Conley"}
+      - {date: "09-14", text: "Appointment, Bp. James D. Conley"}
+
+  - id: omaha
+    name: Archdiocese of Omaha
+    country: US
+    feasts:
+      - {date: "04-09", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "11-22", title: "St. Cecilia, Virgin & Martyr, Principal Patroness", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "03-31", text: "Appointment, Abp. Michael McGovern"}
+      - {date: "07-22", text: "Episcopal consecration, Abp. Michael McGovern"}
+
+  - id: manchester
+    name: Diocese of Manchester
+    country: US
+    feasts:
+      - {date: "03-17", title: "St. Patrick, Secondary Patron", rank: II, kind: patron_secondary, propers: base}
+      - {date: "03-19", title: "St. Joseph, Principal Patron", rank: as_on_feast, kind: patron_principal}
+      - {date: "04-18", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "06-01", text: "Episcopal consecration, Bp. Peter Anthony Libasci"}
+      - {date: "09-19", text: "Appointment, Bp. Peter Anthony Libasci"}
+
+  - id: paterson
+    name: Diocese of Paterson
+    country: US
+    feasts:
+      - {date: "06-24", title: "St. John the Baptist, Principal Patron", rank: as_on_feast, kind: patron_principal}
+      - {date: "06-30", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "04-15", text: "Appointment, Bp. Kevin J. Sweeney"}
+      - {date: "07-01", text: "Episcopal consecration, Bp. Kevin J. Sweeney"}
+
+  - id: cincinnati
+    name: Archdiocese of Cincinnati
+    country: US
+    feasts:
+      - {date: "01-29", title: "St. Francis de Sales, Principal Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "05-13", title: "St. Robert Bellarmine, Secondary Patron", rank: II, kind: patron_secondary, propers: base}
+      - {date: "11-03", title: "Dedication of the Cathedral of St. Peter in Chains", rank: I, kind: dedication_cathedral}
+      - {date: "11-15", title: "St. Albert the Great, Secondary Patron", rank: II, kind: patron_secondary, propers: base}
+    bishop_commemorations:
+      - {date: "02-12", text: "Appointment, Abp. Robert G. Casey"}
+      - {date: "09-17", text: "Episcopal consecration, Abp. Robert G. Casey"}
+
+  - id: youngstown
+    name: Diocese of Youngstown
+    country: US
+    feasts:
+      - {date: "04-12", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "06-09", title: "St. Columba, Abbot, Principal Patron", rank: I, kind: patron_principal, propers: commons, commune: "Common of a Confessor not a Bishop (Abbot)", note: "1962 06-09 Ss. Primus & Felician commemorated; check pro aliquibus locis for a Columba proper"}
+    bishop_commemorations:
+      - {date: "01-12", text: "Episcopal consecration, Bp. David J. Bonnar"}
+      - {date: "11-17", text: "Appointment, Bp. David J. Bonnar"}
+
+  - id: oklahoma-city
+    name: Archdiocese of Oklahoma City
+    country: US
+    feasts:
+      - {date: "03-19", title: "St. Joseph, Principal Patron", rank: as_on_feast, kind: patron_principal}
+      - {date: "10-15", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "12-12", title: "Our Lady of Guadalupe", rank: II, kind: other, propers: base}
+    bishop_commemorations:
+      - {date: "12-16", text: "Appointment, Abp. Paul S. Coakley"}
+      - {date: "12-28", text: "Episcopal consecration, Abp. Paul S. Coakley"}
+
+  - id: tulsa
+    name: Diocese of Tulsa
+    country: US
+    feasts:
+      - {date: "03-19", title: "St. Joseph, Principal Patron", rank: I, kind: patron_principal}
+      - {date: "05-12", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "05-13", text: "Episcopal consecration, Bp. David A. Konderla"}
+      - {date: "06-29", text: "Appointment, Bp. David A. Konderla"}
+
+  - id: allentown
+    name: Diocese of Allentown
+    country: US
+    feasts:
+      - {date: "04-29", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "movable:pentecost+1", title: "Mary, Mother of the Church, Principal Patroness", rank: I, kind: patron_principal, propers: commons, commune: "Common of Feasts of the BVM", note: "Monday after Pentecost is a privileged I-class day in 1960 (Pentecost octave) and excludes all feasts. Must transfer — CONFIRM date with diocese; default: first free day after the octave (Monday after Trinity Sunday may also be impeded)"}
+    bishop_commemorations:
+      - {date: "06-27", text: "Appointment, Bp. Alfred A. Schlert"}
+      - {date: "08-31", text: "Episcopal consecration, Bp. Alfred A. Schlert"}
+
+  - id: harrisburg
+    name: Diocese of Harrisburg
+    country: US
+    feasts:
+      - {date: "03-17", title: "St. Patrick, Principal Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "05-14", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "04-25", text: "Appointment, Bp. Timothy Christian Senior"}
+      - {date: "07-31", text: "Episcopal consecration, Bp. Timothy Christian Senior"}
+
+  - id: philadelphia
+    name: Archdiocese of Philadelphia
+    country: US
+    feasts:
+      - {date: "06-29", title: "Ss. Peter and Paul, Principal Patrons", rank: I, kind: patron_principal}
+      - {date: "11-20", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "01-23", text: "Appointment, Abp. Nelson J. Pérez"}
+      - {date: "07-25", text: "Episcopal consecration, Abp. Nelson J. Pérez"}
+
+  - id: scranton
+    name: Diocese of Scranton
+    country: US
+    feasts:
+      - {date: "09-03", title: "St. Pius X, Principal Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "09-28", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "02-23", text: "Appointment, Bp. Joseph C. Bambera"}
+      - {date: "04-26", text: "Episcopal consecration, Bp. Joseph C. Bambera"}
+
+  - id: providence
+    name: Diocese of Providence
+    country: US
+    feasts:
+      - {date: "06-29", title: "Ss. Peter and Paul, Principal Patrons", rank: I, kind: patron_principal}
+      - {date: "06-30", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral, note: "06-30 is Commemoration of St. Paul (III) in 1962 — commemorated"}
+    bishop_commemorations:
+      - {date: "04-08", text: "Appointment, Bp. Bruce A. Lewandowski, C.Ss.R."}
+      - {date: "08-18", text: "Episcopal consecration, Bp. Bruce A. Lewandowski, C.Ss.R."}
+
+  - id: rapid-city
+    name: Diocese of Rapid City
+    country: US
+    feasts:
+      - {date: "05-07", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "06-27", title: "Our Lady of Perpetual Help, Principal Patroness", rank: I, kind: patron_principal, propers: commons, commune: "Common of Feasts of the BVM", note: "Proper exists in Redemptorist propria / pro aliquibus locis — look for it"}
+    bishop_commemorations:
+      - {date: "06-25", text: "Appointment, Bp. Scott Edward Bullock"}
+      - {date: "09-23", text: "Episcopal consecration, Bp. Scott Edward Bullock"}
+
+  - id: dallas
+    name: Diocese of Dallas
+    country: US
+    feasts:
+      - {date: "10-26", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "12-12", title: "Our Lady of Guadalupe, Principal Patroness", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "03-03", text: "Episcopal consecration, Bp. Edward J. Burns"}
+      - {date: "12-13", text: "Appointment, Bp. Edward J. Burns"}
+
+  - id: el-paso
+    name: Diocese of El Paso
+    country: US
+    feasts:
+      - {date: "03-17", title: "St. Patrick, Principal Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "11-29", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "04-27", text: "Episcopal consecration, Bp. Mark J. Seitz"}
+      - {date: "05-06", text: "Appointment, Bp. Mark J. Seitz"}
+
+  - id: fort-worth
+    name: Diocese of Fort Worth
+    country: US
+    feasts:
+      - {date: "03-17", title: "St. Patrick, Principal Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "07-10", title: "Dedication of St. Patrick Cathedral", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "01-29", text: "Episcopal consecration, Bp. Michael F. Olson"}
+      - {date: "11-19", text: "Appointment, Bp. Michael F. Olson"}
+
+  - id: galveston-houston
+    name: Archdiocese of Galveston-Houston
+    country: US
+    feasts:
+      - {date: "04-13", title: "Dedication of the Metropolitan Cathedral and Co-Cathedral", rank: I, kind: dedication_cathedral}
+      - {date: "12-08", title: "Immaculate Conception, Principal Patroness", rank: as_on_feast, kind: patron_principal}
+    bishop_commemorations:
+      - {date: "01-20", text: "Appointment, Abp. Joe Steve Vásquez"}
+      - {date: "01-23", text: "Episcopal consecration, Abp. Joe Steve Vásquez"}
+
+  - id: tyler
+    name: Diocese of Tyler
+    country: US
+    feasts:
+      - {date: "02-24", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "12-08", title: "Immaculate Conception, Principal Patroness", rank: as_on_feast, kind: patron_principal}
+    bishop_commemorations:
+      - {date: "02-11", text: "Episcopal consecration, Bp. Gregory J. Kelly"}
+      - {date: "12-20", text: "Appointment, Bp. Gregory J. Kelly"}
+
+  - id: richmond
+    name: Diocese of Richmond
+    country: US
+    feasts:
+      - {date: "07-19", title: "St. Vincent de Paul, Principal Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "11-29", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "12-05", text: "Appointment, Bp. Barry C. Knestout"}
+      - {date: "12-29", text: "Episcopal consecration, Bp. Barry C. Knestout"}
+
+  - id: seattle
+    name: Archdiocese of Seattle
+    country: US
+    feasts:
+      - {date: "07-25", title: "St. James the Greater, Principal Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "12-22", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "04-29", text: "Appointment, Abp. Paul D. Etienne"}
+      - {date: "12-09", text: "Episcopal consecration, Abp. Paul D. Etienne"}
+
+  # ---------------- CANADA ----------------
+  - id: calgary
+    name: Diocese of Calgary
+    country: CA
+    feasts:
+      - {date: "10-16", title: "St. Gerard Majella, Secondary Patron", rank: II, kind: patron_secondary, propers: commons, commune: "Common of a Confessor not a Bishop", note: "Redemptorist proper exists — look for it"}
+      - {date: "12-08", title: "Immaculate Conception, Principal Patroness", rank: I, kind: patron_principal}
+      - {date: "12-11", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "01-04", text: "Appointment, Bp. William McGrattan"}
+      - {date: "01-12", text: "Episcopal consecration, Bp. William McGrattan"}
+
+  - id: edmonton
+    name: Archdiocese of Edmonton
+    country: CA
+    note: "Ordo lists NO principal patron for Edmonton — CONFIRM. Ordo also names Richard Smith as ordinary of both Edmonton and Vancouver — Edmonton entry is likely stale; CONFIRM bishop data."
+    feasts:
+      - {date: "05-01", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral, note: "05-01 is St. Joseph the Worker (I class) — dedication must transfer; CONFIRM/compute"}
+    bishop_commemorations:
+      - {date: "03-22", text: "Appointment (Ordo: Abp. Richard Smith) — CONFIRM"}
+      - {date: "06-18", text: "Episcopal consecration (Ordo: Abp. Richard Smith) — CONFIRM"}
+
+  - id: vancouver
+    name: Archdiocese of Vancouver
+    country: CA
+    feasts:
+      - {date: "10-03", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "10-07", title: "Our Lady of the Holy Rosary, Principal Patroness", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "02-25", text: "Appointment, Abp. Richard W. Smith"}
+      - {date: "06-18", text: "Episcopal consecration, Abp. Richard W. Smith, CSB"}
+
+  - id: quebec
+    name: Archdiocese of Québec
+    country: CA
+    feasts:
+      - {date: "07-11", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "07-26", title: "St. Anne, Principal Patroness", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "02-22", text: "Appointment, Cardinal Gérald Cyprien Lacroix"}
+      - {date: "05-24", text: "Episcopal consecration, Cardinal Gérald Cyprien Lacroix"}
+    note: "Ordo lists 09-12 Holy Name of Mary as 'Principal Patroness of the ecclesiastical province of Québec' under Montréal. CONFIRM whether it also applies here; default: not added."
+
+  - id: montreal
+    name: Archdiocese of Montréal
+    country: CA
+    feasts:
+      - {date: "05-31", title: "Queenship of Mary, principal feast of the Archdiocese", rank: I, kind: patron_principal, propers: base}
+      - {date: "09-12", title: "Holy Name of Mary — St. Mary, Principal Patroness of the ecclesiastical province of Québec", rank: I, kind: patron_principal, propers: base}
+      - {date: "10-13", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "03-20", text: "Appointment, Abp. Christian Lépine"}
+      - {date: "09-10", text: "Episcopal consecration, Abp. Christian Lépine"}
+
+  - id: ottawa
+    name: Archdiocese of Ottawa(-Cornwall)
+    country: CA
+    feasts:
+      - {date: "03-17", title: "St. Patrick, Patron", rank: I, kind: patron_principal, propers: base}
+      - {date: "06-24", title: "Nativity of St. John the Baptist, Patron", rank: I, kind: patron_principal}
+      - {date: "09-04", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "05-06", text: "Appointment as coadjutor, Abp. Marcel Damphousse"}
+      - {date: "09-02", text: "Episcopal consecration, Abp. Marcel Damphousse"}
+
+  - id: st-catharines
+    name: Diocese of St. Catharines
+    country: CA
+    feasts:
+      - {date: "11-25", title: "St. Catherine of Alexandria, Virgin & Martyr, Principal Patroness", rank: I, kind: patron_principal, propers: base}
+      - {date: "11-26", title: "Dedication of the Cathedral Church (transferred from 11-25)", rank: I, kind: dedication_cathedral}
+    bishop_commemorations:
+      - {date: "08-24", text: "Episcopal consecration, Bp. Gerard P. Bergie"}
+      - {date: "09-14", text: "Appointment, Bp. Gerard P. Bergie"}
+
+  - id: saskatoon
+    name: Diocese of Saskatoon
+    country: CA
+    note: "Ordo calls St. Paul 'Principal Patron of the Archdiocese' — Saskatoon is a diocese; treat as diocesan patron."
+    feasts:
+      - {date: "05-13", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
+      - {date: "06-30", title: "St. Paul (Commemoration of St. Paul), Principal Patron", rank: I, kind: patron_principal, propers: base}
+    bishop_commemorations:
+      - {date: "11-23", text: "Appointment, Bp. Mark Hagemoen"}
+      - {date: "12-15", text: "Episcopal consecration, Bp. Mark Hagemoen"}
+
+# Every titular below = local I class unless stated. dates MM-DD; movable feasts named.
+sites:
+  # ---------------- USA ----------------
+  - {id: phoenix-mater-misericordiae, name: "Mater Misericordiae Church", city: "Phoenix, AZ", country: US, diocese: phoenix, kind: parish,
+     titulars: [{title: "Mater Misericordiae (Mother of Mercy)", date: CONFIRM, propers: commons, commune: "Common of Feasts of the BVM"}],
+     note: "Not in 1962 calendar; patronal date unknown — placeholder only. Second Mass site: St. Edward the Confessor (10-13) — not elevated by default; CONFIRM"}
+  - {id: clarkdale-st-cecilia, name: "St. Cecilia Church", city: "Clarkdale, AZ", country: US, diocese: phoenix, kind: parish,
+     titulars: [{title: "St. Cecilia, Virgin & Martyr", date: "11-22", propers: base}]}
+  - {id: cabot-st-john-baptist, name: "St. John the Baptist Church", city: "Cabot, AR", country: US, diocese: little-rock, kind: parish,
+     titulars: [{title: "Nativity of St. John the Baptist", date: "06-24", propers: base}], note: "already I class"}
+  - {id: springdale-ol-sorrows, name: "Our Lady of Sorrows Church", city: "Springdale, AR", country: US, diocese: little-rock, kind: parish,
+     titulars: [{title: "Seven Sorrows of the BVM", date: "09-15", propers: base}]}
+  - {id: northridge-st-vitus, name: "St. Vitus Catholic Church", city: "Northridge, CA", country: US, diocese: los-angeles, kind: parish,
+     titulars: [{title: "St. Vitus, Martyr", date: "06-15", propers: base, note: "1960 = commemoration only (Ss. Vitus, Modestus & Crescentia); build I-class Matins with Common of One Martyr where texts lacking"}]}
+  - {id: camarillo-st-mary-magdalen, name: "St. Mary Magdalen Chapel", city: "Camarillo, CA", country: US, diocese: los-angeles, kind: chapel,
+     titulars: [{title: "St. Mary Magdalen, Penitent", date: "07-22", propers: base}]}
+  - {id: fresno-holy-cross, name: "Holy Cross Chaplaincy — St. Anthony of Padua Church", city: "Fresno, CA", country: US, diocese: fresno, kind: chaplaincy,
+     titulars: [{title: "St. Anthony of Padua", date: "06-13", propers: base}],
+     community_patron: {title: "Exaltation of the Holy Cross", date: "09-14", propers: base, status: CONFIRM}}
+  - {id: sacramento-st-stephen, name: "St. Stephen, the First Martyr", city: "Sacramento, CA", country: US, diocese: sacramento, kind: parish,
+     titulars: [{title: "St. Stephen, Protomartyr", date: "12-26", propers: base}], note: "Layer exists — reconcile"}
+  - {id: san-diego-st-anne, name: "St. Anne Church", city: "San Diego, CA", country: US, diocese: san-diego, kind: parish,
+     titulars: [{title: "St. Anne", date: "07-26", propers: base}]}
+  - {id: colorado-springs-immaculate-conception, name: "Immaculate Conception", city: "Colorado Springs, CO", country: US, diocese: colorado-springs, kind: parish,
+     titulars: [{title: "Immaculate Conception", date: "12-08", propers: base}]}
+  - {id: littleton-ol-mount-carmel, name: "Our Lady of Mount Carmel", city: "Littleton, CO", country: US, diocese: denver, kind: parish,
+     titulars: [{title: "Our Lady of Mount Carmel", date: "07-16", propers: base}]}
+  - {id: littleton-carmel-holy-spirit, name: "Carmel of the Holy Spirit Monastery", city: "Littleton, CO", country: US, diocese: denver, kind: monastery,
+     titulars: [{title: "Pentecost (Holy Ghost)", date: "movable:pentecost", propers: base}],
+     note: "Carmelite nuns — likely follow the Carmelite proper office. CONFIRM whether to generate at all; default: generate but mark 'FSSP-chaplaincy calendar, not the nuns' choir office'"}
+  - {id: sarasota-christ-the-king, name: "Christ the King Parish", city: "Sarasota, FL", country: US, diocese: venice, kind: parish,
+     titulars: [{title: "Christ the King", date: "movable:last-sunday-october", propers: base}]}
+  - {id: naples-corpus-christi, name: "Corpus Christi Chapel", city: "Naples, FL", country: US, diocese: venice, kind: chapel,
+     titulars: [{title: "Corpus Christi", date: "movable:corpus-christi", propers: base}]}
+  - {id: fort-myers-resurrection, name: "Resurrection of Our Lord Chapel", city: "Fort Myers, FL", country: US, diocese: venice, kind: chapel,
+     titulars: [{title: "Resurrection (Easter Sunday)", date: "movable:easter", propers: base}]}
+  - {id: ocala-ol-queen-of-peace, name: "Our Lady Queen of Peace Catholic Church", city: "Ocala, FL", country: US, diocese: orlando, kind: parish,
+     titulars: [{title: "Our Lady Queen of Peace", date: CONFIRM, propers: commons, commune: "Common of Feasts of the BVM", note: "Candidates: 01-24 or 07-09 (pro aliquibus locis) — confirm with parish"}]}
+  - {id: miami-ol-belen, name: "Our Lady of Belen Chapel", city: "Miami, FL", country: US, diocese: miami, kind: chapel,
+     titulars: [{title: "Our Lady of Belén (Bethlehem)", date: CONFIRM, propers: commons, commune: "Common of Feasts of the BVM"}],
+     note: "Chapel of Belen Jesuit Preparatory School; patronal date unknown — placeholder"}
+  - {id: mableton-st-francis-de-sales, name: "St. Francis de Sales Church", city: "Mableton, GA", country: US, diocese: atlanta, kind: parish,
+     titulars: [{title: "St. Francis de Sales, Bishop & Doctor", date: "01-29", propers: base}]}
+  - {id: post-falls-st-joan-of-arc, name: "St. Joan of Arc Church", city: "Post Falls, ID", country: US, diocese: boise, kind: parish,
+     titulars: [{title: "St. Joan of Arc, Virgin", date: "05-30", propers: base}]}
+  - {id: rockdale-st-joseph, name: "St. Joseph Parish", city: "Rockdale, IL", country: US, diocese: joliet, kind: parish,
+     titulars: [{title: "St. Joseph, Spouse of the BVM", date: "03-19", propers: base}]}
+  - {id: naperville-ss-peter-paul, name: "Ss. Peter & Paul Church", city: "Naperville, IL", country: US, diocese: joliet, kind: parish,
+     titulars: [{title: "Ss. Peter & Paul", date: "06-29", propers: base}]}
+  - {id: quincy-st-rose-of-lima, name: "St. Rose of Lima Parish", city: "Quincy, IL", country: US, diocese: springfield-il, kind: parish,
+     titulars: [{title: "St. Rose of Lima, Virgin", date: "08-30", propers: base}]}
+  - {id: fort-wayne-sacred-heart, name: "Sacred Heart Parish", city: "Fort Wayne, IN", country: US, diocese: fort-wayne-south-bend, kind: parish,
+     titulars: [{title: "Most Sacred Heart of Jesus", date: "movable:sacred-heart", propers: base}]}
+  - {id: south-bend-st-stanislaus, name: "St. Stanislaus Church", city: "South Bend, IN", country: US, diocese: fort-wayne-south-bend, kind: parish,
+     titulars: [{title: "St. Stanislaus, Bishop & Martyr", date: "05-07", propers: base}], note: "Confirmed as St. Stanislaus Bishop & Martyr"}
+  - {id: brookville-ss-philomena-cecilia, name: "Oratory of Ss. Philomena & Cecilia", city: "Brookville, IN", country: US, diocese: indianapolis, kind: oratory,
+     titulars: [{title: "St. Philomena, Virgin & Martyr", date: "08-11", propers: commons, commune: "Common of a Virgin Martyr", note: "Removed from the calendar in 1961 — no 1960 office; CONFIRM whether to elevate"},
+                {title: "St. Cecilia, Virgin & Martyr", date: "11-22", propers: base}]}
+  - {id: westwood-st-rose-philippine-duchesne, name: "St. Rose Philippine Duchesne Catholic Church (Community of St. Philippine Duchesne)", city: "Westwood, KS", country: US, diocese: kansas-city-ks, kind: parish,
+     titulars: [{title: "St. Rose Philippine Duchesne, Virgin", date: "11-17", propers: commons, commune: "Common of a Virgin not a Martyr", note: "Archdiocese has her as III class; site raises to I"}]}
+  - {id: maple-hill-st-john-vianney, name: "St. John Vianney Chapel (Community of St. John-Mary Vianney)", city: "Maple Hill, KS", country: US, diocese: kansas-city-ks, kind: chapel,
+     titulars: [{title: "St. John Mary Vianney, Confessor", date: "08-08", propers: base}]}
+  - {id: georgetown-st-francis-de-sales, name: "St. Francis de Sales Church (Regina Pacis Latin Mass Community)", city: "Georgetown, KY", country: US, diocese: lexington, kind: community,
+     titulars: [{title: "St. Francis de Sales, Bishop & Doctor", date: "01-29", propers: base}],
+     community_patron: {title: "Regina Pacis (Our Lady Queen of Peace)", date: CONFIRM, propers: commons, commune: "Common of Feasts of the BVM", status: CONFIRM}}
+  - {id: baltimore-st-alphonsus, name: "National Shrine of St. Alphonsus Liguori", city: "Baltimore, MD", country: US, diocese: baltimore, kind: shrine,
+     titulars: [{title: "St. Alphonsus Liguori, Bishop & Doctor", date: "08-02", propers: base}]}
+  - {id: minneapolis-all-saints, name: "Church of All Saints", city: "Minneapolis, MN", country: US, diocese: st-paul-minneapolis, kind: parish,
+     titulars: [{title: "All Saints", date: "11-01", propers: base}]}
+  - {id: lincoln-st-francis-of-assisi, name: "St. Francis of Assisi Church", city: "Lincoln, NE", country: US, diocese: lincoln, kind: parish,
+     titulars: [{title: "St. Francis of Assisi, Confessor", date: "10-04", propers: base}]}
+  - {id: denton-olgs-seminary, name: "Our Lady of Guadalupe Seminary", city: "Denton, NE", country: US, diocese: lincoln, kind: seminary,
+     titulars: [{title: "Our Lady of Guadalupe", date: "12-12", propers: base, note: "use existing 3-nocturn override"}],
+     extra: [{title: "St. Charles Borromeo, Principal Patron of Seminaries", date: "11-04", rank: I}]}
+  - {id: omaha-immaculate-conception, name: "Immaculate Conception Church", city: "Omaha, NE", country: US, diocese: omaha, kind: parish,
+     titulars: [{title: "Immaculate Conception", date: "12-08", propers: base}]}
+  - {id: nashua-st-stanislaus, name: "St. Stanislaus Church", city: "Nashua, NH", country: US, diocese: manchester, kind: parish,
+     titulars: [{title: "St. Stanislaus, Bishop & Martyr (default)", date: "05-07", propers: base, status: CONFIRM, note: "Could be St. Stanislaus Kostka (11-13)"}]}
+  - {id: pequannock-ol-fatima, name: "Our Lady of Fatima Chapel", city: "Pequannock, NJ", country: US, diocese: paterson, kind: chapel,
+     titulars: [{title: "Our Lady of the Rosary of Fatima", date: "05-13", propers: commons, commune: "Common of Feasts of the BVM", note: "1962 05-13 St. Robert Bellarmine commemorated"}]}
+  - {id: dayton-holy-family, name: "Holy Family Church", city: "Dayton, OH", country: US, diocese: cincinnati, kind: parish,
+     titulars: [{title: "Holy Family", date: "movable:sunday-after-epiphany", propers: base}]}
+  - {id: vienna-queen-holy-rosary, name: "Queen of the Holy Rosary Church", city: "Vienna, OH", country: US, diocese: youngstown, kind: parish,
+     titulars: [{title: "Our Lady of the Most Holy Rosary", date: "10-07", propers: base}]}
+  - {id: tulsa-most-precious-blood, name: "Parish of the Most Precious Blood", city: "Tulsa, OK", country: US, diocese: tulsa, kind: parish,
+     titulars: [{title: "Most Precious Blood", date: "07-01", propers: base}]}
+  - {id: edmond-st-damien, name: "St. Damien Catholic Church", city: "Edmond, OK", country: US, diocese: oklahoma-city, kind: parish,
+     titulars: [{title: "St. Damien of Molokai, Confessor", date: "05-10", propers: commons, commune: "Common of a Confessor not a Bishop", note: "Canonized 2009; US date 05-10. 1962 05-10 St. Antoninus commemorated"}]}
+  - {id: bethlehem-holy-ghost, name: "Holy Ghost Parish", city: "Bethlehem, PA", country: US, diocese: allentown, kind: parish,
+     titulars: [{title: "Pentecost (Holy Ghost)", date: "movable:pentecost", propers: base}]}
+  - {id: allentown-st-stephen-of-hungary, name: "St. Stephen of Hungary", city: "Allentown, PA", country: US, diocese: allentown, kind: parish,
+     titulars: [{title: "St. Stephen of Hungary, King & Confessor", date: "09-02", propers: base}]}
+  - {id: harrisburg-st-lawrence, name: "St. Lawrence Church (Mater Dei Latin Mass Community)", city: "Harrisburg, PA", country: US, diocese: harrisburg, kind: community,
+     titulars: [{title: "St. Lawrence, Deacon & Martyr", date: "08-10", propers: base}],
+     community_patron: {title: "Mater Dei — Maternity of the BVM", date: "10-11", propers: base, status: CONFIRM}}
+  - {id: conshohocken-st-mary, name: "St. Mary Catholic Church", city: "Conshohocken, PA", country: US, diocese: philadelphia, kind: parish,
+     titulars: [{title: "St. Mary — Assumption (default)", date: "08-15", propers: base, status: CONFIRM}]}
+  - {id: scranton-st-michael, name: "St. Michael's Church", city: "Scranton, PA", country: US, diocese: scranton, kind: parish,
+     titulars: [{title: "Dedication of St. Michael the Archangel", date: "09-29", propers: base}]}
+  - {id: providence-st-mary-broadway, name: "Church of St. Mary on Broadway", city: "Providence, RI", country: US, diocese: providence, kind: parish,
+     titulars: [{title: "St. Mary — Assumption (default)", date: "08-15", propers: base, status: CONFIRM}]}
+  - {id: rapid-city-immaculate-conception, name: "Immaculate Conception Church", city: "Rapid City, SD", country: US, diocese: rapid-city, kind: parish,
+     titulars: [{title: "Immaculate Conception", date: "12-08", propers: base}]}
+  - {id: irving-mater-dei, name: "Mater Dei Catholic Parish", city: "Irving, TX", country: US, diocese: dallas, kind: parish,
+     titulars: [{title: "Maternity of the BVM (Mater Dei)", date: "10-11", propers: base}]}
+  - {id: fort-worth-st-benedict, name: "St. Benedict's Church", city: "Fort Worth, TX", country: US, diocese: fort-worth, kind: parish,
+     titulars: [{title: "St. Benedict, Abbot", date: "03-21", propers: base, note: "Often impeded (Passiontide/Holy Week) — check transfers"}]}
+  - {id: el-paso-immaculate-conception, name: "Immaculate Conception Church", city: "El Paso, TX", country: US, diocese: el-paso, kind: parish,
+     titulars: [{title: "Immaculate Conception", date: "12-08", propers: base}]}
+  - {id: houston-regina-caeli, name: "Regina Caeli Parish", city: "Houston, TX", country: US, diocese: galveston-houston, kind: parish,
+     titulars: [{title: "Queenship of the BVM (Regina Caeli)", date: "05-31", propers: base}]}
+  - {id: tyler-st-joseph-worker, name: "St. Joseph the Worker Church", city: "Tyler, TX", country: US, diocese: tyler, kind: parish,
+     titulars: [{title: "St. Joseph the Worker", date: "05-01", propers: base}]}
+  - {id: chesapeake-st-benedict, name: "St. Benedict's Parish", city: "Chesapeake, VA", country: US, diocese: richmond, kind: parish,
+     titulars: [{title: "St. Benedict, Abbot", date: "03-21", propers: base, note: "check transfers"}]}
+  - {id: richmond-st-joseph, name: "St. Joseph Parish", city: "Richmond, VA", country: US, diocese: richmond, kind: parish,
+     titulars: [{title: "St. Joseph, Spouse of the BVM", date: "03-19", propers: base}]}
+  - {id: edmonds-north-american-martyrs, name: "North American Martyrs Church", city: "Edmonds, WA", country: US, diocese: seattle, kind: parish,
+     titulars: [{title: "North American Martyrs (Ss. Isaac Jogues, Jean de Brébeuf & Companions)", date: "09-26", propers: base, note: "USA form texts from USA1960 layer"}]}
+  - {id: tacoma-st-joseph, name: "St. Joseph Church", city: "Tacoma, WA", country: US, diocese: seattle, kind: parish,
+     titulars: [{title: "St. Joseph, Spouse of the BVM", date: "03-19", propers: base}]}
+
+  # ---------------- CANADA (chain: 1960 → CAN1960 [pending] → FSSP → diocese → site) ----------------
+  - {id: calgary-st-anthony, name: "St. Anthony Church (+ FSSP Calgary House)", city: "Calgary, AB", country: CA, diocese: calgary, kind: parish,
+     titulars: [{title: "St. Anthony of Padua", date: "06-13", propers: base}]}
+  - {id: edmonton-assumption, name: "Assumption Catholic Church (Vital Grandin Chaplaincy)", city: "Edmonton, AB", country: CA, diocese: edmonton, kind: chaplaincy,
+     titulars: [{title: "Assumption of the BVM", date: "08-15", propers: base}],
+     note: "Vital Grandin is Venerable, not canonized — no liturgical feast; do NOT create one"}
+  - {id: edmonton-st-edmund, name: "St. Edmund's Parish (Vital Grandin Chaplaincy)", city: "Edmonton, AB", country: CA, diocese: edmonton, kind: parish,
+     titulars: [{title: "St. Edmund", date: CONFIRM, propers: pending, note: "Edmund of Canterbury, Bishop (11-16, in 1962 calendar) or Edmund, King & Martyr (11-20, pro aliquibus locis)"}]}
+  - {id: vancouver-holy-family, name: "Holy Family Parish", city: "Vancouver, BC", country: CA, diocese: vancouver, kind: parish,
+     titulars: [{title: "Holy Family", date: "movable:sunday-after-epiphany", propers: base}]}
+  - {id: quebec-st-zephirin, name: "Église Saint-Zéphirin-de-Stadacona", city: "Québec, QC", country: CA, diocese: quebec, kind: parish,
+     titulars: [{title: "St. Zephyrinus, Pope & Martyr", date: "08-26", propers: base}]}
+  - {id: montreal-st-irenee, name: "Église St-Irénée", city: "Montréal, QC", country: CA, diocese: montreal, kind: parish,
+     titulars: [{title: "St. Irenaeus, Bishop & Martyr", date: "06-28", propers: base, note: "Coincides with Vigil of Ss. Peter & Paul (II class) — I-class titular prevails; vigil commemorated per 1960 rubrics; verify"}]}
+  - {id: ottawa-st-clement, name: "St. Clement Parish (at St. Anne Church)", city: "Ottawa, ON", country: CA, diocese: ottawa, kind: parish,
+     titulars: [{title: "St. Clement I, Pope & Martyr (parish)", date: "11-23", propers: base},
+                {title: "St. Anne (church building)", date: "07-26", propers: base, status: CONFIRM}]}
+  - {id: thorold-st-aloysius, name: "St. Aloysius Parish", city: "Thorold, ON", country: CA, diocese: st-catharines, kind: parish,
+     titulars: [{title: "St. Aloysius Gonzaga, Confessor", date: "06-21", propers: base}]}
+  - {id: saskatoon-sacred-heart, name: "Sacred Heart of Jesus Latin Mass Community (St. Joseph's Church)", city: "Saskatoon, SK", country: CA, diocese: saskatoon, kind: community,
+     titulars: [{title: "St. Joseph (church building)", date: "03-19", propers: base}],
+     community_patron: {title: "Most Sacred Heart of Jesus", date: "movable:sacred-heart", propers: base, status: CONFIRM}}
+
+# Every site: own_dedication: unknown  (I class when known — register in LOCAL_PROPERS_REGISTRY)

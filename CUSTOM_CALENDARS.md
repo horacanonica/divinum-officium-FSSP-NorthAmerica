@@ -8,6 +8,9 @@ Also included: a worked example of a **diocesan/parish calendar** (Diocese of Sa
 Church of St. Stephen), demonstrating how any parish can add its own proper feasts on top
 of the North American supplement with minimal effort.
 
+> **Province-wide diocesan/parish calendars** (2026 Ordo) are generated from `fssp/na_province.yaml` — see `fssp/README.md`.
+> Canadian calendars use `Rubrics 1960 - FSSP Canada` (kalendar `CAN1960`), never the USA layer.
+
 ---
 
 ## How the Calendar Chain Works
