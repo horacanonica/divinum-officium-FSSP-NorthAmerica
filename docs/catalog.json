@@ -1,7 +1,7 @@
 {
   "repo": "horacanonica/divinum-officium-FSSP-NorthAmerica",
   "release": "epub-library",
-  "updated": "2026-10-16T18:38:44Z",
+  "updated": "2026-10-16T19:27:34Z",
   "languages": "Latin and English",
   "rubrics": "1960",
   "window": {
@@ -31,8 +31,283 @@
       "name": "FSSP",
       "region": "General",
       "place": "General calendar of the Fraternity",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "96aa00bacc7619684a63e369d547ee133b647bcd32adff9ce6a667695d194346",
+        "2027": "96aa00bacc7619684a63e369d547ee133b647bcd32adff9ce6a667695d194346",
+        "2028": "96aa00bacc7619684a63e369d547ee133b647bcd32adff9ce6a667695d194346"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "fssp-2026.epub",
+          "bytes": 26437521
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-01.epub",
+          "bytes": 2519593,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-02.epub",
+          "bytes": 2302261,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-03.epub",
+          "bytes": 2554147,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-04.epub",
+          "bytes": 2336565,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-05.epub",
+          "bytes": 2519067,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-06.epub",
+          "bytes": 2437324,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-07.epub",
+          "bytes": 2517463,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-08.epub",
+          "bytes": 2524765,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-09.epub",
+          "bytes": 2454792,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-10.epub",
+          "bytes": 2511602,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-11.epub",
+          "bytes": 2442741,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-2026-12.epub",
+          "bytes": 2551699,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "fssp-2027.epub",
+          "bytes": 26447961
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-01.epub",
+          "bytes": 2516777,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-02.epub",
+          "bytes": 2321858,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-03.epub",
+          "bytes": 2473020,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-04.epub",
+          "bytes": 2380332,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-05.epub",
+          "bytes": 2537645,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-06.epub",
+          "bytes": 2429667,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-07.epub",
+          "bytes": 2516701,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-08.epub",
+          "bytes": 2520956,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-09.epub",
+          "bytes": 2451116,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-10.epub",
+          "bytes": 2524018,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-11.epub",
+          "bytes": 2449410,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-2027-12.epub",
+          "bytes": 2560981,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "fssp-2028.epub",
+          "bytes": 26498641
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-01.epub",
+          "bytes": 2507869,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-02.epub",
+          "bytes": 2339228,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-03.epub",
+          "bytes": 2560095,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-04.epub",
+          "bytes": 2363908,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-05.epub",
+          "bytes": 2502140,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-06.epub",
+          "bytes": 2464274,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-07.epub",
+          "bytes": 2520631,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-08.epub",
+          "bytes": 2537599,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-09.epub",
+          "bytes": 2435393,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-10.epub",
+          "bytes": 2526292,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-11.epub",
+          "bytes": 2430633,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-2028-12.epub",
+          "bytes": 2545183,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - FSSP USA",
@@ -40,8 +315,283 @@
       "name": "FSSP USA",
       "region": "General",
       "place": "FSSP calendar for the United States",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "454c3e1af46544d1a116003acb18e0516ad358cfd2aebddd66d393766636d468",
+        "2027": "454c3e1af46544d1a116003acb18e0516ad358cfd2aebddd66d393766636d468",
+        "2028": "454c3e1af46544d1a116003acb18e0516ad358cfd2aebddd66d393766636d468"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "fssp-usa-2026.epub",
+          "bytes": 26444799
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-01.epub",
+          "bytes": 2519611,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-02.epub",
+          "bytes": 2302278,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-03.epub",
+          "bytes": 2554165,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-04.epub",
+          "bytes": 2336583,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-05.epub",
+          "bytes": 2519086,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-06.epub",
+          "bytes": 2437343,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-07.epub",
+          "bytes": 2517482,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-08.epub",
+          "bytes": 2524783,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-09.epub",
+          "bytes": 2458765,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-10.epub",
+          "bytes": 2511621,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-11.epub",
+          "bytes": 2443730,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "fssp-usa-2026-12.epub",
+          "bytes": 2554044,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "fssp-usa-2027.epub",
+          "bytes": 26455893
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-01.epub",
+          "bytes": 2516794,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-02.epub",
+          "bytes": 2321875,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-03.epub",
+          "bytes": 2473038,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-04.epub",
+          "bytes": 2380350,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-05.epub",
+          "bytes": 2537663,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-06.epub",
+          "bytes": 2429686,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-07.epub",
+          "bytes": 2516719,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-08.epub",
+          "bytes": 2520974,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-09.epub",
+          "bytes": 2455182,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-10.epub",
+          "bytes": 2527392,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-11.epub",
+          "bytes": 2449930,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "fssp-usa-2027-12.epub",
+          "bytes": 2561000,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "fssp-usa-2028.epub",
+          "bytes": 26512665
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-01.epub",
+          "bytes": 2507888,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-02.epub",
+          "bytes": 2339247,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-03.epub",
+          "bytes": 2560114,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-04.epub",
+          "bytes": 2363926,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-05.epub",
+          "bytes": 2502159,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-06.epub",
+          "bytes": 2464293,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-07.epub",
+          "bytes": 2520649,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-08.epub",
+          "bytes": 2537618,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-09.epub",
+          "bytes": 2440487,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-10.epub",
+          "bytes": 2530249,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-11.epub",
+          "bytes": 2431472,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "fssp-usa-2028-12.epub",
+          "bytes": 2549364,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - Sacramento",
@@ -151,8 +701,283 @@
       "name": "Arlington",
       "region": "Northeast & Mid-Atlantic",
       "place": "Arlington, Virginia",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "c5aba7ed9799e2e0f43929076b3a0bb42656fc6f291dd92063568f85cd4fccff",
+        "2027": "c5aba7ed9799e2e0f43929076b3a0bb42656fc6f291dd92063568f85cd4fccff",
+        "2028": "c5aba7ed9799e2e0f43929076b3a0bb42656fc6f291dd92063568f85cd4fccff"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "arlington-2026.epub",
+          "bytes": 26460581
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-01.epub",
+          "bytes": 2519610,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-02.epub",
+          "bytes": 2302278,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-03.epub",
+          "bytes": 2554166,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-04.epub",
+          "bytes": 2336583,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-05.epub",
+          "bytes": 2519086,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-06.epub",
+          "bytes": 2444322,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-07.epub",
+          "bytes": 2517482,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-08.epub",
+          "bytes": 2524784,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-09.epub",
+          "bytes": 2458765,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-10.epub",
+          "bytes": 2511620,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-11.epub",
+          "bytes": 2443731,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "arlington-2026-12.epub",
+          "bytes": 2562846,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "arlington-2027.epub",
+          "bytes": 26477300
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-01.epub",
+          "bytes": 2516794,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-02.epub",
+          "bytes": 2321875,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-03.epub",
+          "bytes": 2473039,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-04.epub",
+          "bytes": 2380350,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-05.epub",
+          "bytes": 2537664,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-06.epub",
+          "bytes": 2439028,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-07.epub",
+          "bytes": 2516719,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-08.epub",
+          "bytes": 2520975,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-09.epub",
+          "bytes": 2455183,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-10.epub",
+          "bytes": 2527391,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-11.epub",
+          "bytes": 2449932,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "arlington-2027-12.epub",
+          "bytes": 2573063,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "arlington-2028.epub",
+          "bytes": 26529958
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-01.epub",
+          "bytes": 2507888,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-02.epub",
+          "bytes": 2339246,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-03.epub",
+          "bytes": 2560114,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-04.epub",
+          "bytes": 2363926,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-05.epub",
+          "bytes": 2502160,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-06.epub",
+          "bytes": 2472436,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-07.epub",
+          "bytes": 2520650,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-08.epub",
+          "bytes": 2537618,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-09.epub",
+          "bytes": 2440487,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-10.epub",
+          "bytes": 2530248,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-11.epub",
+          "bytes": 2431473,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "arlington-2028-12.epub",
+          "bytes": 2558511,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - Baltimore",
@@ -160,8 +985,283 @@
       "name": "Baltimore",
       "region": "Northeast & Mid-Atlantic",
       "place": "Baltimore, Maryland",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "50d2f9fa92823d4a46c39fff8023ae7a5e6a21e3d3b1bf96f6e59a9c45a52d61",
+        "2027": "50d2f9fa92823d4a46c39fff8023ae7a5e6a21e3d3b1bf96f6e59a9c45a52d61",
+        "2028": "50d2f9fa92823d4a46c39fff8023ae7a5e6a21e3d3b1bf96f6e59a9c45a52d61"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "baltimore-2026.epub",
+          "bytes": 26464791
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-01.epub",
+          "bytes": 2519610,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-02.epub",
+          "bytes": 2302277,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-03.epub",
+          "bytes": 2554164,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-04.epub",
+          "bytes": 2336582,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-05.epub",
+          "bytes": 2519085,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-06.epub",
+          "bytes": 2437342,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-07.epub",
+          "bytes": 2517481,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-08.epub",
+          "bytes": 2535346,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-09.epub",
+          "bytes": 2458764,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-10.epub",
+          "bytes": 2511621,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-11.epub",
+          "bytes": 2453158,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "baltimore-2026-12.epub",
+          "bytes": 2554043,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "baltimore-2027.epub",
+          "bytes": 26473185
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-01.epub",
+          "bytes": 2516793,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-02.epub",
+          "bytes": 2321873,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-03.epub",
+          "bytes": 2473037,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-04.epub",
+          "bytes": 2380349,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-05.epub",
+          "bytes": 2537662,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-06.epub",
+          "bytes": 2429685,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-07.epub",
+          "bytes": 2516718,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-08.epub",
+          "bytes": 2528848,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-09.epub",
+          "bytes": 2455180,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-10.epub",
+          "bytes": 2527391,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-11.epub",
+          "bytes": 2459345,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "baltimore-2027-12.epub",
+          "bytes": 2560998,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "baltimore-2028.epub",
+          "bytes": 26527846
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-01.epub",
+          "bytes": 2507886,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-02.epub",
+          "bytes": 2339245,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-03.epub",
+          "bytes": 2560112,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-04.epub",
+          "bytes": 2363924,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-05.epub",
+          "bytes": 2502157,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-06.epub",
+          "bytes": 2464291,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-07.epub",
+          "bytes": 2520647,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-08.epub",
+          "bytes": 2543302,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-09.epub",
+          "bytes": 2440484,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-10.epub",
+          "bytes": 2530247,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-11.epub",
+          "bytes": 2440964,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "baltimore-2028-12.epub",
+          "bytes": 2549362,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - Chesapeake",
@@ -169,8 +1269,283 @@
       "name": "Chesapeake",
       "region": "Northeast & Mid-Atlantic",
       "place": "Chesapeake, Virginia",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "d06b3695057e9c2f0a284c0ae7016afa08b942c2345671dd04ebdbde737345ff",
+        "2027": "d06b3695057e9c2f0a284c0ae7016afa08b942c2345671dd04ebdbde737345ff",
+        "2028": "d06b3695057e9c2f0a284c0ae7016afa08b942c2345671dd04ebdbde737345ff"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "chesapeake-2026.epub",
+          "bytes": 26457378
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-01.epub",
+          "bytes": 2519588,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-02.epub",
+          "bytes": 2302255,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-03.epub",
+          "bytes": 2554676,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-04.epub",
+          "bytes": 2336559,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-05.epub",
+          "bytes": 2519063,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-06.epub",
+          "bytes": 2437318,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-07.epub",
+          "bytes": 2527641,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-08.epub",
+          "bytes": 2524760,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-09.epub",
+          "bytes": 2458742,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-10.epub",
+          "bytes": 2511599,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-11.epub",
+          "bytes": 2445600,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "chesapeake-2026-12.epub",
+          "bytes": 2554021,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "chesapeake-2027.epub",
+          "bytes": 26470509
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-01.epub",
+          "bytes": 2516772,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-02.epub",
+          "bytes": 2321853,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-03.epub",
+          "bytes": 2474293,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-04.epub",
+          "bytes": 2380326,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-05.epub",
+          "bytes": 2537641,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-06.epub",
+          "bytes": 2429662,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-07.epub",
+          "bytes": 2524487,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-08.epub",
+          "bytes": 2520951,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-09.epub",
+          "bytes": 2455159,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-10.epub",
+          "bytes": 2527369,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-11.epub",
+          "bytes": 2455484,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "chesapeake-2027-12.epub",
+          "bytes": 2560977,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "chesapeake-2028.epub",
+          "bytes": 26537452
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-01.epub",
+          "bytes": 2507865,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-02.epub",
+          "bytes": 2339225,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-03.epub",
+          "bytes": 2569376,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-04.epub",
+          "bytes": 2363903,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-05.epub",
+          "bytes": 2502135,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-06.epub",
+          "bytes": 2464269,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-07.epub",
+          "bytes": 2528518,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-08.epub",
+          "bytes": 2537596,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-09.epub",
+          "bytes": 2440463,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-10.epub",
+          "bytes": 2530226,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-11.epub",
+          "bytes": 2439090,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "chesapeake-2028-12.epub",
+          "bytes": 2549341,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - Nashua",
@@ -178,8 +1553,283 @@
       "name": "Nashua",
       "region": "Northeast & Mid-Atlantic",
       "place": "Nashua, New Hampshire",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "48d32603c7da40cf62d73f87b58c528717179555661f8e912db925ade3419489",
+        "2027": "48d32603c7da40cf62d73f87b58c528717179555661f8e912db925ade3419489",
+        "2028": "48d32603c7da40cf62d73f87b58c528717179555661f8e912db925ade3419489"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "nashua-2026.epub",
+          "bytes": 26466250
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-01.epub",
+          "bytes": 2519583,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-02.epub",
+          "bytes": 2302250,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-03.epub",
+          "bytes": 2561691,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-04.epub",
+          "bytes": 2342556,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-05.epub",
+          "bytes": 2526996,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-06.epub",
+          "bytes": 2437313,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-07.epub",
+          "bytes": 2517454,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-08.epub",
+          "bytes": 2524755,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-09.epub",
+          "bytes": 2458738,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-10.epub",
+          "bytes": 2511593,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-11.epub",
+          "bytes": 2443703,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "nashua-2026-12.epub",
+          "bytes": 2554015,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "nashua-2027.epub",
+          "bytes": 26469732
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-01.epub",
+          "bytes": 2516767,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-02.epub",
+          "bytes": 2321847,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-03.epub",
+          "bytes": 2476476,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-04.epub",
+          "bytes": 2387268,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-05.epub",
+          "bytes": 2541106,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-06.epub",
+          "bytes": 2429659,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-07.epub",
+          "bytes": 2516691,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-08.epub",
+          "bytes": 2520946,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-09.epub",
+          "bytes": 2455155,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-10.epub",
+          "bytes": 2527363,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-11.epub",
+          "bytes": 2449903,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "nashua-2027-12.epub",
+          "bytes": 2560971,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "nashua-2028.epub",
+          "bytes": 26515556
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-01.epub",
+          "bytes": 2507860,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-02.epub",
+          "bytes": 2339219,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-03.epub",
+          "bytes": 2558188,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-04.epub",
+          "bytes": 2363898,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-05.epub",
+          "bytes": 2506963,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-06.epub",
+          "bytes": 2464264,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-07.epub",
+          "bytes": 2520622,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-08.epub",
+          "bytes": 2537591,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-09.epub",
+          "bytes": 2440459,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-10.epub",
+          "bytes": 2530221,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-11.epub",
+          "bytes": 2431445,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "nashua-2028-12.epub",
+          "bytes": 2549336,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - Richmond",
@@ -187,8 +1837,283 @@
       "name": "Richmond",
       "region": "Northeast & Mid-Atlantic",
       "place": "Richmond, Virginia",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "cfeca2bef09a48398c27e9f6da3c850a21d4272671b571ea05cec1beb59d00ae",
+        "2027": "cfeca2bef09a48398c27e9f6da3c850a21d4272671b571ea05cec1beb59d00ae",
+        "2028": "cfeca2bef09a48398c27e9f6da3c850a21d4272671b571ea05cec1beb59d00ae"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "richmond-2026.epub",
+          "bytes": 26456872
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-01.epub",
+          "bytes": 2519608,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-02.epub",
+          "bytes": 2302274,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-03.epub",
+          "bytes": 2554163,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-04.epub",
+          "bytes": 2336579,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-05.epub",
+          "bytes": 2519083,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-06.epub",
+          "bytes": 2437338,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-07.epub",
+          "bytes": 2527661,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-08.epub",
+          "bytes": 2524780,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-09.epub",
+          "bytes": 2458762,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-10.epub",
+          "bytes": 2511618,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-11.epub",
+          "bytes": 2445620,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "richmond-2026-12.epub",
+          "bytes": 2554040,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "richmond-2027.epub",
+          "bytes": 26469260
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-01.epub",
+          "bytes": 2516792,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-02.epub",
+          "bytes": 2321871,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-03.epub",
+          "bytes": 2473036,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-04.epub",
+          "bytes": 2380347,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-05.epub",
+          "bytes": 2537661,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-06.epub",
+          "bytes": 2429683,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-07.epub",
+          "bytes": 2524506,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-08.epub",
+          "bytes": 2520972,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-09.epub",
+          "bytes": 2455180,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-10.epub",
+          "bytes": 2527388,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-11.epub",
+          "bytes": 2455505,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "richmond-2027-12.epub",
+          "bytes": 2560996,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "richmond-2028.epub",
+          "bytes": 26528194
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-01.epub",
+          "bytes": 2507885,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-02.epub",
+          "bytes": 2339242,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-03.epub",
+          "bytes": 2560111,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-04.epub",
+          "bytes": 2363922,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-05.epub",
+          "bytes": 2502155,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-06.epub",
+          "bytes": 2464289,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-07.epub",
+          "bytes": 2528538,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-08.epub",
+          "bytes": 2537615,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-09.epub",
+          "bytes": 2440483,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-10.epub",
+          "bytes": 2530245,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-11.epub",
+          "bytes": 2439108,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "richmond-2028-12.epub",
+          "bytes": 2549360,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - Scranton",
@@ -196,8 +2121,283 @@
       "name": "Scranton",
       "region": "Northeast & Mid-Atlantic",
       "place": "Scranton, Pennsylvania",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "2c97a331a57e05d6994254c2f9c5635d6cacd51ff2348b52b8ca16517ae5dc6b",
+        "2027": "2c97a331a57e05d6994254c2f9c5635d6cacd51ff2348b52b8ca16517ae5dc6b",
+        "2028": "2c97a331a57e05d6994254c2f9c5635d6cacd51ff2348b52b8ca16517ae5dc6b"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "scranton-2026.epub",
+          "bytes": 26464943
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-01.epub",
+          "bytes": 2519606,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-02.epub",
+          "bytes": 2302273,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-03.epub",
+          "bytes": 2554160,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-04.epub",
+          "bytes": 2336577,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-05.epub",
+          "bytes": 2519081,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-06.epub",
+          "bytes": 2437337,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-07.epub",
+          "bytes": 2517477,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-08.epub",
+          "bytes": 2524778,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-09.epub",
+          "bytes": 2477531,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-10.epub",
+          "bytes": 2511616,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-11.epub",
+          "bytes": 2443724,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "scranton-2026-12.epub",
+          "bytes": 2555415,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "scranton-2027.epub",
+          "bytes": 26481036
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-01.epub",
+          "bytes": 2516791,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-02.epub",
+          "bytes": 2321870,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-03.epub",
+          "bytes": 2473034,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-04.epub",
+          "bytes": 2380345,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-05.epub",
+          "bytes": 2537659,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-06.epub",
+          "bytes": 2429682,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-07.epub",
+          "bytes": 2516714,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-08.epub",
+          "bytes": 2520969,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-09.epub",
+          "bytes": 2472237,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-10.epub",
+          "bytes": 2527386,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-11.epub",
+          "bytes": 2449926,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "scranton-2027-12.epub",
+          "bytes": 2569082,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "scranton-2028.epub",
+          "bytes": 26542359
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-01.epub",
+          "bytes": 2507882,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-02.epub",
+          "bytes": 2339241,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-03.epub",
+          "bytes": 2560107,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-04.epub",
+          "bytes": 2363919,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-05.epub",
+          "bytes": 2502154,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-06.epub",
+          "bytes": 2464286,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-07.epub",
+          "bytes": 2520644,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-08.epub",
+          "bytes": 2537612,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-09.epub",
+          "bytes": 2462253,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-10.epub",
+          "bytes": 2530243,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-11.epub",
+          "bytes": 2431466,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "scranton-2028-12.epub",
+          "bytes": 2557286,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - Maple Hill",
@@ -205,8 +2405,283 @@
       "name": "Maple Hill",
       "region": "Midwest",
       "place": "Maple Hill, Kansas",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "7f36389912ed3b3524becd2301e8d5170ec8fc39fe0124a1c2eabde1d93577be",
+        "2027": "7f36389912ed3b3524becd2301e8d5170ec8fc39fe0124a1c2eabde1d93577be",
+        "2028": "7f36389912ed3b3524becd2301e8d5170ec8fc39fe0124a1c2eabde1d93577be"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "maple-hill-2026.epub",
+          "bytes": 26463849
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-01.epub",
+          "bytes": 2519611,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-02.epub",
+          "bytes": 2302279,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-03.epub",
+          "bytes": 2554167,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-04.epub",
+          "bytes": 2336585,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-05.epub",
+          "bytes": 2519087,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-06.epub",
+          "bytes": 2452524,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-07.epub",
+          "bytes": 2517483,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-08.epub",
+          "bytes": 2527743,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-09.epub",
+          "bytes": 2458766,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-10.epub",
+          "bytes": 2511622,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-11.epub",
+          "bytes": 2444637,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "maple-hill-2026-12.epub",
+          "bytes": 2554045,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "maple-hill-2027.epub",
+          "bytes": 26477234
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-01.epub",
+          "bytes": 2516794,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-02.epub",
+          "bytes": 2321877,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-03.epub",
+          "bytes": 2473040,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-04.epub",
+          "bytes": 2380352,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-05.epub",
+          "bytes": 2537665,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-06.epub",
+          "bytes": 2442682,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-07.epub",
+          "bytes": 2516721,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-08.epub",
+          "bytes": 2528444,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-09.epub",
+          "bytes": 2455183,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-10.epub",
+          "bytes": 2527392,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-11.epub",
+          "bytes": 2450806,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "maple-hill-2027-12.epub",
+          "bytes": 2561001,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "maple-hill-2028.epub",
+          "bytes": 26528344
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-01.epub",
+          "bytes": 2507889,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-02.epub",
+          "bytes": 2339248,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-03.epub",
+          "bytes": 2560115,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-04.epub",
+          "bytes": 2363926,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-05.epub",
+          "bytes": 2502160,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-06.epub",
+          "bytes": 2471274,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-07.epub",
+          "bytes": 2520651,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-08.epub",
+          "bytes": 2545336,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-09.epub",
+          "bytes": 2440488,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-10.epub",
+          "bytes": 2530250,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-11.epub",
+          "bytes": 2432448,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "maple-hill-2028-12.epub",
+          "bytes": 2549365,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - OLG Seminary",
@@ -214,8 +2689,283 @@
       "name": "OLG Seminary",
       "region": "Midwest",
       "place": "Denton, Nebraska",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "8b7d81695300036a055ab3c24d49710953b55b7365e82485601e15e38d1374ed",
+        "2027": "8b7d81695300036a055ab3c24d49710953b55b7365e82485601e15e38d1374ed",
+        "2028": "8b7d81695300036a055ab3c24d49710953b55b7365e82485601e15e38d1374ed"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "olg-seminary-2026.epub",
+          "bytes": 26453393
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-01.epub",
+          "bytes": 2519624,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-02.epub",
+          "bytes": 2302291,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-03.epub",
+          "bytes": 2554179,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-04.epub",
+          "bytes": 2336595,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-05.epub",
+          "bytes": 2519101,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-06.epub",
+          "bytes": 2437355,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-07.epub",
+          "bytes": 2517496,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-08.epub",
+          "bytes": 2524797,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-09.epub",
+          "bytes": 2461072,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-10.epub",
+          "bytes": 2511633,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-11.epub",
+          "bytes": 2443743,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "olg-seminary-2026-12.epub",
+          "bytes": 2560331,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "olg-seminary-2027.epub",
+          "bytes": 26463044
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-01.epub",
+          "bytes": 2516809,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-02.epub",
+          "bytes": 2321889,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-03.epub",
+          "bytes": 2473053,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-04.epub",
+          "bytes": 2380363,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-05.epub",
+          "bytes": 2537679,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-06.epub",
+          "bytes": 2429701,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-07.epub",
+          "bytes": 2516734,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-08.epub",
+          "bytes": 2520988,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-09.epub",
+          "bytes": 2460875,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-10.epub",
+          "bytes": 2527404,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-11.epub",
+          "bytes": 2449944,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "olg-seminary-2027-12.epub",
+          "bytes": 2562460,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "olg-seminary-2028.epub",
+          "bytes": 26529363
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-01.epub",
+          "bytes": 2507901,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-02.epub",
+          "bytes": 2339260,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-03.epub",
+          "bytes": 2560126,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-04.epub",
+          "bytes": 2363937,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-05.epub",
+          "bytes": 2502174,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-06.epub",
+          "bytes": 2464304,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-07.epub",
+          "bytes": 2520663,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-08.epub",
+          "bytes": 2537631,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-09.epub",
+          "bytes": 2445647,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-10.epub",
+          "bytes": 2530260,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-11.epub",
+          "bytes": 2431485,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "olg-seminary-2028-12.epub",
+          "bytes": 2560902,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - Quincy",
@@ -223,8 +2973,283 @@
       "name": "Quincy",
       "region": "Midwest",
       "place": "Quincy, Illinois",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "d3d2fd90fc3a6edfcc583bb399ac1d2686f1e5b7ee83cf1f533f9f3562511265",
+        "2027": "d3d2fd90fc3a6edfcc583bb399ac1d2686f1e5b7ee83cf1f533f9f3562511265",
+        "2028": "d3d2fd90fc3a6edfcc583bb399ac1d2686f1e5b7ee83cf1f533f9f3562511265"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "quincy-2026.epub",
+          "bytes": 26464529
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-01.epub",
+          "bytes": 2519598,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-02.epub",
+          "bytes": 2302266,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-03.epub",
+          "bytes": 2554153,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-04.epub",
+          "bytes": 2336571,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-05.epub",
+          "bytes": 2519073,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-06.epub",
+          "bytes": 2437330,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-07.epub",
+          "bytes": 2517469,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-08.epub",
+          "bytes": 2534256,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-09.epub",
+          "bytes": 2458753,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-10.epub",
+          "bytes": 2511609,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-11.epub",
+          "bytes": 2443717,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "quincy-2026-12.epub",
+          "bytes": 2564290,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "quincy-2027.epub",
+          "bytes": 26470143
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-01.epub",
+          "bytes": 2516782,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-02.epub",
+          "bytes": 2321864,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-03.epub",
+          "bytes": 2473026,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-04.epub",
+          "bytes": 2380338,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-05.epub",
+          "bytes": 2537652,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-06.epub",
+          "bytes": 2429674,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-07.epub",
+          "bytes": 2516707,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-08.epub",
+          "bytes": 2526745,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-09.epub",
+          "bytes": 2455170,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-10.epub",
+          "bytes": 2527379,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-11.epub",
+          "bytes": 2449919,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "quincy-2027-12.epub",
+          "bytes": 2569471,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "quincy-2028.epub",
+          "bytes": 26523416
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-01.epub",
+          "bytes": 2507875,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-02.epub",
+          "bytes": 2339235,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-03.epub",
+          "bytes": 2560101,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-04.epub",
+          "bytes": 2363913,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-05.epub",
+          "bytes": 2502146,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-06.epub",
+          "bytes": 2464280,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-07.epub",
+          "bytes": 2520636,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-08.epub",
+          "bytes": 2541679,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-09.epub",
+          "bytes": 2440474,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-10.epub",
+          "bytes": 2530237,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-11.epub",
+          "bytes": 2431459,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "quincy-2028-12.epub",
+          "bytes": 2556044,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - Niagara",
@@ -232,8 +3257,283 @@
       "name": "Niagara",
       "region": "Canada",
       "place": "Niagara, Ontario",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "15b3eed71134cfeb5e509840656d74a5b117e8213f1bc66a05c535b4530a343c",
+        "2027": "15b3eed71134cfeb5e509840656d74a5b117e8213f1bc66a05c535b4530a343c",
+        "2028": "15b3eed71134cfeb5e509840656d74a5b117e8213f1bc66a05c535b4530a343c"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "niagara-2026.epub",
+          "bytes": 26458935
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-01.epub",
+          "bytes": 2519600,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-02.epub",
+          "bytes": 2302268,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-03.epub",
+          "bytes": 2554155,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-04.epub",
+          "bytes": 2336572,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-05.epub",
+          "bytes": 2519075,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-06.epub",
+          "bytes": 2446254,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-07.epub",
+          "bytes": 2517469,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-08.epub",
+          "bytes": 2524772,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-09.epub",
+          "bytes": 2454800,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-10.epub",
+          "bytes": 2511609,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-11.epub",
+          "bytes": 2455228,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "niagara-2026-12.epub",
+          "bytes": 2551707,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "niagara-2027.epub",
+          "bytes": 26463671
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-01.epub",
+          "bytes": 2516785,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-02.epub",
+          "bytes": 2321866,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-03.epub",
+          "bytes": 2473028,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-04.epub",
+          "bytes": 2380340,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-05.epub",
+          "bytes": 2537654,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-06.epub",
+          "bytes": 2436606,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-07.epub",
+          "bytes": 2516709,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-08.epub",
+          "bytes": 2520964,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-09.epub",
+          "bytes": 2451126,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-10.epub",
+          "bytes": 2524026,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-11.epub",
+          "bytes": 2458185,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "niagara-2027-12.epub",
+          "bytes": 2560990,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "niagara-2028.epub",
+          "bytes": 26513760
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-01.epub",
+          "bytes": 2507879,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-02.epub",
+          "bytes": 2339237,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-03.epub",
+          "bytes": 2560103,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-04.epub",
+          "bytes": 2363915,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-05.epub",
+          "bytes": 2502149,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-06.epub",
+          "bytes": 2471436,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-07.epub",
+          "bytes": 2520639,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-08.epub",
+          "bytes": 2537608,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-09.epub",
+          "bytes": 2435402,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-10.epub",
+          "bytes": 2526300,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-11.epub",
+          "bytes": 2438591,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "niagara-2028-12.epub",
+          "bytes": 2545190,
+          "month": 12
+        }
+      ]
     },
     {
       "version": "Rubrics 1960 - Guadalajara",
@@ -241,8 +3541,283 @@
       "name": "Guadalajara",
       "region": "Mexico",
       "place": "Guadalajara, Mexico",
-      "built": {},
-      "files": []
+      "built": {
+        "2026": "99210437a723f9660b2ab5c1ec206eaac86225eb3edf06d7b33b44108412cf68",
+        "2027": "99210437a723f9660b2ab5c1ec206eaac86225eb3edf06d7b33b44108412cf68",
+        "2028": "99210437a723f9660b2ab5c1ec206eaac86225eb3edf06d7b33b44108412cf68"
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "guadalajara-2026.epub",
+          "bytes": 26490682
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-01.epub",
+          "bytes": 2519627,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-02.epub",
+          "bytes": 2303852,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-03.epub",
+          "bytes": 2555479,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-04.epub",
+          "bytes": 2336558,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-05.epub",
+          "bytes": 2525918,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-06.epub",
+          "bytes": 2437318,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-07.epub",
+          "bytes": 2517707,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-08.epub",
+          "bytes": 2531700,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-09.epub",
+          "bytes": 2454788,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-10.epub",
+          "bytes": 2538816,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-11.epub",
+          "bytes": 2442198,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2026,
+          "name": "guadalajara-2026-12.epub",
+          "bytes": 2561153,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "guadalajara-2027.epub",
+          "bytes": 26486468
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-01.epub",
+          "bytes": 2516770,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-02.epub",
+          "bytes": 2325689,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-03.epub",
+          "bytes": 2473678,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-04.epub",
+          "bytes": 2380326,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-05.epub",
+          "bytes": 2537640,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-06.epub",
+          "bytes": 2429662,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-07.epub",
+          "bytes": 2517448,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-08.epub",
+          "bytes": 2527731,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-09.epub",
+          "bytes": 2451113,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-10.epub",
+          "bytes": 2548810,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-11.epub",
+          "bytes": 2448824,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2027,
+          "name": "guadalajara-2027-12.epub",
+          "bytes": 2563241,
+          "month": 12
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "guadalajara-2028.epub",
+          "bytes": 26550403
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-01.epub",
+          "bytes": 2507929,
+          "month": 1
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-02.epub",
+          "bytes": 2341071,
+          "month": 2
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-03.epub",
+          "bytes": 2561483,
+          "month": 3
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-04.epub",
+          "bytes": 2363901,
+          "month": 4
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-05.epub",
+          "bytes": 2507627,
+          "month": 5
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-06.epub",
+          "bytes": 2464268,
+          "month": 6
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-07.epub",
+          "bytes": 2523010,
+          "month": 7
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-08.epub",
+          "bytes": 2542230,
+          "month": 8
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-09.epub",
+          "bytes": 2435388,
+          "month": 9
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-10.epub",
+          "bytes": 2546263,
+          "month": 10
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-11.epub",
+          "bytes": 2430086,
+          "month": 11
+        },
+        {
+          "type": "month",
+          "year": 2028,
+          "name": "guadalajara-2028-12.epub",
+          "bytes": 2561693,
+          "month": 12
+        }
+      ]
     }
   ]
 }
