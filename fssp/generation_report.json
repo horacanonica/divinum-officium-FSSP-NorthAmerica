@@ -1,0 +1,539 @@
+{
+ "tags": [
+  [
+   "denver",
+   "12-08",
+   "Immaculate Conception, Principal Patroness",
+   "already I class"
+  ],
+  [
+   "springfield-il",
+   "12-08",
+   "Immaculate Conception, Principal Patroness",
+   "already I class"
+  ],
+  [
+   "fort-wayne-south-bend",
+   "12-08",
+   "Immaculate Conception, Principal Patroness",
+   "already I class"
+  ],
+  [
+   "baltimore",
+   "12-08",
+   "Immaculate Conception, Principal Patroness",
+   "already I class"
+  ],
+  [
+   "lincoln",
+   "12-08",
+   "Immaculate Conception, Principal Patroness",
+   "already I class"
+  ],
+  [
+   "manchester",
+   "03-19",
+   "St. Joseph, Principal Patron",
+   "already I class"
+  ],
+  [
+   "paterson",
+   "06-24",
+   "St. John the Baptist, Principal Patron",
+   "already I class"
+  ],
+  [
+   "oklahoma-city",
+   "03-19",
+   "St. Joseph, Principal Patron",
+   "already I class"
+  ],
+  [
+   "tulsa",
+   "03-19",
+   "St. Joseph, Principal Patron",
+   "already I class"
+  ],
+  [
+   "philadelphia",
+   "06-29",
+   "Ss. Peter and Paul, Principal Patrons",
+   "already I class"
+  ],
+  [
+   "providence",
+   "06-29",
+   "Ss. Peter and Paul, Principal Patrons",
+   "already I class"
+  ],
+  [
+   "galveston-houston",
+   "12-08",
+   "Immaculate Conception, Principal Patroness",
+   "already I class"
+  ],
+  [
+   "tyler",
+   "12-08",
+   "Immaculate Conception, Principal Patroness",
+   "already I class"
+  ],
+  [
+   "calgary",
+   "12-08",
+   "Immaculate Conception, Principal Patroness",
+   "already I class"
+  ],
+  [
+   "ottawa",
+   "06-24",
+   "Nativity of St. John the Baptist, Patron",
+   "already I class"
+  ],
+  [
+   "colorado-springs-immaculate-conception",
+   "12-08",
+   "Immaculate Conception",
+   "already I class"
+  ],
+  [
+   "sarasota-christ-the-king",
+   "movable:last-sunday-october",
+   "Christ the King",
+   "movable, already I class"
+  ],
+  [
+   "naples-corpus-christi",
+   "movable:corpus-christi",
+   "Corpus Christi",
+   "movable, already I class"
+  ],
+  [
+   "fort-myers-resurrection",
+   "movable:easter",
+   "Resurrection (Easter Sunday)",
+   "movable, already I class"
+  ],
+  [
+   "rockdale-st-joseph",
+   "03-19",
+   "St. Joseph, Spouse of the BVM",
+   "already I class"
+  ],
+  [
+   "naperville-ss-peter-paul",
+   "06-29",
+   "Ss. Peter & Paul",
+   "already I class"
+  ],
+  [
+   "fort-wayne-sacred-heart",
+   "movable:sacred-heart",
+   "Most Sacred Heart of Jesus",
+   "movable, already I class"
+  ],
+  [
+   "minneapolis-all-saints",
+   "11-01",
+   "All Saints",
+   "already I class"
+  ],
+  [
+   "omaha-immaculate-conception",
+   "12-08",
+   "Immaculate Conception",
+   "already I class"
+  ],
+  [
+   "tulsa-most-precious-blood",
+   "07-01",
+   "Most Precious Blood",
+   "already I class"
+  ],
+  [
+   "scranton-st-michael",
+   "09-29",
+   "Dedication of St. Michael the Archangel",
+   "already I class"
+  ],
+  [
+   "rapid-city-immaculate-conception",
+   "12-08",
+   "Immaculate Conception",
+   "already I class"
+  ],
+  [
+   "el-paso-immaculate-conception",
+   "12-08",
+   "Immaculate Conception",
+   "already I class"
+  ],
+  [
+   "tyler-st-joseph-worker",
+   "05-01",
+   "St. Joseph the Worker",
+   "already I class"
+  ],
+  [
+   "richmond-st-joseph",
+   "03-19",
+   "St. Joseph, Spouse of the BVM",
+   "already I class"
+  ],
+  [
+   "tacoma-st-joseph",
+   "03-19",
+   "St. Joseph, Spouse of the BVM",
+   "already I class"
+  ]
+ ],
+ "collisions": [],
+ "elevated": [
+  [
+   "fresno",
+   "10-03",
+   "St. Thérèse of Lisieux, Principal Patroness",
+   "10-03nl1"
+  ],
+  [
+   "san-diego",
+   "11-13",
+   "St. Didacus of Alcalá, Principal Patron",
+   "11-13nl1"
+  ],
+  [
+   "orlando",
+   "05-11",
+   "St. James (the Less), Principal Patron — i.e. Ss. Philip & James",
+   "05-11nl1r"
+  ],
+  [
+   "atlanta",
+   "08-22",
+   "Immaculate Heart of Mary, Principal Patroness",
+   "08-22nl1"
+  ],
+  [
+   "atlanta",
+   "09-03",
+   "St. Pius X, Secondary Patron",
+   "09-03nl2"
+  ],
+  [
+   "boise",
+   "12-27",
+   "St. John the Evangelist, Principal Patron",
+   "12-27nl1"
+  ],
+  [
+   "joliet",
+   "12-03",
+   "St. Francis Xavier, Patron",
+   "12-03nl1"
+  ],
+  [
+   "indianapolis",
+   "12-03",
+   "St. Francis Xavier, Principal Patron",
+   "12-03nl1"
+  ],
+  [
+   "st-paul-minneapolis",
+   "01-25",
+   "Conversion of St. Paul, Principal Patron",
+   "01-25nl1r"
+  ],
+  [
+   "omaha",
+   "11-22",
+   "St. Cecilia, Virgin & Martyr, Principal Patroness",
+   "11-22nl1"
+  ],
+  [
+   "manchester",
+   "03-17",
+   "St. Patrick, Secondary Patron",
+   "03-17nl2"
+  ],
+  [
+   "cincinnati",
+   "01-29",
+   "St. Francis de Sales, Principal Patron",
+   "01-29nl1"
+  ],
+  [
+   "cincinnati",
+   "05-13",
+   "St. Robert Bellarmine, Secondary Patron",
+   "05-13nl2"
+  ],
+  [
+   "cincinnati",
+   "11-15",
+   "St. Albert the Great, Secondary Patron",
+   "11-15nl2"
+  ],
+  [
+   "oklahoma-city",
+   "12-12",
+   "Our Lady of Guadalupe",
+   "12-12nl2n"
+  ],
+  [
+   "harrisburg",
+   "03-17",
+   "St. Patrick, Principal Patron",
+   "03-17nl1"
+  ],
+  [
+   "scranton",
+   "09-03",
+   "St. Pius X, Principal Patron",
+   "09-03nl1"
+  ],
+  [
+   "el-paso",
+   "03-17",
+   "St. Patrick, Principal Patron",
+   "03-17nl1"
+  ],
+  [
+   "fort-worth",
+   "03-17",
+   "St. Patrick, Principal Patron",
+   "03-17nl1"
+  ],
+  [
+   "richmond",
+   "07-19",
+   "St. Vincent de Paul, Principal Patron",
+   "07-19nl1"
+  ],
+  [
+   "seattle",
+   "07-25",
+   "St. James the Greater, Principal Patron",
+   "07-25nl1"
+  ],
+  [
+   "vancouver",
+   "10-07",
+   "Our Lady of the Holy Rosary, Principal Patroness",
+   "10-07nl1"
+  ],
+  [
+   "montreal",
+   "05-31",
+   "Queenship of Mary, principal feast of the Archdiocese",
+   "05-31nl1"
+  ],
+  [
+   "montreal",
+   "09-12",
+   "Holy Name of Mary — St. Mary, Principal Patroness of the ecclesiastical province of Québec",
+   "09-12nl1"
+  ],
+  [
+   "ottawa",
+   "03-17",
+   "St. Patrick, Patron",
+   "03-17nl1"
+  ],
+  [
+   "st-catharines",
+   "11-25",
+   "St. Catherine of Alexandria, Virgin & Martyr, Principal Patroness",
+   "11-25nl1"
+  ],
+  [
+   "saskatoon",
+   "06-30",
+   "St. Paul (Commemoration of St. Paul), Principal Patron",
+   "06-30nl1"
+  ],
+  [
+   "clarkdale-st-cecilia",
+   "11-22",
+   "St. Cecilia, Virgin & Martyr",
+   "11-22nl1"
+  ],
+  [
+   "northridge-st-vitus",
+   "06-15",
+   "St. Vitus, Martyr",
+   "06-15nl1"
+  ],
+  [
+   "camarillo-st-mary-magdalen",
+   "07-22",
+   "St. Mary Magdalen, Penitent",
+   "07-22nl1"
+  ],
+  [
+   "san-diego-st-anne",
+   "07-26",
+   "St. Anne",
+   "07-26nl1"
+  ],
+  [
+   "littleton-ol-mount-carmel",
+   "07-16",
+   "Our Lady of Mount Carmel",
+   "07-16nl1"
+  ],
+  [
+   "mableton-st-francis-de-sales",
+   "01-29",
+   "St. Francis de Sales, Bishop & Doctor",
+   "01-29nl1"
+  ],
+  [
+   "quincy-st-rose-of-lima",
+   "08-30",
+   "St. Rose of Lima, Virgin",
+   "08-30nl1"
+  ],
+  [
+   "south-bend-st-stanislaus",
+   "05-07",
+   "St. Stanislaus, Bishop & Martyr",
+   "05-07nl1"
+  ],
+  [
+   "maple-hill-st-john-vianney",
+   "08-08",
+   "St. John Mary Vianney, Confessor",
+   "08-09nl1"
+  ],
+  [
+   "baltimore-st-alphonsus",
+   "08-02",
+   "St. Alphonsus Liguori, Bishop & Doctor",
+   "08-02nl1"
+  ],
+  [
+   "lincoln-st-francis-of-assisi",
+   "10-04",
+   "St. Francis of Assisi, Confessor",
+   "10-04nl1"
+  ],
+  [
+   "denton-olgs-seminary",
+   "11-04",
+   "St. Charles Borromeo, Principal Patron of Seminaries",
+   "11-04nl1"
+  ],
+  [
+   "vienna-queen-holy-rosary",
+   "10-07",
+   "Our Lady of the Most Holy Rosary",
+   "10-07nl1"
+  ],
+  [
+   "irving-mater-dei",
+   "10-11",
+   "Maternity of the BVM (Mater Dei)",
+   "10-11nl1"
+  ],
+  [
+   "fort-worth-st-benedict",
+   "03-21",
+   "St. Benedict, Abbot",
+   "03-21nl1"
+  ],
+  [
+   "houston-regina-caeli",
+   "05-31",
+   "Queenship of the BVM (Regina Caeli)",
+   "05-31nl1"
+  ],
+  [
+   "chesapeake-st-benedict",
+   "03-21",
+   "St. Benedict, Abbot",
+   "03-21nl1"
+  ],
+  [
+   "edmonds-north-american-martyrs",
+   "09-26",
+   "North American Martyrs (Ss. Isaac Jogues, Jean de Brébeuf & Companions)",
+   "09-26nl1n"
+  ],
+  [
+   "calgary-st-anthony",
+   "06-13",
+   "St. Anthony of Padua",
+   "06-13nl1"
+  ],
+  [
+   "montreal-st-irenee",
+   "06-28",
+   "St. Irenaeus, Bishop & Martyr",
+   "06-28nl1"
+  ],
+  [
+   "thorold-st-aloysius",
+   "06-21",
+   "St. Aloysius Gonzaga, Confessor",
+   "06-21nl1"
+  ]
+ ],
+ "hidden_dioceses": {
+  "little-rock": [
+   "02-03"
+  ],
+  "sacramento": [
+   "06-30"
+  ],
+  "miami": [
+   "diocese note"
+  ],
+  "lexington": [
+   "08-22"
+  ],
+  "allentown": [
+   "movable:pentecost+1"
+  ],
+  "edmonton": [
+   "05-01",
+   "diocese note"
+  ],
+  "quebec": [
+   "diocese note"
+  ]
+ },
+ "hidden_sites": {
+  "phoenix-mater-misericordiae": "own open item",
+  "cabot-st-john-baptist": "diocese little-rock hidden",
+  "springdale-ol-sorrows": "diocese little-rock hidden",
+  "fresno-holy-cross": "own open item",
+  "sacramento-st-stephen": "diocese sacramento hidden",
+  "littleton-carmel-holy-spirit": "own open item",
+  "ocala-ol-queen-of-peace": "own open item",
+  "miami-ol-belen": "own open item",
+  "post-falls-st-joan-of-arc": "St. Joan of Arc has no proper in the 1962 base (05-30 is St. Felix I); \"propers: base\" is wrong",
+  "brookville-ss-philomena-cecilia": "own open item",
+  "georgetown-st-francis-de-sales": "own open item",
+  "nashua-st-stanislaus": "own open item",
+  "bethlehem-holy-ghost": "diocese allentown hidden",
+  "allentown-st-stephen-of-hungary": "diocese allentown hidden",
+  "harrisburg-st-lawrence": "own open item",
+  "conshohocken-st-mary": "own open item",
+  "providence-st-mary-broadway": "own open item",
+  "edmonton-assumption": "diocese edmonton hidden",
+  "edmonton-st-edmund": "own open item",
+  "quebec-st-zephirin": "diocese quebec hidden",
+  "ottawa-st-clement": "own open item",
+  "saskatoon-sacred-heart": "own open item"
+ },
+ "holy_family": [
+  [
+   "dayton-holy-family",
+   "NAP-site-dayton-holy-family"
+  ],
+  [
+   "vancouver-holy-family",
+   "NAP-site-vancouver-holy-family"
+  ]
+ ]
+}
