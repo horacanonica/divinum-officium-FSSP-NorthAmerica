@@ -3,7 +3,7 @@
 
     python3 scripts/epub_library/cli.py calendars
     python3 scripts/epub_library/cli.py plan --event schedule --github-output "$GITHUB_OUTPUT"
-    python3 scripts/epub_library/cli.py build --slug sacramento --year 2026 --output /tmp/epub
+    python3 scripts/epub_library/cli.py build --slug sacramento --year 2026 --variant la --output /tmp/epub
     python3 scripts/epub_library/cli.py merge-catalog --fragments-dir fragments --catalog docs/catalog.json
     python3 scripts/epub_library/cli.py prune-list --catalog docs/catalog.json --assets assets.json
 """
@@ -116,7 +116,7 @@ def cmd_plan(args: argparse.Namespace) -> int:
     )
     # An empty include list makes GitHub Actions reject the matrix. The build
     # job is skipped when count is 0, so this placeholder is never built.
-    matrix = {"include": jobs or [{"slug": "skip", "year": 0, "version": ""}]}
+    matrix = {"include": jobs or [{"slug": "skip", "year": 0, "version": "", "variant": "la"}]}
     payload = {"count": len(jobs), "matrix": matrix, "window": window.as_dict()}
     if args.output:
         Path(args.output).write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
@@ -152,7 +152,7 @@ def cmd_build(args: argparse.Namespace) -> int:
         known = ", ".join(sorted(by_slug))
         print(f"Unknown calendar slug {args.slug}. Known: {known}", file=sys.stderr)
         return 1
-    library.build_year(by_slug[args.slug], args.year, Path(args.output))
+    library.build_year(by_slug[args.slug], args.year, Path(args.output), variant=args.variant)
     return 0
 
 
@@ -231,6 +231,7 @@ def main(argv: list[str] | None = None) -> int:
     build = sub.add_parser("build")
     build.add_argument("--slug", required=True)
     build.add_argument("--year", type=int, required=True)
+    build.add_argument("--variant", choices=library.VARIANTS, default="la")
     build.add_argument("--output", required=True)
     build.set_defaults(func=cmd_build)
 
