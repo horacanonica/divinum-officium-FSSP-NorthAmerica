@@ -1,0 +1,15 @@
+@Sancti/08-10
+
+[Officium]
+S. Laurentii Martyris
+
+[Rank]
+S. Laurentii Martyris;;Duplex I classis;;6;;ex C2a
+
+[Rule]
+ex C2a
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Psalm5 Vespera3=115

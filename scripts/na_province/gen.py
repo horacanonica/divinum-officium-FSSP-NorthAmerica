@@ -44,6 +44,7 @@ COMMONS_TITLE = {
 # Sites whose data contradicts the repo; treated as open questions (see OPEN_QUESTIONS.md)
 DATA_ERRORS = {'post-falls-st-joan-of-arc': 'St. Joan of Arc has no proper in the 1962 base (05-30 is St. Felix I); "propers: base" is wrong'}
 FSSP_TOKEN = 'NAP-fssp'   # transfer-table token shared by every calendar that stacks on FSSP
+CONS_TITLE = 'In Anniversario Dedicationis Omnium Ecclesiarum Consecratarum Dioecesis'
 DED_TITLE = 'In Anniversario Dedicationis Ecclesiæ Cathedralis'
 
 _dump_cache = {}
@@ -113,10 +114,11 @@ class Gen:
         self.files[path] = content
         return name
 
-    def ded_file(self, date):
+    def ded_file(self, date, sfx='ndc', title=None):
+        title = title or DED_TITLE
         c = ('[Officium]\n%s\n\n[Rank]\n%s;;Duplex I classis;;6;;ex C8\n\n[Rule]\nex C8;\n9 lectiones\nFestum Domini\n'
-             % (DED_TITLE, DED_TITLE))
-        return self.sfile(date + 'ndc', c)
+             % (title, title))
+        return self.sfile(date + sfx, c)
 
     def commons_file(self, date, site_or_dio, f):
         title = COMMONS_TITLE[(date, site_or_dio)]
@@ -201,6 +203,10 @@ class Gen:
                 f = self.ded_file(date)
                 title = DED_TITLE
                 saint = None
+            elif it['kind'] == 'dedication_consecrated_churches':
+                f = self.ded_file(date, 'ndcc', CONS_TITLE)
+                title = CONS_TITLE
+                saint = None
             elif it.get('propers') == 'commons':
                 f, title = self.commons_file(date, it['owner'], it)
                 saint = None
@@ -280,14 +286,19 @@ class Gen:
         d = self.d
         # open-question filtering (strict: hide any location with an open item)
         hidden_d, hidden_s = {}, {}
+        legacy = {x['id'] for x in d['dioceses'] if x.get('legacy')}
         for x in d['dioceses']:
+            if x.get('legacy'):
+                continue
             why = [str(f['date']) for f in x['feasts'] if n.is_open(f)]
             if 'CONFIRM' in str(x.get('note', '')) or any('CONFIRM' in str(b) for b in x.get('bishop_commemorations', [])):
                 why.append('diocese note')
             if why:
                 hidden_d[x['id']] = why
         for s in d['sites']:
-            if s['id'] in DATA_ERRORS:
+            if s.get('legacy') or s['diocese'] in legacy:
+                hidden_s[s['id']] = 'legacy calendar kept'
+            elif s['id'] in DATA_ERRORS:
                 hidden_s[s['id']] = DATA_ERRORS[s['id']]
             elif n.is_open(s):
                 hidden_s[s['id']] = 'own open item'
@@ -305,7 +316,7 @@ class Gen:
             '12-12=12-12n=Beatae Mariae Virginis de Guadalupe=3=\n')
         dio_ver = {}
         for x in d['dioceses']:
-            if x['id'] in hidden_d:
+            if x['id'] in hidden_d or x.get('legacy'):
                 continue
             ctry = x['country']
             ver = 'Rubrics 1960 - ' + n.ascii_label(x['name'])

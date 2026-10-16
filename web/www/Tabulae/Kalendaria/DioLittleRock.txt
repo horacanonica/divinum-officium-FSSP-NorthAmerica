@@ -1,0 +1,4 @@
+#Propria Officia Diocese of Little Rock (generated from fssp/na_province.yaml)
+02-03=02-03ndcc~02-03=In Anniversario Dedicationis Omnium Ecclesiarum Consecratarum Dioecesis=1=
+11-30=11-30nl1=S. Andreæ Apostoli=1=
+12-01=12-01ndc=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

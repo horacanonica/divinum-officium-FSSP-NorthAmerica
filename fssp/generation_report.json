@@ -7,6 +7,12 @@
    "already I class"
   ],
   [
+   "miami",
+   "12-08",
+   "Immaculate Conception, Principal Patroness",
+   "already I class"
+  ],
+  [
    "springfield-il",
    "12-08",
    "Immaculate Conception, Principal Patroness",
@@ -88,6 +94,12 @@
    "ottawa",
    "06-24",
    "Nativity of St. John the Baptist, Patron",
+   "already I class"
+  ],
+  [
+   "cabot-st-john-baptist",
+   "06-24",
+   "Nativity of St. John the Baptist",
    "already I class"
   ],
   [
@@ -189,6 +201,12 @@
  ],
  "collisions": [],
  "elevated": [
+  [
+   "little-rock",
+   "11-30",
+   "St. Andrew, Apostle, Principal Patron",
+   "11-30nl1"
+  ],
   [
    "fresno",
    "10-03",
@@ -358,6 +376,12 @@
    "11-22nl1"
   ],
   [
+   "springdale-ol-sorrows",
+   "09-15",
+   "Seven Sorrows of the BVM",
+   "09-15nl1"
+  ],
+  [
    "northridge-st-vitus",
    "06-15",
    "St. Vitus, Martyr",
@@ -430,6 +454,12 @@
    "10-07nl1"
   ],
   [
+   "harrisburg-st-lawrence",
+   "08-10",
+   "St. Lawrence, Deacon & Martyr",
+   "08-10nl1"
+  ],
+  [
    "irving-mater-dei",
    "10-11",
    "Maternity of the BVM (Mater Dei)",
@@ -479,15 +509,6 @@
   ]
  ],
  "hidden_dioceses": {
-  "little-rock": [
-   "02-03"
-  ],
-  "sacramento": [
-   "06-30"
-  ],
-  "miami": [
-   "diocese note"
-  ],
   "lexington": [
    "08-22"
   ],
@@ -504,10 +525,8 @@
  },
  "hidden_sites": {
   "phoenix-mater-misericordiae": "own open item",
-  "cabot-st-john-baptist": "diocese little-rock hidden",
-  "springdale-ol-sorrows": "diocese little-rock hidden",
   "fresno-holy-cross": "own open item",
-  "sacramento-st-stephen": "diocese sacramento hidden",
+  "sacramento-st-stephen": "legacy calendar kept",
   "littleton-carmel-holy-spirit": "own open item",
   "ocala-ol-queen-of-peace": "own open item",
   "miami-ol-belen": "own open item",
@@ -517,7 +536,6 @@
   "nashua-st-stanislaus": "own open item",
   "bethlehem-holy-ghost": "diocese allentown hidden",
   "allentown-st-stephen-of-hungary": "diocese allentown hidden",
-  "harrisburg-st-lawrence": "own open item",
   "conshohocken-st-mary": "own open item",
   "providence-st-mary-broadway": "own open item",
   "edmonton-assumption": "diocese edmonton hidden",

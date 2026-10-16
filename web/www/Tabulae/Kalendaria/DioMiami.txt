@@ -1,0 +1,2 @@
+#Propria Officia Archdiocese of Miami (generated from fssp/na_province.yaml)
+01-27=01-27ndc~01-27=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=

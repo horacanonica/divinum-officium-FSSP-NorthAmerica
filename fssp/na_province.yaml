@@ -49,7 +49,7 @@ dioceses:
     name: Diocese of Little Rock
     country: US
     feasts:
-      - {date: "02-03", title: "Dedication of Consecrated Churches", rank: I, kind: dedication_consecrated_churches, condition: "only in consecrated churches — CONFIRM whether Cabot/Springdale churches are consecrated; default: do not implement"}
+      - {date: "02-03", title: "Dedication of Consecrated Churches", rank: I, kind: dedication_consecrated_churches, condition: "only in consecrated churches", note: "ANSWERED 2026-10-16: assume churches are consecrated unless stated otherwise"}
       - {date: "11-30", title: "St. Andrew, Apostle, Principal Patron", rank: I, kind: patron_principal, propers: base}
       - {date: "12-01", title: "Dedication of the Cathedral Church (transferred from 11-30)", rank: I, kind: dedication_cathedral}
     bishop_commemorations:
@@ -79,10 +79,11 @@ dioceses:
   - id: sacramento
     name: Diocese of Sacramento
     country: US
-    note: "Layer already exists in repo — reconcile, do not duplicate."
+    legacy: true   # ANSWERED 2026-10-16: do not change Sacramento; the legacy "Rubrics 1960 - Sacramento" calendar is correct. Not generated.
+    note: "Layer already exists in repo — legacy calendar kept as is."
     feasts:
       - {date: "03-17", title: "St. Patrick", rank: I, kind: other, propers: base}
-      - {date: "06-30", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral, note: "When not on Sunday, transferred to Sunday before or after at the Bishop's direction — CONFIRM which; default keep 06-30"}
+      - {date: "06-30", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral, note: "legacy calendar handles this"}
       - {date: "12-12", title: "Our Lady of Guadalupe, Principal Patroness", rank: I, kind: patron_principal, propers: base, note: "existing 3-nocturn override"}
     bishop_commemorations:
       - {date: "05-31", text: "Episcopal consecration, Bp. Jaime Soto"}
@@ -141,8 +142,10 @@ dioceses:
   - id: miami
     name: Archdiocese of Miami
     country: US
-    note: "NOT LISTED in the Ordo supplement although an apostolate is listed in the directory. Feasts unknown — CONFIRM (principal patron + cathedral dedication date). Create empty layer with TODO."
-    feasts: []
+    note: "Not in the Ordo supplement. Looked up 2026-10-16 (Wikipedia: Archdiocese of Miami; Cathedral of Saint Mary (Miami)): patron Our Lady of the Immaculate Conception; Cathedral of St. Mary dedicated 27 Jan 1957. Dedication date is from Wikipedia only - verify with the archdiocese."
+    feasts:
+      - {date: "12-08", title: "Immaculate Conception, Principal Patroness", rank: as_on_feast, kind: patron_principal}
+      - {date: "01-27", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
     bishop_commemorations: []
 
   - id: atlanta
@@ -568,7 +571,7 @@ sites:
      titulars: [{title: "St. Anthony of Padua", date: "06-13", propers: base}],
      community_patron: {title: "Exaltation of the Holy Cross", date: "09-14", propers: base, status: CONFIRM}}
   - {id: sacramento-st-stephen, name: "St. Stephen, the First Martyr", city: "Sacramento, CA", country: US, diocese: sacramento, kind: parish,
-     titulars: [{title: "St. Stephen, Protomartyr", date: "12-26", propers: base}], note: "Layer exists — reconcile"}
+     titulars: [{title: "St. Stephen, Protomartyr", date: "12-26", propers: base}], legacy: true, note: "Legacy calendar kept as is"}
   - {id: san-diego-st-anne, name: "St. Anne Church", city: "San Diego, CA", country: US, diocese: san-diego, kind: parish,
      titulars: [{title: "St. Anne", date: "07-26", propers: base}]}
   - {id: colorado-springs-immaculate-conception, name: "Immaculate Conception", city: "Colorado Springs, CO", country: US, diocese: colorado-springs, kind: parish,
@@ -642,7 +645,7 @@ sites:
      titulars: [{title: "St. Stephen of Hungary, King & Confessor", date: "09-02", propers: base}]}
   - {id: harrisburg-st-lawrence, name: "St. Lawrence Church (Mater Dei Latin Mass Community)", city: "Harrisburg, PA", country: US, diocese: harrisburg, kind: community,
      titulars: [{title: "St. Lawrence, Deacon & Martyr", date: "08-10", propers: base}],
-     community_patron: {title: "Mater Dei — Maternity of the BVM", date: "10-11", propers: base, status: CONFIRM}}
+     note: "ANSWERED 2026-10-16: Mater Dei community patron is NOT elevated"}
   - {id: conshohocken-st-mary, name: "St. Mary Catholic Church", city: "Conshohocken, PA", country: US, diocese: philadelphia, kind: parish,
      titulars: [{title: "St. Mary — Assumption (default)", date: "08-15", propers: base, status: CONFIRM}]}
   - {id: scranton-st-michael, name: "St. Michael's Church", city: "Scranton, PA", country: US, diocese: scranton, kind: parish,

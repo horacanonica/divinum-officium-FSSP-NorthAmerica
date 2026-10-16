@@ -1,0 +1,2 @@
+#Propria Officia Our Lady of Sorrows Church, Springdale, AR (generated from fssp/na_province.yaml)
+09-15=09-15nl1~09-15cc=Septem Dolorum Beatæ Mariæ Virginis=1=

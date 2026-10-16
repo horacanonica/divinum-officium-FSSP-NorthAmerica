@@ -3,12 +3,15 @@
 Per instruction: nothing below is guessed. Each location with an unanswered question is **not generated and not listed in the version menu** (`horas.dialog`). A location whose diocese is held back is held back too (its chain would be incomplete).
 When an answer arrives: edit `fssp/na_province.yaml` (remove `CONFIRM`/`pending`, fill the value), run `python3 -I scripts/na_province/gen.py`, then `transfers.py`, then the tests.
 
+## Answered 2026-10-16
+- Little Rock Feb 3: churches are assumed consecrated unless stated otherwise (applies to all locations) → implemented; Cabot and Springdale restored.
+- Sacramento: leave unchanged; the legacy `Rubrics 1960 - Sacramento` is correct → no new Sacramento layer or St. Stephen site is generated.
+- Miami: looked up (Wikipedia): patron Our Lady of the Immaculate Conception (Dec 8, already I class); Cathedral of St. Mary dedicated 27 Jan 1957 → implemented. **Verify the Jan 27 date with the archdiocese** (single source).
+- Harrisburg: Mater Dei community patron is not elevated → site restored.
+
 ## Dioceses held back (and the sites that depend on them)
 | Diocese | Question | Also hides |
 |---|---|---|
-| Little Rock | Feb 3 Dedication of Consecrated Churches — only in consecrated churches. Are the Cabot / Springdale churches consecrated? (Spec default was "do not implement".) | Cabot (St. John the Baptist), Springdale (Our Lady of Sorrows) |
-| Sacramento | Jun 30 cathedral dedication — when not on a Sunday, transferred to the Sunday before or after at the Bishop's direction. Which? (Spec default: keep Jun 30.) | Sacramento (St. Stephen) — the legacy `Rubrics 1960 - Sacramento` calendar is untouched and still available |
-| Miami | Not in the Ordo supplement: principal patron and cathedral-dedication date unknown. | Miami (Our Lady of Belen) |
 | Lexington | Aug 22 "Queenship of Mary": 1962 Queenship is May 31, Aug 22 is the Immaculate Heart. Which texts? (Spec default: Queenship texts with comm. of Immaculate Heart.) | Georgetown (St. Francis de Sales / Regina Pacis) |
 | Allentown | "Mary, Mother of the Church": Monday after Pentecost is a privileged I-class day. Which date does the diocese use? (Spec default: first free day after the octave.) | Bethlehem (Holy Ghost), Allentown (St. Stephen of Hungary) |
 | Edmonton | No principal patron listed; the Ordo gives Abp. Richard Smith (Vancouver) as ordinary — bishop data likely stale; May 1 dedication clashes with St. Joseph the Worker (I class) — which day? | Edmonton (Assumption), Edmonton (St. Edmund's) |
@@ -25,7 +28,6 @@ When an answer arrives: edit `fssp/na_province.yaml` (remove `CONFIRM`/`pending`
 | Brookville — Ss. Philomena & Cecilia | Philomena (Aug 11) was removed from the calendar in 1961; elevate her anyway (built from Common of a Virgin Martyr)? |
 | Georgetown — Regina Pacis community | Date of Regina Pacis (also blocked by Lexington). |
 | Nashua — St. Stanislaus | Stanislaus Bishop & Martyr (May 7) or Stanislaus Kostka (Nov 13)? (A legacy `Rubrics 1960 - Nashua` calendar exists and is untouched.) |
-| Harrisburg — St. Lawrence / Mater Dei | Community patron Mater Dei (Oct 11): elevate as well as St. Lawrence? |
 | Conshohocken — St. Mary | Which feast of St. Mary (Assumption assumed)? |
 | Providence — St. Mary on Broadway | Which feast of St. Mary (Assumption assumed)? |
 | Edmonton — St. Edmund's | Edmund of Canterbury (Nov 16) or Edmund, King & Martyr (Nov 20)? |

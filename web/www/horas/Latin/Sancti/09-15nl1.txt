@@ -1,0 +1,13 @@
+@Sancti/09-15
+
+[Officium]
+Septem Dolorum Beatæ Mariæ Virginis
+
+[Rank]
+Septem Dolorum Beatæ Mariæ Virginis;;Duplex I classis;;6;;ex C11
+
+[Rule]
+ex C11;
+9 lectiones
+Psalmi Dominica
+Antiphonas horas

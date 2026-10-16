@@ -23,6 +23,7 @@ Rubrics 1960 - Baltimore,Baltimore,1960|NAP-fssp,1960,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Niagara,Niagara,1960|NAP-fssp,1960,Rubrics 1960 - FSSP Canada
 Rubrics 1960 - FSSP Canada,CAN1960,1960|NAP-fssp,1960,Rubrics 1960 - FSSP
 Rubrics 1960 - Diocese of Phoenix,DioPhoenix,1960|NAP-fssp|NAP-dio-phoenix,1960|NAP-fssp|NAP-dio-phoenix,Rubrics 1960 - FSSP USA
+Rubrics 1960 - Diocese of Little Rock,DioLittleRock,1960|NAP-fssp|NAP-dio-little-rock,1960|NAP-fssp|NAP-dio-little-rock,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Diocese of Fresno,DioFresno,1960|NAP-fssp|NAP-dio-fresno,1960|NAP-fssp|NAP-dio-fresno,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Archdiocese of Los Angeles,DioLosAngeles,1960|NAP-fssp|NAP-dio-los-angeles,1960|NAP-fssp|NAP-dio-los-angeles,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Diocese of San Diego,DioSanDiego,1960|NAP-fssp|NAP-dio-san-diego,1960|NAP-fssp|NAP-dio-san-diego,Rubrics 1960 - FSSP USA
@@ -30,6 +31,7 @@ Rubrics 1960 - Diocese of Colorado Springs,DioColoradoSprings,1960|NAP-fssp|NAP-
 Rubrics 1960 - Archdiocese of Denver,DioDenver,1960|NAP-fssp|NAP-dio-denver,1960|NAP-fssp|NAP-dio-denver,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Diocese of Orlando,DioOrlando,1960|NAP-fssp|NAP-dio-orlando,1960|NAP-fssp|NAP-dio-orlando,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Diocese of Venice,DioVenice,1960|NAP-fssp|NAP-dio-venice,1960|NAP-fssp|NAP-dio-venice,Rubrics 1960 - FSSP USA
+Rubrics 1960 - Archdiocese of Miami,DioMiami,1960|NAP-fssp|NAP-dio-miami,1960|NAP-fssp|NAP-dio-miami,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Archdiocese of Atlanta,DioAtlanta,1960|NAP-fssp|NAP-dio-atlanta,1960|NAP-fssp|NAP-dio-atlanta,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Diocese of Boise,DioBoise,1960|NAP-fssp|NAP-dio-boise,1960|NAP-fssp|NAP-dio-boise,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Diocese of Joliet,DioJoliet,1960|NAP-fssp|NAP-dio-joliet,1960|NAP-fssp|NAP-dio-joliet,Rubrics 1960 - FSSP USA
@@ -66,6 +68,8 @@ Rubrics 1960 - Archdiocese of Ottawa,DioOttawa,1960|NAP-fssp|NAP-dio-ottawa,1960
 Rubrics 1960 - Diocese of St. Catharines,DioStCatharines,1960|NAP-fssp|NAP-dio-st-catharines,1960|NAP-fssp|NAP-dio-st-catharines,Rubrics 1960 - FSSP Canada
 Rubrics 1960 - Diocese of Saskatoon,DioSaskatoon,1960|NAP-fssp|NAP-dio-saskatoon,1960|NAP-fssp|NAP-dio-saskatoon,Rubrics 1960 - FSSP Canada
 Rubrics 1960 - St. Cecilia Church Clarkdale AZ,SiteClarkdaleStCecilia,1960|NAP-fssp|NAP-site-clarkdale-st-cecilia|NAP-dio-phoenix,1960|NAP-fssp|NAP-site-clarkdale-st-cecilia|NAP-dio-phoenix,Rubrics 1960 - Diocese of Phoenix
+Rubrics 1960 - St. John the Baptist Church Cabot AR,SiteCabotStJohnBaptist,1960|NAP-fssp|NAP-site-cabot-st-john-baptist|NAP-dio-little-rock,1960|NAP-fssp|NAP-site-cabot-st-john-baptist|NAP-dio-little-rock,Rubrics 1960 - Diocese of Little Rock
+Rubrics 1960 - Our Lady of Sorrows Church Springdale AR,SiteSpringdaleOlSorrows,1960|NAP-fssp|NAP-site-springdale-ol-sorrows|NAP-dio-little-rock,1960|NAP-fssp|NAP-site-springdale-ol-sorrows|NAP-dio-little-rock,Rubrics 1960 - Diocese of Little Rock
 Rubrics 1960 - St. Vitus Catholic Church Northridge CA,SiteNorthridgeStVitus,1960|NAP-fssp|NAP-site-northridge-st-vitus|NAP-dio-los-angeles,1960|NAP-fssp|NAP-site-northridge-st-vitus|NAP-dio-los-angeles,Rubrics 1960 - Archdiocese of Los Angeles
 Rubrics 1960 - St. Mary Magdalen Chapel Camarillo CA,SiteCamarilloStMaryMagdalen,1960|NAP-fssp|NAP-site-camarillo-st-mary-magdalen|NAP-dio-los-angeles,1960|NAP-fssp|NAP-site-camarillo-st-mary-magdalen|NAP-dio-los-angeles,Rubrics 1960 - Archdiocese of Los Angeles
 Rubrics 1960 - St. Anne Church San Diego CA,SiteSanDiegoStAnne,1960|NAP-fssp|NAP-site-san-diego-st-anne|NAP-dio-san-diego,1960|NAP-fssp|NAP-site-san-diego-st-anne|NAP-dio-san-diego,Rubrics 1960 - Diocese of San Diego
@@ -92,6 +96,7 @@ Rubrics 1960 - Holy Family Church Dayton OH,SiteDaytonHolyFamily,1960|NAP-fssp|N
 Rubrics 1960 - Queen of the Holy Rosary Church Vienna OH,SiteViennaQueenHolyRosary,1960|NAP-fssp|NAP-site-vienna-queen-holy-rosary|NAP-dio-youngstown,1960|NAP-fssp|NAP-site-vienna-queen-holy-rosary|NAP-dio-youngstown,Rubrics 1960 - Diocese of Youngstown
 Rubrics 1960 - Parish of the Most Precious Blood Tulsa OK,SiteTulsaMostPreciousBlood,1960|NAP-fssp|NAP-site-tulsa-most-precious-blood|NAP-dio-tulsa,1960|NAP-fssp|NAP-site-tulsa-most-precious-blood|NAP-dio-tulsa,Rubrics 1960 - Diocese of Tulsa
 Rubrics 1960 - St. Damien Catholic Church Edmond OK,SiteEdmondStDamien,1960|NAP-fssp|NAP-site-edmond-st-damien|NAP-dio-oklahoma-city,1960|NAP-fssp|NAP-site-edmond-st-damien|NAP-dio-oklahoma-city,Rubrics 1960 - Archdiocese of Oklahoma City
+Rubrics 1960 - St. Lawrence Church Harrisburg PA,SiteHarrisburgStLawrence,1960|NAP-fssp|NAP-site-harrisburg-st-lawrence|NAP-dio-harrisburg,1960|NAP-fssp|NAP-site-harrisburg-st-lawrence|NAP-dio-harrisburg,Rubrics 1960 - Diocese of Harrisburg
 Rubrics 1960 - St. Michaels Church Scranton PA,SiteScrantonStMichael,1960|NAP-fssp|NAP-site-scranton-st-michael|NAP-dio-scranton,1960|NAP-fssp|NAP-site-scranton-st-michael|NAP-dio-scranton,Rubrics 1960 - Diocese of Scranton
 Rubrics 1960 - Immaculate Conception Church Rapid City SD,SiteRapidCityImmaculateConception,1960|NAP-fssp|NAP-site-rapid-city-immaculate-conception|NAP-dio-rapid-city,1960|NAP-fssp|NAP-site-rapid-city-immaculate-conception|NAP-dio-rapid-city,Rubrics 1960 - Diocese of Rapid City
 Rubrics 1960 - Mater Dei Catholic Parish Irving TX,SiteIrvingMaterDei,1960|NAP-fssp|NAP-site-irving-mater-dei|NAP-dio-dallas,1960|NAP-fssp|NAP-site-irving-mater-dei|NAP-dio-dallas,Rubrics 1960 - Diocese of Dallas
