@@ -61,26 +61,33 @@ jobs:
             rm -f /tmp/changed.txt
           fi
 
-      - name: Ensure the EPUB release exists
+      - name: Ensure the EPUB releases exist
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          if gh release view epub-library >/dev/null 2>&1; then
-            exit 0
+          # A release holds at most 1,000 assets. Latin and Latin–English
+          # together would pass that, so each edition has its own tag.
+          if ! gh release view epub-library >/dev/null 2>&1; then
+            gh release create epub-library \
+              --target "${{ github.sha }}" \
+              --latest=false \
+              --title "Divine Office EPUBs (Latin–English)" \
+              --notes "Latin–English Divine Office EPUBs. Newer files end in -la-en. Older files have no suffix.
+
+            Latin-only files are on the epub-library-la release.
+            The public list is the GitHub Pages site."
           fi
-          gh release create epub-library \
-            --target "${{ github.sha }}" \
-            --latest=false \
-            --title "Divine Office EPUBs" \
-            --notes "Latin and Latin–English Divine Office EPUBs for the FSSP North America calendars.
+          if ! gh release view epub-library-la >/dev/null 2>&1; then
+            gh release create epub-library-la \
+              --target "${{ github.sha }}" \
+              --latest=false \
+              --title "Divine Office EPUBs (Latin)" \
+              --notes "Latin Divine Office EPUBs. Monthly files are {calendar}-{year}-{month}-la.epub. Full-year files are {calendar}-{year}-la.epub.
 
-          Latin monthly files are named {calendar}-{year}-{month}-la.epub.
-          Latin full-year files are named {calendar}-{year}-la.epub.
-          Latin–English files use the same names with -la-en.
-          Older Latin–English files without a suffix stay until that year is rebuilt.
-
-          These assets are replaced as calendars are rebuilt. The public list is the GitHub Pages site."
+            Latin–English files are on the epub-library release.
+            The public list is the GitHub Pages site."
+          fi
 
       - id: plan
         name: Plan calendar-year jobs
@@ -150,6 +157,11 @@ jobs:
         run: |
           set -euo pipefail
           shopt -s nullglob
+          if [ "${{ matrix.variant }}" = "la" ]; then
+            tag=epub-library-la
+          else
+            tag=epub-library
+          fi
           files=("${RUNNER_TEMP}/epub"/*.epub)
           if [ "${#files[@]}" -eq 0 ]; then
             echo "No EPUBs were produced" >&2
@@ -158,11 +170,11 @@ jobs:
           for file in "${files[@]}"; do
             ok=0
             for attempt in 1 2 3 4 5; do
-              if gh release upload epub-library "$file" --clobber; then
+              if gh release upload "$tag" "$file" --clobber; then
                 ok=1
                 break
               fi
-              echo "upload failed for $(basename "$file"), attempt ${attempt}" >&2
+              echo "upload failed for $(basename "$file") to $tag, attempt ${attempt}" >&2
               sleep $((attempt * 15))
             done
             [ "$ok" = 1 ]
@@ -210,8 +222,15 @@ jobs:
             gh release create epub-library \
               --target "${{ github.sha }}" \
               --latest=false \
-              --title "Divine Office EPUBs" \
-              --notes "Latin and Latin–English Divine Office EPUBs for the FSSP North America calendars. Latin assets end in -la. Latin–English assets end in -la-en."
+              --title "Divine Office EPUBs (Latin–English)" \
+              --notes "Latin–English Divine Office EPUBs. Latin-only files are on epub-library-la."
+          fi
+          if ! gh release view epub-library-la >/dev/null 2>&1; then
+            gh release create epub-library-la \
+              --target "${{ github.sha }}" \
+              --latest=false \
+              --title "Divine Office EPUBs (Latin)" \
+              --notes "Latin Divine Office EPUBs. Latin–English files are on epub-library."
           fi
           for attempt in 1 2 3 4 5; do
             if gh release upload epub-library docs/catalog.json --clobber; then
@@ -222,14 +241,27 @@ jobs:
             fi
             sleep $((attempt * 10))
           done
-          gh release view epub-library --json assets > /tmp/assets.json
-          python3 scripts/epub_library/cli.py prune-list \
-            --catalog docs/catalog.json \
-            --assets /tmp/assets.json > /tmp/prune.txt
+          for tag in epub-library epub-library-la; do
+            gh release view "$tag" --json assets > /tmp/assets.json
+            python3 scripts/epub_library/cli.py prune-list \
+              --catalog docs/catalog.json \
+              --assets /tmp/assets.json > /tmp/prune.txt
+            while IFS= read -r name; do
+              [ -z "$name" ] && continue
+              gh release delete-asset "$tag" "$name" --yes || true
+            done < /tmp/prune.txt
+          done
+          # Drop a Latin file from the bilingual release only after the Latin
+          # release has that same file, so a full release is never the only copy.
+          gh release view epub-library --json assets > /tmp/assets-bi.json
+          gh release view epub-library-la --json assets > /tmp/assets-la.json
+          python3 scripts/epub_library/cli.py latin-copies \
+            --bilingual /tmp/assets-bi.json \
+            --latin /tmp/assets-la.json > /tmp/latin-copies.txt
           while IFS= read -r name; do
             [ -z "$name" ] && continue
             gh release delete-asset epub-library "$name" --yes || true
-          done < /tmp/prune.txt
+          done < /tmp/latin-copies.txt
 
       - name: Commit the catalog
         if: steps.catalog.outputs.changed == 'true'

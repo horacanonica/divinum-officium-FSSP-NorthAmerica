@@ -223,6 +223,14 @@ class WindowAndPlanTest(unittest.TestCase):
         jobs = library.plan_jobs(self.calendars, catalog, window, hashes, affected=None)
         self.assertEqual(jobs, [])
 
+    def test_first_v2_catalog_keeps_complete_years(self):
+        window = library.rolling_window(date(2026, 10, 16))
+        hashes = {cal.slug: "office-hash" for cal in self.calendars}
+        catalog = _complete_catalog(self.calendars, window, "previous-hash")
+        del catalog["fingerprint"]
+        jobs = library.plan_jobs(self.calendars, catalog, window, hashes, affected=set(hashes))
+        self.assertEqual(jobs, [])
+
     def test_legacy_bilingual_files_are_not_rebuilt(self):
         window = library.rolling_window(date(2026, 10, 16))
         hashes = {cal.slug: "planner-changed" for cal in self.calendars}
@@ -347,6 +355,19 @@ class WindowAndPlanTest(unittest.TestCase):
         )
         self.assertEqual(doomed, ["niagara-2026-10-la.epub"])
 
+    def test_latin_copies_are_removed_only_after_the_latin_release_has_them(self):
+        bilingual = [
+            "niagara-2026.epub",
+            "niagara-2026-10-la.epub",
+            "niagara-2026-10-la-en.epub",
+            "niagara-2026-la.epub",
+        ]
+        self.assertEqual(
+            library.latin_copies_on_bilingual_release(bilingual, ["niagara-2026-10-la.epub"]),
+            ["niagara-2026-10-la.epub"],
+        )
+        self.assertEqual(library.latin_copies_on_bilingual_release(bilingual, []), [])
+
     def test_asset_names_keep_hyphenated_slugs(self):
         self.assertEqual(
             library.parse_asset_name("fssp-usa-2026-01-la-en.epub"),
@@ -415,7 +436,11 @@ def _catalog_with(calendars, window, digest: str, *, legacy: bool) -> dict:
                 "files": files,
             }
         )
-    return {"calendars": entries, "window": window.as_dict()}
+    return {
+        "fingerprint": library.FINGERPRINT_VERSION,
+        "calendars": entries,
+        "window": window.as_dict(),
+    }
 
 
 def _complete_catalog(calendars, window, digest: str) -> dict:

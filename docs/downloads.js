@@ -44,8 +44,16 @@ function fileIndex(calendar, variant) {
   return index;
 }
 
-function downloadUrl(catalog, name) {
-  return "https://github.com/" + catalog.repo + "/releases/download/" + catalog.release + "/" + encodeURIComponent(name);
+function assetRelease(catalog, file) {
+  const variant = fileVariant(file);
+  const releases = catalog.releases || {};
+  if (releases[variant]) return releases[variant];
+  if (variant === "la") return "epub-library-la";
+  return catalog.release || "epub-library";
+}
+
+function downloadUrl(catalog, file) {
+  return "https://github.com/" + catalog.repo + "/releases/download/" + assetRelease(catalog, file) + "/" + encodeURIComponent(file.name);
 }
 
 function sizeLabel(bytes) {
@@ -68,7 +76,7 @@ function linkOrPending(catalog, file, className, label) {
     return pending;
   }
   const link = el("a", className, label);
-  link.href = downloadUrl(catalog, file.name);
+  link.href = downloadUrl(catalog, file);
   const size = sizeLabel(file.bytes);
   link.title = size ? label + ", " + size : label;
   return link;

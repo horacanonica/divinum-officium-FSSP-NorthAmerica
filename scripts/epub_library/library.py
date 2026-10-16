@@ -12,7 +12,7 @@ Each published calendar has a fingerprint of the files that can change its
 Office text:
 
 * shared files (the engine, the temporal cycle, commons, psalter, martyrology,
-  transfer tables, and this generator) are in every fingerprint, so a change
+  transfer tables, and epubgen2) are in every fingerprint, so a change
   there rebuilds every calendar;
 * the calendar's own Kalendaria file, plus the Kalendaria of each ancestor in
   data.txt, plus the Sancti files those calendars name, are in that calendar
@@ -57,6 +57,11 @@ EPUBGEN = EPUBGEN_DIR / "epubgen2.sh"
 
 FSSP_VERSION = "Rubrics 1960 - FSSP"
 RELEASE_TAG = "epub-library"
+# GitHub allows 1,000 assets on a release. Latin and Latin–English together
+# pass that, so Latin has its own release. The bilingual tag is the original
+# one and still holds the unsuffixed files.
+LATIN_RELEASE_TAG = "epub-library-la"
+RELEASES = {"la": LATIN_RELEASE_TAG, "la-en": RELEASE_TAG}
 WINDOW_MONTHS = 24
 MAX_JOBS = 48
 OTHER_REGION = "Other"
@@ -80,10 +85,10 @@ SHARED_DIRS = (
     "web/www/Tabulae/Transfer",
     "web/www/Tabulae/Stransfer",
 )
-SHARED_FILES = (
-    "scripts/epub_library/library.py",
-    "scripts/epub_library/cli.py",
-)
+# The planner and the download page are not part of the fingerprint. A change
+# there must not rebuild every EPUB. epubgen2.sh and the Office texts are.
+SHARED_FILES = ()
+FINGERPRINT_VERSION = "v2"
 SKIP_DIR_NAMES = {"output", "screenshots", "__pycache__", ".git"}
 
 LANGS = ("Latin", "English")
@@ -504,14 +509,26 @@ def _stamp_map(value) -> tuple[dict[str, str], bool]:
     return {}, False
 
 
-def variant_fresh(files: list[dict], year: int, stamp_value, variant: str, current: str) -> bool:
+def variant_fresh(
+    files: list[dict],
+    year: int,
+    stamp_value,
+    variant: str,
+    current: str,
+    *,
+    adopt_complete: bool = False,
+) -> bool:
     """True when this variant's year is complete and matches the current fingerprint.
 
     A legacy string stamp counts as a fresh bilingual year so those files are
-    not deleted and regenerated when only the planner changes.
+    not deleted and regenerated when only the planner changes. The first
+    catalog written by this version also keeps complete years, then records
+    the current fingerprint so a later Office edit still rebuilds them.
     """
     if not year_complete(files, year, variant):
         return False
+    if adopt_complete:
+        return True
     stamps, legacy = _stamp_map(stamp_value)
     recorded = stamps.get(variant)
     if recorded == current:
@@ -541,6 +558,7 @@ def plan_jobs(
     Latin jobs come first. Within that, calendars keep their region order.
     """
     force_slugs = force_slugs or set()
+    adopt_complete = catalog.get("fingerprint") != FINGERPRINT_VERSION
     by_slug = {item.get("slug"): item for item in catalog.get("calendars", [])}
     priority: list[tuple[int, int, int, dict]] = []
     gaps: list[tuple[int, int, int, dict]] = []
@@ -554,7 +572,9 @@ def plan_jobs(
             stamp_value = built.get(str(year))
             for variant_index, variant in enumerate(VARIANTS):
                 forced = cal.slug in force_slugs
-                if not forced and variant_fresh(files, year, stamp_value, variant, current):
+                if not forced and variant_fresh(
+                    files, year, stamp_value, variant, current, adopt_complete=adopt_complete
+                ):
                     continue
                 incomplete = not year_complete(files, year, variant)
                 if not in_scope and not incomplete:
@@ -766,6 +786,8 @@ def merge_catalog(
 ) -> dict:
     versions = load_versions()
     hash_cache: dict[str, str] = {}
+    adopting = old.get("fingerprint") != FINGERPRINT_VERSION
+    refreshed: set[tuple[str, str, str]] = set()
     by_calendar = {cal.slug: cal for cal in calendars}
     by_slug: dict[str, dict] = {}
     for item in old.get("calendars", []):
@@ -789,6 +811,7 @@ def merge_catalog(
         elif legacy:
             stamps = {}
         stamps[variant] = fragment["content_hash"]
+        refreshed.add((slug, year, variant))
         entry["built"][year] = stamps
         entry["files"] = [
             item
@@ -817,6 +840,12 @@ def merge_catalog(
             raw = previous["built"].get(str(year))
             stamps, legacy = _stamp_map(raw)
             stamps = _adopt_legacy_stamp(stamps, legacy, files, year, cal, versions, hash_cache)
+            if adopting:
+                for variant in VARIANTS:
+                    if (cal.slug, str(year), variant) in refreshed:
+                        continue
+                    if year_complete(files, year, variant):
+                        stamps[variant] = _current_hash(cal, versions, hash_cache)
             if stamps:
                 built[str(year)] = stamps
         entry = _blank_entry(cal)
@@ -827,12 +856,14 @@ def merge_catalog(
     catalog = {
         "repo": repo,
         "release": RELEASE_TAG,
+        "releases": dict(RELEASES),
         "updated": updated,
         "languages": "Latin",
         "variants": [
             {"id": "la", "label": "Latin"},
             {"id": "la-en", "label": "Latin and English"},
         ],
+        "fingerprint": FINGERPRINT_VERSION,
         "rubrics": "1960",
         "window": window.as_dict(),
         "region_order": region_order,
@@ -885,6 +916,21 @@ def assets_to_prune(catalog: dict, remote_names: list[str]) -> list[str]:
             continue
         doomed.append(name)
     return sorted(doomed)
+
+
+def release_for_variant(variant: str) -> str:
+    if variant == "la":
+        return LATIN_RELEASE_TAG
+    return RELEASE_TAG
+
+
+def latin_copies_on_bilingual_release(bilingual_names: list[str], latin_names: list[str]) -> list[str]:
+    """Latin assets to delete from the bilingual release once the Latin release has them.
+
+    ``-la-en`` names do not match: they belong on the bilingual release.
+    """
+    published = set(latin_names)
+    return sorted(name for name in bilingual_names if name.endswith("-la.epub") and name in published)
 
 
 def rubrics_code(cal: Calendar) -> str:
