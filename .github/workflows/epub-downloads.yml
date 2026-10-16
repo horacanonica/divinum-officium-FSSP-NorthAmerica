@@ -1,0 +1,309 @@
+name: EPUB downloads
+
+# Rebuilds Divine Office EPUBs and refreshes the GitHub Pages catalog.
+# A push rebuilds only the calendars the diff can affect (shared Office data
+# rebuilds all of them; one Kalendaria file rebuilds that apostolate). Each
+# of those calendars is rebuilt in Latin (-la) and in Latin–English (-la-en).
+# The nightly run fills anything still missing, including a variant that was
+# never built, and moves the two-year window forward.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'web/www/horas/**'
+      - 'web/www/Tabulae/**'
+      - 'web/cgi-bin/**'
+      - 'standalone/tools/epubgen2/**'
+      - 'scripts/epub_library/**'
+      - '.github/workflows/epub-downloads.yml'
+  schedule:
+    - cron: '15 8 * * *'
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Rebuild one calendar slug (blank rebuilds whatever is stale)'
+        required: false
+        type: string
+      force:
+        description: 'Rebuild even when the source fingerprint matches'
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: epub-library
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      count: ${{ steps.plan.outputs.count }}
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: List files changed by this push
+        if: github.event_name == 'push'
+        run: |
+          set +e
+          git fetch --no-tags --depth=1 origin "${{ github.event.before }}"
+          git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" > /tmp/changed.txt
+          status=$?
+          set -e
+          if [ "$status" -ne 0 ]; then
+            rm -f /tmp/changed.txt
+          fi
+
+      - name: Ensure the EPUB releases exist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          # A release holds at most 1,000 assets. Latin and Latin–English
+          # together would pass that, so each edition has its own tag.
+          if ! gh release view epub-library >/dev/null 2>&1; then
+            gh release create epub-library \
+              --target "${{ github.sha }}" \
+              --latest=false \
+              --title "Divine Office EPUBs (Latin–English)" \
+              --notes "Latin–English Divine Office EPUBs. Newer files end in -la-en. Older files have no suffix.
+
+            Latin-only files are on the epub-library-la release.
+            The public list is the GitHub Pages site."
+          fi
+          if ! gh release view epub-library-la >/dev/null 2>&1; then
+            gh release create epub-library-la \
+              --target "${{ github.sha }}" \
+              --latest=false \
+              --title "Divine Office EPUBs (Latin)" \
+              --notes "Latin Divine Office EPUBs. Monthly files are {calendar}-{year}-{month}-la.epub. Full-year files are {calendar}-{year}-la.epub.
+
+            Latin–English files are on the epub-library release.
+            The public list is the GitHub Pages site."
+          fi
+
+      - id: plan
+        name: Plan calendar-year jobs
+        run: |
+          set -euo pipefail
+          args=(
+            --event "${{ github.event_name }}"
+            --catalog docs/catalog.json
+            --github-output "$GITHUB_OUTPUT"
+          )
+          if [ -f /tmp/changed.txt ]; then
+            args+=(--changed /tmp/changed.txt)
+          fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            args+=(--force-slug "${{ github.event.inputs.slug }}")
+            if [ "${{ github.event.inputs.force }}" = "true" ]; then
+              args+=(--force)
+            fi
+          fi
+          python3 scripts/epub_library/cli.py plan "${args[@]}"
+
+  build:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Install generator dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libcgi-pm-perl libcgi-session-perl libwww-perl zip ncal
+
+      - name: Generate the year
+        env:
+          LANG: C.UTF-8
+          LC_ALL: C.UTF-8
+        run: |
+          set -euo pipefail
+          ok=0
+          for attempt in 1 2 3; do
+            rm -rf "${RUNNER_TEMP}/epub"
+            if python3 scripts/epub_library/cli.py build \
+              --slug "${{ matrix.slug }}" \
+              --year "${{ matrix.year }}" \
+              --variant "${{ matrix.variant }}" \
+              --output "${RUNNER_TEMP}/epub"; then
+              ok=1
+              break
+            fi
+            echo "generation failed for ${{ matrix.slug }} ${{ matrix.year }} ${{ matrix.variant }}, attempt ${attempt}" >&2
+            sleep $((attempt * 20))
+          done
+          [ "$ok" = 1 ]
+
+      - name: Upload EPUBs to the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          if [ "${{ matrix.variant }}" = "la" ]; then
+            tag=epub-library-la
+          else
+            tag=epub-library
+          fi
+          files=("${RUNNER_TEMP}/epub"/*.epub)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No EPUBs were produced" >&2
+            exit 1
+          fi
+          for file in "${files[@]}"; do
+            ok=0
+            for attempt in 1 2 3 4 5; do
+              if gh release upload "$tag" "$file" --clobber; then
+                ok=1
+                break
+              fi
+              echo "upload failed for $(basename "$file") to $tag, attempt ${attempt}" >&2
+              sleep $((attempt * 15))
+            done
+            [ "$ok" = 1 ]
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fragment-${{ matrix.slug }}-${{ matrix.year }}-${{ matrix.variant }}
+          path: ${{ runner.temp }}/epub/fragment.json
+          if-no-files-found: error
+          retention-days: 14
+
+  refresh:
+    needs: [plan, build]
+    if: always() && needs.plan.result == 'success' && (needs.build.result == 'success' || needs.build.result == 'skipped' || needs.build.result == 'failure')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          ref: master
+
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          pattern: fragment-*
+          path: fragments
+
+      - name: Update the catalog
+        id: catalog
+        run: |
+          set -euo pipefail
+          python3 scripts/epub_library/cli.py merge-catalog \
+            --catalog docs/catalog.json \
+            --fragments-dir fragments \
+            --repo "${{ github.repository }}" \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Publish the catalog and drop years that left the window
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if ! gh release view epub-library >/dev/null 2>&1; then
+            gh release create epub-library \
+              --target "${{ github.sha }}" \
+              --latest=false \
+              --title "Divine Office EPUBs (Latin–English)" \
+              --notes "Latin–English Divine Office EPUBs. Latin-only files are on epub-library-la."
+          fi
+          if ! gh release view epub-library-la >/dev/null 2>&1; then
+            gh release create epub-library-la \
+              --target "${{ github.sha }}" \
+              --latest=false \
+              --title "Divine Office EPUBs (Latin)" \
+              --notes "Latin Divine Office EPUBs. Latin–English files are on epub-library."
+          fi
+          for attempt in 1 2 3 4 5; do
+            if gh release upload epub-library docs/catalog.json --clobber; then
+              break
+            fi
+            if [ "$attempt" -eq 5 ]; then
+              exit 1
+            fi
+            sleep $((attempt * 10))
+          done
+          for tag in epub-library epub-library-la; do
+            gh release view "$tag" --json assets > /tmp/assets.json
+            python3 scripts/epub_library/cli.py prune-list \
+              --catalog docs/catalog.json \
+              --assets /tmp/assets.json > /tmp/prune.txt
+            while IFS= read -r name; do
+              [ -z "$name" ] && continue
+              gh release delete-asset "$tag" "$name" --yes || true
+            done < /tmp/prune.txt
+          done
+          # Drop a Latin file from the bilingual release only after the Latin
+          # release has that same file, so a full release is never the only copy.
+          gh release view epub-library --json assets > /tmp/assets-bi.json
+          gh release view epub-library-la --json assets > /tmp/assets-la.json
+          python3 scripts/epub_library/cli.py latin-copies \
+            --bilingual /tmp/assets-bi.json \
+            --latin /tmp/assets-la.json > /tmp/latin-copies.txt
+          while IFS= read -r name; do
+            [ -z "$name" ] && continue
+            gh release delete-asset epub-library "$name" --yes || true
+          done < /tmp/latin-copies.txt
+
+      - name: Commit the catalog
+        if: steps.catalog.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # checkout leaves a detached HEAD; put the catalog commit on master.
+          git checkout -B master
+          git add docs/catalog.json
+          git commit -m "Update EPUB download catalog [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin master
+            if ! git rebase origin/master; then
+              git rebase --abort || true
+              git checkout origin/master -- docs/catalog.json || true
+              python3 scripts/epub_library/cli.py merge-catalog \
+                --catalog docs/catalog.json \
+                --fragments-dir fragments \
+                --repo "${{ github.repository }}"
+              git add docs/catalog.json
+              git commit --amend --no-edit
+            fi
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          exit 1
+
+  result:
+    needs: [build, refresh]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail the run when a calendar build failed
+        run: |
+          if [ "${{ needs.build.result }}" = "failure" ]; then
+            echo "One or more calendar-year builds failed. The nightly run will retry whatever is still missing." >&2
+            exit 1
+          fi
+          if [ "${{ needs.refresh.result }}" != "success" ]; then
+            echo "The catalog refresh failed." >&2
+            exit 1
+          fi

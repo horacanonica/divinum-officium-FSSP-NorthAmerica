@@ -302,6 +302,15 @@ Rubrics 1960 - MyParish,MyParish,FSSP,FSSP,Rubrics 1960 - MyDiocese
 
 The parish inherits all feasts from the diocese, which inherits from FSSP USA, and so on.
 
+A new row whose base chain reaches `Rubrics 1960 - FSSP` is picked up by the
+public download page on the next rebuild, including the location list at the
+top of the page. No edit to the page is required. The page's main files are
+Latin; Latin–English files for the same months are linked from that page.
+To place it under a region, add one line to `scripts/epub_library/regions.tsv`.
+Until then it is listed under Other. `epubgen2.sh -r` accepts the name after
+`Rubrics 1960 - ` (including spaces, as in `-r "Maple Hill"`), so a new
+calendar does not need a new entry in the rubrics arrays.
+
 ---
 
 ## Creating a New Sancti File

@@ -3,6 +3,10 @@ name: Deploy to Fly.io
 on:
   push:
     branches: [master]
+    paths-ignore:
+      # The EPUB catalog is rewritten on master after each download build.
+      # Those commits must not redeploy the Fly.io site.
+      - 'docs/**'
   workflow_dispatch: {}
 
 jobs:

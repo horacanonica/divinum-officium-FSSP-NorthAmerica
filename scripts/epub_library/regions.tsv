@@ -1,0 +1,22 @@
+# Places and regions for the public download page.
+# The calendars themselves come from web/www/Tabulae/data.txt: every version
+# in the FSSP inheritance chain is published. This file only supplies the
+# region heading and the place line. A calendar with no row here still
+# appears, under Other.
+#
+# region_order: General | West | South Central | Southeast | Northeast & Mid-Atlantic | Midwest | Canada | Mexico | Other
+version	region	place
+Rubrics 1960 - FSSP	General	General calendar of the Fraternity
+Rubrics 1960 - FSSP USA	General	FSSP calendar for the United States
+Rubrics 1960 - Sacramento	West	Sacramento, California
+Rubrics 1960 - Guadalajara	Mexico	Guadalajara, Mexico
+Rubrics 1960 - Chesapeake	Northeast & Mid-Atlantic	Chesapeake, Virginia
+Rubrics 1960 - Richmond	Northeast & Mid-Atlantic	Richmond, Virginia
+Rubrics 1960 - Nashua	Northeast & Mid-Atlantic	Nashua, New Hampshire
+Rubrics 1960 - Arlington	Northeast & Mid-Atlantic	Arlington, Virginia
+Rubrics 1960 - Scranton	Northeast & Mid-Atlantic	Scranton, Pennsylvania
+Rubrics 1960 - Baltimore	Northeast & Mid-Atlantic	Baltimore, Maryland
+Rubrics 1960 - Maple Hill	Midwest	Maple Hill, Kansas
+Rubrics 1960 - OLG Seminary	Midwest	Denton, Nebraska
+Rubrics 1960 - Quincy	Midwest	Quincy, Illinois
+Rubrics 1960 - Niagara	Canada	Niagara, Ontario
