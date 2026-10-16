@@ -196,15 +196,28 @@ def cmd_merge_catalog(args: argparse.Namespace) -> int:
     return 0
 
 
+def _asset_names(path: Path) -> list[str]:
+    assets = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(assets, dict):
+        items = assets.get("assets", assets)
+    else:
+        items = assets
+    return [item["name"] if isinstance(item, dict) else item for item in items]
+
+
 def cmd_prune_list(args: argparse.Namespace) -> int:
     catalog = library.load_catalog(Path(args.catalog))
-    assets = json.loads(Path(args.assets).read_text(encoding="utf-8"))
-    if isinstance(assets, dict):
-        names = [item["name"] if isinstance(item, dict) else item for item in assets.get("assets", assets)]
-    else:
-        names = [item["name"] if isinstance(item, dict) else item for item in assets]
+    names = _asset_names(Path(args.assets))
     doomed = library.assets_to_prune(catalog, names)
     for name in doomed:
+        print(name)
+    return 0
+
+
+def cmd_latin_copies(args: argparse.Namespace) -> int:
+    bilingual = _asset_names(Path(args.bilingual))
+    latin = _asset_names(Path(args.latin))
+    for name in library.latin_copies_on_bilingual_release(bilingual, latin):
         print(name)
     return 0
 
@@ -247,6 +260,11 @@ def main(argv: list[str] | None = None) -> int:
     prune.add_argument("--catalog", required=True)
     prune.add_argument("--assets", required=True)
     prune.set_defaults(func=cmd_prune_list)
+
+    copies = sub.add_parser("latin-copies")
+    copies.add_argument("--bilingual", required=True)
+    copies.add_argument("--latin", required=True)
+    copies.set_defaults(func=cmd_latin_copies)
 
     args = parser.parse_args(argv)
     return args.func(args)
