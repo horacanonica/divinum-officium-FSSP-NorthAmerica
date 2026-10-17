@@ -7,6 +7,7 @@ import json
 import shutil
 import subprocess
 import sys
+import tempfile
 import unittest
 from datetime import date
 from pathlib import Path
@@ -541,6 +542,183 @@ class WindowAndPlanTest(unittest.TestCase):
         self.assertEqual(library.classify_generated("breviarium2026_Sac.epub", 2026), ("year", None))
         self.assertEqual(library.classify_generated("breviarium2026_MapleHill.epub", 2026), ("year", None))
         self.assertIsNone(library.classify_generated("breviarium2025-10_Sac.epub", 2026))
+
+
+class VernacularPreflightTest(unittest.TestCase):
+    """Missing vernacular propers are reported. Commons-only locations are not."""
+
+    LANGS = (
+        ("English", "English"),
+        ("Espanol", "Spanish"),
+        ("Francais", "French"),
+    )
+
+    def _root(self, files: dict[str, str]) -> Path:
+        directory = Path(tempfile.mkdtemp(prefix="preflight-"))
+        self.addCleanup(shutil.rmtree, directory, True)
+        for rel, text in files.items():
+            path = directory / rel
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(text, encoding="utf-8")
+        return directory
+
+    def _calendar(self, slug: str, name: str, kalendar: str) -> library.Calendar:
+        return library.Calendar(
+            version=f"Rubrics 1960 - {name}",
+            slug=slug,
+            name=name,
+            kalendar=kalendar,
+            region="West",
+            place="",
+            chain=("Rubrics 1960 - ancestor", f"Rubrics 1960 - {name}"),
+            feasts=(),
+        )
+
+    def test_commons_shell_and_elevation_need_no_file_of_their_own(self):
+        commons = "[Officium]\nS. Gerárdi\n\n[Rank]\nS. Gerárdi;;Duplex;;3;;vide C5\n\n[Rule]\nvide C5;\n\n[Name]\nGerárdi\n"
+        dedication = (
+            "[Officium]\nIn Anniversario Dedicationis\n\n[Rank]\n"
+            "In Anniversario Dedicationis;;Duplex I classis;;6;;ex C8\n\n[Rule]\nex C8;\n9 lectiones\n"
+        )
+        elevation = "@Sancti/07-16\n\n[Officium]\nCarmel\n\n[Rank]\nCarmel;;Duplex I classis;;6;;ex C11\n\n[Rule]\nex C11;\n"
+        copied = "[Officium]\nCathedra\n\n[Rank]\nCathedra;;Duplex I classis;;6;;ex C4\n\n[Oratio]\n@Sancti/02-22\n"
+        proper = "[Officium]\nS. Example\n\n[Rank]\nS. Example;;Duplex;;3;;vide C5\n\n[Oratio]\nDeus, qui exemplum.\n"
+        self.assertFalse(library.office_has_own_text(commons))
+        self.assertFalse(library.office_has_own_text(dedication))
+        self.assertFalse(library.office_has_own_text(elevation))
+        self.assertFalse(library.office_has_own_text(copied))
+        self.assertTrue(library.office_has_own_text(proper))
+
+    def test_commons_only_location_is_not_flagged_even_when_an_ancestor_has_a_proper(self):
+        root = self._root(
+            {
+                "web/www/Tabulae/Kalendaria/Denver.txt": "10-27=10-27ndc=Dedication=1=\n",
+                "web/www/Tabulae/Kalendaria/FSSP.txt": "11-17=11-17mh=Example=2=\n",
+                "web/www/horas/Latin/Sancti/10-27ndc.txt": (
+                    "[Officium]\nDedication\n\n[Rank]\nDedication;;Duplex I classis;;6;;ex C8\n\n[Rule]\nex C8;\n"
+                ),
+                "web/www/horas/Latin/Sancti/11-17mh.txt": (
+                    "[Officium]\nS. Example\n\n[Oratio]\nDeus, qui exemplum.\n"
+                ),
+            }
+        )
+        denver = self._calendar("denver", "Archdiocese of Denver", "Denver")
+        result = library.missing_vernacular([denver], root=root, langs=self.LANGS)
+        self.assertEqual(result.gaps, ())
+        self.assertEqual(result.commons_only, 1)
+
+    def test_real_proper_lists_the_location_and_each_missing_language(self):
+        root = self._root(
+            {
+                "web/www/Tabulae/Kalendaria/Westwood.txt": (
+                    "11-17=11-17nl1mh~11-17=S. Example=1=\n"
+                    "10-16=10-16nc=S. Gerard=2=\n"
+                ),
+                "web/www/horas/Latin/Sancti/11-17nl1mh.txt": (
+                    "@Sancti/11-17mh\n\n[Officium]\nS. Example\n\n[Rank]\nS. Example;;Duplex I classis;;6;;ex C6a\n\n[Rule]\nex C6a;\n"
+                ),
+                "web/www/horas/Latin/Sancti/11-17mh.txt": (
+                    "[Officium]\nS. Example\n\n[Rank]\nS. Example;;Duplex;;3;;vide C6a\n\n[Oratio]\nDeus, qui exemplum.\n\n[Lectio94]\nExemplum.\n"
+                ),
+                "web/www/horas/Latin/Sancti/10-16nc.txt": (
+                    "[Officium]\nS. Gerard\n\n[Rank]\nS. Gerard;;Duplex;;3;;vide C5\n\n[Rule]\nvide C5;\n\n[Name]\nGerardi\n"
+                ),
+                "web/www/horas/English/Sancti/11-17mh.txt": "[Oratio]\nO God.\n",
+            }
+        )
+        westwood = self._calendar("westwood", "St. Rose, Westwood", "Westwood")
+        result = library.missing_vernacular([westwood], root=root, langs=self.LANGS)
+        self.assertEqual([(gap.language, gap.refs) for gap in result.gaps], [
+            ("Spanish", ("11-17mh",)),
+            ("French", ("11-17mh",)),
+        ])
+        self.assertEqual(result.gaps[0].name, "St. Rose, Westwood")
+        self.assertNotIn("10-16nc", [ref for gap in result.gaps for ref in gap.refs])
+        text = library.format_preflight(result, self.LANGS)
+        self.assertIn("St. Rose, Westwood — Spanish: 11-17mh", text)
+        self.assertIn("warning only", text)
+        self.assertIn("Missing Spanish for St. Rose, Westwood: 11-17mh", result.gaps[0].warning())
+
+    def test_rank_elevation_uses_the_base_file_when_that_translation_exists(self):
+        root = self._root(
+            {
+                "web/www/Tabulae/Kalendaria/Littleton.txt": "07-16=07-16nl1=Carmel=1=\n",
+                "web/www/horas/Latin/Sancti/07-16nl1.txt": "@Sancti/07-16\n\n[Rule]\nex C11;\n",
+                "web/www/horas/Latin/Sancti/07-16.txt": "[Ant 1]\nSancta Maria, succurre miseris.\n",
+                "web/www/horas/English/Sancti/07-16.txt": "[Ant 1]\nHoly Mary.\n",
+                "web/www/horas/Espanol/Sancti/07-16.txt": "[Ant 1]\nSanta Maria.\n",
+                "web/www/horas/Francais/SanctiM/07-16.txt": "[Ant 1]\nSainte Marie.\n",
+            }
+        )
+        parish = self._calendar("littleton", "Littleton", "Littleton")
+        result = library.missing_vernacular([parish], root=root, langs=self.LANGS)
+        self.assertEqual(result.gaps, ())
+        self.assertEqual(result.commons_only, 0)
+
+    def test_a_new_language_in_the_table_is_checked_without_new_location_code(self):
+        root = self._root(
+            {
+                "web/www/Tabulae/Kalendaria/Local.txt": "11-17=11-17mh=Example=2=\n",
+                "web/www/horas/Latin/Sancti/11-17mh.txt": "[Oratio]\nDeus, qui exemplum.\n",
+                "web/www/horas/English/Sancti/11-17mh.txt": "[Oratio]\nO God.\n",
+            }
+        )
+        cal = self._calendar("local", "New Place", "Local")
+        langs = self.LANGS + (("Deutsch", "German"),)
+        result = library.missing_vernacular([cal], root=root, langs=langs)
+        self.assertEqual(
+            [(gap.language, gap.folder) for gap in result.gaps],
+            [("Spanish", "Espanol"), ("French", "Francais"), ("German", "Deutsch")],
+        )
+
+    def test_live_calendars_skip_commons_and_only_flag_real_propers(self):
+        calendars, _order = library.load_calendars()
+        result = library.missing_vernacular(calendars)
+        horas = library.ROOT / "web" / "www" / "horas"
+        flagged = {gap.slug for gap in result.gaps}
+        commons_only = []
+        for cal in calendars:
+            needed: set[str] = set()
+            for ref in library.own_kalendar_refs(cal):
+                needed |= library.proper_refs(ref, horas)
+            if not needed:
+                commons_only.append(cal.slug)
+        self.assertTrue(commons_only)
+        self.assertTrue(set(commons_only).isdisjoint(flagged))
+        self.assertGreater(result.checked, 90)
+        known = {name for _folder, name in library.VERNACULAR_LANGS}
+        for gap in result.gaps:
+            self.assertIn(gap.language, known)
+            self.assertTrue(gap.name)
+            for ref in gap.refs:
+                text = library.latin_office_text(ref, horas)
+                self.assertIsNotNone(text)
+                self.assertTrue(library.office_has_own_text(text))
+                self.assertFalse(library.vernacular_office_exists(gap.folder, ref, horas))
+
+    def test_preflight_command_warns_and_strict_matches_the_gaps(self):
+        script = library.ROOT / "scripts" / "epub_library" / "cli.py"
+        warned = subprocess.run(
+            [sys.executable, str(script), "preflight"],
+            cwd=library.ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(warned.returncode, 0, warned.stderr)
+        self.assertIn("Vernacular preflight", warned.stdout)
+        self.assertIn("warning only", warned.stdout)
+        gaps = library.missing_vernacular(library.load_calendars()[0])
+        if gaps.gaps:
+            self.assertIn("::warning::Missing ", warned.stdout)
+        strict = subprocess.run(
+            [sys.executable, str(script), "preflight", "--strict"],
+            cwd=library.ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(strict.returncode, 1 if gaps.gaps else 0)
 
 
 def _year_files(slug: str, year: int, variant: str = "la", legacy: bool = False) -> list[dict]:

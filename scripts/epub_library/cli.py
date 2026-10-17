@@ -6,12 +6,14 @@
     python3 scripts/epub_library/cli.py build --slug sacramento --year 2026 --variant la --output /tmp/epub
     python3 scripts/epub_library/cli.py merge-catalog --fragments-dir fragments --catalog docs/catalog.json
     python3 scripts/epub_library/cli.py prune-list --catalog docs/catalog.json --assets assets.json
+    python3 scripts/epub_library/cli.py preflight
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import uuid
 from datetime import date, datetime, timezone
@@ -205,6 +207,32 @@ def _asset_names(path: Path) -> list[str]:
     return [item["name"] if isinstance(item, dict) else item for item in items]
 
 
+def cmd_preflight(args: argparse.Namespace) -> int:
+    """Warn about missing vernacular propers. Exit 0 unless --strict is set.
+
+    A missing English, Spanish, or French proper must not stop the Latin
+    build: those editions are not generated yet, and a commons-only location
+    is not a gap. --strict is for a later edition that should fail closed.
+    """
+    calendars, _order = _calendars()
+    if args.slug:
+        wanted = {part.strip() for part in args.slug.split(",") if part.strip()}
+        calendars = [cal for cal in calendars if cal.slug in wanted]
+    result = library.missing_vernacular(calendars)
+    sys.stdout.write(library.format_preflight(result))
+    for gap in result.gaps:
+        print(f"::warning::{gap.warning()}", flush=True)
+    summary = args.summary or os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        path = Path(summary)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("a", encoding="utf-8") as handle:
+            handle.write(library.format_preflight_summary(result))
+    if args.strict and result.gaps:
+        return 1
+    return 0
+
+
 def cmd_prune_list(args: argparse.Namespace) -> int:
     catalog = library.load_catalog(Path(args.catalog))
     names = _asset_names(Path(args.assets))
@@ -252,6 +280,16 @@ def main(argv: list[str] | None = None) -> int:
     prune.add_argument("--catalog", required=True)
     prune.add_argument("--assets", required=True)
     prune.set_defaults(func=cmd_prune_list)
+
+    preflight = sub.add_parser("preflight")
+    preflight.add_argument("--slug", default="", help="Comma-separated slugs (default: every published calendar)")
+    preflight.add_argument(
+        "--strict",
+        action="store_true",
+        help="Exit 1 when a vernacular proper is missing. The workflow does not set this.",
+    )
+    preflight.add_argument("--summary", help="Append the markdown report here (defaults to GITHUB_STEP_SUMMARY)")
+    preflight.set_defaults(func=cmd_preflight)
 
     args = parser.parse_args(argv)
     return args.func(args)
