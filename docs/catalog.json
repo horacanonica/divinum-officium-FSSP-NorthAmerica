@@ -5,7 +5,7 @@
     "la": "epub-library-la",
     "la-en": "epub-library"
   },
-  "updated": "2026-10-17T04:52:26Z",
+  "updated": "2026-10-17T05:27:32Z",
   "languages": "Latin",
   "variants": [
     {
@@ -1794,21 +1794,21 @@
           "type": "year",
           "year": 2026,
           "name": "st-mary-magdalen-chapel-camarillo-ca-2026-la.epub",
-          "bytes": 14816268,
+          "bytes": 14816267,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "st-mary-magdalen-chapel-camarillo-ca-2027-la.epub",
-          "bytes": 14819734,
+          "bytes": 14819733,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "st-mary-magdalen-chapel-camarillo-ca-2028-la.epub",
-          "bytes": 14851681,
+          "bytes": 14851680,
           "variant": "la"
         }
       ],
@@ -1902,14 +1902,14 @@
       "built": {
         "2026": {
           "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439",
-          "la": "f1a30ad2ec078c9459e81f22c3c44a70c40b07294a081ea78669da9f3a9ba898"
+          "la": "d8966ca87cb2385c3b4c95f6105ec436317fa76eaf5131c822d37ade01769a71"
         },
         "2027": {
-          "la": "f1a30ad2ec078c9459e81f22c3c44a70c40b07294a081ea78669da9f3a9ba898",
+          "la": "d8966ca87cb2385c3b4c95f6105ec436317fa76eaf5131c822d37ade01769a71",
           "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
         },
         "2028": {
-          "la": "f1a30ad2ec078c9459e81f22c3c44a70c40b07294a081ea78669da9f3a9ba898",
+          "la": "d8966ca87cb2385c3b4c95f6105ec436317fa76eaf5131c822d37ade01769a71",
           "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
         }
       },
@@ -1932,7 +1932,7 @@
           "type": "year",
           "year": 2028,
           "name": "sacramento-2028-la.epub",
-          "bytes": 14855366,
+          "bytes": 14855365,
           "variant": "la"
         }
       ],
@@ -2039,14 +2039,14 @@
           "type": "year",
           "year": 2027,
           "name": "st-vitus-catholic-church-northridge-ca-2027-la.epub",
-          "bytes": 14822446,
+          "bytes": 14822445,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "st-vitus-catholic-church-northridge-ca-2028-la.epub",
-          "bytes": 14849520,
+          "bytes": 14849522,
           "variant": "la"
         }
       ],
@@ -2153,21 +2153,21 @@
           "type": "year",
           "year": 2026,
           "name": "archdiocese-of-galveston-houston-2026-la.epub",
-          "bytes": 14809022,
+          "bytes": 14809023,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "archdiocese-of-galveston-houston-2027-la.epub",
-          "bytes": 14814495,
+          "bytes": 14814497,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "archdiocese-of-galveston-houston-2028-la.epub",
-          "bytes": 14840584,
+          "bytes": 14840585,
           "variant": "la"
         }
       ],
@@ -2260,21 +2260,21 @@
           "type": "year",
           "year": 2026,
           "name": "archdiocese-of-oklahoma-city-2026-la.epub",
-          "bytes": 14809802,
+          "bytes": 14809803,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "archdiocese-of-oklahoma-city-2027-la.epub",
-          "bytes": 14811309,
+          "bytes": 14811310,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "archdiocese-of-oklahoma-city-2028-la.epub",
-          "bytes": 14843576,
+          "bytes": 14843578,
           "variant": "la"
         }
       ],
@@ -2367,7 +2367,7 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-dallas-2026-la.epub",
-          "bytes": 14813508,
+          "bytes": 14813509,
           "variant": "la"
         },
         {
@@ -2474,7 +2474,7 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-el-paso-2026-la.epub",
-          "bytes": 14818346,
+          "bytes": 14818347,
           "variant": "la"
         },
         {
@@ -2488,7 +2488,7 @@
           "type": "year",
           "year": 2028,
           "name": "diocese-of-el-paso-2028-la.epub",
-          "bytes": 14847156,
+          "bytes": 14847158,
           "variant": "la"
         }
       ],
@@ -2588,21 +2588,21 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-fort-worth-2026-la.epub",
-          "bytes": 14814078,
+          "bytes": 14814079,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "diocese-of-fort-worth-2027-la.epub",
-          "bytes": 14815108,
+          "bytes": 14815109,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "diocese-of-fort-worth-2028-la.epub",
-          "bytes": 14845308,
+          "bytes": 14845309,
           "variant": "la"
         }
       ],
@@ -2702,21 +2702,21 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-little-rock-2026-la.epub",
-          "bytes": 14821343,
+          "bytes": 14821344,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "diocese-of-little-rock-2027-la.epub",
-          "bytes": 14821246,
+          "bytes": 14821250,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "diocese-of-little-rock-2028-la.epub",
-          "bytes": 14853116,
+          "bytes": 14853117,
           "variant": "la"
         }
       ],
@@ -2823,7 +2823,7 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-tulsa-2026-la.epub",
-          "bytes": 14811012,
+          "bytes": 14811013,
           "variant": "la"
         },
         {
@@ -2837,7 +2837,7 @@
           "type": "year",
           "year": 2028,
           "name": "diocese-of-tulsa-2028-la.epub",
-          "bytes": 14843126,
+          "bytes": 14843125,
           "variant": "la"
         }
       ],
@@ -3044,14 +3044,14 @@
           "type": "year",
           "year": 2027,
           "name": "immaculate-conception-church-el-paso-tx-2027-la.epub",
-          "bytes": 14816604,
+          "bytes": 14816606,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "immaculate-conception-church-el-paso-tx-2028-la.epub",
-          "bytes": 14847282,
+          "bytes": 14847283,
           "variant": "la"
         }
       ],
@@ -3151,21 +3151,21 @@
           "type": "year",
           "year": 2026,
           "name": "mater-dei-catholic-parish-irving-tx-2026-la.epub",
-          "bytes": 14817591,
+          "bytes": 14817593,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "mater-dei-catholic-parish-irving-tx-2027-la.epub",
-          "bytes": 14821110,
+          "bytes": 14821111,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "mater-dei-catholic-parish-irving-tx-2028-la.epub",
-          "bytes": 14853620,
+          "bytes": 14853621,
           "variant": "la"
         }
       ],
@@ -3393,14 +3393,14 @@
           "type": "year",
           "year": 2026,
           "name": "parish-of-the-most-precious-blood-tulsa-ok-2026-la.epub",
-          "bytes": 14811159,
+          "bytes": 14811158,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "parish-of-the-most-precious-blood-tulsa-ok-2027-la.epub",
-          "bytes": 14812947,
+          "bytes": 14812946,
           "variant": "la"
         },
         {
@@ -3500,14 +3500,14 @@
           "type": "year",
           "year": 2026,
           "name": "regina-caeli-parish-houston-tx-2026-la.epub",
-          "bytes": 14813946,
+          "bytes": 14813947,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "regina-caeli-parish-houston-tx-2027-la.epub",
-          "bytes": 14815615,
+          "bytes": 14815616,
           "variant": "la"
         },
         {
