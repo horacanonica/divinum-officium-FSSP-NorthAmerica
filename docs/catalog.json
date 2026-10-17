@@ -5,7 +5,7 @@
     "la": "epub-library-la",
     "la-en": "epub-library"
   },
-  "updated": "2026-10-17T04:04:38Z",
+  "updated": "2026-10-17T04:06:50Z",
   "languages": "Latin",
   "variants": [
     {
@@ -1926,7 +1926,7 @@
     {
       "version": "Rubrics 1960 - Guadalajara",
       "slug": "guadalajara",
-      "name": "Archdiocese of Guadalajara",
+      "name": "Our Lady of the Pillar, Guadalajara (Archdiocese of Guadalajara)",
       "region": "Mexico",
       "place": "Guadalajara, Jalisco",
       "built": {
