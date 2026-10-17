@@ -6,7 +6,7 @@ When an answer arrives: edit `fssp/na_province.yaml` (remove `CONFIRM`/`pending`
 ## Answered 2026-10-16
 - Little Rock Feb 3: churches are assumed consecrated unless stated otherwise (applies to all locations) → implemented; Cabot and Springdale restored.
 - Sacramento: leave unchanged; the legacy `Rubrics 1960 - Sacramento` is correct → no new Sacramento layer or St. Stephen site is generated.
-- Miami: looked up (Wikipedia): patron Our Lady of the Immaculate Conception (Dec 8, already I class); Cathedral of St. Mary dedicated 27 Jan 1957 → implemented. **Verify the Jan 27 date with the archdiocese** (single source).
+- Miami: looked up (Wikipedia): patron Our Lady of the Immaculate Conception (Dec 8, already I class); Cathedral of St. Mary dedicated 27 Jan 1957 → implemented. **Jan 27 confirmed correct by the owner (2026-10-17).**
 - Harrisburg: Mater Dei community patron is not elevated → site restored.
 
 ## Dioceses held back (and the sites that depend on them)

@@ -52,7 +52,7 @@ Never run `pkill -f`/`pgrep -f` with a pattern that appears in your own command 
 ## Already answered (do not reopen)
 1. Churches are assumed consecrated unless stated otherwise (Little Rock Feb 3 implemented).
 2. Sacramento: leave unchanged; legacy calendar is correct.
-3. Miami: patron Immaculate Conception; cathedral dedicated Jan 27, 1957 (Wikipedia only — owner should verify with the archdiocese). Our Lady of Belen chapel still needs its own patronal date (open).
+3. Miami: patron Immaculate Conception; cathedral dedicated Jan 27, 1957 (Jan 27 confirmed correct by the owner). Our Lady of Belen chapel still needs its own patronal date (open).
 15. Harrisburg: Mater Dei community patron NOT elevated.
 
 ## Other standing items for the owner (not blocking)

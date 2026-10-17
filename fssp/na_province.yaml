@@ -142,7 +142,7 @@ dioceses:
   - id: miami
     name: Archdiocese of Miami
     country: US
-    note: "Not in the Ordo supplement. Looked up 2026-10-16 (Wikipedia: Archdiocese of Miami; Cathedral of Saint Mary (Miami)): patron Our Lady of the Immaculate Conception; Cathedral of St. Mary dedicated 27 Jan 1957. Dedication date is from Wikipedia only - verify with the archdiocese."
+    note: "Not in the Ordo supplement. Looked up 2026-10-16 (Wikipedia: Archdiocese of Miami; Cathedral of Saint Mary (Miami)): patron Our Lady of the Immaculate Conception; Cathedral of St. Mary dedicated 27 Jan 1957. Jan 27 dedication date CONFIRMED CORRECT by the owner 2026-10-17."
     feasts:
       - {date: "12-08", title: "Immaculate Conception, Principal Patroness", rank: as_on_feast, kind: patron_principal}
       - {date: "01-27", title: "Dedication of the Cathedral Church", rank: I, kind: dedication_cathedral}
