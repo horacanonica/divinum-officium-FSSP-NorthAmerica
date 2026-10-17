@@ -64,7 +64,6 @@ function fileIndex(calendar, variant) {
   (calendar.files || []).forEach(function (file) {
     if (fileVariant(file) !== variant) return;
     if (file.type === "year") index["y" + file.year] = file;
-    if (file.type === "month") index["m" + file.year + "-" + file.month] = file;
   });
   return index;
 }
@@ -177,12 +176,6 @@ function render(catalog) {
       groupByYear(windowMonths).forEach(function (group) {
         const block = el("div", "year-block");
         block.appendChild(el("span", "year-label", String(group.year)));
-        if (calendar.monthly !== false) {
-          group.months.forEach(function (month) {
-            const file = files["m" + group.year + "-" + month];
-            block.appendChild(linkOrPending(catalog, file, "chip", MONTHS[month - 1]));
-          });
-        }
         block.appendChild(linkOrPending(catalog, files["y" + group.year], "year-link", "Full year"));
         card.appendChild(block);
       });

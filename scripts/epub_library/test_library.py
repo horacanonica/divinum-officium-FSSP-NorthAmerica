@@ -59,7 +59,7 @@ class CalendarDiscoveryTest(unittest.TestCase):
     def test_every_generated_calendar_is_listed_year_only(self):
         self.assertGreaterEqual(len(self.calendars), 99)
         self.assertNotIn("Other", {cal.region for cal in self.calendars})
-        self.assertFalse(any(cal.monthly for cal in self.calendars))
+        self.assertFalse(any(hasattr(cal, "monthly") for cal in self.calendars))
         self.assertEqual(library.VARIANTS, ("la",))
         self.assertIn("diocese-of-phoenix", self.by_slug)
         self.assertEqual(self.by_slug["fssp-canada"].region, "Canada")
@@ -327,6 +327,54 @@ class WindowAndPlanTest(unittest.TestCase):
         self.assertEqual({job["slug"] for job in jobs}, {"sacramento"})
         self.assertEqual(sorted(job["year"] for job in jobs if job["variant"] == "la"), [2026, 2027, 2028])
         self.assertEqual([job["variant"] for job in jobs], ["la", "la", "la"])
+
+    def test_a_year_file_is_complete_without_months(self):
+        files = [
+            {"type": "year", "year": 2026, "name": "niagara-2026-la.epub", "variant": "la"},
+            {"type": "month", "year": 2026, "month": 1, "name": "niagara-2026-01-la.epub", "variant": "la"},
+        ]
+        self.assertTrue(library.year_complete(files, 2026))
+        self.assertTrue(library.year_complete(files[:1], 2026))
+        self.assertFalse(library.year_complete(files[1:], 2026))
+
+    def test_merge_drops_monthly_files(self):
+        window = library.rolling_window(date(2026, 10, 16))
+        niagara = self.by_slug["niagara"]
+        old = {
+            "fingerprint": library.FINGERPRINT_VERSION,
+            "calendars": [
+                {
+                    "slug": "niagara",
+                    "built": {"2026": {"la": "same"}, "2027": {"la": "same"}, "2028": {"la": "same"}},
+                    "files": _year_files("niagara", 2026, "la")
+                    + _year_files("niagara", 2027, "la")
+                    + _year_files("niagara", 2028, "la"),
+                }
+            ],
+        }
+        merged = library.merge_catalog(
+            old,
+            self.calendars,
+            self.order,
+            window,
+            [],
+            repo="horacanonica/divinum-officium-FSSP-NorthAmerica",
+            updated="2026-10-17T00:00:00Z",
+        )
+        entry = next(item for item in merged["calendars"] if item["slug"] == "niagara")
+        self.assertEqual(
+            [item["name"] for item in entry["files"]],
+            ["niagara-2026-la.epub", "niagara-2027-la.epub", "niagara-2028-la.epub"],
+        )
+        self.assertNotIn("monthly", entry)
+        doomed = library.assets_to_prune(
+            merged,
+            ["niagara-2026-01-la.epub", "niagara-2026-la.epub", "niagara-2027-12-la.epub"],
+        )
+        self.assertEqual(doomed, ["niagara-2026-01-la.epub", "niagara-2027-12-la.epub"])
+        hashes = {cal.slug: "same" for cal in self.calendars}
+        jobs = library.plan_jobs(self.calendars, merged, window, hashes, affected=set())
+        self.assertEqual([job for job in jobs if job["slug"] == "niagara"], [])
 
     def test_complete_catalog_plans_nothing(self):
         window = library.rolling_window(date(2026, 10, 16))

@@ -4,9 +4,9 @@
 # region heading and the place line. A calendar with no row here still
 # appears, under Other.
 #
-# An optional fourth column of "year" publishes only the full-year EPUB for
-# that calendar. GitHub allows 1,000 assets per release, so every
-# calendar is year-only and Latin only.
+# Every calendar publishes one full-year EPUB per year. Monthly files are
+# not built. The optional fourth column may still say "year"; that flag is
+# not read. "hidden" in that column keeps a duplicate calendar off the page.
 #
 # A fifth column gives the heading shown on the page (parish and city).
 #

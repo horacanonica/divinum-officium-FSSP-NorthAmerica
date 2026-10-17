@@ -249,7 +249,7 @@ bash epubgen2.sh -y 2026 -r OLGSeminary -o /path/to/output/OLGSeminary
 bash epubgen2.sh -y 2026 -r MapleHill -o /path/to/output/MapleHill
 ```
 
-Each run produces 12 monthly EPUBs and one full-year EPUB.
+`epubgen2.sh` writes a file for each month and one for the year. The public download library keeps only the full-year file, one per year in the window.
 
 ---
 
