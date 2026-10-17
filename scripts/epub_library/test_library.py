@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import json
+import shutil
+import subprocess
 import sys
 import unittest
 from datetime import date
@@ -72,15 +74,102 @@ class CalendarDiscoveryTest(unittest.TestCase):
                 self.assertIn(",", cal.name)
 
     def test_calendars_list_their_local_feasts_by_layer(self):
+        def sequence(slug):
+            layers = []
+            for feast in self.by_slug[slug].feasts:
+                if not layers or layers[-1] != feast["layer"]:
+                    layers.append(feast["layer"])
+            return layers
+
+        # Parish, then diocese, then FSSP, then the country.
+        self.assertEqual(sequence("diocese-of-phoenix"), ["Diocese", "FSSP", "United States"])
+        self.assertEqual(sequence("archdiocese-of-denver"), ["Diocese", "FSSP", "United States"])
+        self.assertEqual(
+            sequence("our-lady-of-mount-carmel-littleton-co"),
+            ["Parish", "Diocese", "FSSP", "United States"],
+        )
+        self.assertEqual(sequence("diocese-of-calgary"), ["Diocese", "FSSP", "Canada"])
+        self.assertEqual(
+            sequence("st-anthony-church-calgary-ab"),
+            ["Parish", "Diocese", "FSSP", "Canada"],
+        )
+        self.assertEqual(sequence("sacramento"), ["This calendar", "FSSP", "United States"])
+        self.assertEqual(sequence("guadalajara"), ["This calendar", "FSSP"])
+
+        denver = self.by_slug["archdiocese-of-denver"].feasts
+        self.assertEqual((denver[0]["date"], denver[0]["layer"]), ("10-27", "Diocese"))
+        littleton = self.by_slug["our-lady-of-mount-carmel-littleton-co"].feasts
+        self.assertEqual((littleton[0]["date"], littleton[0]["layer"]), ("07-16", "Parish"))
+
         phoenix = self.by_slug["diocese-of-phoenix"]
-        layers = [f["layer"] for f in phoenix.feasts]
-        self.assertEqual(layers[0], "FSSP")
-        self.assertLess(layers.index("United States"), layers.index("Diocese"))
         dec12 = [f for f in phoenix.feasts if f["date"] == "12-12"]
         self.assertEqual(len(dec12), 1)  # the diocese replaces the US layer on the same date
         self.assertEqual((dec12[0]["layer"], dec12[0]["class"]), ("Diocese", "I"))
         canada = self.by_slug["diocese-of-calgary"]
         self.assertNotIn("United States", {f["layer"] for f in canada.feasts})
+
+        for cal in self.calendars:
+            ranks = [library.layer_display_rank(feast["layer"]) for feast in cal.feasts]
+            self.assertEqual(ranks, sorted(ranks), cal.slug)
+            by_layer: dict[str, list[str]] = {}
+            for feast in cal.feasts:
+                by_layer.setdefault(feast["layer"], []).append(feast["date"])
+            for layer, dates in by_layer.items():
+                self.assertEqual(dates, sorted(dates), f"{cal.slug} {layer}")
+
+    def test_download_page_sorts_feast_groups_the_same_way(self):
+        node = shutil.which("node")
+        if node is None:
+            self.skipTest("node is not installed")
+        script = Path(__file__).resolve().parents[1].parent / "docs" / "downloads.js"
+        source = script.read_text(encoding="utf-8")
+        prelude = source.split("function monthsInWindow", 1)[0]
+        calendars = []
+        for cal in self.calendars:
+            feasts = [dict(feast) for feast in cal.feasts]
+            calendars.append(
+                {
+                    "slug": cal.slug,
+                    "feasts": list(reversed(feasts)),
+                    "expected": feasts,
+                }
+            )
+        calendars.append(
+            {
+                "slug": "unknown-layer",
+                "feasts": [
+                    {"layer": "United States", "date": "01-02", "name": "country"},
+                    {"layer": "Mission", "date": "06-01", "name": "local"},
+                    {"layer": "FSSP", "date": "03-01", "name": "institute"},
+                    {"layer": "Parish", "date": "01-01", "name": "parish"},
+                ],
+                "expected": [
+                    {"layer": "Mission", "date": "06-01", "name": "local"},
+                    {"layer": "Parish", "date": "01-01", "name": "parish"},
+                    {"layer": "FSSP", "date": "03-01", "name": "institute"},
+                    {"layer": "United States", "date": "01-02", "name": "country"},
+                ],
+            }
+        )
+        program = prelude + """
+const calendars = require("fs").readFileSync(0, "utf8");
+for (const calendar of JSON.parse(calendars)) {
+  const ordered = feastsInDisplayOrder(calendar.feasts);
+  if (JSON.stringify(ordered) !== JSON.stringify(calendar.expected)) {
+    console.error(calendar.slug);
+    console.error(JSON.stringify(ordered));
+    process.exit(1);
+  }
+}
+"""
+        result = subprocess.run(
+            [node, "-e", program],
+            input=json.dumps(calendars),
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr or result.stdout)
 
     def test_missing_region_falls_through_to_other(self):
         versions = library.load_versions()
