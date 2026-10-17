@@ -5,6 +5,9 @@ name: EPUB downloads
 # rebuilds all of them; one Kalendaria file rebuilds that apostolate). The
 # nightly run fills any Latin year still missing and moves the two-year
 # window forward. Each job is one full-year file. Latin (-la) is the only edition.
+# Before the build matrix, the plan job verifies vernacular propers. A missing
+# English, Spanish, or French file is listed on the run and does not stop the
+# Latin build. Locations that only use the commons are not flagged.
 
 on:
   push:
@@ -94,6 +97,9 @@ jobs:
             fi
           fi
           python3 scripts/epub_library/cli.py plan "${args[@]}"
+
+      - name: Verify vernacular propers
+        run: python3 scripts/epub_library/cli.py preflight
 
   build:
     needs: plan

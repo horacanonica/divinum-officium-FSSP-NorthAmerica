@@ -29,6 +29,12 @@ rebuilds that calendar; a shared Office edit rebuilds every calendar.
 Published names are ``{calendar}-{year}-la.epub`` on the ``epub-library-la``
 release. Latin is the only edition.
 
+Before any of those files are compiled, ``missing_vernacular`` checks the
+calendars this pipeline publishes. A location that has a proper of its own
+needs that proper in each planned vernacular language (English, Spanish,
+French). A location that only points at the commons is skipped. The workflow
+prints every gap and still builds the Latin years that are available.
+
 Fingerprints are stored per year. A run that finishes only some years does
 not mark the unfinished years as current.
 """
@@ -89,6 +95,16 @@ SANCTI_DIRS = ("Sancti", "SanctiM")
 
 # Latin is the only published edition.
 VARIANTS = ("la",)
+# Planned vernacular editions. Latin is the source text and is not listed:
+# a missing Latin file is not a vernacular gap. Folder names are
+# web/www/horas/<folder>. The second field is the name printed when a file
+# is missing. A new language is a new row. Every published calendar is
+# checked against this table, so a new location needs no extra code.
+VERNACULAR_LANGS = (
+    ("English", "English"),
+    ("Espanol", "Spanish"),
+    ("Francais", "French"),
+)
 VARIANT_SUFFIX = {"la": "-la"}
 # The optional suffix also matches retired unsuffixed and -la-en names so a
 # stray bilingual file on the release can be pruned. Nothing generates them.
@@ -977,3 +993,240 @@ def assets_to_prune(catalog: dict, remote_names: list[str]) -> list[str]:
 
 def rubrics_code(cal: Calendar) -> str:
     return cal.version.split(" - ", 1)[1] if " - " in cal.version else cal.version
+
+
+# Sections that name or rank an office. They are not a proper of its own:
+# a commons file is only these, plus a rule that points at a commune.
+_STRUCTURAL_SECTIONS = {"Officium", "Rank", "Rule", "Name", "Comment"}
+_SECTION_SPLIT = re.compile(r"(?m)^\[([^\]]+)\][^\n]*\n?")
+# @Sancti/02-22, and "ex Sancti/01-25" / "vide Sancti/01-25" (a pseudo-commune).
+# Commune files (ex C8, vide C5) are not included.
+_SANCTI_TARGET = re.compile(
+    r"(?:@|(?:ex|vide)\s+)(SanctiM?)/([0-9A-Za-z][0-9A-Za-z-]*)",
+    re.IGNORECASE,
+)
+
+
+@dataclass(frozen=True)
+class VernacularGap:
+    """One location missing one planned language for one or more propers."""
+
+    version: str
+    slug: str
+    name: str
+    folder: str
+    language: str
+    refs: tuple[str, ...]
+
+    def warning(self) -> str:
+        return f"Missing {self.language} for {self.name}: {', '.join(self.refs)}"
+
+
+@dataclass(frozen=True)
+class PreflightResult:
+    gaps: tuple[VernacularGap, ...]
+    checked: int
+    commons_only: int
+
+    @property
+    def locations_with_gaps(self) -> int:
+        return len({gap.slug for gap in self.gaps})
+
+
+def office_has_own_text(text: str) -> bool:
+    """True when the office contains proper text, not only a commons shell.
+
+    A commons file is a title, a rank, a rule such as ``vide C5`` or ``ex C8``,
+    and sometimes a [Name]. An elevation that only redirects with ``@Sancti``
+    has no text of its own either. A prayer, lesson, hymn, or antiphon does.
+    """
+    parts = _SECTION_SPLIT.split(text)
+    for index in range(1, len(parts), 2):
+        name = parts[index].strip()
+        if name in _STRUCTURAL_SECTIONS:
+            continue
+        body = parts[index + 1] if index + 1 < len(parts) else ""
+        if _body_has_prose(body):
+            return True
+    return False
+
+
+def _body_has_prose(body: str) -> bool:
+    for line in body.splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith(("#", "@", "$", "&", "!")):
+            continue
+        return True
+    return False
+
+
+def sancti_targets(text: str) -> tuple[str, ...]:
+    """Sancti refs this file redirects to. Commune ids are left out."""
+    found: list[str] = []
+    seen: set[str] = set()
+    for match in _SANCTI_TARGET.finditer(text):
+        ref = match.group(2)
+        if ref not in seen:
+            seen.add(ref)
+            found.append(ref)
+    return tuple(found)
+
+
+def latin_office_text(ref: str, horas: Path | None = None) -> str | None:
+    """Latin Sancti text for a kalendar ref. SanctiM is the fallback."""
+    horas = horas if horas is not None else ROOT / "web" / "www" / "horas"
+    for folder in ("Sancti", "SanctiM"):
+        path = horas / "Latin" / folder / f"{ref}.txt"
+        if path.is_file():
+            return path.read_text(encoding="utf-8", errors="replace")
+    return None
+
+
+def vernacular_office_exists(folder: str, ref: str, horas: Path | None = None) -> bool:
+    """True when this language has the proper in Sancti or SanctiM."""
+    horas = horas if horas is not None else ROOT / "web" / "www" / "horas"
+    for sancti in SANCTI_DIRS:
+        if (horas / folder / sancti / f"{ref}.txt").is_file():
+            return True
+    return False
+
+
+def own_kalendar_refs(cal: Calendar, kalendaria_dir: Path | None = None) -> set[str]:
+    """Refs named by this calendar's own Kalendaria file, not its ancestors.
+
+    A parish that only keeps a dedication does not inherit the duty to
+    translate an FSSP proper. That proper is checked on the FSSP calendar.
+    """
+    kalendaria_dir = kalendaria_dir if kalendaria_dir is not None else KALENDARIA_DIR
+    path = kalendaria_dir / f"{cal.kalendar}.txt"
+    if not path.is_file():
+        return set()
+    return kalendaria_refs(path.read_text(encoding="utf-8", errors="replace"))
+
+
+def proper_refs(
+    ref: str,
+    horas: Path | None = None,
+    *,
+    _memo: dict[str, set[str]] | None = None,
+    _seen: set[str] | None = None,
+) -> set[str]:
+    """Files that hold this ref's proper text and therefore need a translation.
+
+    A commons shell contributes nothing. A wrapper (``@Sancti/...`` or a rank
+    file whose sections only point at another Sancti file) contributes the
+    file it points at. A file with its own prayer or lesson contributes
+    itself and is not walked further: hymns it includes belong to the
+    general sanctoral, not to this location.
+    """
+    horas = horas if horas is not None else ROOT / "web" / "www" / "horas"
+    memo = _memo if _memo is not None else {}
+    if ref in memo:
+        return memo[ref]
+    seen = _seen if _seen is not None else set()
+    if ref in seen:
+        return set()
+    seen.add(ref)
+    text = latin_office_text(ref, horas)
+    if text is None:
+        memo[ref] = set()
+        return memo[ref]
+    if office_has_own_text(text):
+        memo[ref] = {ref}
+        return memo[ref]
+    found: set[str] = set()
+    for target in sancti_targets(text):
+        found |= proper_refs(target, horas, _memo=memo, _seen=seen)
+    memo[ref] = found
+    return found
+
+
+def missing_vernacular(
+    calendars: list[Calendar],
+    *,
+    root: Path | None = None,
+    langs: tuple[tuple[str, str], ...] | None = None,
+) -> PreflightResult:
+    """Vernacular propers missing for the calendars the EPUB build publishes.
+
+    Commons-only locations are omitted. The result is a warning list: callers
+    still build every Latin year that is available. ``langs`` defaults to
+    ``VERNACULAR_LANGS``, so a new edition is picked up by adding a row there.
+    """
+    root = root or ROOT
+    langs = langs if langs is not None else VERNACULAR_LANGS
+    horas = root / "web" / "www" / "horas"
+    kalendaria_dir = root / "web" / "www" / "Tabulae" / "Kalendaria"
+    memo: dict[str, set[str]] = {}
+    gaps: list[VernacularGap] = []
+    commons_only = 0
+    order = {folder: index for index, (folder, _name) in enumerate(langs)}
+    for cal in calendars:
+        needed: set[str] = set()
+        for ref in own_kalendar_refs(cal, kalendaria_dir):
+            needed |= proper_refs(ref, horas, _memo=memo)
+        if not needed:
+            commons_only += 1
+            continue
+        for folder, language in langs:
+            missing = tuple(sorted(ref for ref in needed if not vernacular_office_exists(folder, ref, horas)))
+            if missing:
+                gaps.append(
+                    VernacularGap(
+                        version=cal.version,
+                        slug=cal.slug,
+                        name=cal.name,
+                        folder=folder,
+                        language=language,
+                        refs=missing,
+                    )
+                )
+    gaps.sort(key=lambda gap: (gap.name.lower(), order.get(gap.folder, len(order)), gap.language))
+    return PreflightResult(tuple(gaps), len(calendars), commons_only)
+
+
+def format_preflight(result: PreflightResult, langs: tuple[tuple[str, str], ...] | None = None) -> str:
+    """Plain-text report for the job log. Missing files do not fail the build."""
+    langs = langs if langs is not None else VERNACULAR_LANGS
+    language_names = ", ".join(name for _folder, name in langs)
+    lines = [
+        "Vernacular preflight (warning only; Latin EPUBs are still built).",
+        f"Languages: {language_names}.",
+        (
+            f"Checked {result.checked} calendar(s); "
+            f"skipped {result.commons_only} with no proper of their own."
+        ),
+    ]
+    if not result.gaps:
+        lines.append("No vernacular proper files are missing.")
+        return "\n".join(lines) + "\n"
+    lines.append(
+        f"{len(result.gaps)} gap(s) across {result.locations_with_gaps} location(s):"
+    )
+    for gap in result.gaps:
+        lines.append(f"  {gap.name} — {gap.language}: {', '.join(gap.refs)}")
+    return "\n".join(lines) + "\n"
+
+
+def format_preflight_summary(result: PreflightResult) -> str:
+    """Markdown for the GitHub Actions step summary."""
+    if not result.gaps:
+        return (
+            "### Vernacular preflight\n\n"
+            "No missing vernacular propers. "
+            f"Skipped {result.commons_only} commons-only calendar(s). "
+            "This check warns and does not stop the Latin build.\n"
+        )
+    rows = [
+        "### Vernacular preflight",
+        "",
+        "Missing vernacular propers are listed below. "
+        "The Latin build continues. Commons-only locations are not listed.",
+        "",
+        "| Location | Language | Missing files |",
+        "| --- | --- | --- |",
+    ]
+    for gap in result.gaps:
+        rows.append(f"| {gap.name} | {gap.language} | {', '.join(gap.refs)} |")
+    rows.append("")
+    return "\n".join(rows)

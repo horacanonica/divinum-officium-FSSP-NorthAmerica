@@ -59,7 +59,11 @@ The EPUB files are GitHub Release assets, not files in the git tree. They end
 in `-la` and are on the `epub-library-la` release. Latin is the only edition.
 `.github/workflows/epub-downloads.yml` rebuilds a calendar when its own data
 changes, rebuilds every calendar when shared Office data changes, and runs a
-nightly catch-up that also extends the two-year window.
+nightly catch-up that also extends the two-year window. Before that build,
+the plan job checks that each location's own propers exist in the planned
+vernacular languages (English, Spanish, and French). A location that only
+uses the commons is skipped. Anything missing is listed on the workflow run;
+the Latin build still runs.
 Adding a calendar is a `data.txt` row in the FSSP chain; an optional place
 and region go in `scripts/epub_library/regions.tsv`. The download page,
 including its list of locations, is filled from that data.
