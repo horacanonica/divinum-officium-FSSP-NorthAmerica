@@ -461,7 +461,10 @@ sub ribbon_lessons_from {
       for my $j ($i .. $end) {
         next if $L[$j]{source};
         $L[$j]{source} = $winner;
-        $L[$j]{kind} = ($L[$j]{nocturn} == 2) ? 'legend' : 'scripture';
+        $L[$j]{kind} =
+            ($L[$j]{nocturn} == 3) ? 'homily'
+          : ($L[$j]{nocturn} == 2) ? 'legend'
+          :                          'scripture';
       }
       $L[$i]{note} = $c;
     } elsif ($c =~ /Lectio(\d+) ex (.+)/) {
@@ -1822,7 +1825,8 @@ ED
     ? $ok->('Phoenix Guadalupe')
     : $bad->("Phoenix winner=$gu->{winner}");
   my $gsk = ribbon_skeleton_html('en', $gu, 'Matutinum', $gu->{hours}{Matutinum}, []);
-  ($gsk =~ /print this proper separately/ && $gsk =~ /data-booklet=""/ && $gsk =~ /data-file="Sancti\/12-12s"/)
+  ($gsk =~ /print this proper separately/ && $gsk =~ /data-booklet=""/ && $gsk =~ /data-file="Sancti\/12-12s"/
+      && $gsk =~ /Lessons 7.{1,3}9: Homily/)
     ? $ok->('particular proper flagged, booklet link empty')
     : $bad->('Guadalupe skeleton');
   {
