@@ -5,7 +5,7 @@
     "la": "epub-library-la",
     "la-en": "epub-library"
   },
-  "updated": "2026-10-17T06:07:52Z",
+  "updated": "2026-10-17T08:43:05Z",
   "languages": "Latin",
   "variants": [
     {
@@ -254,6 +254,13 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "10-27",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -307,13 +314,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-27",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -361,6 +361,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "09-02",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "09-04",
+          "name": "Beatæ Mariæ Virginis Reginæ Angelorum",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -414,20 +428,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "09-02",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "09-04",
-          "name": "Beatæ Mariæ Virginis Reginæ Angelorum",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -475,6 +475,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "07-25",
+          "name": "S. Jacobi Apostoli",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-22",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -528,20 +542,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "07-25",
-          "name": "S. Jacobi Apostoli",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-22",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -589,6 +589,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "10-16",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-27",
+          "name": "S. Joannis Apostoli et Evangelistæ",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -643,20 +657,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-16",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-27",
-          "name": "S. Joannis Apostoli et Evangelistæ",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -702,6 +702,20 @@
       ],
       "monthly": false,
       "feasts": [
+        {
+          "layer": "Diocese",
+          "date": "12-12",
+          "name": "Beatæ Mariæ Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-19",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -749,20 +763,6 @@
           "date": "11-13",
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-12",
-          "name": "Beatæ Mariæ Virginis de Guadalupe",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-19",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -810,6 +810,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "06-07",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "10-03",
+          "name": "S. Theresiæ a Jesu Infante Virginis",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -864,20 +878,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "06-07",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-03",
-          "name": "S. Theresiæ a Jesu Infante Virginis",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -923,6 +923,20 @@
       ],
       "monthly": false,
       "feasts": [
+        {
+          "layer": "Diocese",
+          "date": "12-11",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-12",
+          "name": "Beatæ Mariæ Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -970,20 +984,6 @@
           "date": "11-13",
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-11",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-12",
-          "name": "Beatæ Mariæ Virginis de Guadalupe",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -1031,6 +1031,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "01-26",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "11-13",
+          "name": "S. Didaci Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -1078,20 +1092,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "01-26",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-13",
-          "name": "S. Didaci Confessoris",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -1137,6 +1137,20 @@
       ],
       "monthly": false,
       "feasts": [
+        {
+          "layer": "Diocese",
+          "date": "12-12",
+          "name": "Beatæ Mariæ Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-19",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -1184,20 +1198,6 @@
           "date": "11-13",
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-12",
-          "name": "Beatæ Mariæ Virginis de Guadalupe",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-19",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -1245,6 +1245,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "09-26",
+          "name": "Ss. Isaaci Jogues, Joannis de Brébeuf et Sociorum Martyrum",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "07-25",
+          "name": "S. Jacobi Apostoli",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-22",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -1292,27 +1313,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "07-25",
-          "name": "S. Jacobi Apostoli",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-22",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "09-26",
-          "name": "Ss. Isaaci Jogues, Joannis de Brébeuf et Sociorum Martyrum",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -1359,6 +1359,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "07-16",
+          "name": "Beatæ Mariæ Virginis de Monte Carmelo",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "10-27",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -1413,20 +1427,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-27",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "07-16",
-          "name": "Beatæ Mariæ Virginis de Monte Carmelo",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -1473,6 +1473,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "07-26",
+          "name": "S. Annæ Matris B.M.V.",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "01-26",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "11-13",
+          "name": "S. Didaci Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -1520,27 +1541,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "01-26",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-13",
-          "name": "S. Didaci Confessoris",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Parish",
-          "date": "07-26",
-          "name": "S. Annæ Matris B.M.V.",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -1587,6 +1587,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "11-22",
+          "name": "S. Cæciliæ Virginis et Martyris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-11",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-12",
+          "name": "Beatæ Mariæ Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -1634,27 +1655,6 @@
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-11",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-12",
-          "name": "Beatæ Mariæ Virginis de Guadalupe",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "11-22",
-          "name": "S. Cæciliæ Virginis et Martyris",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -1700,6 +1700,20 @@
       ],
       "monthly": false,
       "feasts": [
+        {
+          "layer": "Diocese",
+          "date": "07-25",
+          "name": "S. Jacobi Apostoli",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-22",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -1754,20 +1768,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "07-25",
-          "name": "S. Jacobi Apostoli",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-22",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -1815,6 +1815,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "07-22",
+          "name": "S. Mariæ Magdalenæ Pœnitentis",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "09-02",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "09-04",
+          "name": "Beatæ Mariæ Virginis Reginæ Angelorum",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -1869,27 +1890,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "09-02",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "09-04",
-          "name": "Beatæ Mariæ Virginis Reginæ Angelorum",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "07-22",
-          "name": "S. Mariæ Magdalenæ Pœnitentis",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -1939,6 +1939,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "This calendar",
+          "date": "03-17",
+          "name": "S. Patricii Episcopi Confessoris",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "This calendar",
+          "date": "08-03",
+          "name": "Inventionis S. Stephani Protomartyris",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "This calendar",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -1985,27 +2006,6 @@
           "date": "11-13",
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "03-17",
-          "name": "S. Patricii Episcopi Confessoris",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "08-03",
-          "name": "Inventionis S. Stephani Protomartyris",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -2053,6 +2053,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "06-15",
+          "name": "Ss. Viti, Modesti atque Crescentiæ Martyrum",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "09-02",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "09-04",
+          "name": "Beatæ Mariæ Virginis Reginæ Angelorum",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -2107,27 +2128,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "09-02",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "09-04",
-          "name": "Beatæ Mariæ Virginis Reginæ Angelorum",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "06-15",
-          "name": "Ss. Viti, Modesti atque Crescentiæ Martyrum",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -2174,6 +2174,13 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "04-13",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -2227,13 +2234,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "04-13",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -2281,6 +2281,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "10-15",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-12",
+          "name": "Beatæ Mariæ Virginis de Guadalupe",
+          "class": "II",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -2328,20 +2342,6 @@
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-15",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-12",
-          "name": "Beatæ Mariæ Virginis de Guadalupe",
-          "class": "II",
-          "kind": "elevated"
         }
       ]
     },
@@ -2388,6 +2388,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "10-26",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-12",
+          "name": "Beatæ Mariæ Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -2434,20 +2448,6 @@
           "date": "11-13",
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-26",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-12",
-          "name": "Beatæ Mariæ Virginis de Guadalupe",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -2495,6 +2495,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "03-17",
+          "name": "S. Patricii Episcopi et Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "11-29",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -2548,20 +2562,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "03-17",
-          "name": "S. Patricii Episcopi et Confessoris",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-29",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -2609,6 +2609,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "03-17",
+          "name": "S. Patricii Episcopi et Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "07-10",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -2662,20 +2676,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "03-17",
-          "name": "S. Patricii Episcopi et Confessoris",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "07-10",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -2723,6 +2723,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "02-03",
+          "name": "In Anniversario Dedicationis Omnium Ecclesiarum Consecratarum Dioecesis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "11-30",
+          "name": "S. Andreæ Apostoli",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-01",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -2776,27 +2797,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "02-03",
-          "name": "In Anniversario Dedicationis Omnium Ecclesiarum Consecratarum Dioecesis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-30",
-          "name": "S. Andreæ Apostoli",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-01",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -2844,6 +2844,13 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "05-12",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -2897,13 +2904,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "05-12",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -2951,6 +2951,13 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "02-24",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -3004,13 +3011,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "02-24",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -3058,6 +3058,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "03-17",
+          "name": "S. Patricii Episcopi et Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "11-29",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -3111,20 +3125,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "03-17",
-          "name": "S. Patricii Episcopi et Confessoris",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-29",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -3172,6 +3172,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "10-11",
+          "name": "Maternitatis Beatæ Mariæ Virginis",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "10-26",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-12",
+          "name": "Beatæ Mariæ Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -3219,27 +3240,6 @@
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-26",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-12",
-          "name": "Beatæ Mariæ Virginis de Guadalupe",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "10-11",
-          "name": "Maternitatis Beatæ Mariæ Virginis",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -3286,6 +3286,34 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "09-15",
+          "name": "Septem Dolorum Beatæ Mariæ Virginis",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "02-03",
+          "name": "In Anniversario Dedicationis Omnium Ecclesiarum Consecratarum Dioecesis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "11-30",
+          "name": "S. Andreæ Apostoli",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-01",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -3340,34 +3368,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "02-03",
-          "name": "In Anniversario Dedicationis Omnium Ecclesiarum Consecratarum Dioecesis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-30",
-          "name": "S. Andreæ Apostoli",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-01",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "09-15",
-          "name": "Septem Dolorum Beatæ Mariæ Virginis",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -3414,6 +3414,13 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "05-12",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -3467,13 +3474,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "05-12",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -3521,6 +3521,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "05-31",
+          "name": "Beatæ Mariæ Virginis Reginæ",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "04-13",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -3575,20 +3589,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "04-13",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "05-31",
-          "name": "Beatæ Mariæ Virginis Reginæ",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -3635,6 +3635,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "03-21",
+          "name": "S. Benedicti Abbatis",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "03-17",
+          "name": "S. Patricii Episcopi et Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "07-10",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -3689,27 +3710,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "03-17",
-          "name": "S. Patricii Episcopi et Confessoris",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "07-10",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "03-21",
-          "name": "S. Benedicti Abbatis",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -3719,57 +3719,47 @@
       "name": "St. Damien Catholic Church, Edmond",
       "region": "South Central",
       "place": "Edmond, Oklahoma",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "10800c488f76e70f73b03826ffe5be91889628d7d94ebdbbdfc90d618bb4c5f5"
+        },
+        "2027": {
+          "la": "10800c488f76e70f73b03826ffe5be91889628d7d94ebdbbdfc90d618bb4c5f5"
+        },
+        "2028": {
+          "la": "10800c488f76e70f73b03826ffe5be91889628d7d94ebdbbdfc90d618bb4c5f5"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-damien-catholic-church-edmond-ok-2026-la.epub",
+          "bytes": 14812222,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-damien-catholic-church-edmond-ok-2027-la.epub",
+          "bytes": 14814266,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-damien-catholic-church-edmond-ok-2028-la.epub",
+          "bytes": 14846787,
+          "variant": "la"
+        }
+      ],
       "monthly": false,
       "feasts": [
         {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
+          "layer": "Parish",
+          "date": "05-10",
+          "name": "S. Damiáni de Molokai Confessoris",
           "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
           "kind": "proper"
         },
         {
@@ -3787,25 +3777,6 @@
           "kind": "elevated"
         },
         {
-          "layer": "Parish",
-          "date": "05-10",
-          "name": "S. Damiáni de Molokai Confessoris",
-          "class": "I",
-          "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - St. John the Baptist Church Cabot AR",
-      "slug": "st-john-the-baptist-church-cabot-ar",
-      "name": "St. John the Baptist Church, Cabot",
-      "region": "South Central",
-      "place": "Cabot, Arkansas",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
-        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -3853,14 +3824,51 @@
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - St. John the Baptist Church Cabot AR",
+      "slug": "st-john-the-baptist-church-cabot-ar",
+      "name": "St. John the Baptist Church, Cabot",
+      "region": "South Central",
+      "place": "Cabot, Arkansas",
+      "built": {
+        "2026": {
+          "la": "dd114360472f86696be97d59be5b45ca8f4fd44068dd7101d5a6213d12783a9f"
+        },
+        "2027": {
+          "la": "dd114360472f86696be97d59be5b45ca8f4fd44068dd7101d5a6213d12783a9f"
+        },
+        "2028": {
+          "la": "dd114360472f86696be97d59be5b45ca8f4fd44068dd7101d5a6213d12783a9f"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-john-the-baptist-church-cabot-ar-2026-la.epub",
+          "bytes": 14821424,
+          "variant": "la"
         },
         {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
+          "type": "year",
+          "year": 2027,
+          "name": "st-john-the-baptist-church-cabot-ar-2027-la.epub",
+          "bytes": 14821328,
+          "variant": "la"
         },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-john-the-baptist-church-cabot-ar-2028-la.epub",
+          "bytes": 14853196,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "02-03",
@@ -3881,19 +3889,7 @@
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
           "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - St. Joseph the Worker Church Tyler TX",
-      "slug": "st-joseph-the-worker-church-tyler-tx",
-      "name": "St. Joseph the Worker Church, Tyler",
-      "region": "South Central",
-      "place": "Tyler, Texas",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -3949,12 +3945,112 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - St. Joseph the Worker Church Tyler TX",
+      "slug": "st-joseph-the-worker-church-tyler-tx",
+      "name": "St. Joseph the Worker Church, Tyler",
+      "region": "South Central",
+      "place": "Tyler, Texas",
+      "built": {
+        "2026": {
+          "la": "15b7289cbbbcf54493eed17963ae4f6424f75ba552884b75384f6dad0301327f"
         },
+        "2027": {
+          "la": "15b7289cbbbcf54493eed17963ae4f6424f75ba552884b75384f6dad0301327f"
+        },
+        "2028": {
+          "la": "15b7289cbbbcf54493eed17963ae4f6424f75ba552884b75384f6dad0301327f"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-joseph-the-worker-church-tyler-tx-2026-la.epub",
+          "bytes": 14807565,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-joseph-the-worker-church-tyler-tx-2027-la.epub",
+          "bytes": 14810205,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-joseph-the-worker-church-tyler-tx-2028-la.epub",
+          "bytes": 14842761,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "02-24",
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
           "kind": "proper"
         }
       ]
@@ -3965,66 +4061,42 @@
       "name": "Archdiocese of Atlanta",
       "region": "Southeast",
       "place": "Atlanta, Georgia",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "ac74396a0696b2e9bebdb1bc3ae8824e52c5910f0ac8bbed6d250e0a432523d6"
+        },
+        "2027": {
+          "la": "ac74396a0696b2e9bebdb1bc3ae8824e52c5910f0ac8bbed6d250e0a432523d6"
+        },
+        "2028": {
+          "la": "ac74396a0696b2e9bebdb1bc3ae8824e52c5910f0ac8bbed6d250e0a432523d6"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-atlanta-2026-la.epub",
+          "bytes": 14812364,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-atlanta-2027-la.epub",
+          "bytes": 14821467,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-atlanta-2028-la.epub",
+          "bytes": 14851301,
+          "variant": "la"
+        }
+      ],
       "monthly": false,
       "feasts": [
-        {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
-        },
         {
           "layer": "Diocese",
           "date": "01-18",
@@ -4045,19 +4117,7 @@
           "name": "S. Pii X Papæ Confessoris",
           "class": "II",
           "kind": "elevated"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Archdiocese of Miami",
-      "slug": "archdiocese-of-miami",
-      "name": "Archdiocese of Miami",
-      "region": "Southeast",
-      "place": "Miami, Florida",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -4113,12 +4173,112 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Archdiocese of Miami",
+      "slug": "archdiocese-of-miami",
+      "name": "Archdiocese of Miami",
+      "region": "Southeast",
+      "place": "Miami, Florida",
+      "built": {
+        "2026": {
+          "la": "da97a620792e513dabb28d45cc273e96908932e95cf2e437e22ec60b7d8f4746"
         },
+        "2027": {
+          "la": "da97a620792e513dabb28d45cc273e96908932e95cf2e437e22ec60b7d8f4746"
+        },
+        "2028": {
+          "la": "da97a620792e513dabb28d45cc273e96908932e95cf2e437e22ec60b7d8f4746"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-miami-2026-la.epub",
+          "bytes": 14811471,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-miami-2027-la.epub",
+          "bytes": 14812585,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-miami-2028-la.epub",
+          "bytes": 14846157,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "01-27",
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
           "kind": "proper"
         }
       ]
@@ -4129,10 +4289,56 @@
       "name": "Christ the King Parish, Sarasota",
       "region": "Southeast",
       "place": "Sarasota, Florida",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "724003d055db4216c44768abe0b5d3b4ceaa768a44934565b7a50cc853a6330c"
+        },
+        "2027": {
+          "la": "724003d055db4216c44768abe0b5d3b4ceaa768a44934565b7a50cc853a6330c"
+        },
+        "2028": {
+          "la": "724003d055db4216c44768abe0b5d3b4ceaa768a44934565b7a50cc853a6330c"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "christ-the-king-parish-sarasota-fl-2026-la.epub",
+          "bytes": 14811913,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "christ-the-king-parish-sarasota-fl-2027-la.epub",
+          "bytes": 14815285,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "christ-the-king-parish-sarasota-fl-2028-la.epub",
+          "bytes": 14850425,
+          "variant": "la"
+        }
+      ],
       "monthly": false,
       "feasts": [
+        {
+          "layer": "Diocese",
+          "date": "12-11",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-12",
+          "name": "Beatæ Mariæ Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -4180,20 +4386,6 @@
           "date": "11-13",
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-11",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-12",
-          "name": "Beatæ Mariæ Virginis de Guadalupe",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -4204,59 +4396,42 @@
       "name": "Corpus Christi Chapel, Naples",
       "region": "Southeast",
       "place": "Naples, Florida",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "1cbf5862dba292971ef16931d8ca4727c28e5d6449cc3821ed8d5b1ae9ff2fe8"
+        },
+        "2027": {
+          "la": "1cbf5862dba292971ef16931d8ca4727c28e5d6449cc3821ed8d5b1ae9ff2fe8"
+        },
+        "2028": {
+          "la": "1cbf5862dba292971ef16931d8ca4727c28e5d6449cc3821ed8d5b1ae9ff2fe8"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "corpus-christi-chapel-naples-fl-2026-la.epub",
+          "bytes": 14811901,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "corpus-christi-chapel-naples-fl-2027-la.epub",
+          "bytes": 14815277,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "corpus-christi-chapel-naples-fl-2028-la.epub",
+          "bytes": 14850415,
+          "variant": "la"
+        }
+      ],
       "monthly": false,
       "feasts": [
-        {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
         {
           "layer": "Diocese",
           "date": "12-11",
@@ -4270,19 +4445,7 @@
           "name": "Beatæ Mariæ Virginis de Guadalupe",
           "class": "I",
           "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Diocese of Orlando",
-      "slug": "diocese-of-orlando",
-      "name": "Diocese of Orlando",
-      "region": "Southeast",
-      "place": "Orlando, Florida",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -4331,14 +4494,51 @@
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Diocese of Orlando",
+      "slug": "diocese-of-orlando",
+      "name": "Diocese of Orlando",
+      "region": "Southeast",
+      "place": "Orlando, Florida",
+      "built": {
+        "2026": {
+          "la": "940a9493e77f96c01e60cb54865807f25dabcdab3dc6660ece3d3f02789085ca"
+        },
+        "2027": {
+          "la": "940a9493e77f96c01e60cb54865807f25dabcdab3dc6660ece3d3f02789085ca"
+        },
+        "2028": {
+          "la": "940a9493e77f96c01e60cb54865807f25dabcdab3dc6660ece3d3f02789085ca"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-orlando-2026-la.epub",
+          "bytes": 14809610,
+          "variant": "la"
         },
         {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-orlando-2027-la.epub",
+          "bytes": 14816909,
+          "variant": "la"
         },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-orlando-2028-la.epub",
+          "bytes": 14846534,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "03-09",
@@ -4352,169 +4552,7 @@
           "name": "Ss. Philippi et Jacobi Apostolorum",
           "class": "I",
           "kind": "elevated"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Diocese of Venice",
-      "slug": "diocese-of-venice",
-      "name": "Diocese of Venice",
-      "region": "Southeast",
-      "place": "Venice, Florida",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
-        {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
         },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-11",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-12",
-          "name": "Beatæ Mariæ Virginis de Guadalupe",
-          "class": "I",
-          "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Resurrection of Our Lord Chapel Fort Myers FL",
-      "slug": "resurrection-of-our-lord-chapel-fort-myers-fl",
-      "name": "Resurrection of Our Lord Chapel, Fort Myers",
-      "region": "Southeast",
-      "place": "Fort Myers, Florida",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
-        {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-11",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-12",
-          "name": "Beatæ Mariæ Virginis de Guadalupe",
-          "class": "I",
-          "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - St. Francis de Sales Church Mableton GA",
-      "slug": "st-francis-de-sales-church-mableton-ga",
-      "name": "St. Francis de Sales Church, Mableton",
-      "region": "Southeast",
-      "place": "Mableton, Georgia",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -4570,6 +4608,271 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Diocese of Venice",
+      "slug": "diocese-of-venice",
+      "name": "Diocese of Venice",
+      "region": "Southeast",
+      "place": "Venice, Florida",
+      "built": {
+        "2026": {
+          "la": "7bd546ea70df560cc4676b01dc188e627a086263cd574289f18d64b064f6d1b8"
+        },
+        "2027": {
+          "la": "7bd546ea70df560cc4676b01dc188e627a086263cd574289f18d64b064f6d1b8"
+        },
+        "2028": {
+          "la": "7bd546ea70df560cc4676b01dc188e627a086263cd574289f18d64b064f6d1b8"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-venice-2026-la.epub",
+          "bytes": 14811811,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-venice-2027-la.epub",
+          "bytes": 14815188,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-venice-2028-la.epub",
+          "bytes": 14850332,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
+        {
+          "layer": "Diocese",
+          "date": "12-11",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-12",
+          "name": "Beatæ Mariæ Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Resurrection of Our Lord Chapel Fort Myers FL",
+      "slug": "resurrection-of-our-lord-chapel-fort-myers-fl",
+      "name": "Resurrection of Our Lord Chapel, Fort Myers",
+      "region": "Southeast",
+      "place": "Fort Myers, Florida",
+      "built": {
+        "2026": {
+          "la": "b07cedbb25384aeeec3daee8aae3c04bed55d4ab978254c14a098776ac4c8397"
+        },
+        "2027": {
+          "la": "b07cedbb25384aeeec3daee8aae3c04bed55d4ab978254c14a098776ac4c8397"
+        },
+        "2028": {
+          "la": "b07cedbb25384aeeec3daee8aae3c04bed55d4ab978254c14a098776ac4c8397"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "resurrection-of-our-lord-chapel-fort-myers-fl-2026-la.epub",
+          "bytes": 14811972,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "resurrection-of-our-lord-chapel-fort-myers-fl-2027-la.epub",
+          "bytes": 14815348,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "resurrection-of-our-lord-chapel-fort-myers-fl-2028-la.epub",
+          "bytes": 14850489,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
+        {
+          "layer": "Diocese",
+          "date": "12-11",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-12",
+          "name": "Beatæ Mariæ Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - St. Francis de Sales Church Mableton GA",
+      "slug": "st-francis-de-sales-church-mableton-ga",
+      "name": "St. Francis de Sales Church, Mableton",
+      "region": "Southeast",
+      "place": "Mableton, Georgia",
+      "built": {
+        "2026": {
+          "la": "8e4f87eb9371998997fba3686b403257e17ee7ad49294e9034ea0ee54d079377"
+        },
+        "2027": {
+          "la": "8e4f87eb9371998997fba3686b403257e17ee7ad49294e9034ea0ee54d079377"
+        },
+        "2028": {
+          "la": "8e4f87eb9371998997fba3686b403257e17ee7ad49294e9034ea0ee54d079377"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-francis-de-sales-church-mableton-ga-2026-la.epub",
+          "bytes": 14815934,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-francis-de-sales-church-mableton-ga-2027-la.epub",
+          "bytes": 14822228,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-francis-de-sales-church-mableton-ga-2028-la.epub",
+          "bytes": 14853405,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
+        {
+          "layer": "Parish",
+          "date": "01-29",
+          "name": "S. Francisci Salesii Episcopi Confessoris et Ecclesiæ Doctoris",
+          "class": "I",
+          "kind": "elevated"
         },
         {
           "layer": "Diocese",
@@ -4593,25 +4896,6 @@
           "kind": "elevated"
         },
         {
-          "layer": "Parish",
-          "date": "01-29",
-          "name": "S. Francisci Salesii Episcopi Confessoris et Ecclesiæ Doctoris",
-          "class": "I",
-          "kind": "elevated"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Archdiocese of Baltimore",
-      "slug": "archdiocese-of-baltimore",
-      "name": "Archdiocese of Baltimore",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Baltimore, Maryland",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
-        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -4666,12 +4950,112 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Archdiocese of Baltimore",
+      "slug": "archdiocese-of-baltimore",
+      "name": "Archdiocese of Baltimore",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Baltimore, Maryland",
+      "built": {
+        "2026": {
+          "la": "02776bfd7c47db6250a0dd10e01314e040618e051d543486569f52a762b723ee"
         },
+        "2027": {
+          "la": "02776bfd7c47db6250a0dd10e01314e040618e051d543486569f52a762b723ee"
+        },
+        "2028": {
+          "la": "02776bfd7c47db6250a0dd10e01314e040618e051d543486569f52a762b723ee"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-baltimore-2026-la.epub",
+          "bytes": 14809483,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-baltimore-2027-la.epub",
+          "bytes": 14812166,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-baltimore-2028-la.epub",
+          "bytes": 14844944,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "11-15",
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
           "kind": "proper"
         }
       ]
@@ -4682,10 +5066,49 @@
       "name": "Archdiocese of Philadelphia",
       "region": "Northeast & Mid-Atlantic",
       "place": "Philadelphia, Pennsylvania",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "8b461b9499a71aa93b5a6a44cd55eb8a637398969d90ad0f330a8a47b8423cea"
+        },
+        "2027": {
+          "la": "8b461b9499a71aa93b5a6a44cd55eb8a637398969d90ad0f330a8a47b8423cea"
+        },
+        "2028": {
+          "la": "8b461b9499a71aa93b5a6a44cd55eb8a637398969d90ad0f330a8a47b8423cea"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-philadelphia-2026-la.epub",
+          "bytes": 14807591,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-philadelphia-2027-la.epub",
+          "bytes": 14811558,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-philadelphia-2028-la.epub",
+          "bytes": 14844890,
+          "variant": "la"
+        }
+      ],
       "monthly": false,
       "feasts": [
+        {
+          "layer": "Diocese",
+          "date": "11-20",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -4740,13 +5163,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-20",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -4797,62 +5213,6 @@
       "monthly": false,
       "feasts": [
         {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
           "layer": "This calendar",
           "date": "06-22",
           "name": "S. Thomae Mori Martyris, Patroni Principalis Dioecesis Arlingtoniensis",
@@ -4865,19 +5225,7 @@
           "name": "Anniversarium Dedicationis Ecclesiae Cathedralis S. Thomae Mori",
           "class": "I",
           "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Diocese of Harrisburg",
-      "slug": "diocese-of-harrisburg",
-      "name": "Diocese of Harrisburg",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Harrisburg, Pennsylvania",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -4933,7 +5281,51 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Diocese of Harrisburg",
+      "slug": "diocese-of-harrisburg",
+      "name": "Diocese of Harrisburg",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Harrisburg, Pennsylvania",
+      "built": {
+        "2026": {
+          "la": "1d9a15829c54d1db81f48e61d4c9dc7a1739b6a4aac604b983d6012f6b11430d"
         },
+        "2027": {
+          "la": "1d9a15829c54d1db81f48e61d4c9dc7a1739b6a4aac604b983d6012f6b11430d"
+        },
+        "2028": {
+          "la": "1d9a15829c54d1db81f48e61d4c9dc7a1739b6a4aac604b983d6012f6b11430d"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-harrisburg-2026-la.epub",
+          "bytes": 14813484,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-harrisburg-2027-la.epub",
+          "bytes": 14814167,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-harrisburg-2028-la.epub",
+          "bytes": 14845145,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "03-17",
@@ -4947,19 +5339,7 @@
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
           "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Diocese of Manchester",
-      "slug": "diocese-of-manchester",
-      "name": "Diocese of Manchester",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Manchester, New Hampshire",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -5015,7 +5395,51 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Diocese of Manchester",
+      "slug": "diocese-of-manchester",
+      "name": "Diocese of Manchester",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Manchester, New Hampshire",
+      "built": {
+        "2026": {
+          "la": "003e5d5c82507e0ef88b06167b14158016b78c19387d8c2b1f9f2f2b675e9b1e"
         },
+        "2027": {
+          "la": "003e5d5c82507e0ef88b06167b14158016b78c19387d8c2b1f9f2f2b675e9b1e"
+        },
+        "2028": {
+          "la": "003e5d5c82507e0ef88b06167b14158016b78c19387d8c2b1f9f2f2b675e9b1e"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-manchester-2026-la.epub",
+          "bytes": 14811249,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-manchester-2027-la.epub",
+          "bytes": 14813532,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-manchester-2028-la.epub",
+          "bytes": 14841750,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "03-17",
@@ -5029,19 +5453,7 @@
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
           "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Diocese of Paterson",
-      "slug": "diocese-of-paterson",
-      "name": "Diocese of Paterson",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Paterson, New Jersey",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -5097,12 +5509,112 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Diocese of Paterson",
+      "slug": "diocese-of-paterson",
+      "name": "Diocese of Paterson",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Paterson, New Jersey",
+      "built": {
+        "2026": {
+          "la": "30ddf84cb92c5492654389d6b33ea9f10bdfe3c0e6364dae6b2ac9a07faa2f75"
         },
+        "2027": {
+          "la": "30ddf84cb92c5492654389d6b33ea9f10bdfe3c0e6364dae6b2ac9a07faa2f75"
+        },
+        "2028": {
+          "la": "30ddf84cb92c5492654389d6b33ea9f10bdfe3c0e6364dae6b2ac9a07faa2f75"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-paterson-2026-la.epub",
+          "bytes": 14810154,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-paterson-2027-la.epub",
+          "bytes": 14812127,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-paterson-2028-la.epub",
+          "bytes": 14844819,
+          "variant": "la"
+        }
+      ],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "06-30",
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
           "kind": "proper"
         }
       ]
@@ -5118,6 +5630,13 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "06-30",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -5171,13 +5690,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "06-30",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -5193,6 +5705,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "07-19",
+          "name": "S. Vincentii a Paulo Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "11-29",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -5246,20 +5772,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "07-19",
-          "name": "S. Vincentii a Paulo Confessoris",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-29",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -5310,6 +5822,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "This calendar",
+          "date": "07-19",
+          "name": "S. Vincentii a Paulo Confessoris, Patroni principalis Dioecesis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "This calendar",
+          "date": "11-29",
+          "name": "Anniversarium Dedicationis Ecclesiae Cathedralis Richmondiensis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -5363,20 +5889,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "07-19",
-          "name": "S. Vincentii a Paulo Confessoris, Patroni principalis Dioecesis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "11-29",
-          "name": "Anniversarium Dedicationis Ecclesiae Cathedralis Richmondiensis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -5392,6 +5904,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "09-03",
+          "name": "S. Pii X Papæ Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "09-28",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -5445,20 +5971,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "09-03",
-          "name": "S. Pii X Papæ Confessoris",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "09-28",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -5474,6 +5986,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "05-13",
+          "name": "Beatæ Mariæ Virginis a Rosario de Fatima",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "06-30",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -5527,20 +6053,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "06-30",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "05-13",
-          "name": "Beatæ Mariæ Virginis a Rosario de Fatima",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -5591,6 +6103,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "This calendar",
+          "date": "08-02",
+          "name": "S. Alfonsi Mariae de Ligorio Episcopi Confessoris et Ecclesiae Doctoris, Patroni Paroeciae",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "This calendar",
+          "date": "11-15",
+          "name": "Anniversarium Dedicationis Ecclesiae Cathedralis Baltimorensis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "This calendar",
+          "date": "12-08",
+          "name": "Immaculata Conceptio Beatae Mariae Virginis, Patrona principalis Archidioecesis Baltimorensis",
+          "class": "I",
+          "kind": "class changed"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -5645,27 +6178,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "08-02",
-          "name": "S. Alfonsi Mariae de Ligorio Episcopi Confessoris et Ecclesiae Doctoris, Patroni Paroeciae",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "This calendar",
-          "date": "11-15",
-          "name": "Anniversarium Dedicationis Ecclesiae Cathedralis Baltimorensis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "12-08",
-          "name": "Immaculata Conceptio Beatae Mariae Virginis, Patrona principalis Archidioecesis Baltimorensis",
-          "class": "I",
-          "kind": "class changed"
         }
       ]
     },
@@ -5715,62 +6227,6 @@
       "monthly": false,
       "feasts": [
         {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
           "layer": "This calendar",
           "date": "03-21",
           "name": "S. Benedicti Abbatis, Patroni Paroeciae",
@@ -5790,19 +6246,7 @@
           "name": "Anniversarium Dedicationis Ecclesiae Cathedralis Richmondiensis",
           "class": "I",
           "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - St. Joseph Parish Richmond VA",
-      "slug": "st-joseph-parish-richmond-va",
-      "name": "St. Joseph Parish, Richmond",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Richmond, Virginia",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -5858,7 +6302,19 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - St. Joseph Parish Richmond VA",
+      "slug": "st-joseph-parish-richmond-va",
+      "name": "St. Joseph Parish, Richmond",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Richmond, Virginia",
+      "built": {},
+      "files": [],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "07-19",
@@ -5871,6 +6327,62 @@
           "date": "11-29",
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
           "kind": "proper"
         }
       ]
@@ -5886,60 +6398,11 @@
       "monthly": false,
       "feasts": [
         {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
+          "layer": "Parish",
+          "date": "08-10",
+          "name": "S. Laurentii Martyris",
           "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
+          "kind": "elevated"
         },
         {
           "layer": "Diocese",
@@ -5956,11 +6419,60 @@
           "kind": "proper"
         },
         {
-          "layer": "Parish",
-          "date": "08-10",
-          "name": "S. Laurentii Martyris",
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
           "class": "I",
-          "kind": "elevated"
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
+          "kind": "proper"
         }
       ]
     },
@@ -6010,6 +6522,27 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "This calendar",
+          "date": "09-03",
+          "name": "S. Pii X Papæ et Confessoris, Patroni principalis Dioecesis Scrantonensis",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "This calendar",
+          "date": "09-28",
+          "name": "Anniversarium Dedicationis Ecclesiae Cathedralis Scrantonensis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "This calendar",
+          "date": "12-13",
+          "name": "S. Luciæ Virginis et Martyris, Patronae Paroeciae",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -6064,27 +6597,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "09-03",
-          "name": "S. Pii X Papæ et Confessoris, Patroni principalis Dioecesis Scrantonensis",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "This calendar",
-          "date": "09-28",
-          "name": "Anniversarium Dedicationis Ecclesiae Cathedralis Scrantonensis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "12-13",
-          "name": "S. Luciæ Virginis et Martyris, Patronae Paroeciae",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -6134,62 +6646,6 @@
       "monthly": false,
       "feasts": [
         {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
           "layer": "This calendar",
           "date": "03-17",
           "name": "S. Patritii Episcopi et Confessoris, Patroni Secundarii Dioecesis Manchestriensis",
@@ -6216,19 +6672,7 @@
           "name": "S. Stanislai Episcopi et Martyris, Patroni Paroeciae",
           "class": "I",
           "kind": "elevated"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Archdiocese of Cincinnati",
-      "slug": "archdiocese-of-cincinnati",
-      "name": "Archdiocese of Cincinnati",
-      "region": "Midwest",
-      "place": "Cincinnati, Ohio",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -6284,7 +6728,19 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Archdiocese of Cincinnati",
+      "slug": "archdiocese-of-cincinnati",
+      "name": "Archdiocese of Cincinnati",
+      "region": "Midwest",
+      "place": "Cincinnati, Ohio",
+      "built": {},
+      "files": [],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "01-29",
@@ -6312,19 +6768,7 @@
           "name": "S. Alberti Magni Episcopi Confessoris et Ecclesiæ Doctoris",
           "class": "II",
           "kind": "elevated"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Archdiocese of Indianapolis",
-      "slug": "archdiocese-of-indianapolis",
-      "name": "Archdiocese of Indianapolis",
-      "region": "Midwest",
-      "place": "Indianapolis, Indiana",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -6380,7 +6824,19 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Archdiocese of Indianapolis",
+      "slug": "archdiocese-of-indianapolis",
+      "name": "Archdiocese of Indianapolis",
+      "region": "Midwest",
+      "place": "Indianapolis, Indiana",
+      "built": {},
+      "files": [],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "10-03",
@@ -6408,19 +6864,7 @@
           "name": "S. Thomæ Apostoli",
           "class": "II",
           "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Archdiocese of Kansas City in Kansas",
-      "slug": "archdiocese-of-kansas-city-in-kansas",
-      "name": "Archdiocese of Kansas City in Kansas",
-      "region": "Midwest",
-      "place": "Kansas City, Kansas",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -6476,7 +6920,19 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Archdiocese of Kansas City in Kansas",
+      "slug": "archdiocese-of-kansas-city-in-kansas",
+      "name": "Archdiocese of Kansas City in Kansas",
+      "region": "Midwest",
+      "place": "Kansas City, Kansas",
+      "built": {},
+      "files": [],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "06-02",
@@ -6488,6 +6944,62 @@
           "layer": "Diocese",
           "date": "11-17",
           "name": "S. Philippinæ Duchesne Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
         }
@@ -6504,6 +7016,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "04-09",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "11-22",
+          "name": "S. Cæciliæ Virginis et Martyris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -6558,20 +7084,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "04-09",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-22",
-          "name": "S. Cæciliæ Virginis et Martyris",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -6586,6 +7098,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "01-25",
+          "name": "In Conversione S. Pauli Apostoli",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "10-14",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -6639,20 +7165,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "01-25",
-          "name": "In Conversione S. Pauli Apostoli",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-14",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -6668,6 +7180,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "01-25",
+          "name": "In Conversione S. Pauli Apostoli",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "10-14",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -6721,20 +7247,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "01-25",
-          "name": "In Conversione S. Pauli Apostoli",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-14",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -6750,6 +7262,13 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "12-09",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -6803,13 +7322,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-09",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -6825,6 +7337,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "05-26",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-03",
+          "name": "S. Francisci Xaverii Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -6879,20 +7405,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "05-26",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-03",
-          "name": "S. Francisci Xaverii Confessoris",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -6907,6 +7419,13 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "08-18",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -6960,13 +7479,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "08-18",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -6982,6 +7494,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "05-07",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "06-27",
+          "name": "Beatæ Mariæ Virginis de Perpetuo Succursu",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -7035,20 +7561,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "05-07",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "06-27",
-          "name": "Beatæ Mariæ Virginis de Perpetuo Succursu",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -7064,6 +7576,13 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "12-02",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -7117,13 +7636,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-02",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -7139,6 +7651,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "04-12",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "06-09",
+          "name": "S. Columbæ Abbatis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -7192,20 +7718,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "04-12",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "06-09",
-          "name": "S. Columbæ Abbatis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -7220,62 +7732,6 @@
       "files": [],
       "monthly": false,
       "feasts": [
-        {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
-        },
         {
           "layer": "Diocese",
           "date": "01-29",
@@ -7303,6 +7759,62 @@
           "name": "S. Alberti Magni Episcopi Confessoris et Ecclesiæ Doctoris",
           "class": "II",
           "kind": "elevated"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
+          "kind": "proper"
         }
       ]
     },
@@ -7317,6 +7829,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "04-09",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "11-22",
+          "name": "S. Cæciliæ Virginis et Martyris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -7371,20 +7897,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "04-09",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-22",
-          "name": "S. Cæciliæ Virginis et Martyris",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -7399,6 +7911,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "05-07",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "06-27",
+          "name": "Beatæ Mariæ Virginis de Perpetuo Succursu",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -7452,20 +7978,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "05-07",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "06-27",
-          "name": "Beatæ Mariæ Virginis de Perpetuo Succursu",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -7516,6 +8028,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "This calendar",
+          "date": "09-14",
+          "name": "Anniversarium Dedicationis Ecclesiae Cathedralis Lincolniensis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "This calendar",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -7562,20 +8088,6 @@
           "date": "11-13",
           "name": "S. Franciscae Xaveriae Cabrini Virginis",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "09-14",
-          "name": "Anniversarium Dedicationis Ecclesiae Cathedralis Lincolniensis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "This calendar",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -7591,60 +8103,11 @@
       "monthly": false,
       "feasts": [
         {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
+          "layer": "Parish",
+          "date": "10-07",
+          "name": "Beatæ Mariæ Virginis a Rosario",
           "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
+          "kind": "elevated"
         },
         {
           "layer": "Diocese",
@@ -7661,25 +8124,6 @@
           "kind": "proper"
         },
         {
-          "layer": "Parish",
-          "date": "10-07",
-          "name": "Beatæ Mariæ Virginis a Rosario",
-          "class": "I",
-          "kind": "elevated"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Sacred Heart Parish Fort Wayne IN",
-      "slug": "sacred-heart-parish-fort-wayne-in",
-      "name": "Sacred Heart Parish, Fort Wayne",
-      "region": "Midwest",
-      "place": "Fort Wayne, Indiana",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
-        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -7734,12 +8178,80 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Sacred Heart Parish Fort Wayne IN",
+      "slug": "sacred-heart-parish-fort-wayne-in",
+      "name": "Sacred Heart Parish, Fort Wayne",
+      "region": "Midwest",
+      "place": "Fort Wayne, Indiana",
+      "built": {},
+      "files": [],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "12-09",
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
           "kind": "proper"
         }
       ]
@@ -7755,6 +8267,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "05-26",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-03",
+          "name": "S. Francisci Xaverii Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -7809,20 +8335,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "05-26",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-03",
-          "name": "S. Francisci Xaverii Confessoris",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -7837,6 +8349,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "10-04",
+          "name": "S. Francisci Confessoris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "08-18",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -7891,20 +8417,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "08-18",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "10-04",
-          "name": "S. Francisci Confessoris",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -7954,62 +8466,6 @@
       "monthly": false,
       "feasts": [
         {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
           "layer": "This calendar",
           "date": "06-02",
           "name": "Anniversarium Dedicationis Ecclesiae Cathedralis Sancti Petri Apostoli",
@@ -8029,19 +8485,7 @@
           "name": "S. Philippinae Duchesne Virginis",
           "class": "III",
           "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - St. Joseph Parish Rockdale IL",
-      "slug": "st-joseph-parish-rockdale-il",
-      "name": "St. Joseph Parish, Rockdale",
-      "region": "Midwest",
-      "place": "Rockdale, Illinois",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -8097,7 +8541,19 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - St. Joseph Parish Rockdale IL",
+      "slug": "st-joseph-parish-rockdale-il",
+      "name": "St. Joseph Parish, Rockdale",
+      "region": "Midwest",
+      "place": "Rockdale, Illinois",
+      "built": {},
+      "files": [],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "05-26",
@@ -8111,6 +8567,62 @@
           "name": "S. Francisci Xaverii Confessoris",
           "class": "I",
           "kind": "elevated"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
+          "kind": "proper"
         }
       ]
     },
@@ -8160,62 +8672,6 @@
       "monthly": false,
       "feasts": [
         {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-09",
-          "name": "S. Petri Claver Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "09-26",
-          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "10-25",
-          "name": "S. Isidori Agricolae Confessoris",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "11-13",
-          "name": "S. Franciscae Xaveriae Cabrini Virginis",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "United States",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
           "layer": "This calendar",
           "date": "08-30",
           "name": "S. Rosae a S. Maria Limanae Virginis, Patronae Paroeciae",
@@ -8235,6 +8691,62 @@
           "name": "Immaculata Conceptio Beatae Mariae Virginis, Patrona principalis Dioecesis Quincyensis",
           "class": "I",
           "kind": "class changed"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-09",
+          "name": "S. Petri Claver Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "09-26",
+          "name": "SS. Isaaci Jogues et Ioannis de Brebeuf et Sociorum Martyrum",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "10-25",
+          "name": "S. Isidori Agricolae Confessoris",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "11-13",
+          "name": "S. Franciscae Xaveriae Cabrini Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "United States",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
+          "kind": "proper"
         }
       ]
     },
@@ -8249,6 +8761,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "11-17",
+          "name": "S. Philippinæ Duchesne Virginis",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "06-02",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -8303,20 +8829,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "06-02",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "11-17",
-          "name": "S. Philippinæ Duchesne Virginis",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -8331,6 +8843,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Parish",
+          "date": "05-07",
+          "name": "S. Stanislai Episcopi et Martyris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-09",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -8385,20 +8911,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-09",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Parish",
-          "date": "05-07",
-          "name": "S. Stanislai Episcopi et Martyris",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -8412,34 +8924,6 @@
       "files": [],
       "monthly": false,
       "feasts": [
-        {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Canada",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
-        },
         {
           "layer": "Diocese",
           "date": "05-31",
@@ -8460,19 +8944,7 @@
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
           "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Archdiocese of Ottawa",
-      "slug": "archdiocese-of-ottawa",
-      "name": "Archdiocese of Ottawa",
-      "region": "Canada",
-      "place": "Ottawa, Ontario",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -8500,7 +8972,19 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Archdiocese of Ottawa",
+      "slug": "archdiocese-of-ottawa",
+      "name": "Archdiocese of Ottawa",
+      "region": "Canada",
+      "place": "Ottawa, Ontario",
+      "built": {},
+      "files": [],
+      "monthly": false,
+      "feasts": [
         {
           "layer": "Diocese",
           "date": "03-17",
@@ -8513,6 +8997,34 @@
           "date": "09-04",
           "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
           "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "Canada",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
           "kind": "proper"
         }
       ]
@@ -8528,6 +9040,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "07-11",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "07-26",
+          "name": "S. Annæ Matris B.M.V.",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -8554,20 +9080,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "07-11",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "07-26",
-          "name": "S. Annæ Matris B.M.V.",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -8582,6 +9094,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "10-03",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "10-07",
+          "name": "Beatæ Mariæ Virginis a Rosario",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -8608,20 +9134,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-03",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-07",
-          "name": "Beatæ Mariæ Virginis a Rosario",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -8636,6 +9148,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "10-16",
+          "name": "S. Gerárdi Majella Confessoris",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "12-11",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -8661,20 +9187,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-16",
-          "name": "S. Gerárdi Majella Confessoris",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "12-11",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -8690,6 +9202,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "05-13",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "06-30",
+          "name": "In Commemoratione S. Pauli Apostoli",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -8716,20 +9242,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "05-13",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "06-30",
-          "name": "In Commemoratione S. Pauli Apostoli",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -8744,6 +9256,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "11-25",
+          "name": "S. Catharinæ Virginis et Martyris",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
+          "layer": "Diocese",
+          "date": "11-26",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -8769,20 +9295,6 @@
           "date": "12-12",
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-25",
-          "name": "S. Catharinæ Virginis et Martyris",
-          "class": "I",
-          "kind": "elevated"
-        },
-        {
-          "layer": "Diocese",
-          "date": "11-26",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
           "kind": "proper"
         }
       ]
@@ -8838,6 +9350,20 @@
       "monthly": false,
       "feasts": [
         {
+          "layer": "Diocese",
+          "date": "10-03",
+          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "Diocese",
+          "date": "10-07",
+          "name": "Beatæ Mariæ Virginis a Rosario",
+          "class": "I",
+          "kind": "elevated"
+        },
+        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -8864,20 +9390,6 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-03",
-          "name": "In Anniversario Dedicationis Ecclesiæ Cathedralis",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "Diocese",
-          "date": "10-07",
-          "name": "Beatæ Mariæ Virginis a Rosario",
-          "class": "I",
-          "kind": "elevated"
         }
       ]
     },
@@ -8892,32 +9404,11 @@
       "monthly": false,
       "feasts": [
         {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
+          "layer": "Parish",
+          "date": "06-21",
+          "name": "S. Aloisii Gonzagæ Confessoris",
           "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Canada",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
+          "kind": "elevated"
         },
         {
           "layer": "Diocese",
@@ -8934,11 +9425,32 @@
           "kind": "proper"
         },
         {
-          "layer": "Parish",
-          "date": "06-21",
-          "name": "S. Aloisii Gonzagæ Confessoris",
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
           "class": "I",
-          "kind": "elevated"
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "Canada",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
+          "kind": "proper"
         }
       ]
     },
@@ -8988,34 +9500,6 @@
       "monthly": false,
       "feasts": [
         {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
-          "layer": "Canada",
-          "date": "12-12",
-          "name": "Beatae Mariae Virginis de Guadalupe",
-          "class": "III",
-          "kind": "proper"
-        },
-        {
           "layer": "This calendar",
           "date": "06-21",
           "name": "S. Aloisii Gonzagae Confessoris, Patroni Paroeciae S. Aloisii Gonzagae",
@@ -9035,19 +9519,7 @@
           "name": "Anniversarium Dedicationis Ecclesiae Cathedralis (translata a die 25 Novembris)",
           "class": "I",
           "kind": "proper"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - St. Anthony Church Calgary AB",
-      "slug": "st-anthony-church-calgary-ab",
-      "name": "St. Anthony Church, Calgary",
-      "region": "Canada",
-      "place": "Calgary, Alberta",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
+        },
         {
           "layer": "FSSP",
           "date": "02-22",
@@ -9075,6 +9547,25 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - St. Anthony Church Calgary AB",
+      "slug": "st-anthony-church-calgary-ab",
+      "name": "St. Anthony Church, Calgary",
+      "region": "Canada",
+      "place": "Calgary, Alberta",
+      "built": {},
+      "files": [],
+      "monthly": false,
+      "feasts": [
+        {
+          "layer": "Parish",
+          "date": "06-13",
+          "name": "S. Antonii de Padua Confessoris et Ecclesiæ Doctoris",
+          "class": "I",
+          "kind": "elevated"
         },
         {
           "layer": "Diocese",
@@ -9091,25 +9582,6 @@
           "kind": "proper"
         },
         {
-          "layer": "Parish",
-          "date": "06-13",
-          "name": "S. Antonii de Padua Confessoris et Ecclesiæ Doctoris",
-          "class": "I",
-          "kind": "elevated"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Eglise Saint-Zephirin-de-Stadacona Quebec QC",
-      "slug": "eglise-saint-zephirin-de-stadacona-quebec-qc",
-      "name": "Église Saint-Zéphirin-de-Stadacona, Québec",
-      "region": "Canada",
-      "place": "Quebec, Quebec",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
-        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -9136,6 +9608,25 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Eglise Saint-Zephirin-de-Stadacona Quebec QC",
+      "slug": "eglise-saint-zephirin-de-stadacona-quebec-qc",
+      "name": "Église Saint-Zéphirin-de-Stadacona, Québec",
+      "region": "Canada",
+      "place": "Quebec, Quebec",
+      "built": {},
+      "files": [],
+      "monthly": false,
+      "feasts": [
+        {
+          "layer": "Parish",
+          "date": "08-26",
+          "name": "S. Zephyrini Papæ et Martyris",
+          "class": "I",
+          "kind": "elevated"
         },
         {
           "layer": "Diocese",
@@ -9152,25 +9643,6 @@
           "kind": "elevated"
         },
         {
-          "layer": "Parish",
-          "date": "08-26",
-          "name": "S. Zephyrini Papæ et Martyris",
-          "class": "I",
-          "kind": "elevated"
-        }
-      ]
-    },
-    {
-      "version": "Rubrics 1960 - Eglise St-Irenee Montreal QC",
-      "slug": "eglise-st-irenee-montreal-qc",
-      "name": "Église St-Irénée, Montréal",
-      "region": "Canada",
-      "place": "Montréal, Quebec",
-      "built": {},
-      "files": [],
-      "monthly": false,
-      "feasts": [
-        {
           "layer": "FSSP",
           "date": "02-22",
           "name": "Cathedrae S. Petri Ap.",
@@ -9197,6 +9669,25 @@
           "name": "Beatae Mariae Virginis de Guadalupe",
           "class": "III",
           "kind": "proper"
+        }
+      ]
+    },
+    {
+      "version": "Rubrics 1960 - Eglise St-Irenee Montreal QC",
+      "slug": "eglise-st-irenee-montreal-qc",
+      "name": "Église St-Irénée, Montréal",
+      "region": "Canada",
+      "place": "Montréal, Quebec",
+      "built": {},
+      "files": [],
+      "monthly": false,
+      "feasts": [
+        {
+          "layer": "Parish",
+          "date": "06-28",
+          "name": "S. Irenæi Episcopi et Martyris",
+          "class": "I",
+          "kind": "elevated"
         },
         {
           "layer": "Diocese",
@@ -9220,11 +9711,32 @@
           "kind": "proper"
         },
         {
-          "layer": "Parish",
-          "date": "06-28",
-          "name": "S. Irenæi Episcopi et Martyris",
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
           "class": "I",
-          "kind": "elevated"
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "Canada",
+          "date": "12-12",
+          "name": "Beatae Mariae Virginis de Guadalupe",
+          "class": "III",
+          "kind": "proper"
         }
       ]
     },
@@ -9273,27 +9785,6 @@
       ],
       "monthly": false,
       "feasts": [
-        {
-          "layer": "FSSP",
-          "date": "02-22",
-          "name": "Cathedrae S. Petri Ap.",
-          "class": "I",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "03-07",
-          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
-          "class": "II",
-          "kind": "proper"
-        },
-        {
-          "layer": "FSSP",
-          "date": "08-01",
-          "name": "S. Petri ad Vincula",
-          "class": "III",
-          "kind": "proper"
-        },
         {
           "layer": "This calendar",
           "date": "01-24",
@@ -9410,6 +9901,27 @@
           "layer": "This calendar",
           "date": "12-18",
           "name": "In Expectatione Partus Beatae Mariae Virginis",
+          "class": "III",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "02-22",
+          "name": "Cathedrae S. Petri Ap.",
+          "class": "I",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "03-07",
+          "name": "S. Thomae de Aquino Conf. et Eccl. Doct.",
+          "class": "II",
+          "kind": "proper"
+        },
+        {
+          "layer": "FSSP",
+          "date": "08-01",
+          "name": "S. Petri ad Vincula",
           "class": "III",
           "kind": "proper"
         }
