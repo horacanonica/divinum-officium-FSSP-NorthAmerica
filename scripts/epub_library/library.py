@@ -294,8 +294,31 @@ def _layer_name(kalendar: str) -> str:
     return "This calendar"
 
 
+# Download-page order, most local first. A new Site* or Dio* calendar picks
+# up its place from the kalendar prefix; a hand-written kalendar is "This
+# calendar" and stays with the parish. Keep docs/downloads.js in step.
+_LAYER_RANK = {
+    "Parish": 0,
+    "This calendar": 0,
+    "Diocese": 1,
+    "FSSP": 2,
+    "Canada": 3,
+    "United States": 3,
+}
+
+
+def layer_display_rank(layer: str) -> int:
+    """Parish and diocese, then FSSP, then the country. Unknown layers stay local."""
+    return _LAYER_RANK.get(layer, 0)
+
+
 def calendar_feasts(chain: tuple[str, ...], versions: dict[str, Version]) -> tuple:
-    """Local feasts by layer, FSSP first. A nearer layer replaces a farther one on the same date."""
+    """Local feasts grouped parish, diocese, FSSP, then country.
+
+    A nearer layer still replaces a farther one on the same date. The winning
+    layer is the liturgical one; the list order is only how the download page
+    groups them.
+    """
     layers = []
     for name in chain:
         layers.append(name)
@@ -328,7 +351,7 @@ def calendar_feasts(chain: tuple[str, ...], versions: dict[str, Version]) -> tup
             )
             taken[parts[0]] = index
     kept = [f for f in found if taken[f["date"]] == f["_order"]]
-    kept.sort(key=lambda f: (f["_order"], f["date"]))
+    kept.sort(key=lambda f: (layer_display_rank(f["layer"]), f["layer"], f["date"]))
     for f in kept:
         del f["_order"]
     return tuple(kept)

@@ -1,5 +1,29 @@
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+// Most local first. Same ranks as layer_display_rank in scripts/epub_library/library.py.
+const LAYER_RANK = {
+  "Parish": 0,
+  "This calendar": 0,
+  "Diocese": 1,
+  "FSSP": 2,
+  "Canada": 3,
+  "United States": 3,
+};
+
+function layerRank(layer) {
+  return Object.prototype.hasOwnProperty.call(LAYER_RANK, layer) ? LAYER_RANK[layer] : 0;
+}
+
+function feastsInDisplayOrder(feasts) {
+  return feasts.slice().sort(function (a, b) {
+    const rank = layerRank(a.layer) - layerRank(b.layer);
+    if (rank) return rank;
+    if (a.layer !== b.layer) return a.layer < b.layer ? -1 : 1;
+    if (a.date !== b.date) return a.date < b.date ? -1 : 1;
+    return 0;
+  });
+}
+
 function monthsInWindow(start, end) {
   const [sy, sm] = start.split("-").map(Number);
   const [ey, em] = end.split("-").map(Number);
@@ -132,7 +156,7 @@ function render(catalog) {
       card.dataset.filter = text;
       card.appendChild(el("h3", null, calendar.name));
       if (calendar.place) card.appendChild(el("p", "place", calendar.place));
-      const feasts = calendar.feasts || [];
+      const feasts = feastsInDisplayOrder(calendar.feasts || []);
       if (feasts.length) {
         const box = el("div", "feasts");
         box.appendChild(el("p", "feasts-title", "Local feasts"));
