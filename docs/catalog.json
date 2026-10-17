@@ -5,7 +5,7 @@
     "la": "epub-library-la",
     "la-en": "epub-library"
   },
-  "updated": "2026-10-16T23:58:05Z",
+  "updated": "2026-10-17T00:40:20Z",
   "languages": "Latin",
   "variants": [
     {
@@ -49,15 +49,15 @@
       "built": {
         "2026": {
           "la-en": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5",
-          "la": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5"
+          "la": "74bc91fe23821f7525c185d235eeff6dc72e6d75fc8e4e0b0f43f4a7431fbd13"
         },
         "2027": {
           "la-en": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5",
-          "la": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5"
+          "la": "74bc91fe23821f7525c185d235eeff6dc72e6d75fc8e4e0b0f43f4a7431fbd13"
         },
         "2028": {
           "la-en": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5",
-          "la": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5"
+          "la": "74bc91fe23821f7525c185d235eeff6dc72e6d75fc8e4e0b0f43f4a7431fbd13"
         }
       },
       "files": [
@@ -65,14 +65,14 @@
           "type": "year",
           "year": 2026,
           "name": "fssp-2026-la.epub",
-          "bytes": 14797766,
+          "bytes": 14800789,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "fssp-2027-la.epub",
-          "bytes": 14804173,
+          "bytes": 14804174,
           "variant": "la"
         },
         {
@@ -94,15 +94,15 @@
       "built": {
         "2026": {
           "la-en": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de",
-          "la": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de"
+          "la": "d4dee9a95afce495c821cf28af8a18777b5943fcbee23ac9449088d7db525a11"
         },
         "2027": {
           "la-en": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de",
-          "la": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de"
+          "la": "d4dee9a95afce495c821cf28af8a18777b5943fcbee23ac9449088d7db525a11"
         },
         "2028": {
           "la-en": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de",
-          "la": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de"
+          "la": "d4dee9a95afce495c821cf28af8a18777b5943fcbee23ac9449088d7db525a11"
         }
       },
       "files": [
@@ -110,21 +110,21 @@
           "type": "year",
           "year": 2026,
           "name": "fssp-usa-2026-la.epub",
-          "bytes": 14801784,
+          "bytes": 14804810,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "fssp-usa-2027-la.epub",
-          "bytes": 14807949,
+          "bytes": 14807951,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "fssp-usa-2028-la.epub",
-          "bytes": 14840443,
+          "bytes": 14840447,
           "variant": "la"
         }
       ],
@@ -136,8 +136,40 @@
       "name": "Archdiocese of Denver",
       "region": "West",
       "place": "Denver, Colorado",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "e4758b136df4f9d5af0fc52a69c15e772381fb40af2099689dae79a64f8e36bf"
+        },
+        "2027": {
+          "la": "e4758b136df4f9d5af0fc52a69c15e772381fb40af2099689dae79a64f8e36bf"
+        },
+        "2028": {
+          "la": "e4758b136df4f9d5af0fc52a69c15e772381fb40af2099689dae79a64f8e36bf"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-denver-2026-la.epub",
+          "bytes": 14812140,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-denver-2027-la.epub",
+          "bytes": 14814409,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-denver-2028-la.epub",
+          "bytes": 14844611,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -146,8 +178,40 @@
       "name": "Archdiocese of Los Angeles",
       "region": "West",
       "place": "Los Angeles, California",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "ef3043fd1930bb79bf148f189b7ebf0429d9d5051ce357afef4d8c5f37bb205c"
+        },
+        "2027": {
+          "la": "ef3043fd1930bb79bf148f189b7ebf0429d9d5051ce357afef4d8c5f37bb205c"
+        },
+        "2028": {
+          "la": "ef3043fd1930bb79bf148f189b7ebf0429d9d5051ce357afef4d8c5f37bb205c"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-los-angeles-2026-la.epub",
+          "bytes": 14812857,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-los-angeles-2027-la.epub",
+          "bytes": 14816092,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-los-angeles-2028-la.epub",
+          "bytes": 14849454,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -156,8 +220,40 @@
       "name": "Archdiocese of Seattle",
       "region": "West",
       "place": "Seattle, Washington",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "d84d9cc911700aa1a9d3546ff06e88a5d1922fb8247462c70a2e08e6d7b67c8c"
+        },
+        "2027": {
+          "la": "d84d9cc911700aa1a9d3546ff06e88a5d1922fb8247462c70a2e08e6d7b67c8c"
+        },
+        "2028": {
+          "la": "d84d9cc911700aa1a9d3546ff06e88a5d1922fb8247462c70a2e08e6d7b67c8c"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-seattle-2026-la.epub",
+          "bytes": 14811578,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-seattle-2027-la.epub",
+          "bytes": 14816257,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-seattle-2028-la.epub",
+          "bytes": 14844033,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -166,8 +262,40 @@
       "name": "Diocese of Boise",
       "region": "West",
       "place": "Boise, Idaho",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "aa03cc94d025c73c117ae8d511b4729beaa04b5ac6428ea6ef9336d744e88461"
+        },
+        "2027": {
+          "la": "aa03cc94d025c73c117ae8d511b4729beaa04b5ac6428ea6ef9336d744e88461"
+        },
+        "2028": {
+          "la": "aa03cc94d025c73c117ae8d511b4729beaa04b5ac6428ea6ef9336d744e88461"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-boise-2026-la.epub",
+          "bytes": 14807328,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-boise-2027-la.epub",
+          "bytes": 14811992,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-boise-2028-la.epub",
+          "bytes": 14844937,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -176,8 +304,40 @@
       "name": "Diocese of Colorado Springs",
       "region": "West",
       "place": "Colorado Springs, Colorado",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "04c2f652583359c1cafa8109ae713c23da4145770c4947b404f30c41999d5bf9"
+        },
+        "2027": {
+          "la": "04c2f652583359c1cafa8109ae713c23da4145770c4947b404f30c41999d5bf9"
+        },
+        "2028": {
+          "la": "04c2f652583359c1cafa8109ae713c23da4145770c4947b404f30c41999d5bf9"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-colorado-springs-2026-la.epub",
+          "bytes": 14809835,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-colorado-springs-2027-la.epub",
+          "bytes": 14814135,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-colorado-springs-2028-la.epub",
+          "bytes": 14854120,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -186,8 +346,40 @@
       "name": "Diocese of Fresno",
       "region": "West",
       "place": "Fresno, California",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "7e736372eb2bfeb1137cd96f87a53943ccfc7b9b84643424f9578b3c6598a8ad"
+        },
+        "2027": {
+          "la": "7e736372eb2bfeb1137cd96f87a53943ccfc7b9b84643424f9578b3c6598a8ad"
+        },
+        "2028": {
+          "la": "7e736372eb2bfeb1137cd96f87a53943ccfc7b9b84643424f9578b3c6598a8ad"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-fresno-2026-la.epub",
+          "bytes": 14812941,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-fresno-2027-la.epub",
+          "bytes": 14817793,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-fresno-2028-la.epub",
+          "bytes": 14846558,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -196,8 +388,40 @@
       "name": "Diocese of Phoenix",
       "region": "West",
       "place": "Phoenix, Arizona",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "9db53db71afcdbcd358d82b8dcc63e488e7f419627a89f64cc24cb24eb5abebd"
+        },
+        "2027": {
+          "la": "9db53db71afcdbcd358d82b8dcc63e488e7f419627a89f64cc24cb24eb5abebd"
+        },
+        "2028": {
+          "la": "9db53db71afcdbcd358d82b8dcc63e488e7f419627a89f64cc24cb24eb5abebd"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-phoenix-2026-la.epub",
+          "bytes": 14811823,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-phoenix-2027-la.epub",
+          "bytes": 14815195,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-phoenix-2028-la.epub",
+          "bytes": 14850335,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -206,8 +430,40 @@
       "name": "Diocese of San Diego",
       "region": "West",
       "place": "San Diego, California",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "5f7a0345e8f83228fc6b07b4032d79f77d3f51126cf34bba71571d020b22026c"
+        },
+        "2027": {
+          "la": "5f7a0345e8f83228fc6b07b4032d79f77d3f51126cf34bba71571d020b22026c"
+        },
+        "2028": {
+          "la": "5f7a0345e8f83228fc6b07b4032d79f77d3f51126cf34bba71571d020b22026c"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-san-diego-2026-la.epub",
+          "bytes": 14810117,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-san-diego-2027-la.epub",
+          "bytes": 14815724,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-san-diego-2028-la.epub",
+          "bytes": 14847005,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -216,8 +472,40 @@
       "name": "Immaculate Conception Colorado Springs CO",
       "region": "West",
       "place": "Colorado Springs, Colorado",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "9e463e17bb472536e1b417bba5fb4bab1b5934d87844c240b789209755e7ebde"
+        },
+        "2027": {
+          "la": "9e463e17bb472536e1b417bba5fb4bab1b5934d87844c240b789209755e7ebde"
+        },
+        "2028": {
+          "la": "9e463e17bb472536e1b417bba5fb4bab1b5934d87844c240b789209755e7ebde"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "immaculate-conception-colorado-springs-co-2026-la.epub",
+          "bytes": 14809915,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "immaculate-conception-colorado-springs-co-2027-la.epub",
+          "bytes": 14814215,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "immaculate-conception-colorado-springs-co-2028-la.epub",
+          "bytes": 14854200,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -226,8 +514,40 @@
       "name": "North American Martyrs Church Edmonds WA",
       "region": "West",
       "place": "Edmonds, Washington",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "581ac23a3c742a3b51ffe3c94c8bbc097df5b0003c3163e5c1d724b8ef47986e"
+        },
+        "2027": {
+          "la": "581ac23a3c742a3b51ffe3c94c8bbc097df5b0003c3163e5c1d724b8ef47986e"
+        },
+        "2028": {
+          "la": "581ac23a3c742a3b51ffe3c94c8bbc097df5b0003c3163e5c1d724b8ef47986e"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "north-american-martyrs-church-edmonds-wa-2026-la.epub",
+          "bytes": 14814570,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "north-american-martyrs-church-edmonds-wa-2027-la.epub",
+          "bytes": 14822686,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "north-american-martyrs-church-edmonds-wa-2028-la.epub",
+          "bytes": 14851023,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -236,8 +556,40 @@
       "name": "Our Lady of Mount Carmel Littleton CO",
       "region": "West",
       "place": "Littleton, Colorado",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "8ea0d81511c7ac0c2997e838e274d7ccd6f40e40291ede02356335ee942a98bd"
+        },
+        "2027": {
+          "la": "8ea0d81511c7ac0c2997e838e274d7ccd6f40e40291ede02356335ee942a98bd"
+        },
+        "2028": {
+          "la": "8ea0d81511c7ac0c2997e838e274d7ccd6f40e40291ede02356335ee942a98bd"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "our-lady-of-mount-carmel-littleton-co-2026-la.epub",
+          "bytes": 14817551,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "our-lady-of-mount-carmel-littleton-co-2027-la.epub",
+          "bytes": 14817462,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "our-lady-of-mount-carmel-littleton-co-2028-la.epub",
+          "bytes": 14849308,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -249,14 +601,14 @@
       "built": {
         "2026": {
           "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439",
-          "la": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
+          "la": "f1a30ad2ec078c9459e81f22c3c44a70c40b07294a081ea78669da9f3a9ba898"
         },
         "2027": {
-          "la": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439",
+          "la": "f1a30ad2ec078c9459e81f22c3c44a70c40b07294a081ea78669da9f3a9ba898",
           "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
         },
         "2028": {
-          "la": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439",
+          "la": "f1a30ad2ec078c9459e81f22c3c44a70c40b07294a081ea78669da9f3a9ba898",
           "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
         }
       },
@@ -265,21 +617,21 @@
           "type": "year",
           "year": 2026,
           "name": "sacramento-2026-la.epub",
-          "bytes": 14820722,
+          "bytes": 14820721,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "sacramento-2027-la.epub",
-          "bytes": 14822261,
+          "bytes": 14822263,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "sacramento-2028-la.epub",
-          "bytes": 14855364,
+          "bytes": 14855366,
           "variant": "la"
         }
       ],
@@ -291,8 +643,40 @@
       "name": "St. Anne Church San Diego CA",
       "region": "West",
       "place": "San Diego, California",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "ecc12b8a312e917a422b3d263caadb80778b56d1aa640ec3771a6a9b712c7402"
+        },
+        "2027": {
+          "la": "ecc12b8a312e917a422b3d263caadb80778b56d1aa640ec3771a6a9b712c7402"
+        },
+        "2028": {
+          "la": "ecc12b8a312e917a422b3d263caadb80778b56d1aa640ec3771a6a9b712c7402"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-anne-church-san-diego-ca-2026-la.epub",
+          "bytes": 14812691,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-anne-church-san-diego-ca-2027-la.epub",
+          "bytes": 14816484,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-anne-church-san-diego-ca-2028-la.epub",
+          "bytes": 14847217,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -301,8 +685,40 @@
       "name": "St. Cecilia Church Clarkdale AZ",
       "region": "West",
       "place": "Clarkdale, Arizona",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "9012db90d84568e592b7b8f932831fe0f83fb4e38212eb6f07115402cd95a5ef"
+        },
+        "2027": {
+          "la": "9012db90d84568e592b7b8f932831fe0f83fb4e38212eb6f07115402cd95a5ef"
+        },
+        "2028": {
+          "la": "9012db90d84568e592b7b8f932831fe0f83fb4e38212eb6f07115402cd95a5ef"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-cecilia-church-clarkdale-az-2026-la.epub",
+          "bytes": 14816411,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-cecilia-church-clarkdale-az-2027-la.epub",
+          "bytes": 14818604,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-cecilia-church-clarkdale-az-2028-la.epub",
+          "bytes": 14854252,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
