@@ -15,7 +15,7 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 | English still [to be sourced] | 0 |
 | Latin sourced from AAS 52 (1960) | 34 |
 | Latin still [to be sourced] | 0 |
-| Plain-language strings with no Latin wording | 46 |
+| Plain-language strings with no Latin wording | 47 |
 
 ## Catalogue
 
@@ -119,6 +119,7 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `plain.why.other`
 - `plain.why.rankup`
 - `plain.why.same`
+- `sk.book.out`
 - `ui.calendar`
 - `ui.col_incipit`
 - `ui.col_source`

@@ -879,3 +879,128 @@ en: On a feria with a homily, the three lessons are that homily. On a feria with
 es: En una feria con homilía, las tres lecciones son esa homilía. En una feria sin ella, son la Escritura del día.
 fr: Une férie avec homélie a pour trois leçons cette homélie. Une férie sans homélie a l'Écriture occurrente.
 de: An einer Ferie mit Homilie sind die drei Lesungen diese Homilie. An einer Ferie ohne Homilie sind sie die Schrift des Tages.
+
+[ui.skeleton]
+en: Skeleton
+es: Esquema
+fr: Schéma
+de: Gerüst
+la: Schema
+
+[sk.from]
+en: from the {place}{file}
+es: del {place}{file}
+fr: source : {place}{file}
+de: aus dem {place}{file}
+la: e {place}{file}
+
+[sk.from_lauds]
+en: from Lauds —
+es: de Laudes —
+fr: des laudes —
+de: aus den Laudes —
+la: e Laudibus —
+
+[sk.place.ordinary]
+en: Ordinary
+es: Ordinario
+fr: ordinaire
+de: Ordinarium
+la: Ordinario
+
+[sk.place.psalter]
+en: Psalter
+es: Salterio
+fr: psautier
+de: Psalter
+la: Psalterio
+
+[sk.place.tempora]
+en: Proper of the Season
+es: Propio del Tiempo
+fr: propre du temps
+de: Proprium de Tempore
+la: Proprio de Tempore
+
+[sk.place.sancti]
+en: Proper of Saints
+es: Propio de los Santos
+fr: propre des saints
+de: Proprium Sanctorum
+la: Proprio Sanctorum
+
+[sk.place.commune]
+en: Common
+es: Común
+fr: commun
+de: Commune
+la: Communi
+
+[sk.place.local]
+en: particular proper
+es: propio particular
+fr: propre particulier
+de: besonderen Proprium
+la: Proprio particulari
+
+[sk.place.unresolved]
+en: Ordinary or the Psalter
+es: Ordinario o el Salterio
+fr: ordinaire ou le psautier
+de: Ordinarium oder Psalter
+la: Ordinario vel Psalterio
+
+[sk.book.in]
+en: in the printed breviary
+es: en el breviario impreso
+fr: dans le bréviaire imprimé
+de: im gedruckten Brevier
+la: in Breviario impresso
+
+[sk.book.out]
+en: not in the standard printed breviary — print this proper separately
+es: no está en el breviario impreso habitual — imprima este propio aparte
+fr: pas dans le bréviaire imprimé ordinaire — imprimer ce propre à part
+de: nicht im gewöhnlichen gedruckten Brevier — dieses Proprium gesondert drucken
+
+[sk.nocturn]
+en: Nocturn {n}
+es: Nocturno {n}
+fr: Nocturne {n}
+de: Nokturn {n}
+la: Nocturnus {n}
+
+[sk.lessons]
+en: Lessons {a}–{b}: {kind}
+es: Lecciones {a}–{b}: {kind}
+fr: Leçons {a}–{b} : {kind}
+de: Lesungen {a}–{b}: {kind}
+la: Lectiones {a}–{b}: {kind}
+
+[sk.lesson]
+en: Lesson {n}: {kind}
+es: Lección {n}: {kind}
+fr: Leçon {n} : {kind}
+de: Lesung {n}: {kind}
+la: Lectio {n}: {kind}
+
+[sk.ants_psalms]
+en: Antiphons and psalms
+es: Antífonas y salmos
+fr: Antiennes et psaumes
+de: Antiphonen und Psalmen
+la: Antiphonae et psalmi
+
+[sk.said]
+en: said
+es: se dicen
+fr: se disent
+de: werden gebetet
+la: dicuntur
+
+[sk.omitted]
+en: omitted
+es: se omiten
+fr: s'omettent
+de: entfallen
+la: omittuntur
