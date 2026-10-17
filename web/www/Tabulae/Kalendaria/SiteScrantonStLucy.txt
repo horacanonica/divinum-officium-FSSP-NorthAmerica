@@ -1,0 +1,2 @@
+#Propria Officia St. Lucy's Church, Scranton, PA (generated from fssp/na_province.yaml)
+12-13=12-13nl1r=S. Luciæ Virginis et Martyris=1=

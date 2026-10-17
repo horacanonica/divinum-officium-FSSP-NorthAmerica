@@ -617,6 +617,7 @@ sites:
      titulars: [{title: "St. Francis de Sales, Bishop & Doctor", date: "01-29", propers: base}],
      community_patron: {title: "Regina Pacis (Our Lady Queen of Peace)", date: CONFIRM, propers: commons, commune: "Common of Feasts of the BVM", status: CONFIRM}}
   - {id: baltimore-st-alphonsus, name: "National Shrine of St. Alphonsus Liguori", city: "Baltimore, MD", country: US, diocese: baltimore, kind: shrine,
+     note: "ANSWERED 2026-10-16: the parish is St. Alphonsus, so Aug 2 is the parish patronal feast. The legacy Baltimore calendar labels it patron of the archdiocese; that label is the legacy file's own and is kept there.",
      titulars: [{title: "St. Alphonsus Liguori, Bishop & Doctor", date: "08-02", propers: base}]}
   - {id: minneapolis-all-saints, name: "Church of All Saints", city: "Minneapolis, MN", country: US, diocese: st-paul-minneapolis, kind: parish,
      titulars: [{title: "All Saints", date: "11-01", propers: base}]}
@@ -648,8 +649,9 @@ sites:
      note: "ANSWERED 2026-10-16: Mater Dei community patron is NOT elevated"}
   - {id: conshohocken-st-mary, name: "St. Mary Catholic Church", city: "Conshohocken, PA", country: US, diocese: philadelphia, kind: parish,
      titulars: [{title: "St. Mary — Assumption (default)", date: "08-15", propers: base, status: CONFIRM}]}
-  - {id: scranton-st-michael, name: "St. Michael's Church", city: "Scranton, PA", country: US, diocese: scranton, kind: parish,
-     titulars: [{title: "Dedication of St. Michael the Archangel", date: "09-29", propers: base}]}
+  - {id: scranton-st-lucy, name: "St. Lucy's Church", city: "Scranton, PA", country: US, diocese: scranton, kind: parish,
+     note: "ANSWERED 2026-10-16: formerly St. Michael's parish; renamed St. Lucy's. Patronal feast St. Lucy, Dec 13 (matches the legacy Scranton calendar).",
+     titulars: [{title: "St. Lucy, Virgin & Martyr", date: "12-13", propers: base}]}
   - {id: providence-st-mary-broadway, name: "Church of St. Mary on Broadway", city: "Providence, RI", country: US, diocese: providence, kind: parish,
      titulars: [{title: "St. Mary — Assumption (default)", date: "08-15", propers: base, status: CONFIRM}]}
   - {id: rapid-city-immaculate-conception, name: "Immaculate Conception Church", city: "Rapid City, SD", country: US, diocese: rapid-city, kind: parish,

@@ -5,7 +5,7 @@
     "la": "epub-library-la",
     "la-en": "epub-library"
   },
-  "updated": "2026-10-16T23:58:05Z",
+  "updated": "2026-10-17T01:46:30Z",
   "languages": "Latin",
   "variants": [
     {
@@ -213,7 +213,7 @@
     {
       "version": "Rubrics 1960 - Immaculate Conception Colorado Springs CO",
       "slug": "immaculate-conception-colorado-springs-co",
-      "name": "Immaculate Conception Colorado Springs CO",
+      "name": "Immaculate Conception, Colorado Springs",
       "region": "West",
       "place": "Colorado Springs, Colorado",
       "built": {},
@@ -223,7 +223,7 @@
     {
       "version": "Rubrics 1960 - North American Martyrs Church Edmonds WA",
       "slug": "north-american-martyrs-church-edmonds-wa",
-      "name": "North American Martyrs Church Edmonds WA",
+      "name": "North American Martyrs Church, Edmonds",
       "region": "West",
       "place": "Edmonds, Washington",
       "built": {},
@@ -233,7 +233,7 @@
     {
       "version": "Rubrics 1960 - Our Lady of Mount Carmel Littleton CO",
       "slug": "our-lady-of-mount-carmel-littleton-co",
-      "name": "Our Lady of Mount Carmel Littleton CO",
+      "name": "Our Lady of Mount Carmel, Littleton",
       "region": "West",
       "place": "Littleton, Colorado",
       "built": {},
@@ -241,9 +241,49 @@
       "monthly": false
     },
     {
+      "version": "Rubrics 1960 - St. Anne Church San Diego CA",
+      "slug": "st-anne-church-san-diego-ca",
+      "name": "St. Anne Church, San Diego",
+      "region": "West",
+      "place": "San Diego, California",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - St. Cecilia Church Clarkdale AZ",
+      "slug": "st-cecilia-church-clarkdale-az",
+      "name": "St. Cecilia Church, Clarkdale",
+      "region": "West",
+      "place": "Clarkdale, Arizona",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - St. Joseph Church Tacoma WA",
+      "slug": "st-joseph-church-tacoma-wa",
+      "name": "St. Joseph Church, Tacoma",
+      "region": "West",
+      "place": "Tacoma, Washington",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - St. Mary Magdalen Chapel Camarillo CA",
+      "slug": "st-mary-magdalen-chapel-camarillo-ca",
+      "name": "St. Mary Magdalen Chapel, Camarillo",
+      "region": "West",
+      "place": "Camarillo, California",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
       "version": "Rubrics 1960 - Sacramento",
       "slug": "sacramento",
-      "name": "Sacramento",
+      "name": "St. Stephen the First Martyr, Sacramento (Diocese of Sacramento)",
       "region": "West",
       "place": "Sacramento, California",
       "built": {
@@ -286,49 +326,9 @@
       "monthly": false
     },
     {
-      "version": "Rubrics 1960 - St. Anne Church San Diego CA",
-      "slug": "st-anne-church-san-diego-ca",
-      "name": "St. Anne Church San Diego CA",
-      "region": "West",
-      "place": "San Diego, California",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - St. Cecilia Church Clarkdale AZ",
-      "slug": "st-cecilia-church-clarkdale-az",
-      "name": "St. Cecilia Church Clarkdale AZ",
-      "region": "West",
-      "place": "Clarkdale, Arizona",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - St. Joseph Church Tacoma WA",
-      "slug": "st-joseph-church-tacoma-wa",
-      "name": "St. Joseph Church Tacoma WA",
-      "region": "West",
-      "place": "Tacoma, Washington",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - St. Mary Magdalen Chapel Camarillo CA",
-      "slug": "st-mary-magdalen-chapel-camarillo-ca",
-      "name": "St. Mary Magdalen Chapel Camarillo CA",
-      "region": "West",
-      "place": "Camarillo, California",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
       "version": "Rubrics 1960 - St. Vitus Catholic Church Northridge CA",
       "slug": "st-vitus-catholic-church-northridge-ca",
-      "name": "St. Vitus Catholic Church Northridge CA",
+      "name": "St. Vitus Catholic Church, Northridge",
       "region": "West",
       "place": "Northridge, California",
       "built": {},
@@ -418,7 +418,7 @@
     {
       "version": "Rubrics 1960 - Immaculate Conception Church El Paso TX",
       "slug": "immaculate-conception-church-el-paso-tx",
-      "name": "Immaculate Conception Church El Paso TX",
+      "name": "Immaculate Conception Church, El Paso",
       "region": "South Central",
       "place": "El Paso, Texas",
       "built": {},
@@ -428,7 +428,7 @@
     {
       "version": "Rubrics 1960 - Mater Dei Catholic Parish Irving TX",
       "slug": "mater-dei-catholic-parish-irving-tx",
-      "name": "Mater Dei Catholic Parish Irving TX",
+      "name": "Mater Dei Catholic Parish, Irving",
       "region": "South Central",
       "place": "Irving, Texas",
       "built": {},
@@ -438,7 +438,7 @@
     {
       "version": "Rubrics 1960 - Our Lady of Sorrows Church Springdale AR",
       "slug": "our-lady-of-sorrows-church-springdale-ar",
-      "name": "Our Lady of Sorrows Church Springdale AR",
+      "name": "Our Lady of Sorrows Church, Springdale",
       "region": "South Central",
       "place": "Springdale, Arkansas",
       "built": {},
@@ -448,7 +448,7 @@
     {
       "version": "Rubrics 1960 - Parish of the Most Precious Blood Tulsa OK",
       "slug": "parish-of-the-most-precious-blood-tulsa-ok",
-      "name": "Parish of the Most Precious Blood Tulsa OK",
+      "name": "Parish of the Most Precious Blood, Tulsa",
       "region": "South Central",
       "place": "Tulsa, Oklahoma",
       "built": {},
@@ -458,7 +458,7 @@
     {
       "version": "Rubrics 1960 - Regina Caeli Parish Houston TX",
       "slug": "regina-caeli-parish-houston-tx",
-      "name": "Regina Caeli Parish Houston TX",
+      "name": "Regina Caeli Parish, Houston",
       "region": "South Central",
       "place": "Houston, Texas",
       "built": {},
@@ -468,7 +468,7 @@
     {
       "version": "Rubrics 1960 - St. Benedicts Church Fort Worth TX",
       "slug": "st-benedicts-church-fort-worth-tx",
-      "name": "St. Benedicts Church Fort Worth TX",
+      "name": "St. Benedict's Church, Fort Worth",
       "region": "South Central",
       "place": "Fort Worth, Texas",
       "built": {},
@@ -478,7 +478,7 @@
     {
       "version": "Rubrics 1960 - St. Damien Catholic Church Edmond OK",
       "slug": "st-damien-catholic-church-edmond-ok",
-      "name": "St. Damien Catholic Church Edmond OK",
+      "name": "St. Damien Catholic Church, Edmond",
       "region": "South Central",
       "place": "Edmond, Oklahoma",
       "built": {},
@@ -488,7 +488,7 @@
     {
       "version": "Rubrics 1960 - St. John the Baptist Church Cabot AR",
       "slug": "st-john-the-baptist-church-cabot-ar",
-      "name": "St. John the Baptist Church Cabot AR",
+      "name": "St. John the Baptist Church, Cabot",
       "region": "South Central",
       "place": "Cabot, Arkansas",
       "built": {},
@@ -498,7 +498,7 @@
     {
       "version": "Rubrics 1960 - St. Joseph the Worker Church Tyler TX",
       "slug": "st-joseph-the-worker-church-tyler-tx",
-      "name": "St. Joseph the Worker Church Tyler TX",
+      "name": "St. Joseph the Worker Church, Tyler",
       "region": "South Central",
       "place": "Tyler, Texas",
       "built": {},
@@ -528,7 +528,7 @@
     {
       "version": "Rubrics 1960 - Christ the King Parish Sarasota FL",
       "slug": "christ-the-king-parish-sarasota-fl",
-      "name": "Christ the King Parish Sarasota FL",
+      "name": "Christ the King Parish, Sarasota",
       "region": "Southeast",
       "place": "Sarasota, Florida",
       "built": {},
@@ -538,7 +538,7 @@
     {
       "version": "Rubrics 1960 - Corpus Christi Chapel Naples FL",
       "slug": "corpus-christi-chapel-naples-fl",
-      "name": "Corpus Christi Chapel Naples FL",
+      "name": "Corpus Christi Chapel, Naples",
       "region": "Southeast",
       "place": "Naples, Florida",
       "built": {},
@@ -568,7 +568,7 @@
     {
       "version": "Rubrics 1960 - Resurrection of Our Lord Chapel Fort Myers FL",
       "slug": "resurrection-of-our-lord-chapel-fort-myers-fl",
-      "name": "Resurrection of Our Lord Chapel Fort Myers FL",
+      "name": "Resurrection of Our Lord Chapel, Fort Myers",
       "region": "Southeast",
       "place": "Fort Myers, Florida",
       "built": {},
@@ -578,7 +578,7 @@
     {
       "version": "Rubrics 1960 - St. Francis de Sales Church Mableton GA",
       "slug": "st-francis-de-sales-church-mableton-ga",
-      "name": "St. Francis de Sales Church Mableton GA",
+      "name": "St. Francis de Sales Church, Mableton",
       "region": "Southeast",
       "place": "Mableton, Georgia",
       "built": {},
@@ -651,96 +651,6 @@
       "monthly": false
     },
     {
-      "version": "Rubrics 1960 - Baltimore",
-      "slug": "baltimore",
-      "name": "Baltimore",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Baltimore, Maryland",
-      "built": {
-        "2026": {
-          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
-          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
-        },
-        "2027": {
-          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
-          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
-        },
-        "2028": {
-          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
-          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
-        }
-      },
-      "files": [
-        {
-          "type": "year",
-          "year": 2026,
-          "name": "baltimore-2026-la.epub",
-          "bytes": 14811836,
-          "variant": "la"
-        },
-        {
-          "type": "year",
-          "year": 2027,
-          "name": "baltimore-2027-la.epub",
-          "bytes": 14815737,
-          "variant": "la"
-        },
-        {
-          "type": "year",
-          "year": 2028,
-          "name": "baltimore-2028-la.epub",
-          "bytes": 14847656,
-          "variant": "la"
-        }
-      ],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - Chesapeake",
-      "slug": "chesapeake",
-      "name": "Chesapeake",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Chesapeake, Virginia",
-      "built": {
-        "2026": {
-          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
-          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
-        },
-        "2027": {
-          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
-          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
-        },
-        "2028": {
-          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
-          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
-        }
-      },
-      "files": [
-        {
-          "type": "year",
-          "year": 2026,
-          "name": "chesapeake-2026-la.epub",
-          "bytes": 14808121,
-          "variant": "la"
-        },
-        {
-          "type": "year",
-          "year": 2027,
-          "name": "chesapeake-2027-la.epub",
-          "bytes": 14814989,
-          "variant": "la"
-        },
-        {
-          "type": "year",
-          "year": 2028,
-          "name": "chesapeake-2028-la.epub",
-          "bytes": 14852531,
-          "variant": "la"
-        }
-      ],
-      "monthly": false
-    },
-    {
       "version": "Rubrics 1960 - Diocese of Harrisburg",
       "slug": "diocese-of-harrisburg",
       "name": "Diocese of Harrisburg",
@@ -791,84 +701,9 @@
       "monthly": false
     },
     {
-      "version": "Rubrics 1960 - Diocese of Scranton",
-      "slug": "diocese-of-scranton",
-      "name": "Diocese of Scranton",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Scranton, Pennsylvania",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - Nashua",
-      "slug": "nashua",
-      "name": "Nashua",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Nashua, New Hampshire",
-      "built": {
-        "2026": {
-          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
-          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
-        },
-        "2027": {
-          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
-          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
-        },
-        "2028": {
-          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
-          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
-        }
-      },
-      "files": [
-        {
-          "type": "year",
-          "year": 2026,
-          "name": "nashua-2026-la.epub",
-          "bytes": 14811916,
-          "variant": "la"
-        },
-        {
-          "type": "year",
-          "year": 2027,
-          "name": "nashua-2027-la.epub",
-          "bytes": 14814597,
-          "variant": "la"
-        },
-        {
-          "type": "year",
-          "year": 2028,
-          "name": "nashua-2028-la.epub",
-          "bytes": 14841826,
-          "variant": "la"
-        }
-      ],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - National Shrine of St. Alphonsus Liguori Baltimore MD",
-      "slug": "national-shrine-of-st-alphonsus-liguori-baltimore-md",
-      "name": "National Shrine of St. Alphonsus Liguori Baltimore MD",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Baltimore, Maryland",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - Our Lady of Fatima Chapel Pequannock NJ",
-      "slug": "our-lady-of-fatima-chapel-pequannock-nj",
-      "name": "Our Lady of Fatima Chapel Pequannock NJ",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Pequannock, New Jersey",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
       "version": "Rubrics 1960 - Richmond",
       "slug": "richmond",
-      "name": "Richmond",
+      "name": "Diocese of Richmond (original calendar)",
       "region": "Northeast & Mid-Atlantic",
       "place": "Richmond, Virginia",
       "built": {
@@ -911,9 +746,139 @@
       "monthly": false
     },
     {
+      "version": "Rubrics 1960 - Diocese of Scranton",
+      "slug": "diocese-of-scranton",
+      "name": "Diocese of Scranton",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Scranton, Pennsylvania",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - Our Lady of Fatima Chapel Pequannock NJ",
+      "slug": "our-lady-of-fatima-chapel-pequannock-nj",
+      "name": "Our Lady of Fatima Chapel, Pequannock",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Pequannock, New Jersey",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - Baltimore",
+      "slug": "baltimore",
+      "name": "St. Alphonsus Church, Baltimore (Archdiocese of Baltimore)",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Baltimore, Maryland",
+      "built": {
+        "2026": {
+          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
+          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
+        },
+        "2027": {
+          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
+          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
+        },
+        "2028": {
+          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
+          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "baltimore-2026-la.epub",
+          "bytes": 14811836,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "baltimore-2027-la.epub",
+          "bytes": 14815737,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "baltimore-2028-la.epub",
+          "bytes": 14847656,
+          "variant": "la"
+        }
+      ],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - Chesapeake",
+      "slug": "chesapeake",
+      "name": "St. Benedict's Parish, Chesapeake",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Chesapeake, Virginia",
+      "built": {
+        "2026": {
+          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
+          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
+        },
+        "2027": {
+          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
+          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
+        },
+        "2028": {
+          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
+          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "chesapeake-2026-la.epub",
+          "bytes": 14808121,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "chesapeake-2027-la.epub",
+          "bytes": 14814989,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "chesapeake-2028-la.epub",
+          "bytes": 14852531,
+          "variant": "la"
+        }
+      ],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - St. Joseph Parish Richmond VA",
+      "slug": "st-joseph-parish-richmond-va",
+      "name": "St. Joseph Parish, Richmond",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Richmond, Virginia",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - St. Lawrence Church Harrisburg PA",
+      "slug": "st-lawrence-church-harrisburg-pa",
+      "name": "St. Lawrence Church, Harrisburg",
+      "region": "Northeast & Mid-Atlantic",
+      "place": "Harrisburg, Pennsylvania",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
       "version": "Rubrics 1960 - Scranton",
       "slug": "scranton",
-      "name": "Scranton",
+      "name": "St. Lucy's Church, Scranton (Diocese of Scranton)",
       "region": "Northeast & Mid-Atlantic",
       "place": "Scranton, Pennsylvania",
       "built": {
@@ -956,43 +921,48 @@
       "monthly": false
     },
     {
-      "version": "Rubrics 1960 - St. Benedicts Parish Chesapeake VA",
-      "slug": "st-benedicts-parish-chesapeake-va",
-      "name": "St. Benedicts Parish Chesapeake VA",
+      "version": "Rubrics 1960 - Nashua",
+      "slug": "nashua",
+      "name": "St. Stanislaus Church, Nashua (Diocese of Manchester)",
       "region": "Northeast & Mid-Atlantic",
-      "place": "Chesapeake, Virginia",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - St. Joseph Parish Richmond VA",
-      "slug": "st-joseph-parish-richmond-va",
-      "name": "St. Joseph Parish Richmond VA",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Richmond, Virginia",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - St. Lawrence Church Harrisburg PA",
-      "slug": "st-lawrence-church-harrisburg-pa",
-      "name": "St. Lawrence Church Harrisburg PA",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Harrisburg, Pennsylvania",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - St. Michaels Church Scranton PA",
-      "slug": "st-michaels-church-scranton-pa",
-      "name": "St. Michaels Church Scranton PA",
-      "region": "Northeast & Mid-Atlantic",
-      "place": "Scranton, Pennsylvania",
-      "built": {},
-      "files": [],
+      "place": "Nashua, New Hampshire",
+      "built": {
+        "2026": {
+          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
+          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
+        },
+        "2027": {
+          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
+          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
+        },
+        "2028": {
+          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
+          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "nashua-2026-la.epub",
+          "bytes": 14811916,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "nashua-2027-la.epub",
+          "bytes": 14814597,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "nashua-2028-la.epub",
+          "bytes": 14841826,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -1048,7 +1018,7 @@
     {
       "version": "Rubrics 1960 - Church of All Saints Minneapolis MN",
       "slug": "church-of-all-saints-minneapolis-mn",
-      "name": "Church of All Saints Minneapolis MN",
+      "name": "Church of All Saints, Minneapolis",
       "region": "Midwest",
       "place": "Minneapolis, Minnesota",
       "built": {},
@@ -1118,7 +1088,7 @@
     {
       "version": "Rubrics 1960 - Holy Family Church Dayton OH",
       "slug": "holy-family-church-dayton-oh",
-      "name": "Holy Family Church Dayton OH",
+      "name": "Holy Family Church, Dayton",
       "region": "Midwest",
       "place": "Dayton, Ohio",
       "built": {},
@@ -1128,7 +1098,7 @@
     {
       "version": "Rubrics 1960 - Immaculate Conception Church Omaha NE",
       "slug": "immaculate-conception-church-omaha-ne",
-      "name": "Immaculate Conception Church Omaha NE",
+      "name": "Immaculate Conception Church, Omaha",
       "region": "Midwest",
       "place": "Omaha, Nebraska",
       "built": {},
@@ -1138,7 +1108,7 @@
     {
       "version": "Rubrics 1960 - Immaculate Conception Church Rapid City SD",
       "slug": "immaculate-conception-church-rapid-city-sd",
-      "name": "Immaculate Conception Church Rapid City SD",
+      "name": "Immaculate Conception Church, Rapid City",
       "region": "Midwest",
       "place": "Rapid City, South Dakota",
       "built": {},
@@ -1146,54 +1116,9 @@
       "monthly": false
     },
     {
-      "version": "Rubrics 1960 - Maple Hill",
-      "slug": "maple-hill",
-      "name": "Maple Hill",
-      "region": "Midwest",
-      "place": "Maple Hill, Kansas",
-      "built": {
-        "2026": {
-          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
-          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
-        },
-        "2027": {
-          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
-          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
-        },
-        "2028": {
-          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
-          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
-        }
-      },
-      "files": [
-        {
-          "type": "year",
-          "year": 2026,
-          "name": "maple-hill-2026-la.epub",
-          "bytes": 14810754,
-          "variant": "la"
-        },
-        {
-          "type": "year",
-          "year": 2027,
-          "name": "maple-hill-2027-la.epub",
-          "bytes": 14818496,
-          "variant": "la"
-        },
-        {
-          "type": "year",
-          "year": 2028,
-          "name": "maple-hill-2028-la.epub",
-          "bytes": 14847881,
-          "variant": "la"
-        }
-      ],
-      "monthly": false
-    },
-    {
       "version": "Rubrics 1960 - OLG Seminary",
       "slug": "olg-seminary",
-      "name": "OLG Seminary",
+      "name": "Our Lady of Guadalupe Seminary, Denton",
       "region": "Midwest",
       "place": "Denton, Nebraska",
       "built": {
@@ -1236,19 +1161,9 @@
       "monthly": false
     },
     {
-      "version": "Rubrics 1960 - Our Lady of Guadalupe Seminary Denton NE",
-      "slug": "our-lady-of-guadalupe-seminary-denton-ne",
-      "name": "Our Lady of Guadalupe Seminary Denton NE",
-      "region": "Midwest",
-      "place": "Denton, Nebraska",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
       "version": "Rubrics 1960 - Queen of the Holy Rosary Church Vienna OH",
       "slug": "queen-of-the-holy-rosary-church-vienna-oh",
-      "name": "Queen of the Holy Rosary Church Vienna OH",
+      "name": "Queen of the Holy Rosary Church, Vienna",
       "region": "Midwest",
       "place": "Vienna, Ohio",
       "built": {},
@@ -1256,9 +1171,94 @@
       "monthly": false
     },
     {
+      "version": "Rubrics 1960 - Sacred Heart Parish Fort Wayne IN",
+      "slug": "sacred-heart-parish-fort-wayne-in",
+      "name": "Sacred Heart Parish, Fort Wayne",
+      "region": "Midwest",
+      "place": "Fort Wayne, Indiana",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - Ss. Peter and Paul Church Naperville IL",
+      "slug": "ss-peter-and-paul-church-naperville-il",
+      "name": "Ss. Peter & Paul Church, Naperville",
+      "region": "Midwest",
+      "place": "Naperville, Illinois",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - St. Francis of Assisi Church Lincoln NE",
+      "slug": "st-francis-of-assisi-church-lincoln-ne",
+      "name": "St. Francis of Assisi Church, Lincoln",
+      "region": "Midwest",
+      "place": "Lincoln, Nebraska",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - Maple Hill",
+      "slug": "maple-hill",
+      "name": "St. John Vianney Chapel, Maple Hill",
+      "region": "Midwest",
+      "place": "Maple Hill, Kansas",
+      "built": {
+        "2026": {
+          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
+          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
+        },
+        "2027": {
+          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
+          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
+        },
+        "2028": {
+          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
+          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "maple-hill-2026-la.epub",
+          "bytes": 14810754,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "maple-hill-2027-la.epub",
+          "bytes": 14818496,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "maple-hill-2028-la.epub",
+          "bytes": 14847881,
+          "variant": "la"
+        }
+      ],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - St. Joseph Parish Rockdale IL",
+      "slug": "st-joseph-parish-rockdale-il",
+      "name": "St. Joseph Parish, Rockdale",
+      "region": "Midwest",
+      "place": "Rockdale, Illinois",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
       "version": "Rubrics 1960 - Quincy",
       "slug": "quincy",
-      "name": "Quincy",
+      "name": "St. Rose of Lima Parish, Quincy (Diocese of Springfield in Illinois)",
       "region": "Midwest",
       "place": "Quincy, Illinois",
       "built": {
@@ -1301,69 +1301,9 @@
       "monthly": false
     },
     {
-      "version": "Rubrics 1960 - Sacred Heart Parish Fort Wayne IN",
-      "slug": "sacred-heart-parish-fort-wayne-in",
-      "name": "Sacred Heart Parish Fort Wayne IN",
-      "region": "Midwest",
-      "place": "Fort Wayne, Indiana",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - Ss. Peter and Paul Church Naperville IL",
-      "slug": "ss-peter-and-paul-church-naperville-il",
-      "name": "Ss. Peter and Paul Church Naperville IL",
-      "region": "Midwest",
-      "place": "Naperville, Illinois",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - St. Francis of Assisi Church Lincoln NE",
-      "slug": "st-francis-of-assisi-church-lincoln-ne",
-      "name": "St. Francis of Assisi Church Lincoln NE",
-      "region": "Midwest",
-      "place": "Lincoln, Nebraska",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - St. John Vianney Chapel Maple Hill KS",
-      "slug": "st-john-vianney-chapel-maple-hill-ks",
-      "name": "St. John Vianney Chapel Maple Hill KS",
-      "region": "Midwest",
-      "place": "Maple Hill, Kansas",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - St. Joseph Parish Rockdale IL",
-      "slug": "st-joseph-parish-rockdale-il",
-      "name": "St. Joseph Parish Rockdale IL",
-      "region": "Midwest",
-      "place": "Rockdale, Illinois",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
-      "version": "Rubrics 1960 - St. Rose of Lima Parish Quincy IL",
-      "slug": "st-rose-of-lima-parish-quincy-il",
-      "name": "St. Rose of Lima Parish Quincy IL",
-      "region": "Midwest",
-      "place": "Quincy, Illinois",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
       "version": "Rubrics 1960 - St. Rose Philippine Duchesne Catholic Church Westwood KS",
       "slug": "st-rose-philippine-duchesne-catholic-church-westwood-ks",
-      "name": "St. Rose Philippine Duchesne Catholic Church Westwood KS",
+      "name": "St. Rose Philippine Duchesne Catholic Church, Westwood",
       "region": "Midwest",
       "place": "Westwood, Kansas",
       "built": {},
@@ -1373,7 +1313,7 @@
     {
       "version": "Rubrics 1960 - St. Stanislaus Church South Bend IN",
       "slug": "st-stanislaus-church-south-bend-in",
-      "name": "St. Stanislaus Church South Bend IN",
+      "name": "St. Stanislaus Church, South Bend",
       "region": "Midwest",
       "place": "South Bend, Indiana",
       "built": {},
@@ -1441,16 +1381,6 @@
       "monthly": false
     },
     {
-      "version": "Rubrics 1960 - Eglise St-Irenee Montreal QC",
-      "slug": "eglise-st-irenee-montreal-qc",
-      "name": "Eglise St-Irenee Montreal QC",
-      "region": "Canada",
-      "place": "Montréal, Quebec",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
       "version": "Rubrics 1960 - FSSP Canada",
       "slug": "fssp-canada",
       "name": "FSSP Canada",
@@ -1463,7 +1393,7 @@
     {
       "version": "Rubrics 1960 - Holy Family Parish Vancouver BC",
       "slug": "holy-family-parish-vancouver-bc",
-      "name": "Holy Family Parish Vancouver BC",
+      "name": "Holy Family Parish, Vancouver",
       "region": "Canada",
       "place": "Vancouver, British Columbia",
       "built": {},
@@ -1518,7 +1448,7 @@
     {
       "version": "Rubrics 1960 - St. Aloysius Parish Thorold ON",
       "slug": "st-aloysius-parish-thorold-on",
-      "name": "St. Aloysius Parish Thorold ON",
+      "name": "St. Aloysius Parish, Thorold",
       "region": "Canada",
       "place": "Thorold, Ontario",
       "built": {},
@@ -1528,9 +1458,19 @@
     {
       "version": "Rubrics 1960 - St. Anthony Church Calgary AB",
       "slug": "st-anthony-church-calgary-ab",
-      "name": "St. Anthony Church Calgary AB",
+      "name": "St. Anthony Church, Calgary",
       "region": "Canada",
       "place": "Calgary, Alberta",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
+      "version": "Rubrics 1960 - Eglise St-Irenee Montreal QC",
+      "slug": "eglise-st-irenee-montreal-qc",
+      "name": "Église St-Irénée, Montréal",
+      "region": "Canada",
+      "place": "Montréal, Quebec",
       "built": {},
       "files": [],
       "monthly": false

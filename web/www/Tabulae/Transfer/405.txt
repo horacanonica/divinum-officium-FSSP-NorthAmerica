@@ -35,4 +35,5 @@ Hy05-18=1;;DA
 12-01=11-29ndc;;NAP-dio-el-paso
 12-01=11-29ndc;;NAP-dio-richmond
 06-01=05-31nl1~06-01;;NAP-dio-montreal
+12-14=12-13nl1r~XXXXX;;NAP-site-scranton-st-lucy
 06-01=05-31nl1~06-01;;NAP-site-houston-regina-caeli

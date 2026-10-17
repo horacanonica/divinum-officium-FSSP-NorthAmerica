@@ -55,12 +55,21 @@ class CalendarDiscoveryTest(unittest.TestCase):
         self.assertIn("Southeast", self.order)
 
     def test_every_generated_calendar_is_listed_year_only(self):
-        self.assertGreaterEqual(len(self.calendars), 105)
+        self.assertGreaterEqual(len(self.calendars), 99)
         self.assertNotIn("Other", {cal.region for cal in self.calendars})
         self.assertFalse(any(cal.monthly for cal in self.calendars))
         self.assertEqual(library.VARIANTS, ("la",))
         self.assertIn("diocese-of-phoenix", self.by_slug)
         self.assertEqual(self.by_slug["fssp-canada"].region, "Canada")
+        # A generated calendar that repeats a hand-written one is not listed twice.
+        self.assertNotIn("st-lucys-church-scranton-pa", self.by_slug)
+        self.assertEqual(
+            self.by_slug["scranton"].name, "St. Lucy's Church, Scranton (Diocese of Scranton)"
+        )
+        # Parish headings carry the city.
+        for cal in self.calendars:
+            if cal.version.split(" - ", 1)[1].startswith("St. "):
+                self.assertIn(",", cal.name)
 
     def test_missing_region_falls_through_to_other(self):
         versions = library.load_versions()

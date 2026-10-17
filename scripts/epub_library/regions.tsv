@@ -8,21 +8,23 @@
 # that calendar. GitHub allows 1,000 assets per release, so every
 # calendar is year-only and Latin only.
 #
+# A fifth column gives the heading shown on the page (parish and city).
+#
 # region_order: General | West | South Central | Southeast | Northeast & Mid-Atlantic | Midwest | Canada | Mexico | Other
 version	region	place
 Rubrics 1960 - FSSP	General	General calendar of the Fraternity	year
 Rubrics 1960 - FSSP USA	General	FSSP calendar for the United States	year
-Rubrics 1960 - Sacramento	West	Sacramento, California	year
+Rubrics 1960 - Sacramento	West	Sacramento, California	year	St. Stephen the First Martyr, Sacramento (Diocese of Sacramento)
 Rubrics 1960 - Guadalajara	Mexico	Guadalajara, Mexico	year
-Rubrics 1960 - Chesapeake	Northeast & Mid-Atlantic	Chesapeake, Virginia	year
-Rubrics 1960 - Richmond	Northeast & Mid-Atlantic	Richmond, Virginia	year
-Rubrics 1960 - Nashua	Northeast & Mid-Atlantic	Nashua, New Hampshire	year
+Rubrics 1960 - Chesapeake	Northeast & Mid-Atlantic	Chesapeake, Virginia	year	St. Benedict's Parish, Chesapeake
+Rubrics 1960 - Richmond	Northeast & Mid-Atlantic	Richmond, Virginia	year	Diocese of Richmond (original calendar)
+Rubrics 1960 - Nashua	Northeast & Mid-Atlantic	Nashua, New Hampshire	year	St. Stanislaus Church, Nashua (Diocese of Manchester)
 Rubrics 1960 - Arlington	Northeast & Mid-Atlantic	Arlington, Virginia	year
-Rubrics 1960 - Scranton	Northeast & Mid-Atlantic	Scranton, Pennsylvania	year
-Rubrics 1960 - Baltimore	Northeast & Mid-Atlantic	Baltimore, Maryland	year
-Rubrics 1960 - Maple Hill	Midwest	Maple Hill, Kansas	year
-Rubrics 1960 - OLG Seminary	Midwest	Denton, Nebraska	year
-Rubrics 1960 - Quincy	Midwest	Quincy, Illinois	year
+Rubrics 1960 - Scranton	Northeast & Mid-Atlantic	Scranton, Pennsylvania	year	St. Lucy's Church, Scranton (Diocese of Scranton)
+Rubrics 1960 - Baltimore	Northeast & Mid-Atlantic	Baltimore, Maryland	year	St. Alphonsus Church, Baltimore (Archdiocese of Baltimore)
+Rubrics 1960 - Maple Hill	Midwest	Maple Hill, Kansas	year	St. John Vianney Chapel, Maple Hill
+Rubrics 1960 - OLG Seminary	Midwest	Denton, Nebraska	year	Our Lady of Guadalupe Seminary, Denton
+Rubrics 1960 - Quincy	Midwest	Quincy, Illinois	year	St. Rose of Lima Parish, Quincy (Diocese of Springfield in Illinois)
 Rubrics 1960 - Niagara	Canada	Niagara, Ontario	year
 Rubrics 1960 - Archdiocese of Montreal	Canada	Montreal, Quebec	year
 Rubrics 1960 - Archdiocese of Ottawa	Canada	Ottawa, Ontario	year
@@ -30,36 +32,36 @@ Rubrics 1960 - Archdiocese of Vancouver	Canada	Vancouver, British Columbia	year
 Rubrics 1960 - Diocese of Calgary	Canada	Calgary, Alberta	year
 Rubrics 1960 - Diocese of Saskatoon	Canada	Saskatoon, Saskatchewan	year
 Rubrics 1960 - Diocese of St. Catharines	Canada	St. Catharines, Ontario	year
-Rubrics 1960 - Eglise St-Irenee Montreal QC	Canada	Montréal, Quebec	year
+Rubrics 1960 - Eglise St-Irenee Montreal QC	Canada	Montréal, Quebec	year	Église St-Irénée, Montréal
 Rubrics 1960 - FSSP Canada	Canada	Fraternity calendar for Canada	year
-Rubrics 1960 - Holy Family Parish Vancouver BC	Canada	Vancouver, British Columbia	year
-Rubrics 1960 - St. Aloysius Parish Thorold ON	Canada	Thorold, Ontario	year
-Rubrics 1960 - St. Anthony Church Calgary AB	Canada	Calgary, Alberta	year
+Rubrics 1960 - Holy Family Parish Vancouver BC	Canada	Vancouver, British Columbia	year	Holy Family Parish, Vancouver
+Rubrics 1960 - St. Aloysius Parish Thorold ON	Canada	Thorold, Ontario	year	St. Aloysius Parish, Thorold
+Rubrics 1960 - St. Anthony Church Calgary AB	Canada	Calgary, Alberta	year	St. Anthony Church, Calgary
 Rubrics 1960 - Archdiocese of Cincinnati	Midwest	Cincinnati, Ohio	year
 Rubrics 1960 - Archdiocese of Indianapolis	Midwest	Indianapolis, Indiana	year
 Rubrics 1960 - Archdiocese of Kansas City in Kansas	Midwest	Kansas City, Kansas	year
 Rubrics 1960 - Archdiocese of Omaha	Midwest	Omaha, Nebraska	year
 Rubrics 1960 - Archdiocese of Saint Paul and Minneapolis	Midwest	St. Paul and Minneapolis, Minnesota	year
-Rubrics 1960 - Church of All Saints Minneapolis MN	Midwest	Minneapolis, Minnesota	year
+Rubrics 1960 - Church of All Saints Minneapolis MN	Midwest	Minneapolis, Minnesota	year	Church of All Saints, Minneapolis
 Rubrics 1960 - Diocese of Fort Wayne-South Bend	Midwest	Fort Wayne and South Bend, Indiana	year
 Rubrics 1960 - Diocese of Joliet	Midwest	Joliet, Illinois	year
 Rubrics 1960 - Diocese of Lincoln	Midwest	Lincoln, Nebraska	year
 Rubrics 1960 - Diocese of Rapid City	Midwest	Rapid City, South Dakota	year
 Rubrics 1960 - Diocese of Springfield in Illinois	Midwest	Springfield, Illinois	year
 Rubrics 1960 - Diocese of Youngstown	Midwest	Youngstown, Ohio	year
-Rubrics 1960 - Holy Family Church Dayton OH	Midwest	Dayton, Ohio	year
-Rubrics 1960 - Immaculate Conception Church Omaha NE	Midwest	Omaha, Nebraska	year
-Rubrics 1960 - Immaculate Conception Church Rapid City SD	Midwest	Rapid City, South Dakota	year
-Rubrics 1960 - Our Lady of Guadalupe Seminary Denton NE	Midwest	Denton, Nebraska	year
-Rubrics 1960 - Queen of the Holy Rosary Church Vienna OH	Midwest	Vienna, Ohio	year
-Rubrics 1960 - Sacred Heart Parish Fort Wayne IN	Midwest	Fort Wayne, Indiana	year
-Rubrics 1960 - Ss. Peter and Paul Church Naperville IL	Midwest	Naperville, Illinois	year
-Rubrics 1960 - St. Francis of Assisi Church Lincoln NE	Midwest	Lincoln, Nebraska	year
-Rubrics 1960 - St. John Vianney Chapel Maple Hill KS	Midwest	Maple Hill, Kansas	year
-Rubrics 1960 - St. Joseph Parish Rockdale IL	Midwest	Rockdale, Illinois	year
-Rubrics 1960 - St. Rose Philippine Duchesne Catholic Church Westwood KS	Midwest	Westwood, Kansas	year
-Rubrics 1960 - St. Rose of Lima Parish Quincy IL	Midwest	Quincy, Illinois	year
-Rubrics 1960 - St. Stanislaus Church South Bend IN	Midwest	South Bend, Indiana	year
+Rubrics 1960 - Holy Family Church Dayton OH	Midwest	Dayton, Ohio	year	Holy Family Church, Dayton
+Rubrics 1960 - Immaculate Conception Church Omaha NE	Midwest	Omaha, Nebraska	year	Immaculate Conception Church, Omaha
+Rubrics 1960 - Immaculate Conception Church Rapid City SD	Midwest	Rapid City, South Dakota	year	Immaculate Conception Church, Rapid City
+Rubrics 1960 - Our Lady of Guadalupe Seminary Denton NE	Midwest	Denton, Nebraska	year,hidden	Our Lady of Guadalupe Seminary, Denton
+Rubrics 1960 - Queen of the Holy Rosary Church Vienna OH	Midwest	Vienna, Ohio	year	Queen of the Holy Rosary Church, Vienna
+Rubrics 1960 - Sacred Heart Parish Fort Wayne IN	Midwest	Fort Wayne, Indiana	year	Sacred Heart Parish, Fort Wayne
+Rubrics 1960 - Ss. Peter and Paul Church Naperville IL	Midwest	Naperville, Illinois	year	Ss. Peter & Paul Church, Naperville
+Rubrics 1960 - St. Francis of Assisi Church Lincoln NE	Midwest	Lincoln, Nebraska	year	St. Francis of Assisi Church, Lincoln
+Rubrics 1960 - St. John Vianney Chapel Maple Hill KS	Midwest	Maple Hill, Kansas	year,hidden	St. John Vianney Chapel, Maple Hill
+Rubrics 1960 - St. Joseph Parish Rockdale IL	Midwest	Rockdale, Illinois	year	St. Joseph Parish, Rockdale
+Rubrics 1960 - St. Rose Philippine Duchesne Catholic Church Westwood KS	Midwest	Westwood, Kansas	year	St. Rose Philippine Duchesne Catholic Church, Westwood
+Rubrics 1960 - St. Rose of Lima Parish Quincy IL	Midwest	Quincy, Illinois	year,hidden	St. Rose of Lima Parish, Quincy
+Rubrics 1960 - St. Stanislaus Church South Bend IN	Midwest	South Bend, Indiana	year	St. Stanislaus Church, South Bend
 Rubrics 1960 - Archdiocese of Baltimore	Northeast & Mid-Atlantic	Baltimore, Maryland	year
 Rubrics 1960 - Archdiocese of Philadelphia	Northeast & Mid-Atlantic	Philadelphia, Pennsylvania	year
 Rubrics 1960 - Diocese of Harrisburg	Northeast & Mid-Atlantic	Harrisburg, Pennsylvania	year
@@ -68,12 +70,12 @@ Rubrics 1960 - Diocese of Paterson	Northeast & Mid-Atlantic	Paterson, New Jersey
 Rubrics 1960 - Diocese of Providence	Northeast & Mid-Atlantic	Providence, Rhode Island	year
 Rubrics 1960 - Diocese of Richmond	Northeast & Mid-Atlantic	Richmond, Virginia	year
 Rubrics 1960 - Diocese of Scranton	Northeast & Mid-Atlantic	Scranton, Pennsylvania	year
-Rubrics 1960 - National Shrine of St. Alphonsus Liguori Baltimore MD	Northeast & Mid-Atlantic	Baltimore, Maryland	year
-Rubrics 1960 - Our Lady of Fatima Chapel Pequannock NJ	Northeast & Mid-Atlantic	Pequannock, New Jersey	year
-Rubrics 1960 - St. Benedicts Parish Chesapeake VA	Northeast & Mid-Atlantic	Chesapeake, Virginia	year
-Rubrics 1960 - St. Joseph Parish Richmond VA	Northeast & Mid-Atlantic	Richmond, Virginia	year
-Rubrics 1960 - St. Lawrence Church Harrisburg PA	Northeast & Mid-Atlantic	Harrisburg, Pennsylvania	year
-Rubrics 1960 - St. Michaels Church Scranton PA	Northeast & Mid-Atlantic	Scranton, Pennsylvania	year
+Rubrics 1960 - National Shrine of St. Alphonsus Liguori Baltimore MD	Northeast & Mid-Atlantic	Baltimore, Maryland	year,hidden	National Shrine of St. Alphonsus Liguori, Baltimore
+Rubrics 1960 - Our Lady of Fatima Chapel Pequannock NJ	Northeast & Mid-Atlantic	Pequannock, New Jersey	year	Our Lady of Fatima Chapel, Pequannock
+Rubrics 1960 - St. Benedicts Parish Chesapeake VA	Northeast & Mid-Atlantic	Chesapeake, Virginia	year,hidden	St. Benedict's Parish, Chesapeake
+Rubrics 1960 - St. Joseph Parish Richmond VA	Northeast & Mid-Atlantic	Richmond, Virginia	year	St. Joseph Parish, Richmond
+Rubrics 1960 - St. Lawrence Church Harrisburg PA	Northeast & Mid-Atlantic	Harrisburg, Pennsylvania	year	St. Lawrence Church, Harrisburg
+Rubrics 1960 - St. Lucys Church Scranton PA	Northeast & Mid-Atlantic	Scranton, Pennsylvania	year,hidden	St. Lucy's Church, Scranton
 Rubrics 1960 - Archdiocese of Galveston-Houston	South Central	Galveston and Houston, Texas	year
 Rubrics 1960 - Archdiocese of Oklahoma City	South Central	Oklahoma City, Oklahoma	year
 Rubrics 1960 - Diocese of Dallas	South Central	Dallas, Texas	year
@@ -82,23 +84,23 @@ Rubrics 1960 - Diocese of Fort Worth	South Central	Fort Worth, Texas	year
 Rubrics 1960 - Diocese of Little Rock	South Central	Little Rock, Arkansas	year
 Rubrics 1960 - Diocese of Tulsa	South Central	Tulsa, Oklahoma	year
 Rubrics 1960 - Diocese of Tyler	South Central	Tyler, Texas	year
-Rubrics 1960 - Immaculate Conception Church El Paso TX	South Central	El Paso, Texas	year
-Rubrics 1960 - Mater Dei Catholic Parish Irving TX	South Central	Irving, Texas	year
-Rubrics 1960 - Our Lady of Sorrows Church Springdale AR	South Central	Springdale, Arkansas	year
-Rubrics 1960 - Parish of the Most Precious Blood Tulsa OK	South Central	Tulsa, Oklahoma	year
-Rubrics 1960 - Regina Caeli Parish Houston TX	South Central	Houston, Texas	year
-Rubrics 1960 - St. Benedicts Church Fort Worth TX	South Central	Fort Worth, Texas	year
-Rubrics 1960 - St. Damien Catholic Church Edmond OK	South Central	Edmond, Oklahoma	year
-Rubrics 1960 - St. John the Baptist Church Cabot AR	South Central	Cabot, Arkansas	year
-Rubrics 1960 - St. Joseph the Worker Church Tyler TX	South Central	Tyler, Texas	year
+Rubrics 1960 - Immaculate Conception Church El Paso TX	South Central	El Paso, Texas	year	Immaculate Conception Church, El Paso
+Rubrics 1960 - Mater Dei Catholic Parish Irving TX	South Central	Irving, Texas	year	Mater Dei Catholic Parish, Irving
+Rubrics 1960 - Our Lady of Sorrows Church Springdale AR	South Central	Springdale, Arkansas	year	Our Lady of Sorrows Church, Springdale
+Rubrics 1960 - Parish of the Most Precious Blood Tulsa OK	South Central	Tulsa, Oklahoma	year	Parish of the Most Precious Blood, Tulsa
+Rubrics 1960 - Regina Caeli Parish Houston TX	South Central	Houston, Texas	year	Regina Caeli Parish, Houston
+Rubrics 1960 - St. Benedicts Church Fort Worth TX	South Central	Fort Worth, Texas	year	St. Benedict's Church, Fort Worth
+Rubrics 1960 - St. Damien Catholic Church Edmond OK	South Central	Edmond, Oklahoma	year	St. Damien Catholic Church, Edmond
+Rubrics 1960 - St. John the Baptist Church Cabot AR	South Central	Cabot, Arkansas	year	St. John the Baptist Church, Cabot
+Rubrics 1960 - St. Joseph the Worker Church Tyler TX	South Central	Tyler, Texas	year	St. Joseph the Worker Church, Tyler
 Rubrics 1960 - Archdiocese of Atlanta	Southeast	Atlanta, Georgia	year
 Rubrics 1960 - Archdiocese of Miami	Southeast	Miami, Florida	year
-Rubrics 1960 - Christ the King Parish Sarasota FL	Southeast	Sarasota, Florida	year
-Rubrics 1960 - Corpus Christi Chapel Naples FL	Southeast	Naples, Florida	year
+Rubrics 1960 - Christ the King Parish Sarasota FL	Southeast	Sarasota, Florida	year	Christ the King Parish, Sarasota
+Rubrics 1960 - Corpus Christi Chapel Naples FL	Southeast	Naples, Florida	year	Corpus Christi Chapel, Naples
 Rubrics 1960 - Diocese of Orlando	Southeast	Orlando, Florida	year
 Rubrics 1960 - Diocese of Venice	Southeast	Venice, Florida	year
-Rubrics 1960 - Resurrection of Our Lord Chapel Fort Myers FL	Southeast	Fort Myers, Florida	year
-Rubrics 1960 - St. Francis de Sales Church Mableton GA	Southeast	Mableton, Georgia	year
+Rubrics 1960 - Resurrection of Our Lord Chapel Fort Myers FL	Southeast	Fort Myers, Florida	year	Resurrection of Our Lord Chapel, Fort Myers
+Rubrics 1960 - St. Francis de Sales Church Mableton GA	Southeast	Mableton, Georgia	year	St. Francis de Sales Church, Mableton
 Rubrics 1960 - Archdiocese of Denver	West	Denver, Colorado	year
 Rubrics 1960 - Archdiocese of Los Angeles	West	Los Angeles, California	year
 Rubrics 1960 - Archdiocese of Seattle	West	Seattle, Washington	year
@@ -107,11 +109,11 @@ Rubrics 1960 - Diocese of Colorado Springs	West	Colorado Springs, Colorado	year
 Rubrics 1960 - Diocese of Fresno	West	Fresno, California	year
 Rubrics 1960 - Diocese of Phoenix	West	Phoenix, Arizona	year
 Rubrics 1960 - Diocese of San Diego	West	San Diego, California	year
-Rubrics 1960 - Immaculate Conception Colorado Springs CO	West	Colorado Springs, Colorado	year
-Rubrics 1960 - North American Martyrs Church Edmonds WA	West	Edmonds, Washington	year
-Rubrics 1960 - Our Lady of Mount Carmel Littleton CO	West	Littleton, Colorado	year
-Rubrics 1960 - St. Anne Church San Diego CA	West	San Diego, California	year
-Rubrics 1960 - St. Cecilia Church Clarkdale AZ	West	Clarkdale, Arizona	year
-Rubrics 1960 - St. Joseph Church Tacoma WA	West	Tacoma, Washington	year
-Rubrics 1960 - St. Mary Magdalen Chapel Camarillo CA	West	Camarillo, California	year
-Rubrics 1960 - St. Vitus Catholic Church Northridge CA	West	Northridge, California	year
+Rubrics 1960 - Immaculate Conception Colorado Springs CO	West	Colorado Springs, Colorado	year	Immaculate Conception, Colorado Springs
+Rubrics 1960 - North American Martyrs Church Edmonds WA	West	Edmonds, Washington	year	North American Martyrs Church, Edmonds
+Rubrics 1960 - Our Lady of Mount Carmel Littleton CO	West	Littleton, Colorado	year	Our Lady of Mount Carmel, Littleton
+Rubrics 1960 - St. Anne Church San Diego CA	West	San Diego, California	year	St. Anne Church, San Diego
+Rubrics 1960 - St. Cecilia Church Clarkdale AZ	West	Clarkdale, Arizona	year	St. Cecilia Church, Clarkdale
+Rubrics 1960 - St. Joseph Church Tacoma WA	West	Tacoma, Washington	year	St. Joseph Church, Tacoma
+Rubrics 1960 - St. Mary Magdalen Chapel Camarillo CA	West	Camarillo, California	year	St. Mary Magdalen Chapel, Camarillo
+Rubrics 1960 - St. Vitus Catholic Church Northridge CA	West	Northridge, California	year	St. Vitus Catholic Church, Northridge

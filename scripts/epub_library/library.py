@@ -227,8 +227,40 @@ def load_year_only(path: Path | None = None) -> set[str]:
         if not line or line.startswith("#"):
             continue
         parts = line.split("\t")
-        if len(parts) > 3 and parts[3].strip().lower() == "year":
+        if len(parts) > 3 and "year" in _flags(parts[3]):
             found.add(parts[0].strip())
+    return found
+
+
+def _flags(cell: str) -> set[str]:
+    return {part.strip().lower() for part in cell.split(",") if part.strip()}
+
+
+def load_hidden(path: Path | None = None) -> set[str]:
+    """Versions marked ``hidden`` in regions.tsv: not listed or built.
+
+    Used where a generated calendar duplicates an older hand-written one for
+    the same place. The generated version still works on the website.
+    """
+    found: set[str] = set()
+    for line in (path or REGIONS_TSV).read_text(encoding="utf-8").splitlines():
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split("\t")
+        if len(parts) > 3 and "hidden" in _flags(parts[3]):
+            found.add(parts[0].strip())
+    return found
+
+
+def load_titles(path: Path | None = None) -> dict[str, str]:
+    """Display names from the fifth regions.tsv column (parish and city)."""
+    found: dict[str, str] = {}
+    for line in (path or REGIONS_TSV).read_text(encoding="utf-8").splitlines():
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split("\t")
+        if len(parts) > 4 and parts[4].strip():
+            found[parts[0].strip()] = parts[4].strip()
     return found
 
 
@@ -239,10 +271,12 @@ def load_calendars(
     versions = versions if versions is not None else load_versions()
     order, places = load_regions(regions_path)
     year_only = load_year_only(regions_path)
+    titles = load_titles(regions_path)
+    hidden = load_hidden(regions_path)
     calendars: list[Calendar] = []
     used_slugs: set[str] = set()
     for name, version in versions.items():
-        if not inherits_fssp(name, versions):
+        if not inherits_fssp(name, versions) or name in hidden:
             continue
         display = name.split(" - ", 1)[1] if " - " in name else name
         slug = slugify(display)
@@ -254,7 +288,7 @@ def load_calendars(
             Calendar(
                 version=name,
                 slug=slug,
-                name=display,
+                name=titles.get(name, display),
                 kalendar=version.kalendar,
                 region=region,
                 place=place,
