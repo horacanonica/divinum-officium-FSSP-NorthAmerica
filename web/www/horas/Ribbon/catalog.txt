@@ -1,0 +1,227 @@
+# Quotations the ribbon helper shows.
+# English is read from the project files named below (articles 1–137 and 138–268).
+# Latin is read from aas52-la.txt and attributed to AAS 52 (1960).
+# A line "en:" or "la:" is a snippet that must occur inside that article.
+# en_damaged: 1 means the project English file is visibly corrupt; it is still
+# quoted as transcribed, and the AAS Latin is shown beside it.
+
+@@ GR-25
+corpus: general
+number: 25
+topic: Ferias of the 3rd class in Lent are preferred to feasts of the 3rd class
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-37
+corpus: general
+number: 37
+topic: A 1st class feast begins with First Vespers; 2nd and 3rd class run from Matins
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-91-intro
+corpus: general
+number: 91
+page: 610
+topic: Precedence is governed only by the table of liturgical days
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+en: This precedence is governed solely by the following
+la: unice regitur ex sequenti
+
+@@ GR-91-12
+corpus: general
+number: 91
+page: 611
+topic: Precedence table — proper feasts of the 1st class
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+en: 12. Proper 1st class feasts, namely:
+la: 12. Festa I classis propria, nempe:
+
+@@ GR-91-22
+corpus: general
+number: 91
+page: 612
+topic: Precedence table — 3rd class ferias of Lent and Passiontide
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+en: 22. The ferias of Lent and passiontide, from Thurday after Ash Wednesday to Saturday before the 2nd Sunday of the Passion inclusive, except on ember days.
+la: 22. Feriae Quadragesimae et Passionis, a feria V post cineres usque ad sabbatum ante dominicam II Passionis inclusive, exceptis feriis Quatuor Temporum.
+
+@@ GR-91-24
+corpus: general
+number: 91
+page: 612
+topic: Precedence table — 3rd class feasts of the universal calendar
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+en: 24. Feasts of the 3rd class inscribed in the calendar of the universal Church, first the movable, then the fixed.
+la: 24. Festa III classis, in calendario Ecclesiae universae inscripta, primum mobilia, deinde fixa.
+
+@@ BR-161
+corpus: breviary
+number: 161
+topic: Matins of three nocturns and nine lessons
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-162
+corpus: breviary
+number: 162
+topic: Matins of one nocturn, nine psalms and three lessons
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-163
+corpus: breviary
+number: 163
+topic: Easter and Pentecost have one nocturn of three psalms and three lessons
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-165
+corpus: breviary
+number: 165
+topic: What the Sunday Office is
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+en_damaged: 1
+
+@@ BR-166
+corpus: breviary
+number: 166
+topic: Order of the Sunday Office
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-167
+corpus: breviary
+number: 167
+topic: Order of the festive Office (1st class)
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-168
+corpus: breviary
+number: 168
+topic: Order of the semifestive Office (2nd class)
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-169
+corpus: breviary
+number: 169
+topic: Order of the ordinary Office (3rd class)
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+en_damaged: 1
+
+@@ BR-170
+corpus: breviary
+number: 170
+topic: What the ferial Office is
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-171
+corpus: breviary
+number: 171
+topic: Order of the ferial Office
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+en_damaged: 1
+
+@@ BR-177
+corpus: breviary
+number: 177
+topic: Proper antiphons and psalms on some 3rd class feasts
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-191
+corpus: breviary
+number: 191
+topic: Antiphons are said in full
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-197
+corpus: breviary
+number: 197
+topic: The two schemes of psalms at Matins and Lauds
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-203
+corpus: breviary
+number: 203
+topic: The Athanasian Creed is said only on Trinity Sunday
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-211
+corpus: breviary
+number: 211
+topic: Three lessons close each nocturn
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-217
+corpus: breviary
+number: 217
+topic: First nocturn lessons are from Scripture
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-218
+corpus: breviary
+number: 218
+topic: Second nocturn lessons are of the saint, a sermon, or the Common
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-219
+corpus: breviary
+number: 219
+topic: Third nocturn lessons are the homily on the gospel
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+en_damaged: 1
+
+@@ BR-220
+corpus: breviary
+number: 220
+topic: Order of the three lessons on a Sunday
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-221
+corpus: breviary
+number: 221
+topic: Order of the three lessons in an ordinary Office
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+en_damaged: 1
+
+@@ BR-222
+corpus: breviary
+number: 222
+topic: Order of the three lessons in a ferial Office
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-237
+corpus: breviary
+number: 237
+topic: When the Te Deum is said
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-238
+corpus: breviary
+number: 238
+topic: When the Te Deum is omitted
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-242
+corpus: breviary
+number: 242
+topic: The short lesson at Prime is of the season
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-246
+corpus: breviary
+number: 246
+topic: A collect closes each Hour
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-248
+corpus: breviary
+number: 248
+topic: The collect at Prime and Compline is not changed
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-251
+corpus: breviary
+number: 251
+topic: A commemoration follows the collect of the day
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-260
+corpus: breviary
+number: 260
+topic: When the preces are said
+file: web/www/horas/Help/Rubrics/Breviary 1960.html

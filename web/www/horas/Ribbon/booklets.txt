@@ -1,0 +1,12 @@
+# Combined-propers booklet — not built yet.
+#
+# When a part of the hour is a particular proper that a generic 1960
+# Breviarium Romanum does not contain, the skeleton says to print it
+# separately. A later booklet (one parish's propers: FSSP, USA, the
+# diocese, the parish patron) can be linked from that note.
+#
+# One mapping per line, when that booklet exists:
+#   Sancti/12-12s	https://example.invalid/booklet#12-12s
+# or a path the site can serve. Lines starting with # are comments.
+# An empty list is the present state: the note is shown, and the
+# link field (data-booklet) stays empty.
