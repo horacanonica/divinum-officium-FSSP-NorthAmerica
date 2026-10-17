@@ -351,14 +351,11 @@ class WindowAndPlanTest(unittest.TestCase):
         niagara["files"] = [item for item in niagara["files"] if item["year"] != 2028]
         niagara["built"].pop("2028", None)
         jobs = library.plan_jobs(self.calendars, catalog, window, hashes, affected=set())
-        niagara_bilingual = [
-            job for job in jobs if job["slug"] == "niagara" and job["variant"] == "la"
-        ]
-        other_bilingual = [
-            job for job in jobs if job["slug"] != "niagara" and job["variant"] == "la"
-        ]
-        self.assertEqual([job["year"] for job in niagara_bilingual], [2028])
-        self.assertEqual(other_bilingual, [])
+        niagara_jobs = [job for job in jobs if job["slug"] == "niagara"]
+        other_jobs = [job for job in jobs if job["slug"] != "niagara"]
+        self.assertEqual([job["year"] for job in niagara_jobs], [2028])
+        self.assertEqual([job["variant"] for job in niagara_jobs], ["la"])
+        self.assertEqual(other_jobs, [])
 
     def test_partial_year_does_not_stamp_the_other_years(self):
         window = library.rolling_window(date(2026, 10, 16))
@@ -421,33 +418,66 @@ class WindowAndPlanTest(unittest.TestCase):
                 "notes.txt",
             ],
         )
-        # Bilingual files are no longer published, so they are pruned too.
         self.assertEqual(
             doomed, ["niagara-2026-10-la.epub", "niagara-2026-10.epub", "niagara-2027-la-en.epub"]
         )
+        self.assertEqual(merged["release"], "epub-library-la")
+        self.assertEqual(merged["variants"], [{"id": "la", "label": "Latin"}])
 
-    def test_prune_keeps_listed_legacy_names(self):
+    def test_merge_drops_bilingual_files_and_stamps(self):
         window = library.rolling_window(date(2026, 10, 16))
-        catalog = _legacy_catalog([self.by_slug["niagara"]], window, "same")
-        catalog["window"] = window.as_dict()
-        doomed = library.assets_to_prune(
+        catalog = _legacy_catalog([self.by_slug["niagara"]], window, "bilingual-hash")
+        entry = catalog["calendars"][0]
+        entry["files"].extend(_year_files("niagara", 2026, "la"))
+        entry["files"].append(
+            {
+                "type": "year",
+                "year": 2026,
+                "name": "niagara-2026-la-en.epub",
+                "bytes": 10,
+                "variant": "la-en",
+            }
+        )
+        entry["built"]["2026"] = {"la": "latin-hash", "la-en": "bilingual-hash"}
+        merged = library.merge_catalog(
             catalog,
-            ["niagara-2026.epub", "niagara-2026-10.epub", "niagara-2026-10-la.epub", "notes.txt"],
+            self.calendars,
+            self.order,
+            window,
+            [
+                {
+                    "version": self.by_slug["niagara"].version,
+                    "slug": "niagara",
+                    "year": 2027,
+                    "variant": "la-en",
+                    "content_hash": "should-be-ignored",
+                    "files": [
+                        {
+                            "type": "year",
+                            "year": 2027,
+                            "name": "niagara-2027-la-en.epub",
+                            "bytes": 10,
+                            "variant": "la-en",
+                        }
+                    ],
+                }
+            ],
+            repo="horacanonica/divinum-officium-FSSP-NorthAmerica",
+            updated="2026-10-17T00:00:00Z",
         )
-        self.assertEqual(doomed, ["niagara-2026-10-la.epub"])
-
-    def test_latin_copies_are_removed_only_after_the_latin_release_has_them(self):
-        bilingual = [
-            "niagara-2026.epub",
-            "niagara-2026-10-la.epub",
-            "niagara-2026-10-la-en.epub",
-            "niagara-2026-la.epub",
-        ]
+        niagara = next(item for item in merged["calendars"] if item["slug"] == "niagara")
+        names = [item["name"] for item in niagara["files"]]
+        self.assertEqual(names, ["niagara-2026-la.epub"])
+        self.assertEqual(niagara["built"], {"2026": {"la": "latin-hash"}})
+        self.assertEqual(merged["releases"], {"la": "epub-library-la"})
+        self.assertNotIn("la-en", json.dumps(merged["variants"]))
+        doomed = library.assets_to_prune(
+            merged,
+            ["niagara-2026.epub", "niagara-2026-la-en.epub", "niagara-2026-la.epub", "niagara-2027-la-en.epub"],
+        )
         self.assertEqual(
-            library.latin_copies_on_bilingual_release(bilingual, ["niagara-2026-10-la.epub"]),
-            ["niagara-2026-10-la.epub"],
+            doomed, ["niagara-2026-la-en.epub", "niagara-2026.epub", "niagara-2027-la-en.epub"]
         )
-        self.assertEqual(library.latin_copies_on_bilingual_release(bilingual, []), [])
 
     def test_asset_names_keep_hyphenated_slugs(self):
         self.assertEqual(
@@ -465,7 +495,7 @@ class WindowAndPlanTest(unittest.TestCase):
         self.assertIsNone(library.classify_generated("breviarium2025-10_Sac.epub", 2026))
 
 
-def _year_files(slug: str, year: int, variant: str = "la-en", legacy: bool = False) -> list[dict]:
+def _year_files(slug: str, year: int, variant: str = "la", legacy: bool = False) -> list[dict]:
     def name(month: int | None) -> str:
         if legacy:
             if month is None:

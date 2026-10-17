@@ -55,7 +55,8 @@ function groupByYear(items) {
 }
 
 function fileVariant(file) {
-  return file.variant || "la-en";
+  if (file.variant === "la" || (file.name || "").slice(-8) === "-la.epub") return "la";
+  return "";
 }
 
 function fileIndex(calendar, variant) {
@@ -68,16 +69,13 @@ function fileIndex(calendar, variant) {
   return index;
 }
 
-function assetRelease(catalog, file) {
-  const variant = fileVariant(file);
+function assetRelease(catalog) {
   const releases = catalog.releases || {};
-  if (releases[variant]) return releases[variant];
-  if (variant === "la") return "epub-library-la";
-  return catalog.release || "epub-library";
+  return releases.la || "epub-library-la";
 }
 
 function downloadUrl(catalog, file) {
-  return "https://github.com/" + catalog.repo + "/releases/download/" + assetRelease(catalog, file) + "/" + encodeURIComponent(file.name);
+  return "https://github.com/" + catalog.repo + "/releases/download/" + assetRelease(catalog) + "/" + encodeURIComponent(file.name);
 }
 
 function sizeLabel(bytes) {
