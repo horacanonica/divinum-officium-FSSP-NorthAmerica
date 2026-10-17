@@ -5,7 +5,7 @@
     "la": "epub-library-la",
     "la-en": "epub-library"
   },
-  "updated": "2026-10-17T08:43:05Z",
+  "updated": "2026-10-17T12:49:03Z",
   "languages": "Latin",
   "variants": [
     {
@@ -1780,13 +1780,13 @@
       "place": "Camarillo, California",
       "built": {
         "2026": {
-          "la": "ab45bbc8d362700e397b5b620519e1fdc093f1da30058f7c4f625519eda95cbf"
+          "la": "fffc255cc7eb2dbbe4bee6d60ebefcb0b1786fa750313e4f630a30b03ffd883c"
         },
         "2027": {
-          "la": "ab45bbc8d362700e397b5b620519e1fdc093f1da30058f7c4f625519eda95cbf"
+          "la": "fffc255cc7eb2dbbe4bee6d60ebefcb0b1786fa750313e4f630a30b03ffd883c"
         },
         "2028": {
-          "la": "ab45bbc8d362700e397b5b620519e1fdc093f1da30058f7c4f625519eda95cbf"
+          "la": "fffc255cc7eb2dbbe4bee6d60ebefcb0b1786fa750313e4f630a30b03ffd883c"
         }
       },
       "files": [
@@ -1902,14 +1902,14 @@
       "built": {
         "2026": {
           "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439",
-          "la": "d8966ca87cb2385c3b4c95f6105ec436317fa76eaf5131c822d37ade01769a71"
+          "la": "56aa035cd38757951c6ec40221d9287654ea3a5b67f0c56ed522949c5e1f7d5a"
         },
         "2027": {
-          "la": "d8966ca87cb2385c3b4c95f6105ec436317fa76eaf5131c822d37ade01769a71",
+          "la": "56aa035cd38757951c6ec40221d9287654ea3a5b67f0c56ed522949c5e1f7d5a",
           "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
         },
         "2028": {
-          "la": "d8966ca87cb2385c3b4c95f6105ec436317fa76eaf5131c822d37ade01769a71",
+          "la": "56aa035cd38757951c6ec40221d9287654ea3a5b67f0c56ed522949c5e1f7d5a",
           "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
         }
       },
@@ -1925,7 +1925,7 @@
           "type": "year",
           "year": 2027,
           "name": "sacramento-2027-la.epub",
-          "bytes": 14822263,
+          "bytes": 14822262,
           "variant": "la"
         },
         {
@@ -2018,13 +2018,13 @@
       "place": "Northridge, California",
       "built": {
         "2026": {
-          "la": "12af6e1963c6e9357601d5c7c83002301a16055aca0a002e3f9a1a6feaa256cf"
+          "la": "4cab6d456265cc68b6b06162bb116106cd1f01685ba97e42772e2747ac9ef31a"
         },
         "2027": {
-          "la": "12af6e1963c6e9357601d5c7c83002301a16055aca0a002e3f9a1a6feaa256cf"
+          "la": "4cab6d456265cc68b6b06162bb116106cd1f01685ba97e42772e2747ac9ef31a"
         },
         "2028": {
-          "la": "12af6e1963c6e9357601d5c7c83002301a16055aca0a002e3f9a1a6feaa256cf"
+          "la": "4cab6d456265cc68b6b06162bb116106cd1f01685ba97e42772e2747ac9ef31a"
         }
       },
       "files": [
@@ -2032,21 +2032,21 @@
           "type": "year",
           "year": 2026,
           "name": "st-vitus-catholic-church-northridge-ca-2026-la.epub",
-          "bytes": 14817596,
+          "bytes": 14817595,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "st-vitus-catholic-church-northridge-ca-2027-la.epub",
-          "bytes": 14822445,
+          "bytes": 14822444,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "st-vitus-catholic-church-northridge-ca-2028-la.epub",
-          "bytes": 14849522,
+          "bytes": 14849520,
           "variant": "la"
         }
       ],
@@ -2139,13 +2139,13 @@
       "place": "Galveston and Houston, Texas",
       "built": {
         "2026": {
-          "la": "1adc51a9e36815c3838f16a7d3224135686ad3fb06974de4b0ddfe4170966ff9"
+          "la": "3e15905a43143f91013afb71c4fe4080a727d403260dca70ef375d0e9d0c9ec3"
         },
         "2027": {
-          "la": "1adc51a9e36815c3838f16a7d3224135686ad3fb06974de4b0ddfe4170966ff9"
+          "la": "3e15905a43143f91013afb71c4fe4080a727d403260dca70ef375d0e9d0c9ec3"
         },
         "2028": {
-          "la": "1adc51a9e36815c3838f16a7d3224135686ad3fb06974de4b0ddfe4170966ff9"
+          "la": "3e15905a43143f91013afb71c4fe4080a727d403260dca70ef375d0e9d0c9ec3"
         }
       },
       "files": [
@@ -2153,21 +2153,21 @@
           "type": "year",
           "year": 2026,
           "name": "archdiocese-of-galveston-houston-2026-la.epub",
-          "bytes": 14809023,
+          "bytes": 14809022,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "archdiocese-of-galveston-houston-2027-la.epub",
-          "bytes": 14814497,
+          "bytes": 14814495,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "archdiocese-of-galveston-houston-2028-la.epub",
-          "bytes": 14840585,
+          "bytes": 14840583,
           "variant": "la"
         }
       ],
@@ -2246,13 +2246,13 @@
       "place": "Oklahoma City, Oklahoma",
       "built": {
         "2026": {
-          "la": "d466972b8451cfce0a43e689324987858df6bb322dd1a0d64c68ebfed799c3ce"
+          "la": "5186832da02e84a0edb8cc599cb7a371b443e96262aea24f57191c4f66098613"
         },
         "2027": {
-          "la": "d466972b8451cfce0a43e689324987858df6bb322dd1a0d64c68ebfed799c3ce"
+          "la": "5186832da02e84a0edb8cc599cb7a371b443e96262aea24f57191c4f66098613"
         },
         "2028": {
-          "la": "d466972b8451cfce0a43e689324987858df6bb322dd1a0d64c68ebfed799c3ce"
+          "la": "5186832da02e84a0edb8cc599cb7a371b443e96262aea24f57191c4f66098613"
         }
       },
       "files": [
@@ -2260,21 +2260,21 @@
           "type": "year",
           "year": 2026,
           "name": "archdiocese-of-oklahoma-city-2026-la.epub",
-          "bytes": 14809803,
+          "bytes": 14809801,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "archdiocese-of-oklahoma-city-2027-la.epub",
-          "bytes": 14811310,
+          "bytes": 14811308,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "archdiocese-of-oklahoma-city-2028-la.epub",
-          "bytes": 14843578,
+          "bytes": 14843575,
           "variant": "la"
         }
       ],
@@ -2353,13 +2353,13 @@
       "place": "Dallas, Texas",
       "built": {
         "2026": {
-          "la": "2f78f368731fc4b062ff9c10b89efbb9864fa12daf9837cd86102deba8cdffa0"
+          "la": "fe5acfcaac9e903a906f8e542c646ac6687cd532eb99e56477d5d92634b3f43e"
         },
         "2027": {
-          "la": "2f78f368731fc4b062ff9c10b89efbb9864fa12daf9837cd86102deba8cdffa0"
+          "la": "fe5acfcaac9e903a906f8e542c646ac6687cd532eb99e56477d5d92634b3f43e"
         },
         "2028": {
-          "la": "2f78f368731fc4b062ff9c10b89efbb9864fa12daf9837cd86102deba8cdffa0"
+          "la": "fe5acfcaac9e903a906f8e542c646ac6687cd532eb99e56477d5d92634b3f43e"
         }
       },
       "files": [
@@ -2367,7 +2367,7 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-dallas-2026-la.epub",
-          "bytes": 14813509,
+          "bytes": 14813507,
           "variant": "la"
         },
         {
@@ -2381,7 +2381,7 @@
           "type": "year",
           "year": 2028,
           "name": "diocese-of-dallas-2028-la.epub",
-          "bytes": 14852580,
+          "bytes": 14852579,
           "variant": "la"
         }
       ],
@@ -2460,13 +2460,13 @@
       "place": "El Paso, Texas",
       "built": {
         "2026": {
-          "la": "a0245a7904f5c9dff166ab2b84379aa7b06121ecca7b5fc84dda1be6d07297e8"
+          "la": "f3fc6b9d1ce531eaa95b4abedc96a4aa0a38d507b54c0322241aa1d8962af883"
         },
         "2027": {
-          "la": "a0245a7904f5c9dff166ab2b84379aa7b06121ecca7b5fc84dda1be6d07297e8"
+          "la": "f3fc6b9d1ce531eaa95b4abedc96a4aa0a38d507b54c0322241aa1d8962af883"
         },
         "2028": {
-          "la": "a0245a7904f5c9dff166ab2b84379aa7b06121ecca7b5fc84dda1be6d07297e8"
+          "la": "f3fc6b9d1ce531eaa95b4abedc96a4aa0a38d507b54c0322241aa1d8962af883"
         }
       },
       "files": [
@@ -2474,21 +2474,21 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-el-paso-2026-la.epub",
-          "bytes": 14818347,
+          "bytes": 14818346,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "diocese-of-el-paso-2027-la.epub",
-          "bytes": 14816479,
+          "bytes": 14816478,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "diocese-of-el-paso-2028-la.epub",
-          "bytes": 14847158,
+          "bytes": 14847157,
           "variant": "la"
         }
       ],
@@ -2574,13 +2574,13 @@
       "place": "Fort Worth, Texas",
       "built": {
         "2026": {
-          "la": "7f2d7987cfb85db0a7273ebb2ca6a1baed75281bf9de38aeb9e11b451095f7b2"
+          "la": "71b123798190db7f0ee0ae29345f7e1e8ba06948d644e456d4d28a37b4019799"
         },
         "2027": {
-          "la": "7f2d7987cfb85db0a7273ebb2ca6a1baed75281bf9de38aeb9e11b451095f7b2"
+          "la": "71b123798190db7f0ee0ae29345f7e1e8ba06948d644e456d4d28a37b4019799"
         },
         "2028": {
-          "la": "7f2d7987cfb85db0a7273ebb2ca6a1baed75281bf9de38aeb9e11b451095f7b2"
+          "la": "71b123798190db7f0ee0ae29345f7e1e8ba06948d644e456d4d28a37b4019799"
         }
       },
       "files": [
@@ -2588,21 +2588,21 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-fort-worth-2026-la.epub",
-          "bytes": 14814079,
+          "bytes": 14814078,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "diocese-of-fort-worth-2027-la.epub",
-          "bytes": 14815109,
+          "bytes": 14815108,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "diocese-of-fort-worth-2028-la.epub",
-          "bytes": 14845309,
+          "bytes": 14845307,
           "variant": "la"
         }
       ],
@@ -2688,13 +2688,13 @@
       "place": "Little Rock, Arkansas",
       "built": {
         "2026": {
-          "la": "54f64004ec52dea3a5c41c67bc76ec0b4ba7b653f87f8af1015bf1f8531f5513"
+          "la": "2d9e064584e469283192e8439f6ebebfbdea929150f1adb8293ec3d76ec25ad6"
         },
         "2027": {
-          "la": "54f64004ec52dea3a5c41c67bc76ec0b4ba7b653f87f8af1015bf1f8531f5513"
+          "la": "2d9e064584e469283192e8439f6ebebfbdea929150f1adb8293ec3d76ec25ad6"
         },
         "2028": {
-          "la": "54f64004ec52dea3a5c41c67bc76ec0b4ba7b653f87f8af1015bf1f8531f5513"
+          "la": "2d9e064584e469283192e8439f6ebebfbdea929150f1adb8293ec3d76ec25ad6"
         }
       },
       "files": [
@@ -2702,14 +2702,14 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-little-rock-2026-la.epub",
-          "bytes": 14821344,
+          "bytes": 14821342,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "diocese-of-little-rock-2027-la.epub",
-          "bytes": 14821250,
+          "bytes": 14821246,
           "variant": "la"
         },
         {
@@ -2809,13 +2809,13 @@
       "place": "Tulsa, Oklahoma",
       "built": {
         "2026": {
-          "la": "76c30d57f3963b38d5293a652b73e6af9f25a529a7be6b25b0fc283015d6a218"
+          "la": "b80769b4f024499ccffcd05fcc566f6ecdd50d7ad6a5b97479ef3ec994e59374"
         },
         "2027": {
-          "la": "76c30d57f3963b38d5293a652b73e6af9f25a529a7be6b25b0fc283015d6a218"
+          "la": "b80769b4f024499ccffcd05fcc566f6ecdd50d7ad6a5b97479ef3ec994e59374"
         },
         "2028": {
-          "la": "76c30d57f3963b38d5293a652b73e6af9f25a529a7be6b25b0fc283015d6a218"
+          "la": "b80769b4f024499ccffcd05fcc566f6ecdd50d7ad6a5b97479ef3ec994e59374"
         }
       },
       "files": [
@@ -2823,14 +2823,14 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-tulsa-2026-la.epub",
-          "bytes": 14811013,
+          "bytes": 14811012,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "diocese-of-tulsa-2027-la.epub",
-          "bytes": 14812800,
+          "bytes": 14812799,
           "variant": "la"
         },
         {
@@ -2916,13 +2916,13 @@
       "place": "Tyler, Texas",
       "built": {
         "2026": {
-          "la": "a4ad8569b949c365b0a60191cdd30d91fd66dc96673d1fb1c5b471cb4abcd347"
+          "la": "373fcfca27bf2278034e6e4be8c4790986dd10f784d4c684b7f8df328521bcb5"
         },
         "2027": {
-          "la": "a4ad8569b949c365b0a60191cdd30d91fd66dc96673d1fb1c5b471cb4abcd347"
+          "la": "373fcfca27bf2278034e6e4be8c4790986dd10f784d4c684b7f8df328521bcb5"
         },
         "2028": {
-          "la": "a4ad8569b949c365b0a60191cdd30d91fd66dc96673d1fb1c5b471cb4abcd347"
+          "la": "373fcfca27bf2278034e6e4be8c4790986dd10f784d4c684b7f8df328521bcb5"
         }
       },
       "files": [
@@ -2930,7 +2930,7 @@
           "type": "year",
           "year": 2026,
           "name": "diocese-of-tyler-2026-la.epub",
-          "bytes": 14807437,
+          "bytes": 14807436,
           "variant": "la"
         },
         {
@@ -3023,13 +3023,13 @@
       "place": "El Paso, Texas",
       "built": {
         "2026": {
-          "la": "5f21fcd313d3a021bd5fe4ce29f83594bc8945dd65e8403ba2e0ca8ff7c52fe7"
+          "la": "c55d3f666e9a69c1cc9be421e564bd725f9c9d6c181c3507289e724e90cfa104"
         },
         "2027": {
-          "la": "5f21fcd313d3a021bd5fe4ce29f83594bc8945dd65e8403ba2e0ca8ff7c52fe7"
+          "la": "c55d3f666e9a69c1cc9be421e564bd725f9c9d6c181c3507289e724e90cfa104"
         },
         "2028": {
-          "la": "5f21fcd313d3a021bd5fe4ce29f83594bc8945dd65e8403ba2e0ca8ff7c52fe7"
+          "la": "c55d3f666e9a69c1cc9be421e564bd725f9c9d6c181c3507289e724e90cfa104"
         }
       },
       "files": [
@@ -3037,21 +3037,21 @@
           "type": "year",
           "year": 2026,
           "name": "immaculate-conception-church-el-paso-tx-2026-la.epub",
-          "bytes": 14818474,
+          "bytes": 14818472,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "immaculate-conception-church-el-paso-tx-2027-la.epub",
-          "bytes": 14816606,
+          "bytes": 14816605,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "immaculate-conception-church-el-paso-tx-2028-la.epub",
-          "bytes": 14847283,
+          "bytes": 14847282,
           "variant": "la"
         }
       ],
@@ -3137,13 +3137,13 @@
       "place": "Irving, Texas",
       "built": {
         "2026": {
-          "la": "8aaf43ea129832dfd5f846e07d50cd30d7aca7d63f71658133a6c1a5411747db"
+          "la": "3ca3dc56f50e2cf826b47547dfe9092b4b0c290fcbe16fdf3798053f2b0effcd"
         },
         "2027": {
-          "la": "8aaf43ea129832dfd5f846e07d50cd30d7aca7d63f71658133a6c1a5411747db"
+          "la": "3ca3dc56f50e2cf826b47547dfe9092b4b0c290fcbe16fdf3798053f2b0effcd"
         },
         "2028": {
-          "la": "8aaf43ea129832dfd5f846e07d50cd30d7aca7d63f71658133a6c1a5411747db"
+          "la": "3ca3dc56f50e2cf826b47547dfe9092b4b0c290fcbe16fdf3798053f2b0effcd"
         }
       },
       "files": [
@@ -3151,21 +3151,21 @@
           "type": "year",
           "year": 2026,
           "name": "mater-dei-catholic-parish-irving-tx-2026-la.epub",
-          "bytes": 14817593,
+          "bytes": 14817592,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "mater-dei-catholic-parish-irving-tx-2027-la.epub",
-          "bytes": 14821111,
+          "bytes": 14821109,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "mater-dei-catholic-parish-irving-tx-2028-la.epub",
-          "bytes": 14853621,
+          "bytes": 14853620,
           "variant": "la"
         }
       ],
@@ -3251,13 +3251,13 @@
       "place": "Springdale, Arkansas",
       "built": {
         "2026": {
-          "la": "8a60a57614c115d64bfac5bf37a8830dfb4d7688b88ff28a7352c8553666207e"
+          "la": "4b0339e60c7a20cb613a6556e7409fd7c016eefa9fa6d0d18d3cf5c7f2c13385"
         },
         "2027": {
-          "la": "8a60a57614c115d64bfac5bf37a8830dfb4d7688b88ff28a7352c8553666207e"
+          "la": "4b0339e60c7a20cb613a6556e7409fd7c016eefa9fa6d0d18d3cf5c7f2c13385"
         },
         "2028": {
-          "la": "8a60a57614c115d64bfac5bf37a8830dfb4d7688b88ff28a7352c8553666207e"
+          "la": "4b0339e60c7a20cb613a6556e7409fd7c016eefa9fa6d0d18d3cf5c7f2c13385"
         }
       },
       "files": [
@@ -3265,14 +3265,14 @@
           "type": "year",
           "year": 2026,
           "name": "our-lady-of-sorrows-church-springdale-ar-2026-la.epub",
-          "bytes": 14823739,
+          "bytes": 14823738,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "our-lady-of-sorrows-church-springdale-ar-2027-la.epub",
-          "bytes": 14822489,
+          "bytes": 14822488,
           "variant": "la"
         },
         {
@@ -3379,13 +3379,13 @@
       "place": "Tulsa, Oklahoma",
       "built": {
         "2026": {
-          "la": "dcfc584a043ff6da0f072d991735a4c4b805204ff138ff4062dc9887e2f2f78b"
+          "la": "e66c65495768d79257d5e51de4bd90d175fe3203181f6362e5cf26791507fd1a"
         },
         "2027": {
-          "la": "dcfc584a043ff6da0f072d991735a4c4b805204ff138ff4062dc9887e2f2f78b"
+          "la": "e66c65495768d79257d5e51de4bd90d175fe3203181f6362e5cf26791507fd1a"
         },
         "2028": {
-          "la": "dcfc584a043ff6da0f072d991735a4c4b805204ff138ff4062dc9887e2f2f78b"
+          "la": "e66c65495768d79257d5e51de4bd90d175fe3203181f6362e5cf26791507fd1a"
         }
       },
       "files": [
@@ -3393,7 +3393,7 @@
           "type": "year",
           "year": 2026,
           "name": "parish-of-the-most-precious-blood-tulsa-ok-2026-la.epub",
-          "bytes": 14811158,
+          "bytes": 14811157,
           "variant": "la"
         },
         {
@@ -3407,7 +3407,7 @@
           "type": "year",
           "year": 2028,
           "name": "parish-of-the-most-precious-blood-tulsa-ok-2028-la.epub",
-          "bytes": 14843271,
+          "bytes": 14843270,
           "variant": "la"
         }
       ],
@@ -3486,13 +3486,13 @@
       "place": "Houston, Texas",
       "built": {
         "2026": {
-          "la": "424285c607f235f068878ffccee413c14c716a99d02fc57c1a2a2dee6a7af396"
+          "la": "449aeaec97ddea41073d31087031bcaec8a33ba6373e66f6ea1bbce86de78e89"
         },
         "2027": {
-          "la": "424285c607f235f068878ffccee413c14c716a99d02fc57c1a2a2dee6a7af396"
+          "la": "449aeaec97ddea41073d31087031bcaec8a33ba6373e66f6ea1bbce86de78e89"
         },
         "2028": {
-          "la": "424285c607f235f068878ffccee413c14c716a99d02fc57c1a2a2dee6a7af396"
+          "la": "449aeaec97ddea41073d31087031bcaec8a33ba6373e66f6ea1bbce86de78e89"
         }
       },
       "files": [
@@ -3500,14 +3500,14 @@
           "type": "year",
           "year": 2026,
           "name": "regina-caeli-parish-houston-tx-2026-la.epub",
-          "bytes": 14813947,
+          "bytes": 14813945,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "regina-caeli-parish-houston-tx-2027-la.epub",
-          "bytes": 14815616,
+          "bytes": 14815615,
           "variant": "la"
         },
         {
