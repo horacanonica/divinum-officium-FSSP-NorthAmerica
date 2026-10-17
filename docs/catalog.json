@@ -1,20 +1,15 @@
 {
   "repo": "horacanonica/divinum-officium-FSSP-NorthAmerica",
-  "release": "epub-library",
+  "release": "epub-library-la",
   "releases": {
-    "la": "epub-library-la",
-    "la-en": "epub-library"
+    "la": "epub-library-la"
   },
-  "updated": "2026-10-17T12:49:03Z",
+  "updated": "2026-10-17T14:44:13Z",
   "languages": "Latin",
   "variants": [
     {
       "id": "la",
       "label": "Latin"
-    },
-    {
-      "id": "la-en",
-      "label": "Latin and English"
     }
   ],
   "fingerprint": "v2",
@@ -48,15 +43,12 @@
       "place": "General calendar of the Fraternity",
       "built": {
         "2026": {
-          "la-en": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5",
           "la": "7cb8c921b835f06cf1c77ea8497207d4b82070ab9e769fc5045becf5b49877b9"
         },
         "2027": {
-          "la-en": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5",
           "la": "7cb8c921b835f06cf1c77ea8497207d4b82070ab9e769fc5045becf5b49877b9"
         },
         "2028": {
-          "la-en": "2871035d5c08ab5a1c7dd9bda8e0eb43f1af0d89d755c839fe3509c1007b6bb5",
           "la": "7cb8c921b835f06cf1c77ea8497207d4b82070ab9e769fc5045becf5b49877b9"
         }
       },
@@ -116,15 +108,12 @@
       "place": "FSSP calendar for the United States",
       "built": {
         "2026": {
-          "la-en": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de",
           "la": "fea1f348158337f1bcaedc2d7bc15551e7bc2d68f259269762a2409adcada337"
         },
         "2027": {
-          "la-en": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de",
           "la": "fea1f348158337f1bcaedc2d7bc15551e7bc2d68f259269762a2409adcada337"
         },
         "2028": {
-          "la-en": "19617f8576bab72079e1383e24550ee35447323deac1219f8381c5d5674c00de",
           "la": "fea1f348158337f1bcaedc2d7bc15551e7bc2d68f259269762a2409adcada337"
         }
       },
@@ -1901,16 +1890,13 @@
       "place": "Sacramento, California",
       "built": {
         "2026": {
-          "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439",
           "la": "56aa035cd38757951c6ec40221d9287654ea3a5b67f0c56ed522949c5e1f7d5a"
         },
         "2027": {
-          "la": "56aa035cd38757951c6ec40221d9287654ea3a5b67f0c56ed522949c5e1f7d5a",
-          "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
+          "la": "56aa035cd38757951c6ec40221d9287654ea3a5b67f0c56ed522949c5e1f7d5a"
         },
         "2028": {
-          "la": "56aa035cd38757951c6ec40221d9287654ea3a5b67f0c56ed522949c5e1f7d5a",
-          "la-en": "a648fa159da00e4a821db258963cdcd217f8d617313d18c8d035556d3976f439"
+          "la": "56aa035cd38757951c6ec40221d9287654ea3a5b67f0c56ed522949c5e1f7d5a"
         }
       },
       "files": [
@@ -5175,15 +5161,12 @@
       "place": "Arlington, Virginia",
       "built": {
         "2026": {
-          "la-en": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93",
           "la": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93"
         },
         "2027": {
-          "la-en": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93",
           "la": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93"
         },
         "2028": {
-          "la-en": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93",
           "la": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93"
         }
       },
@@ -5784,15 +5767,12 @@
       "place": "Richmond, Virginia",
       "built": {
         "2026": {
-          "la-en": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9",
           "la": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9"
         },
         "2027": {
-          "la-en": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9",
           "la": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9"
         },
         "2028": {
-          "la-en": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9",
           "la": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9"
         }
       },
@@ -6065,15 +6045,12 @@
       "place": "Baltimore, Maryland",
       "built": {
         "2026": {
-          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
           "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
         },
         "2027": {
-          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
           "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
         },
         "2028": {
-          "la-en": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3",
           "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
         }
       },
@@ -6189,15 +6166,12 @@
       "place": "Chesapeake, Virginia",
       "built": {
         "2026": {
-          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
           "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
         },
         "2027": {
-          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
           "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
         },
         "2028": {
-          "la-en": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e",
           "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
         }
       },
@@ -6484,15 +6458,12 @@
       "place": "Scranton, Pennsylvania",
       "built": {
         "2026": {
-          "la-en": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7",
           "la": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7"
         },
         "2027": {
-          "la-en": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7",
           "la": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7"
         },
         "2028": {
-          "la-en": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7",
           "la": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7"
         }
       },
@@ -6608,15 +6579,12 @@
       "place": "Nashua, New Hampshire",
       "built": {
         "2026": {
-          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
           "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
         },
         "2027": {
-          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
           "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
         },
         "2028": {
-          "la-en": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de",
           "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
         }
       },
@@ -7990,15 +7958,12 @@
       "place": "Denton, Nebraska",
       "built": {
         "2026": {
-          "la-en": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3",
           "la": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3"
         },
         "2027": {
-          "la-en": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3",
           "la": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3"
         },
         "2028": {
-          "la-en": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3",
           "la": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3"
         }
       },
@@ -8428,15 +8393,12 @@
       "place": "Maple Hill, Kansas",
       "built": {
         "2026": {
-          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
           "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
         },
         "2027": {
-          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
           "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
         },
         "2028": {
-          "la-en": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a",
           "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
         }
       },
@@ -8634,15 +8596,12 @@
       "place": "Quincy, Illinois",
       "built": {
         "2026": {
-          "la-en": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f",
           "la": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f"
         },
         "2027": {
-          "la-en": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f",
           "la": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f"
         },
         "2028": {
-          "la-en": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f",
           "la": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f"
         }
       },
@@ -9462,15 +9421,12 @@
       "place": "Thorold, Ontario",
       "built": {
         "2026": {
-          "la-en": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958",
           "la": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958"
         },
         "2027": {
-          "la-en": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958",
           "la": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958"
         },
         "2028": {
-          "la-en": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958",
           "la": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958"
         }
       },
@@ -9748,15 +9704,12 @@
       "place": "Guadalajara, Jalisco",
       "built": {
         "2026": {
-          "la-en": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042",
           "la": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042"
         },
         "2027": {
-          "la-en": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042",
           "la": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042"
         },
         "2028": {
-          "la-en": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042",
           "la": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042"
         }
       },

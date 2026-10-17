@@ -304,8 +304,7 @@ The parish inherits all feasts from the diocese, which inherits from FSSP USA, a
 
 A new row whose base chain reaches `Rubrics 1960 - FSSP` is picked up by the
 public download page on the next rebuild, including the location list at the
-top of the page. No edit to the page is required. The page's main files are
-Latin; Latin–English files for the same months are linked from that page.
+top of the page. No edit to the page is required. The files are Latin.
 To place it under a region, add one line to `scripts/epub_library/regions.tsv`.
 Until then it is listed under Other. `epubgen2.sh -r` accepts the name after
 `Rubrics 1960 - ` (including spaces, as in `-r "Maple Hill"`), so a new

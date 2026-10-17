@@ -214,14 +214,6 @@ def cmd_prune_list(args: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_latin_copies(args: argparse.Namespace) -> int:
-    bilingual = _asset_names(Path(args.bilingual))
-    latin = _asset_names(Path(args.latin))
-    for name in library.latin_copies_on_bilingual_release(bilingual, latin):
-        print(name)
-    return 0
-
-
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Build and catalog Divine Office EPUBs")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -260,11 +252,6 @@ def main(argv: list[str] | None = None) -> int:
     prune.add_argument("--catalog", required=True)
     prune.add_argument("--assets", required=True)
     prune.set_defaults(func=cmd_prune_list)
-
-    copies = sub.add_parser("latin-copies")
-    copies.add_argument("--bilingual", required=True)
-    copies.add_argument("--latin", required=True)
-    copies.set_defaults(func=cmd_latin_copies)
 
     args = parser.parse_args(argv)
     return args.func(args)

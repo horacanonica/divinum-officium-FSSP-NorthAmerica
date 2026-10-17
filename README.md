@@ -53,17 +53,13 @@ The companion app [divinum-officium-client](https://github.com/horacanonica/divi
 
 ### Offline EPUB downloads
 
-Latin monthly and full-year breviaries for every FSSP calendar in this fork
-are listed at
+Latin full-year breviaries for every FSSP calendar in this fork are listed at
 [horacanonica.github.io/divinum-officium-FSSP-NorthAmerica](https://horacanonica.github.io/divinum-officium-FSSP-NorthAmerica/).
-The same page links to a Latin–English edition. The EPUB files are GitHub
-Release assets, not files in the git tree. Latin files end in `-la` and are
-on the `epub-library-la` release. Latin–English files end in `-la-en` (older
-ones have no suffix) and stay on `epub-library`. A release holds at most
-1,000 assets, which is why the two editions are split.
-`.github/workflows/epub-downloads.yml` rebuilds both editions of a calendar
-when its own data changes, rebuilds every calendar when shared Office data
-changes, and runs a nightly catch-up that also extends the two-year window.
+The EPUB files are GitHub Release assets, not files in the git tree. They end
+in `-la` and are on the `epub-library-la` release. Latin is the only edition.
+`.github/workflows/epub-downloads.yml` rebuilds a calendar when its own data
+changes, rebuilds every calendar when shared Office data changes, and runs a
+nightly catch-up that also extends the two-year window.
 Adding a calendar is a `data.txt` row in the FSSP chain; an optional place
 and region go in `scripts/epub_library/regions.tsv`. The download page,
 including its list of locations, is filled from that data.

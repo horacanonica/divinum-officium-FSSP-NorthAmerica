@@ -22,18 +22,16 @@ Office text:
   or Niagara (those inherit FSSP directly).
 
 The rolling window is the current month through the same month two years
-ahead. Each job produces all twelve monthly EPUBs and the full-year EPUB for
-one variant of one calendar-year. ``la`` is Latin only. ``la-en`` is Latin
-with English. Both variants use the same fingerprint, so a calendar edit
-rebuilds both and a shared Office edit rebuilds both for every calendar.
+ahead. Each job produces the full-year Latin EPUB (and monthly files, when
+that calendar still publishes them) for one calendar-year. A calendar edit
+rebuilds that calendar; a shared Office edit rebuilds every calendar.
 
-Release names stay distinct: ``{calendar}-{year}-{month}-la.epub`` and
-``{calendar}-{year}-la.epub`` for Latin, and the same with ``-la-en`` for
-bilingual. Files already published without a suffix are the bilingual
-edition; they are kept until a real content change replaces that year.
+Published names are ``{calendar}-{year}-la.epub`` and, for a monthly
+calendar, ``{calendar}-{year}-{month}-la.epub``. They live on the
+``epub-library-la`` release. Latin is the only edition.
 
-Fingerprints are stored per year and variant. A run that finishes only some
-years does not mark the unfinished years as current.
+Fingerprints are stored per year. A run that finishes only some years does
+not mark the unfinished years as current.
 """
 
 from __future__ import annotations
@@ -56,12 +54,8 @@ EPUBGEN_DIR = ROOT / "standalone" / "tools" / "epubgen2"
 EPUBGEN = EPUBGEN_DIR / "epubgen2.sh"
 
 FSSP_VERSION = "Rubrics 1960 - FSSP"
-RELEASE_TAG = "epub-library"
-# GitHub allows 1,000 assets on a release. Latin and Latin–English together
-# pass that, so Latin has its own release. The bilingual tag is the original
-# one and still holds the unsuffixed files.
-LATIN_RELEASE_TAG = "epub-library-la"
-RELEASES = {"la": LATIN_RELEASE_TAG, "la-en": RELEASE_TAG}
+RELEASE_TAG = "epub-library-la"
+RELEASES = {"la": RELEASE_TAG}
 WINDOW_MONTHS = 24
 MAX_JOBS = 48
 OTHER_REGION = "Other"
@@ -94,15 +88,11 @@ SKIP_DIR_NAMES = {"output", "screenshots", "__pycache__", ".git"}
 LANGS = ("Latin", "English")
 SANCTI_DIRS = ("Sancti", "SanctiM")
 
-# Latin is the edition the download page leads with. Latin-English stays
-# available and is what unsuffixed release assets already are.
-# Latin only. The Latin–English edition was dropped to stay under the release
-# asset cap; parse and naming code still understands its -la-en files so they
-# can be pruned.
+# Latin is the only published edition.
 VARIANTS = ("la",)
-LEGACY_VARIANT = "la-en"
-VARIANT_SUFFIX = {"la": "-la", "la-en": "-la-en"}
-VARIANT_LANGS = {"la": ("Latin", "Latin"), "la-en": ("Latin", "English")}
+VARIANT_SUFFIX = {"la": "-la"}
+# The optional suffix also matches retired unsuffixed and -la-en names so a
+# stray bilingual file on the release can be pruned. Nothing generates them.
 _ASSET_RE = re.compile(
     r"^(?P<slug>.+)-(?P<year>\d{4})(?:-(?P<month>\d{2}))?(?:-(?P<variant>la-en|la))?\.epub$"
 )
@@ -610,15 +600,17 @@ def load_catalog(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def file_variant(item: dict) -> str:
-    """Variant of a catalog file. Unsuffixed assets are the existing bilingual set."""
-    variant = item.get("variant")
-    if variant in VARIANT_SUFFIX:
-        return variant
-    return LEGACY_VARIANT
+def file_variant(item: dict) -> str | None:
+    """``la`` for a Latin catalog file. Anything else is not published."""
+    if item.get("variant") == "la":
+        return "la"
+    name = item.get("name") or ""
+    if isinstance(name, str) and name.endswith("-la.epub"):
+        return "la"
+    return None
 
 
-def asset_name(slug: str, year: int, month: int | None, variant: str) -> str:
+def asset_name(slug: str, year: int, month: int | None, variant: str = "la") -> str:
     suffix = VARIANT_SUFFIX[variant]
     if month is None:
         return f"{slug}-{year}{suffix}.epub"
@@ -626,7 +618,7 @@ def asset_name(slug: str, year: int, month: int | None, variant: str) -> str:
 
 
 def year_complete(
-    files: list[dict], year: int, variant: str = LEGACY_VARIANT, monthly: bool = True
+    files: list[dict], year: int, variant: str = "la", monthly: bool = True
 ) -> bool:
     have: set[tuple[str, int]] = set()
     for item in files:
@@ -643,22 +635,13 @@ def year_complete(
     return not monthly or all(("month", month) in have for month in range(1, 13))
 
 
-def _stamp_map(value) -> tuple[dict[str, str], bool]:
-    """Return variant hashes and whether this is a pre-variant bilingual stamp.
-
-    Older catalogs stored one string per year for the unsuffixed Latin-English
-    files. A mapping stores each variant on its own.
-    """
-    if isinstance(value, str) and value:
-        return {LEGACY_VARIANT: value}, True
+def _stamp_map(value) -> dict[str, str]:
+    """Latin fingerprint for one year. A bilingual stamp is ignored."""
     if isinstance(value, dict):
-        stamps = {
-            key: item
-            for key, item in value.items()
-            if key in VARIANT_SUFFIX and isinstance(item, str) and item
-        }
-        return stamps, False
-    return {}, False
+        item = value.get("la")
+        if isinstance(item, str) and item:
+            return {"la": item}
+    return {}
 
 
 def variant_fresh(
@@ -671,22 +654,16 @@ def variant_fresh(
     adopt_complete: bool = False,
     monthly: bool = True,
 ) -> bool:
-    """True when this variant's year is complete and matches the current fingerprint.
+    """True when this year's Latin files are complete and match the fingerprint.
 
-    A legacy string stamp counts as a fresh bilingual year so those files are
-    not deleted and regenerated when only the planner changes. The first
-    catalog written by this version also keeps complete years, then records
-    the current fingerprint so a later Office edit still rebuilds them.
+    The first catalog written by this version also keeps complete years, then
+    records the current fingerprint so a later Office edit still rebuilds them.
     """
     if not year_complete(files, year, variant, monthly):
         return False
     if adopt_complete:
         return True
-    stamps, legacy = _stamp_map(stamp_value)
-    recorded = stamps.get(variant)
-    if recorded == current:
-        return True
-    return bool(legacy and variant == LEGACY_VARIANT and recorded)
+    return _stamp_map(stamp_value).get(variant) == current
 
 
 def plan_jobs(
@@ -699,16 +676,12 @@ def plan_jobs(
     force_slugs: set[str] | None = None,
     max_jobs: int = MAX_JOBS,
 ) -> list[dict]:
-    """Return variant jobs that are missing or fingerprint-stale.
+    """Return Latin jobs that are missing or fingerprint-stale.
 
     ``affected`` limits a content rebuild to calendars the diff can change.
-    Both variants of those calendars are queued. Years that have never been
-    built, including the Latin edition of a calendar that already has
-    bilingual files, are queued even when this push did not touch them, so a
-    later push still finishes what an earlier run left behind. ``affected is
-    None`` (the nightly run) considers every calendar.
-
-    Latin jobs come first. Within that, calendars keep their region order.
+    A year that has never been built is still queued, so a later push finishes
+    what an earlier run left behind. ``affected is None`` (the nightly run)
+    considers every calendar. Calendars keep their region order.
     """
     force_slugs = force_slugs or set()
     adopt_complete = catalog.get("fingerprint") != FINGERPRINT_VERSION
@@ -755,11 +728,8 @@ def classify_generated(name: str, year: int) -> tuple[str, int | None] | None:
     return None
 
 
-def _validate_epub(path: Path, kind: str, variant: str) -> None:
-    minimum_bytes = 2_000_000 if kind == "year" else 200_000
-    if variant == "la":
-        # A Latin-only year is smaller than the bilingual edition.
-        minimum_bytes = 1_000_000 if kind == "year" else 120_000
+def _validate_epub(path: Path, kind: str) -> None:
+    minimum_bytes = 1_000_000 if kind == "year" else 120_000
     if path.stat().st_size < minimum_bytes:
         raise RuntimeError(f"{path.name} is unexpectedly small ({path.stat().st_size} bytes)")
     with zipfile.ZipFile(path) as archive:
@@ -776,11 +746,8 @@ def _validate_epub(path: Path, kind: str, variant: str) -> None:
         opf = archive.read("content.opf").decode("utf-8", errors="replace")
         if "<dc:language>la</dc:language>" not in opf:
             raise RuntimeError(f"{path.name} is missing the Latin language")
-        has_english = "<dc:language>en</dc:language>" in opf
-        if variant == "la" and has_english:
+        if "<dc:language>en</dc:language>" in opf:
             raise RuntimeError(f"{path.name} includes English; expected Latin only")
-        if variant == "la-en" and not has_english:
-            raise RuntimeError(f"{path.name} is missing English")
 
 
 def build_year(
@@ -790,8 +757,8 @@ def build_year(
     versions: dict[str, Version] | None = None,
     variant: str = "la",
 ) -> dict:
-    """Run epubgen2 for one calendar-year variant and write stable filenames."""
-    if variant not in VARIANT_SUFFIX:
+    """Run epubgen2 for one Latin calendar-year and write stable filenames."""
+    if variant != "la":
         raise RuntimeError(f"Unknown EPUB variant {variant}")
     output.mkdir(parents=True, exist_ok=True)
     raw = output / "_raw"
@@ -801,7 +768,6 @@ def build_year(
                 child.unlink()
     raw.mkdir(parents=True, exist_ok=True)
     code = cal.version.split(" - ", 1)[1] if " - " in cal.version else cal.version
-    base, second = VARIANT_LANGS[variant]
     env = os.environ.copy()
     env["LC_ALL"] = "C.UTF-8"
     env["LANG"] = "C.UTF-8"
@@ -814,9 +780,9 @@ def build_year(
         "-r",
         code,
         "-b",
-        base,
+        "Latin",
         "-l",
-        second,
+        "Latin",
         "-o",
         str(raw),
     ]
@@ -858,7 +824,7 @@ def build_year(
             saw_year = True
         dest = output / dest_name
         dest.write_bytes(source.read_bytes())
-        _validate_epub(dest, file_kind, variant)
+        _validate_epub(dest, file_kind)
         record = {
             "type": file_kind,
             "year": year,
@@ -908,29 +874,6 @@ def _current_hash(cal: Calendar, versions: dict[str, Version], cache: dict[str, 
     return cached
 
 
-def _adopt_legacy_stamp(
-    stamps: dict[str, str],
-    legacy: bool,
-    files: list[dict],
-    year: int,
-    cal: Calendar,
-    versions: dict[str, Version],
-    hash_cache: dict[str, str],
-) -> dict[str, str]:
-    """Record today's fingerprint for bilingual files that predate variant names.
-
-    The bytes stay on the release. Rewriting the stamp stops the next run from
-    treating the planner edit itself as a reason to rebuild them.
-    """
-    if not legacy:
-        return stamps
-    if not year_complete(files, year, LEGACY_VARIANT, cal.monthly):
-        return {}
-    adopted = dict(stamps)
-    adopted[LEGACY_VARIANT] = _current_hash(cal, versions, hash_cache)
-    return adopted
-
-
 def merge_catalog(
     old: dict,
     calendars: list[Calendar],
@@ -945,7 +888,6 @@ def merge_catalog(
     hash_cache: dict[str, str] = {}
     adopting = old.get("fingerprint") != FINGERPRINT_VERSION
     refreshed: set[tuple[str, str, str]] = set()
-    by_calendar = {cal.slug: cal for cal in calendars}
     by_slug: dict[str, dict] = {}
     for item in old.get("calendars", []):
         slug = item.get("slug")
@@ -957,16 +899,11 @@ def merge_catalog(
     for fragment in fragments:
         slug = fragment["slug"]
         year = str(fragment["year"])
-        variant = fragment.get("variant") or LEGACY_VARIANT
-        if variant not in VARIANT_SUFFIX:
-            variant = LEGACY_VARIANT
+        variant = fragment.get("variant") or "la"
+        if variant not in VARIANTS:
+            continue
         entry = by_slug.setdefault(slug, {"built": {}, "files": []})
-        stamps, legacy = _stamp_map(entry["built"].get(year))
-        cal = by_calendar.get(slug)
-        if legacy and cal is not None:
-            stamps = _adopt_legacy_stamp(stamps, True, entry["files"], int(year), cal, versions, hash_cache)
-        elif legacy:
-            stamps = {}
+        stamps = _stamp_map(entry["built"].get(year))
         stamps[variant] = fragment["content_hash"]
         refreshed.add((slug, year, variant))
         entry["built"][year] = stamps
@@ -994,15 +931,12 @@ def merge_catalog(
         files.sort(
             key=lambda item: (
                 int(item["year"]),
-                0 if file_variant(item) == "la" else 1,
                 0 if item["type"] == "year" else int(item.get("month") or 0),
             )
         )
         built: dict[str, dict[str, str]] = {}
         for year in window.years:
-            raw = previous["built"].get(str(year))
-            stamps, legacy = _stamp_map(raw)
-            stamps = _adopt_legacy_stamp(stamps, legacy, files, year, cal, versions, hash_cache)
+            stamps = _stamp_map(previous["built"].get(str(year)))
             if adopting:
                 for variant in VARIANTS:
                     if (cal.slug, str(year), variant) in refreshed:
@@ -1022,10 +956,7 @@ def merge_catalog(
         "releases": dict(RELEASES),
         "updated": updated,
         "languages": "Latin",
-        "variants": [
-            {"id": "la", "label": "Latin"},
-            {"id": "la-en", "label": "Latin and English"},
-        ],
+        "variants": [{"id": "la", "label": "Latin"}],
         "fingerprint": FINGERPRINT_VERSION,
         "rubrics": "1960",
         "window": window.as_dict(),
@@ -1057,10 +988,8 @@ def parse_asset_name(name: str) -> tuple[str, int, str | None] | None:
 def assets_to_prune(catalog: dict, remote_names: list[str]) -> list[str]:
     """Release assets the catalog no longer links to.
 
-    Unsuffixed bilingual files stay while the catalog still names them. A
-    suffixed file is removed once its year has left the window or its name
-    is no longer listed, which is how a rebuilt year drops the old asset
-    after the catalog points at the new name.
+    A file leaves once its year is outside the window or its name is no longer
+    listed. Retired unsuffixed and ``-la-en`` names are removed the same way.
     """
     calendars = catalog.get("calendars") or []
     if not calendars:
@@ -1079,21 +1008,6 @@ def assets_to_prune(catalog: dict, remote_names: list[str]) -> list[str]:
             continue
         doomed.append(name)
     return sorted(doomed)
-
-
-def release_for_variant(variant: str) -> str:
-    if variant == "la":
-        return LATIN_RELEASE_TAG
-    return RELEASE_TAG
-
-
-def latin_copies_on_bilingual_release(bilingual_names: list[str], latin_names: list[str]) -> list[str]:
-    """Latin assets to delete from the bilingual release once the Latin release has them.
-
-    ``-la-en`` names do not match: they belong on the bilingual release.
-    """
-    published = set(latin_names)
-    return sorted(name for name in bilingual_names if name.endswith("-la.epub") and name in published)
 
 
 def rubrics_code(cal: Calendar) -> str:
