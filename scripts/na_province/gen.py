@@ -291,7 +291,7 @@ class Gen:
             if x.get('legacy'):
                 continue
             why = [str(f['date']) for f in x['feasts'] if n.is_open(f)]
-            if 'CONFIRM' in str(x.get('note', '')) or any('CONFIRM' in str(b) for b in x.get('bishop_commemorations', [])):
+            if n.is_open({'note': x.get('note', ''), 'bishops': x.get('bishop_commemorations', [])}):
                 why.append('diocese note')
             if why:
                 hidden_d[x['id']] = why

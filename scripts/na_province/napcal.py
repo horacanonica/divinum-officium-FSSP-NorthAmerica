@@ -21,7 +21,8 @@ def load_yaml():
 def is_open(obj):
     """An item is an open question if it mentions CONFIRM or is pending."""
     s = yaml.dump(obj, allow_unicode=True)
-    return 'CONFIRM' in s or 'pending' in s
+    # Whole words only: a note saying "CONFIRMED correct" must not hide a location.
+    return bool(re.search(r'\bCONFIRM\b|\bpending\b', s))
 
 
 def ascii_label(s):

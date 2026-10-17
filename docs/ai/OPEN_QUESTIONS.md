@@ -15,7 +15,6 @@ When an answer arrives: edit `fssp/na_province.yaml` (remove `CONFIRM`/`pending`
 | Lexington | Aug 22 "Queenship of Mary": 1962 Queenship is May 31, Aug 22 is the Immaculate Heart. Which texts? (Spec default: Queenship texts with comm. of Immaculate Heart.) | Georgetown (St. Francis de Sales / Regina Pacis) |
 | Allentown | "Mary, Mother of the Church": Monday after Pentecost is a privileged I-class day. Which date does the diocese use? (Spec default: first free day after the octave.) | Bethlehem (Holy Ghost), Allentown (St. Stephen of Hungary) |
 | Edmonton | No principal patron listed; the Ordo gives Abp. Richard Smith (Vancouver) as ordinary — bishop data likely stale; May 1 dedication clashes with St. Joseph the Worker (I class) — which day? | Edmonton (Assumption), Edmonton (St. Edmund's) |
-| Québec | Does the province patroness (Sep 12, Holy Name of Mary, listed under Montréal) also apply to Québec? (Spec default: not added.) | Québec (St-Zéphirin) |
 
 ## Sites held back (own question)
 | Site | Question |
@@ -27,7 +26,6 @@ When an answer arrives: edit `fssp/na_province.yaml` (remove `CONFIRM`/`pending`
 | Miami — Our Lady of Belen | Patronal date unknown (also blocked by Miami diocese). |
 | Brookville — Ss. Philomena & Cecilia | Philomena (Aug 11) was removed from the calendar in 1961; elevate her anyway (built from Common of a Virgin Martyr)? |
 | Georgetown — Regina Pacis community | Date of Regina Pacis (also blocked by Lexington). |
-| Nashua — St. Stanislaus | Stanislaus Bishop & Martyr (May 7) or Stanislaus Kostka (Nov 13)? (A legacy `Rubrics 1960 - Nashua` calendar exists and is untouched.) |
 | Conshohocken — St. Mary | Which feast of St. Mary (Assumption assumed)? |
 | Providence — St. Mary on Broadway | Which feast of St. Mary (Assumption assumed)? |
 | Edmonton — St. Edmund's | Edmund of Canterbury (Nov 16) or Edmund, King & Martyr (Nov 20)? |
@@ -38,3 +36,5 @@ When an answer arrives: edit `fssp/na_province.yaml` (remove `CONFIRM`/`pending`
 ## Not blocking, but noted
 - Every site: own church dedication anniversary unknown (I class when known).
 - Bishop anniversary Mass commemorations ("pro Episcopo") are stored in the YAML only; the fork has no Mass-collect commemoration mechanism for them.
+- Answered 2026-10-17: Québec — Holy Name of Mary not added to Québec (published). Nashua — Stanislaus Bishop & Martyr, May 7 (published).
+- Lexington (Q4): still open. Owner leans toward raising May 31 Queenship to I class but must verify with the diocese before go-live. Lexington and Georgetown stay hidden.

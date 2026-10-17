@@ -63,6 +63,7 @@ Rubrics 1960 - Diocese of Richmond,DioRichmond,1960|NAP-fssp|NAP-dio-richmond,19
 Rubrics 1960 - Archdiocese of Seattle,DioSeattle,1960|NAP-fssp|NAP-dio-seattle,1960|NAP-fssp|NAP-dio-seattle,Rubrics 1960 - FSSP USA
 Rubrics 1960 - Diocese of Calgary,DioCalgary,1960|NAP-fssp|NAP-dio-calgary,1960|NAP-fssp|NAP-dio-calgary,Rubrics 1960 - FSSP Canada
 Rubrics 1960 - Archdiocese of Vancouver,DioVancouver,1960|NAP-fssp|NAP-dio-vancouver,1960|NAP-fssp|NAP-dio-vancouver,Rubrics 1960 - FSSP Canada
+Rubrics 1960 - Archdiocese of Quebec,DioQuebec,1960|NAP-fssp|NAP-dio-quebec,1960|NAP-fssp|NAP-dio-quebec,Rubrics 1960 - FSSP Canada
 Rubrics 1960 - Archdiocese of Montreal,DioMontreal,1960|NAP-fssp|NAP-dio-montreal,1960|NAP-fssp|NAP-dio-montreal,Rubrics 1960 - FSSP Canada
 Rubrics 1960 - Archdiocese of Ottawa,DioOttawa,1960|NAP-fssp|NAP-dio-ottawa,1960|NAP-fssp|NAP-dio-ottawa,Rubrics 1960 - FSSP Canada
 Rubrics 1960 - Diocese of St. Catharines,DioStCatharines,1960|NAP-fssp|NAP-dio-st-catharines,1960|NAP-fssp|NAP-dio-st-catharines,Rubrics 1960 - FSSP Canada
@@ -91,6 +92,7 @@ Rubrics 1960 - Church of All Saints Minneapolis MN,SiteMinneapolisAllSaints,1960
 Rubrics 1960 - St. Francis of Assisi Church Lincoln NE,SiteLincolnStFrancisOfAssisi,1960|NAP-fssp|NAP-site-lincoln-st-francis-of-assisi|NAP-dio-lincoln,1960|NAP-fssp|NAP-site-lincoln-st-francis-of-assisi|NAP-dio-lincoln,Rubrics 1960 - Diocese of Lincoln
 Rubrics 1960 - Our Lady of Guadalupe Seminary Denton NE,SiteDentonOlgsSeminary,1960|NAP-fssp|NAP-site-denton-olgs-seminary|NAP-dio-lincoln,1960|NAP-fssp|NAP-site-denton-olgs-seminary|NAP-dio-lincoln,Rubrics 1960 - Diocese of Lincoln
 Rubrics 1960 - Immaculate Conception Church Omaha NE,SiteOmahaImmaculateConception,1960|NAP-fssp|NAP-site-omaha-immaculate-conception|NAP-dio-omaha,1960|NAP-fssp|NAP-site-omaha-immaculate-conception|NAP-dio-omaha,Rubrics 1960 - Archdiocese of Omaha
+Rubrics 1960 - St. Stanislaus Church Nashua NH,SiteNashuaStStanislaus,1960|NAP-fssp|NAP-site-nashua-st-stanislaus|NAP-dio-manchester,1960|NAP-fssp|NAP-site-nashua-st-stanislaus|NAP-dio-manchester,Rubrics 1960 - Diocese of Manchester
 Rubrics 1960 - Our Lady of Fatima Chapel Pequannock NJ,SitePequannockOlFatima,1960|NAP-fssp|NAP-site-pequannock-ol-fatima|NAP-dio-paterson,1960|NAP-fssp|NAP-site-pequannock-ol-fatima|NAP-dio-paterson,Rubrics 1960 - Diocese of Paterson
 Rubrics 1960 - Holy Family Church Dayton OH,SiteDaytonHolyFamily,1960|NAP-fssp|NAP-site-dayton-holy-family|NAP-dio-cincinnati,1960|NAP-fssp|NAP-site-dayton-holy-family|NAP-dio-cincinnati,Rubrics 1960 - Archdiocese of Cincinnati
 Rubrics 1960 - Queen of the Holy Rosary Church Vienna OH,SiteViennaQueenHolyRosary,1960|NAP-fssp|NAP-site-vienna-queen-holy-rosary|NAP-dio-youngstown,1960|NAP-fssp|NAP-site-vienna-queen-holy-rosary|NAP-dio-youngstown,Rubrics 1960 - Diocese of Youngstown
@@ -110,6 +112,7 @@ Rubrics 1960 - North American Martyrs Church Edmonds WA,SiteEdmondsNorthAmerican
 Rubrics 1960 - St. Joseph Church Tacoma WA,SiteTacomaStJoseph,1960|NAP-fssp|NAP-site-tacoma-st-joseph|NAP-dio-seattle,1960|NAP-fssp|NAP-site-tacoma-st-joseph|NAP-dio-seattle,Rubrics 1960 - Archdiocese of Seattle
 Rubrics 1960 - St. Anthony Church Calgary AB,SiteCalgaryStAnthony,1960|NAP-fssp|NAP-site-calgary-st-anthony|NAP-dio-calgary,1960|NAP-fssp|NAP-site-calgary-st-anthony|NAP-dio-calgary,Rubrics 1960 - Diocese of Calgary
 Rubrics 1960 - Holy Family Parish Vancouver BC,SiteVancouverHolyFamily,1960|NAP-fssp|NAP-site-vancouver-holy-family|NAP-dio-vancouver,1960|NAP-fssp|NAP-site-vancouver-holy-family|NAP-dio-vancouver,Rubrics 1960 - Archdiocese of Vancouver
+Rubrics 1960 - Eglise Saint-Zephirin-de-Stadacona Quebec QC,SiteQuebecStZephirin,1960|NAP-fssp|NAP-site-quebec-st-zephirin|NAP-dio-quebec,1960|NAP-fssp|NAP-site-quebec-st-zephirin|NAP-dio-quebec,Rubrics 1960 - Archdiocese of Quebec
 Rubrics 1960 - Eglise St-Irenee Montreal QC,SiteMontrealStIrenee,1960|NAP-fssp|NAP-site-montreal-st-irenee|NAP-dio-montreal,1960|NAP-fssp|NAP-site-montreal-st-irenee|NAP-dio-montreal,Rubrics 1960 - Archdiocese of Montreal
 Rubrics 1960 - St. Aloysius Parish Thorold ON,SiteThoroldStAloysius,1960|NAP-fssp|NAP-site-thorold-st-aloysius|NAP-dio-st-catharines,1960|NAP-fssp|NAP-site-thorold-st-aloysius|NAP-dio-st-catharines,Rubrics 1960 - Diocese of St. Catharines
 Monastic Tridentinum 1617,M1617,M1617,M1617,Tridentine - 1570

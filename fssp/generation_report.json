@@ -334,6 +334,12 @@
    "10-07nl1"
   ],
   [
+   "quebec",
+   "07-26",
+   "St. Anne, Principal Patroness",
+   "07-26nl1"
+  ],
+  [
    "montreal",
    "05-31",
    "Queenship of Mary, principal feast of the Archdiocese",
@@ -442,6 +448,12 @@
    "11-04nl1"
   ],
   [
+   "nashua-st-stanislaus",
+   "05-07",
+   "St. Stanislaus, Bishop & Martyr",
+   "05-07nl1"
+  ],
+  [
    "vienna-queen-holy-rosary",
    "10-07",
    "Our Lady of the Most Holy Rosary",
@@ -496,6 +508,12 @@
    "06-13nl1"
   ],
   [
+   "quebec-st-zephirin",
+   "08-26",
+   "St. Zephyrinus, Pope & Martyr",
+   "08-26nl1"
+  ],
+  [
    "montreal-st-irenee",
    "06-28",
    "St. Irenaeus, Bishop & Martyr",
@@ -518,9 +536,6 @@
   "edmonton": [
    "05-01",
    "diocese note"
-  ],
-  "quebec": [
-   "diocese note"
   ]
  },
  "hidden_sites": {
@@ -533,14 +548,12 @@
   "post-falls-st-joan-of-arc": "St. Joan of Arc has no proper in the 1962 base (05-30 is St. Felix I); \"propers: base\" is wrong",
   "brookville-ss-philomena-cecilia": "own open item",
   "georgetown-st-francis-de-sales": "own open item",
-  "nashua-st-stanislaus": "own open item",
   "bethlehem-holy-ghost": "diocese allentown hidden",
   "allentown-st-stephen-of-hungary": "diocese allentown hidden",
   "conshohocken-st-mary": "own open item",
   "providence-st-mary-broadway": "own open item",
   "edmonton-assumption": "diocese edmonton hidden",
   "edmonton-st-edmund": "own open item",
-  "quebec-st-zephirin": "diocese quebec hidden",
   "ottawa-st-clement": "own open item",
   "saskatoon-sacred-heart": "own open item"
  },

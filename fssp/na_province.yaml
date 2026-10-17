@@ -226,7 +226,7 @@ dioceses:
     country: US
     feasts:
       - {date: "03-02", title: "Dedication of the Cathedral of Christ the King", rank: I, kind: dedication_cathedral}
-      - {date: "08-22", title: "Queenship of Mary", rank: I, kind: other, propers: base, note: "ANOMALY: 1962 Queenship is 05-31; 08-22 is Immaculate Heart. Ordo lists 08-22. Default: celebrate Queenship texts on 08-22 with comm. of Immaculate Heart; CONFIRM"}
+      - {date: "08-22", title: "Queenship of Mary", rank: I, kind: other, propers: base, note: "ANOMALY: 1962 Queenship is 05-31; 08-22 is Immaculate Heart. Ordo lists 08-22. Default: celebrate Queenship texts on 08-22 with comm. of Immaculate Heart; CONFIRM. Owner leans toward raising 05-31 Queenship to I class (2026-10-17); verify with the diocese before go-live"}
     bishop_commemorations:
       - {date: "03-12", text: "Appointment, Bp. John Stowe, OFM Conv."}
       - {date: "05-05", text: "Episcopal consecration, Bp. John Stowe, OFM Conv."}
@@ -506,7 +506,7 @@ dioceses:
     bishop_commemorations:
       - {date: "02-22", text: "Appointment, Cardinal Gérald Cyprien Lacroix"}
       - {date: "05-24", text: "Episcopal consecration, Cardinal Gérald Cyprien Lacroix"}
-    note: "Ordo lists 09-12 Holy Name of Mary as 'Principal Patroness of the ecclesiastical province of Québec' under Montréal. CONFIRM whether it also applies here; default: not added."
+    note: "ANSWERED 2026-10-17: Holy Name of Mary (09-12) is the province feast under Montréal and is NOT added to the Archdiocese of Québec."
 
   - id: montreal
     name: Archdiocese of Montréal
@@ -629,7 +629,8 @@ sites:
   - {id: omaha-immaculate-conception, name: "Immaculate Conception Church", city: "Omaha, NE", country: US, diocese: omaha, kind: parish,
      titulars: [{title: "Immaculate Conception", date: "12-08", propers: base}]}
   - {id: nashua-st-stanislaus, name: "St. Stanislaus Church", city: "Nashua, NH", country: US, diocese: manchester, kind: parish,
-     titulars: [{title: "St. Stanislaus, Bishop & Martyr (default)", date: "05-07", propers: base, status: CONFIRM, note: "Could be St. Stanislaus Kostka (11-13)"}]}
+     note: "ANSWERED 2026-10-17: Stanislaus Bishop & Martyr, as in the legacy Nashua calendar.",
+     titulars: [{title: "St. Stanislaus, Bishop & Martyr", date: "05-07", propers: base}]}
   - {id: pequannock-ol-fatima, name: "Our Lady of Fatima Chapel", city: "Pequannock, NJ", country: US, diocese: paterson, kind: chapel,
      titulars: [{title: "Our Lady of the Rosary of Fatima", date: "05-13", propers: commons, commune: "Common of Feasts of the BVM", note: "1962 05-13 St. Robert Bellarmine commemorated"}]}
   - {id: dayton-holy-family, name: "Holy Family Church", city: "Dayton, OH", country: US, diocese: cincinnati, kind: parish,

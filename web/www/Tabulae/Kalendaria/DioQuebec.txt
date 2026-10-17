@@ -1,0 +1,3 @@
+#Propria Officia Archdiocese of Québec (generated from fssp/na_province.yaml)
+07-11=07-11ndc~07-11=In Anniversario Dedicationis Ecclesiæ Cathedralis=1=
+07-26=07-26nl1=S. Annæ Matris B.M.V.=1=

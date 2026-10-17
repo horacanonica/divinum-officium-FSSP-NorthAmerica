@@ -33,6 +33,14 @@ def canadian_versions(rows):
     return [v for v in rows if 'Rubrics 1960 - FSSP Canada' in ancestors(v, rows)]
 
 
+class OpenQuestionMarker(unittest.TestCase):
+    def test_confirmed_is_not_open(self):
+        self.assertTrue(n.is_open({'note': 'CONFIRM the date'}))
+        self.assertTrue(n.is_open({'status': 'pending'}))
+        self.assertFalse(n.is_open({'note': 'CONFIRMED correct by the owner'}))
+        self.assertFalse(n.is_open({'note': 'ANSWERED'}))
+
+
 class UsaRegression(unittest.TestCase):
     """The FSSP / USA1960 / FSSP USA output must not change when local layers are added."""
 

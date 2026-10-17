@@ -29,10 +29,9 @@ Never run `pkill -f`/`pgrep -f` with a pattern that appears in your own command 
 ## Unanswered questions (numbering kept from the original list)
 
 ### Dioceses (an open diocese also hides all its sites)
-**4. Lexington, Aug 22 "Queenship of Mary".** 1962 Queenship is May 31; Aug 22 is the Immaculate Heart. Which texts? Spec default (NOT yet approved): Queenship texts on Aug 22 with commemoration of the Immaculate Heart. Hides: Lexington, Georgetown.
+**4. Lexington, Aug 22 "Queenship of Mary".** Owner: patron TBD. Background: GCatholic lists Queenship of Mary (Aug 22) as the diocesan patron (single source); the 1962 books keep Queenship on May 31 (II class) and Aug 22 is the Immaculate Heart (II class). A 1962 calendar would need either May 31 raised to I class or Aug 22 kept as Immaculate Heart; the owner must choose. **Owner's leaning (2026-10-17, NOT yet verified): raise May 31 Queenship to I class. Do not implement or unhide Lexington/Georgetown until the owner has verified this with the diocese and says go.** 1962 Queenship is May 31; Aug 22 is the Immaculate Heart. Which texts? Spec default (NOT yet approved): Queenship texts on Aug 22 with commemoration of the Immaculate Heart. Hides: Lexington, Georgetown.
 **5. Allentown, "Mary, Mother of the Church" (movable: Monday after Pentecost).** That day is a privileged I-class day and excludes feasts. What date does the diocese use? Spec default (not approved): first free day after the octave. Hides: Allentown, Bethlehem (Holy Ghost), Allentown (St. Stephen of Hungary). Needs `propers: commons` (C11) and a Tempora/transfer mechanism for a movable date — design it, show the owner.
 **6. Edmonton.** (a) Does the archdiocese have a principal patron (Ordo lists none)? (b) Bishop data is likely stale (Ordo gives Abp. Richard Smith, who is Vancouver's ordinary) — bishop commemorations are stored only, no Office effect. (c) The May 1 cathedral dedication clashes with St. Joseph the Worker (I class): on what day is it kept? Hides: Edmonton, Assumption (Vital Grandin Chaplaincy), St. Edmund's. Do NOT create any feast for Vital Grandin (Venerable only).
-**7. Québec, Sep 12 Holy Name of Mary.** The Ordo lists it as principal patroness of the ecclesiastical province of Québec under Montréal. Does it also apply to the Archdiocese of Québec? Spec default (not approved): no. Hides: Québec, Saint-Zéphirin-de-Stadacona.
 
 ### Sites
 **8. Phoenix, Mater Misericordiae.** Patronal date? (not in 1962 calendar; commons C11). Should the second Mass site St. Edward the Confessor (Oct 13) be elevated?
@@ -41,7 +40,6 @@ Never run `pkill -f`/`pgrep -f` with a pattern that appears in your own command 
 **11. Ocala, Our Lady Queen of Peace.** Patronal date: Jan 24 or Jul 9 (pro aliquibus locis)? (commons C11)
 **12. Brookville, Ss. Philomena & Cecilia.** Philomena (Aug 11) was removed from the calendar in 1961. Elevate her anyway (Common of a Virgin Martyr, C6)? Cecilia (Nov 22) is fine.
 **13. Georgetown, Regina Pacis community.** Date of the community patron Regina Pacis (also blocked by question 4)?
-**14. Nashua, St. Stanislaus.** Stanislaus Bishop & Martyr (May 7) or Stanislaus Kostka (Nov 13)? A legacy `Rubrics 1960 - Nashua` calendar already exists and must not be changed.
 **16. Conshohocken, St. Mary.** Which feast of St. Mary? (Assumption Aug 15 was assumed.)
 **17. Providence, St. Mary on Broadway.** Which feast of St. Mary? (Assumption assumed.)
 **18. Edmonton, St. Edmund's.** Edmund of Canterbury, Bishop (Nov 16, in the 1962 calendar) or Edmund, King & Martyr (Nov 20, pro aliquibus locis)? Also blocked by question 6.
@@ -50,6 +48,8 @@ Never run `pkill -f`/`pgrep -f` with a pattern that appears in your own command 
 **21. Post Falls, St. Joan of Arc.** Data error: Joan has no proper in the 1962 base (May 30 is St. Felix I), so `propers: base` is wrong. Build from the Common of a Virgin Martyr (C6), or will the owner supply a proper?
 
 ## Already answered (do not reopen)
+7. Québec: Holy Name of Mary (Sep 12) is NOT added to the Archdiocese of Québec; Québec and Saint-Zéphirin are published.
+14. Nashua: St. Stanislaus Bishop & Martyr (May 7), as in the legacy Nashua calendar; the generated Nashua site is hidden from the download page as a twin of the legacy calendar.
 1. Churches are assumed consecrated unless stated otherwise (Little Rock Feb 3 implemented).
 2. Sacramento: leave unchanged; legacy calendar is correct.
 3. Miami: patron Immaculate Conception; cathedral dedicated Jan 27, 1957 (Jan 27 confirmed correct by the owner). Our Lady of Belen chapel still needs its own patronal date (open).
