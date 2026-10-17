@@ -4,7 +4,7 @@
   "releases": {
     "la": "epub-library-la"
   },
-  "updated": "2026-10-17T15:03:47Z",
+  "updated": "2026-10-17T15:26:02Z",
   "languages": "Latin",
   "variants": [
     {
@@ -5558,8 +5558,40 @@
       "name": "Diocese of Providence",
       "region": "Northeast & Mid-Atlantic",
       "place": "Providence, Rhode Island",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "9967fffc4a815a8a7113985ce8c9c9c42e42a88d255b82f96aadd1227a0e8ea3"
+        },
+        "2027": {
+          "la": "9967fffc4a815a8a7113985ce8c9c9c42e42a88d255b82f96aadd1227a0e8ea3"
+        },
+        "2028": {
+          "la": "9967fffc4a815a8a7113985ce8c9c9c42e42a88d255b82f96aadd1227a0e8ea3"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-providence-2026-la.epub",
+          "bytes": 14810161,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-providence-2027-la.epub",
+          "bytes": 14812133,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-providence-2028-la.epub",
+          "bytes": 14844825,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -5632,8 +5664,40 @@
       "name": "Diocese of Richmond",
       "region": "Northeast & Mid-Atlantic",
       "place": "Richmond, Virginia",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "a0f0d96075db2f46c1f219eb7dab7d11e70536aad1436c23b95c49f98ee5e40b"
+        },
+        "2027": {
+          "la": "a0f0d96075db2f46c1f219eb7dab7d11e70536aad1436c23b95c49f98ee5e40b"
+        },
+        "2028": {
+          "la": "a0f0d96075db2f46c1f219eb7dab7d11e70536aad1436c23b95c49f98ee5e40b"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-richmond-2026-la.epub",
+          "bytes": 14816979,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-richmond-2027-la.epub",
+          "bytes": 14816761,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-richmond-2028-la.epub",
+          "bytes": 14850472,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -5826,8 +5890,40 @@
       "name": "Diocese of Scranton",
       "region": "Northeast & Mid-Atlantic",
       "place": "Scranton, Pennsylvania",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "bdd312e4d41ea897cf3bdc78bf7a97732e4eb80cc53b71111f8175deb4f074f3"
+        },
+        "2027": {
+          "la": "bdd312e4d41ea897cf3bdc78bf7a97732e4eb80cc53b71111f8175deb4f074f3"
+        },
+        "2028": {
+          "la": "bdd312e4d41ea897cf3bdc78bf7a97732e4eb80cc53b71111f8175deb4f074f3"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-scranton-2026-la.epub",
+          "bytes": 14813350,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-scranton-2027-la.epub",
+          "bytes": 14815519,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-scranton-2028-la.epub",
+          "bytes": 14851033,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -5907,8 +6003,40 @@
       "name": "Our Lady of Fatima Chapel, Pequannock",
       "region": "Northeast & Mid-Atlantic",
       "place": "Pequannock, New Jersey",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "ed109f142c07f2f473a5709835bda38cb54f4282b88a71b3729cd8c40ad68cad"
+        },
+        "2027": {
+          "la": "ed109f142c07f2f473a5709835bda38cb54f4282b88a71b3729cd8c40ad68cad"
+        },
+        "2028": {
+          "la": "ed109f142c07f2f473a5709835bda38cb54f4282b88a71b3729cd8c40ad68cad"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "our-lady-of-fatima-chapel-pequannock-nj-2026-la.epub",
+          "bytes": 14815227,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "our-lady-of-fatima-chapel-pequannock-nj-2027-la.epub",
+          "bytes": 14817131,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "our-lady-of-fatima-chapel-pequannock-nj-2028-la.epub",
+          "bytes": 14848072,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Parish",
@@ -6228,8 +6356,40 @@
       "name": "St. Joseph Parish, Richmond",
       "region": "Northeast & Mid-Atlantic",
       "place": "Richmond, Virginia",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "0dd19c5ffea5689905b817bfe9880373568d520f04528be1273ed6d972124248"
+        },
+        "2027": {
+          "la": "0dd19c5ffea5689905b817bfe9880373568d520f04528be1273ed6d972124248"
+        },
+        "2028": {
+          "la": "0dd19c5ffea5689905b817bfe9880373568d520f04528be1273ed6d972124248"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-joseph-parish-richmond-va-2026-la.epub",
+          "bytes": 14817045,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-joseph-parish-richmond-va-2027-la.epub",
+          "bytes": 14816827,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-joseph-parish-richmond-va-2028-la.epub",
+          "bytes": 14850531,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -6309,8 +6469,40 @@
       "name": "St. Lawrence Church, Harrisburg",
       "region": "Northeast & Mid-Atlantic",
       "place": "Harrisburg, Pennsylvania",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "5f4a775533a2f5c9d75832a5e7fded09952aae1d14d37870b069066c7c97b460"
+        },
+        "2027": {
+          "la": "5f4a775533a2f5c9d75832a5e7fded09952aae1d14d37870b069066c7c97b460"
+        },
+        "2028": {
+          "la": "5f4a775533a2f5c9d75832a5e7fded09952aae1d14d37870b069066c7c97b460"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-lawrence-church-harrisburg-pa-2026-la.epub",
+          "bytes": 14813954,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-lawrence-church-harrisburg-pa-2027-la.epub",
+          "bytes": 14816124,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-lawrence-church-harrisburg-pa-2028-la.epub",
+          "bytes": 14846910,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Parish",
@@ -6644,8 +6836,40 @@
       "name": "Archdiocese of Cincinnati",
       "region": "Midwest",
       "place": "Cincinnati, Ohio",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "f06119551c025ff5522a39c3909e9c4678bb9d319658cd65d8c8810565129da8"
+        },
+        "2027": {
+          "la": "f06119551c025ff5522a39c3909e9c4678bb9d319658cd65d8c8810565129da8"
+        },
+        "2028": {
+          "la": "f06119551c025ff5522a39c3909e9c4678bb9d319658cd65d8c8810565129da8"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-cincinnati-2026-la.epub",
+          "bytes": 14816310,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-cincinnati-2027-la.epub",
+          "bytes": 14820232,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-cincinnati-2028-la.epub",
+          "bytes": 14853059,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -6739,8 +6963,40 @@
       "name": "Archdiocese of Indianapolis",
       "region": "Midwest",
       "place": "Indianapolis, Indiana",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "3b4787992ebf4d6923dbcb6bfa3fbfe6b0c0ea565335ea93a86aa2a34a4ed321"
+        },
+        "2027": {
+          "la": "3b4787992ebf4d6923dbcb6bfa3fbfe6b0c0ea565335ea93a86aa2a34a4ed321"
+        },
+        "2028": {
+          "la": "3b4787992ebf4d6923dbcb6bfa3fbfe6b0c0ea565335ea93a86aa2a34a4ed321"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-indianapolis-2026-la.epub",
+          "bytes": 14817080,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-indianapolis-2027-la.epub",
+          "bytes": 14818121,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-indianapolis-2028-la.epub",
+          "bytes": 14847399,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -6834,8 +7090,40 @@
       "name": "Archdiocese of Kansas City in Kansas",
       "region": "Midwest",
       "place": "Kansas City, Kansas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "964d6aff9a6a3aee8dd94b625cc3220056b54858133afb2eb9e810233b292743"
+        },
+        "2027": {
+          "la": "964d6aff9a6a3aee8dd94b625cc3220056b54858133afb2eb9e810233b292743"
+        },
+        "2028": {
+          "la": "964d6aff9a6a3aee8dd94b625cc3220056b54858133afb2eb9e810233b292743"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-kansas-city-in-kansas-2026-la.epub",
+          "bytes": 14812538,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-kansas-city-in-kansas-2027-la.epub",
+          "bytes": 14814776,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-kansas-city-in-kansas-2028-la.epub",
+          "bytes": 14844278,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -6915,8 +7203,40 @@
       "name": "Archdiocese of Omaha",
       "region": "Midwest",
       "place": "Omaha, Nebraska",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "aed1f915e576cea80f4dd84a924deb8c0abc9349a78a0bb689a6771ab47b0c49"
+        },
+        "2027": {
+          "la": "aed1f915e576cea80f4dd84a924deb8c0abc9349a78a0bb689a6771ab47b0c49"
+        },
+        "2028": {
+          "la": "aed1f915e576cea80f4dd84a924deb8c0abc9349a78a0bb689a6771ab47b0c49"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-omaha-2026-la.epub",
+          "bytes": 14813747,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-omaha-2027-la.epub",
+          "bytes": 14814606,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-omaha-2028-la.epub",
+          "bytes": 14845265,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -6996,8 +7316,40 @@
       "name": "Archdiocese of Saint Paul and Minneapolis",
       "region": "Midwest",
       "place": "St. Paul and Minneapolis, Minnesota",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "7241cf17fe8a82c3b59eef5e031b11292d6454204bd6cc52a0284d0d23710d71"
+        },
+        "2027": {
+          "la": "7241cf17fe8a82c3b59eef5e031b11292d6454204bd6cc52a0284d0d23710d71"
+        },
+        "2028": {
+          "la": "7241cf17fe8a82c3b59eef5e031b11292d6454204bd6cc52a0284d0d23710d71"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-saint-paul-and-minneapolis-2026-la.epub",
+          "bytes": 14815644,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-saint-paul-and-minneapolis-2027-la.epub",
+          "bytes": 14817258,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-saint-paul-and-minneapolis-2028-la.epub",
+          "bytes": 14849421,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -7077,8 +7429,40 @@
       "name": "Church of All Saints, Minneapolis",
       "region": "Midwest",
       "place": "Minneapolis, Minnesota",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "e1d7996764bf03c8fe253c0ef8fc2cf2a0fd9e6d2e81c4155beffde4404ee05c"
+        },
+        "2027": {
+          "la": "e1d7996764bf03c8fe253c0ef8fc2cf2a0fd9e6d2e81c4155beffde4404ee05c"
+        },
+        "2028": {
+          "la": "e1d7996764bf03c8fe253c0ef8fc2cf2a0fd9e6d2e81c4155beffde4404ee05c"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "church-of-all-saints-minneapolis-mn-2026-la.epub",
+          "bytes": 14815608,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "church-of-all-saints-minneapolis-mn-2027-la.epub",
+          "bytes": 14817224,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "church-of-all-saints-minneapolis-mn-2028-la.epub",
+          "bytes": 14849386,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -7158,8 +7542,40 @@
       "name": "Diocese of Fort Wayne-South Bend",
       "region": "Midwest",
       "place": "Fort Wayne and South Bend, Indiana",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "804767773095c97cf91a7ed1b4574d015d153135db6b85cd06cfc6afc1e1af98"
+        },
+        "2027": {
+          "la": "804767773095c97cf91a7ed1b4574d015d153135db6b85cd06cfc6afc1e1af98"
+        },
+        "2028": {
+          "la": "804767773095c97cf91a7ed1b4574d015d153135db6b85cd06cfc6afc1e1af98"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-fort-wayne-south-bend-2026-la.epub",
+          "bytes": 14809489,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-fort-wayne-south-bend-2027-la.epub",
+          "bytes": 14814234,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-fort-wayne-south-bend-2028-la.epub",
+          "bytes": 14845375,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -7232,8 +7648,40 @@
       "name": "Diocese of Joliet",
       "region": "Midwest",
       "place": "Joliet, Illinois",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "f652e844d21da929beaa41f73e69e20dc466a112373386e6ca08614230bcb690"
+        },
+        "2027": {
+          "la": "f652e844d21da929beaa41f73e69e20dc466a112373386e6ca08614230bcb690"
+        },
+        "2028": {
+          "la": "f652e844d21da929beaa41f73e69e20dc466a112373386e6ca08614230bcb690"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-joliet-2026-la.epub",
+          "bytes": 14813513,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-joliet-2027-la.epub",
+          "bytes": 14813634,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-joliet-2028-la.epub",
+          "bytes": 14843777,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -7313,8 +7761,40 @@
       "name": "Diocese of Lincoln",
       "region": "Midwest",
       "place": "Lincoln, Nebraska",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "5a6f1353fb4d0826a4ab7788f65411687a8596102447991b8e872c2e1cbed262"
+        },
+        "2027": {
+          "la": "5a6f1353fb4d0826a4ab7788f65411687a8596102447991b8e872c2e1cbed262"
+        },
+        "2028": {
+          "la": "5a6f1353fb4d0826a4ab7788f65411687a8596102447991b8e872c2e1cbed262"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-lincoln-2026-la.epub",
+          "bytes": 14812444,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-lincoln-2027-la.epub",
+          "bytes": 14814092,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-lincoln-2028-la.epub",
+          "bytes": 14844554,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -7387,8 +7867,40 @@
       "name": "Diocese of Rapid City",
       "region": "Midwest",
       "place": "Rapid City, South Dakota",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "2e052ef5d24cb01c159c5dd418f465790909187396880584ece6e642e06f0e14"
+        },
+        "2027": {
+          "la": "2e052ef5d24cb01c159c5dd418f465790909187396880584ece6e642e06f0e14"
+        },
+        "2028": {
+          "la": "2e052ef5d24cb01c159c5dd418f465790909187396880584ece6e642e06f0e14"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-rapid-city-2026-la.epub",
+          "bytes": 14814577,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-rapid-city-2027-la.epub",
+          "bytes": 14815453,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-rapid-city-2028-la.epub",
+          "bytes": 14850820,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
