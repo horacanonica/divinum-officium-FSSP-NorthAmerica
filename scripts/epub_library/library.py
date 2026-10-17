@@ -22,13 +22,12 @@ Office text:
   or Niagara (those inherit FSSP directly).
 
 The rolling window is the current month through the same month two years
-ahead. Each job produces the full-year Latin EPUB (and monthly files, when
-that calendar still publishes them) for one calendar-year. A calendar edit
+ahead. Each job produces one full-year EPUB for one calendar-year. Monthly
+files are not published, for Latin or for any later edition. A calendar edit
 rebuilds that calendar; a shared Office edit rebuilds every calendar.
 
-Published names are ``{calendar}-{year}-la.epub`` and, for a monthly
-calendar, ``{calendar}-{year}-{month}-la.epub``. They live on the
-``epub-library-la`` release. Latin is the only edition.
+Published names are ``{calendar}-{year}-la.epub`` on the ``epub-library-la``
+release. Latin is the only edition.
 
 Fingerprints are stored per year. A run that finishes only some years does
 not mark the unfinished years as current.
@@ -118,7 +117,6 @@ class Calendar:
     region: str
     place: str
     chain: tuple[str, ...]
-    monthly: bool = True
     feasts: tuple = ()
 
 
@@ -205,22 +203,6 @@ def load_regions(path: Path | None = None) -> tuple[list[str], dict[str, tuple[s
         place = parts[2].strip() if len(parts) > 2 else ""
         places[version] = (region, place)
     return order, places
-
-
-def load_year_only(path: Path | None = None) -> set[str]:
-    """Versions whose regions.tsv row has ``year`` in the fourth column.
-
-    Those calendars publish the full-year EPUB only. Monthly files for every
-    calendar would pass GitHub's 1,000 assets per release.
-    """
-    found: set[str] = set()
-    for line in (path or REGIONS_TSV).read_text(encoding="utf-8").splitlines():
-        if not line or line.startswith("#"):
-            continue
-        parts = line.split("\t")
-        if len(parts) > 3 and "year" in _flags(parts[3]):
-            found.add(parts[0].strip())
-    return found
 
 
 def _flags(cell: str) -> set[str]:
@@ -353,7 +335,6 @@ def load_calendars(
 ) -> tuple[list[Calendar], list[str]]:
     versions = versions if versions is not None else load_versions()
     order, places = load_regions(regions_path)
-    year_only = load_year_only(regions_path)
     titles = load_titles(regions_path)
     hidden = load_hidden(regions_path)
     calendars: list[Calendar] = []
@@ -376,7 +357,6 @@ def load_calendars(
                 region=region,
                 place=place,
                 chain=chain_of(name, versions),
-                monthly=name not in year_only,
                 feasts=calendar_feasts(chain_of(name, versions), versions),
             )
         )
@@ -617,22 +597,19 @@ def asset_name(slug: str, year: int, month: int | None, variant: str = "la") -> 
     return f"{slug}-{year}-{month:02d}{suffix}.epub"
 
 
-def year_complete(
-    files: list[dict], year: int, variant: str = "la", monthly: bool = True
-) -> bool:
-    have: set[tuple[str, int]] = set()
+def year_complete(files: list[dict], year: int, variant: str = "la") -> bool:
+    """True when the full-year EPUB for this year is present.
+
+    Monthly files do not count. A year is one file, for every edition.
+    """
     for item in files:
         if int(item.get("year") or 0) != int(year):
             continue
         if file_variant(item) != variant:
             continue
         if item.get("type") == "year":
-            have.add(("year", 0))
-        elif item.get("type") == "month":
-            have.add(("month", int(item.get("month") or 0)))
-    if ("year", 0) not in have:
-        return False
-    return not monthly or all(("month", month) in have for month in range(1, 13))
+            return True
+    return False
 
 
 def _stamp_map(value) -> dict[str, str]:
@@ -652,14 +629,13 @@ def variant_fresh(
     current: str,
     *,
     adopt_complete: bool = False,
-    monthly: bool = True,
 ) -> bool:
-    """True when this year's Latin files are complete and match the fingerprint.
+    """True when this year's full-year file is present and matches the fingerprint.
 
     The first catalog written by this version also keeps complete years, then
     records the current fingerprint so a later Office edit still rebuilds them.
     """
-    if not year_complete(files, year, variant, monthly):
+    if not year_complete(files, year, variant):
         return False
     if adopt_complete:
         return True
@@ -699,10 +675,10 @@ def plan_jobs(
             for variant_index, variant in enumerate(VARIANTS):
                 forced = cal.slug in force_slugs
                 if not forced and variant_fresh(
-                    files, year, stamp_value, variant, current, adopt_complete=adopt_complete, monthly=cal.monthly
+                    files, year, stamp_value, variant, current, adopt_complete=adopt_complete
                 ):
                     continue
-                incomplete = not year_complete(files, year, variant, cal.monthly)
+                incomplete = not year_complete(files, year, variant)
                 if not in_scope and not incomplete:
                     continue
                 job = {
@@ -728,8 +704,8 @@ def classify_generated(name: str, year: int) -> tuple[str, int | None] | None:
     return None
 
 
-def _validate_epub(path: Path, kind: str) -> None:
-    minimum_bytes = 1_000_000 if kind == "year" else 120_000
+def _validate_epub(path: Path) -> None:
+    minimum_bytes = 1_000_000
     if path.stat().st_size < minimum_bytes:
         raise RuntimeError(f"{path.name} is unexpectedly small ({path.stat().st_size} bytes)")
     with zipfile.ZipFile(path) as archive:
@@ -740,7 +716,7 @@ def _validate_epub(path: Path, kind: str) -> None:
         if "mimetype" not in names or "content.opf" not in names:
             raise RuntimeError(f"{path.name} is missing epub structure")
         html_count = sum(1 for name in names if name.endswith(".html") or name.endswith(".xhtml"))
-        minimum = 2500 if kind == "year" else 200
+        minimum = 2500
         if html_count < minimum:
             raise RuntimeError(f"{path.name} has {html_count} html files, expected at least {minimum}")
         opf = archive.read("content.opf").decode("utf-8", errors="replace")
@@ -807,38 +783,27 @@ def build_year(
 
     produced = sorted(path for path in raw.glob("*.epub"))
     files: list[dict] = []
-    seen_months: set[int] = set()
     saw_year = False
     for source in produced:
         kind = classify_generated(source.name, year)
-        if kind is None:
+        if kind is None or kind[0] != "year":
             continue
-        file_kind, month = kind
-        if file_kind == "month" and not cal.monthly:
-            continue
-        if file_kind == "month":
-            dest_name = asset_name(cal.slug, year, month, variant)
-            seen_months.add(month)
-        else:
-            dest_name = asset_name(cal.slug, year, None, variant)
-            saw_year = True
+        dest_name = asset_name(cal.slug, year, None, variant)
+        saw_year = True
         dest = output / dest_name
         dest.write_bytes(source.read_bytes())
-        _validate_epub(dest, file_kind)
-        record = {
-            "type": file_kind,
-            "year": year,
-            "name": dest_name,
-            "bytes": dest.stat().st_size,
-            "variant": variant,
-        }
-        if month is not None:
-            record["month"] = month
-        files.append(record)
-    missing = [month for month in range(1, 13) if month not in seen_months] if cal.monthly else []
-    if missing or not saw_year:
-        raise RuntimeError(f"{cal.slug} {year} did not produce every EPUB (missing months {missing}, year={saw_year})")
-    files.sort(key=lambda item: (item["type"] != "year", item.get("month") or 0))
+        _validate_epub(dest)
+        files.append(
+            {
+                "type": "year",
+                "year": year,
+                "name": dest_name,
+                "bytes": dest.stat().st_size,
+                "variant": variant,
+            }
+        )
+    if not saw_year:
+        raise RuntimeError(f"{cal.slug} {year} did not produce a full-year EPUB")
     fragment = {
         "version": cal.version,
         "slug": cal.slug,
@@ -861,7 +826,6 @@ def _blank_entry(cal: Calendar) -> dict:
         "place": cal.place,
         "built": {},
         "files": [],
-        **({} if cal.monthly else {"monthly": False}),
         "feasts": list(cal.feasts),
     }
 
@@ -926,7 +890,7 @@ def merge_catalog(
             for item in previous["files"]
             if int(item.get("year") or 0) in window_years
             and file_variant(item) in VARIANTS
-            and (cal.monthly or item.get("type") == "year")
+            and item.get("type") == "year"
         ]
         files.sort(
             key=lambda item: (
@@ -941,7 +905,7 @@ def merge_catalog(
                 for variant in VARIANTS:
                     if (cal.slug, str(year), variant) in refreshed:
                         continue
-                    if year_complete(files, year, variant, cal.monthly):
+                    if year_complete(files, year, variant):
                         stamps[variant] = _current_hash(cal, versions, hash_cache)
             if stamps:
                 built[str(year)] = stamps
@@ -989,7 +953,8 @@ def assets_to_prune(catalog: dict, remote_names: list[str]) -> list[str]:
     """Release assets the catalog no longer links to.
 
     A file leaves once its year is outside the window or its name is no longer
-    listed. Retired unsuffixed and ``-la-en`` names are removed the same way.
+    listed. Monthly files, and retired unsuffixed and ``-la-en`` names, are
+    removed the same way.
     """
     calendars = catalog.get("calendars") or []
     if not calendars:

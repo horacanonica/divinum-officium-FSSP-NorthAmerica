@@ -4,7 +4,7 @@ name: EPUB downloads
 # A push rebuilds only the calendars the diff can affect (shared Office data
 # rebuilds all of them; one Kalendaria file rebuilds that apostolate). The
 # nightly run fills any Latin year still missing and moves the two-year
-# window forward. Latin (-la) is the only edition.
+# window forward. Each job is one full-year file. Latin (-la) is the only edition.
 
 on:
   push:
@@ -149,6 +149,13 @@ jobs:
             echo "No EPUBs were produced" >&2
             exit 1
           fi
+          for file in "${files[@]}"; do
+            base=$(basename "$file")
+            if [[ "$base" =~ -[0-9]{4}-[0-9]{2} ]]; then
+              echo "Refusing to upload monthly EPUB $base" >&2
+              exit 1
+            fi
+          done
           for file in "${files[@]}"; do
             ok=0
             for attempt in 1 2 3 4 5; do

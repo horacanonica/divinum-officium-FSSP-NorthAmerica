@@ -4,7 +4,7 @@
   "releases": {
     "la": "epub-library-la"
   },
-  "updated": "2026-10-17T14:44:13Z",
+  "updated": "2026-10-17T15:03:47Z",
   "languages": "Latin",
   "variants": [
     {
@@ -75,7 +75,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "FSSP",
@@ -140,7 +139,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "FSSP",
@@ -240,7 +238,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -347,7 +344,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -461,7 +457,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -575,7 +570,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -689,7 +683,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -796,7 +789,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -910,7 +902,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -1017,7 +1008,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -1124,7 +1114,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -1231,7 +1220,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -1345,7 +1333,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -1459,7 +1446,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -1573,7 +1559,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -1687,7 +1672,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -1801,7 +1785,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -1922,7 +1905,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -2036,7 +2018,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -2157,7 +2138,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -2264,7 +2244,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -2371,7 +2350,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -2478,7 +2456,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -2592,7 +2569,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -2706,7 +2682,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -2827,7 +2802,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -2934,7 +2908,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -3041,7 +3014,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -3155,7 +3127,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -3269,7 +3240,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -3397,7 +3367,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -3504,7 +3473,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -3618,7 +3586,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -3739,7 +3706,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -3853,7 +3819,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -3974,7 +3939,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -4081,7 +4045,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -4202,7 +4165,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -4309,7 +4271,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -4416,7 +4377,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -4523,7 +4483,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -4637,7 +4596,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -4744,7 +4702,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -4851,7 +4808,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -4979,7 +4935,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -5086,7 +5041,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -5193,7 +5147,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -5307,7 +5260,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -5421,7 +5373,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -5535,7 +5486,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -5610,7 +5560,6 @@
       "place": "Providence, Rhode Island",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -5685,7 +5634,6 @@
       "place": "Richmond, Virginia",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -5799,7 +5747,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -5881,7 +5828,6 @@
       "place": "Scranton, Pennsylvania",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -5963,7 +5909,6 @@
       "place": "Pequannock, New Jersey",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -6077,7 +6022,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -6198,7 +6142,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -6287,7 +6230,6 @@
       "place": "Richmond, Virginia",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -6369,7 +6311,6 @@
       "place": "Harrisburg, Pennsylvania",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -6490,7 +6431,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -6611,7 +6551,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -6707,7 +6646,6 @@
       "place": "Cincinnati, Ohio",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -6803,7 +6741,6 @@
       "place": "Indianapolis, Indiana",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -6899,7 +6836,6 @@
       "place": "Kansas City, Kansas",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -6981,7 +6917,6 @@
       "place": "Omaha, Nebraska",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7063,7 +6998,6 @@
       "place": "St. Paul and Minneapolis, Minnesota",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7145,7 +7079,6 @@
       "place": "Minneapolis, Minnesota",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7227,7 +7160,6 @@
       "place": "Fort Wayne and South Bend, Indiana",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7302,7 +7234,6 @@
       "place": "Joliet, Illinois",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7384,7 +7315,6 @@
       "place": "Lincoln, Nebraska",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7459,7 +7389,6 @@
       "place": "Rapid City, South Dakota",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7541,7 +7470,6 @@
       "place": "Springfield, Illinois",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7616,7 +7544,6 @@
       "place": "Youngstown, Ohio",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7698,7 +7625,6 @@
       "place": "Dayton, Ohio",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7794,7 +7720,6 @@
       "place": "Omaha, Nebraska",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7876,7 +7801,6 @@
       "place": "Rapid City, South Dakota",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -7990,7 +7914,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -8065,7 +7988,6 @@
       "place": "Vienna, Ohio",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -8154,7 +8076,6 @@
       "place": "Fort Wayne, Indiana",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -8229,7 +8150,6 @@
       "place": "Naperville, Illinois",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -8311,7 +8231,6 @@
       "place": "Lincoln, Nebraska",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -8425,7 +8344,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -8514,7 +8432,6 @@
       "place": "Rockdale, Illinois",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -8628,7 +8545,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -8717,7 +8633,6 @@
       "place": "Westwood, Kansas",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -8799,7 +8714,6 @@
       "place": "South Bend, Indiana",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -8881,7 +8795,6 @@
       "place": "Montreal, Quebec",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -8942,7 +8855,6 @@
       "place": "Ottawa, Ontario",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -8996,7 +8908,6 @@
       "place": "Quebec, Quebec",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -9050,7 +8961,6 @@
       "place": "Vancouver, British Columbia",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -9104,7 +9014,6 @@
       "place": "Calgary, Alberta",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -9158,7 +9067,6 @@
       "place": "Saskatoon, Saskatchewan",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -9212,7 +9120,6 @@
       "place": "St. Catharines, Ontario",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -9266,7 +9173,6 @@
       "place": "Fraternity calendar for Canada",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "FSSP",
@@ -9306,7 +9212,6 @@
       "place": "Vancouver, British Columbia",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Diocese",
@@ -9360,7 +9265,6 @@
       "place": "Thorold, Ontario",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -9453,7 +9357,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
@@ -9514,7 +9417,6 @@
       "place": "Calgary, Alberta",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -9575,7 +9477,6 @@
       "place": "Quebec, Quebec",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -9636,7 +9537,6 @@
       "place": "Montréal, Quebec",
       "built": {},
       "files": [],
-      "monthly": false,
       "feasts": [
         {
           "layer": "Parish",
@@ -9736,7 +9636,6 @@
           "variant": "la"
         }
       ],
-      "monthly": false,
       "feasts": [
         {
           "layer": "This calendar",
