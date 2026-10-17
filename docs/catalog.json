@@ -5,7 +5,7 @@
     "la": "epub-library-la",
     "la-en": "epub-library"
   },
-  "updated": "2026-10-17T04:06:50Z",
+  "updated": "2026-10-17T04:46:23Z",
   "languages": "Latin",
   "variants": [
     {
@@ -724,8 +724,40 @@
       "name": "St. Mary Magdalen Chapel, Camarillo",
       "region": "West",
       "place": "Camarillo, California",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "ab45bbc8d362700e397b5b620519e1fdc093f1da30058f7c4f625519eda95cbf"
+        },
+        "2027": {
+          "la": "ab45bbc8d362700e397b5b620519e1fdc093f1da30058f7c4f625519eda95cbf"
+        },
+        "2028": {
+          "la": "ab45bbc8d362700e397b5b620519e1fdc093f1da30058f7c4f625519eda95cbf"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-mary-magdalen-chapel-camarillo-ca-2026-la.epub",
+          "bytes": 14816268,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-mary-magdalen-chapel-camarillo-ca-2027-la.epub",
+          "bytes": 14819734,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-mary-magdalen-chapel-camarillo-ca-2028-la.epub",
+          "bytes": 14851681,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -779,8 +811,40 @@
       "name": "St. Vitus Catholic Church, Northridge",
       "region": "West",
       "place": "Northridge, California",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "12af6e1963c6e9357601d5c7c83002301a16055aca0a002e3f9a1a6feaa256cf"
+        },
+        "2027": {
+          "la": "12af6e1963c6e9357601d5c7c83002301a16055aca0a002e3f9a1a6feaa256cf"
+        },
+        "2028": {
+          "la": "12af6e1963c6e9357601d5c7c83002301a16055aca0a002e3f9a1a6feaa256cf"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-vitus-catholic-church-northridge-ca-2026-la.epub",
+          "bytes": 14817596,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-vitus-catholic-church-northridge-ca-2027-la.epub",
+          "bytes": 14822446,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-vitus-catholic-church-northridge-ca-2028-la.epub",
+          "bytes": 14849520,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -789,8 +853,40 @@
       "name": "Archdiocese of Galveston-Houston",
       "region": "South Central",
       "place": "Galveston and Houston, Texas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "1adc51a9e36815c3838f16a7d3224135686ad3fb06974de4b0ddfe4170966ff9"
+        },
+        "2027": {
+          "la": "1adc51a9e36815c3838f16a7d3224135686ad3fb06974de4b0ddfe4170966ff9"
+        },
+        "2028": {
+          "la": "1adc51a9e36815c3838f16a7d3224135686ad3fb06974de4b0ddfe4170966ff9"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-galveston-houston-2026-la.epub",
+          "bytes": 14809022,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-galveston-houston-2027-la.epub",
+          "bytes": 14814495,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-galveston-houston-2028-la.epub",
+          "bytes": 14840584,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -799,8 +895,40 @@
       "name": "Archdiocese of Oklahoma City",
       "region": "South Central",
       "place": "Oklahoma City, Oklahoma",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "d466972b8451cfce0a43e689324987858df6bb322dd1a0d64c68ebfed799c3ce"
+        },
+        "2027": {
+          "la": "d466972b8451cfce0a43e689324987858df6bb322dd1a0d64c68ebfed799c3ce"
+        },
+        "2028": {
+          "la": "d466972b8451cfce0a43e689324987858df6bb322dd1a0d64c68ebfed799c3ce"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-oklahoma-city-2026-la.epub",
+          "bytes": 14809802,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-oklahoma-city-2027-la.epub",
+          "bytes": 14811309,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-oklahoma-city-2028-la.epub",
+          "bytes": 14843576,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -809,8 +937,40 @@
       "name": "Diocese of Dallas",
       "region": "South Central",
       "place": "Dallas, Texas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "2f78f368731fc4b062ff9c10b89efbb9864fa12daf9837cd86102deba8cdffa0"
+        },
+        "2027": {
+          "la": "2f78f368731fc4b062ff9c10b89efbb9864fa12daf9837cd86102deba8cdffa0"
+        },
+        "2028": {
+          "la": "2f78f368731fc4b062ff9c10b89efbb9864fa12daf9837cd86102deba8cdffa0"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-dallas-2026-la.epub",
+          "bytes": 14813508,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-dallas-2027-la.epub",
+          "bytes": 14820389,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-dallas-2028-la.epub",
+          "bytes": 14852580,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -819,8 +979,40 @@
       "name": "Diocese of El Paso",
       "region": "South Central",
       "place": "El Paso, Texas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "a0245a7904f5c9dff166ab2b84379aa7b06121ecca7b5fc84dda1be6d07297e8"
+        },
+        "2027": {
+          "la": "a0245a7904f5c9dff166ab2b84379aa7b06121ecca7b5fc84dda1be6d07297e8"
+        },
+        "2028": {
+          "la": "a0245a7904f5c9dff166ab2b84379aa7b06121ecca7b5fc84dda1be6d07297e8"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-el-paso-2026-la.epub",
+          "bytes": 14818346,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-el-paso-2027-la.epub",
+          "bytes": 14816479,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-el-paso-2028-la.epub",
+          "bytes": 14847156,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -829,8 +1021,40 @@
       "name": "Diocese of Fort Worth",
       "region": "South Central",
       "place": "Fort Worth, Texas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "7f2d7987cfb85db0a7273ebb2ca6a1baed75281bf9de38aeb9e11b451095f7b2"
+        },
+        "2027": {
+          "la": "7f2d7987cfb85db0a7273ebb2ca6a1baed75281bf9de38aeb9e11b451095f7b2"
+        },
+        "2028": {
+          "la": "7f2d7987cfb85db0a7273ebb2ca6a1baed75281bf9de38aeb9e11b451095f7b2"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-fort-worth-2026-la.epub",
+          "bytes": 14814078,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-fort-worth-2027-la.epub",
+          "bytes": 14815108,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-fort-worth-2028-la.epub",
+          "bytes": 14845308,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -839,8 +1063,40 @@
       "name": "Diocese of Little Rock",
       "region": "South Central",
       "place": "Little Rock, Arkansas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "54f64004ec52dea3a5c41c67bc76ec0b4ba7b653f87f8af1015bf1f8531f5513"
+        },
+        "2027": {
+          "la": "54f64004ec52dea3a5c41c67bc76ec0b4ba7b653f87f8af1015bf1f8531f5513"
+        },
+        "2028": {
+          "la": "54f64004ec52dea3a5c41c67bc76ec0b4ba7b653f87f8af1015bf1f8531f5513"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-little-rock-2026-la.epub",
+          "bytes": 14821343,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-little-rock-2027-la.epub",
+          "bytes": 14821246,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-little-rock-2028-la.epub",
+          "bytes": 14853116,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -849,8 +1105,40 @@
       "name": "Diocese of Tulsa",
       "region": "South Central",
       "place": "Tulsa, Oklahoma",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "76c30d57f3963b38d5293a652b73e6af9f25a529a7be6b25b0fc283015d6a218"
+        },
+        "2027": {
+          "la": "76c30d57f3963b38d5293a652b73e6af9f25a529a7be6b25b0fc283015d6a218"
+        },
+        "2028": {
+          "la": "76c30d57f3963b38d5293a652b73e6af9f25a529a7be6b25b0fc283015d6a218"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-tulsa-2026-la.epub",
+          "bytes": 14811012,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-tulsa-2027-la.epub",
+          "bytes": 14812800,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-tulsa-2028-la.epub",
+          "bytes": 14843126,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -859,8 +1147,40 @@
       "name": "Diocese of Tyler",
       "region": "South Central",
       "place": "Tyler, Texas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "a4ad8569b949c365b0a60191cdd30d91fd66dc96673d1fb1c5b471cb4abcd347"
+        },
+        "2027": {
+          "la": "a4ad8569b949c365b0a60191cdd30d91fd66dc96673d1fb1c5b471cb4abcd347"
+        },
+        "2028": {
+          "la": "a4ad8569b949c365b0a60191cdd30d91fd66dc96673d1fb1c5b471cb4abcd347"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-tyler-2026-la.epub",
+          "bytes": 14807437,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-tyler-2027-la.epub",
+          "bytes": 14810078,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-tyler-2028-la.epub",
+          "bytes": 14842633,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -869,8 +1189,40 @@
       "name": "Immaculate Conception Church, El Paso",
       "region": "South Central",
       "place": "El Paso, Texas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "5f21fcd313d3a021bd5fe4ce29f83594bc8945dd65e8403ba2e0ca8ff7c52fe7"
+        },
+        "2027": {
+          "la": "5f21fcd313d3a021bd5fe4ce29f83594bc8945dd65e8403ba2e0ca8ff7c52fe7"
+        },
+        "2028": {
+          "la": "5f21fcd313d3a021bd5fe4ce29f83594bc8945dd65e8403ba2e0ca8ff7c52fe7"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "immaculate-conception-church-el-paso-tx-2026-la.epub",
+          "bytes": 14818474,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "immaculate-conception-church-el-paso-tx-2027-la.epub",
+          "bytes": 14816604,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "immaculate-conception-church-el-paso-tx-2028-la.epub",
+          "bytes": 14847282,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -879,8 +1231,40 @@
       "name": "Mater Dei Catholic Parish, Irving",
       "region": "South Central",
       "place": "Irving, Texas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "8aaf43ea129832dfd5f846e07d50cd30d7aca7d63f71658133a6c1a5411747db"
+        },
+        "2027": {
+          "la": "8aaf43ea129832dfd5f846e07d50cd30d7aca7d63f71658133a6c1a5411747db"
+        },
+        "2028": {
+          "la": "8aaf43ea129832dfd5f846e07d50cd30d7aca7d63f71658133a6c1a5411747db"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "mater-dei-catholic-parish-irving-tx-2026-la.epub",
+          "bytes": 14817591,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "mater-dei-catholic-parish-irving-tx-2027-la.epub",
+          "bytes": 14821110,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "mater-dei-catholic-parish-irving-tx-2028-la.epub",
+          "bytes": 14853620,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -889,8 +1273,40 @@
       "name": "Our Lady of Sorrows Church, Springdale",
       "region": "South Central",
       "place": "Springdale, Arkansas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "8a60a57614c115d64bfac5bf37a8830dfb4d7688b88ff28a7352c8553666207e"
+        },
+        "2027": {
+          "la": "8a60a57614c115d64bfac5bf37a8830dfb4d7688b88ff28a7352c8553666207e"
+        },
+        "2028": {
+          "la": "8a60a57614c115d64bfac5bf37a8830dfb4d7688b88ff28a7352c8553666207e"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "our-lady-of-sorrows-church-springdale-ar-2026-la.epub",
+          "bytes": 14823739,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "our-lady-of-sorrows-church-springdale-ar-2027-la.epub",
+          "bytes": 14822489,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "our-lady-of-sorrows-church-springdale-ar-2028-la.epub",
+          "bytes": 14854530,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -899,8 +1315,40 @@
       "name": "Parish of the Most Precious Blood, Tulsa",
       "region": "South Central",
       "place": "Tulsa, Oklahoma",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "dcfc584a043ff6da0f072d991735a4c4b805204ff138ff4062dc9887e2f2f78b"
+        },
+        "2027": {
+          "la": "dcfc584a043ff6da0f072d991735a4c4b805204ff138ff4062dc9887e2f2f78b"
+        },
+        "2028": {
+          "la": "dcfc584a043ff6da0f072d991735a4c4b805204ff138ff4062dc9887e2f2f78b"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "parish-of-the-most-precious-blood-tulsa-ok-2026-la.epub",
+          "bytes": 14811159,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "parish-of-the-most-precious-blood-tulsa-ok-2027-la.epub",
+          "bytes": 14812947,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "parish-of-the-most-precious-blood-tulsa-ok-2028-la.epub",
+          "bytes": 14843271,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -909,8 +1357,40 @@
       "name": "Regina Caeli Parish, Houston",
       "region": "South Central",
       "place": "Houston, Texas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "424285c607f235f068878ffccee413c14c716a99d02fc57c1a2a2dee6a7af396"
+        },
+        "2027": {
+          "la": "424285c607f235f068878ffccee413c14c716a99d02fc57c1a2a2dee6a7af396"
+        },
+        "2028": {
+          "la": "424285c607f235f068878ffccee413c14c716a99d02fc57c1a2a2dee6a7af396"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "regina-caeli-parish-houston-tx-2026-la.epub",
+          "bytes": 14813946,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "regina-caeli-parish-houston-tx-2027-la.epub",
+          "bytes": 14815615,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "regina-caeli-parish-houston-tx-2028-la.epub",
+          "bytes": 14842268,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -919,8 +1399,40 @@
       "name": "St. Benedict's Church, Fort Worth",
       "region": "South Central",
       "place": "Fort Worth, Texas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "fe9d0a1dd67f54214d5087c14f9616a46e1309ea6051c3b09d6f4b5aca1945ad"
+        },
+        "2027": {
+          "la": "fe9d0a1dd67f54214d5087c14f9616a46e1309ea6051c3b09d6f4b5aca1945ad"
+        },
+        "2028": {
+          "la": "fe9d0a1dd67f54214d5087c14f9616a46e1309ea6051c3b09d6f4b5aca1945ad"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-benedicts-church-fort-worth-tx-2026-la.epub",
+          "bytes": 14814365,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-benedicts-church-fort-worth-tx-2027-la.epub",
+          "bytes": 14819815,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-benedicts-church-fort-worth-tx-2028-la.epub",
+          "bytes": 14849931,
+          "variant": "la"
+        }
+      ],
       "monthly": false
     },
     {
@@ -1216,7 +1728,7 @@
     {
       "version": "Rubrics 1960 - Baltimore",
       "slug": "baltimore",
-      "name": "St. Alphonsus Church, Baltimore (Archdiocese of Baltimore)",
+      "name": "St. Alphonsus Parish, Baltimore (Archdiocese of Baltimore)",
       "region": "Northeast & Mid-Atlantic",
       "place": "Baltimore, Maryland",
       "built": {
@@ -1789,6 +2301,16 @@
       "monthly": false
     },
     {
+      "version": "Rubrics 1960 - Archdiocese of Quebec",
+      "slug": "archdiocese-of-quebec",
+      "name": "Archdiocese of Québec",
+      "region": "Canada",
+      "place": "Quebec, Quebec",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
       "version": "Rubrics 1960 - Archdiocese of Vancouver",
       "slug": "archdiocese-of-vancouver",
       "name": "Archdiocese of Vancouver",
@@ -1914,6 +2436,16 @@
       "monthly": false
     },
     {
+      "version": "Rubrics 1960 - Eglise Saint-Zephirin-de-Stadacona Quebec QC",
+      "slug": "eglise-saint-zephirin-de-stadacona-quebec-qc",
+      "name": "Église Saint-Zéphirin-de-Stadacona, Québec",
+      "region": "Canada",
+      "place": "Quebec, Quebec",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
       "version": "Rubrics 1960 - Eglise St-Irenee Montreal QC",
       "slug": "eglise-st-irenee-montreal-qc",
       "name": "Église St-Irénée, Montréal",
@@ -1926,7 +2458,7 @@
     {
       "version": "Rubrics 1960 - Guadalajara",
       "slug": "guadalajara",
-      "name": "Our Lady of the Pillar, Guadalajara (Archdiocese of Guadalajara)",
+      "name": "Archdiocese of Guadalajara",
       "region": "Mexico",
       "place": "Guadalajara, Jalisco",
       "built": {
