@@ -1,0 +1,2231 @@
+# Latin text of the 1960 Rubricae (articles 1–268).
+# Working copy: the plain-text transcription at
+# https://clemensdsh.xyz/posts/aas-1960-rubricae-et-calendarium-latin/
+# which was OCR'd from the AAS page images and collated with them.
+# Attribute every quotation to Acta Apostolicae Sedis, vol. 52 (1960),
+# Codex Rubricarum, at the page given on the page: line (article n. @@).
+# Seventeen editorial restorations in that transcription (marked there
+# 【原图作 …】) were checked against the AAS PDF before the marks were removed.
+# One reading kept as printed: n. 91 table, "dominicae occurrente".
+# n. 77 "Septuagesimo" was restored to "Septuagesima" (the transcription's own note).
+# English of the same articles is read from the project files, not from here:
+#   web/www/horas/Help/Rubrics/General Rubrics.html (nn. 1–137)
+#   web/www/horas/Help/Rubrics/Breviary 1960.html (nn. 138–268)
+
+@@ 1
+page: 597
+pages: 597
+flags_stripped: 0
+la:
+Rubricae quae sequuntur ritum romanum respiciunt.
+
+@@ 2
+page: 597
+pages: 597
+flags_stripped: 0
+la:
+Nomine calendarii veniunt tum calendarium in usum Ecclesiae universae, tum calendaria particularia.
+
+@@ 3
+page: 597
+pages: 597
+flags_stripped: 0
+la:
+Rubricae generales quae sequuntur, valent tam pro Breviario quam pro Missali. Ipsis tamen exceptiones dantur per particulares rubricas, quae aliquando in Breviario et in Missali ad normam harum rubricarum redactis occurrunt.
+
+@@ 4
+page: 597
+pages: 597
+flags_stripped: 0
+la:
+Dies liturgicus est dies sanctificatio actionibus liturgicis, praesertim Sacrificio eucharistico et publica Ecclesiae prece, id est Officio divino; et decurrit a media nocte ad mediam noctem.
+
+@@ 5
+page: 597
+pages: 597
+flags_stripped: 0
+la:
+Celebratio diei liturgici decurrit per se a Matutino ad Completorium. Sunt tamen dies solemniores, quorum Officium inchoatur a I Vesperis, die praecedenti. Habetur denique celebratio liturgica non plena seu sola commemoratio in Officio et Missa diei liturgici currentis.
+
+@@ 6
+page: 597
+pages: 597
+flags_stripped: 0
+la:
+Singulis diebus fit aut de dominica, aut de feria, aut de vigilia, aut de festo, aut de octava, iuxta calendarium et praecedentiam dierum liturgicorum.
+
+@@ 7
+page: 597
+pages: 597
+flags_stripped: 0
+la:
+Praecedentia inter singulos dies liturgicos unice per peculiarem tabellam (n. 91) determinatur.
+
+@@ 8
+page: 598
+pages: 598
+flags_stripped: 1
+la:
+Dies liturgici sunt primae, secundae, tertiae aut quartae classis.
+
+@@ 9
+page: 598
+pages: 598
+flags_stripped: 0
+la:
+Nomine dominicae intellegitur dies Domini initio cuiusque hebdomadae occurrens.
+
+@@ 10
+page: 598
+pages: 598
+flags_stripped: 0
+la:
+Dominicae sunt I aut II classis.
+
+@@ 11
+page: 598
+pages: 598
+flags_stripped: 2
+la:
+Dominicae I classis sunt:
+a) I-IV Adventus;
+b) I-IV Quadragesimae;
+c) I-II Passionis;
+d) dominica Resurrectionis seu Paschatis;
+e) dominica in albis;
+f) dominica Pentecostes. Dominicae Paschatis et Pentecostes sunt pariter festa I classis cum octava.
+
+@@ 12
+page: 598
+pages: 598
+flags_stripped: 0
+la:
+Omnes aliae dominicae sunt II classis.
+
+@@ 13
+page: 598
+pages: 598
+flags_stripped: 0
+la:
+Officium dominicae incipit a I Vesperis, sabbato praecedenti, et explicit post Completorium dominicae.
+
+@@ 14
+page: 598
+pages: 598
+flags_stripped: 1
+la:
+Dominica celebratur suo die, iuxta rubricas. Officium et Missa dominicae impeditae nec anticipantur nec resumuntur.
+
+@@ 15
+page: 598
+pages: 598
+flags_stripped: 0
+la:
+Dominica I classis, in occurrentia, festis quibuslibet praefertur. Festum tamen Immaculatae Conceptionis B. Mariae Virg. praefertur occurrenti dominicae Adventus. Ad concurrentiam vero quod attinet, servetur norma, quae nn. 101-105 traditur.
+
+@@ 16
+page: 598
+pages: 598
+flags_stripped: 1
+la:
+Dominica II classis, in occurrentia, festis II classis praefertur. Attamen:
+a) festum Domini I aut II classis, in dominica II classis occurrens, locum tenet ipsius dominicae cum omnibus iuribus et privilegiis: de dominica, proinde, nulla fit commemoratio;
+b) dominica II classis praefertur Commemorationi omnium Fidelium defunctorum. Ad concurrentiam vero quod attinet, servetur norma, quae nn. 101-105 traditur.
+
+@@ 17
+page: 598
+pages: 598,599
+flags_stripped: 0
+la:
+Dominica excludit, per se, assignationem perpetuam festorum.
+a) festum Ssmi Nominis Iesu, celebrandum dominica quae occurrit a die 2 ad 5 ianuarii (secus die 2 ianuarii);
+b) festum S. Familiae Iesu, Mariae, Ioseph, celebrandum dominica prima post Epiphaniam;
+c) festum Ssmae Trinitatis, celebrandum dominica prima post Pentecosten;
+d) festum D. N. Iesu. Christi Regis, celebrandum dominica ultima mensis octobris;
+e) festa Domini I classis quae, in calendariis particularibus, dominicae II classis nunc assignantur. Haec festa locum tenent dominicae occurrentis cum omnibus iuribus et privilegiis: de dominica, proinde, nulla fit commemoratio.
+
+@@ 18
+page: 599
+pages: 599
+flags_stripped: 0
+la:
+Dominicae post Epiphaniam quae, superveniente Septuagesima, impediuntur, transferuntur post dominicam XXIII post Pentecosten, hoc ordine:
+a) si dominicae post Pentecosten fuerint 25, dominica XXIV erit quae inscribitur dominica VI post Epiphaniam;
+b) si dominicae fuerint 26, dominica XXIV erit quae inscribitur V post Epiphaniam; et XXV, quae inscribitur VI;
+c) si dominicae fuerint 27, dominica XXIV erit quae inscribitur IV post Epiphaniam; XXV, quae inscribitur V; et XXVI, quae inscribitur VI;
+d) si dominicae fuerint 28, dominica XXIV erit quae inscribitur III post Epiphaniam; XXV, quae inscribitur IV; XXVI, quae inscribitur V; et XVII, quae inscribitur VI. Ultimo tamen loco semper ponitur ea quae in ordine est XXIV post Pentecosten, omissis, si opus sit, ceteris, quae aliquando locum habere non possunt.
+
+@@ 19
+page: 599
+pages: 599
+flags_stripped: 0
+la:
+Dominica prima mensis ea intellegitur, quae prima occurrit in mense, scilicet a die primo ad septimum mensis; dominica autem ultima, quae diem primum mensis sequentis proxime praecedit. Item ad computandam primam dominicam mensium augusti, septembris, octobris et novembris, ratione lectionum Scripturae occurrentis, ea dicitur prima dominica mensis, quae cadit a die primo ad septimum mensis.
+
+@@ 20
+page: 599
+pages: 599,600
+flags_stripped: 0
+la:
+Dominica I Adventus ea est, quae cadit die 30 novembris vel est ipsi proximior.
+
+@@ 21
+page: 600
+pages: 600
+flags_stripped: 0
+la:
+Nomine feriae intelleguntur singuli dies hebdomadae, praeter dominicam.
+
+@@ 22
+page: 600
+pages: 600
+flags_stripped: 0
+la:
+Feriae sunt primae, secundae, tertiae aut quartae classis.
+
+@@ 23
+page: 600
+pages: 600
+flags_stripped: 0
+la:
+Feriae I classis sunt:
+a) feria IV cinerum;
+b) omnes feriae Hebdomadae sanctae. Hae feriae festis quibuslibet praeferuntur, et nullam admittunt commemorationem, nisi unam privilegiatam.
+
+@@ 24
+page: 600
+pages: 600
+flags_stripped: 0
+la:
+Feriae II classis sunt:
+a) feriae Adventus a die 17 ad diem 23 decembris;
+b) feriae Quatuor Temporum Adventus, Quadragesimae et mensis septembris. Hae feriae praeferuntur festis particularibus II classis; si vero impediuntur, commemorari debent.
+
+@@ 25
+page: 600
+pages: 600
+flags_stripped: 0
+la:
+Feriae III classis sunt:
+a) feriae Quadragesimae et Passionis, a feria V post cineres usque ad sabbatum ante dominicam II Passionis inclusive, superius non nominatae, quae praeferuntur festis III classis;
+b) feriae Adventus usque ad diem 16 decembris inclusive, superius non nominatae, quae cedunt festis III classis. Hae feriae, si impediuntur, commemorari debent.
+
+@@ 26
+page: 600
+pages: 600
+flags_stripped: 0
+la:
+Omnes feriae, numeris 23-25 non nominatae, sunt feriae IV classis; quae, si impediuntur, numquam commemorantur.
+
+@@ 27
+page: 600
+pages: 600,601
+flags_stripped: 0
+la:
+Officium feriae incipit a Matutino et explicit per se post Completorium; Officium vero sabbati, excepto Officio sabbati sancti, explicit post Nonam.
+
+@@ 28
+page: 601
+pages: 601
+flags_stripped: 0
+la:
+Nomine vigiliae intellegitur dies liturgicus, qui aliquod festum praecedit, et rationem habet praeparationis ad illud. Vigilia Paschatis vero, cum non sit dies liturgicus, modo sibi proprio, seu pervigilio, celebratur.
+
+@@ 29
+page: 601
+pages: 601
+flags_stripped: 0
+la:
+Vigiliae sunt primae, secundae aut tertiae classis.
+
+@@ 30
+page: 601
+pages: 601
+flags_stripped: 1
+la:
+Vigiliae I classis sunt:
+a) vigilia Nativitatis Domini quae, in occurrentia, locum tenet dominicae IV Adventus, de qua, proinde, nulla fit commemoratio;
+b) vigilia Pentecostes. Hae vigiliae festis quibuslibet praeferuntur, et nullam admittunt commemorationem.
+
+@@ 31
+page: 601
+pages: 601
+flags_stripped: 0
+la:
+Vigiliae II classis sunt:
+a) vigilia Ascensionis Domini;
+b) vigilia Assumptionis B. Mariae Virg.;
+c) vigilia Nativitatis S. Ioannis Baptistae;
+d) vigilia Ss. Petri et Pauli Apostolorum. Hae vigiliae praeferuntur diebus liturgicis III et IV classis; et, si impediuntur, commemorantur, iuxta rubricas.
+
+@@ 32
+page: 601
+pages: 601
+flags_stripped: 0
+la:
+Vigilia III classis est vigilia S. Laurentii. Haec vigilia praefertur diebus liturgicis IV classis; et, si impeditur, commemoratur, iuxta rubricas.
+
+@@ 33
+page: 601
+pages: 601
+flags_stripped: 0
+la:
+Vigilia II aut III classis penitus omittitur, si occurrat in dominica quavis, aut in festo I classis, vel si festum cui praemittitur in alium diem transferri aut ad commemorationem reduci contingat.
+
+@@ 34
+page: 601
+pages: 601
+flags_stripped: 1
+la:
+Officium vigiliae incipit a Matutino et explicit quando initium habet Officium festi subsequentis.
+
+@@ 35
+page: 601
+pages: 601,602
+flags_stripped: 0
+la:
+Nomine festi intellegitur dies liturgicus in quo cultus publicus Ecclesiae peculiari modo ad mysteria Domini recolenda, vel ad B. Mariam Virg., aut Angelos, aut Sanctos vel Beatos venerandos dirigitur.
+
+@@ 36
+page: 602
+pages: 602
+flags_stripped: 0
+la:
+Festa sunt primae, secundae aut tertiae classis.
+
+@@ 37
+page: 602
+pages: 602
+flags_stripped: 0
+la:
+Ratio celebrationis festorum haec est:
+a) festa I classis inter dies solemniores adnumerantur, quorum Officium incipit a I Vesperis, die praecedenti;
+b) festa II et III classis Officium habent quod per se decurrit a Matutino ad Completorium ipsius diei;
+c) festa vero Domini II classis I Vesperas acquirunt, quoties, in occurrentia, locum tenent dominicae II classis.
+
+@@ 38
+page: 602
+pages: 602
+flags_stripped: 0
+la:
+Festa sunt universalia aut particularia; particularia autem sunt propria aut indulta.
+
+@@ 39
+page: 602
+pages: 602
+flags_stripped: 0
+la:
+Festa universalia ea sunt quae a Sancta Sede in calendario Ecclesiae universae inscribuntur. Haec festa ab omnibus, qui ritum romanum sequuntur, celebrari debent, iuxta rubricas.
+
+@@ 40
+page: 602
+pages: 602
+flags_stripped: 0
+la:
+Festa particularia ea sunt quae ex iure aut ex indulto Sanctae Sedis in calendariis particularibus inscribuntur. Haec festa ab omnibus, qui illo calendario tenentur, celebrari debent, iuxta rubricas, et nonnisi ex speciali Sanctae Sedis indulto e calendario expungi vel gradu mutari possunt.
+
+@@ 41
+page: 602
+pages: 602
+flags_stripped: 0
+la:
+Festa particularia, ipso iure in calendario inscribenda, sunt festa propria:
+a) cuiusque nationis et regionis seu provinciae sive ecclesiasticae sive civilis (n. 42);
+b) cuiusque dioecesis seu territorii ecclesiastici cui praeficitur « Ordinarius loci » (n. 43);
+c) cuiusque loci seu oppidi vel civitatis (n. 44);
+d) cuiusque ecclesiae aut oratorii publici vel semipublici, quod locum tenet ecclesiae (n. 45);
+e) cuiusque Ordinis seu Congregationis (n. 46).
+
+@@ 42
+page: 602
+pages: 602
+flags_stripped: 0
+la:
+Festa propria cuiusque nationis et regionis seu provinciae sive ecclesiasticae sive civilis sunt:
+a) festum Patroni principalis rite constituti (I classis);
+b) festum Patroni secundarii rite constituti (II classis).
+
+@@ 43
+page: 602
+pages: 602,603
+flags_stripped: 0
+la:
+Festa propria cuiusque dioecesis seu territorii ecclesiastici cui praeficitur « Ordinarius loci » sunt:
+a) festum Patroni principalis rite constituti (I classis);
+b) anniversarium Dedicationis ecclesiae cathedralis (I classis);
+c) festum Patroni secundarii rite constituti (II classis);
+d) festa Sanctorum et Beatorum, qui in Martyrologio vel eius Appendice rite sunt inscripti, qui ad dioecesim peculiares habent relationes, ut sunt originis, commorationis longioris, obitus (II vel III classis, aut commemoratio).
+
+@@ 44
+page: 603
+pages: 603
+flags_stripped: 0
+la:
+Festa propria cuiusque loci seu oppidi vel civitatis sunt:
+a) festum Patroni principalis rite constituti (I classis);
+b) festum Patroni secundarii rite constituti (II classis).
+
+@@ 45
+page: 603
+pages: 603
+flags_stripped: 0
+la:
+Festa propria cuiusque ecclesiae aut oratorii publici vel semipublici, quod locum tenet ecclesiae, sunt:
+a) anniversarium Dedicationis, si sint consecrata (I classis);
+b) festum Tituli, si sint consecrata aut saltem solemniter benedicta (I classis);
+c) festum Sancti, in Martyrologio vel eius Appendice rite descripti, cuius corpus ibi asservatur (II classis);
+d) festum Beati, item in Martyrologio vel eius Appendice rite descripti, cuius corpus ibi asservatur (III classis).
+
+@@ 46
+page: 603
+pages: 603
+flags_stripped: 0
+la:
+Festa propria cuiusque Ordinis seu Congregationis sunt:
+a) festum Tituli (I classis);
+b) festum Fundatoris canonizati (I classis) vel beatificati (II cl.);
+c) festum Patroni principalis rite constituti totius Ordinis seu Congregationis, in universo Ordine vel Congregatione; aut Patroni principalis item rite, constituti cuiusque provinciae religiosae, in singulis provinciis (I classis);
+d) festum Patroni secundarii, ut supra (II classis);
+e) festa Sanctorum et Beatorum, qui illius Ordinis vel Congregationis sodales fuerunt (II vel III classis, aut commemoratio).
+
+@@ 47
+page: 603
+pages: 603
+flags_stripped: 0
+la:
+Festa particularia indulta sunt festa quae, ex indulto Sanctae Sedis, in calendariis particularibus inscribuntur.
+
+@@ 48
+page: 603
+pages: 603
+flags_stripped: 0
+la:
+Calendarium est universale aut particulare seu proprium.
+
+@@ 49
+page: 603
+pages: 603
+flags_stripped: 0
+la:
+Calendarium universale est calendarium in usum Ecclesiae universae, quod Breviario ac Missali romano praeficitur.
+
+@@ 50
+page: 603
+pages: 603,604
+flags_stripped: 0
+la:
+Calendarium particulare seu proprium est dioecesanum aut religiosum; et conficitur inserendo calendario universali festa particularia.
+
+@@ 51
+page: 604
+pages: 604
+flags_stripped: 0
+la:
+Calendarium dioecesanum habet quaelibet dioecesis et quodlibet aliud territorium ecclesiasticum cui praeficitur « Ordinarius loci ».
+
+@@ 52
+page: 604
+pages: 604
+flags_stripped: 1
+la:
+In calendario dioecesano, praeter festa universalia, inscribi debent:
+a) festa propria (n. 42) et indulta universae nationi et regioni seu provinciae sive ecclesiasticae sive civili;
+b) festa propria (n. 43) et indulta universae dioecesi.
+
+@@ 53
+page: 604
+pages: 604
+flags_stripped: 0
+la:
+Super huiusmodi calendario dioecesano conficitur:
+a) calendarium cuiusque loci, addendo festa propria (n. 44) et indulta;
+b) calendarium cuiusque ecclesiae aut oratorii, item addendo festa loci propria (n. 44) et indulta, atque festa ipsi ecclesiae propria (n. 45) et indulta;
+c) calendarium Congregationum religiosarum seu Institutorum iuris pontificii, quae ad recitationem divini Officii non obligantur; et Congregationum iuris dioecesani, addendo festa loci propria (n. 44) et indulta; necnon et alia ipsis propria (nn. 45 et 46) et indulta.
+
+@@ 54
+page: 604
+pages: 604
+flags_stripped: 0
+la:
+Calendarium religiosum habent:
+a) Ordines regulares, et Moniales ac Sorores eiusdem Ordinis, necnon Tertiarii eidem aggregati in communi viventes et vota simplicia emittentes;
+b) Congregationes religiosae seu Instituta utriusque sexus, iuris pontificii, et sub regimine unius praesidis generalis constituta, si ad recitationem divini Officii, ex quovis capite, tenentur.
+
+@@ 55
+page: 604
+pages: 604
+flags_stripped: 0
+la:
+In calendario religioso, praeter festa universalia, inscribi debent festa propria (n. 46) et indulta ipsi Ordini seu Congregationi.
+
+@@ 56
+page: 604
+pages: 604,605
+flags_stripped: 0
+la:
+Super huiusmodi calendario religioso conficitur:
+a) calendarium cuiusque provinciae religiosae, addendo festa propria (n. 46) et indulta;
+b) calendarium cuiusque ecclesiae aut oratorii, item addendo festa propria (n. 45) et indulta, necnon et alia de quibus numero sequenti: quod calendarium vocatur etiam domus religiosae.
+
+@@ 57
+page: 605
+pages: 605
+flags_stripped: 0
+la:
+In singulis dioecesibus et locis, Religiosi, ii etiam qui alium ritum ac romanum sequuntur, celebrare tenentur, una cum clero dioecesano:
+a) festum Patroni principalis nationis, regionis seu provinciae sive ecclesiasticae sive civilis, dioecesis, loci seu oppidi vel civitatis (I classis);
+b) anniversarium Dedicationis ecclesiae cathedralis (I classis);
+c) alia festa actu feriata, si quae sint, eodem gradu quo in calendario dioecesano inscribuntur.
+
+@@ 58
+page: 605
+pages: 605
+flags_stripped: 0
+la:
+Religiosi, in celebrandis festis Sanctorum Ordinis seu Congregationis, quoad diem et Officium magis proprium, clero dioecesano se conformare tenentur, sicubi iidem Sancti tamquam Patroni principales (n. 57 a) recoluntur. Item, si festa Sanctorum aut Beatorum alicuius Ordinis seu Congregationis gradu superiore aut Officio magis proprio a clero alicuius dioecesis vel loci celebrantur, ibidem etiam a Religiosis eiusdem Ordinis seu Congregationis eodem gradu superiore aut Officio magis proprio celebrari possunt, dummodo eadem festa, in utroque calendario, eodem die inscripta sint.
+
+@@ 59
+page: 605
+pages: 605
+flags_stripped: 0
+la:
+Festa in calendaria iam inducta eo die celebrentur, quo nunc in calendariis inscripta inveniuntur.
+
+@@ 60
+page: 605
+pages: 605
+flags_stripped: 0
+la:
+Pro novis festis universalibus inducendis, haec serventur:
+a) festa Sanctorum ordinarie diei natalicio assignentur, diei nempe quo Sanctus aeternae vitae natus est; hoc die ex qualibet causa impedito, eadem festa assignentur diei a S. Sede determinando, qui proinde habebitur tamquam dies quasi-natalicius;
+b) pro ceteris festis, dies a S. Sede assignabitur.
+
+@@ 61
+page: 605
+pages: 605,606
+flags_stripped: 0
+la:
+Pro novis festis particularibus inducendis, haec serventur:
+a) festa propria Sanctorum vel Beatorum, ordinarie, diei natalicio assignentur, nisi sit impeditus aut aliter a S. Sede dispositum sit. Festa tamen alicuius loci vel ecclesiae propria, quae etiam in calendario universali vel dioecesano vel religioso gradu quidem inferiore inscribuntur, eodem die celebranda sunt ac in calendario universali vel dioecesano vel religioso;
+b) si dies natalicius ignoretur, festa assignentur, cum approbatione S. Sedis, diei qui, in calendario perpetuo dioecesano vel religioso, sit IV classis;
+c) si vero dies natalicius perpetuo impediatur pro universa dioecesi vel Religione vel ecclesia propria, festa in tali calendario particulari, si sint I vel II classis, assignentur proximiori diei sequenti qui non sit I vel II classis; si sint III classis, assignentur proximiori diei, qui ab aliis festis et Officiis paris aut superioris gradus liber exsistat;
+d) festa particularia indulta inscribantur in calendario die a S. Sede in concessione assignato.
+
+@@ 62
+page: 606
+pages: 606
+flags_stripped: 0
+la:
+Sancti vel Beati qui in calendario, ex quavis ratione, unico festo inscribuntur, semper simul celebrantur prout in Breviario habetur, quoties eodem gradu sunt colendi, etsi unus aut aliqui eorum sint magis proprii. Proinde:
+a) si unus aut aliqui ex his Sanctis festo I classis essent colendi, fit Officium de his tantum, omissis sociis;
+b) si unus aut aliqui ex his Sanctis vel Beatis essent magis proprii et gradu superiore essent colendi, fit integrum Officium de magis propriis, cum commemoratione sociorum.
+
+@@ 63
+page: 606
+pages: 606
+flags_stripped: 0
+la:
+Octava est celebratio summorum festorum per octo dies continuos protracta.
+
+@@ 64
+page: 606
+pages: 606
+flags_stripped: 0
+la:
+Celebrantur tantum octavae Nativitatis Domini, Paschatis et Pentecostes, exclusis omnibus aliis, sive in calendario universali sive in calendariis particularibus.
+
+@@ 65
+page: 606
+pages: 606
+flags_stripped: 0
+la:
+Octavae sunt I aut II classis.
+
+@@ 66
+page: 606
+pages: 606
+flags_stripped: 0
+la:
+Octavae I classis sunt octavae Paschatis et Pentecostes. Dies infra has octavas sunt I classis.
+
+@@ 67
+page: 606
+pages: 606,607
+flags_stripped: 0
+la:
+Octava II classis est octava Nativitatis Domini. Dies infra octavam sunt II classis; dies autem octavus est I classis.
+
+@@ 68
+page: 607
+pages: 607
+flags_stripped: 1
+la:
+Octava Nativitatis Domini modo peculiari ordinatur, scilicet:
+a) die 26 decembris, fit festum S. Stephani Protomart. (II classis);
+b) die 27 decembris, fit festum S. Ioannis Ap. et Evang. (II classis);
+c) die 28 decembris, fit festum Ss. Innocentium Mart. (II classis);
+d) die 29 decembris, fit commemoratio S. Thomae Episcopi et Mart.;
+e) die 31 decembris, fit commemoratio S. Silvestri I Papae et Conf.;
+f) ex festis particularibus ea tantum admittuntur quae sunt I classis et in honorem Sanctorum qui in calendario universali his diebus inscribuntur, etsi tantum ad modum commemorationis; cetera transferuntur post octavam.
+
+@@ 69
+page: 607
+pages: 607
+flags_stripped: 0
+la:
+De dominica infra octavam Nativitatis Domini, quae scilicet a die 26 ad 31 decembris occurrit, semper fit Officium cum commemoratione festi forte occurrentis, iuxta rubricas, nisi dominica incidat in festum I classis: quo in casu, fit de festo cum commemoratione dominicae.
+
+@@ 70
+page: 607
+pages: 607
+flags_stripped: 0
+la:
+Normae peculiares pro ordinandis Officio et Missa infra octavam Nativitatis Domini inveniuntur in rubricis Breviarii et Missalis.
+
+@@ 71
+page: 607
+pages: 607
+flags_stripped: 0
+la:
+Tempus sacri Adventus decurrit a I Vesperis dominicae I Adventus usque ad Nonam inclusive vigiliae Nativitatis Domini.
+
+@@ 72
+page: 607
+pages: 607
+flags_stripped: 0
+la:
+Tempus natalicium decurrit a I Vesperis Nativitatis Domini usque ad diem 13 ianuarii inclusive. Huiusmodi autem temporis spatium comprehendit:
+a)tempus Nativitatis, quod decurrit a I Vesperis Nativitatis Domini usque ad Nonam inclusive diei 5 ianuarii;
+b)tempus Epiphaniae, quod decurrit a I Vesperis Epiphaniae Domini usque ad diem 13 ianuarii inclusive.
+
+@@ 73
+page: 607
+pages: 607,608
+flags_stripped: 0
+la:
+Tempus Septuagesimae decurrit a I Vesperis dominicae in Septuagesima usque post Completorium feriae III hebdomadae Quinquagesimae.
+
+@@ 74
+page: 608
+pages: 608
+flags_stripped: 0
+la:
+Tempus quadragesimale decurrit a Matutino feriae IV cinerum usque ad Missam Vigiliae paschalis exclusive. Huiusmodi autem temporis spatium comprehendit:
+a)tempus Quadragesimae, quod decurrit a Matutino feriae IV cinerum usque ad Nonam inclusive sabbati ante dominicam I Passionis;
+b)tempus Passionis, quod decurrit a I Vesperis dominicae I Passionis usque ad Missam Vigiliae paschalis exclusive.
+
+@@ 75
+page: 608
+pages: 608
+flags_stripped: 0
+la:
+Hebdomada a dominica II Passionis seu in palmis usque ad Sabbatum sanctum inclusive dicitur Hebdomada sancta; tres autem ultimi dies eiusdem hebdomadae nomine Tridui sacri designantur.
+
+@@ 76
+page: 608
+pages: 608
+flags_stripped: 0
+la:
+Tempus paschale decurrit ab initio Missae Vigiliae paschalis usque ad Nonam inclusive sabbati in octava Pentecostes. Huiusmodi autem temporis spatium comprehendit:
+a)tempus Paschatis, quod decurrit ab initio Missae Vigiliae paschalis usque ad Nonam inclusive vigiliae Ascensionis Domini;
+b)tempus Ascensionis, quod decurrit a I Vesperis Ascensionis Domini usque ad Nonam inclusive vigiliae Pentecostes;
+c)octavam Pentecostes, quae decurrit a Missa vigiliae Pentecostes usque ad Nonam inclusive sabbati sequentis.
+
+@@ 77
+page: 608
+pages: 608
+flags_stripped: 1
+la:
+Tempus « per annum » decurrit a die 14 ianuarii usque ad Nonam sabbati ante dominicam in Septuagesima, et a I Vesperis festi Ssmae Trinitatis, id est dominicae I post Pentecosten, usque ad Nonam inclusive sabbati ante dominicam I Adventus.
+
+@@ 78
+page: 608
+pages: 608
+flags_stripped: 0
+la:
+In sabbatis, in quibus occurrit Officium de feria IV classis, fit de sancta Maria in sabbato.
+
+@@ 79
+page: 608
+pages: 608,609
+flags_stripped: 0
+la:
+Officium sanctae Mariae in sabbato incipit a Matutino et explicit post Nonam.
+
+@@ 80
+page: 609
+pages: 609
+flags_stripped: 0
+la:
+Litaniae maiores assignatae sunt diei 25 aprilis; si vero eo die occurrit dominica Paschatis vel feria II post Pascha, transferuntur in sequentem feriam III.
+
+@@ 81
+page: 609
+pages: 609
+flags_stripped: 0
+la:
+De Litaniis maioribus nihil fit in Officio, sed tantum in Missa. Earum autem commemoratio non est habenda commemoratio « de Tempore ».
+
+@@ 82
+page: 609
+pages: 609
+flags_stripped: 0
+la:
+Iuxta ecclesiarum et locorum condiciones et consuetudines, cuius rei iudex est Ordinarius loci, hoc die fit processio, in qua dicuntur Litaniae Sanctorum (quae tamen non duplicantur) cum suis precibus.
+
+@@ 83
+page: 609
+pages: 609
+flags_stripped: 0
+la:
+Si autem processio fieri nequit, locorum Ordinarii instituant peculiares supplicationes, in quibus dicantur Litaniae Sanctorum et aliae preces in processione fieri solitae.
+
+@@ 84
+page: 609
+pages: 609
+flags_stripped: 0
+la:
+Omnes qui ad recitationem divini Officii obligantur, processioni vero aut aliis peculiaribus supplicationibus, de quibus numero praecedenti, non intersunt, tenentur dicere, hoc die, Litanias Sanctorum cum suis precibus, lingua latina.
+
+@@ 85
+page: 609
+pages: 609
+flags_stripped: 0
+la:
+Si Litaniae Sanctorum cum suis precibus, iuxta locorum consuetudinem, in processione vel aliis peculiaribus supplicationibus, lingua vernacula, una cum fidelibus dicuntur, ii qui ad recitationem divini Officii obligantur, et his supplicationibus rite intersunt, non tenentur has preces lingua latina iterare.
+
+@@ 86
+page: 609
+pages: 609
+flags_stripped: 0
+la:
+Missa de Rogationibus regulariter dicenda est expleta processione, iuxta ea quae in nn. 346-347 statuuntur. Convenit autem ut Missa de Rogationibus dicatur etiam post peculiares supplicationes, quae locum tenent processionis, etsi horis vespertinis peragantur.
+
+@@ 87
+page: 609
+pages: 609,610
+flags_stripped: 0
+la:
+Litaniae minores seu Rogationes, per se, assignantur feriis II, III et IV ante festum Ascensionis Domini. Ordinariis autem locorum facultas tribuitur eas transferendi ad alios
+
+@@ 88
+page: 610
+pages: 610
+flags_stripped: 0
+la:
+De Litaniis minoribus nihil fit in Officio, sed tantum in Missa quae connectitur cum processione aut aliis peculiaribus supplicationibus.
+
+@@ 89
+page: 610
+pages: 610
+flags_stripped: 0
+la:
+Ad processionem aut alias peculiares supplicationes et Missam aut commemorationem quod attinet, serventur quae supra de Litaniis maioribus statuta sunt (nn. 81-83 et 86).
+
+@@ 90
+page: 610
+pages: 610
+flags_stripped: 1
+la:
+Litaniae Sanctorum cum suis precibus, his diebus, dicuntur tantum in processione aut aliis supplicationibus (cfr. n. 85). Proinde, qui ad recitationem divini Officii obligantur, processioni vero aut aliis peculiaribus supplicationibus non intersunt, non tenentur dicere, his diebus, Litanias Sanctorum cum suis precibus.
+
+@@ 91
+page: 610
+pages: 610,611,612
+flags_stripped: 2
+la:
+Praecedentia dierum liturgicorum, sublatis quibuslibet aliis titulis vel normis, unice regitur ex sequenti
+1. Festum Nativitatis Domini, dominica Resurrectionis et dominica Pentecostes (I classis cum octava).
+2. Triduum sacrum.
+3. Festa Epiphaniae et Ascensionis Domini, Ssmae Trinitatis, Corporis Christi, Cordis Iesu et Christi Regis.
+4. Festa Immaculatae Conceptionis et Assumptionis B. Mariae Virg.
+5. Vigilia et dies octavus Nativitatis Domini.
+6. Dominicae Adventus, Quadragesimae et Passionis, et dominica in albis.
+7. Feriae I classis superius non nominatae, nempe: IV cinerum et II, III et IV Hebdomadae sanctae.
+8. Commemoratio omnium Fidelium defunctorum, quae tamen locum cedit dominicae occurrente.
+9. Vigilia Pentecostes.
+10. Dies infra octavas Paschatis et Pentecostes.
+11. Festa I classis Ecclesiae universae superius non nominata.
+12. Festa I classis propria, nempe:
+13. Festum Patroni principalis rite constituti: a) nationis, b) regionis seu provinciae sive ecclesiasticae sive civilis, c) dioecesis.
+14. Anniversarium Dedicationis ecclesiae cathedralis.
+15. Festum Patroni principalis rite constituti loci seu oppidi vel civitatis.
+16. Festum et anniversarium Dedicationis ecclesiae propriae, aut oratorii publici vel semipublici, quod locum tenet ecclesiae.
+17. Titulus ecclesiae propriae.
+18. Festum Tituli Ordinis seu Congregationis.
+19. Festum Fundatoris canonizati Ordinis seu Congregationis.
+20. Festum Patroni principalis rite constituti Ordinis seu Congregationis, et provinciae religiosae.
+13. Festa indulta I classis, primum mobilia, deinde fixa.
+14. Festa Domini II classis, primum mobilia, deinde fixa.
+15. Dominicae II classis.
+16. Festa II classis Ecclesiae universae, quae non sunt Domini.
+17. Dies infra octavam Nativitatis Domini.
+18. Feriae II classis, nempe: Adventus a die 17 ad diem 23 decembris inclusive, et feriae Quatuor Temporum Adventus, Quadragesimae et mensis septembris.
+19. Festa propria II classis, nempe:
+20. Festum Patroni secundarii rite constituti: a) nationis, b) regionis seu provinciae sive ecclesiasticae sive civilis, c) dioecesis, d) loci seu oppidi vel civitatis.
+21. Festa Sanctorum aut Beatorum, de quibus n. 43 d.
+22. Festa Sanctorum alicui ecclesiae propria (n. 45 c).
+23. Festum Fundatoris beatificati Ordinis seu Congregationis (n. 46 b).
+24. Festum Patroni secundarii rite constituti Ordinis seu Congregationis, et provinciae religiosae (n. 46 d).
+25. Festa Sanctorum aut Beatorum, de quibus n. 46 e.
+20. Festa indulta II classis, primum mobilia, deinde fixa.
+21. Vigiliae II classis.
+22. Feriae Quadragesimae et Passionis, a feria V post cineres usque ad sabbatum ante dominicam II Passionis inclusive, exceptis feriis Quatuor Temporum.
+23. Festa III classis, in calendariis particularibus inscripta, et quidem primum festa propria, nempe:
+24. Festa Sanctorum aut Beatorum, de quibus n. 43 d.
+25. Festa Beatorum alicui ecclesiae propria (n. 45 d).
+26. Festa Sanctorum aut Beatorum, de quibus n. 46 e; deinde festa indulta, primum mobilia, deinde fixa.
+24. Festa III classis, in calendario Ecclesiae universae inscripta, primum mobilia, deinde fixa.
+25. Feriae Adventus usque ad diem 16 decembris inclusive, exceptis feriis Quatuor Temporum.
+26. Vigilia III classis.
+27. Officium sanctae Mariae in sabbato.
+28. Feriae IV classis.
+
+@@ 92
+page: 612
+pages: 612
+flags_stripped: 0
+la:
+Occurrentia dicitur occursus duorum vel plurium Officiorum uno eodemque die. Occurrentia autem dicitur accidentalis, quando dies liturgicus mobilis et dies liturgicus fixus certis solummodo annorum intervallis simul occurrunt; perpetua vero quando duo dies liturgici quotannis simul occurrunt.
+
+@@ 93
+page: 612
+pages: 612
+flags_stripped: 0
+la:
+Effectus occurrentiae est, ut Officium diei liturgici gradus inferioris Officio gradus superioris cedat: quod fieri potest per minus nobilis omissionem, aut commemorationem, aut translationem, aut repositionem, prout numeris sequentibus indicatur.
+
+@@ 94
+page: 612
+pages: 612,613
+flags_stripped: 0
+la:
+Commemoratio die fixo statuta non transfertur vel reponitur cum festo transferendo vel reponendo, sed fit suo die vel omittitur, iuxta rubricas.
+
+@@ 95
+page: 613
+pages: 613
+flags_stripped: 1
+la:
+Ius translationis in alium diem ob occurrentiam accidentalem cum die liturgico, qui in tabella praecedentiae superiorem obtinet locum, competit solummodo festis I classis. Alia festa, ab Officio gradus superioris accidentaliter impedita, aut commemorantur aut, eo anno, penitus omittuntur, iuxta rubricas. Si vero duo festa eiusdem Divinae Personae aut duo festa eiusdem Sancti vel Beati simul occurrunt, fit de festo, quod in tabella praecedentiae superiorem obtinet locum, et aliud omittitur.
+
+@@ 96
+page: 613
+pages: 613
+flags_stripped: 0
+la:
+Festum I classis impeditum a die qui in tabella praecedentiae superiorem obtinet locum, transfertur in proximum sequentem diem qui non sit I vel II classis. Attamen:
+a) festum Annuntiationis B. Mariae Virg., quando est transferendum post Pascha, transfertur, tamquam in sedem propriam, in feriam II post dominicam in albis;
+b) Commemoratio omnium Fidelium defunctorum, quando occurrit cum dominica, transfertur, tamquam in sedem propriam, in feriam II sequentem.
+
+@@ 97
+page: 613
+pages: 613
+flags_stripped: 0
+la:
+Si eodem die plura festa I classis simul occurrant, ipso die celebratur festum, quod in tabella praecedentiae superiorem obtinet locum; et alia transferuntur secundum ordinem quo in eadem tabella praecedentiae inscripta sunt.
+
+@@ 98
+page: 613
+pages: 613
+flags_stripped: 0
+la:
+Item, si plura festa I classis transferri contingat, quae diebus subsequentibus occurrunt, servetur ordo quo in tabella praecedentiae inscribuntur; in paritate autem Officium prius impeditum praecedit.
+
+@@ 99
+page: 613
+pages: 613,614
+flags_stripped: 0
+la:
+Festa translata sunt eiusdem gradus ac in sede propria.
+
+@@ 100
+page: 614
+pages: 614
+flags_stripped: 0
+la:
+Ius repositionis in alium diem, ob occurrentiam perpetuam cum die liturgico, qui in tabella praecedentiae superiorem obtinet locum, competit omnibus festis I et II classis, necnon festis particularibus III classis extra Adventum et Quadragesimam occurrentibus, quae in tota dioecesi vel in toto Ordine seu Congregatione vel in propria ecclesia impediuntur. Festa autem III classis Ecclesiae universae, in aliquo calendario particulari, et festa III classis dioeceseos vel Ordinis seu Congregationis, in aliquibus tantum ecclesiis perpetuo impedita, perpetuo aut commemorantur aut penitus omittuntur, iuxta rubricas.
+
+@@ 101
+page: 614
+pages: 614
+flags_stripped: 0
+la:
+Festa reponenda, si sint I vel II classis, assignentur proximiori diei sequenti qui non sit I vel II classis; si sint III classis, assignentur proximiori diei sequenti, qui ab aliis Officiis paris aut superioris gradus liber exsistat.
+
+@@ 102
+page: 614
+pages: 614
+flags_stripped: 0
+la:
+Dies in quem festa perpetuo impedita reposita sunt, habetur tamquam dies proprius, in quo festum repositum celebratur sub eodem gradu ac in sede propria.
+
+@@ 103
+page: 614
+pages: 614
+flags_stripped: 0
+la:
+Concurrentia dicitur concursus Vesperarum diei liturgici currentis cum I Vesperis diei liturgici subsequentis.
+
+@@ 104
+page: 614
+pages: 614
+flags_stripped: 0
+la:
+In concurrentia praeferuntur Vesperae diei liturgici classis superioris, et alterae commemorantur vel non, iuxta rubricas.
+
+@@ 105
+page: 614
+pages: 614,615
+flags_stripped: 0
+la:
+Quando vero dies liturgici, quorum Vesperae concurrunt, sunt eiusdem classis, dicuntur integrae secundae Vesperae de Officio currenti et fit commemoratio sequentis, iuxta rubricas.
+
+@@ 106
+page: 615
+pages: 615
+flags_stripped: 0
+la:
+Quae hic de commemorationibus statuuntur, valent tam pro Missa quam pro Officio, sive in occurrentia sive in concurrentia.
+
+@@ 107
+page: 615
+pages: 615
+flags_stripped: 0
+la:
+Commemorationes sunt aut privilegiatae aut ordinariae.
+
+@@ 108
+page: 615
+pages: 615
+flags_stripped: 0
+la:
+Commemorationes privilegiatae fiunt in Laudibus et in Vesperis necnon in omnibus Missis; commemorationes vero ordinariae fiunt tantum in Laudibus, in Missis conventualibus et in omnibus Missis lectis.
+
+@@ 109
+page: 615
+pages: 615
+flags_stripped: 2
+la:
+Commemorationes privilegiatae sunt commemorationes:
+a) de dominica;
+b) de die liturgico I classis;
+c) de diebus infra octavam Nativitatis Domini;
+d) de feriis Quatuor Temporum mensis septembris;
+e) de feriis Adventus, Quadragesimae et Passionis;
+f) de Litaniis maioribus, in Missa. Omnes aliae commemorationes sunt commemorationes ordinariae.
+
+@@ 110
+page: 615
+pages: 615
+flags_stripped: 0
+la:
+In Officio et Missa S. Petri semper fit commemoratio S. Pauli, et vicissim. Haec commemoratio dicitur inseparabilis; et duae orationes adeo in unam coalescere censentur ut, in numero orationum computando, pro unica habeantur. Proinde:
+a)in Officio S. Petri aut S. Pauli, oratio alterius Apostoli additur, ad Laudes et ad Vesperas, sub unica conclusione, orationi diei, absque antiphona et versu;
+b)in Missa S. Petri aut S. Pauli, oratio alterius Apostoli additur, sub unica conclusione, orationi diei;
+c) quoties vero oratio unius Apostoli addenda est ad modum commemorationis, huic orationi additur altera immediate, ante omnes alias commemorationes.
+
+@@ 111
+page: 615
+pages: 615,616
+flags_stripped: 0
+la:
+Ratio admittendi commemorationes haec est:
+a) in diebus liturgicis I classis et in Missis in cantu non conventualibus, nulla admittitur commemoratio, praeter unam privilegiatam;
+b) in dominicis II classis, una tantum admittitur commemoratio, scilicet de festo II classis, quae tamen omittitur si commemoratio privilegiata facienda sit;
+c) in aliis diebus liturgicis II classis, una tantum admittitur commemoratio, scilicet aut una privilegiata aut una ordinaria;
+d) in diebus liturgicis III et IV classis, duae tantum admittuntur commemorationes.
+
+@@ 112
+page: 616
+pages: 616
+flags_stripped: 0
+la:
+Ad commemorationes et orationes quod attinet, haec insuper serventur:
+a) Officium, Missa aut commemoratio de aliquo festo vel mysterio unius Divinae Personae excludit commemorationem aut orationem de alio festo vel mysterio eiusdem Divinae Personae;
+b) Officium, Missa aut commemoratio de dominica excludit commemorationem aut orationem de festo vel mysterio Domini, et vicissim;
+c) Officium, Missa aut commemoratio de Tempore excludit aliam commemorationem de Tempore;
+d) item, Officium, Missa aut commemoratio de B. Maria Virg. aut de aliquo Sancto vel Beato excludit aliam commemorationem aut orationem in qua eiusdem B. Mariae Virg., vel Sancti aut Beati intercessio imploretur: quod tamen non valet de oratione dominicae vel feriae, in qua fit invocatio eiusdem Sancti.
+
+@@ 113
+page: 616
+pages: 616
+flags_stripped: 0
+la:
+Commemoratio de Tempore fit primo loco. In admittendis et ordinandis aliis commemorationibus, servetur ordo tabellae praecedentiae.
+
+@@ 114
+page: 616
+pages: 616
+flags_stripped: 0
+la:
+Quaelibet commemoratio, quae numerum pro singulis diebus liturgicis statutum superet, omittitur.
+
+@@ 115
+page: 616
+pages: 616,617
+flags_stripped: 0
+la:
+Conclusio orationum tam in Missa quam in Officio haec est:
+a) si oratio dirigitur ad Patrem, concluditur: Per Dominum nostrum Iesum Christum Filium tuum, qui tecum vivit et regnat in unitate Spiritus Sancti, Deus, per omnia saecula saeculorum. Amen;
+b) si oratio dirigitur ad Patrem, sed in eius principio fit mentio Filii, concluditur: Per eundem Dominum nostrum, etc. ut supra;
+c) si oratio dirigitur ad Patrem, sed in fine ipsius fit mentio Filii, concluditur: Qui tecum vivit et regnat in unitate Spiritus Sancti, Deus, per omnia saecula saeculorum. Amen;
+d) si oratio dirigitur ad Filium, concluditur: Qui vivis et regnas cum Deo Patre in unitate Spiritus Sancti, Deus, per omnia saecula saeculorum. Amen;
+e) si in oratione facta est mentio Spiritus Sancti, in conclusione dicitur: …in unitate eiusdem Spiritus Sancti, etc.
+
+@@ 116
+page: 617
+pages: 617
+flags_stripped: 0
+la:
+Servandae sunt etiam aliae peculiares conclusiones in libris liturgicis quandoque notatae.
+
+@@ 117
+page: 617
+pages: 617
+flags_stripped: 0
+la:
+Paramenta altaris, celebrantis et ministrorum debent esse coloris convenientis Officio et Missae diei aut alteri Missae celebrandae, secundum usum Romanae Ecclesiae, quae quinque coloribus uti consuevit: albo, rubro, viridi, violaceo et nigro. Indulta tamen et consuetudines legitimae circa usum aliorum colorum in suo robore manent. Sicubi vero in regionibus Missionum, ex probata et originali traditione gentis indigenae, significatio unius vel alterius coloris liturgici Ecclesiae Romanae cum significatione quae illis populis congenita est non congruit, Conferentiae episcopali eiusdem regionis, vel maioris territorii, si ita magis conveniat, facultas datur, ut in locum coloris inepti alium colorem magis aptum substituant; hoc tamen non fiat inconsulta S. Rituum Congregatione.
+
+@@ 118
+page: 617
+pages: 617
+flags_stripped: 0
+la:
+Ad colorem paramentorum in Missis votivis lectis IV classis quod attinet, ea quae n. 323 traduntur, recolantur.
+
+@@ 119
+page: 617
+pages: 617
+flags_stripped: 0
+la:
+Colore albo utendum est in Officio et Missa de Tempore:
+a) a festo Nativitatis Domini usque ad expletum tempus Epiphaniae;
+b) a Missa Vigiliae paschalis usque ad Missam vigiliae Pentecostes exclusive.
+
+@@ 120
+page: 617
+pages: 617,618
+flags_stripped: 0
+la:
+Adhibetur color albus in Officio et Missa de festis:
+a) Domini, exceptis festis de mysteriis et instrumentis Passionis;
+b) B. Mariae Virg., etiam in benedictione et processione candelarum die 2 februarii;
+c) Ss. Angelorum;
+d) Omnium Sanctorum (1 novembris);
+e) Sanctorum non Martyrum;
+f) S. Ioannis Ap. et Ev. (27 decembris); Cathedrae S. Petri (22 februarii); Conversionis S. Pauli (25 ianuarii); Nativitatis S. Ioannis Baptistae (24 iunii).
+
+@@ 121
+page: 618
+pages: 618
+flags_stripped: 0
+la:
+Colorem album requirunt Missae votivae:
+a) quae respondent festis, de quibus numero praecedenti;
+b) de D. N. Iesu Christo, summo atque aeterno Sacerdote;
+c) de coronatione Summi Pontificis, et de anniversariis Summi Pontificis et Episcopi dioecesani;
+d) « Pro Sponsis ».
+
+@@ 122
+page: 618
+pages: 618
+flags_stripped: 0
+la:
+Demum adhibetur color albus, feria V Hebdomadae sanctae, in Missa Chrismatis et in Missa in Cena Domini; necnon, a diacono, pro cantu praeconii paschalis et, a celebrante, ad renovationem promissionum baptismatis in Vigilia paschali.
+
+@@ 123
+page: 618
+pages: 618
+flags_stripped: 0
+la:
+Rubro colore utendum est in Officio et Missa de Tempore a Missa vigiliae Pentecostes usque ad Nonam sabbati sequentis.
+
+@@ 124
+page: 618
+pages: 618
+flags_stripped: 0
+la:
+Item adhibetur color ruber in Officio et Missa de festis:
+a) mysteriorum et instrumentorum Passionis Domini;
+b) Sanctorum Apostolorum et Evangelistarum, in eorum die natalicio, excepto festo S. Ioannis (27 decembris);
+c) Commemorationis S. Pauli Apostoli (30 iunii);
+d) Commemorationis omnium Ss. Summorum Pontificum;
+e) Sanctorum Martyrum, quorum colitur aut martyrium, aut inventio, aut translatio;
+f) Sanctorum Reliquiarum.
+
+@@ 125
+page: 618
+pages: 618
+flags_stripped: 0
+la:
+Colorem rubrum requirunt Missae votivae:
+a) de Passione Domini;
+b) de Spiritu Sancto;
+c) de Mysteriis et Sanctis, de quibus numero praecedenti;
+d) pro eligendo Summo Pontifice.
+
+@@ 126
+page: 618
+pages: 618,619
+flags_stripped: 0
+la:
+Demum adhibetur color ruber, dominica II Passionis seu in palmis, ad benedictionem et processionem ramorum.
+
+@@ 127
+page: 619
+pages: 619
+flags_stripped: 0
+la:
+Color viridis adhibetur in Officio et Missa de Tempore:
+a) a die 14 ianuarii usque ad sabbatum ante Septuagesimam;
+b) a feria II post dominicam I post Pentecosten, usque ad sabbatum ante Adventum. Excipiuntur feriae Quatuor Temporum mensis septembris et vigiliae II et III classis, extra tempus paschale.
+
+@@ 128
+page: 619
+pages: 619
+flags_stripped: 0
+la:
+Color violaceus adhibetur in Officio et Missa de Tempore:
+a) a dominica I Adventus usque ad vigiliam Nativitatis Domini inclusive;
+b) a dominica in Septuagesima usque ad Vigiliam paschalem, exceptis: benedictione et processione ramorum in dominica II Passionis; Missa sive Chrismatis sive in Cena Domini feria V Hebdomadae sanctae; Actione liturgica feria VI in Passione et Morte Domini usque ad Communionem exclusive; necnon cantu praeconii paschalis, pro diacono, et renovatione promissionum baptismatis, pro celebrante, in Vigilia paschali;
+c) in feriis Quatuor Temporum mensis septembris;
+d) in vigiliis II et III classis, extra tempus paschale.
+
+@@ 129
+page: 619
+pages: 619
+flags_stripped: 0
+la:
+Missae votivae, quae colorem violaceum requirunt, sunt:
+a) Pro Fidei propagatione;
+b) Pro Ecclesiae defensione;
+c) Pro unitate Ecclesiae;
+d) Tempore belli;
+e) Pro pace;
+f) Pro vitanda mortalitate;
+g) Pro remissione peccatorum;
+h) Pro peregrinantibus et iter agentibus;
+i) Pro infirmis;
+l) Ad postulandam gratiam bene moriendi;
+m) Pro quacumque necessitate.
+
+@@ 130
+page: 619
+pages: 619,620
+flags_stripped: 0
+la:
+Adhibetur color violaceus etiam:
+a) ad processionem et Missam in Litaniis maioribus et minoribus;
+b) ad benedictionem cinerum;
+c) ad Communionem in Actione liturgica feriae VI in Passione et Morte Domini;
+d) in Missis de Commemoratione omnium Fidelium defunctorum, quae celebrantur tempore expositionis Ssmi Sacramenti pro oratione Quadraginta Horarum.
+
+@@ 131
+page: 620
+pages: 620
+flags_stripped: 0
+la:
+Paramenta coloris rosacei adhiberi possunt, dominica III Adventus et dominica IV Quadragesimae, sed in Officio et Missa diei dominici tantum.
+
+@@ 132
+page: 620
+pages: 620
+flags_stripped: 0
+la:
+Nigro colore utendum est:
+a) in Actione liturgica feriae VI in Passione et Morte Domini, usque ad Communionem exclusive;
+b) in Officiis ac Missis defunctorum, excepto casu de quo supra, n. 130 d.
+
+@@ 133
+page: 620
+pages: 620
+flags_stripped: 0
+la:
+In Missa, sacerdos celebrans semper utitur planeta seu casula.
+
+@@ 134
+page: 620
+pages: 620
+flags_stripped: 0
+la:
+Episcopus, et alii qui usu Pontificalium gaudent, si solemniter celebrant, planetam induunt super dalmaticam et tunicellam. Item, planetam super dalmaticam et tunicellam induit Episcopus, etiam in Missa lecta:
+a) in consecratione Episcopi;
+b) in collatione sacrorum Ordinum;
+c) in benedictione Abbatis;
+d) in benedictione Abbatissae;
+e) in benedictione et consecratione Virginum;
+f) in consecratione ecclesiae et altaris. Attamen Episcopus aliique de quibus supra, ex rationabili causa, a sumenda tunicella et dalmatica subter planetam abstinere possunt.
+
+@@ 135
+page: 620
+pages: 620,621
+flags_stripped: 0
+la:
+Pluviale adhibetur:
+a) in Officio Laudum et Vesperarum, quando solemniter dicuntur;
+b) in benedictionibus, quae fiunt ad altare;
+c) in processionibus;
+d) in absolutione super cadaver aut super tumulum;
+e) in Missa pontificali, a presbytero assistente;
+f) ad « orationes solemnes » in Actione liturgica feriae VI in Passione et Morte Domini;
+g) in Vigilia paschali.
+
+@@ 136
+page: 621
+pages: 621
+flags_stripped: 0
+la:
+Cum celebrans utitur pluviali, numquam adhibet manipulum; et si pluviale haberi non potest, in benedictionibus quae fiunt ad altare, sacerdos stat in alba cum stola, sine planeta et manipulo.
+
+@@ 137
+page: 621
+pages: 621,622
+flags_stripped: 0
+la:
+Dalmatica et tunicella utuntur diaconus, respective subdiaconus, quando sacerdoti ministrant:
+a) in Missa;
+b) in benedictionibus ad altare;
+c) in processionibus. Attamen cum sacerdos celebrans stat sine pluviali, etiam ministri stant sine dalmatica et tunicella. Planetae plicatae et stola latior amplius non adhibentur.
+
+@@ 138
+page: 622
+pages: 622
+flags_stripped: 0
+la:
+Horae canonicae Breviarii romani sunt: Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vesperae et Completorium. Ex his Matutinum, Laudes et Vesperae dicuntur Horae maiores; Prima, Tertia, Sexta, Nona et Completorium Horae minores appellantur. Completorium vero a rubricis plerumque separatim consideratur.
+
+@@ 139
+page: 622
+pages: 622
+flags_stripped: 0
+la:
+Obligatio dicendi divinum Officium comprehendit omnes Horas canonicas cursus quotidiani.
+
+@@ 140
+page: 622
+pages: 622
+flags_stripped: 0
+la:
+Officium divinum absolvitur aut in choro, aut in communi, aut a solo. Dicitur autem in choro, si absolvitur a communitate per leges ecclesiasticas choro obligata; in communi vero, si idem fit a communitate, quae choro non est adstricta.
+
+@@ 141
+page: 622
+pages: 622
+flags_stripped: 0
+la:
+Normae quae sequuntur valent tam pro absolutione divini Officii in choro vel in communi (etsi fiat a duabus vel tribus personis tantum) quam pro absolutione a solo, nisi aliter expresse caveatur.
+
+@@ 142
+page: 622
+pages: 622,623
+flags_stripped: 0
+la:
+Horae canonicae Officii divini ordinantur, ex earum constitutione, ad sanctificationem diversarum horarum diei naturalis. Praestat, proinde, sive ad diem revera sanctificandum sive ad ipsas Horas cum fructu spirituali recitandas, ut in earum absolutione, tempus servetur quod proxime accedat ad tempus verum uniuscuiusque Horae canonicae.
+
+@@ 143
+page: 623
+pages: 623
+flags_stripped: 0
+la:
+Attamen ad satisfaciendum obligationi divini Officii recitandi, sufficit ut omnes Horae canonicae intra spatium vigintiquatuor horarum diei dicantur.
+
+@@ 144
+page: 623
+pages: 623
+flags_stripped: 0
+la:
+Matutinum, ex iusta causa, horis postmeridianis diei praecedentis anticipare licet, non tamen ante horam quartamdecimam.
+
+@@ 145
+page: 623
+pages: 623
+flags_stripped: 0
+la:
+Laudes, cum sint precatio matutina, in choro et in communi primo mane dicuntur: quod convenienter servatur etiam in recitatione a solo facta.
+
+@@ 146
+page: 623
+pages: 623
+flags_stripped: 0
+la:
+Vesperae, etiam tempore Quadragesimae et Passionis, in choro et in communi, horis postmeridianis dicuntur: quod convenienter servatur etiam in recitatione a solo facta.
+
+@@ 147
+page: 623
+pages: 623
+flags_stripped: 0
+la:
+Completorium, ab omnibus qui ad recitationem divini Officii obligantur, praesertim autem in familiis religiosis, valde opportune dicitur tamquam ultima precatio in fine diei, etiam si, ob iustam causam, Matutinum diei sequentis iam anticipatum fuerit. Hoc in casu, Pater noster, alias dicendum post versum Adiutorium nostrum, omittitur et eius loco, in choro et in communi, fit examen conscientiae per rationabile tempus protractum; deinde dicitur Confiteor et reliqua, more solito; quod convenienter servatur etiam in recitatione a solo facta.
+
+@@ 148
+page: 623
+pages: 623
+flags_stripped: 0
+la:
+Officium divinum absolvendum est iuxta calendarium proprium vel, eo deficiente, iuxta calendarium Ecclesiae universae, prout numeris sequentibus indicatur.
+
+@@ 149
+page: 623
+pages: 623
+flags_stripped: 0
+la:
+Beneficiarii sequi tenentur calendarium suae ecclesiae (n. 53 b).
+
+@@ 150
+page: 623
+pages: 623,624
+flags_stripped: 0
+la:
+Clerici dioecesani sequi debent calendarium ecclesiae vel oratorii cui stabiliter sunt addicti (n. 53 b); vel, si nulli ecclesiae vel oratorio sint stabiliter addicti, aut si extra suam dioecesim diutius versentur, calendarium suae dioecesis, additis festis loci in quo domicilium habent (n. 44), aut calendarium loci in quo commorantur.
+
+@@ 151
+page: 624
+pages: 624
+flags_stripped: 0
+la:
+Religiosi utriusque sexus choro adstricti servant calendarium suae domus (n. 56 b); aut, quando choro intersunt in alia domo sui Ordinis, calendarium illius domus in qua actu versantur.
+
+@@ 152
+page: 624
+pages: 624
+flags_stripped: 0
+la:
+Religiosi calendarium proprium habentes, sed choro non adstricti, servant calendarium suae domus (n. 56 b); aut, si in alia domo suae Congregationis seu Instituti Officium in communi recitant, calendarium illius domus in qua actu versantur.
+
+@@ 153
+page: 624
+pages: 624
+flags_stripped: 0
+la:
+Religiosi qui calendarium proprium non habent, servant calendarium suae ecclesiae (n. 53 b), additis tamen festis propriis et indultis (n. 46).
+
+@@ 154
+page: 624
+pages: 624
+flags_stripped: 0
+la:
+In seminariis et collegiis clericorum dioecesanis, Religiosis commissis, pro absolutione divini Officii in communi, sive a clericis sive a Religiosis qui una cum clericis Officium in communi dicunt, adhibendum est calendarium loci (n. 53 a), additis festis ecclesiae seminarii vel collegii (n. 45), data insuper facultate adiungendi festa Tituli necnon sancti Fundatoris Religiosorum quibus regimen seminarii commissum est.
+
+@@ 155
+page: 624
+pages: 624
+flags_stripped: 0
+la:
+In seminariis et collegiis clericorum interdioecesanis, regionalibus, nationalibus et internationalibus, pro absolutione divini Officii in communi, adhibendum est calendarium Ecclesiae universae, additis festis Patroni principalis nationis, regionis seu provinciae sive ecclesiasticae sive civilis, dioecesis, oppidi seu civitatis, anniversario Dedicationis ecclesiae cathedralis dioecesis et aliis festis actu feriatis, si quae sint, necnon festis ecclesiae seminarii vel collegii (n. 45). Si autem huiusmodi seminariorum regimen Religiosis commissum sit, calendarium Ecclesiae universae adhibendum est etiam a Religiosis qui una cum clericis Officium in communi absolvunt, data tamen facultate addendi festa tituli Ordinis seu Congregationis necnon sancti Fundatoris Religiosorum quibus regimen seminarii commissum est.
+
+@@ 156
+page: 624
+pages: 624
+flags_stripped: 0
+la:
+In collegiis et domibus interprovincialibus, nationalibus et internationalibus Religiosorum, pro absolutione divini Officii in choro vel in communi, adhibendum est calendarium proprium Ordinis seu Congregationis universae (n. 55), additis tantum festis propriae ecclesiae (n. 45) necnon festis de quibus n. 57.
+
+@@ 157
+page: 624
+pages: 624,625
+flags_stripped: 0
+la:
+Quivis tamen clericus dioecesanus, aut quivis religiosus utriusque sexus, Officio divino quolibet titulo adstrictus, qui Officio participat in choro vel in communi iuxta aliud calendarium aut alium ritum quam suum, hoc modo suo muneri, quoad hanc partem Officii, satisfacit. Item cum quis Vesperis votivis alicuius solemnitatis externae participat, suo muneri, quoad hanc partem Officii, satisfacit, dummodo praedictae Vesperae integrae et servatis rubricis celebratae fuerint.
+
+@@ 158
+page: 625
+pages: 625
+flags_stripped: 0
+la:
+De extensione divini Officii pro singulis diebus liturgicis, supra dictum est, numeris scilicet 13, 27, 34, 37.
+
+@@ 159
+page: 625
+pages: 625
+flags_stripped: 0
+la:
+De qualitate divini Officii recitandi, et de ratione sumendi singulas Horarum partes, iuxta dierum liturgicorum diversitatem, infra nn. 165-177 dicetur.
+
+@@ 160
+page: 625
+pages: 625
+flags_stripped: 0
+la:
+Ratio dicendi singulas Horas habetur in Ordinario divini Officii.
+
+@@ 161
+page: 625
+pages: 625
+flags_stripped: 0
+la:
+Matutinum cum tribus Nocturnis, scilicet novem psalmorum cum novem lectionibus habent:
+a) festa I et II classis;
+b) feriae Tridui sacri;
+c) dies octavus Nativitatis Domini;
+d) Commemoratio omnium Fidelium defunctorum.
+
+@@ 162
+page: 625
+pages: 625
+flags_stripped: 0
+la:
+Matutinum cum unico Nocturno novem psalmorum et trium lectionum habent:
+a) dominicae omnes, praeter dominicas Paschatis et Pentecostes;
+b) omnes feriae, exceptis feriis Tridui sacri;
+c) omnes vigiliae;
+d) festa III classis;
+e) dies infra octavam Nativitatis Domini;
+f) Officium sanctae Mariae in sabbato.
+
+@@ 163
+page: 625
+pages: 625
+flags_stripped: 0
+la:
+Matutinum cum unico Nocturno trium psalmorum et trium lectionum habent dominicae Paschatis et Pentecostes et dies infra earum octavas.
+
+@@ 164
+page: 625
+pages: 625,626
+flags_stripped: 0
+la:
+Festa quae non habent I Vesperas et, ob quamlibet causam, iuxta rubricas eas acquirunt, omnia sumunt e I Vesperis, iis tantum exceptis, quae forte pro I Vesperis propria ponuntur.
+
+@@ 165
+page: 626
+pages: 626
+flags_stripped: 0
+la:
+Officium dominicale competit diebus dominicis, in quibus non occurrat festum quod ipsi dominicae praeferatur. Habent tamen peculiarem ordinationem Officii:
+a) dominicae Paschatis et Pentecostes;
+b) dominica infra octavam Nativitatis Domini.
+
+@@ 166
+page: 626
+pages: 626
+flags_stripped: 0
+la:
+Officium dominicale ordinatur hoc modo:
+a)Ad I Vesperas: omnia ut in Ordinario et Psalterio, sabbato praecedenti, iis exceptis quae propria assignantur.
+b)Completorium subsequens: de sabbato.
+c)Ad Matutinum: invitatorium et hymnus ut in Ordinario vel Psalterio; antiphonae, psalmi et versus unici Nocturni, ut in Psalterio dominicae; absolutio Exaudi, benedictiones Ille nos, Divinum auxilium, Per evangelica dicta; lectiones prima et secunda, cum suis responsoriis, de Scriptura occurrenti (n. 220 a); lectio tertia de homilia in Evangelium diei (n. 220 b); hymnus Te Deum, qui omittitur in dominicis Adventus, et a dominica in Septuagesima usque ad dominicam II Passionis; quo in casu, dicitur tertium responsorium.
+d)Ad Laudes: antiphonae, nisi propriae assignentur, de Psalterio; psalmi e Psalterio dominicae, e I vel II schemate, iuxta diversitatem temporum (n. 197); capitulum, hymnus et versus, ut in Ordinario vel Psalterio aut Proprio de Tempore; reliqua ut in Proprio de Tempore.
+e)Ad Primam: antiphona, nisi propria habeatur, et psalmi e Psalterio de dominica; capitulum et reliqua ut in Ordinario; lectio brevis de Tempore.
+f)Ad Tertiam, Sextam et Nonam: omnia ut in Ordinario et Psalterio, iis exceptis quae propria assignantur.
+g)Ad II Vesperas: omnia ut in Ordinario et Psalterio, iis exceptis quae propria assignantur.
+h)Completorium: de dominica.
+
+@@ 167
+page: 626
+pages: 626,627
+flags_stripped: 0
+la:
+Officium festivum competit festis I classis; et ordinatur hoc modo:
+a)Ad I Vesperas: omnia e Proprio vel Communi;
+b)Completorium subsequens: de dominica.
+c)Ad Matutinum: omnia e Proprio vel Communi; et dicitur hymnus Te Deum.
+d)Ad Laudes: omnia e Proprio vel Communi, cum psalmis de dominica, primo loco.
+e)Ad Primam: antiphona prima e Laudibus; psalmi 53, 118¹ et 118²; capitulum et reliqua, ut in Ordinario; lectio brevis de Tempore.
+f)Ad Tertiam, Sextam et Nonam: antiphonae secunda, tertia et quinta e Laudibus, per ordinem; psalmi de dominica; reliqua e Proprio vel Communi.
+g)Ad II Vesperas: omnia e Proprio vel Communi.
+h)Completorium: de dominica.
+
+@@ 168
+page: 627
+pages: 627
+flags_stripped: 0
+la:
+Officium semifestivum competit festis II classis; et ordinatur hoc modo:
+a)Ad Matutinum, Laudes et Vesperas: omnia ut in Officio festivo.
+b)Ad Primam: antiphona et psalmi e Psalterio, de currenti hebdomadae die; capitulum et reliqua, ut in Ordinario; lectio brevis de Tempore.
+c)Ad Tertiam, Sextam et Nonam: antiphonae et psalmi e Psalterio de currenti hebdomadae die; reliqua de festo, ut in Proprio vel Communi.
+d)Completorium: de dominica.
+
+@@ 169
+page: 627
+pages: 627,628
+flags_stripped: 0
+la:
+Officium ordinarium competit festis III classis necnon Officio sanctae Mariae in sabbato; et ordinatur hoc modo:
+a)Ad Matutinum: invitatorium et hymnus e Proprio vel Communi; antiphonae, psalmi et versus unici Nocturni e Psalterio de currenti hebdomadae die, nisi propria aut de Communi assignentur (n. 177); lectiones prima et secunda, cum suis responsoriis, de Scriptura, ut n. 221 a indicatur; lectio tertia de festo (n. 221 b); et dicitur hymnus Te Deum.
+b)Ad Laudes et ad Vesperas: antiphonae et psalmi ut in Psalterio de currenti hebdomadae die, nisi propria aut de Communi assignentur (n. 177); reliqua ut in Proprio vel Communi.
+c)Ad Primam: antiphona et psalmi e Psalterio de currenti hebdomadae die; capitulum et reliqua, ut in Ordinario; lectio brevis de Tempore.
+d)Ad Tertiam, Sextam et Nonam: antiphonae et psalmi ut in Psalterio de currenti hebdomadae die; reliqua de festo, ut in Proprio vel Communi.
+e)Completorium: de currenti hebdomadae die.
+
+@@ 170
+page: 628
+pages: 628
+flags_stripped: 0
+la:
+Officium feriale competit omnibus feriis et vigiliis, exceptis:
+a) Triduo sacro;
+b) vigilia Nativitatis Domini.
+
+@@ 171
+page: 628
+pages: 628
+flags_stripped: 0
+la:
+Officium feriale ordinatur hoc modo:
+a)Ad Matutinum: invitatorium et hymnus e Psalterio vel Ordinario, iuxta diversitatem temporum; antiphonae, psalmi et versus unici Nocturni e Psalterio, de currenti hebdomadae die; in feriis, tres lectiones de Scriptura occurrenti vel de homilia in Evangelium diei cum suis responsoriis; in vigiliis, tres lectiones propriae de homilia cum responsoriis de feria currenti. Hymnus Te Deum dicitur tantum in feriis temporis natalicii et paschalis; aliis temporibus, dicitur tertium responsorium.
+b)Ad Laudes et ad Vesperas: omnia ut in Psalterio, de currenti hebdomadae die, et in Ordinario, iuxta diversitatem temporum, iis exceptis quae propria assignantur. In feriis, sumitur oratio propria si habeatur, secus de dominica praecedenti, nisi alia assignetur; in vigiliis autem dicitur oratio propria.
+c)Ad Primam: antiphona, nisi propria assignetur, et psalmi e Psalterio, de currenti hebdomadae die; capitulum et reliqua, ut in Ordinario; lectio brevis de Tempore.
+d)Ad Tertiam, Sextam et Nonam: antiphona, nisi propria assignetur, et psalmi e Psalterio de currenti hebdomadae die; capitulum et reliqua, ut in Ordinario, iuxta diversitatem temporum; oratio ut ad Laudes.
+e)Completorium: de currenti hebdomadae die.
+
+@@ 172
+page: 628
+pages: 628,629
+flags_stripped: 0
+la:
+In dominicis Paschatis et Pentecostes, et diebus infra earum octavas, ad Horas minores, dicuntur psalmi de dominica, ad Primam tamen ut in festis, scilicet psalmi 53, 118¹ et 118².
+
+@@ 173
+page: 629
+pages: 629
+flags_stripped: 0
+la:
+In Triduo sacro, in vigilia Nativitatis Domini, et in Officiis defunctorum, Officium ordinatur iuxta speciales rubricas quae, suis locis, in Breviario inveniuntur.
+
+@@ 174
+page: 629
+pages: 629
+flags_stripped: 0
+la:
+In festis Domini II classis, quae in dominicis Septuagesimae, Sexagesimae aut Quinquagesimae occurrant, ad Horas minores sumuntur antiphonae e Laudibus, ut in Officio festivo, retentis tamen, ad Primam, psalmis de dominica, scilicet psalmis 117, 118¹ et 118².
+
+@@ 175
+page: 629
+pages: 629
+flags_stripped: 0
+la:
+Diebus infra octavam Nativitatis Domini, liberis a festis Sanctorum, Officium ordinatur hoc modo:
+a)Matutinum habet novem psalmos cum tribus lectionibus. Invitatorium, hymnus, antiphonae et psalmi dicuntur ut in festo Nativitatis; versus, ut in tertio Nocturno festi; tres vero lectiones de Scriptura occurrenti cum suis responsoriis, ut singulis diebus indicatur.
+b)Ad Laudes: omnia ut in festo Nativitatis Domini.
+c)Ad Horas minores dicuntur antiphonae et psalmi de die currenti, ut in Psalterio; reliqua ut in festo Nativitatis.
+d)Ad Vesperas, excepto die 31 decembris, antiphonae et psalmi sumuntur e II Vesperis diei Nativitatis; a capitulo autem fit de octava, ut in festo, nisi faciendum sit de sequenti dominica aut de sequenti festo I classis.
+e)Completorium: de dominica.
+
+@@ 176
+page: 629
+pages: 629
+flags_stripped: 0
+la:
+In dominica infra octavam Nativitatis Domini, Officium ordinatur eodem modo ac aliis diebus infra octavam (n. 175), retentis iis quae propria habentur. Ad lectiones vero Matutini quod attinet, haec serventur:
+a) si dominica die 26, 27 aut 28 decembris occurrit, lectiones prima et secunda, cum suis responsoriis, sumuntur e primo Nocturno diei Nativitatis, modo in n. 221 indicato; tertia vero de homilia in evangelium diei (n. 220 b);
+b) si aliis diebus occurrit, lectiones prima et secunda dicuntur de Scriptura occurrenti, et tertia de homilia in evangelium diei, ut in Officio dominicali (n. 220).
+
+@@ 177
+page: 629
+pages: 629,630
+flags_stripped: 0
+la:
+In festis III classis, tam universalibus quam particularibus, quae ad certas Horas habent aut antiphonas proprias et psalmos de Communi, aut antiphonas proprias et psalmos specialiter assignatos, serventur rubricae particulares quae, in Breviario, suis locis occurrunt.
+
+@@ 178
+page: 630
+pages: 630
+flags_stripped: 0
+la:
+Horae canonicae sive in choro, sive in communi sive a solo, inchoantur absolute hoc modo:
+a)Matutinum a versu Domine, labia mea aperies;
+b)Laudes, Horae minores et Vesperae, a versu Deus, in adiutorium meum intende;
+c)Completorium a versu Iube, domne (Domine), benedicere.
+
+@@ 179
+page: 630
+pages: 630
+flags_stripped: 0
+la:
+Item Horae canonicae sive in choro, sive in communi, sive a solo, absolvuntur hoc modo:
+a)Matutinum (si a Laudibus separetur), Laudes, Tertia, Sexta, Nona et Vesperae: versu Fidelium animae;
+b)Prima, benedictione Dominus nos benedicat;
+c)Completorium, benedictione Benedicat et custodiat.
+
+@@ 180
+page: 630
+pages: 630
+flags_stripped: 0
+la:
+In officio Tridui sacri et defunctorum, Horae inchoantur et absolvuntur ut in Breviario notatur. Item, Matutinum festi Epiphaniae Domini modo proprio inchoatur.
+
+@@ 181
+page: 630
+pages: 630
+flags_stripped: 0
+la:
+Cursus quotidianus divini Officii concluditur, post Completorium, antiphona B. Mariae V. cum suo versu ac oratione, et cum versu Divinum auxilium, exceptis Officiis Tridui sacri et defunctorum.
+
+@@ 182
+page: 630
+pages: 630
+flags_stripped: 0
+la:
+Invitatorium cum psalmo 94, Venite, exsultemus, dicitur, modo in Ordinario descripto, in initio Matutini cuiusque Officii, exceptis Officiis Tridui sacri, et festi Epiphaniae Domini.
+
+@@ 183
+page: 630
+pages: 630
+flags_stripped: 0
+la:
+In fine invitatorii, tempore paschali, additur Alleluia, nisi iam habeatur.
+
+@@ 184
+page: 630
+pages: 630,631
+flags_stripped: 0
+la:
+Ratio sumendi invitatorium, iuxta diversitatem dierum liturgicorum, habetur supra, ubi agitur de ordinando Officio (nn. 165-177).
+
+@@ 185
+page: 631
+pages: 631
+flags_stripped: 0
+la:
+Hymni dicuntur in qualibet Hora, loco in Ordinario indicato. Omittuntur vero in Matutino Epiphaniae Domini, a Matutino feriae V in Cena Domini usque ad Nonam sabbati in albis, et in Officio defunctorum.
+
+@@ 186
+page: 631
+pages: 631
+flags_stripped: 0
+la:
+Ad Horas minores et ad Completorium semper dicuntur hymni in Ordinario pro iisdem Horis assignati, praeterquam in festo Pentecostes et infra octavam, ad Tertiam.
+
+@@ 187
+page: 631
+pages: 631
+flags_stripped: 0
+la:
+Hymni proprii, certis Horis assignati, numquam ad aliam Horam transferuntur.
+
+@@ 188
+page: 631
+pages: 631
+flags_stripped: 0
+la:
+Quilibet hymnus semper dicitur sub conclusione quae ipsi in Breviario assignatur, exclusa quavis conclusionis mutatione ratione festi vel Temporis.
+
+@@ 189
+page: 631
+pages: 631
+flags_stripped: 0
+la:
+Officium commemorativum numquam doxologiam propriam inducit in fine hymnorum Officii diei.
+
+@@ 190
+page: 631
+pages: 631
+flags_stripped: 0
+la:
+Antiphonae dicuntur ad omnes Horas ante et post psalmos et cantica, una vel plures iuxta diversitatem Officii et Horarum, ut suis locis indicatur. Omittuntur vero, ad Horas minores et ad Completorium: in Triduo sacro, in dominica et per octavam Paschatis, et in Officio defunctorum diei 2 novembris.
+
+@@ 191
+page: 631
+pages: 631
+flags_stripped: 0
+la:
+Antiphonae dicuntur semper integrae ante et post psalmos et cantica, ad omnes Horas, tam maiores quam minores. Asteriscus, qui post prima antiphonae verba notatur, indicat eo usque intonationem esse producendam.
+
+@@ 192
+page: 631
+pages: 631
+flags_stripped: 0
+la:
+Antiphonae propriae certis Horis assignatae, si dici nequeunt, non transferuntur, sed omittuntur.
+
+@@ 193
+page: 631
+pages: 631,632
+flags_stripped: 0
+la:
+Antiphona ad Magnificat in I Vesperis dominicae primae mensis augusti, septembris, octobris et novembris ea est, quae in Breviario ante dominicam primam cuiusque mensis invenitur, et respondet libro sacrae Scripturae in dominica legendo.
+
+@@ 194
+page: 632
+pages: 632
+flags_stripped: 0
+la:
+Ad Vesperas feriae VI, tempore paschali, pro antiphona ad Magnificat resumitur antiphona ad Magnificat e II Vesperis dominicae praecedentis.
+
+@@ 195
+page: 632
+pages: 632
+flags_stripped: 0
+la:
+In fine antiphonarum, tempore paschali, additur Alleluia, nisi iam habeatur. A Septuagesima autem usque ad Sabbatum sanctum, Alleluia, si forte in antiphonis occurrat, omittitur.
+
+@@ 196
+page: 632
+pages: 632
+flags_stripped: 0
+la:
+Psalmi, ad singulas Horas, sumuntur secundum normas de ordinando Officio iuxta diversitatem dierum liturgicorum (nn. 165-177).
+
+@@ 197
+page: 632
+pages: 632
+flags_stripped: 0
+la:
+Ad Matutinum feriae IV et, singulis hebdomadae diebus, ad Laudes, in Psalterio duplex ponitur psalmorum schema. Alterum psalmorum schema adhibetur:
+a) in dominicis temporis Septuagesimae, Quadragesimae et Passionis;
+b) in omnibus feriis temporis Adventus, Septuagesimae, Quadragesimae et Passionis, Quatuor Temporum septembris, et in vigiliis II et III classis extra tempus paschale. Reliquis diebus, sumitur primum psalmorum schema.
+
+@@ 198
+page: 632
+pages: 632
+flags_stripped: 0
+la:
+Quando psalmus vel canticum incipit per eadem verba quibus constat antiphona, haec verba omittuntur, et psalmus vel canticum inchoatur ab eo verbo ante quod desinit antiphona, dummodo post antiphonam non sit addendum Alleluia.
+
+@@ 199
+page: 632
+pages: 632
+flags_stripped: 0
+la:
+Psalmus, qui in Hora cui specialiter assignatur dici nequit, non transfertur, sed omittitur.
+
+@@ 200
+page: 632
+pages: 632
+flags_stripped: 0
+la:
+Cantica Benedictus, Magnificat et Nunc dimittis dicuntur suo loco, ut in Ordinario indicatur.
+
+@@ 201
+page: 632
+pages: 632
+flags_stripped: 0
+la:
+In fine psalmorum et canticorum, excepto cantico Benedicite, dicitur Gloria Patri, quod omittitur per Triduum sacrum. In Officio defunctorum tamen, loco versus Gloria Patri dicitur versus Requiem aeternam, ut suo loco notatur.
+
+@@ 202
+page: 632
+pages: 632,633
+flags_stripped: 0
+la:
+Asteriscus in versibus psalmorum et canticorum denotat pausam cantus vel recitationis in choro et in communi servandam.
+
+@@ 203
+page: 633
+pages: 633
+flags_stripped: 0
+la:
+Symbolum athanasianum dicitur solummodo in festo Ssmae Trinitatis, ad Primam, expletis psalmis, ante antiphonae repetitionem.
+
+@@ 204
+page: 633
+pages: 633
+flags_stripped: 0
+la:
+Versus dicuntur ad Matutinum post repetitam antiphonam ultimi psalmi cuiusque Nocturni. Ad Laudes vero et ad Vesperas versus dicitur post hymnum; ad Horas minores et ad Completorium post responsorium breve.
+
+@@ 205
+page: 633
+pages: 633
+flags_stripped: 0
+la:
+In Triduo sacro, versus dicitur in singulis Nocturnis et Laudibus tantum; in festo et per octavam Paschatis in solo Nocturno; in Officio defunctorum ad singulos Nocturnos, Laudes et Vesperas, ut suis locis notatur.
+
+@@ 206
+page: 633
+pages: 633
+flags_stripped: 0
+la:
+Tempore paschali versibus additur Alleluia, nisi iam habeatur. Excipiuntur versus qui in Ordinario sine Alleluia ponuntur.
+
+@@ 207
+page: 633
+pages: 633
+flags_stripped: 0
+la:
+Ratio sumendi versus, iuxta diversitatem Officiorum et Horarum, habetur supra, ubi agitur de ordinando divino Officio (nn. 165-177).
+
+@@ 208
+page: 633
+pages: 633
+flags_stripped: 0
+la:
+Absolutio et benedictiones dicuntur, ad Matutinum, ante lectiones cuiusque Nocturni, prout in Ordinario indicatur. Omittuntur in Officiis Tridui sacri et defunctorum.
+
+@@ 209
+page: 633
+pages: 633
+flags_stripped: 0
+la:
+In Matutino Officii S. Mariae in sabbato ponuntur absolutio et benedictiones propriae; item exstant benedictiones propriae in III Nocturno Matutini Nativitatis Domini.
+
+@@ 210
+page: 633
+pages: 633
+flags_stripped: 0
+la:
+Benedictiones propriae invariabiles habentur ante lectionem brevem ad Primam et ad Completorium.
+
+@@ 211
+page: 633
+pages: 633,634
+flags_stripped: 0
+la:
+In fine cuiusque Nocturni dicuntur tres lectiones. Proinde Officia cum tribus Nocturnis habent novem lectiones; Officia vero cum uno Nocturno tres.
+
+@@ 212
+page: 634
+pages: 634
+flags_stripped: 0
+la:
+Nomine « Scripturae occurrentis » designantur lectiones sacrae Scripturae primo vel unico Nocturno assignatae et certo ordine per singulos dies in Proprio de Tempore dispositae.
+
+@@ 213
+page: 634
+pages: 634
+flags_stripped: 0
+la:
+Lectiones de Scriptura occurrenti, si die assignato dici nequeunt, omittuntur, etsi agatur de initiis librorum, excepto initio Epistolae I ad Corinthios, quod, cum die 13 ianuarii occurrit dominica I post Epiphaniam, sabbato praecedenti legitur.
+
+@@ 214
+page: 634
+pages: 634
+flags_stripped: 0
+la:
+Officia commemorata non habent lectionem in Officio diei.
+
+@@ 215
+page: 634
+pages: 634
+flags_stripped: 0
+la:
+Lectiones de Scriptura leguntur cum titulo libri sacri e quo sumuntur, nisi aliter expresse notetur; item lectiones de sermone vel tractatu vel documento pontificio, cum titulo et nomine auctoris; similiter praepositur nomen auctoris lectionibus de homilia in Evangelium diei.
+
+@@ 216
+page: 634
+pages: 634
+flags_stripped: 0
+la:
+In fine cuiusque lectionis dicitur: Tu autem, Domine, miserere nobis, cui respondetur Deo gratias: quae conclusio omittitur in Officiis Tridui sacri et defunctorum.
+
+@@ 217
+page: 634
+pages: 634
+flags_stripped: 0
+la:
+Tres lectiones primi Nocturni sunt de Scriptura, et quidem:
+a)in Officio festivo et semifestivo, aut propriae aut specialiter assignatae aut de Communi;
+b)in Officiis Tridui sacri, propriae.
+
+@@ 218
+page: 634
+pages: 634
+flags_stripped: 0
+la:
+Tres lectiones secundi Nocturni sunt:
+a)in Officio festivo et semifestivo, de vita Sancti, aut de sermone vel tractatu diei assignato, ut in Proprio vel in Communi; Si vero una vel duae tantum lectiones propriae aut assignatae habeantur, numerus ternarius completur lectionibus de Communi.
+b)in Officiis Tridui sacri, de sermone diei assignato.
+
+@@ 219
+page: 634
+pages: 634
+flags_stripped: 0
+la:
+Tres lectiones tertii Nocturni sunt:
+a)in Officio festivo et semifestivo, de homilia in Evangelium diei;
+b)in Officiis Tridui sacri, de Epistolis B. Pauli Apostoli, ut in Proprio.
+
+@@ 220
+page: 634
+pages: 634,635
+flags_stripped: 0
+la:
+In Officio dominicali, ordo trium lectionum hic est:
+a)lectio prima et secunda dicuntur de Scriptura occurrenti, ut in Proprio.
+b)Lectio tertia dicitur de homilia in Evangelium diei; et sumitur ea quae nunc in Breviario ponitur tamquam prima tertii Nocturni.
+
+@@ 221
+page: 635
+pages: 635
+flags_stripped: 0
+la:
+In Officio ordinario, ordo trium lectionum hic est:
+a)Lectio prima et secunda dicuntur de Scriptura; et quidem ordinarie de Scriptura occurrenti, nisi propriae vel specialiter assignatae habeantur. Prima autem lectio Sacrae Scripturae ea est, quae in Breviario ut prima notatur; altera vero efficitur ex secunda et tertia in unam coniunctis, omisso responsorio intermedio.
+b)Lectio tertia dicitur de festo, scilicet propria, quae antea communiter vocabatur « contracta »; qua deficiente, sumitur lectio propria (olim secundi Nocturni) simul coniunctae. Si vero festum caret lectionibus propriis, pro tertia lectione sumitur quarta de Communi.
+
+@@ 222
+page: 635
+pages: 635
+flags_stripped: 0
+la:
+In Officio feriali, ordo trium lectionum hic est:
+a) si agitur de Officio vigiliae vel feriae cum homilia, tres lectiones dicuntur de homilia in Evangelium diei;
+b) si agitur de Officio feriae sine homilia, leguntur tres lectiones de Scriptura occurrenti, prout in Breviario exhibentur.
+
+@@ 223
+page: 635
+pages: 635
+flags_stripped: 0
+la:
+Lectiones Officii defunctorum modo proprio ordinantur, ut suis locis notatur.
+
+@@ 224
+page: 635
+pages: 635
+flags_stripped: 0
+la:
+Per octavas Paschatis et Pentecostes dicuntur tres lectiones de homilia in Evangelium diei.
+
+@@ 225
+page: 635
+pages: 635,636
+flags_stripped: 0
+la:
+Superveniente dominica in Septuagesima, lectiones dominicis et feriis post Epiphaniam assignatae, quae locum habere non possunt, eo anno penitus omittuntur. Idem valet de lectionibus dominicarum post Pentecosten, et de lectionibus feriarum, easdem dominicas sequentium, quae impediuntur superveniente prima dominica mensis augusti; necnon de lectionibus mensium augusti, septembris, octobris et novembris quae impediuntur superveniente prima dominica mensis sequentis, vel prima dominica Adventus.
+
+@@ 226
+page: 636
+pages: 636
+flags_stripped: 0
+la:
+Post quamlibet lectionem dicitur responsorium, praeterquam post ultimam, quando dicendus est hymnus Te Deum.
+
+@@ 227
+page: 636
+pages: 636
+flags_stripped: 0
+la:
+Responsoria adeo cum lectionibus connectuntur, ut eadem ratione ac lectiones sumenda sint, nisi aliter expresse caveatur.
+
+@@ 228
+page: 636
+pages: 636
+flags_stripped: 0
+la:
+Responsoria quae suo die dici nequeunt, non transferuntur, sed omittuntur.
+
+@@ 229
+page: 636
+pages: 636
+flags_stripped: 0
+la:
+Tempore paschali, in fine cuiuslibet responsorii, ante versum, additur Alleluia, nisi iam habeatur; minime vero additur Alleluia post versum.
+
+@@ 230
+page: 636
+pages: 636
+flags_stripped: 0
+la:
+In fine ultimi responsorii cuiusque Nocturni, post repetitam ultimam partem responsorii, dicitur Gloria Patri, et deinde iterum resumitur eadem ultima pars responsorii, nisi suo loco aliter notetur. Attamen, in Officio temporis Passionis, in ultimo responsorio cuiusque Nocturni omittitur Gloria Patri, et eius loco resumitur integrum responsorium ab initio usque ad versum exclusive. In Officio defunctorum autem, loco Gloria Patri, in ultimo responsorio cuiusque Nocturni, dicitur Requiem aeternam.
+
+@@ 231
+page: 636
+pages: 636
+flags_stripped: 0
+la:
+Peculiaritates in dicendis responsoriis forte occurrentes, suis locis indicantur.
+
+@@ 232
+page: 636
+pages: 636
+flags_stripped: 0
+la:
+Responsoria trium Nocturnorum hac ratione ordinantur:
+a)in Officio festivo et semifestivo, dicuntur propria aut de Communi;
+b)in Officiis Tridui sacri, dicuntur propria.
+
+@@ 233
+page: 636
+pages: 636,637
+flags_stripped: 0
+la:
+In Officio dominicali, responsoria hoc modo ordinantur:
+a) primum, est responsorium quod ponitur post primam lectionem;
+b) secundum, est responsorium quod post tertiam lectionem olim inveniebatur. In fine huius responsorii omittitur Gloria Patri et repetitio ultimae partis responsorii, quando dicendum est tertium responsorium;
+c) tertium, quando dicendum occurrit, est responsorium quod post tertiam lectionem de homilia exstabat.
+
+@@ 234
+page: 637
+pages: 637
+flags_stripped: 0
+la:
+In Officio ordinario cum lectionibus de Scriptura occurrenti, responsoria hoc modo ordinantur:
+a) primum, est responsorium quod ponitur post primam lectionem;
+b) secundum, est responsorium quod post tertiam lectionem invenitur.
+
+@@ 235
+page: 637
+pages: 637
+flags_stripped: 0
+la:
+In Officio ordinario cum lectionibus de Scriptura propriis vel specialiter assignatis, responsoria dicuntur propria aut de Communi, eodem ordine ac supra (n. 234).
+
+@@ 236
+page: 637
+pages: 637
+flags_stripped: 0
+la:
+In Officio feriali, sive fiat de feria sive de vigilia, dicuntur responsoria de feria currenti, prout habentur in Proprio de Tempore.
+
+@@ 237
+page: 637
+pages: 637
+flags_stripped: 0
+la:
+Hymnus Te Deum dicitur ad Matutinum, post ultimam lectionem, loco noni vel tertii responsorii:
+a) in dominica in albis, in dominica Pentecostes, et in Matutino dominicae Resurrectionis, quod recitatur ab iis qui Vigiliae paschali non interfuerunt;
+b) in dominicis II classis, exceptis dominicis in Septuagesima, in Sexagesima et in Quinquagesima;
+c) in omnibus festis;
+d) per octavas Nativitatis Domini, Paschatis et Pentecostes;
+e) in Officio feriali temporis natalicii et temporis paschalis;
+f) in vigiliis Ascensionis et Pentecostes;
+g) in Officio sanctae Mariae in sabbato.
+
+@@ 238
+page: 637
+pages: 637
+flags_stripped: 0
+la:
+Omittitur vero hymnus Te Deum:
+a) in Officiis de Tempore a dominica I Adventus usque ad vigiliam Nativitatis Domini inclusive; et a dominica in Septuagesima usque ad Sabbatum sanctum inclusive;
+b) in vigiliis II et III classis, excepta vigilia Ascensionis Domini;
+c) in omnibus feriis per annum;
+d) in Officio defunctorum.
+
+@@ 239
+page: 637
+pages: 637,638
+flags_stripped: 0
+la:
+Quando hymnus Te Deum omittitur, eius loco dicitur nonum vel tertium responsorium.
+
+@@ 240
+page: 638
+pages: 638
+flags_stripped: 0
+la:
+Capitulum dicitur ad omnes Horas, Matutino excepto, expletis psalmis cum suis antiphonis; ad Completorium autem post hymnum. Omittitur a Laudibus feriae V in Cena Domini usque ad Nonam sabbati in albis, et in Officio defunctorum.
+
+@@ 241
+page: 638
+pages: 638
+flags_stripped: 0
+la:
+Ad Primam semper dicitur capitulum Regi saeculorum; et ad Completorium Tu autem in nobis. Ad alias Horas sumitur ex Ordinario vel Psalterio, e Proprio vel Communi, iuxta Officiorum diversitatem (nn. 165-177).
+
+@@ 242
+page: 638
+pages: 638
+flags_stripped: 0
+la:
+Lectio brevis ad Primam dicitur semper de Tempore, prout in Ordinario.
+
+@@ 243
+page: 638
+pages: 638
+flags_stripped: 0
+la:
+Responsoria brevia dicuntur ad Horas minores et ad Completorium post capitulum; omittuntur autem a feria V in Cena Domini usque ad Nonam sabbati in albis, et in Officio defunctorum.
+
+@@ 244
+page: 638
+pages: 638
+flags_stripped: 0
+la:
+Ad Primam, in responsorio Christe, Fili Dei vivi, versus Qui sedes mutatur iuxta Officiis et anni temporibus pro quibus proprius assignatur; numquam tamen dicitur versus proprius festi commemorati. Responsorium breve Completorii numquam mutatur. Ad Tertiam, Sextam et Nonam responsoria brevia sumuntur ex eodem loco ac capitula.
+
+@@ 245
+page: 638
+pages: 638
+flags_stripped: 0
+la:
+Quomodo responsoria brevia dicenda sint, sive extra tempus paschale sive tempore paschali, sive in Officio feriali temporis Passionis, in Ordinario indicatur. Extra tempus paschale, quamvis in aliquibus festis addenda sint duo Alleluia in fine responsorii brevis ante versum ad Tertiam, Sextam et Nonam, non ideo addenda sunt etiam ad Primam et ad Completorium.
+
+@@ 246
+page: 638
+pages: 638
+flags_stripped: 0
+la:
+Oratio dicitur in fine cuiuslibet Horae, loco in Ordinario indicato. Excipitur Matutinum, quando una cum Laudibus recitatur.
+
+@@ 247
+page: 638
+pages: 638,639
+flags_stripped: 0
+la:
+Orationi praemittitur, in recitatione in choro vel in communi, Dominus vobiscum, cui respondetur Et cum spiritu tuo. In recitatione a solo facta, et ab iis qui in ordine diaconatus non sunt constituti, dicitur, nisi iam praecedat, Domine, exaudi orationem meam et respondetur Et clamor meus ad te veniat. Deinde dicitur Oremus, et subiungitur oratio. Et sic in recitatione a solo, loco Dominus vobiscum, semper dicitur Domine, exaudi orationem meam, ut supra.
+
+@@ 248
+page: 639
+pages: 639
+flags_stripped: 0
+la:
+Ad Primam et ad Completorium oratio numquam mutatur, nisi in Officio Commemorationis omnium Fidelium defunctorum et, in Triduo sacro, ad Primam. Ad alias Horas, sumitur oratio quae ponitur ad Laudes; in feriis Quadragesimae et Passionis tamen, ad Vesperas, exstat oratio propria.
+
+@@ 249
+page: 639
+pages: 639
+flags_stripped: 0
+la:
+Oratio Officii diei semper dicitur sub sua conclusione, salvo praescripto n. 110 a. Orationes vero, quae ad commemorationes pertinent, concluduntur in ultima tantum; attamen Oremus dicitur ante quamlibet orationem.
+
+@@ 250
+page: 639
+pages: 639
+flags_stripped: 0
+la:
+Commemorationes fiunt iuxta normas in rubricis generalibus, nn. 106-114, datas.
+
+@@ 251
+page: 639
+pages: 639
+flags_stripped: 0
+la:
+Commemorationes ponuntur post orationem Officii diei; et fiunt per antiphonam quae ponitur respective ad Benedictus vel ad Magnificat in Officio commemorato, per versum qui eam praecedit et per orationem, salvo praescripto n. 110 c.
+
+@@ 252
+page: 639
+pages: 639
+flags_stripped: 0
+la:
+Ad faciendam commemorationem Officii dominicae, feriae et vigiliae Ascensionis, antiphona et versus sumuntur e Proprio de Tempore, Psalterio vel Ordinario, oratio autem e Proprio de Tempore; ad faciendam commemorationem vero octavae Nativitatis vel Officii Sanctorum, antiphona, versus et oratio sumuntur e Proprio vel Communi; ad faciendam demum commemorationem vigiliae II et III classis, antiphona et versus sumuntur e Psalterio, oratio autem e Proprio.
+
+@@ 253
+page: 639
+pages: 639
+flags_stripped: 0
+la:
+In faciendis commemorationibus, haec animadvertantur:
+a) in eadem Hora numquam bis repetatur eadem antiphona;
+b) in eadem commemoratione antiphona et versus numquam constent iisdem verbis.
+
+@@ 254
+page: 639
+pages: 639,640
+flags_stripped: 0
+la:
+Si in Laudibus una tantum facienda est commemoratio, et antiphona ac versus sumenda sunt ex eodem Communi unde sumpta sunt in Officio diei, pro commemoratione sumuntur antiphona ac versus e I Vesperis.
+
+@@ 255
+page: 640
+pages: 640
+flags_stripped: 0
+la:
+Si in Laudibus duae faciendae sunt commemorationes, et antiphona ac versus sumenda sunt ex eodem Communi:
+a) pro prima commemoratione, sumuntur antiphona et versus e Laudibus;
+b) pro altera, antiphona et versus e I Vesperis.
+
+@@ 256
+page: 640
+pages: 640
+flags_stripped: 0
+la:
+Si in Laudibus duae faciendae sunt commemorationes, et antiphona ac versus sumenda sunt ex eodem Communi unde sumpta sunt in Officio diei:
+a) pro prima commemoratione, sumuntur antiphona et versus e I Vesperis;
+b) pro altera, antiphona et versus e II Vesperis.
+
+@@ 257
+page: 640
+pages: 640
+flags_stripped: 0
+la:
+Ad ea quae nn. 253-256 habentur, animadvertatur:
+a) si antiphona eadem sit in I et II Vesperis, pro altera commemoratione sumitur antiphona e Laudibus, vel demum prima antiphona tertii Nocturni;
+b) textus antiphonae adhiberi potest, in eadem Hora, tamquam versus pro altera commemoratione, sumenda ex eodem Communi;
+c) antiphona Euge, serve bone, quae ponitur ad Laudes de Communi Confessoris Pontificis, censetur identica cum simili antiphona, quae habetur ad Laudes de Communi Confessoris non Pontificis.
+
+@@ 258
+page: 640
+pages: 640
+flags_stripped: 0
+la:
+Item, si eadem sit oratio festi de quo fit Officium et eius de quo fit commemoratio, oratio pro commemoratione mutatur in alteram de eodem vel simili Communi.
+
+@@ 259
+page: 640
+pages: 640
+flags_stripped: 0
+la:
+Antiphonae et versus propria, si in una Hora pro commemoratione adhiberi nequeunt, non transferuntur, sed omittuntur.
+
+@@ 260
+page: 640
+pages: 640,641
+flags_stripped: 0
+la:
+Preces dicuntur tantum in Officiis de Tempore, et quidem:
+a) in Laudibus et Vesperis feriae IV et VI temporis Adventus, Quadragesimae et Passionis;
+b) in Laudibus et Vesperis feriae IV et VI Quatuor Temporum mensis septembris;
+c) in Laudibus sabbatorum Quatuor Temporum, excepto sabbato infra octavam Pentecostes.
+
+@@ 261
+page: 641
+pages: 641
+flags_stripped: 0
+la:
+Quae hic dicuntur de signo crucis et de corporis situ in recitatione divini Officii, valent pro recitatione in choro vel in communi; convenit vero ut hi qui a solo divinum Officium recitant, iis quae de signo crucis dicuntur se conforment.
+
+@@ 262
+page: 641
+pages: 641
+flags_stripped: 0
+la:
+Normae peculiares quae ad hebdomadarium et cantores spectant, in caeremoniarum libris inveniuntur; proinde hic ea tantum indicantur quae « chorales » in genere respiciunt.
+
+@@ 263
+page: 641
+pages: 641
+flags_stripped: 0
+la:
+Omnes signant se signo crucis a fronte ad pectus et ab humero sinistro ad dexteram:
+a) in principio omnium Horarum, cum dicitur Deus, in adiutorium;
+b) ad versum Adiutorium nostrum;
+c) ad absolutionem Indulgentiam post Confiteor in Completorio;
+d) in principio canticorum Benedictus, Magnificat et Nunc dimittis;
+e) ad benedictionem in fine Primae et Completorii;
+f) ad versum Divinum auxilium, in fine divini Officii.
+
+@@ 264
+page: 641
+pages: 641
+flags_stripped: 0
+la:
+Signo crucis os sibi signant in principio Matutini, ad verba Domine, labia mea aperies.
+
+@@ 265
+page: 641
+pages: 641
+flags_stripped: 0
+la:
+Signo crucis pectus sibi signant ad verba Converte nos in Completorio.
+
+@@ 266
+page: 641
+pages: 641,642
+flags_stripped: 0
+la:
+Omnes stant:
+a) in principio cuiusque Horae, donec primus versus primi psalmi inchoatus sit;
+b) dum dicuntur hymni, et cantica evangelica;
+c)ad Matutinum etiam ad invitatorium cum suo psalmo et ab expleta ultima antiphona cuiusque Nocturni usque ad primam benedictionem ante lectiones inclusive; et dum legitur textus Evangelii ante homiliam;
+d)ad Laudes et ad Vesperas etiam ab expleta antiphona post ultimum psalmum usque ad finem, nisi genuflectendum sit ad preces aut ad orationem, iuxta rubricas;
+e)ad Primam, ab expleta antiphona usque ad finem, praeterquam ad lectionem Martyrologii, nisi genuflectendum sit ad orationes;
+f)ad Tertiam, Sextam et Nonam, ab expleta antiphona usque ad finem, nisi genuflectendum sit ad orationem;
+g)ad Completorium, ab expleta antiphona post psalmos usque ad finem, nisi genuflectendum sit ad orationem;
+h) ad intonationem antiphonarum in Matutino, Laudibus et Vesperis cantatis, iuxta consuetudinem;
+i) ad antiphonam finalem B. Mariae Virg., post Completorium, sabbato et dominica, etiam si non fit Officium de dominica, et toto tempore paschali.
+
+@@ 267
+page: 642
+pages: 642
+flags_stripped: 0
+la:
+Omnes genua flectunt:
+a) ad verba Venite, adoremus et procidamus, etc. in psalmo Venite, exsultemus in initio Matutini;
+b) ad versum Te ergo quaesumus in hymno Te Deum;
+c) ad preces, quando dicendae sunt;
+d) in Officio feriali Adventus, Quadragesimae et Passionis necnon Quatuor Temporum mensis septembris, et de vigiliis II et III classis, excepta vigilia Ascensionis, in omnibus Horis ad orationem et commemorationes forsan sequentes; hebdomadarius autem stat;
+e) ad antiphonam finalem B. Mariae Virg., post Completorium, praeterquam sabbato et dominica et toto tempore paschali; hebdomadarius autem stat dum dicit orationem;
+f) in quibusdam aliis peculiaribus adiunctis, quae suis locis notantur.
+
+@@ 268
+page: 642
+pages: 642,643
+flags_stripped: 0
+la:
+Omnes sedent:
+a) in omni Hora, excepto primo versu primi psalmi, donec antiphona ultimi psalmi repetita sit;
+b) ad lectiones cum suis responsoriis ad Matutinum, praeterquam dum legitur textus evangelii ante homiliam;
+c) dum legitur Martyrologium, ad Primam, nisi aliter statuatur.

@@ -1,0 +1,881 @@
+# Interface and plain-language strings.
+# la is included only where the wording is ordinary liturgical Latin.
+# A missing la line is shown from English with the marker [to be sourced].
+
+[ui.title]
+en: Ribbon helper
+es: Ayuda de cintas
+fr: Aide pour les signets
+de: Bänder im Brevier
+la: Signacula
+
+[ui.intro]
+en: Where to put the ribbons today, and how each hour is ordered. The office itself is the one this site already resolves for the calendar and the date. The quotations are the 1960 rubrics.
+es: Dónde colocar las cintas hoy, y cómo se ordena cada hora. El oficio es el que este sitio ya resuelve para el calendario y la fecha. Las citas son las rúbricas de 1960.
+fr: Où placer les signets aujourd'hui, et comment chaque heure est ordonnée. L'office est celui que ce site résout déjà pour le calendrier et la date. Les citations sont les rubriques de 1960.
+de: Wohin die Bänder heute gehören, und wie jede Hore geordnet ist. Das Offizium ist das, welches diese Seite für Kalender und Datum bereits ermittelt. Die Zitate sind die Rubriken von 1960.
+
+[ui.calendar]
+en: Local calendar
+es: Calendario local
+fr: Calendrier local
+de: Lokaler Kalender
+
+[ui.date]
+en: Date
+es: Fecha
+fr: Date
+de: Datum
+la: Dies
+
+[ui.edition]
+en: Physical breviary
+es: Breviario impreso
+fr: Bréviaire imprimé
+de: Gedrucktes Brevier
+
+[ui.language]
+en: Language
+es: Lengua
+fr: Langue
+de: Sprache
+la: Lingua
+
+[ui.edition_soon]
+en: Feature coming soon. This choice shows the general structure only, with no page numbers.
+es: Función aún por venir. Esta opción muestra solo la estructura general, sin números de página.
+fr: Fonction à venir. Ce choix montre seulement la structure générale, sans numéros de page.
+de: Funktion folgt. Diese Wahl zeigt nur die allgemeine Gliederung, ohne Seitenzahlen.
+
+[ui.volume_note]
+en: When a printed edition is added, its page numbers depend on which volume covers the temporal cycle of the day (Advent, Christmas, Epiphany, Septuagesima, Lent, Paschaltide, or after Pentecost). The page will name the volume to hold. The same part of the office can sit on a different page in each volume.
+es: Cuando se añada una edición impresa, los números de página dependerán del volumen que cubra el ciclo temporal del día (Adviento, Navidad, Epifanía, Septuagésima, Cuaresma, tiempo pascual o después de Pentecostés). La página dirá qué volumen tener en la mano. La misma parte del oficio puede estar en una página distinta en cada volumen.
+fr: Quand une édition imprimée sera ajoutée, les numéros de page dépendront du volume qui couvre le cycle temporal du jour (Avent, Noël, Épiphanie, Septuagésime, Carême, temps pascal ou après la Pentecôte). La page nommera le volume à prendre. La même partie de l'office peut se trouver à une page différente dans chaque volume.
+de: Wenn eine gedruckte Ausgabe hinzukommt, hängen die Seitenzahlen davon ab, welcher Band den Zeitkreis des Tages umfasst (Advent, Weihnachten, Epiphanie, Septuagesima, Fastenzeit, Osterzeit oder nach Pfingsten). Die Seite nennt den Band, den man zur Hand nimmt. Derselbe Teil des Offiziums kann in jedem Band auf einer anderen Seite stehen.
+
+[ui.office]
+en: Open this day in the office
+es: Abrir este día en el oficio
+fr: Ouvrir ce jour dans l'office
+de: Diesen Tag im Offizium öffnen
+
+[ui.why]
+en: What is celebrated, and why
+es: Qué se celebra, y por qué
+fr: Ce qui est célébré, et pourquoi
+de: Was gefeiert wird, und warum
+
+[ui.ribbons]
+en: Ribbons
+es: Cintas
+fr: Signets
+de: Bänder
+la: Signacula
+
+[ui.shape]
+en: Shape of this office
+es: Forma de este oficio
+fr: Forme de cet office
+de: Gestalt dieses Offiziums
+
+[ui.hours]
+en: Hour by hour
+es: Hora por hora
+fr: Heure par heure
+de: Hore für Hore
+
+[ui.quote_en]
+en: English, from the project text of the 1960 rubrics
+es: Inglés, según el texto del proyecto de las rúbricas de 1960
+fr: Anglais, d'après le texte du projet des rubriques de 1960
+de: Englisch, nach dem Projekttext der Rubriken von 1960
+
+[ui.quote_la]
+en: Latin, AAS 52 (1960)
+es: Latín, AAS 52 (1960)
+fr: Latin, AAS 52 (1960)
+de: Latein, AAS 52 (1960)
+la: Latine, AAS 52 (1960)
+
+[ui.en_damaged]
+en: The project English of this article is damaged in places. It is quoted as the file has it. The Latin beside it is the AAS text.
+es: El inglés del proyecto en este artículo está dañado en algunos lugares. Se cita tal como está en el archivo. El latín junto a él es el texto de AAS.
+fr: L'anglais du projet pour cet article est abîmé par endroits. Il est cité tel que le fichier le donne. Le latin à côté est le texte des AAS.
+de: Das englische Projekt dieses Artikels ist stellenweise beschädigt. Es wird so zitiert, wie die Datei es hat. Das Latein daneben ist der AAS-Text.
+
+[ui.engine]
+en: Resolved by the office engine, not by a second set of rubrics.
+es: Resuelto por el motor del oficio, no por un segundo cuerpo de rúbricas.
+fr: Résolu par le moteur de l'office, non par un second corps de rubriques.
+de: Vom Offiziumsrechner ermittelt, nicht durch ein zweites Rubrikenwerk.
+
+[ui.page]
+en: p.
+es: p.
+fr: p.
+de: S.
+la: p.
+
+[ui.hold]
+en: Hold {label}.
+es: Tenga a mano {label}.
+fr: Prenez {label}.
+de: Nehmen Sie {label} zur Hand.
+
+[ui.no_volume]
+en: This edition has no volume covering {season}.
+es: Esta edición no tiene un volumen que cubra {season}.
+fr: Cette édition n'a pas de volume qui couvre {season}.
+de: Diese Ausgabe hat keinen Band für {season}.
+
+[ui.unused]
+en: Not used for this office.
+es: No se usa en este oficio.
+fr: Non employé pour cet office.
+de: Für dieses Offizium nicht gebraucht.
+
+[ui.open]
+en: Open {file}
+es: Abrir {file}
+fr: Ouvrir {file}
+de: {file} aufschlagen
+
+[ui.commem_file]
+en: Commemorated from {file}
+es: Conmemoración desde {file}
+fr: Commémoré depuis {file}
+de: Kommemoriert aus {file}
+
+[ui.lessons]
+en: Lessons at Matins
+es: Lecciones de Maitines
+fr: Leçons des matines
+de: Lesungen der Matutin
+la: Lectiones ad Matutinum
+
+[ui.col_n]
+en: Lesson
+es: Lección
+fr: Leçon
+de: Lesung
+la: Lectio
+
+[ui.col_nocturn]
+en: Nocturn
+es: Nocturno
+fr: Nocturne
+de: Nokturn
+la: Nocturnus
+
+[ui.col_kind]
+en: Kind
+es: Clase
+fr: Sorte
+de: Art
+la: Genus
+
+[ui.col_source]
+en: Taken from
+es: Tomada de
+fr: Prise de
+de: Genommen aus
+
+[ui.col_incipit]
+en: Begins
+es: Comienza
+fr: Commence
+de: Anfang
+
+[ui.not1960]
+en: These quotations are the 1960 Code. The calendar you chose is not a 1960 calendar, so the Code may not be the law of that office. The structure below is still what the engine resolved.
+es: Estas citas son el Código de 1960. El calendario elegido no es un calendario de 1960, de modo que el Código puede no ser la ley de ese oficio. La estructura de abajo es, con todo, la que resolvió el motor.
+fr: Ces citations sont le Code de 1960. Le calendrier choisi n'est pas un calendrier de 1960, et le Code peut ne pas être la loi de cet office. La structure ci-dessous est pourtant celle que le moteur a résolue.
+de: Diese Zitate sind der Codex von 1960. Der gewählte Kalender ist kein Kalender von 1960, und der Codex muss nicht das Recht dieses Offiziums sein. Die Gliederung unten ist dennoch die, welche der Rechner ermittelt hat.
+
+[ui.scheme]
+en: scheme {n}
+es: esquema {n}
+fr: schéma {n}
+de: Schema {n}
+
+[ui.sunday_psalms]
+en: Sunday psalms
+es: Salmos del domingo
+fr: Psaumes du dimanche
+de: Sonntagpsalmen
+la: Psalmi de dominica
+
+[ui.weekday_psalms]
+en: Weekday psalms
+es: Salmos de la feria
+fr: Psaumes du jour de la semaine
+de: Psalmen des Wochentags
+la: Psalmi de feria
+
+[ui.vespers_1]
+en: First Vespers
+es: Primeras vísperas
+fr: Premières vêpres
+de: Erste Vesper
+la: I Vesperae
+
+[ui.vespers_2]
+en: Second Vespers
+es: Segundas vísperas
+fr: Secondes vêpres
+de: Zweite Vesper
+la: II Vesperae
+
+[ui.vespers_day]
+en: Vespers of the day
+es: Vísperas del día
+fr: Vêpres du jour
+de: Vesper des Tages
+
+[ui.rubrics_general]
+en: General Rubrics, n. {n}
+es: Rúbricas generales, n. {n}
+fr: Rubriques générales, n. {n}
+de: Allgemeine Rubriken, Nr. {n}
+la: Rubricae generales, n. {n}
+
+[ui.rubrics_breviary]
+en: Breviary rubrics, n. {n}
+es: Rúbricas del breviario, n. {n}
+fr: Rubriques du bréviaire, n. {n}
+de: Brevier-Rubriken, Nr. {n}
+la: Rubricae generales Breviarii, n. {n}
+
+[ui.psalter_detail]
+en: {which}, {scheme}
+es: {which}, {scheme}
+fr: {which}, {scheme}
+de: {which}, {scheme}
+
+[sec.psalterium]
+en: Psalter
+es: Salterio
+fr: Psautier
+de: Psalter
+la: Psalterium
+
+[sec.tempora]
+en: Proper of the Season
+es: Propio del Tiempo
+fr: Propre du Temps
+de: Eigen der Zeit
+la: Proprium de Tempore
+
+[sec.sancti]
+en: Proper of Saints
+es: Propio de los Santos
+fr: Propre des Saints
+de: Eigen der Heiligen
+la: Proprium Sanctorum
+
+[sec.commune]
+en: Common of Saints
+es: Común de los Santos
+fr: Commun des Saints
+de: Commune der Heiligen
+la: Commune Sanctorum
+
+[sec.ordinarium]
+en: Ordinary
+es: Ordinario
+fr: Ordinaire
+de: Ordinarium
+la: Ordinarium
+
+[hora.Matutinum]
+en: Matins
+es: Maitines
+fr: Matines
+de: Matutin
+la: Matutinum
+
+[hora.Laudes]
+en: Lauds
+es: Laudes
+fr: Laudes
+de: Laudes
+la: Laudes
+
+[hora.Prima]
+en: Prime
+es: Prima
+fr: Prime
+de: Prim
+la: Prima
+
+[hora.Tertia]
+en: Terce
+es: Tercia
+fr: Tierce
+de: Terz
+la: Tertia
+
+[hora.Sexta]
+en: Sext
+es: Sexta
+fr: Sexte
+de: Sext
+la: Sexta
+
+[hora.Nona]
+en: None
+es: Nona
+fr: None
+de: Non
+la: Nona
+
+[hora.Vespera]
+en: Vespers
+es: Vísperas
+fr: Vêpres
+de: Vesper
+la: Vesperae
+
+[hora.Completorium]
+en: Compline
+es: Completas
+fr: Complies
+de: Komplet
+la: Completorium
+
+[month.1]
+en: January
+es: enero
+fr: janvier
+de: Januar
+la: Ianuarius
+
+[month.2]
+en: February
+es: febrero
+fr: février
+de: Februar
+la: Februarius
+
+[month.3]
+en: March
+es: marzo
+fr: mars
+de: März
+la: Martius
+
+[month.4]
+en: April
+es: abril
+fr: avril
+de: April
+la: Aprilis
+
+[month.5]
+en: May
+es: mayo
+fr: mai
+de: Mai
+la: Maius
+
+[month.6]
+en: June
+es: junio
+fr: juin
+de: Juni
+la: Iunius
+
+[month.7]
+en: July
+es: julio
+fr: juillet
+de: Juli
+la: Iulius
+
+[month.8]
+en: August
+es: agosto
+fr: août
+de: August
+la: Augustus
+
+[month.9]
+en: September
+es: septiembre
+fr: septembre
+de: September
+la: September
+
+[month.10]
+en: October
+es: octubre
+fr: octobre
+de: Oktober
+la: October
+
+[month.11]
+en: November
+es: noviembre
+fr: novembre
+de: November
+la: November
+
+[month.12]
+en: December
+es: diciembre
+fr: décembre
+de: Dezember
+la: December
+
+[dow.0]
+en: Sunday
+es: domingo
+fr: dimanche
+de: Sonntag
+la: Dominica
+
+[dow.1]
+en: Monday
+es: lunes
+fr: lundi
+de: Montag
+la: Feria II
+
+[dow.2]
+en: Tuesday
+es: martes
+fr: mardi
+de: Dienstag
+la: Feria III
+
+[dow.3]
+en: Wednesday
+es: miércoles
+fr: mercredi
+de: Mittwoch
+la: Feria IV
+
+[dow.4]
+en: Thursday
+es: jueves
+fr: jeudi
+de: Donnerstag
+la: Feria V
+
+[dow.5]
+en: Friday
+es: viernes
+fr: vendredi
+de: Freitag
+la: Feria VI
+
+[dow.6]
+en: Saturday
+es: sábado
+fr: samedi
+de: Samstag
+la: Sabbato
+
+[kind.festive]
+en: festive Office
+es: oficio festivo
+fr: office festif
+de: Festoffizium
+la: Officium festivum
+
+[kind.semifestive]
+en: semifestive Office
+es: oficio semifestivo
+fr: office semi-festif
+de: halbfestliches Offizium
+la: Officium semifestivum
+
+[kind.ordinary]
+en: ordinary Office
+es: oficio ordinario
+fr: office ordinaire
+de: gewöhnliches Offizium
+la: Officium ordinarium
+
+[kind.ferial]
+en: ferial Office
+es: oficio ferial
+fr: office férial
+de: Ferialoffizium
+la: Officium feriale
+
+[kind.sunday]
+en: Sunday Office
+es: oficio dominical
+fr: office du dimanche
+de: Sonntagsoffizium
+la: Officium dominicale
+
+[kind.sunday_special]
+en: Sunday Office of Easter or Pentecost
+es: oficio dominical de Pascua o Pentecostés
+fr: office du dimanche de Pâques ou de la Pentecôte
+de: Sonntagsoffizium von Ostern oder Pfingsten
+la: Officium dominicae Paschatis aut Pentecostes
+
+[part.invitatory]
+en: Invitatory
+es: Invitatorio
+fr: Invitatoire
+de: Invitatorium
+la: Invitatorium
+
+[part.hymn]
+en: Hymn
+es: Himno
+fr: Hymne
+de: Hymnus
+la: Hymnus
+
+[part.antiphons]
+en: Antiphons
+es: Antífonas
+fr: Antiennes
+de: Antiphonen
+la: Antiphonae
+
+[part.psalms]
+en: Psalms
+es: Salmos
+fr: Psaumes
+de: Psalmen
+la: Psalmi
+
+[part.verse]
+en: Verse
+es: Versículo
+fr: Verset
+de: Vers
+la: Versus
+
+[part.lessons]
+en: Lessons
+es: Lecciones
+fr: Leçons
+de: Lesungen
+la: Lectiones
+
+[part.capitulum]
+en: Chapter
+es: Capítulo
+fr: Chapitre
+de: Kapitel
+la: Capitulum
+
+[part.collect]
+en: Collect
+es: Oración
+fr: Oraison
+de: Oration
+la: Oratio
+
+[part.commemoration]
+en: Commemoration
+es: Conmemoración
+fr: Commémoraison
+de: Kommemoration
+la: Commemoratio
+
+[part.preces]
+en: Preces
+es: Preces
+fr: Prières
+de: Preces
+la: Preces
+
+[part.lectio_brevis]
+en: Short lesson
+es: Lección breve
+fr: Leçon brève
+de: Kurzlesung
+la: Lectio brevis
+
+[part.te_deum]
+en: Te Deum
+es: Te Deum
+fr: Te Deum
+de: Te Deum
+la: Te Deum
+
+[part.athanasian]
+en: Athanasian Creed
+es: Símbolo Atanasiano
+fr: Symbole d'Athanase
+de: Athanasianisches Glaubensbekenntnis
+la: Symbolum Athanasianum
+
+[lk.scripture]
+en: Scripture
+es: Escritura
+fr: Écriture
+de: Schrift
+la: de Scriptura
+
+[lk.legend]
+en: Life of the saint
+es: Vida del santo
+fr: Vie du saint
+de: Leben des Heiligen
+la: de vita Sancti
+
+[lk.homily]
+en: Homily on the gospel
+es: Homilía del evangelio
+fr: Homélie sur l'évangile
+de: Homilie über das Evangelium
+la: de homilia in Evangelium
+
+[lk.contracted]
+en: Contracted lesson
+es: Lección contracta
+fr: Leçon contractée
+de: Zusammengezogene Lesung
+la: lectio contracta
+
+[lk.commune]
+en: From the Common
+es: Del Común
+fr: Du Commun
+de: Aus dem Commune
+la: de Communi
+
+[season.Adv]
+en: Advent
+es: Adviento
+fr: Avent
+de: Advent
+la: Adventus
+
+[season.Nat]
+en: Christmas
+es: Navidad
+fr: Noël
+de: Weihnachten
+la: Nativitas
+
+[season.Epi]
+en: Epiphany
+es: Epifanía
+fr: Épiphanie
+de: Epiphanie
+la: Epiphania
+
+[season.Quadp]
+en: Septuagesima
+es: Septuagésima
+fr: Septuagésime
+de: Septuagesima
+la: Septuagesima
+
+[season.Quad]
+en: Lent
+es: Cuaresma
+fr: Carême
+de: Fastenzeit
+la: Quadragesima
+
+[season.Pasc]
+en: Paschaltide
+es: Tiempo pascual
+fr: Temps pascal
+de: Osterzeit
+la: Tempus paschale
+
+[season.Pent]
+en: after Pentecost
+es: después de Pentecostés
+fr: après la Pentecôte
+de: nach Pfingsten
+la: post Pentecosten
+
+[plain.why.elevated]
+en: On the universal calendar ({gversion}) the office is {goffice} ({grank}). {gfeast} is only commemorated: a 3rd-class Lenten feria is preferred to a 3rd-class feast. On this calendar ({calendar}) the feast is {lrank}, so the {kind} is said. The feria is commemorated.
+es: En el calendario universal ({gversion}) el oficio es {goffice} ({grank}). {gfeast} solo se conmemora: una feria de Cuaresma de III clase se prefiere a una fiesta de III clase. En este calendario ({calendar}) la fiesta es {lrank}, y por eso se reza el {kind}. La feria se conmemora.
+fr: Dans le calendrier universel ({gversion}) l'office est {goffice} ({grank}). {gfeast} n'est que commémoré : une férie de Carême de IIIe classe l'emporte sur une fête de IIIe classe. Dans ce calendrier ({calendar}) la fête est {lrank}, et l'on dit donc l'{kind}. La férie est commémorée.
+de: Im allgemeinen Kalender ({gversion}) ist das Offizium {goffice} ({grank}). {gfeast} wird nur kommemoriert: eine Fastenferie III. Klasse geht einem Fest III. Klasse vor. In diesem Kalender ({calendar}) ist das Fest {lrank}; deshalb wird das {kind} gebetet. Die Ferie wird kommemoriert.
+
+[plain.why.rankup]
+en: On the universal calendar ({gversion}) this feast is {grank}. On this calendar ({calendar}) it is {lrank}, so the {kind} follows the higher rank.
+es: En el calendario universal ({gversion}) esta fiesta es {grank}. En este calendario ({calendar}) es {lrank}, y el {kind} sigue el grado más alto.
+fr: Dans le calendrier universel ({gversion}) cette fête est {grank}. Dans ce calendrier ({calendar}) elle est {lrank}, et l'{kind} suit le rang le plus élevé.
+de: Im allgemeinen Kalender ({gversion}) ist dieses Fest {grank}. In diesem Kalender ({calendar}) ist es {lrank}; das {kind} folgt dem höheren Grad.
+
+[plain.why.same]
+en: This calendar celebrates the same office as {gversion}: {office}, {rank}.
+es: Este calendario celebra el mismo oficio que {gversion}: {office}, {rank}.
+fr: Ce calendrier célèbre le même office que {gversion} : {office}, {rank}.
+de: Dieser Kalender feiert dasselbe Offizium wie {gversion}: {office}, {rank}.
+
+[plain.why.other]
+en: This calendar ({calendar}) celebrates {loffice} ({lrank}). {gversion} celebrates {goffice} ({grank}).
+es: Este calendario ({calendar}) celebra {loffice} ({lrank}). {gversion} celebra {goffice} ({grank}).
+fr: Ce calendrier ({calendar}) célèbre {loffice} ({lrank}). {gversion} célèbre {goffice} ({grank}).
+de: Dieser Kalender ({calendar}) feiert {loffice} ({lrank}). {gversion} feiert {goffice} ({grank}).
+
+[plain.matins.nine]
+en: Matins has three nocturns and nine lessons.
+es: Maitines tiene tres nocturnos y nueve lecciones.
+fr: Les matines ont trois nocturnes et neuf leçons.
+de: Die Matutin hat drei Nokturnen und neun Lesungen.
+la: Ad Matutinum tres nocturni et novem lectiones.
+
+[plain.matins.three]
+en: Matins has one nocturn and three lessons.
+es: Maitines tiene un nocturno y tres lecciones.
+fr: Les matines ont un nocturne et trois leçons.
+de: Die Matutin hat eine Nokturn und drei Lesungen.
+la: Ad Matutinum unus nocturnus et tres lectiones.
+
+[plain.matins.easter]
+en: Matins has one nocturn of three psalms and three lessons.
+es: Maitines tiene un nocturno de tres salmos y tres lecciones.
+fr: Les matines ont un nocturne de trois psaumes et trois leçons.
+de: Die Matutin hat eine Nokturn mit drei Psalmen und drei Lesungen.
+la: Ad Matutinum unus nocturnus trium psalmorum et trium lectionum.
+
+[plain.lauds.festive]
+en: At Lauds the antiphons are of the feast and the psalms are the Sunday psalms ({scheme}).
+es: En Laudes las antífonas son de la fiesta y los salmos son los del domingo ({scheme}).
+fr: Aux laudes les antiennes sont de la fête et les psaumes sont ceux du dimanche ({scheme}).
+de: In den Laudes sind die Antiphonen vom Fest und die Psalmen die Sonntagpsalmen ({scheme}).
+
+[plain.lauds.weekday]
+en: At Lauds the antiphons and psalms are from the weekday Psalter ({scheme}).
+es: En Laudes las antífonas y los salmos son del salterio ferial ({scheme}).
+fr: Aux laudes les antiennes et les psaumes sont du psautier du jour ({scheme}).
+de: In den Laudes sind Antiphonen und Psalmen aus dem Wochentagspsalter ({scheme}).
+
+[plain.prime]
+en: The short lesson at Prime is of the season, as in the Ordinary.
+es: La lección breve de Prima es del tiempo, como en el Ordinario.
+fr: La leçon brève de prime est du temps, comme à l'ordinaire.
+de: Die Kurzlesung in der Prim ist vom Zeitkreis, wie im Ordinarium.
+
+[plain.minor.festive]
+en: At Terce, Sext and None the psalms are the Sunday psalms, and the antiphons are taken from Lauds.
+es: En Tercia, Sexta y Nona los salmos son los del domingo, y las antífonas se toman de Laudes.
+fr: A tierce, sexte et none les psaumes sont ceux du dimanche, et les antiennes sont prises aux laudes.
+de: In Terz, Sext und Non sind die Psalmen die Sonntagpsalmen, und die Antiphonen werden aus den Laudes genommen.
+
+[plain.minor.weekday]
+en: At Terce, Sext and None the antiphons and psalms are from the weekday Psalter.
+es: En Tercia, Sexta y Nona las antífonas y los salmos son del salterio ferial.
+fr: A tierce, sexte et none les antiennes et les psaumes sont du psautier du jour.
+de: In Terz, Sext und Non sind Antiphonen und Psalmen aus dem Wochentagspsalter.
+
+[plain.vespers]
+en: These are {which}. What is proper is marked on the lines below; the rest is the Ordinary or the Psalter.
+es: Son las {which}. Lo propio está marcado en las líneas de abajo; lo demás es el Ordinario o el Salterio.
+fr: Ce sont les {which}. Ce qui est propre est marqué aux lignes ci-dessous ; le reste est l'ordinaire ou le psautier.
+de: Dies ist die {which}. Was eigen ist, steht in den Zeilen unten; das Übrige ist das Ordinarium oder der Psalter.
+
+[plain.compline.sunday]
+en: Compline is of Sunday.
+es: Completas es del domingo.
+fr: Les complies sont du dimanche.
+de: Die Komplet ist vom Sonntag.
+la: Completorium de dominica.
+
+[plain.compline.weekday]
+en: Compline is of the weekday.
+es: Completas es de la feria.
+fr: Les complies sont du jour de la semaine.
+de: Die Komplet ist vom Wochentag.
+la: Completorium de feria.
+
+[plain.preces.yes]
+en: The preces are said at this hour.
+es: Las preces se dicen en esta hora.
+fr: Les prières se disent à cette heure.
+de: Die Preces werden in dieser Hore gebetet.
+
+[plain.preces.no]
+en: The preces are not said at this hour.
+es: Las preces no se dicen en esta hora.
+fr: Les prières ne se disent pas à cette heure.
+de: Die Preces werden in dieser Hore nicht gebetet.
+
+[plain.commemoration]
+en: Commemorated: {name}. A commemoration is the antiphon, verse and collect of that office, said after the collect of the day. It is not added as a further lesson at Matins.
+es: Conmemoración: {name}. Una conmemoración es la antífona, el versículo y la oración de ese oficio, después de la oración del día. No se añade como una lección más en Maitines.
+fr: Commémoraison : {name}. Une commémoraison est l'antienne, le verset et l'oraison de cet office, après l'oraison du jour. Elle n'est pas ajoutée comme leçon supplémentaire aux matines.
+de: Kommemoration: {name}. Eine Kommemoration ist die Antiphon, der Vers und die Oration jenes Offiziums, nach der Oration des Tages. Sie wird nicht als weitere Lesung in der Matutin angefügt.
+
+[plain.antiphons]
+en: The antiphons are said in full before and after the psalms.
+es: Las antífonas se dicen enteras antes y después de los salmos.
+fr: Les antiennes se disent en entier avant et après les psaumes.
+de: Die Antiphonen werden vor und nach den Psalmen ganz gebetet.
+
+[plain.collect]
+en: The collect stands at the end of the hour. At Prime and at Compline it is the collect of the Ordinary, except on the days the rubrics name.
+es: La oración está al fin de la hora. En Prima y en Completas es la oración del Ordinario, salvo los días que nombran las rúbricas.
+fr: L'oraison est à la fin de l'heure. A prime et à complies c'est l'oraison de l'ordinaire, sauf les jours que les rubriques nomment.
+de: Die Oration steht am Ende der Hore. In der Prim und in der Komplet ist es die Oration des Ordinariums, außer an den Tagen, welche die Rubriken nennen.
+
+[plain.tedeum.yes]
+en: The Te Deum is said after the last lesson, instead of a last responsory.
+es: El Te Deum se dice después de la última lección, en lugar del último responsorio.
+fr: Le Te Deum se dit après la dernière leçon, à la place du dernier répons.
+de: Das Te Deum wird nach der letzten Lesung gebetet, anstelle des letzten Responsoriums.
+la: Hymnus Te Deum dicitur post ultimam lectionem.
+
+[plain.tedeum.no]
+en: The Te Deum is not said. A responsory follows the last lesson.
+es: El Te Deum no se dice. Un responsorio sigue a la última lección.
+fr: Le Te Deum ne se dit pas. Un répons suit la dernière leçon.
+de: Das Te Deum wird nicht gebetet. Ein Responsorium folgt auf die letzte Lesung.
+
+[plain.creed.no]
+en: The Athanasian Creed is not said at Prime. It is said only on Trinity Sunday.
+es: El Símbolo Atanasiano no se dice en Prima. Solo se dice el domingo de la Santísima Trinidad.
+fr: Le Symbole d'Athanase ne se dit pas à prime. Il se dit seulement le dimanche de la Très Sainte Trinité.
+de: Das Athanasianische Glaubensbekenntnis wird in der Prim nicht gebetet. Es wird nur am Dreifaltigkeitssonntag gebetet.
+
+[plain.creed.yes]
+en: The Athanasian Creed is said at Prime, after the psalms and before the antiphon is repeated.
+es: El Símbolo Atanasiano se dice en Prima, después de los salmos y antes de repetir la antífona.
+fr: Le Symbole d'Athanase se dit à prime, après les psaumes et avant de répéter l'antienne.
+de: Das Athanasianische Glaubensbekenntnis wird in der Prim gebetet, nach den Psalmen und bevor die Antiphon wiederholt wird.
+
+[plain.first.yes]
+en: First Vespers are said on the evening before.
+es: Las primeras vísperas se dicen la víspera por la tarde.
+fr: Les premières vêpres se disent la veille au soir.
+de: Die erste Vesper wird am Vorabend gebetet.
+la: I Vesperae dicuntur vespere praecedenti.
+
+[plain.first.no]
+en: This office does not, of itself, begin the evening before.
+es: Este oficio, de suyo, no empieza la víspera por la tarde.
+fr: Cet office ne commence pas, de soi, la veille au soir.
+de: Dieses Offizium beginnt von sich aus nicht am Vorabend.
+
+[plain.lessons.festive]
+en: In a festive or semifestive Office the first nocturn is Scripture (proper or from the Common), the second is the life of the saint or the Common, and the third is the homily on the gospel.
+es: En un oficio festivo o semifestivo el primer nocturno es Escritura (propia o del Común), el segundo es la vida del santo o el Común, y el tercero es la homilía del evangelio.
+fr: Dans un office festif ou semi-festif le premier nocturne est l'Écriture (propre ou du commun), le second est la vie du saint ou le commun, et le troisième est l'homélie sur l'évangile.
+de: In einem festlichen oder halbfestlichen Offizium ist die erste Nokturn Schrift (eigen oder aus dem Commune), die zweite das Leben des Heiligen oder das Commune, und die dritte die Homilie über das Evangelium.
+
+[plain.lessons.sunday]
+en: On a Sunday the first two lessons are the occurring Scripture, joined as the rubrics say, and the third is the homily on the gospel.
+es: En domingo las dos primeras lecciones son la Escritura del día, unidas como dicen las rúbricas, y la tercera es la homilía del evangelio.
+fr: Le dimanche les deux premières leçons sont l'Écriture occurrente, réunies comme le disent les rubriques, et la troisième est l'homélie sur l'évangile.
+de: Am Sonntag sind die ersten zwei Lesungen die Schrift des Tages, verbunden wie die Rubriken es sagen, und die dritte ist die Homilie über das Evangelium.
+
+[plain.lessons.ordinary]
+en: In an ordinary Office the first two lessons are Scripture and the third is of the feast, often the contracted lesson.
+es: En un oficio ordinario las dos primeras lecciones son Escritura y la tercera es de la fiesta, a menudo la lección contracta.
+fr: Dans un office ordinaire les deux premières leçons sont l'Écriture et la troisième est de la fête, souvent la leçon contractée.
+de: In einem gewöhnlichen Offizium sind die ersten zwei Lesungen Schrift und die dritte vom Fest, oft die zusammengezogene Lesung.
+
+[plain.lessons.ferial]
+en: On a feria with a homily, the three lessons are that homily. On a feria without one, they are the occurring Scripture.
+es: En una feria con homilía, las tres lecciones son esa homilía. En una feria sin ella, son la Escritura del día.
+fr: Une férie avec homélie a pour trois leçons cette homélie. Une férie sans homélie a l'Écriture occurrente.
+de: An einer Ferie mit Homilie sind die drei Lesungen diese Homilie. An einer Ferie ohne Homilie sind sie die Schrift des Tages.

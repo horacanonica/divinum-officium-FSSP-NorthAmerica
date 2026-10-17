@@ -1,0 +1,11 @@
+# Placeholder edition. It is always offered, and it carries no page numbers.
+# A real edition is another file in this directory. See README.md.
+# Do not invent volume boundaries here: this choice is structure only.
+
+id: general
+coming_soon: 1
+name.en: General structure only
+name.es: Solo la estructura general
+name.fr: Structure générale seulement
+name.de: Nur die allgemeine Gliederung
+name.la: Structura generalis tantum
