@@ -145,8 +145,7 @@ sub pmenu {
 Options</A>&ensp;
 <A HREF="#" onclick="callmissa();">Sancta Missa</A>&ensp;
 <A HREF="#" onclick="callkalendar();">Ordo</A>&ensp;
-<A HREF="/pwa/">Offline</A>&ensp;
-<A HREF="https://form.jotform.com/262891040787061" TARGET="_BLANK">Report a problem</A>
+<A HREF="/pwa/">Offline</A>
 PrintTag
 }
 
