@@ -129,6 +129,7 @@ class Calendar:
     place: str
     chain: tuple[str, ...]
     monthly: bool = True
+    feasts: tuple = ()
 
 
 @dataclass(frozen=True)
@@ -264,6 +265,75 @@ def load_titles(path: Path | None = None) -> dict[str, str]:
     return found
 
 
+SANCTI_DIR = ROOT / "web" / "www" / "horas" / "Latin" / "Sancti"
+_CLASS_NAMES = {"1": "I", "2": "II", "3": "III", "4": "IV"}
+
+
+def _feast_kind(date_key: str, ref: str) -> str:
+    """proper | elevated | class changed, from the first line of the Sancti file."""
+    path = SANCTI_DIR / f"{ref}.txt"
+    text = path.read_text(encoding="utf-8", errors="replace") if path.exists() else ""
+    if text.startswith("@Sancti/"):
+        return "elevated"
+    if ref == date_key:
+        return "class changed"
+    return "proper"
+
+
+def _layer_name(kalendar: str) -> str:
+    if kalendar == "FSSP":
+        return "FSSP"
+    if kalendar.startswith("USA"):
+        return "United States"
+    if kalendar.startswith("CAN"):
+        return "Canada"
+    if kalendar.startswith("Dio"):
+        return "Diocese"
+    if kalendar.startswith("Site"):
+        return "Parish"
+    return "This calendar"
+
+
+def calendar_feasts(chain: tuple[str, ...], versions: dict[str, Version]) -> tuple:
+    """Local feasts by layer, FSSP first. A nearer layer replaces a farther one on the same date."""
+    layers = []
+    for name in chain:
+        layers.append(name)
+        if name == FSSP_VERSION:
+            break
+    layers.reverse()
+    taken: dict[str, int] = {}
+    found: list[dict] = []
+    for index, name in enumerate(layers):
+        kal = versions[name].kalendar
+        path = KALENDARIA_DIR / f"{kal}.txt"
+        if not path.exists():
+            continue
+        for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+            if line.startswith(("#", "*")) or "=" not in line:
+                continue
+            parts = line.split("=")
+            if len(parts) < 4 or not re.fullmatch(r"\d\d-\d\d", parts[0]):
+                continue
+            ref = parts[1].split("~")[0]
+            found.append(
+                {
+                    "layer": _layer_name(kal),
+                    "date": parts[0],
+                    "name": parts[2],
+                    "class": _CLASS_NAMES.get(parts[3], parts[3]),
+                    "kind": _feast_kind(parts[0], ref),
+                    "_order": index,
+                }
+            )
+            taken[parts[0]] = index
+    kept = [f for f in found if taken[f["date"]] == f["_order"]]
+    kept.sort(key=lambda f: (f["_order"], f["date"]))
+    for f in kept:
+        del f["_order"]
+    return tuple(kept)
+
+
 def load_calendars(
     versions: dict[str, Version] | None = None,
     regions_path: Path | None = None,
@@ -294,6 +364,7 @@ def load_calendars(
                 place=place,
                 chain=chain_of(name, versions),
                 monthly=name not in year_only,
+                feasts=calendar_feasts(chain_of(name, versions), versions),
             )
         )
 
@@ -802,6 +873,7 @@ def _blank_entry(cal: Calendar) -> dict:
         "built": {},
         "files": [],
         **({} if cal.monthly else {"monthly": False}),
+        "feasts": list(cal.feasts),
     }
 
 

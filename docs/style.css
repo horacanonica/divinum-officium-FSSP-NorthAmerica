@@ -290,3 +290,9 @@ footer {
     margin-bottom: 0.15rem;
   }
 }
+
+.feasts { margin: 0.5rem 0 0.9rem; font-size: 0.92rem; }
+.feasts-title { margin: 0 0 0.2rem; font-weight: 600; }
+.feasts-layer { margin: 0.5rem 0 0.1rem; font-weight: 600; color: var(--muted, inherit); }
+.feasts ul { margin: 0; padding-left: 1.2rem; }
+.feasts li { margin: 0.1rem 0; }

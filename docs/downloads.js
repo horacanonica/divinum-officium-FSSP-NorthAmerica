@@ -132,6 +132,25 @@ function render(catalog) {
       card.dataset.filter = text;
       card.appendChild(el("h3", null, calendar.name));
       if (calendar.place) card.appendChild(el("p", "place", calendar.place));
+      const feasts = calendar.feasts || [];
+      if (feasts.length) {
+        const box = el("div", "feasts");
+        box.appendChild(el("p", "feasts-title", "Local feasts"));
+        let layer = null;
+        let list = null;
+        feasts.forEach(function (feast) {
+          if (feast.layer !== layer) {
+            layer = feast.layer;
+            box.appendChild(el("p", "feasts-layer", layer));
+            list = el("ul");
+            box.appendChild(list);
+          }
+          const parts = feast.date.split("-");
+          const when = MONTHS[Number(parts[0]) - 1] + " " + Number(parts[1]);
+          list.appendChild(el("li", null, when + " \u2014 " + feast.name + " \u2014 " + feast["class"] + " class, " + feast.kind));
+        });
+        card.appendChild(box);
+      }
       const files = fileIndex(calendar, variant);
       groupByYear(windowMonths).forEach(function (group) {
         const block = el("div", "year-block");

@@ -71,6 +71,17 @@ class CalendarDiscoveryTest(unittest.TestCase):
             if cal.version.split(" - ", 1)[1].startswith("St. "):
                 self.assertIn(",", cal.name)
 
+    def test_calendars_list_their_local_feasts_by_layer(self):
+        phoenix = self.by_slug["diocese-of-phoenix"]
+        layers = [f["layer"] for f in phoenix.feasts]
+        self.assertEqual(layers[0], "FSSP")
+        self.assertLess(layers.index("United States"), layers.index("Diocese"))
+        dec12 = [f for f in phoenix.feasts if f["date"] == "12-12"]
+        self.assertEqual(len(dec12), 1)  # the diocese replaces the US layer on the same date
+        self.assertEqual((dec12[0]["layer"], dec12[0]["class"]), ("Diocese", "I"))
+        canada = self.by_slug["diocese-of-calgary"]
+        self.assertNotIn("United States", {f["layer"] for f in canada.feasts})
+
     def test_missing_region_falls_through_to_other(self):
         versions = library.load_versions()
         versions["Rubrics 1960 - Testville"] = library.Version(

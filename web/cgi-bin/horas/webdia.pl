@@ -1001,6 +1001,7 @@ sub bottom_links_menu {
   my @options = map { "<A HREF=\"../../www/horas/Help/" . lcfirst($_) . ".html\" TARGET=\"_BLANK\">$_</A>\n"; }
     qw(Versions Credits Download Rubrics Technical Help);
   push(@options, "<A HREF=\"/pwa/\">Offline</A>\n");
+  push(@options, "<A HREF=\"https://form.jotform.com/262891040787061\" TARGET=\"_BLANK\">Report a problem</A>\n");
   join("&emsp;\n", @options);
 }
 
