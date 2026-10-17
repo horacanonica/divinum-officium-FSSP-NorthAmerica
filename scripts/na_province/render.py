@@ -1,7 +1,7 @@
 """Fetch a full-year ordo for a version from the running web container and parse it."""
-import re, subprocess, urllib.parse, html
+import os, re, subprocess, urllib.parse, html
 
-CONTAINER = 'divinum-officium-fssp-northamerica-web-1'
+CONTAINER = os.environ.get('DO_ENGINE_CONTAINER', 'divinum-officium-fssp-northamerica-web-1')
 ROW = re.compile(r"callbrevi\('(\d\d)-(\d\d)-(\d{4})'\);\">\d+</A></TD>(.*?)</TR>", re.S)
 
 

@@ -1,0 +1,31 @@
+name: NA Province calendars
+
+# Regenerates the FSSP North American Province calendars from fssp/na_province.yaml
+# inside the real engine and runs the test suite. Fails if the committed generated
+# files are stale. Needs no server: the engine runs as a container on the runner.
+on:
+  workflow_dispatch: {}
+  pull_request:
+    paths: ['fssp/**', 'scripts/na_province/**', 'web/www/Tabulae/**', 'web/www/horas/**/Sancti/**']
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      DO_ENGINE_CONTAINER: do-engine
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and start the engine
+        run: |
+          docker build -t do-engine-image .
+          docker run -d --name do-engine -v "$PWD/web:/var/www/web" do-engine-image
+          for i in $(seq 60); do
+            docker exec do-engine curl -sf http://localhost:8080/ >/dev/null && break; sleep 2
+          done
+      - name: Regenerate
+        run: python3 -I scripts/na_province/gen.py
+      - name: Generated files must be committed
+        run: git diff --exit-code -- Tabulae web fssp || { echo "Generated files are stale: run gen.py and commit"; exit 1; }
+      - name: Tests
+        run: python3 -I scripts/na_province/test_na.py

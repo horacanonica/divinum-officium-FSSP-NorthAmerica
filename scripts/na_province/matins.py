@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Summarise Matins for a version/date: nocturns, lessons, empty lessons, unresolved N. (Latin column)."""
-import re, subprocess, sys, urllib.parse, html
+import os, re, subprocess, sys, urllib.parse, html
 
-C = 'divinum-officium-fssp-northamerica-web-1'
+C = os.environ.get('DO_ENGINE_CONTAINER', 'divinum-officium-fssp-northamerica-web-1')
 
 
 def matins(version, mdy, lang2='Latin', hora='prayMatutinum'):

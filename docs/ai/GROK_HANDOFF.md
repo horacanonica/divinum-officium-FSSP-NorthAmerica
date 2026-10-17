@@ -1,6 +1,6 @@
 # Hand-off: finishing the unanswered FSSP NA Province calendars
 
-Audience: an AI agent (Grok bot) picking this up cold. Branch: `fssp-na-province-calendars`. Do not deploy to Fly.io; do not touch `master` without the owner's say-so.
+Audience: an AI agent (Grok bot) picking this up cold. The work is merged to `master`. Work on a branch and open a PR; do not push to `master` without the owner's say-so. Pushes to `master` auto-deploy to Fly.io and publish the Pages download site, so nothing is live until merged. Never edit `docs/catalog.json` (the EPUB bot owns it).
 
 ## Ground rules
 1. **Never guess.** If an item below has no answer yet, leave it unanswered, keep it out of the menu, and report it. Only act on an answer given by the owner (or a cited source the owner accepts).
@@ -11,7 +11,7 @@ Audience: an AI agent (Grok bot) picking this up cold. Branch: `fssp-na-province
 ## Workflow after each batch of answers
 ```
 cd divinum-officium-FSSP-NorthAmerica
-python3 -I scripts/na_province/gen.py          # regenerate (needs the web container running)
+python3 -I scripts/na_province/gen.py          # regenerate (needs the engine container; set DO_ENGINE_CONTAINER=<name> if yours differs; see .github/workflows/na-province.yml for how to start it)
 python3 -I scripts/na_province/transfers.py    # ~6 min; recomputes 2026/2027 transfers
 python3 -I scripts/na_province/test_na.py      # ~10 min; all tests must pass
 ```

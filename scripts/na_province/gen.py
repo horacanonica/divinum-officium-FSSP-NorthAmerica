@@ -17,7 +17,7 @@ KAL = os.path.join(n.TAB, 'Kalendaria')
 SANC = n.SANCTI
 TEMP = os.path.join(R, 'web/www/horas/Latin/Tempora')
 MANIFEST = os.path.join(R, 'fssp/generated_manifest.json')
-CONTAINER = 'divinum-officium-fssp-northamerica-web-1'
+CONTAINER = os.environ.get('DO_ENGINE_CONTAINER', 'divinum-officium-fssp-northamerica-web-1')
 DUMP = os.path.join(os.path.dirname(__file__), 'dump.pl')
 
 RANKS = {'I': ('Duplex I classis', 6), 'II': ('Duplex II classis', 5), 'III': ('Duplex', 3)}
