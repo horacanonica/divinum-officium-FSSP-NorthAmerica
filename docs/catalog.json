@@ -5,7 +5,7 @@
     "la": "epub-library-la",
     "la-en": "epub-library"
   },
-  "updated": "2026-10-17T02:00:44Z",
+  "updated": "2026-10-17T04:04:30Z",
   "languages": "Latin",
   "variants": [
     {
@@ -1024,7 +1024,7 @@
     {
       "version": "Rubrics 1960 - Arlington",
       "slug": "arlington",
-      "name": "Arlington",
+      "name": "Diocese of Arlington",
       "region": "Northeast & Mid-Atlantic",
       "place": "Arlington, Virginia",
       "built": {
@@ -1817,11 +1817,21 @@
       "monthly": false
     },
     {
+      "version": "Rubrics 1960 - St. Aloysius Parish Thorold ON",
+      "slug": "st-aloysius-parish-thorold-on",
+      "name": "St. Aloysius Parish, Thorold",
+      "region": "Canada",
+      "place": "Thorold, Ontario",
+      "built": {},
+      "files": [],
+      "monthly": false
+    },
+    {
       "version": "Rubrics 1960 - Niagara",
       "slug": "niagara",
-      "name": "Niagara",
+      "name": "St. Aloysius Parish, Thorold (Diocese of St. Catharines)",
       "region": "Canada",
-      "place": "Niagara, Ontario",
+      "place": "Thorold, Ontario",
       "built": {
         "2026": {
           "la-en": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958",
@@ -1862,16 +1872,6 @@
       "monthly": false
     },
     {
-      "version": "Rubrics 1960 - St. Aloysius Parish Thorold ON",
-      "slug": "st-aloysius-parish-thorold-on",
-      "name": "St. Aloysius Parish, Thorold",
-      "region": "Canada",
-      "place": "Thorold, Ontario",
-      "built": {},
-      "files": [],
-      "monthly": false
-    },
-    {
       "version": "Rubrics 1960 - St. Anthony Church Calgary AB",
       "slug": "st-anthony-church-calgary-ab",
       "name": "St. Anthony Church, Calgary",
@@ -1894,9 +1894,9 @@
     {
       "version": "Rubrics 1960 - Guadalajara",
       "slug": "guadalajara",
-      "name": "Guadalajara",
+      "name": "Archdiocese of Guadalajara",
       "region": "Mexico",
-      "place": "Guadalajara, Mexico",
+      "place": "Guadalajara, Jalisco",
       "built": {
         "2026": {
           "la-en": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042",
