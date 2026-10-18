@@ -1131,19 +1131,19 @@ fr: Le tableau est ce que ce site lit. Avec le livret, le schéma emploie ces le
 de: Die Tabelle ist, was diese Seite liest. Mit dem Heft gebraucht das Gerüst diese eigenen Lesungen.
 
 [plain.martyrology]
-en: In private recitation, reading the Martyrology is commendable. It is not required in order to satisfy the obligation. If it is omitted, continue with V. Pretiósa in conspéctu Dómini.
-es: En la recitación privada, leer el Martirologio es laudable. No hace falta para cumplir la obligación. Si se omite, se continúa con V. Pretiósa in conspéctu Dómini.
-fr: Dans la récitation privée, lire le Martyrologe est louable. Ce n'est pas exigé pour satisfaire à l'obligation. S'il est omis, on continue par V. Pretiósa in conspéctu Dómini.
-de: Beim privaten Beten ist das Lesen des Martyrologiums lobenswert. Es ist nicht erforderlich, um der Pflicht zu genügen. Wird es ausgelassen, fährt man fort mit V. Pretiósa in conspéctu Dómini.
+en: At Prime the 1960 Codex mentions the Martyrology only for posture. N. 266 says that all stand at Prime from the repetition of the antiphon to the end, except at the reading of the Martyrology, unless they are to kneel at the collects. N. 268 says that all sit while the Martyrology is being read at Prime, unless another posture is prescribed. N. 261 says that these rules of posture hold for recitation in choir or in common, and that it is fitting for a person reciting alone to follow what is said about the sign of the cross.
+es: En Prima el Código de 1960 menciona el Martirologio solo en cuanto a la postura. El n. 266 dice que todos están de pie en Prima desde la repetición de la antífona hasta el fin, excepto en la lectura del Martirologio, a no ser que deban arrodillarse en las oraciones. El n. 268 dice que todos se sientan mientras se lee el Martirologio en Prima, a no ser que se prescriba otra postura. El n. 261 dice que estas reglas de postura valen para la recitación en coro o en común, y que conviene que quien reza solo siga lo que se dice de la señal de la cruz.
+fr: À prime, le code de 1960 ne mentionne le martyrologe que pour la posture. Le n. 266 dit que tous se tiennent debout à prime, depuis la répétition de l'antienne jusqu'à la fin, sauf à la lecture du martyrologe, à moins qu'ils ne doivent s'agenouiller aux oraisons. Le n. 268 dit que tous sont assis pendant la lecture du martyrologe à prime, à moins qu'une autre posture ne soit prescrite. Le n. 261 dit que ces règles de posture valent pour la récitation au chœur ou en commun, et qu'il convient que celui qui récite seul se conforme à ce qui est dit du signe de la croix.
+de: In der Prim erwähnt der Codex von 1960 das Martyrologium nur hinsichtlich der Körperhaltung. Nr. 266 sagt, dass in der Prim alle stehen, von der Wiederholung der Antiphon bis zum Ende, außer bei der Lesung des Martyrologiums, sofern sie nicht bei den Orationen knien. Nr. 268 sagt, dass alle sitzen, während das Martyrologium in der Prim gelesen wird, sofern nicht eine andere Haltung vorgeschrieben ist. Nr. 261 sagt, dass diese Haltungsregeln für das Beten im Chor oder in Gemeinschaft gelten, und dass es sich ziemt, dass wer allein betet, sich an das hält, was vom Kreuzzeichen gesagt wird.
+
+[plain.martyrology.sought]
+en: No article was found which says that in private recitation (extra chorum) the reading of the Martyrology is not of obligation, especially because it is not printed in the breviary, and that one then continues with V. Pretiósa in conspéctu Dómini.
+es: No se ha encontrado un artículo que diga que en la recitación privada (extra chorum) la lectura del Martirologio no es de obligación, sobre todo porque no está impreso en el breviario, y que entonces se continúa con V. Pretiósa in conspéctu Dómini.
+fr: On n'a trouvé aucun article disant que, dans la récitation privée (extra chorum), la lecture du martyrologe n'est pas d'obligation, surtout parce qu'il n'est pas imprimé dans le bréviaire, et que l'on continue alors par V. Pretiósa in conspéctu Dómini.
+de: Es wurde kein Artikel gefunden, der sagt, dass beim privaten Beten (extra chorum) das Lesen des Martyrologiums nicht verpflichtend ist, zumal es nicht im Brevier gedruckt ist, und dass man dann mit V. Pretiósa in conspéctu Dómini fortfährt.
 
 [sk.martyrology]
-en: Martyrology — commendable in private, not required. If omitted, continue with V. Pretiósa in conspéctu Dómini.
-es: Martirologio — laudable en privado, no exigido. Si se omite, se continúa con V. Pretiósa in conspéctu Dómini.
-fr: Martyrologe — louable en privé, non exigé. S'il est omis, on continue par V. Pretiósa in conspéctu Dómini.
-de: Martyrologium — privat lobenswert, nicht vorgeschrieben. Wird es ausgelassen, weiter mit V. Pretiósa in conspéctu Dómini.
-
-[ui.quote_ordinary]
-en: Latin, from the Ordinary of Prime. This sentence is not an article of the Codex in AAS 52.
-es: Latín, del Ordinario de Prima. Esta frase no es un artículo del Código en AAS 52.
-fr: Latin, de l'ordinaire de prime. Cette phrase n'est pas un article du code dans les AAS 52.
-de: Latein, aus dem Ordinarium der Prim. Dieser Satz ist kein Artikel des Codex in den AAS 52.
+en: Martyrology — in choir or in common, all sit while it is read (n. 268). The Codex states the posture only.
+es: Martirologio — en coro o en común, todos se sientan mientras se lee (n. 268). El Código indica solo la postura.
+fr: Martyrologe — au chœur ou en commun, tous sont assis pendant la lecture (n. 268). Le code n'en donne que la posture.
+de: Martyrologium — im Chor oder in Gemeinschaft sitzen alle während der Lesung (Nr. 268). Der Codex nennt nur die Haltung.
