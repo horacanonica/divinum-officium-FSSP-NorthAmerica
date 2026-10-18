@@ -15,7 +15,7 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 | English still [to be sourced] | 0 |
 | Latin sourced from AAS 52 (1960) | 34 |
 | Latin still [to be sourced] | 0 |
-| Plain-language strings with no Latin wording | 47 |
+| Plain-language strings with no Latin wording | 51 |
 
 ## Catalogue
 
@@ -96,6 +96,7 @@ The lines the page actually quotes from n. 91 (the introduction, proper 1st clas
 
 The Latin of the Code, above, is a different thing from a Latin paraphrase. Where no `la:` line is stored, the Latin view of the page shows the English sentence and the marker `[to be sourced]`. Hour names, section names, and the short rubrical sentences that are ordinary Latin do have a `la:` line.
 
+- `lk.abridged`
 - `plain.antiphons`
 - `plain.collect`
 - `plain.commemoration`
@@ -120,6 +121,9 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `plain.why.rankup`
 - `plain.why.same`
 - `sk.book.out`
+- `sk.engine_life`
+- `sk.slot_order`
+- `sk.table_note`
 - `ui.calendar`
 - `ui.col_incipit`
 - `ui.col_source`

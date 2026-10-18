@@ -1002,11 +1002,13 @@ sub ribbon_load_booklets {
     chomp $line;
     next if $line =~ /^\s*$/ || $line =~ /^\s*#/;
     my ($file, $href) = split /\t/, $line, 2;
-    next unless $file && $href;
+    next unless $file;
     $file =~ s/\.txt\z//;
     $file =~ s/^\s+|\s+\z//g;
+    $href = '' if !defined $href;
     $href =~ s/^\s+|\s+\z//g;
-    $RIBBON_BOOKLET{$file} = $href if $href ne '';
+    # A file with no URL is still in the booklet. The note is shown; the link stays empty.
+    $RIBBON_BOOKLET{$file} = $href;
   }
   close $fh;
 }
@@ -1302,12 +1304,138 @@ sub ribbon_part_class {
   return ribbon_classify($file, $key);
 }
 
+sub ribbon_office_hash {
+  my ($stem) = @_;
+  $stem = ribbon_stem($stem // '');
+  return {} if $stem eq '';
+  my $h = eval { setupstring('Latin', "$stem.txt") };
+  return ($h && ref $h eq 'HASH') ? $h : {};
+}
+
+sub ribbon_rank_num_of {
+  my ($stem) = @_;
+  my @p = split /;;/, (ribbon_office_hash($stem)->{Rank} // '');
+  return undef unless defined $p[2] && $p[2] =~ /([\d.]+)/;
+  return $1 + 0;
+}
+
+sub ribbon_feast_title {
+  my ($stem) = @_;
+  my $h = ribbon_office_hash($stem);
+  my $o = $h->{Officium} // '';
+  $o =~ s/\s+/ /g;
+  $o =~ s/^\s+|\s+\z//g;
+  return $o if $o =~ /\S/;
+  my ($t) = split /;;/, $h->{Rank} // '';
+  $t //= '';
+  $t =~ s/^\s+|\s+\z//g;
+  return $t;
+}
+
+sub ribbon_title_words {
+  my ($s) = @_;
+  $s = lc($s // '');
+  $s =~ s/æ/ae/g;
+  $s =~ s/œ/oe/g;
+  $s =~ tr/áàäâéèëêíìïîóòöôúùüûýÿçñ/aaaaeeeeiiiioooouuuuyycn/;
+  $s =~ s/[^a-z0-9 ]//g;
+  return grep { $_ ne '' } split / /, $s;
+}
+
+sub ribbon_same_title {
+  my ($a, $b) = @_;
+  my @a = ribbon_title_words($a);
+  my @b = ribbon_title_words($b);
+  return 0 unless @a >= 3 && @b >= 3;
+  return $a[0] eq $b[0] && $a[1] eq $b[1] && $a[2] eq $b[2];
+}
+
+sub ribbon_one_lesson_key {
+  my ($stem) = @_;
+  my $h = ribbon_office_hash($stem);
+  return 'Lectio94' if ($h->{Lectio94} // '') =~ /\S/;
+  return 'Lectio93' if ($h->{Lectio93} // '') =~ /\S/;
+  return 'Lectio4+5+6' if ($h->{Lectio4} // '') =~ /\S/;
+  return '';
+}
+
+sub ribbon_roman_on {
+  my ($md) = @_;
+  ribbon_universal_ensure();
+  if ($RIBBON_UNIV_DAY{$md} && $RIBBON_UNIV_DAY{$md}[0]) {
+    my $f = $RIBBON_UNIV_DAY{$md}[0];
+    $f = "Sancti/$f" unless $f =~ m{/};
+    return $f if -e "$datafolder/Latin/$f.txt";
+  }
+  return "Sancti/$md" if $md && -e "$datafolder/Latin/Sancti/$md.txt";
+  return '';
+}
+
+# A first- or second-class feast whose 1960 book prints only one abridged
+# lesson. Lesson 4 is that lesson; lessons 5 and 6 come from the Common.
+# Returns a hashref, or undef.
+sub ribbon_abridged_life {
+  my ($facts) = @_;
+  return $facts->{_abridged} if $facts && exists $facts->{_abridged};
+  my $finish = sub {
+    $facts->{_abridged} = $_[0] if $facts;
+    return $_[0];
+  };
+  return $finish->(undef) unless $facts && ($facts->{rank} || 0) >= 5 && ($facts->{nocturns} || 0) == 3;
+  my ($mo, $da) = split /-/, $facts->{date} // '';
+  return $finish->(undef) unless defined $mo && $mo ne '';
+  my $md = sprintf('%02d-%02d', $mo, $da);
+  my $winner = ribbon_stem($facts->{winner});
+  my $title = ribbon_feast_title($winner);
+  my $roman = ribbon_roman_on($md);
+  my $use;
+  if ($roman && ribbon_same_title($title, ribbon_feast_title($roman))) {
+    my $rr = ribbon_rank_num_of($roman);
+    $use = $roman if defined $rr && $rr < 5 && ribbon_one_lesson_key($roman);
+  }
+  if (!$use) {
+    my ($L4) = grep { ($_->{n} || 0) == 4 } @{ $facts->{lessons} || [] };
+    my $src = ribbon_stem($L4->{source} // '');
+    if ($src && ribbon_in_roman_sancti($src) && ribbon_same_title($title, ribbon_feast_title($src))) {
+      my $sr = ribbon_rank_num_of($src);
+      $use = $src if defined $sr && $sr < 5 && ribbon_one_lesson_key($src);
+    }
+  }
+  return $finish->(undef) unless $use;
+  my @life = grep { ($_->{n} || 0) >= 4 && ($_->{n} || 0) <= 6 } @{ $facts->{lessons} || [] };
+  return $finish->(undef) unless @life;
+  my $engine = ribbon_stem($life[0]{source} // '');
+  return $finish->(undef) if $engine =~ m{^Commune/}i;
+  my $owned = ribbon_section_owner($engine, 'Lectio4');
+  $engine = $owned if $owned;
+  my $com = ribbon_stem($facts->{commune} || '');
+  $com = "Commune/$com" if $com ne '' && $com !~ m{/};
+  return $finish->({
+    roman   => ribbon_stem($use),
+    key     => ribbon_one_lesson_key($use),
+    engine  => $engine || $winner,
+    commune => $com,
+    winner  => $winner,
+  });
+}
+
 sub ribbon_lesson_groups {
   my ($lessons, $noct) = @_;
   my @g;
   for my $L (@{ $lessons || [] }) {
     next unless ($L->{nocturn} || 0) == $noct;
     my $c = ribbon_classify($L->{source}, 'Lectio' . $L->{n});
+    # A third-class proprium does not print a third nocturn. Those homily
+    # lessons are not in the 1960 book when the feast is said with nine lessons.
+    if (($L->{n} || 0) >= 7 && $c->{book} && ($c->{place} || '') eq 'sancti') {
+      my $r = ribbon_rank_num_of($c->{file});
+      if (defined $r && $r < 5) {
+        $c = {
+          %$c, book => 0, place => 'local',
+          booklet => ribbon_booklet_href($c->{file}),
+        };
+      }
+    }
     my $sig = join "\x1e", ($L->{kind} || ''), $c->{place}, $c->{file}, $c->{book};
     if (@g && $g[-1]{sig} eq $sig && $g[-1]{b} == $L->{n} - 1) {
       $g[-1]{b} = $L->{n};
@@ -1340,12 +1468,30 @@ sub ribbon_skeleton_html {
         my $c = ribbon_part_class($h, $part->{antiphons} ? 'antiphons' : 'psalms', $src->{file});
         push @inner, '<li>' . ribbon_sh($code, 'sk.ants_psalms') . ' — ' . ribbon_where_html($code, $c) . '</li>';
       }
-      for my $g (ribbon_lesson_groups($facts->{lessons}, $noct)) {
-        my $kind = $g->{kind} ? ribbon_s($code, 'lk.' . $g->{kind}) : '';
-        my $lab = $g->{a} == $g->{b}
-          ? ribbon_s($code, 'sk.lesson', { n => $g->{a}, kind => $kind })
-          : ribbon_s($code, 'sk.lessons', { a => $g->{a}, b => $g->{b}, kind => $kind });
-        push @inner, '<li>' . ribbon_h($lab) . ' — ' . ribbon_where_html($code, $g->{class}) . '</li>';
+      my $abr = ($noct == 2) ? ribbon_abridged_life($facts) : undef;
+      if ($abr) {
+        my $proper = { place => 'sancti', file => $abr->{roman}, book => 1, booklet => '' };
+        my $common = { place => 'commune', file => $abr->{commune}, book => 1, booklet => '' };
+        my $kind = ribbon_s($code, 'lk.abridged');
+        push @inner, '<li>' . ribbon_h(ribbon_s($code, 'sk.lesson', { n => 4, kind => $kind }))
+          . ' — ' . ribbon_where_html($code, $proper) . '</li>';
+        push @inner, '<li>' . ribbon_h(ribbon_s($code, 'sk.lessons_plain', { a => 5, b => 6 }))
+          . ' — ' . ribbon_where_html($code, $common) . '</li>';
+        push @inner, '<li>' . ribbon_sh($code, 'sk.slot_order') . '</li>';
+        my $flag = {
+          place => 'local', file => $abr->{winner}, book => 0,
+          booklet => ribbon_booklet_href($abr->{winner}),
+        };
+        push @inner, '<li>' . ribbon_sh($code, 'sk.engine_life', { file => $abr->{engine} })
+          . ' — ' . ribbon_where_html($code, $flag) . '</li>';
+      } else {
+        for my $g (ribbon_lesson_groups($facts->{lessons}, $noct)) {
+          my $kind = $g->{kind} ? ribbon_s($code, 'lk.' . $g->{kind}) : '';
+          my $lab = $g->{a} == $g->{b}
+            ? ribbon_s($code, 'sk.lesson', { n => $g->{a}, kind => $kind })
+            : ribbon_s($code, 'sk.lessons', { a => $g->{a}, b => $g->{b}, kind => $kind });
+          push @inner, '<li>' . ribbon_h($lab) . ' — ' . ribbon_where_html($code, $g->{class}) . '</li>';
+        }
       }
       $push->($head . (@inner ? '<ul>' . join('', @inner) . '</ul>' : ''));
     }
@@ -1514,6 +1660,9 @@ sub ribbon_lesson_table {
   my $rows = $facts->{lessons} || [];
   return '' unless @$rows;
   my $html = '<h3>' . ribbon_sh($code, 'ui.lessons') . '</h3>';
+  if (ribbon_abridged_life($facts)) {
+    $html .= '<p>' . ribbon_sh($code, 'sk.table_note') . '</p>';
+  }
   $html .= '<table class="lessons" border="1" cellpadding="4" cellspacing="0">';
   $html .= '<tr><th>' . ribbon_sh($code, 'ui.col_n') . '</th><th>' . ribbon_sh($code, 'ui.col_nocturn')
     . '</th><th>' . ribbon_sh($code, 'ui.col_kind') . '</th><th>' . ribbon_sh($code, 'ui.col_source')
@@ -1812,15 +1961,30 @@ ED
     ? $ok->('lesson 4 is the life')
     : $bad->('lesson 4 kind ' . join(',', map { $_->{n} . ':' . $_->{kind} . ':' . $_->{source} } @{ $el->{lessons} }));
   my $life = ribbon_classify($el->{lessons}[3]{source}, 'Lectio4');
-  ($life->{book} && $life->{place} eq 'sancti' && $life->{file} =~ /03-17/ && $life->{file} !~ /nl/)
-    ? $ok->('Patrick life is the universal proper')
+  ($life->{place} eq 'sancti' && $life->{file} =~ /03-17/ && $life->{file} !~ /nl/)
+    ? $ok->('Patrick life text is the universal file')
     : $bad->("life place=$life->{place} file=$life->{file} book=$life->{book}");
+  my $abr = ribbon_abridged_life($el);
+  ($abr && $abr->{roman} =~ /03-17/ && $abr->{key} eq 'Lectio4+5+6' && $abr->{commune} =~ /C4/)
+    ? $ok->('Patrick book prints one abridged lesson')
+    : $bad->('abridged ' . ($abr ? "$abr->{roman} $abr->{key} $abr->{commune}" : 'undef'));
   my $sk = ribbon_skeleton_html('en', $el, 'Matutinum', $el->{hours}{Matutinum}, []);
-  ($sk =~ /class="skeleton"/ && $sk =~ /Nocturn I/ && $sk =~ /Lessons 1/ && $sk =~ /Lessons 4/
-      && $sk =~ /in the printed breviary/ && $sk !~ /print this proper separately/)
-    ? $ok->('El Paso Matins skeleton stays in the book')
+  ($sk =~ /class="skeleton"/ && $sk =~ /Nocturn I/ && $sk =~ /Lessons 1/
+      && $sk =~ /Lesson 4: abridged lesson of the saint/ && $sk =~ /Sancti\/03-17/
+      && $sk =~ /Lessons 5/ && $sk =~ /Commune\/C4/ && $sk =~ /in the printed breviary/
+      && $sk =~ /No article fixes the order/ && $sk =~ /lesson 6/
+      && $sk =~ /print this proper separately/ && $sk =~ /data-file="Sancti\/03-17nl1"/)
+    ? $ok->('El Paso Nocturn II is the book plus the three older lessons')
     : $bad->('El Paso skeleton');
+  my $q218 = ribbon_quote('BR-218');
+  ($q218->{en_ok} && $q218->{en} =~ /made up by lessons taken from the Common/
+      && $q218->{la_ok} && $q218->{la} =~ /numerus ternarius completur lectionibus de Communi/)
+    ? $ok->('BR-218 both languages')
+    : $bad->('BR-218 quote');
   my $gu = ribbon_resolve('12-12-2026', 'Rubrics 1960 - Diocese of Phoenix');
+  exists $RIBBON_BOOKLET{'Sancti/03-17nl1'}
+    ? $ok->('booklet seam lists Patrick')
+    : $bad->('03-17nl1 missing from booklets.txt');
   ($gu->{winner} =~ /12-12s/)
     ? $ok->('Phoenix Guadalupe')
     : $bad->("Phoenix winner=$gu->{winner}");
@@ -1850,6 +2014,12 @@ ED
   $html =~ /temporal cycle/ ? $ok->('volume note') : $bad->('volume note');
   $html =~ /class="page-num"/ ? $bad->('page number shown for general edition') : $ok->('no page numbers yet');
   $html =~ /praeferuntur|preferred to feasts/ ? $ok->('quote on the page') : $bad->('quote missing on the page');
+  $html =~ /numerus ternarius completur lectionibus de Communi/
+    ? $ok->('art. 218 on the El Paso page')
+    : $bad->('art. 218 missing on the page');
+  $html =~ /abridged lesson of the saint/ && $html =~ /print this proper separately/
+    ? $ok->('El Paso page states the book and the booklet')
+    : $bad->('El Paso page skeleton');
   $html =~ /AAS 52/ ? $ok->('AAS attribution') : $bad->('AAS attribution');
 
   my $de = ribbon_html($el, 'Deutsch', 'general');

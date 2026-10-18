@@ -637,6 +637,12 @@ fr: Leçon contractée
 de: Zusammengezogene Lesung
 la: lectio contracta
 
+[lk.abridged]
+en: abridged lesson of the saint
+es: lección abreviada del santo
+fr: leçon abrégée du saint
+de: gekürzte Lesung des Heiligen
+
 [lk.commune]
 en: From the Common
 es: Del Común
@@ -983,6 +989,31 @@ es: Lección {n}: {kind}
 fr: Leçon {n} : {kind}
 de: Lesung {n}: {kind}
 la: Lectio {n}: {kind}
+
+[sk.lessons_plain]
+en: Lessons {a}–{b}
+es: Lecciones {a}–{b}
+fr: Leçons {a}–{b}
+de: Lesungen {a}–{b}
+la: Lectiones {a}–{b}
+
+[sk.slot_order]
+en: Article 218, quoted below, completes the three from the Common when only one lesson is proper. No article fixes the order. This page puts the abridged lesson in lesson 4 and the Common in lessons 5 and 6. Some arrange the Common as lessons 4 and 5 and the life as lesson 6.
+es: El artículo 218, citado abajo, completa las tres con el Común cuando solo hay una lección propia. Ningún artículo fija el orden. Esta página pone la lección abreviada en la lección 4 y el Común en las lecciones 5 y 6. Algunos ponen el Común en las lecciones 4 y 5 y la vida en la lección 6.
+fr: L'article 218, cité plus bas, complète les trois par le Commun lorsqu'une seule leçon est propre. Aucun article ne fixe l'ordre. Cette page met la leçon abrégée à la leçon 4 et le Commun aux leçons 5 et 6. D'autres mettent le Commun aux leçons 4 et 5 et la vie à la leçon 6.
+de: Artikel 218, unten zitiert, ergänzt die drei aus dem Commune, wenn nur eine Lesung eigen ist. Kein Artikel legt die Reihenfolge fest. Diese Seite setzt die gekürzte Lesung als Lesung 4 und das Commune als Lesungen 5 und 6. Manche setzen das Commune als Lesungen 4 und 5 und das Leben als Lesung 6.
+
+[sk.engine_life]
+en: The three older life lessons this site reads ({file}, lessons 4–6)
+es: Las tres lecciones antiguas de la vida que este sitio lee ({file}, lecciones 4–6)
+fr: Les trois anciennes leçons de la vie que ce site lit ({file}, leçons 4–6)
+de: Die drei älteren Lebenslesungen, die diese Seite liest ({file}, Lesungen 4–6)
+
+[sk.table_note]
+en: The table is what this site reads. The skeleton above is where a printed 1960 breviary has the lessons.
+es: La tabla es lo que este sitio lee. El esquema de arriba dice dónde tiene las lecciones un breviario impreso de 1960.
+fr: Le tableau est ce que ce site lit. Le schéma ci-dessus dit où un bréviaire imprimé de 1960 a les leçons.
+de: Die Tabelle ist, was diese Seite liest. Das Gerüst oben sagt, wo ein gedrucktes Brevier von 1960 die Lesungen hat.
 
 [sk.ants_psalms]
 en: Antiphons and psalms
