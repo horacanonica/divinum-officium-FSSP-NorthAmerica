@@ -249,16 +249,90 @@ sub ribbon_volume_label {
   return $vol->{labels}{$code} || $vol->{labels}{en} || $vol->{id};
 }
 
+# Latin view of a plain line: the AAS article (or one letter, or numbered
+# sentences), labeled "cf. n. X". Not a translation of the English sentence.
+# A letter is 'a' or 'b'. A sentence spec is '2' or '1-2'.
+our %RIBBON_CF = (
+  'plain.antiphons'        => [[191]],
+  'plain.creed.yes'        => [[203]],
+  'plain.creed.no'         => [[203]],
+  'plain.prime'            => [[242]],
+  'plain.collect'          => [[246], [248]],
+  'plain.commemoration'    => [[251]],
+  'plain.tedeum.no'        => [[239]],
+  'plain.preces.yes'       => [[260]],
+  'plain.first.no'         => [[37, 'b']],
+  'plain.lessons.sunday'   => [[220]],
+  'plain.lessons.ordinary' => [[221]],
+  'plain.lessons.ferial'   => [[222]],
+  'plain.lessons.festive'  => [[217, 'a'], [218, 'a']],
+  'lk.abridged'            => [[221, 'b']],
+  'sk.from_common'         => [[218, 'a']],
+  'sk.slot_order'          => [[218, 'a']],
+  'ui.resp.last'           => [[230, '1-2']],
+  'ui.resp.passion'        => [[230, '1-2']],
+  'ui.resp.pasch'          => [[229]],
+);
+
+sub ribbon_la_body {
+  my ($n) = @_;
+  my $row = $RIBBON_LA{$n} or return '';
+  my $s = $row->{la} // '';
+  $s =~ s/\s+/ /g;
+  $s =~ s/^\s+|\s+$//g;
+  return $s;
+}
+
+sub ribbon_la_piece {
+  my ($n, $spec) = @_;
+  my $body = ribbon_la_body($n);
+  return '' if $body eq '';
+  return $body if !defined $spec || $spec eq '';
+  if ($spec =~ /^(\d+)-(\d+)\z/) {
+    my @s = split /(?<=\.)\s+/, $body;
+    return '' if $1 < 1 || $2 > @s;
+    return join(' ', @s[$1 - 1 .. $2 - 1]);
+  }
+  if ($spec =~ /^(\d+)\z/) {
+    my @s = split /(?<=\.)\s+/, $body;
+    return $s[$1 - 1] // '';
+  }
+  if ($spec =~ /^([a-z])\z/) {
+    my $let = $1;
+    my $next = chr(ord($let) + 1);
+    my $pat = '(' . $let . '\\)\\s*.*?)(?=\\s*' . $next . '\\)|\\z)';
+    return $1 if $body =~ /$pat/;
+  }
+  return '';
+}
+
+sub ribbon_cf_text {
+  my ($id) = @_;
+  my $parts = $RIBBON_CF{$id} or return '';
+  my @out;
+  for my $p (@$parts) {
+    my ($n, $spec) = @$p;
+    my $piece = ribbon_la_piece($n, $spec);
+    return '' if $piece eq '';
+    my $label = (defined $spec && $spec =~ /^[a-z]\z/) ? "cf. n. $n $spec" : "cf. n. $n";
+    push @out, "$label. $piece";
+  }
+  return join(' ', @out);
+}
+
 sub ribbon_s {
   my ($code, $id, $slots) = @_;
   my $pack = $RIBBON_STRINGS{$id};
   my $text;
   my $sourced = 1;
-  if ($pack && defined $pack->{$code} && $pack->{$code} ne '') {
+  my $cf = ($code eq 'la') ? ribbon_cf_text($id) : '';
+  if ($cf ne '') {
+    $text = $cf;
+  } elsif ($pack && defined $pack->{$code} && $pack->{$code} ne '') {
     $text = $pack->{$code};
-  } elsif ($code eq 'la' && $pack && defined $pack->{en}) {
-    $text = $pack->{en} . ' [to be sourced]';
-    $sourced = 0;
+  } elsif ($code eq 'la' && $pack && defined $pack->{en} && $pack->{en} ne '') {
+    # Screen labels and explanations. English, with no rubric marker.
+    $text = $pack->{en};
   } else {
     $text = $id;
     $sourced = 0;
@@ -1704,9 +1778,10 @@ sub ribbon_verse_html {
 
 sub ribbon_responsory_html {
   my ($code) = @_;
-  my ($sicut, $sicut_ok) = ribbon_s($code, 'ui.resp.sicut');
+  my ($sicut) = ribbon_s($code, 'ui.resp.sicut');
   my $sicut_html = ribbon_h($sicut);
-  $sicut_html .= ' [to be sourced]' if $sicut_ok;
+  # The explicit "without Sicut erat" wording is still an open rubric claim.
+  $sicut_html .= ' [to be sourced]';
   my $out = '<div class="resp-box"><h4>' . ribbon_sh($code, 'ui.resp.title') . '</h4>';
   $out .= '<p>' . ribbon_sh($code, 'ui.resp.dessain') . '</p><ol>';
   $out .= '<li>' . ribbon_sh($code, 'ui.resp.one') . '</li>';
@@ -2052,6 +2127,11 @@ CSS
 sub ribbon_strings_missing_la {
   my @ids;
   for my $id (sort keys %RIBBON_STRINGS) {
+    next if $RIBBON_CF{$id};
+    # Latin view shows the Ordinarium sentence and skips this rendering.
+    next if $id eq 'ui.martyrology.tr';
+    # The explicit Sicut erat omission is an open claim and keeps its marker.
+    next if $id eq 'ui.resp.sicut';
     my $la = $RIBBON_STRINGS{$id}{la};
     push @ids, $id if !defined $la || $la eq '';
   }
@@ -2084,7 +2164,7 @@ sub ribbon_gaps_markdown {
 
 The ribbon helper quotes the 1960 *Codex Rubricarum*.
 
-- English is taken from `web/www/horas/Help/Rubrics/General Rubrics.html` (articles 1–137) and `web/www/horas/Help/Rubrics/Breviary 1960.html` (articles 138–268). Those files are the English source. Nothing is invented, and the pre-1960 files `web/www/horas/Help/Rubrics/R01.txt`–`R37.txt` are not used.
+- English is taken from `web/www/horas/Help/Rubrics/General Rubrics.html` (articles 1–137) and `web/www/horas/Help/Rubrics/Breviary 1960.html` (articles 138–268). Those files are the English source of the 1960 catalogue. The pre-1960 Rubricae Generales are cited only for the manner of *Gloria Patri* at a responsory: tit. XIII n. 4 in `web/www/horas/Help/Rubrics/R13.txt`, and tit. XXVII n. 2 in `web/www/horas/Help/Rubrics/R27.txt`.
 - Latin is taken from the plain-text transcription at <https://clemensdsh.xyz/posts/aas-1960-rubricae-et-calendarium-latin/>, which was OCR'd from the AAS page images and collated with them. Every Latin quotation is attributed to **Acta Apostolicae Sedis, vol. 52 (1960)**, with the printed page and the article number. The transcription is only the working copy.
 - Stored Latin: `web/www/horas/Ribbon/aas52-la.txt`. The catalogue of what the page cites: `web/www/horas/Ribbon/catalog.txt`.
 
@@ -2143,18 +2223,22 @@ The transcription marks seventeen places (sixteen in the articles, one in a head
 
 The lines the page actually quotes from n. 91 (the introduction, proper 1st class feasts, the 3rd class Lenten ferias, and universal 3rd class feasts) do not contain those two flagged spots.
 
-## Sought in the 1960 Codex and not found
+## Resolved in the Latin view
 
-The Martyrology at Prime is not in this list. The page quotes the Ordinary, `web/www/horas/Latin/Psalterium/Common/Rubricae.txt`: *Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.* The citation is *Ordinarium Breviarii, ad Primam*, not a Codex article.
+The Martyrology at Prime quotes the Ordinary, `web/www/horas/Latin/Psalterium/Common/Rubricae.txt`: *Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.* The citation is *Ordinarium Breviarii, ad Primam*. In Latin view that sentence is the note. The English rendering is not shown there, and it carries no marker.
 
-The responsory box looks for two further wordings and does not find them in those sources:
+These plain lines show the stored AAS 52 article, labeled *cf. n. X*, and not a translation of the English: `plain.antiphons` (n. 191), `plain.creed.yes` and `plain.creed.no` (n. 203), `plain.prime` (n. 242), `plain.collect` (nn. 246 and 248), `plain.commemoration` (n. 251), `plain.tedeum.no` (n. 239), `plain.preces.yes` (n. 260), `plain.first.no` (n. 37 b), `plain.lessons.sunday` (n. 220), `plain.lessons.ordinary` (n. 221), `plain.lessons.ferial` (n. 222), `plain.lessons.festive` (nn. 217 a and 218 a), `lk.abridged` (n. 221 b), `sk.from_common` and `sk.slot_order` (n. 218 a), `ui.resp.last` and `ui.resp.passion` (n. 230, first two sentences), `ui.resp.pasch` (n. 229). `plain.preces.no` stays the English sentence.
 
-- An official text of the two-asterisk rule (after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse). The page labels that row as commentary from the Confraternity of SS. Peter and Paul, *Instructions for the Recitation of the Divine Office*, adapted from Hausmann, *Learning the Breviary*, §23, pp. 34–35. The Dessain breviary prints every division as an asterisk, so a second division is a second asterisk.
-- An official text that the *Gloria Patri* at the end of a responsory leaves out *Sicut erat*. N. 230 says *dicitur Gloria Patri* and does not name the second half of the doxology. The page quotes n. 230 and marks the omission `[to be sourced]`.
+## Still open
 
-## Plain language with no Latin wording
+Two wordings are still sought. The page keeps a commentary label on each.
 
-The Latin of the Code, above, is a different thing from a Latin paraphrase. Where no `la:` line is stored, the Latin view of the page shows the English sentence and the marker `[to be sourced]`. Hour names, section names, and the short rubrical sentences that are ordinary Latin do have a `la:` line.
+- An official text of the two-asterisk rule (after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse). The row is commentary from the Confraternity of SS. Peter and Paul, *Instructions for the Recitation of the Divine Office*, adapted from Hausmann, *Learning the Breviary*, §23, pp. 34–35. N. 230, *eadem ultima pars*, is partial support for repeating the last part. The Dessain breviary prints every division as an asterisk, so a second division is a second asterisk.
+- An official text that the *Gloria Patri* at the end of a responsory leaves out *Sicut erat*. N. 230 says *dicitur Gloria Patri* and *eadem ultima pars*, and does not name the second half of the doxology. The older pointer is Rubricae Generales tit. XIII n. 4 and tit. XXVII n. 2. The model those rubrics name is the third responsory of the first Sunday of Advent, *Missus est Gabriel*. The explicit omission stays `[to be sourced]`, pending Dave's check of his Dessain at that Advent responsory.
+
+## Screen labels with no Latin wording
+
+Hour names, section names, and the short rubrical sentences that are ordinary Latin have a `la:` line. The strings below are screen labels or explanations. In Latin view they show the English sentence, and the page does not add `[to be sourced]`.
 
 MD
   $md .= join("\n", map { "- `$_`" } @no_la) . "\n";
@@ -2417,7 +2501,58 @@ ED
   $fr =~ /Carême/ ? $ok->('French plain') : $bad->('French plain');
   my $la = ribbon_html($el, 'Latin', 'general');
   $la =~ /praeferuntur festis III classis/ ? $ok->('Latin quote on the page') : $bad->('Latin quote');
-  $la =~ /\[to be sourced\]/ ? $ok->('Latin plain still marked where unwritten') : $bad->('expected a Latin plain gap');
+  $la =~ /\[to be sourced\]/ ? $ok->('Sicut erat omission still marked') : $bad->('expected the Sicut erat marker');
+  for my $id (sort keys %RIBBON_CF) {
+    my $cf = ribbon_s('la', $id);
+    if ($cf !~ /^cf\. n\. / || $cf =~ /\[to be sourced\]/) {
+      $bad->("cf label $id");
+      next;
+    }
+    for my $p (@{ $RIBBON_CF{$id} }) {
+      my $piece = ribbon_la_piece($p->[0], $p->[1]);
+      if ($piece eq '' || index(ribbon_la_body($p->[0]), $piece) < 0 || index($cf, $piece) < 0) {
+        $bad->("cf piece $id n.$p->[0]");
+      }
+    }
+  }
+  my $s12 = ribbon_la_piece(230, '1-2');
+  ($s12 =~ /dicitur Gloria Patri, et deinde iterum resumitur eadem ultima pars/
+      && $s12 =~ /Attamen, in Officio temporis Passionis/ && $s12 !~ /Requiem/)
+    ? $ok->('n. 230 sentences 1-2')
+    : $bad->('n. 230 sentences');
+  my $r13 = ribbon_slurp("$Bin/../../www/horas/Help/Rubrics/R13.txt");
+  my $r27 = ribbon_slurp("$Bin/../../www/horas/Help/Rubrics/R27.txt");
+  ($r13 =~ /repetitione partis Responsorii/ && $r13 =~ /nisi aliter in propriis locis signetur/
+      && $r27 =~ /Gloria Patri cum repetitione partis Responsorii/)
+    ? $ok->('pre-1960 Gloria Patri pointer is in R13 and R27')
+    : $bad->('R13/R27 pointer');
+  ribbon_s('la', 'plain.preces.no') eq ribbon_s('en', 'plain.preces.no')
+    && ribbon_s('la', 'plain.preces.no') !~ /\[to be sourced\]/
+    ? $ok->('preces.no stays English without a marker')
+    : $bad->('preces.no');
+  my @la_need = (
+    ['191', qr/cf\. n\. 191\. Antiphonae dicuntur semper integrae/],
+    ['242', qr/cf\. n\. 242\. Lectio brevis ad Primam/],
+    ['203', qr/cf\. n\. 203\. Symbolum athanasianum/],
+    ['218a', qr/numerus ternarius completur lectionibus de Communi/],
+    ['221b', qr/vocabatur « contracta »/],
+    ['229', qr/Tempore paschali, in fine cuiuslibet responsorii/],
+    ['230', qr/eadem ultima pars responsorii/],
+    ['r13', qr/dicitur Gloria Patri cum repetitione partis Responsorii/],
+    ['model', qr/Missus est Gabriel/],
+    ['ui', qr/How to pray/],
+  );
+  my $la_ok = 1;
+  for my $row (@la_need) {
+    next if $la =~ $row->[1];
+    $la_ok = 0;
+    $bad->("Latin view missing $row->[0]");
+  }
+  $la_ok = 0 if $la =~ /How to pray \[to be sourced\]/ || $la =~ /The antiphons are said in full/ || $la =~ /Translation, not a quoted source/;
+  $la =~ /How to pray \[to be sourced\]/ && $bad->('Latin view marked a screen label');
+  $la =~ /The antiphons are said in full/ && $bad->('Latin view kept the English antiphon sentence');
+  $la =~ /Translation, not a quoted source/ && $bad->('Latin view showed the Martyrology translation');
+  $la_ok ? $ok->('Latin view quotes the articles and hides the UI marker') : ();
 
   for my $id (sort keys %RIBBON_STRINGS) {
     for my $k (qw(en es fr de)) {
@@ -2437,7 +2572,10 @@ ED
       && $doc !~ /marks the obligation, the unprinted book/)
     ? $ok->('gap doc takes the Martyrology from the Ordinary')
     : $bad->('gap doc Martyrology');
-  ($doc =~ /two-asterisk rule/ && $doc =~ /Sicut erat/ && $doc !~ /open question/)
+  ($doc =~ /two-asterisk rule/ && $doc =~ /Sicut erat/ && $doc =~ /Missus est Gabriel/
+      && $doc =~ /pending Dave's check/ && $doc !~ /open question/
+      && $doc =~ /does not add `\[to be sourced\]`/
+      && $doc !~ /^- `plain\.antiphons`/m)
     ? $ok->('gap doc records the responsory gaps and asks nothing about marks')
     : $bad->('gap doc responsory');
 

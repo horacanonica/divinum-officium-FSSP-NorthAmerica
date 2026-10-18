@@ -2,7 +2,7 @@
 
 The ribbon helper quotes the 1960 *Codex Rubricarum*.
 
-- English is taken from `web/www/horas/Help/Rubrics/General Rubrics.html` (articles 1–137) and `web/www/horas/Help/Rubrics/Breviary 1960.html` (articles 138–268). Those files are the English source. Nothing is invented, and the pre-1960 files `web/www/horas/Help/Rubrics/R01.txt`–`R37.txt` are not used.
+- English is taken from `web/www/horas/Help/Rubrics/General Rubrics.html` (articles 1–137) and `web/www/horas/Help/Rubrics/Breviary 1960.html` (articles 138–268). Those files are the English source of the 1960 catalogue. The pre-1960 Rubricae Generales are cited only for the manner of *Gloria Patri* at a responsory: tit. XIII n. 4 in `web/www/horas/Help/Rubrics/R13.txt`, and tit. XXVII n. 2 in `web/www/horas/Help/Rubrics/R27.txt`.
 - Latin is taken from the plain-text transcription at <https://clemensdsh.xyz/posts/aas-1960-rubricae-et-calendarium-latin/>, which was OCR'd from the AAS page images and collated with them. Every Latin quotation is attributed to **Acta Apostolicae Sedis, vol. 52 (1960)**, with the printed page and the article number. The transcription is only the working copy.
 - Stored Latin: `web/www/horas/Ribbon/aas52-la.txt`. The catalogue of what the page cites: `web/www/horas/Ribbon/catalog.txt`.
 
@@ -15,7 +15,7 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 | English still [to be sourced] | 0 |
 | Latin sourced from AAS 52 (1960) | 38 |
 | Latin still [to be sourced] | 0 |
-| Plain-language strings with no Latin wording | 78 |
+| Plain-language strings with no Latin wording | 57 |
 
 ## Catalogue
 
@@ -96,38 +96,28 @@ The transcription marks seventeen places (sixteen in the articles, one in a head
 
 The lines the page actually quotes from n. 91 (the introduction, proper 1st class feasts, the 3rd class Lenten ferias, and universal 3rd class feasts) do not contain those two flagged spots.
 
-## Sought in the 1960 Codex and not found
+## Resolved in the Latin view
 
-The Martyrology at Prime is not in this list. The page quotes the Ordinary, `web/www/horas/Latin/Psalterium/Common/Rubricae.txt`: *Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.* The citation is *Ordinarium Breviarii, ad Primam*, not a Codex article.
+The Martyrology at Prime quotes the Ordinary, `web/www/horas/Latin/Psalterium/Common/Rubricae.txt`: *Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.* The citation is *Ordinarium Breviarii, ad Primam*. In Latin view that sentence is the note. The English rendering is not shown there, and it carries no marker.
 
-The responsory box looks for two further wordings and does not find them in those sources:
+These plain lines show the stored AAS 52 article, labeled *cf. n. X*, and not a translation of the English: `plain.antiphons` (n. 191), `plain.creed.yes` and `plain.creed.no` (n. 203), `plain.prime` (n. 242), `plain.collect` (nn. 246 and 248), `plain.commemoration` (n. 251), `plain.tedeum.no` (n. 239), `plain.preces.yes` (n. 260), `plain.first.no` (n. 37 b), `plain.lessons.sunday` (n. 220), `plain.lessons.ordinary` (n. 221), `plain.lessons.ferial` (n. 222), `plain.lessons.festive` (nn. 217 a and 218 a), `lk.abridged` (n. 221 b), `sk.from_common` and `sk.slot_order` (n. 218 a), `ui.resp.last` and `ui.resp.passion` (n. 230, first two sentences), `ui.resp.pasch` (n. 229). `plain.preces.no` stays the English sentence.
 
-- An official text of the two-asterisk rule (after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse). The page labels that row as commentary from the Confraternity of SS. Peter and Paul, *Instructions for the Recitation of the Divine Office*, adapted from Hausmann, *Learning the Breviary*, §23, pp. 34–35. The Dessain breviary prints every division as an asterisk, so a second division is a second asterisk.
-- An official text that the *Gloria Patri* at the end of a responsory leaves out *Sicut erat*. N. 230 says *dicitur Gloria Patri* and does not name the second half of the doxology. The page quotes n. 230 and marks the omission `[to be sourced]`.
+## Still open
 
-## Plain language with no Latin wording
+Two wordings are still sought. The page keeps a commentary label on each.
 
-The Latin of the Code, above, is a different thing from a Latin paraphrase. Where no `la:` line is stored, the Latin view of the page shows the English sentence and the marker `[to be sourced]`. Hour names, section names, and the short rubrical sentences that are ordinary Latin do have a `la:` line.
+- An official text of the two-asterisk rule (after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse). The row is commentary from the Confraternity of SS. Peter and Paul, *Instructions for the Recitation of the Divine Office*, adapted from Hausmann, *Learning the Breviary*, §23, pp. 34–35. N. 230, *eadem ultima pars*, is partial support for repeating the last part. The Dessain breviary prints every division as an asterisk, so a second division is a second asterisk.
+- An official text that the *Gloria Patri* at the end of a responsory leaves out *Sicut erat*. N. 230 says *dicitur Gloria Patri* and *eadem ultima pars*, and does not name the second half of the doxology. The older pointer is Rubricae Generales tit. XIII n. 4 and tit. XXVII n. 2. The model those rubrics name is the third responsory of the first Sunday of Advent, *Missus est Gabriel*. The explicit omission stays `[to be sourced]`, pending Dave's check of his Dessain at that Advent responsory.
 
-- `lk.abridged`
-- `plain.antiphons`
-- `plain.collect`
-- `plain.commemoration`
-- `plain.creed.no`
-- `plain.creed.yes`
-- `plain.first.no`
+## Screen labels with no Latin wording
+
+Hour names, section names, and the short rubrical sentences that are ordinary Latin have a `la:` line. The strings below are screen labels or explanations. In Latin view they show the English sentence, and the page does not add `[to be sourced]`.
+
 - `plain.lauds.festive`
 - `plain.lauds.weekday`
-- `plain.lessons.ferial`
-- `plain.lessons.festive`
-- `plain.lessons.ordinary`
-- `plain.lessons.sunday`
 - `plain.minor.festive`
 - `plain.minor.weekday`
 - `plain.preces.no`
-- `plain.preces.yes`
-- `plain.prime`
-- `plain.tedeum.no`
 - `plain.vespers`
 - `plain.why.elevated`
 - `plain.why.other`
@@ -138,8 +128,6 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `sk.booklet.link`
 - `sk.booklet.soon`
 - `sk.engine_life`
-- `sk.from_common`
-- `sk.slot_order`
 - `sk.table_book`
 - `sk.table_book_common`
 - `sk.table_booklet_life`
@@ -157,7 +145,6 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `ui.hours`
 - `ui.how`
 - `ui.intro`
-- `ui.martyrology.tr`
 - `ui.mode.book_lead`
 - `ui.mode.booklet_lead`
 - `ui.no_volume`
@@ -170,13 +157,9 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `ui.resp.ex1`
 - `ui.resp.ex2`
 - `ui.resp.ex3`
-- `ui.resp.last`
 - `ui.resp.marks`
 - `ui.resp.one`
-- `ui.resp.pasch`
-- `ui.resp.passion`
 - `ui.resp.said`
-- `ui.resp.sicut`
 - `ui.resp.site`
 - `ui.resp.title`
 - `ui.resp.two`
