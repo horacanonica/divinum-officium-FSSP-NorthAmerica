@@ -1167,10 +1167,10 @@ fr: Un astérisque. On dit tout le répons, puis le verset, puis on reprend depu
 de: Ein Sternchen. Man sagt das ganze Responsorium, dann den Vers, und wiederholt vom * bis zum Vers.
 
 [ui.resp.last]
-en: Last responsory of a nocturn. After that repetition, say V. Glória Patri, et Fílio, * et Spirítui Sancto, then repeat from the * to the verse again.
-es: Último responsorio de un nocturno. Después de esa repetición se dice V. Glória Patri, et Fílio, * et Spirítui Sancto, y se repite de nuevo desde el * hasta el verso.
-fr: Dernier répons d'un nocturne. Après cette reprise on dit V. Glória Patri, et Fílio, * et Spirítui Sancto, puis on reprend encore depuis le * jusqu'au verset.
-de: Letztes Responsorium eines Nokturns. Nach jener Wiederholung sagt man V. Glória Patri, et Fílio, * et Spirítui Sancto, und wiederholt noch einmal vom * bis zum Vers.
+en: Last responsory of a nocturn. After that repetition, say Glória Patri, et Fílio, et Spirítui Sancto (without Sicut erat), then repeat from the * to the verse again.
+es: Último responsorio de un nocturno. Después de esa repetición se dice Glória Patri, et Fílio, et Spirítui Sancto (sin el Sicut erat), y se repite de nuevo desde el * hasta el verso.
+fr: Dernier répons d'un nocturne. Après cette reprise on dit Glória Patri, et Fílio, et Spirítui Sancto (sans le Sicut erat), puis on reprend encore depuis le * jusqu'au verset.
+de: Letztes Responsorium eines Nokturns. Nach jener Wiederholung sagt man Glória Patri, et Fílio, et Spirítui Sancto (ohne Sicut erat), und wiederholt noch einmal vom * bis zum Vers.
 
 [ui.resp.sicut]
 en: A rubric that this doxology leaves out Sicut erat was not found in the 1960 Codex.

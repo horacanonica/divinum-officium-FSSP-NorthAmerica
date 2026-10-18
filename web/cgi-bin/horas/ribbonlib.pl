@@ -2402,10 +2402,14 @@ ED
     : $bad->('BR-233');
   ($html =~ /class="resp-box"/ && $html =~ /second \*/
       && $html =~ /never a cross or any other mark/
+      && $html =~ /without Sicut erat/
       && $html =~ /Iste cognóvit/ && $html =~ /Sicut locútus es, veni, \*/
       && $html =~ /Et líbera nos/ && $html =~ /Usquequo exaltábitur/
       && $html =~ /Hausmann/ && $html =~ /\[to be sourced\]/
-      && $html =~ /In fine ultimi responsorii/)
+      && $html =~ /In fine ultimi responsorii cuiusque Nocturni, post repetitam ultimam partem responsorii, dicitur Gloria Patri/
+      && $html =~ /Peculiaritates in dicendis responsoriis forte occurrentes, suis locis indicantur/
+      && $html =~ /no Alleluia is added after the verse/
+      && $html =~ /prints every repeat in full/)
     ? $ok->('Matins responsory box uses a second asterisk')
     : $bad->('responsory box');
 
