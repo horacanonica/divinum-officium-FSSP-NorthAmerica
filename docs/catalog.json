@@ -4,7 +4,7 @@
   "releases": {
     "la": "epub-library-la"
   },
-  "updated": "2026-10-17T16:06:03Z",
+  "updated": "2026-10-18T13:14:57Z",
   "languages": "Latin",
   "variants": [
     {
@@ -3554,13 +3554,13 @@
       "place": "Fort Worth, Texas",
       "built": {
         "2026": {
-          "la": "fe9d0a1dd67f54214d5087c14f9616a46e1309ea6051c3b09d6f4b5aca1945ad"
+          "la": "e848101b06cc81b046463d32ce1fc4d17190f271d15568e3c3b2c86e5dbcd981"
         },
         "2027": {
-          "la": "fe9d0a1dd67f54214d5087c14f9616a46e1309ea6051c3b09d6f4b5aca1945ad"
+          "la": "e848101b06cc81b046463d32ce1fc4d17190f271d15568e3c3b2c86e5dbcd981"
         },
         "2028": {
-          "la": "fe9d0a1dd67f54214d5087c14f9616a46e1309ea6051c3b09d6f4b5aca1945ad"
+          "la": "e848101b06cc81b046463d32ce1fc4d17190f271d15568e3c3b2c86e5dbcd981"
         }
       },
       "files": [
@@ -3575,7 +3575,7 @@
           "type": "year",
           "year": 2027,
           "name": "st-benedicts-church-fort-worth-tx-2027-la.epub",
-          "bytes": 14819815,
+          "bytes": 14819810,
           "variant": "la"
         },
         {
@@ -5115,13 +5115,13 @@
       "place": "Arlington, Virginia",
       "built": {
         "2026": {
-          "la": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93"
+          "la": "61e8a7acd49a08dacf55f237c138eddfefd98fcbb100dbd1773288b88f395094"
         },
         "2027": {
-          "la": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93"
+          "la": "61e8a7acd49a08dacf55f237c138eddfefd98fcbb100dbd1773288b88f395094"
         },
         "2028": {
-          "la": "e6f54cbd5eccf51336af79b2d3c8446095945e96ec28d96ef7c6b26ed6772e93"
+          "la": "61e8a7acd49a08dacf55f237c138eddfefd98fcbb100dbd1773288b88f395094"
         }
       },
       "files": [
@@ -5129,7 +5129,7 @@
           "type": "year",
           "year": 2026,
           "name": "arlington-2026-la.epub",
-          "bytes": 14809595,
+          "bytes": 14812618,
           "variant": "la"
         },
         {
@@ -5143,7 +5143,7 @@
           "type": "year",
           "year": 2028,
           "name": "arlington-2028-la.epub",
-          "bytes": 14849313,
+          "bytes": 14849312,
           "variant": "la"
         }
       ],
@@ -5779,13 +5779,13 @@
       "place": "Richmond, Virginia",
       "built": {
         "2026": {
-          "la": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9"
+          "la": "ba055f21ca63a52543c250aeab7591a6feba5431e7d3dc156a66ade16ae3cfed"
         },
         "2027": {
-          "la": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9"
+          "la": "ba055f21ca63a52543c250aeab7591a6feba5431e7d3dc156a66ade16ae3cfed"
         },
         "2028": {
-          "la": "0f96a177b38e2831727ac729c4622d402e3e791cdb30c79e8688f6eb81bb8cf9"
+          "la": "ba055f21ca63a52543c250aeab7591a6feba5431e7d3dc156a66ade16ae3cfed"
         }
       },
       "files": [
@@ -5793,21 +5793,21 @@
           "type": "year",
           "year": 2026,
           "name": "richmond-2026-la.epub",
-          "bytes": 14807835,
+          "bytes": 14810857,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "richmond-2027-la.epub",
-          "bytes": 14814337,
+          "bytes": 14814335,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "richmond-2028-la.epub",
-          "bytes": 14847927,
+          "bytes": 14847926,
           "variant": "la"
         }
       ],
@@ -6118,13 +6118,13 @@
       "place": "Baltimore, Maryland",
       "built": {
         "2026": {
-          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
+          "la": "808a0920291dd5eb33122f98daee5cf9833913f7227b70e12bded5d50dced88e"
         },
         "2027": {
-          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
+          "la": "808a0920291dd5eb33122f98daee5cf9833913f7227b70e12bded5d50dced88e"
         },
         "2028": {
-          "la": "d16b99a44fa6e24fe08ed1f6520416ab50c7377fdf65c767104e6fe805b860b3"
+          "la": "808a0920291dd5eb33122f98daee5cf9833913f7227b70e12bded5d50dced88e"
         }
       },
       "files": [
@@ -6132,21 +6132,21 @@
           "type": "year",
           "year": 2026,
           "name": "baltimore-2026-la.epub",
-          "bytes": 14811836,
+          "bytes": 14814722,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "baltimore-2027-la.epub",
-          "bytes": 14815737,
+          "bytes": 14815587,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "baltimore-2028-la.epub",
-          "bytes": 14847656,
+          "bytes": 14847512,
           "variant": "la"
         }
       ],
@@ -6238,13 +6238,13 @@
       "place": "Chesapeake, Virginia",
       "built": {
         "2026": {
-          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
+          "la": "01e4c78f91a639047cdecd76ca3839a15178c3b2e1494b5b9ed4a38655dcb0e7"
         },
         "2027": {
-          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
+          "la": "01e4c78f91a639047cdecd76ca3839a15178c3b2e1494b5b9ed4a38655dcb0e7"
         },
         "2028": {
-          "la": "4191e0c7416b2315fe001b492e373348f8ba879a9cfc72fa7c3c7cc4e942ce0e"
+          "la": "01e4c78f91a639047cdecd76ca3839a15178c3b2e1494b5b9ed4a38655dcb0e7"
         }
       },
       "files": [
@@ -6252,21 +6252,21 @@
           "type": "year",
           "year": 2026,
           "name": "chesapeake-2026-la.epub",
-          "bytes": 14808121,
+          "bytes": 14811144,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "chesapeake-2027-la.epub",
-          "bytes": 14814989,
+          "bytes": 14814988,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "chesapeake-2028-la.epub",
-          "bytes": 14852531,
+          "bytes": 14852532,
           "variant": "la"
         }
       ],
@@ -6591,13 +6591,13 @@
       "place": "Scranton, Pennsylvania",
       "built": {
         "2026": {
-          "la": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7"
+          "la": "451eaa64b8415b806d11e88584589bfe4552f3ab39a5bf9dfc72d9bd16acff39"
         },
         "2027": {
-          "la": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7"
+          "la": "451eaa64b8415b806d11e88584589bfe4552f3ab39a5bf9dfc72d9bd16acff39"
         },
         "2028": {
-          "la": "20c86c4dc86ae1953e8bccfb5e5d568e43f71a6b54af4ee389353943f4f533a7"
+          "la": "451eaa64b8415b806d11e88584589bfe4552f3ab39a5bf9dfc72d9bd16acff39"
         }
       },
       "files": [
@@ -6605,21 +6605,21 @@
           "type": "year",
           "year": 2026,
           "name": "scranton-2026-la.epub",
-          "bytes": 14811448,
+          "bytes": 14814470,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "scranton-2027-la.epub",
-          "bytes": 14819675,
+          "bytes": 14819674,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "scranton-2028-la.epub",
-          "bytes": 14855335,
+          "bytes": 14855333,
           "variant": "la"
         }
       ],
@@ -6711,13 +6711,13 @@
       "place": "Nashua, New Hampshire",
       "built": {
         "2026": {
-          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
+          "la": "9b3b3380adab51b1609c034e300d559dec12a4e2448939bd369e5927212db3af"
         },
         "2027": {
-          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
+          "la": "9b3b3380adab51b1609c034e300d559dec12a4e2448939bd369e5927212db3af"
         },
         "2028": {
-          "la": "31b49551d9a1e666bd4ca8f7f96df6cf716ec74f82c1d3adfde177569c9c74de"
+          "la": "9b3b3380adab51b1609c034e300d559dec12a4e2448939bd369e5927212db3af"
         }
       },
       "files": [
@@ -6725,7 +6725,7 @@
           "type": "year",
           "year": 2026,
           "name": "nashua-2026-la.epub",
-          "bytes": 14811916,
+          "bytes": 14814939,
           "variant": "la"
         },
         {
@@ -6739,7 +6739,7 @@
           "type": "year",
           "year": 2028,
           "name": "nashua-2028-la.epub",
-          "bytes": 14841826,
+          "bytes": 14841825,
           "variant": "la"
         }
       ],
@@ -7980,8 +7980,40 @@
       "name": "Diocese of Springfield in Illinois",
       "region": "Midwest",
       "place": "Springfield, Illinois",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "e3a81ad8397ece5bda2133d49576f3593600496933b584115ed3c446c4a946cb"
+        },
+        "2027": {
+          "la": "e3a81ad8397ece5bda2133d49576f3593600496933b584115ed3c446c4a946cb"
+        },
+        "2028": {
+          "la": "e3a81ad8397ece5bda2133d49576f3593600496933b584115ed3c446c4a946cb"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-springfield-in-illinois-2026-la.epub",
+          "bytes": 14810080,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-springfield-in-illinois-2027-la.epub",
+          "bytes": 14812406,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-springfield-in-illinois-2028-la.epub",
+          "bytes": 14843658,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -8054,8 +8086,40 @@
       "name": "Diocese of Youngstown",
       "region": "Midwest",
       "place": "Youngstown, Ohio",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "f71b61f5622a2d75029abf312d9f3617f83aa67fc552b67832a870c75ca2da00"
+        },
+        "2027": {
+          "la": "f71b61f5622a2d75029abf312d9f3617f83aa67fc552b67832a870c75ca2da00"
+        },
+        "2028": {
+          "la": "f71b61f5622a2d75029abf312d9f3617f83aa67fc552b67832a870c75ca2da00"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-youngstown-2026-la.epub",
+          "bytes": 14814782,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-youngstown-2027-la.epub",
+          "bytes": 14815889,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-youngstown-2028-la.epub",
+          "bytes": 14841388,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -8135,8 +8199,40 @@
       "name": "Holy Family Church, Dayton",
       "region": "Midwest",
       "place": "Dayton, Ohio",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "e03c4cdb47515b9cc191a5fe5fcc23673706d132e72a3d5ef3a8069165483395"
+        },
+        "2027": {
+          "la": "e03c4cdb47515b9cc191a5fe5fcc23673706d132e72a3d5ef3a8069165483395"
+        },
+        "2028": {
+          "la": "e03c4cdb47515b9cc191a5fe5fcc23673706d132e72a3d5ef3a8069165483395"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "holy-family-church-dayton-oh-2026-la.epub",
+          "bytes": 14815950,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "holy-family-church-dayton-oh-2027-la.epub",
+          "bytes": 14819865,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "holy-family-church-dayton-oh-2028-la.epub",
+          "bytes": 14852702,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -8230,8 +8326,40 @@
       "name": "Immaculate Conception Church, Omaha",
       "region": "Midwest",
       "place": "Omaha, Nebraska",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "233f9b2410b4c06a1430ee65eeeaeec21775eec967e910543049e30b49e134dc"
+        },
+        "2027": {
+          "la": "233f9b2410b4c06a1430ee65eeeaeec21775eec967e910543049e30b49e134dc"
+        },
+        "2028": {
+          "la": "233f9b2410b4c06a1430ee65eeeaeec21775eec967e910543049e30b49e134dc"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "immaculate-conception-church-omaha-ne-2026-la.epub",
+          "bytes": 14813846,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "immaculate-conception-church-omaha-ne-2027-la.epub",
+          "bytes": 14814705,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "immaculate-conception-church-omaha-ne-2028-la.epub",
+          "bytes": 14845361,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -8311,8 +8439,40 @@
       "name": "Immaculate Conception Church, Rapid City",
       "region": "Midwest",
       "place": "Rapid City, South Dakota",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "b250e3cacb73391de134da41cf49adce44879df6dbeb2017681145e9bdca6155"
+        },
+        "2027": {
+          "la": "b250e3cacb73391de134da41cf49adce44879df6dbeb2017681145e9bdca6155"
+        },
+        "2028": {
+          "la": "b250e3cacb73391de134da41cf49adce44879df6dbeb2017681145e9bdca6155"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "immaculate-conception-church-rapid-city-sd-2026-la.epub",
+          "bytes": 14814703,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "immaculate-conception-church-rapid-city-sd-2027-la.epub",
+          "bytes": 14815578,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "immaculate-conception-church-rapid-city-sd-2028-la.epub",
+          "bytes": 14850941,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -8394,13 +8554,13 @@
       "place": "Denton, Nebraska",
       "built": {
         "2026": {
-          "la": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3"
+          "la": "47a49ff2556caeba59c0e0b2efcb2dbc22baa06495748e4e9687603089bb1fe1"
         },
         "2027": {
-          "la": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3"
+          "la": "47a49ff2556caeba59c0e0b2efcb2dbc22baa06495748e4e9687603089bb1fe1"
         },
         "2028": {
-          "la": "7c784f4f3e6aadf1c9d9e965be02e8b914670c7031cc87ebb89a6b69fa1aa4e3"
+          "la": "47a49ff2556caeba59c0e0b2efcb2dbc22baa06495748e4e9687603089bb1fe1"
         }
       },
       "files": [
@@ -8408,7 +8568,7 @@
           "type": "year",
           "year": 2026,
           "name": "olg-seminary-2026-la.epub",
-          "bytes": 14805987,
+          "bytes": 14809011,
           "variant": "la"
         },
         {
@@ -8498,8 +8658,40 @@
       "name": "Queen of the Holy Rosary Church, Vienna",
       "region": "Midwest",
       "place": "Vienna, Ohio",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "ed4950a50cea06f7d0b2beded37cce538f8fb8fb4cd08cc3f9b2e0a80a9fea3b"
+        },
+        "2027": {
+          "la": "ed4950a50cea06f7d0b2beded37cce538f8fb8fb4cd08cc3f9b2e0a80a9fea3b"
+        },
+        "2028": {
+          "la": "ed4950a50cea06f7d0b2beded37cce538f8fb8fb4cd08cc3f9b2e0a80a9fea3b"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "queen-of-the-holy-rosary-church-vienna-oh-2026-la.epub",
+          "bytes": 14816353,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "queen-of-the-holy-rosary-church-vienna-oh-2027-la.epub",
+          "bytes": 14818290,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "queen-of-the-holy-rosary-church-vienna-oh-2028-la.epub",
+          "bytes": 14841669,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Parish",
@@ -8586,8 +8778,40 @@
       "name": "Sacred Heart Parish, Fort Wayne",
       "region": "Midwest",
       "place": "Fort Wayne, Indiana",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "23b1ce3969224d3fad01b2f1296b91ac24f528028532782259074412de21ef4d"
+        },
+        "2027": {
+          "la": "23b1ce3969224d3fad01b2f1296b91ac24f528028532782259074412de21ef4d"
+        },
+        "2028": {
+          "la": "23b1ce3969224d3fad01b2f1296b91ac24f528028532782259074412de21ef4d"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "sacred-heart-parish-fort-wayne-in-2026-la.epub",
+          "bytes": 14809491,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "sacred-heart-parish-fort-wayne-in-2027-la.epub",
+          "bytes": 14814238,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "sacred-heart-parish-fort-wayne-in-2028-la.epub",
+          "bytes": 14845378,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -8660,8 +8884,40 @@
       "name": "Ss. Peter & Paul Church, Naperville",
       "region": "Midwest",
       "place": "Naperville, Illinois",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "27a6fb07572752b79eda7368e42511d7714f1c141e8dd12db0ce8ee2d3af4434"
+        },
+        "2027": {
+          "la": "27a6fb07572752b79eda7368e42511d7714f1c141e8dd12db0ce8ee2d3af4434"
+        },
+        "2028": {
+          "la": "27a6fb07572752b79eda7368e42511d7714f1c141e8dd12db0ce8ee2d3af4434"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "ss-peter-and-paul-church-naperville-il-2026-la.epub",
+          "bytes": 14813637,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "ss-peter-and-paul-church-naperville-il-2027-la.epub",
+          "bytes": 14813759,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "ss-peter-and-paul-church-naperville-il-2028-la.epub",
+          "bytes": 14843903,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
