@@ -250,3 +250,33 @@ topic: All sit while the Martyrology is read at Prime
 file: web/www/horas/Help/Rubrics/Breviary 1960.html
 en: c) while the Martyrology is being read at Prime, unless another posture is prescribed.
 la: c) dum legitur Martyrologium, ad Primam, nisi aliter statuatur.
+
+@@ BR-229
+corpus: breviary
+number: 229
+page: 636
+topic: Alleluia before the verse of a responsory in Paschaltide
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-230
+corpus: breviary
+number: 230
+page: 636
+topic: Gloria Patri at the end of the last responsory of a nocturn
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-231
+corpus: breviary
+number: 231
+page: 636
+topic: Peculiarities in saying the responsories are noted in place
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-233
+corpus: breviary
+number: 233
+page: 636
+topic: Sunday responsories, and when the second omits the Gloria Patri
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+en: b) the second is the responsory which was formerly found after the third lesson. At the end of this responsory the Gloria Patri and the repetition of the last part of the responsory are omitted when a third responsory is to be said;
+la: b) secundum, est responsorium quod post tertiam lectionem olim inveniebatur. In fine huius responsorii omittitur Gloria Patri et repetitio ultimae partis responsorii, quando dicendum est tertium responsorium;

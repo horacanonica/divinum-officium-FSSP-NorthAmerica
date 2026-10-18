@@ -1147,3 +1147,93 @@ en: Martyrology — in choir or in common, all sit while it is read (n. 268). Th
 es: Martirologio — en coro o en común, todos se sientan mientras se lee (n. 268). El Código indica solo la postura.
 fr: Martyrologe — au chœur ou en commun, tous sont assis pendant la lecture (n. 268). Le code n'en donne que la posture.
 de: Martyrologium — im Chor oder in Gemeinschaft sitzen alle während der Lesung (Nr. 268). Der Codex nennt nur die Haltung.
+
+[ui.resp.title]
+en: How to read a responsory
+es: Cómo se lee un responsorio
+fr: Comment lire un répons
+de: Wie man ein Responsorium liest
+
+[ui.resp.dessain]
+en: In the Dessain breviary every division is an asterisk (*), never a cross or any other mark. The second division is simply a second *.
+es: En el breviario Dessain cada división es un asterisco (*), nunca una cruz ni otra señal. La segunda división es simplemente un segundo *.
+fr: Dans le bréviaire Dessain chaque division est un astérisque (*), jamais une croix ni un autre signe. La deuxième division est simplement un deuxième *.
+de: Im Brevier von Dessain ist jede Abteilung ein Sternchen (*), nie ein Kreuz oder ein anderes Zeichen. Die zweite Abteilung ist einfach ein zweites *.
+
+[ui.resp.one]
+en: One asterisk. Say the whole responsory, then the verse, then repeat from the * to the verse.
+es: Un asterisco. Se dice todo el responsorio, luego el verso, y se repite desde el * hasta el verso.
+fr: Un astérisque. On dit tout le répons, puis le verset, puis on reprend depuis le * jusqu'au verset.
+de: Ein Sternchen. Man sagt das ganze Responsorium, dann den Vers, und wiederholt vom * bis zum Vers.
+
+[ui.resp.last]
+en: Last responsory of a nocturn. After that repetition, say V. Glória Patri, et Fílio, * et Spirítui Sancto, then repeat from the * to the verse again.
+es: Último responsorio de un nocturno. Después de esa repetición se dice V. Glória Patri, et Fílio, * et Spirítui Sancto, y se repite de nuevo desde el * hasta el verso.
+fr: Dernier répons d'un nocturne. Après cette reprise on dit V. Glória Patri, et Fílio, * et Spirítui Sancto, puis on reprend encore depuis le * jusqu'au verset.
+de: Letztes Responsorium eines Nokturns. Nach jener Wiederholung sagt man V. Glória Patri, et Fílio, * et Spirítui Sancto, und wiederholt noch einmal vom * bis zum Vers.
+
+[ui.resp.sicut]
+en: A rubric that this doxology leaves out Sicut erat was not found in the 1960 Codex.
+es: No se ha encontrado en el Código de 1960 una rúbrica que diga que esta doxología omite el Sicut erat.
+fr: On n'a pas trouvé dans le code de 1960 une rubrique disant que cette doxologie omet le Sicut erat.
+de: Eine Rubrik, dass diese Doxologie das Sicut erat weglässt, wurde im Codex von 1960 nicht gefunden.
+
+[ui.resp.two]
+en: Two asterisks. After the verse, repeat from the first * up to the second * and stop. After the Gloria, repeat from the second * to the verse.
+es: Dos asteriscos. Después del verso se repite desde el primer * hasta el segundo * y se para. Después del Gloria se repite desde el segundo * hasta el verso.
+fr: Deux astérisques. Après le verset, on reprend du premier * jusqu'au second * et l'on s'arrête. Après le Gloria, on reprend du second * jusqu'au verset.
+de: Zwei Sternchen. Nach dem Vers wiederholt man vom ersten * bis zum zweiten * und hält an. Nach dem Gloria wiederholt man vom zweiten * bis zum Vers.
+
+[ui.resp.two_source]
+en: This row is commentary, not an article of the Codex: Instructions for the Recitation of the Divine Office, Confraternity of SS. Peter and Paul, adapted from Hausmann, Learning the Breviary, §23, pp. 34–35.
+es: Esta línea es un comentario, no un artículo del Código: Instructions for the Recitation of the Divine Office, Cofradía de los Santos Pedro y Pablo, adaptado de Hausmann, Learning the Breviary, §23, pp. 34–35.
+fr: Cette ligne est un commentaire, non un article du code : Instructions for the Recitation of the Divine Office, Confrérie des saints Pierre et Paul, adapté de Hausmann, Learning the Breviary, §23, pp. 34–35.
+de: Diese Zeile ist ein Kommentar, kein Artikel des Codex: Instructions for the Recitation of the Divine Office, Bruderschaft der hll. Petrus und Paulus, nach Hausmann, Learning the Breviary, §23, S. 34–35.
+
+[ui.resp.passion]
+en: In Passiontide the Gloria Patri is omitted from the last responsory of each nocturn, and the whole responsory is said again from the beginning up to, but not including, the verse. The same kind of cue is followed where the book notes a peculiarity (n. 231), for example the first responsory of Christmas, and Aspiciens a longe, the first responsory of the first Sunday of Advent.
+es: En el tiempo de Pasión se omite el Gloria Patri en el último responsorio de cada nocturno, y se dice de nuevo todo el responsorio desde el principio hasta el verso, sin incluirlo. La misma clase de señal se sigue donde el libro anota una particularidad (n. 231), por ejemplo el primer responsorio de Navidad, y Aspiciens a longe, el primer responsorio del primer domingo de Adviento.
+fr: Au temps de la Passion, le Gloria Patri est omis au dernier répons de chaque nocturne, et tout le répons est redit depuis le début jusqu'au verset, sans l'inclure. On suit le même genre d'indication là où le livre note une particularité (n. 231), par exemple le premier répons de Noël, et Aspiciens a longe, le premier répons du premier dimanche de l'Avent.
+de: In der Passionszeit wird das Gloria Patri beim letzten Responsorium jedes Nokturns weggelassen, und das ganze Responsorium wird von Anfang an bis zum Vers, ihn nicht eingeschlossen, noch einmal gesagt. Dieselbe Art von Hinweis gilt, wo das Buch eine Besonderheit vermerkt (Nr. 231), zum Beispiel das erste Responsorium von Weihnachten und Aspiciens a longe, das erste Responsorium des ersten Adventssonntags.
+
+[ui.resp.pasch]
+en: In Paschaltide an Alleluia is added at the end of the responsory, before the verse, unless one is already there. None is added after the verse (n. 229).
+es: En el tiempo pascual se añade un Aleluya al fin del responsorio, antes del verso, a no ser que ya lo haya. No se añade ninguno después del verso (n. 229).
+fr: Au temps pascal, un Alléluia est ajouté à la fin du répons, avant le verset, à moins qu'il n'y en ait déjà un. On n'en ajoute pas après le verset (n. 229).
+de: In der Osterzeit wird ein Alleluja an das Ende des Responsoriums gesetzt, vor den Vers, sofern nicht schon eines dasteht. Nach dem Vers wird keines hinzugefügt (Nr. 229).
+
+[ui.resp.site]
+en: Divinum Officium prints every repeat in full, so the said form can be checked on the office page.
+es: Divinum Officium imprime cada repetición por entero, de modo que la forma dicha se puede comprobar en la página del oficio.
+fr: Divinum Officium imprime chaque reprise en entier, de sorte que la forme dite se vérifie sur la page de l'office.
+de: Divinum Officium druckt jede Wiederholung ganz aus, sodass die gesprochene Form auf der Offiziumsseite nachgeprüft werden kann.
+
+[ui.resp.marks]
+en: With the marks
+es: Con las señales
+fr: Avec les signes
+de: Mit den Zeichen
+
+[ui.resp.said]
+en: Said in full
+es: Dicho por entero
+fr: Dit en entier
+de: Ganz gesprochen
+
+[ui.resp.ex1]
+en: One asterisk, and the last of a nocturn. Common of a Martyr, responsory 3, Iste cognovit.
+es: Un asterisco, y el último de un nocturno. Común de un mártir, responsorio 3, Iste cognovit.
+fr: Un astérisque, et le dernier d'un nocturne. Commun d'un martyr, répons 3, Iste cognovit.
+de: Ein Sternchen, und das letzte eines Nokturns. Commune eines Märtyrers, Responsorium 3, Iste cognovit.
+
+[ui.resp.ex2]
+en: Two asterisks. First Sunday of Advent, responsory 6, Obsecro, Domine. After the verse: Sicut locutus es, veni. After the Gloria: Et libera nos.
+es: Dos asteriscos. Primer domingo de Adviento, responsorio 6, Obsecro, Domine. Después del verso: Sicut locutus es, veni. Después del Gloria: Et libera nos.
+fr: Deux astérisques. Premier dimanche de l'Avent, répons 6, Obsecro, Domine. Après le verset : Sicut locutus es, veni. Après le Gloria : Et libera nos.
+de: Zwei Sternchen. Erster Adventssonntag, Responsorium 6, Obsecro, Domine. Nach dem Vers: Sicut locutus es, veni. Nach dem Gloria: Et libera nos.
+
+[ui.resp.ex3]
+en: Passiontide. Passion Sunday, responsory 3. The Gloria Patri is omitted, and the whole responsory is resumed from the beginning up to the verse.
+es: Tiempo de Pasión. Domingo de Pasión, responsorio 3. Se omite el Gloria Patri, y se reanuda todo el responsorio desde el principio hasta el verso.
+fr: Temps de la Passion. Dimanche de la Passion, répons 3. Le Gloria Patri est omis, et tout le répons est repris depuis le début jusqu'au verset.
+de: Passionszeit. Passionssonntag, Responsorium 3. Das Gloria Patri wird weggelassen, und das ganze Responsorium wird vom Anfang bis zum Vers wieder aufgenommen.

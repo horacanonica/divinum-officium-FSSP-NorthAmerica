@@ -10,12 +10,12 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 
 | | |
 | --- | --- |
-| Quotations in the catalogue | 37 |
-| English sourced from the project files | 37 |
+| Quotations in the catalogue | 41 |
+| English sourced from the project files | 41 |
 | English still [to be sourced] | 0 |
-| Latin sourced from AAS 52 (1960) | 37 |
+| Latin sourced from AAS 52 (1960) | 41 |
 | Latin still [to be sourced] | 0 |
-| Plain-language strings with no Latin wording | 65 |
+| Plain-language strings with no Latin wording | 80 |
 
 ## Catalogue
 
@@ -42,6 +42,10 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 | BR-220 | Order of the three lessons on a Sunday | sourced | AAS 52 (1960), p. 634, n. 220 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-221 | Order of the three lessons in an ordinary Office | sourced, file damaged | AAS 52 (1960), p. 635, n. 221 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-222 | Order of the three lessons in a ferial Office | sourced | AAS 52 (1960), p. 635, n. 222 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-229 | Alleluia before the verse of a responsory in Paschaltide | sourced | AAS 52 (1960), p. 636, n. 229 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-230 | Gloria Patri at the end of the last responsory of a nocturn | sourced | AAS 52 (1960), p. 636, n. 230 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-231 | Peculiarities in saying the responsories are noted in place | sourced | AAS 52 (1960), p. 636, n. 231 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-233 | Sunday responsories, and when the second omits the Gloria Patri | sourced | AAS 52 (1960), p. 636, n. 233 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-237 | When the Te Deum is said | sourced | AAS 52 (1960), p. 637, n. 237 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-238 | When the Te Deum is omitted | sourced | AAS 52 (1960), p. 637, n. 238 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-242 | The short lesson at Prime is of the season | sourced | AAS 52 (1960), p. 638, n. 242 | web/www/horas/Help/Rubrics/Breviary 1960.html |
@@ -109,6 +113,11 @@ What those sources say about the Martyrology at Prime is only posture:
 
 There is no *Pretiosa* verse, no *laudabiliter*, and no *extra chorum* attached to the Martyrology in those sources. The page quotes nn. 261, 266 e, and 268 c, and marks the obligation, the unprinted book, and the continuation at *Pretiosa* as `[to be sourced]`.
 
+The responsory box looks for two further wordings and does not find them in those sources:
+
+- An official text of the two-asterisk rule (after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse). The page labels that row as commentary from the Confraternity of SS. Peter and Paul, *Instructions for the Recitation of the Divine Office*, adapted from Hausmann, *Learning the Breviary*, §23, pp. 34–35. The Dessain breviary prints every division as an asterisk, so a second division is a second asterisk.
+- An official text that the *Gloria Patri* at the end of a responsory leaves out *Sicut erat*. N. 230 says *dicitur Gloria Patri* and does not name the second half of the doxology. The page quotes n. 230 and marks the omission `[to be sourced]`.
+
 ## Plain language with no Latin wording
 
 The Latin of the Code, above, is a different thing from a Latin paraphrase. Where no `la:` line is stored, the Latin view of the page shows the English sentence and the marker `[to be sourced]`. Hour names, section names, and the short rubrical sentences that are ordinary Latin do have a `la:` line.
@@ -172,6 +181,21 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `ui.open`
 - `ui.psalter_detail`
 - `ui.quote_en`
+- `ui.resp.dessain`
+- `ui.resp.ex1`
+- `ui.resp.ex2`
+- `ui.resp.ex3`
+- `ui.resp.last`
+- `ui.resp.marks`
+- `ui.resp.one`
+- `ui.resp.pasch`
+- `ui.resp.passion`
+- `ui.resp.said`
+- `ui.resp.sicut`
+- `ui.resp.site`
+- `ui.resp.title`
+- `ui.resp.two`
+- `ui.resp.two_source`
 - `ui.scheme`
 - `ui.shape`
 - `ui.unused`

@@ -1696,6 +1696,72 @@ sub ribbon_skeleton_html {
     . '</b></p><ol class="skeleton">' . join('', @li) . "</ol></div>\n";
 }
 
+sub ribbon_verse_html {
+  my ($text) = @_;
+  my @lines = grep { /\S/ } split /\n/, $text;
+  return '<p>' . join("<br>\n", map { ribbon_h($_) } @lines) . '</p>';
+}
+
+sub ribbon_responsory_html {
+  my ($code) = @_;
+  my ($sicut, $sicut_ok) = ribbon_s($code, 'ui.resp.sicut');
+  my $sicut_html = ribbon_h($sicut);
+  $sicut_html .= ' [to be sourced]' if $sicut_ok;
+  my $out = '<div class="resp-box"><h4>' . ribbon_sh($code, 'ui.resp.title') . '</h4>';
+  $out .= '<p>' . ribbon_sh($code, 'ui.resp.dessain') . '</p><ol>';
+  $out .= '<li>' . ribbon_sh($code, 'ui.resp.one') . '</li>';
+  $out .= '<li>' . ribbon_sh($code, 'ui.resp.last') . ' ' . $sicut_html . '</li>';
+  $out .= '<li>' . ribbon_sh($code, 'ui.resp.two')
+    . ' <span class="ribbon-note">' . ribbon_sh($code, 'ui.resp.two_source') . '</span></li>';
+  $out .= '<li>' . ribbon_sh($code, 'ui.resp.passion') . '</li>';
+  $out .= '<li>' . ribbon_sh($code, 'ui.resp.pasch') . '</li>';
+  $out .= '</ol><p>' . ribbon_sh($code, 'ui.resp.site') . '</p>';
+
+  my @examples = (
+    [ 'ui.resp.ex1', <<'TXT', <<'SAID' ],
+R. Iste cognóvit justítiam, et vidit mirabília magna, et exorávit Altíssimum
+* Et invéntus est in número Sanctórum.
+V. Iste est qui contémpsit vitam mundi, et pervénit ad cæléstia regna.
+TXT
+R. Iste cognóvit justítiam, et vidit mirabília magna, et exorávit Altíssimum * Et invéntus est in número Sanctórum.
+V. Iste est qui contémpsit vitam mundi, et pervénit ad cæléstia regna.
+R. Et invéntus est in número Sanctórum.
+V. Glória Patri, et Fílio, * et Spirítui Sancto.
+R. Et invéntus est in número Sanctórum.
+SAID
+    [ 'ui.resp.ex2', <<'TXT', <<'SAID' ],
+R. Obsecro, Dómine, mitte quem missúrus es: vide afflictiónem pópuli tui:
+* Sicut locútus es, veni, * Et líbera nos.
+V. Qui regis Israël, inténde, qui dedúcis velut ovem Joseph, qui sedes super Chérubim.
+TXT
+R. Obsecro, Dómine, mitte quem missúrus es: vide afflictiónem pópuli tui: * Sicut locútus es, veni, * Et líbera nos.
+V. Qui regis Israël, inténde, qui dedúcis velut ovem Joseph, qui sedes super Chérubim.
+R. Sicut locútus es, veni.
+V. Glória Patri, et Fílio, * et Spirítui Sancto.
+R. Et líbera nos.
+SAID
+    [ 'ui.resp.ex3', <<'TXT', <<'SAID' ],
+R. Usquequo exaltábitur inimícus meus super me?
+* Réspice, et exáudi me, Dómine, Deus meus.
+V. Qui tríbulant me, exsultábunt si motus fúero: ego autem in misericórdia tua sperábo.
+TXT
+R. Usquequo exaltábitur inimícus meus super me? * Réspice, et exáudi me, Dómine, Deus meus.
+V. Qui tríbulant me, exsultábunt si motus fúero: ego autem in misericórdia tua sperábo.
+R. Réspice, et exáudi me, Dómine, Deus meus.
+R. Usquequo exaltábitur inimícus meus super me? * Réspice, et exáudi me, Dómine, Deus meus.
+SAID
+  );
+  for my $ex (@examples) {
+    $out .= '<div class="resp-ex"><p><b>' . ribbon_sh($code, $ex->[0]) . '</b></p>';
+    $out .= '<p><i>' . ribbon_sh($code, 'ui.resp.marks') . '</i></p>' . ribbon_verse_html($ex->[1]);
+    $out .= '<p><i>' . ribbon_sh($code, 'ui.resp.said') . '</i></p>' . ribbon_verse_html($ex->[2]);
+    $out .= '</div>';
+  }
+  $out .= ribbon_quote_html($code, $_) for qw(BR-230 BR-231 BR-229 BR-233);
+  $out .= "</div>\n";
+  return $out;
+}
+
 sub ribbon_hour_html {
   my ($code, $edition, $facts, $h, $mode) = @_;
   $mode = '' unless defined $mode && ($mode eq 'book' || $mode eq 'booklet');
@@ -1727,6 +1793,7 @@ sub ribbon_hour_html {
     push @q, $facts->{tedeum} ? 'BR-237' : 'BR-238';
     $out .= '<p>' . ribbon_sh($code, 'plain.antiphons') . '</p>';
     push @q, 'BR-191';
+    $out .= ribbon_responsory_html($code);
   } elsif ($h eq 'Laudes') {
     my $scheme = ribbon_s($code, 'ui.scheme', { n => $facts->{laudes_scheme} || 1 });
     my $fest = $facts->{kind} =~ /festive/ || $sum->{sunday};
@@ -1955,6 +2022,11 @@ p.volume { color: maroon; }
 .booklet-soon { color: maroon; font-weight: bold; }
 .from-common { display: block; font-size: 0.92em; }
 li.slot-note { list-style: none; margin-left: -1.2em; font-size: 0.92em; }
+.resp-box { border: 1px solid maroon; padding: 0.6em 0.9em; margin: 0.8em 0 1em; }
+.resp-box h4 { margin: 0 0 0.4em; color: maroon; }
+.resp-box ol { margin: 0.4em 0 0.6em 1.2em; padding: 0; }
+.resp-box li { margin: 0.35em 0; }
+.resp-ex { margin: 0.6em 0; }
 </style>
 CSS
 }
@@ -2066,6 +2138,11 @@ What those sources say about the Martyrology at Prime is only posture:
 - N. 261 limits that chapter to choir or common recitation. English: “What is said here about the sign of the cross and the position of the body in the recitation of the Divine Office holds for the recitation in choir or in common. It is fitting, however, that those who recite the Divine Office alone conform to what is said about the sign of the cross.” Latin, AAS 52 (1960), p. 641: “Quae hic dicuntur de signo crucis et de corporis situ in recitatione divini Officii, valent pro recitatione in choro vel in communi; convenit vero ut hi qui a solo divinum Officium recitant, iis quae de signo crucis dicuntur se conforment.”
 
 There is no *Pretiosa* verse, no *laudabiliter*, and no *extra chorum* attached to the Martyrology in those sources. The page quotes nn. 261, 266 e, and 268 c, and marks the obligation, the unprinted book, and the continuation at *Pretiosa* as `[to be sourced]`.
+
+The responsory box looks for two further wordings and does not find them in those sources:
+
+- An official text of the two-asterisk rule (after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse). The page labels that row as commentary from the Confraternity of SS. Peter and Paul, *Instructions for the Recitation of the Divine Office*, adapted from Hausmann, *Learning the Breviary*, §23, pp. 34–35. The Dessain breviary prints every division as an asterisk, so a second division is a second asterisk.
+- An official text that the *Gloria Patri* at the end of a responsory leaves out *Sicut erat*. N. 230 says *dicitur Gloria Patri* and does not name the second half of the doxology. The page quotes n. 230 and marks the omission `[to be sourced]`.
 
 ## Plain language with no Latin wording
 
@@ -2313,6 +2390,24 @@ ED
   ($skp =~ /all sit while it is read/ && $skp !~ /not required/ && $skp !~ /Preti/)
     ? $ok->('Prime skeleton states posture only')
     : $bad->('Prime skeleton');
+  my $q230 = ribbon_quote('BR-230');
+  ($q230->{en_ok} && $q230->{en} =~ /Gloria Patri is omitted from the last responsory/
+      && $q230->{la_ok} && $q230->{la} =~ /omittitur Gloria Patri/)
+    ? $ok->('BR-230 Gloria at the last responsory')
+    : $bad->('BR-230');
+  my $q233 = ribbon_quote('BR-233');
+  ($q233->{en_ok} && $q233->{en} =~ /Gloria Patri and the repetition of the last part/
+      && $q233->{la_ok} && $q233->{la} =~ /omittitur Gloria Patri et repetitio/)
+    ? $ok->('BR-233b Sunday responsory')
+    : $bad->('BR-233');
+  ($html =~ /class="resp-box"/ && $html =~ /second \*/
+      && $html =~ /never a cross or any other mark/
+      && $html =~ /Iste cognóvit/ && $html =~ /Sicut locútus es, veni, \*/
+      && $html =~ /Et líbera nos/ && $html =~ /Usquequo exaltábitur/
+      && $html =~ /Hausmann/ && $html =~ /\[to be sourced\]/
+      && $html =~ /In fine ultimi responsorii/)
+    ? $ok->('Matins responsory box uses a second asterisk')
+    : $bad->('responsory box');
 
   my $de = ribbon_html($el, 'Deutsch', 'general');
   $de =~ /Fastenferie/ ? $ok->('German plain') : $bad->('German plain');
@@ -2341,6 +2436,9 @@ ED
       && $doc =~ /extra chorum/)
     ? $ok->('gap doc records the unsourced Martyrology obligation')
     : $bad->('gap doc sought section');
+  ($doc =~ /two-asterisk rule/ && $doc =~ /Sicut erat/ && $doc !~ /open question/)
+    ? $ok->('gap doc records the responsory gaps and asks nothing about marks')
+    : $bad->('gap doc responsory');
 
   print $fail ? "FAILED $fail\n" : "ALL OK\n";
   return $fail ? 1 : 0;
