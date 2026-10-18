@@ -853,7 +853,7 @@ sub ribbon_part_line {
 }
 
 sub ribbon_html {
-  my ($facts, $lang, $edition_id) = @_;
+  my ($facts, $lang, $edition_id, $pray) = @_;
   my $code = ribbon_code($lang);
   $edition_id = 'general' unless $RIBBON_EDITIONS{$edition_id};
   my $ed = $RIBBON_EDITIONS{$edition_id};
@@ -912,7 +912,69 @@ sub ribbon_html {
     }
   }
 
-  $out .= '<h2>' . ribbon_sh($code, 'ui.ribbons') . '</h2>';
+  my $shape = ribbon_shape_html($code, $facts);
+  my $feast = ribbon_booklet_feast($facts);
+  if ($feast) {
+    my $which = ($pray && $pray eq 'booklet') ? 'booklet' : 'book';
+    $out .= '<h2>' . ribbon_sh($code, 'ui.how') . '</h2>';
+    $out .= '<div class="pray-modes">';
+    $out .= '<input type="radio" class="pray-radio" name="pray" id="pray-book" value="book"'
+      . ($which eq 'book' ? ' checked' : '') . '>';
+    $out .= '<input type="radio" class="pray-radio" name="pray" id="pray-booklet" value="booklet"'
+      . ($which eq 'booklet' ? ' checked' : '') . '>';
+    $out .= '<div class="pray-switch" role="group">';
+    $out .= '<label for="pray-book">' . ribbon_sh($code, 'ui.mode.book') . '</label>';
+    $out .= '<label for="pray-booklet">' . ribbon_sh($code, 'ui.mode.booklet') . '</label>';
+    $out .= '</div>';
+    $out .= '<p class="pray-lead book-lead">' . ribbon_sh($code, 'ui.mode.book_lead') . '</p>';
+    $out .= '<p class="pray-lead booklet-lead">' . ribbon_sh($code, 'ui.mode.booklet_lead') . ' '
+      . ribbon_booklet_status_html($code, $feast) . '</p>';
+    $out .= '<div class="pray-panel book-panel">'
+      . ribbon_ribbons_html($code, $edition_id, $facts, 'book') . '</div>';
+    $out .= '<div class="pray-panel booklet-panel">'
+      . ribbon_ribbons_html($code, $edition_id, $facts, 'booklet') . '</div>';
+    $out .= $shape;
+    $out .= '<div class="pray-panel book-panel">'
+      . ribbon_hours_html($code, $edition_id, $facts, 'book') . '</div>';
+    $out .= '<div class="pray-panel booklet-panel">'
+      . ribbon_hours_html($code, $edition_id, $facts, 'booklet') . '</div>';
+    $out .= '</div>';
+  } else {
+    $out .= ribbon_ribbons_html($code, $edition_id, $facts, '');
+    $out .= $shape;
+    $out .= ribbon_hours_html($code, $edition_id, $facts, '');
+  }
+  $out .= '</div>';
+  return $out;
+}
+
+sub ribbon_shape_html {
+  my ($code, $facts) = @_;
+  my $out = '<h2>' . ribbon_sh($code, 'ui.shape') . '</h2>';
+  my @shape =
+      $facts->{kind} eq 'festive'        ? qw(BR-167)
+    : $facts->{kind} eq 'semifestive'    ? qw(BR-168)
+    : $facts->{kind} eq 'ordinary'       ? qw(BR-169 BR-177)
+    : $facts->{kind} eq 'sunday'         ? qw(BR-165 BR-166)
+    : $facts->{kind} eq 'sunday_special' ? qw(BR-163)
+    :                                      qw(BR-170 BR-171);
+  $out .= ribbon_quote_html($code, $_) for @shape;
+  return $out;
+}
+
+sub ribbon_hours_html {
+  my ($code, $edition_id, $facts, $mode) = @_;
+  my $out = '<h2>' . ribbon_sh($code, 'ui.hours') . '</h2>';
+  for my $h (@RIBBON_HOURS) {
+    $out .= ribbon_hour_html($code, $edition_id, $facts, $h, $mode);
+  }
+  return $out;
+}
+
+sub ribbon_ribbons_html {
+  my ($code, $edition_id, $facts, $mode) = @_;
+  $mode //= '';
+  my $out = '<h2>' . ribbon_sh($code, 'ui.ribbons') . '</h2>';
   $out .= '<ul class="ribbons">';
   my $psalm_file = $facts->{hours}{Matutinum}{parts}{psalms}{file} || 'Psalterium';
   my $which_ps = $facts->{hours}{Laudes}{sunday} ? ribbon_s($code, 'ui.sunday_psalms') : ribbon_s($code, 'ui.weekday_psalms');
@@ -926,34 +988,39 @@ sub ribbon_html {
   }
   $out .= ribbon_section_row($code, $edition_id, $facts, 'tempora', $tempora, '');
 
-  my $sancti = ($facts->{winner} =~ /Sancti/i) ? $facts->{winner} : '';
-  my $sancti_note = '';
-  if (!$sancti) {
-    for my $c (@{ $facts->{hours}{Laudes}{comms} || [] }, $facts->{hours}{Laudes}{commemoratio}) {
-      if ($c && $c =~ /Sancti/i) { $sancti = $c; $sancti_note = 'commem'; last; }
+  if ($mode eq '') {
+    my $sancti = ($facts->{winner} =~ /Sancti/i) ? $facts->{winner} : '';
+    my $sancti_note = '';
+    if (!$sancti) {
+      for my $c (@{ $facts->{hours}{Laudes}{comms} || [] }, $facts->{hours}{Laudes}{commemoratio}) {
+        if ($c && $c =~ /Sancti/i) { $sancti = $c; $sancti_note = 'commem'; last; }
+      }
+    }
+    $out .= ribbon_section_row($code, $edition_id, $facts, 'sancti', $sancti, $sancti_note);
+  } else {
+    my @sancti = ribbon_sancti_files($facts, $mode);
+    if (!@sancti) {
+      $out .= ribbon_section_row($code, $edition_id, $facts, 'sancti', '', '');
+    } else {
+      my $label = ribbon_sh($code, 'sec.sancti');
+      my $detail = join '<br>', map { ribbon_sh($code, 'ui.open', { file => $_ }) } @sancti;
+      my $found = ribbon_find_page($edition_id, $facts->{season},
+        'section:sancti:' . $sancti[0], 'section:sancti');
+      my $page = ribbon_page_span($code, $found);
+      $out .= "<li><b>$label</b><br>$detail$page</li>\n";
+    }
+    if ($mode eq 'booklet') {
+      my $file = ribbon_booklet_feast($facts);
+      my $label = ribbon_sh($code, 'sec.booklet');
+      my $detail = ribbon_sh($code, 'sk.booklet.insert', { file => $file });
+      $out .= '<li><b>' . $label . '</b><br>' . $detail . ' '
+        . ribbon_booklet_status_html($code, $file) . "</li>\n";
     }
   }
-  $out .= ribbon_section_row($code, $edition_id, $facts, 'sancti', $sancti, $sancti_note);
 
   $out .= ribbon_section_row($code, $edition_id, $facts, 'commune', $facts->{commune}, '');
   $out .= ribbon_section_row($code, $edition_id, $facts, 'ordinarium', 'Ordinarium', '');
   $out .= "</ul>\n";
-
-  $out .= '<h2>' . ribbon_sh($code, 'ui.shape') . '</h2>';
-  my @shape =
-      $facts->{kind} eq 'festive'        ? qw(BR-167)
-    : $facts->{kind} eq 'semifestive'    ? qw(BR-168)
-    : $facts->{kind} eq 'ordinary'       ? qw(BR-169 BR-177)
-    : $facts->{kind} eq 'sunday'         ? qw(BR-165 BR-166)
-    : $facts->{kind} eq 'sunday_special' ? qw(BR-163)
-    :                                      qw(BR-170 BR-171);
-  $out .= ribbon_quote_html($code, $_) for @shape;
-
-  $out .= '<h2>' . ribbon_sh($code, 'ui.hours') . '</h2>';
-  for my $h (@RIBBON_HOURS) {
-    $out .= ribbon_hour_html($code, $edition_id, $facts, $h);
-  }
-  $out .= '</div>';
   return $out;
 }
 
@@ -1013,12 +1080,88 @@ sub ribbon_load_booklets {
   close $fh;
 }
 
-# Href for a future per-parish booklet. Empty until booklets.txt has a line.
+# Href for a future per-parish booklet. Empty until booklets.txt has a URL on the line.
 sub ribbon_booklet_href {
   my ($file) = @_;
   return '' unless $file;
   my $stem = ribbon_stem($file);
   return $RIBBON_BOOKLET{$stem} || $RIBBON_BOOKLET{ribbon_base($stem)} || '';
+}
+
+# The day's feast, when booklets.txt lists it. Empty href still counts.
+sub ribbon_booklet_feast {
+  my ($facts) = @_;
+  return '' unless $facts;
+  my $stem = ribbon_stem($facts->{winner} // '');
+  return '' if $stem eq '' || !exists $RIBBON_BOOKLET{$stem};
+  return $stem;
+}
+
+sub ribbon_commune_stem {
+  my ($facts) = @_;
+  my $com = ribbon_stem($facts->{commune} || '');
+  $com = "Commune/$com" if $com ne '' && $com !~ m{/};
+  return $com;
+}
+
+# A part the printed book does not have is read from the Common instead.
+sub ribbon_book_fallback {
+  my ($class, $facts) = @_;
+  return $class if !$class || $class->{book};
+  my $com = ribbon_commune_stem($facts);
+  return $class if $com eq '';
+  return {
+    place => 'commune', file => $com, book => 1, booklet => '', substituted => 1,
+  };
+}
+
+# book: stay inside the printed breviary. booklet: the insert supplies book=0 parts.
+sub ribbon_view_class {
+  my ($class, $facts, $mode) = @_;
+  $mode //= '';
+  return ribbon_book_fallback($class, $facts) if $mode eq 'book';
+  if ($mode eq 'booklet' && $class && !$class->{book}) {
+    return { %$class, place => 'booklet' };
+  }
+  return $class;
+}
+
+sub ribbon_booklet_status_html {
+  my ($code, $file) = @_;
+  my $href = (defined $file && exists $RIBBON_BOOKLET{$file}) ? ($RIBBON_BOOKLET{$file} // '') : '';
+  my $attr = ' data-file="' . ribbon_h($file) . '" data-booklet="' . ribbon_h($href) . '"';
+  if ($href) {
+    return '<a class="print-proper"' . $attr . ' href="' . ribbon_h($href) . '">'
+      . ribbon_sh($code, 'sk.booklet.link') . '</a>';
+  }
+  return '<span class="booklet-soon"' . $attr . '>' . ribbon_sh($code, 'sk.booklet.soon') . '</span>';
+}
+
+# Printed Proper of Saints files this mode actually opens.
+sub ribbon_sancti_files {
+  my ($facts, $mode) = @_;
+  my %seen;
+  my @out;
+  my $add = sub {
+    my ($f) = @_;
+    $f = ribbon_stem($f // '');
+    return if $f eq '' || $seen{$f}++;
+    push @out, $f;
+  };
+  if (($mode || '') ne 'booklet') {
+    my $abr = ribbon_abridged_life($facts);
+    $add->($abr->{roman}) if $abr && $abr->{roman};
+  }
+  for my $h (@RIBBON_HOURS) {
+    my $sum = $facts->{hours}{$h} or next;
+    my $parts = $sum->{parts} || {};
+    for my $pid (keys %$parts) {
+      my $c = ribbon_view_class(
+        ribbon_part_class($h, $pid, $parts->{$pid}{file}), $facts, $mode);
+      $add->($c->{file}) if ($c->{place} || '') eq 'sancti' && $c->{book};
+    }
+  }
+  return @out;
 }
 
 sub ribbon_base {
@@ -1264,15 +1407,22 @@ sub ribbon_where_html {
   my $book;
   if ($class->{book}) {
     $book = '<span class="in-book">' . ribbon_sh($code, 'sk.book.in') . '</span>';
+    if ($class->{substituted}) {
+      $book .= ' <span class="from-common">' . ribbon_sh($code, 'sk.from_common') . '</span>';
+    }
   } else {
-    my $href = $class->{booklet} || '';
+    my $stem = ribbon_stem($class->{file} // '');
+    my $listed = $stem ne '' && exists $RIBBON_BOOKLET{$stem};
+    my $href = $class->{booklet} || ($listed ? ($RIBBON_BOOKLET{$stem} // '') : '');
     my $note = ribbon_sh($code, 'sk.book.out');
     my $attr = ' class="print-proper" data-file="' . ribbon_h($class->{file})
       . '" data-booklet="' . ribbon_h($href) . '"';
+    $book = '<span' . $attr . '>' . $note . '</span>';
     if ($href) {
-      $book = '<a' . $attr . ' href="' . ribbon_h($href) . '">' . $note . '</a>';
-    } else {
-      $book = '<span' . $attr . '>' . $note . '</span>';
+      $book .= ' <a' . $attr . ' href="' . ribbon_h($href) . '">'
+        . ribbon_sh($code, 'sk.booklet.link') . '</a>';
+    } elsif ($listed) {
+      $book .= ' <span class="booklet-soon">' . ribbon_sh($code, 'sk.booklet.soon') . '</span>';
     }
   }
   return '<span class="from">' . $from . '</span> ' . $book;
@@ -1447,7 +1597,9 @@ sub ribbon_lesson_groups {
 }
 
 sub ribbon_skeleton_html {
-  my ($code, $facts, $h, $sum, $comms) = @_;
+  my ($code, $facts, $h, $sum, $comms, $mode) = @_;
+  $mode = '' unless defined $mode && ($mode eq 'book' || $mode eq 'booklet');
+  my $view = sub { ribbon_view_class($_[0], $facts, $mode) };
   my @li;
   my $push = sub { push @li, '<li>' . $_[0] . '</li>'; };
   my $part = $sum->{parts} || {};
@@ -1455,7 +1607,7 @@ sub ribbon_skeleton_html {
   if ($h eq 'Matutinum') {
     for my $pid (qw(invitatory hymn)) {
       next unless $part->{$pid};
-      my $c = ribbon_part_class($h, $pid, $part->{$pid}{file});
+      my $c = $view->(ribbon_part_class($h, $pid, $part->{$pid}{file}));
       $push->(ribbon_sh($code, "part.$pid") . ' — ' . ribbon_where_html($code, $c));
     }
     my @rom = qw(I II III);
@@ -1465,11 +1617,18 @@ sub ribbon_skeleton_html {
       my @inner;
       if ($part->{antiphons} || $part->{psalms}) {
         my $src = $part->{antiphons} || $part->{psalms};
-        my $c = ribbon_part_class($h, $part->{antiphons} ? 'antiphons' : 'psalms', $src->{file});
+        my $c = $view->(ribbon_part_class($h, $part->{antiphons} ? 'antiphons' : 'psalms', $src->{file}));
         push @inner, '<li>' . ribbon_sh($code, 'sk.ants_psalms') . ' — ' . ribbon_where_html($code, $c) . '</li>';
       }
       my $abr = ($noct == 2) ? ribbon_abridged_life($facts) : undef;
-      if ($abr) {
+      if ($abr && $mode eq 'booklet') {
+        my $flag = {
+          place => 'booklet', file => $abr->{winner}, book => 0,
+          booklet => ribbon_booklet_href($abr->{winner}),
+        };
+        push @inner, '<li>' . ribbon_sh($code, 'sk.engine_life', { file => $abr->{engine} })
+          . ' — ' . ribbon_where_html($code, $flag) . '</li>';
+      } elsif ($abr) {
         my $proper = { place => 'sancti', file => $abr->{roman}, book => 1, booklet => '' };
         my $common = { place => 'commune', file => $abr->{commune}, book => 1, booklet => '' };
         my $kind = ribbon_s($code, 'lk.abridged');
@@ -1477,20 +1636,15 @@ sub ribbon_skeleton_html {
           . ' — ' . ribbon_where_html($code, $proper) . '</li>';
         push @inner, '<li>' . ribbon_h(ribbon_s($code, 'sk.lessons_plain', { a => 5, b => 6 }))
           . ' — ' . ribbon_where_html($code, $common) . '</li>';
-        push @inner, '<li>' . ribbon_sh($code, 'sk.slot_order') . '</li>';
-        my $flag = {
-          place => 'local', file => $abr->{winner}, book => 0,
-          booklet => ribbon_booklet_href($abr->{winner}),
-        };
-        push @inner, '<li>' . ribbon_sh($code, 'sk.engine_life', { file => $abr->{engine} })
-          . ' — ' . ribbon_where_html($code, $flag) . '</li>';
+        push @inner, '<li class="slot-note">' . ribbon_sh($code, 'sk.slot_order') . '</li>';
       } else {
         for my $g (ribbon_lesson_groups($facts->{lessons}, $noct)) {
+          my $c = $view->($g->{class});
           my $kind = $g->{kind} ? ribbon_s($code, 'lk.' . $g->{kind}) : '';
           my $lab = $g->{a} == $g->{b}
             ? ribbon_s($code, 'sk.lesson', { n => $g->{a}, kind => $kind })
             : ribbon_s($code, 'sk.lessons', { a => $g->{a}, b => $g->{b}, kind => $kind });
-          push @inner, '<li>' . ribbon_h($lab) . ' — ' . ribbon_where_html($code, $g->{class}) . '</li>';
+          push @inner, '<li>' . ribbon_h($lab) . ' — ' . ribbon_where_html($code, $c) . '</li>';
         }
       }
       $push->($head . (@inner ? '<ul>' . join('', @inner) . '</ul>' : ''));
@@ -1499,19 +1653,19 @@ sub ribbon_skeleton_html {
   } else {
     if ($h eq 'Prima' && $facts->{kind} eq 'festive' && !$part->{antiphons}) {
       my $la = $facts->{hours}{Laudes}{parts}{antiphons};
-      my $c = $la ? ribbon_part_class('Laudes', 'antiphons', $la->{file}) : ribbon_classify('', '');
+      my $c = $la ? $view->(ribbon_part_class('Laudes', 'antiphons', $la->{file})) : ribbon_classify('', '');
       $push->(ribbon_sh($code, 'part.antiphons') . ' — ' . ribbon_sh($code, 'sk.from_lauds')
         . ' ' . ribbon_where_html($code, $c));
     }
     if ($h =~ /^(?:Tertia|Sexta|Nona)\z/ && ($facts->{kind} eq 'festive' || $sum->{sunday}) && !$part->{antiphons}) {
       my $la = $facts->{hours}{Laudes}{parts}{antiphons};
-      my $c = $la ? ribbon_part_class('Laudes', 'antiphons', $la->{file}) : ribbon_classify('', '');
+      my $c = $la ? $view->(ribbon_part_class('Laudes', 'antiphons', $la->{file})) : ribbon_classify('', '');
       $push->(ribbon_sh($code, 'part.antiphons') . ' — ' . ribbon_sh($code, 'sk.from_lauds')
         . ' ' . ribbon_where_html($code, $c));
     }
     for my $pid (qw(antiphons psalms hymn capitulum verse lectio_brevis collect)) {
       next unless $part->{$pid};
-      my $c = ribbon_part_class($h, $pid, $part->{$pid}{file});
+      my $c = $view->(ribbon_part_class($h, $pid, $part->{$pid}{file}));
       my $extra = '';
       if ($pid eq 'psalms') {
         $extra = ' — ' . ribbon_h($part->{$pid}{sunday} || $sum->{sunday}
@@ -1527,6 +1681,7 @@ sub ribbon_skeleton_html {
     if ($h eq 'Prima') {
       $push->(ribbon_sh($code, 'part.athanasian') . ' — '
         . ribbon_sh($code, $sum->{creed} ? 'sk.said' : 'sk.omitted'));
+      $push->(ribbon_sh($code, 'sk.martyrology'));
     }
     for my $f (@{ $comms || [] }) {
       my $c = ribbon_classify($f, 'Oratio');
@@ -1541,8 +1696,29 @@ sub ribbon_skeleton_html {
     . '</b></p><ol class="skeleton">' . join('', @li) . "</ol></div>\n";
 }
 
+sub ribbon_martyrology_latin {
+  my $path = "$datafolder/Latin/Psalterium/Common/Rubricae.txt";
+  open my $fh, '<:encoding(UTF-8)', $path or return '';
+  local $/;
+  my $text = <$fh>;
+  close $fh;
+  return '' unless defined $text;
+  return $1 if $text =~ m{/:(\s*Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum\.)\s*:/};
+  return '';
+}
+
+sub ribbon_martyrology_quote_html {
+  my ($code) = @_;
+  my $la = ribbon_martyrology_latin();
+  return '' if $la eq '';
+  return '<blockquote class="rubric ordinary"><p class="cite"><b>'
+    . ribbon_sh($code, 'ui.quote_ordinary') . '</b></p><p>'
+    . ribbon_h($la) . "</p></blockquote>\n";
+}
+
 sub ribbon_hour_html {
-  my ($code, $edition, $facts, $h) = @_;
+  my ($code, $edition, $facts, $h, $mode) = @_;
+  $mode = '' unless defined $mode && ($mode eq 'book' || $mode eq 'booklet');
   my $sum = $facts->{hours}{$h} or return '';
   my $out = '<h3>' . ribbon_sh($code, "hora.$h") . '</h3>';
   my @q;
@@ -1580,6 +1756,8 @@ sub ribbon_hour_html {
     push @q, qw(BR-246 BR-248) if $sum->{parts}{collect};
   } elsif ($h eq 'Prima') {
     $out .= '<p>' . ribbon_sh($code, 'plain.prime') . '</p>';
+    $out .= '<p>' . ribbon_sh($code, 'plain.martyrology') . '</p>';
+    $out .= ribbon_martyrology_quote_html($code);
     $out .= '<p>' . ribbon_sh($code, $sum->{creed} ? 'plain.creed.yes' : 'plain.creed.no') . '</p>';
     @q = qw(BR-242 BR-203);
   } elsif ($h =~ /^(?:Tertia|Sexta|Nona)\z/) {
@@ -1616,19 +1794,33 @@ sub ribbon_hour_html {
     push @q, 'BR-251' if $h =~ /^(?:Laudes|Vespera)\z/;
   }
 
-  $out .= ribbon_skeleton_html($code, $facts, $h, $sum, \@comms);
-  $out .= ribbon_lesson_table($code, $facts) if $h eq 'Matutinum';
+  $out .= ribbon_skeleton_html($code, $facts, $h, $sum, \@comms, $mode);
+  $out .= ribbon_lesson_table($code, $facts, $mode) if $h eq 'Matutinum';
   $out .= '<ul class="hour-parts">';
   my $parts = $sum->{parts};
   for my $pid (qw(invitatory hymn antiphons psalms verse lessons capitulum collect lectio_brevis)) {
     next unless $parts->{$pid};
+    my $file = $parts->{$pid}{file};
     my $extra = '';
+    if ($mode eq 'book' || $mode eq 'booklet') {
+      my $c = ribbon_view_class(ribbon_part_class($h, $pid, $file), $facts, $mode);
+      $file = $c->{file} if $c->{file};
+      if ($c->{substituted}) {
+        $extra = ribbon_s($code, 'sk.from_common');
+      } elsif ($mode eq 'booklet' && !$c->{book}) {
+        my $stem = ribbon_stem($c->{file});
+        if ($stem && exists $RIBBON_BOOKLET{$stem} && ($RIBBON_BOOKLET{$stem} // '') eq '') {
+          $extra = ribbon_s($code, 'sk.booklet.soon');
+        }
+      }
+    }
     if ($pid eq 'psalms') {
-      $extra = $parts->{$pid}{sunday} || $sum->{sunday}
+      my $ps = $parts->{$pid}{sunday} || $sum->{sunday}
         ? ribbon_s($code, 'ui.sunday_psalms')
         : ribbon_s($code, 'ui.weekday_psalms');
+      $extra = $extra ? "$extra — $ps" : $ps;
     }
-    $out .= ribbon_part_line($code, $edition, $facts->{season}, $h, $pid, $parts->{$pid}{file}, $extra);
+    $out .= ribbon_part_line($code, $edition, $facts->{season}, $h, $pid, $file, $extra);
   }
   if ($h eq 'Matutinum') {
     $out .= ribbon_part_line($code, $edition, $facts->{season}, $h, 'te_deum', '', $facts->{tedeum} ? 'Te Deum' : '');
@@ -1656,13 +1848,19 @@ sub ribbon_collect_block {
 }
 
 sub ribbon_lesson_table {
-  my ($code, $facts) = @_;
+  my ($code, $facts, $mode) = @_;
+  $mode = '' unless defined $mode && ($mode eq 'book' || $mode eq 'booklet');
   my $rows = $facts->{lessons} || [];
   return '' unless @$rows;
   my $html = '<h3>' . ribbon_sh($code, 'ui.lessons') . '</h3>';
-  if (ribbon_abridged_life($facts)) {
-    $html .= '<p>' . ribbon_sh($code, 'sk.table_note') . '</p>';
-  }
+  my $note =
+      ($mode eq 'book' && ribbon_abridged_life($facts))    ? 'sk.table_book'
+    : ($mode eq 'booklet' && ribbon_abridged_life($facts)) ? 'sk.table_booklet_life'
+    : ($mode eq 'book' && ribbon_booklet_feast($facts))    ? 'sk.table_book_common'
+    : ($mode eq 'booklet' && ribbon_booklet_feast($facts)) ? 'sk.table_booklet_proper'
+    : ribbon_abridged_life($facts)                         ? 'sk.table_note'
+    :                                                        '';
+  $html .= '<p>' . ribbon_sh($code, $note) . '</p>' if $note;
   $html .= '<table class="lessons" border="1" cellpadding="4" cellspacing="0">';
   $html .= '<tr><th>' . ribbon_sh($code, 'ui.col_n') . '</th><th>' . ribbon_sh($code, 'ui.col_nocturn')
     . '</th><th>' . ribbon_sh($code, 'ui.col_kind') . '</th><th>' . ribbon_sh($code, 'ui.col_source')
@@ -1756,6 +1954,22 @@ ol.skeleton ul { margin: 0.2em 0 0.4em 1.2em; padding: 0; }
 table.lessons { border-collapse: collapse; width: 100%; }
 table.lessons td, table.lessons th { vertical-align: top; text-align: left; }
 p.volume { color: maroon; }
+.pray-modes { position: relative; }
+.pray-radio { position: absolute; left: -9999px; width: 1px; height: 1px; margin: 0; }
+.pray-switch { display: flex; flex-wrap: wrap; gap: 0.4em; }
+.pray-switch label {
+  flex: 1 1 12em; text-align: center; border: 2px solid maroon; border-radius: 0.4em;
+  padding: 0.7em 0.6em; font-weight: bold; cursor: pointer; background: #fff; color: maroon;
+}
+#pray-book:checked ~ .pray-switch label[for="pray-book"],
+#pray-booklet:checked ~ .pray-switch label[for="pray-booklet"] { background: maroon; color: #fff; }
+.book-panel, .booklet-panel, .book-lead, .booklet-lead { display: none; }
+#pray-book:checked ~ .book-panel, #pray-book:checked ~ .book-lead { display: block; }
+#pray-booklet:checked ~ .booklet-panel, #pray-booklet:checked ~ .booklet-lead { display: block; }
+.pray-lead { margin: 0.7em 0; }
+.booklet-soon { color: maroon; font-weight: bold; }
+.from-common { display: block; font-size: 0.92em; }
+li.slot-note { list-style: none; margin-left: -1.2em; font-size: 0.92em; }
 </style>
 CSS
 }
@@ -1968,14 +2182,20 @@ ED
   ($abr && $abr->{roman} =~ /03-17/ && $abr->{key} eq 'Lectio4+5+6' && $abr->{commune} =~ /C4/)
     ? $ok->('Patrick book prints one abridged lesson')
     : $bad->('abridged ' . ($abr ? "$abr->{roman} $abr->{key} $abr->{commune}" : 'undef'));
-  my $sk = ribbon_skeleton_html('en', $el, 'Matutinum', $el->{hours}{Matutinum}, []);
+  my $sk = ribbon_skeleton_html('en', $el, 'Matutinum', $el->{hours}{Matutinum}, [], 'book');
   ($sk =~ /class="skeleton"/ && $sk =~ /Nocturn I/ && $sk =~ /Lessons 1/
       && $sk =~ /Lesson 4: abridged lesson of the saint/ && $sk =~ /Sancti\/03-17/
       && $sk =~ /Lessons 5/ && $sk =~ /Commune\/C4/ && $sk =~ /in the printed breviary/
-      && $sk =~ /No article fixes the order/ && $sk =~ /lesson 6/
-      && $sk =~ /print this proper separately/ && $sk =~ /data-file="Sancti\/03-17nl1"/)
-    ? $ok->('El Paso Nocturn II is the book plus the three older lessons')
-    : $bad->('El Paso skeleton');
+      && $sk =~ /order used here/ && $sk !~ /Some arrange/ && $sk !~ /03-17nl1/
+      && $sk !~ /print this proper separately/)
+    ? $ok->('El Paso breviary-only Nocturn II')
+    : $bad->('El Paso book skeleton');
+  my $sklet = ribbon_skeleton_html('en', $el, 'Matutinum', $el->{hours}{Matutinum}, [], 'booklet');
+  ($sklet =~ /three older life lessons/ && $sklet =~ /Sancti\/03-17/
+      && $sklet =~ /data-file="Sancti\/03-17nl1"/ && $sklet =~ /Booklet coming soon/
+      && $sklet =~ /propers booklet/ && $sklet !~ /abridged lesson of the saint/)
+    ? $ok->('El Paso booklet Nocturn II is the three life lessons')
+    : $bad->('El Paso booklet skeleton');
   my $q218 = ribbon_quote('BR-218');
   ($q218->{en_ok} && $q218->{en} =~ /made up by lessons taken from the Common/
       && $q218->{la_ok} && $q218->{la} =~ /numerus ternarius completur lectionibus de Communi/)
@@ -1988,14 +2208,37 @@ ED
   ($gu->{winner} =~ /12-12s/)
     ? $ok->('Phoenix Guadalupe')
     : $bad->("Phoenix winner=$gu->{winner}");
-  my $gsk = ribbon_skeleton_html('en', $gu, 'Matutinum', $gu->{hours}{Matutinum}, []);
+  my $gbook = ribbon_skeleton_html('en', $gu, 'Matutinum', $gu->{hours}{Matutinum}, [], 'book');
+  ($gbook =~ /Commune\/C11/ && $gbook =~ /This proper is not in the printed breviary/
+      && $gbook =~ /Sancti\/12-08/ && $gbook !~ /data-file="Sancti\/12-12s"/
+      && $gbook =~ /Lessons 1/ && $gbook =~ /Lessons 7/)
+    ? $ok->('Guadalupe breviary-only stays in the book')
+    : $bad->('Guadalupe book skeleton');
+  my $gsk = ribbon_skeleton_html('en', $gu, 'Matutinum', $gu->{hours}{Matutinum}, [], 'booklet');
   ($gsk =~ /print this proper separately/ && $gsk =~ /data-booklet=""/ && $gsk =~ /data-file="Sancti\/12-12s"/
-      && $gsk =~ /Lessons 7.{1,3}9: Homily/)
+      && $gsk =~ /Booklet coming soon/ && $gsk =~ /propers booklet/
+      && $gsk =~ /Lessons 7.{1,3}9: Homily/ && $gsk =~ /Antiphons and psalms/)
     ? $ok->('particular proper flagged, booklet link empty')
     : $bad->('Guadalupe skeleton');
+  my $rb = ribbon_ribbons_html('en', 'general', $el, 'book');
+  ($rb =~ /Sancti\/03-17/ && $rb !~ /03-17nl1/ && $rb =~ /Commune\/C4/)
+    ? $ok->('Patrick breviary ribbons open the printed proper')
+    : $bad->('Patrick book ribbons');
+  my $rl = ribbon_ribbons_html('en', 'general', $el, 'booklet');
+  ($rl =~ /03-17nl1/ && $rl =~ /Booklet coming soon/ && $rl =~ /Insert the propers booklet/)
+    ? $ok->('Patrick booklet ribbon names the insert')
+    : $bad->('Patrick booklet ribbons');
+  my $gb = ribbon_ribbons_html('en', 'general', $gu, 'book');
+  ($gb =~ /Sancti\/12-08/ && $gb !~ /12-12s/ && $gb =~ /Commune\/C11/)
+    ? $ok->('Guadalupe breviary ribbons omit the unprinted proper')
+    : $bad->('Guadalupe book ribbons');
+  my $gl = ribbon_ribbons_html('en', 'general', $gu, 'booklet');
+  ($gl =~ /12-12s/ && $gl =~ /Booklet coming soon/ && $gl =~ /Sancti\/12-08/)
+    ? $ok->('Guadalupe booklet ribbon names the insert')
+    : $bad->('Guadalupe booklet ribbons');
   {
     local $RIBBON_BOOKLET{'Sancti/12-12s'} = '/booklets/phoenix';
-    my $linked = ribbon_skeleton_html('en', $gu, 'Matutinum', $gu->{hours}{Matutinum}, []);
+    my $linked = ribbon_skeleton_html('en', $gu, 'Matutinum', $gu->{hours}{Matutinum}, [], 'booklet');
     $linked =~ m{href="/booklets/phoenix"} && $linked =~ /data-booklet="\/booklets\/phoenix"/
       ? $ok->('booklet seam accepts a later href')
       : $bad->('booklet seam');
@@ -2005,6 +2248,16 @@ ED
   ($gen->{winner} =~ /Quad4-2/ && $gen->{kind} eq 'ferial' && $gen->{nocturns} == 1)
     ? $ok->('universal feria')
     : $bad->("universal winner=$gen->{winner} kind=$gen->{kind} nocturns=$gen->{nocturns}");
+  my $genhtml = ribbon_html($gen, 'English', 'general');
+  $genhtml !~ /pray-modes/ ? $ok->('a day without a booklet feast has one instruction')
+    : $bad->('universal page showed the mode toggle');
+  my $aas = ribbon_slurp(ribbon_root() . '/aas52-la.txt');
+  $aas !~ /laudabiliter/i ? $ok->('AAS 52 transcription has no laudabiliter')
+    : $bad->('unexpected laudabiliter in aas52-la.txt');
+  my $mla = ribbon_martyrology_latin();
+  $mla eq 'Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.'
+    ? $ok->('Ordinary Martyrology sentence')
+    : $bad->("martyrology latin [$mla]");
 
   my $html = ribbon_controls($el->{version}, $el->{date}, 'general', 'English') . ribbon_html($el, 'English', 'general');
   $html =~ /name="version"/ && $html =~ /name="date"/ && $html =~ /name="edition"/
@@ -2018,9 +2271,23 @@ ED
     ? $ok->('art. 218 on the El Paso page')
     : $bad->('art. 218 missing on the page');
   $html =~ /abridged lesson of the saint/ && $html =~ /print this proper separately/
+    && $html =~ /id="pray-book"[^>]*checked/ && $html =~ /Breviary only/
+    && $html =~ /Breviary \+ propers booklet/ && $html =~ /Booklet coming soon/
+    && $html !~ /Some arrange/
     ? $ok->('El Paso page states the book and the booklet')
     : $bad->('El Paso page skeleton');
+  my $guhtml = ribbon_html($gu, 'English', 'general', 'booklet');
+  ($guhtml =~ /id="pray-booklet"[^>]*checked/ && $guhtml =~ /Sancti\/12-12s/
+      && $guhtml =~ /Booklet coming soon/ && $guhtml =~ /Commune\/C11/)
+    ? $ok->('Guadalupe page has both modes')
+    : $bad->('Guadalupe page modes');
   $html =~ /AAS 52/ ? $ok->('AAS attribution') : $bad->('AAS attribution');
+  ($html =~ /Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum/
+      && $html =~ /not required in order to satisfy the obligation/
+      && $html =~ /V\. Pretiósa in conspéctu Dómini/
+      && $html =~ /not an article of the Codex in AAS 52/)
+    ? $ok->('Martyrology note quotes the Ordinary and says it is not required')
+    : $bad->('Martyrology note');
 
   my $de = ribbon_html($el, 'Deutsch', 'general');
   $de =~ /Fastenferie/ ? $ok->('German plain') : $bad->('German plain');

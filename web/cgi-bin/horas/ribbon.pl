@@ -107,6 +107,8 @@ my $lang = $q->param('lang') || 'English';
 $lang = 'English' unless $lang =~ /^(?:English|Espanol|Francais|Deutsch|Latin)\z/;
 my $edition = $q->param('edition') || 'general';
 $edition = 'general' unless $RIBBON_EDITIONS{$edition};
+my $pray = $q->param('pray') || '';
+$pray = ($pray eq 'booklet') ? 'booklet' : 'book';
 
 $date1 = $date;
 ($month, $day, $year) = split /-/, $date;
@@ -133,7 +135,7 @@ my $facts = eval { ribbon_resolve($date, $version) };
 if ($@) {
   print '<p style="color:red">' . ribbon_h($@) . '</p>';
 } else {
-  print ribbon_html($facts, $lang, $edition);
+  print ribbon_html($facts, $lang, $edition, $pray);
 }
 print "<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/jquery.min.js'></SCRIPT>\n";
 htmlEnd();

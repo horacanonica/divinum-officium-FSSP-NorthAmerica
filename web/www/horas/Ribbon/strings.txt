@@ -998,10 +998,10 @@ de: Lesungen {a}–{b}
 la: Lectiones {a}–{b}
 
 [sk.slot_order]
-en: Article 218, quoted below, completes the three from the Common when only one lesson is proper. No article fixes the order. This page puts the abridged lesson in lesson 4 and the Common in lessons 5 and 6. Some arrange the Common as lessons 4 and 5 and the life as lesson 6.
-es: El artículo 218, citado abajo, completa las tres con el Común cuando solo hay una lección propia. Ningún artículo fija el orden. Esta página pone la lección abreviada en la lección 4 y el Común en las lecciones 5 y 6. Algunos ponen el Común en las lecciones 4 y 5 y la vida en la lección 6.
-fr: L'article 218, cité plus bas, complète les trois par le Commun lorsqu'une seule leçon est propre. Aucun article ne fixe l'ordre. Cette page met la leçon abrégée à la leçon 4 et le Commun aux leçons 5 et 6. D'autres mettent le Commun aux leçons 4 et 5 et la vie à la leçon 6.
-de: Artikel 218, unten zitiert, ergänzt die drei aus dem Commune, wenn nur eine Lesung eigen ist. Kein Artikel legt die Reihenfolge fest. Diese Seite setzt die gekürzte Lesung als Lesung 4 und das Commune als Lesungen 5 und 6. Manche setzen das Commune als Lesungen 4 und 5 und das Leben als Lesung 6.
+en: The printed book does not number the slot of the abridged lesson. The order used here is the one above: the abridged lesson, then two lessons from the Common.
+es: El breviario impreso no numera el lugar de la lección abreviada. El orden usado aquí es el de arriba: la lección abreviada y después dos lecciones del Común.
+fr: Le bréviaire imprimé ne numérote pas la place de la leçon abrégée. L'ordre suivi ici est celui ci-dessus : la leçon abrégée, puis deux leçons du commun.
+de: Das gedruckte Brevier nummeriert die Stelle der gekürzten Lesung nicht. Die hier gebrauchte Ordnung ist die obige: die gekürzte Lesung, danach zwei Lesungen aus dem Commune.
 
 [sk.engine_life]
 en: The three older life lessons this site reads ({file}, lessons 4–6)
@@ -1035,3 +1035,115 @@ es: se omiten
 fr: s'omettent
 de: entfallen
 la: omittuntur
+
+[ui.how]
+en: How to pray
+es: Cómo rezar
+fr: Comment prier
+de: Wie man betet
+
+[ui.mode.book]
+en: Breviary only
+es: Solo el breviario
+fr: Bréviaire seul
+de: Nur das Brevier
+la: Breviarium tantum
+
+[ui.mode.booklet]
+en: Breviary + propers booklet
+es: Breviario y folleto de propios
+fr: Bréviaire et livret des propres
+de: Brevier und Proprienheft
+la: Breviarium et libellus propriorum
+
+[ui.mode.book_lead]
+en: How to pray this office from the printed 1960 breviary alone.
+es: Cómo rezar este oficio solo con el breviario impreso de 1960.
+fr: Comment prier cet office avec le seul bréviaire imprimé de 1960.
+de: Wie man dieses Offizium allein aus dem gedruckten Brevier von 1960 betet.
+
+[ui.mode.booklet_lead]
+en: How to pray this office with the propers booklet inserted.
+es: Cómo rezar este oficio con el folleto de propios intercalado.
+fr: Comment prier cet office avec le livret des propres inséré.
+de: Wie man dieses Offizium mit eingelegtem Proprienheft betet.
+
+[sec.booklet]
+en: Propers booklet
+es: Folleto de propios
+fr: Livret des propres
+de: Proprienheft
+la: Libellus propriorum
+
+[sk.place.booklet]
+en: propers booklet
+es: folleto de propios
+fr: livret des propres
+de: Proprienheft
+la: libello propriorum
+
+[sk.booklet.soon]
+en: Booklet coming soon.
+es: Folleto próximamente.
+fr: Livret à venir.
+de: Proprienheft folgt.
+
+[sk.booklet.link]
+en: Open the propers booklet
+es: Abrir el folleto de propios
+fr: Ouvrir le livret des propres
+de: Proprienheft öffnen
+
+[sk.booklet.insert]
+en: Insert the propers booklet here ({file}).
+es: Intercale aquí el folleto de propios ({file}).
+fr: Insérez ici le livret des propres ({file}).
+de: Legen Sie hier das Proprienheft ein ({file}).
+
+[sk.from_common]
+en: This proper is not in the printed breviary. Read it from the Common.
+es: Este propio no está en el breviario impreso. Léalo en el Común.
+fr: Ce propre n'est pas dans le bréviaire imprimé. Lisez-le au commun.
+de: Dieses Proprium steht nicht im gedruckten Brevier. Lesen Sie es aus dem Commune.
+
+[sk.table_book]
+en: The table is what this site reads. In the printed breviary, lesson 4 is the abridged life and lessons 5 and 6 are from the Common.
+es: La tabla es lo que este sitio lee. En el breviario impreso, la lección 4 es la vida abreviada y las lecciones 5 y 6 son del Común.
+fr: Le tableau est ce que ce site lit. Dans le bréviaire imprimé, la leçon 4 est la vie abrégée et les leçons 5 et 6 viennent du commun.
+de: Die Tabelle ist, was diese Seite liest. Im gedruckten Brevier ist Lesung 4 die gekürzte Lebenslesung und die Lesungen 5 und 6 sind aus dem Commune.
+
+[sk.table_booklet_life]
+en: The table is what this site reads. With the booklet, Nocturn II uses these three life lessons.
+es: La tabla es lo que este sitio lee. Con el folleto, el nocturno II usa estas tres lecciones de la vida.
+fr: Le tableau est ce que ce site lit. Avec le livret, le nocturne II emploie ces trois leçons de la vie.
+de: Die Tabelle ist, was diese Seite liest. Mit dem Heft gebraucht der II. Nokturn diese drei Lebenslesungen.
+
+[sk.table_book_common]
+en: The table is what this site reads. These lessons are not in the printed breviary. With the book alone they are read from the Common.
+es: La tabla es lo que este sitio lee. Estas lecciones no están en el breviario impreso. Solo con el libro se leen del Común.
+fr: Le tableau est ce que ce site lit. Ces leçons ne sont pas dans le bréviaire imprimé. Avec le livre seul, on les lit au commun.
+de: Die Tabelle ist, was diese Seite liest. Diese Lesungen stehen nicht im gedruckten Brevier. Allein mit dem Buch liest man sie aus dem Commune.
+
+[sk.table_booklet_proper]
+en: The table is what this site reads. With the booklet, the skeleton uses these proper lessons.
+es: La tabla es lo que este sitio lee. Con el folleto, el esquema usa estas lecciones propias.
+fr: Le tableau est ce que ce site lit. Avec le livret, le schéma emploie ces leçons propres.
+de: Die Tabelle ist, was diese Seite liest. Mit dem Heft gebraucht das Gerüst diese eigenen Lesungen.
+
+[plain.martyrology]
+en: In private recitation, reading the Martyrology is commendable. It is not required in order to satisfy the obligation. If it is omitted, continue with V. Pretiósa in conspéctu Dómini.
+es: En la recitación privada, leer el Martirologio es laudable. No hace falta para cumplir la obligación. Si se omite, se continúa con V. Pretiósa in conspéctu Dómini.
+fr: Dans la récitation privée, lire le Martyrologe est louable. Ce n'est pas exigé pour satisfaire à l'obligation. S'il est omis, on continue par V. Pretiósa in conspéctu Dómini.
+de: Beim privaten Beten ist das Lesen des Martyrologiums lobenswert. Es ist nicht erforderlich, um der Pflicht zu genügen. Wird es ausgelassen, fährt man fort mit V. Pretiósa in conspéctu Dómini.
+
+[sk.martyrology]
+en: Martyrology — commendable in private, not required. If omitted, continue with V. Pretiósa in conspéctu Dómini.
+es: Martirologio — laudable en privado, no exigido. Si se omite, se continúa con V. Pretiósa in conspéctu Dómini.
+fr: Martyrologe — louable en privé, non exigé. S'il est omis, on continue par V. Pretiósa in conspéctu Dómini.
+de: Martyrologium — privat lobenswert, nicht vorgeschrieben. Wird es ausgelassen, weiter mit V. Pretiósa in conspéctu Dómini.
+
+[ui.quote_ordinary]
+en: Latin, from the Ordinary of Prime. This sentence is not an article of the Codex in AAS 52.
+es: Latín, del Ordinario de Prima. Esta frase no es un artículo del Código en AAS 52.
+fr: Latin, de l'ordinaire de prime. Cette phrase n'est pas un article du code dans les AAS 52.
+de: Latein, aus dem Ordinarium der Prim. Dieser Satz ist kein Artikel des Codex in den AAS 52.

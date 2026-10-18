@@ -15,7 +15,7 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 | English still [to be sourced] | 0 |
 | Latin sourced from AAS 52 (1960) | 34 |
 | Latin still [to be sourced] | 0 |
-| Plain-language strings with no Latin wording | 51 |
+| Plain-language strings with no Latin wording | 65 |
 
 ## Catalogue
 
@@ -109,6 +109,7 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `plain.lessons.festive`
 - `plain.lessons.ordinary`
 - `plain.lessons.sunday`
+- `plain.martyrology`
 - `plain.minor.festive`
 - `plain.minor.weekday`
 - `plain.preces.no`
@@ -121,8 +122,17 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `plain.why.rankup`
 - `plain.why.same`
 - `sk.book.out`
+- `sk.booklet.insert`
+- `sk.booklet.link`
+- `sk.booklet.soon`
 - `sk.engine_life`
+- `sk.from_common`
+- `sk.martyrology`
 - `sk.slot_order`
+- `sk.table_book`
+- `sk.table_book_common`
+- `sk.table_booklet_life`
+- `sk.table_booklet_proper`
 - `sk.table_note`
 - `ui.calendar`
 - `ui.col_incipit`
@@ -134,13 +144,17 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `ui.engine`
 - `ui.hold`
 - `ui.hours`
+- `ui.how`
 - `ui.intro`
+- `ui.mode.book_lead`
+- `ui.mode.booklet_lead`
 - `ui.no_volume`
 - `ui.not1960`
 - `ui.office`
 - `ui.open`
 - `ui.psalter_detail`
 - `ui.quote_en`
+- `ui.quote_ordinary`
 - `ui.scheme`
 - `ui.shape`
 - `ui.unused`
