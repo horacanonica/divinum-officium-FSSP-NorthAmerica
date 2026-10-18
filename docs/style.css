@@ -291,6 +291,72 @@ footer {
   }
 }
 
+.install-jump {
+  margin: 0.95rem 0 0;
+}
+
+.install-jump a {
+  display: block;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--maroon);
+  background: #fff;
+  color: var(--maroon);
+  text-decoration: none;
+  line-height: 1.35;
+}
+
+.install-jump a:hover,
+.install-jump a:focus {
+  background: var(--maroon);
+  color: #fff;
+}
+
+.install {
+  margin-top: 2.2rem;
+  scroll-margin-top: 0.75rem;
+}
+
+.install h2 {
+  margin: 0 0 0.45rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--maroon);
+  font-weight: normal;
+  font-size: 1.35rem;
+}
+
+.install h3 {
+  margin: 1.2rem 0 0.2rem;
+  color: var(--maroon);
+  font-size: 1.08rem;
+  font-weight: normal;
+}
+
+.install .device-note {
+  margin: 0 0 0.15rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.install ol,
+.install ul {
+  margin: 0.2rem 0 0.35rem;
+  padding-left: 1.25rem;
+}
+
+.install li {
+  margin: 0.3rem 0;
+}
+
+.install code {
+  font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+  font-size: 0.86em;
+}
+
+.install .top-link {
+  margin-top: 1rem;
+}
+
 .feasts { margin: 0.5rem 0 0.9rem; font-size: 0.92rem; }
 .feasts-title { margin: 0 0 0.2rem; font-weight: 600; }
 .feasts-layer { margin: 0.5rem 0 0.1rem; font-weight: 600; color: var(--muted, inherit); }
