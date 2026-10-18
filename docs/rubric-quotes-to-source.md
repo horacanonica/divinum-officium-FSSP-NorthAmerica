@@ -10,12 +10,12 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 
 | | |
 | --- | --- |
-| Quotations in the catalogue | 41 |
-| English sourced from the project files | 41 |
+| Quotations in the catalogue | 38 |
+| English sourced from the project files | 38 |
 | English still [to be sourced] | 0 |
-| Latin sourced from AAS 52 (1960) | 41 |
+| Latin sourced from AAS 52 (1960) | 38 |
 | Latin still [to be sourced] | 0 |
-| Plain-language strings with no Latin wording | 80 |
+| Plain-language strings with no Latin wording | 78 |
 
 ## Catalogue
 
@@ -53,9 +53,6 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 | BR-248 | The collect at Prime and Compline is not changed | sourced | AAS 52 (1960), p. 639, n. 248 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-251 | A commemoration follows the collect of the day | sourced | AAS 52 (1960), p. 639, n. 251 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-260 | When the preces are said | sourced | AAS 52 (1960), p. 640, n. 260 | web/www/horas/Help/Rubrics/Breviary 1960.html |
-| BR-261 | Posture rules hold for choir or common recitation | sourced | AAS 52 (1960), p. 641, n. 261 | web/www/horas/Help/Rubrics/Breviary 1960.html |
-| BR-266 | At Prime all stand except while the Martyrology is read | sourced | AAS 52 (1960), p. 641, n. 266 | web/www/horas/Help/Rubrics/Breviary 1960.html |
-| BR-268 | All sit while the Martyrology is read at Prime | sourced | AAS 52 (1960), p. 642, n. 268 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | GR-25 | Ferias of the 3rd class in Lent are preferred to feasts of the 3rd class | sourced | AAS 52 (1960), p. 600, n. 25 | web/www/horas/Help/Rubrics/General Rubrics.html |
 | GR-37 | A 1st class feast begins with First Vespers; 2nd and 3rd class run from Matins | sourced | AAS 52 (1960), p. 602, n. 37 | web/www/horas/Help/Rubrics/General Rubrics.html |
 | GR-91-12 | Precedence table — proper feasts of the 1st class | sourced | AAS 52 (1960), p. 611, n. 91 | web/www/horas/Help/Rubrics/General Rubrics.html |
@@ -101,17 +98,7 @@ The lines the page actually quotes from n. 91 (the introduction, proper 1st clas
 
 ## Sought in the 1960 Codex and not found
 
-The Prime note looks for a rubric that private recitation (*extra chorum*) is not obliged to read the Martyrology, especially because it is not printed in the breviary, and that one then continues with *V. Pretiosa in conspectu Domini*.
-
-Searched: `web/www/horas/Help/Rubrics/Breviary 1960.html`, `web/www/horas/Help/Rubrics/General Rubrics.html`, and the AAS 52 transcription `web/www/horas/Ribbon/aas52-la.txt` (articles 1–268), for *Martyrologium*, *Martyrology*, *Pretiosa*, *in choro*, *extra chorum*, and *laudabiliter*.
-
-What those sources say about the Martyrology at Prime is only posture:
-
-- N. 266 e. English: “e) at Prime, from the repetition of the antiphon to the end, except at the reading of the Martyrology, unless they are to kneel at the collects;” Latin, AAS 52 (1960), p. 641: “e)ad Primam, ab expleta antiphona usque ad finem, praeterquam ad lectionem Martyrologii, nisi genuflectendum sit ad orationes;”
-- N. 268 c. English: “c) while the Martyrology is being read at Prime, unless another posture is prescribed.” Latin, AAS 52 (1960), p. 642: “c) dum legitur Martyrologium, ad Primam, nisi aliter statuatur.”
-- N. 261 limits that chapter to choir or common recitation. English: “What is said here about the sign of the cross and the position of the body in the recitation of the Divine Office holds for the recitation in choir or in common. It is fitting, however, that those who recite the Divine Office alone conform to what is said about the sign of the cross.” Latin, AAS 52 (1960), p. 641: “Quae hic dicuntur de signo crucis et de corporis situ in recitatione divini Officii, valent pro recitatione in choro vel in communi; convenit vero ut hi qui a solo divinum Officium recitant, iis quae de signo crucis dicuntur se conforment.”
-
-There is no *Pretiosa* verse, no *laudabiliter*, and no *extra chorum* attached to the Martyrology in those sources. The page quotes nn. 261, 266 e, and 268 c, and marks the obligation, the unprinted book, and the continuation at *Pretiosa* as `[to be sourced]`.
+The Martyrology at Prime is not in this list. The page quotes the Ordinary, `web/www/horas/Latin/Psalterium/Common/Rubricae.txt`: *Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.* The citation is *Ordinarium Breviarii, ad Primam*, not a Codex article.
 
 The responsory box looks for two further wordings and does not find them in those sources:
 
@@ -135,8 +122,6 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `plain.lessons.festive`
 - `plain.lessons.ordinary`
 - `plain.lessons.sunday`
-- `plain.martyrology`
-- `plain.martyrology.sought`
 - `plain.minor.festive`
 - `plain.minor.weekday`
 - `plain.preces.no`
@@ -154,7 +139,6 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `sk.booklet.soon`
 - `sk.engine_life`
 - `sk.from_common`
-- `sk.martyrology`
 - `sk.slot_order`
 - `sk.table_book`
 - `sk.table_book_common`
@@ -173,6 +157,7 @@ The Latin of the Code, above, is a different thing from a Latin paraphrase. Wher
 - `ui.hours`
 - `ui.how`
 - `ui.intro`
+- `ui.martyrology.tr`
 - `ui.mode.book_lead`
 - `ui.mode.booklet_lead`
 - `ui.no_volume`

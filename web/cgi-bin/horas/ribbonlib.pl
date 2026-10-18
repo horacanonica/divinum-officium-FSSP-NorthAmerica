@@ -1762,6 +1762,29 @@ SAID
   return $out;
 }
 
+sub ribbon_martyrology_latin {
+  my $path = "$datafolder/Latin/Psalterium/Common/Rubricae.txt";
+  open my $fh, '<:encoding(UTF-8)', $path or return '';
+  local $/;
+  my $text = <$fh>;
+  close $fh;
+  return '' unless defined $text;
+  return $1 if $text =~ m{/:(\s*Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum\.)\s*:/};
+  return '';
+}
+
+sub ribbon_martyrology_quote_html {
+  my ($code) = @_;
+  my $la = ribbon_martyrology_latin();
+  return '' if $la eq '';
+  my $html = '<blockquote class="rubric ordinary"><p class="cite"><b>'
+    . ribbon_sh($code, 'ui.martyrology.cite') . '</b></p><p>'
+    . ribbon_h($la) . "</p></blockquote>\n";
+  # The Latin page already shows the Ordinary sentence. The rendering is a translation.
+  $html .= '<p class="ribbon-note">' . ribbon_sh($code, 'ui.martyrology.tr') . "</p>\n" if $code ne 'la';
+  return $html;
+}
+
 sub ribbon_hour_html {
   my ($code, $edition, $facts, $h, $mode) = @_;
   $mode = '' unless defined $mode && ($mode eq 'book' || $mode eq 'booklet');
@@ -1803,15 +1826,10 @@ sub ribbon_hour_html {
     push @q, qw(BR-246 BR-248) if $sum->{parts}{collect};
   } elsif ($h eq 'Prima') {
     $out .= '<p>' . ribbon_sh($code, 'plain.prime') . '</p>';
+    $out .= ribbon_martyrology_quote_html($code);
     $out .= '<p>' . ribbon_sh($code, 'plain.martyrology') . '</p>';
-    # The sought obligation is not in the Codex. Latin already carries the
-    # marker when the sentence has no la: line; the other languages need it here.
-    my ($sought, $sought_ok) = ribbon_s($code, 'plain.martyrology.sought');
-    $out .= '<p>' . ribbon_h($sought);
-    $out .= ' [to be sourced]' if $sought_ok;
-    $out .= "</p>\n";
     $out .= '<p>' . ribbon_sh($code, $sum->{creed} ? 'plain.creed.yes' : 'plain.creed.no') . '</p>';
-    @q = qw(BR-261 BR-266 BR-268 BR-242 BR-203);
+    @q = qw(BR-242 BR-203);
   } elsif ($h =~ /^(?:Tertia|Sexta|Nona)\z/) {
     my $fest = $facts->{kind} eq 'festive' || $sum->{sunday};
     $out .= '<p>' . ribbon_sh($code, $fest ? 'plain.minor.festive' : 'plain.minor.weekday') . '</p>';
@@ -2127,17 +2145,7 @@ The lines the page actually quotes from n. 91 (the introduction, proper 1st clas
 
 ## Sought in the 1960 Codex and not found
 
-The Prime note looks for a rubric that private recitation (*extra chorum*) is not obliged to read the Martyrology, especially because it is not printed in the breviary, and that one then continues with *V. Pretiosa in conspectu Domini*.
-
-Searched: `web/www/horas/Help/Rubrics/Breviary 1960.html`, `web/www/horas/Help/Rubrics/General Rubrics.html`, and the AAS 52 transcription `web/www/horas/Ribbon/aas52-la.txt` (articles 1–268), for *Martyrologium*, *Martyrology*, *Pretiosa*, *in choro*, *extra chorum*, and *laudabiliter*.
-
-What those sources say about the Martyrology at Prime is only posture:
-
-- N. 266 e. English: “e) at Prime, from the repetition of the antiphon to the end, except at the reading of the Martyrology, unless they are to kneel at the collects;” Latin, AAS 52 (1960), p. 641: “e)ad Primam, ab expleta antiphona usque ad finem, praeterquam ad lectionem Martyrologii, nisi genuflectendum sit ad orationes;”
-- N. 268 c. English: “c) while the Martyrology is being read at Prime, unless another posture is prescribed.” Latin, AAS 52 (1960), p. 642: “c) dum legitur Martyrologium, ad Primam, nisi aliter statuatur.”
-- N. 261 limits that chapter to choir or common recitation. English: “What is said here about the sign of the cross and the position of the body in the recitation of the Divine Office holds for the recitation in choir or in common. It is fitting, however, that those who recite the Divine Office alone conform to what is said about the sign of the cross.” Latin, AAS 52 (1960), p. 641: “Quae hic dicuntur de signo crucis et de corporis situ in recitatione divini Officii, valent pro recitatione in choro vel in communi; convenit vero ut hi qui a solo divinum Officium recitant, iis quae de signo crucis dicuntur se conforment.”
-
-There is no *Pretiosa* verse, no *laudabiliter*, and no *extra chorum* attached to the Martyrology in those sources. The page quotes nn. 261, 266 e, and 268 c, and marks the obligation, the unprinted book, and the continuation at *Pretiosa* as `[to be sourced]`.
+The Martyrology at Prime is not in this list. The page quotes the Ordinary, `web/www/horas/Latin/Psalterium/Common/Rubricae.txt`: *Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.* The citation is *Ordinarium Breviarii, ad Primam*, not a Codex article.
 
 The responsory box looks for two further wordings and does not find them in those sources:
 
@@ -2333,21 +2341,10 @@ ED
   $aas !~ /Pretiosa in conspectu/i && $aas !~ /extra chorum/i
     ? $ok->('AAS 52 has no Pretiosa verse and no extra chorum')
     : $bad->('AAS 52 unexpectedly names Pretiosa or extra chorum');
-  my $q266 = ribbon_quote('BR-266');
-  ($q266->{en_ok} && $q266->{en} =~ /except at the reading of the Martyrology/
-      && $q266->{la_ok} && $q266->{la} =~ /praeterquam ad lectionem Martyrologii/)
-    ? $ok->('BR-266 Martyrology posture')
-    : $bad->('BR-266 en=' . ($q266->{en_ok} // 0) . ' la=' . ($q266->{la_ok} // 0));
-  my $q268 = ribbon_quote('BR-268');
-  ($q268->{en_ok} && $q268->{en} =~ /while the Martyrology is being read at Prime/
-      && $q268->{la_ok} && $q268->{la} =~ /dum legitur Martyrologium/)
-    ? $ok->('BR-268 sit for the Martyrology')
-    : $bad->('BR-268');
-  my $q261 = ribbon_quote('BR-261');
-  ($q261->{en_ok} && $q261->{en} =~ /holds for the recitation in choir or in common/
-      && $q261->{la_ok} && $q261->{la} =~ /valent pro recitatione in choro vel in communi/)
-    ? $ok->('BR-261 choir and common')
-    : $bad->('BR-261');
+  my $mla = ribbon_martyrology_latin();
+  $mla eq 'Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.'
+    ? $ok->('Ordinary Martyrology sentence')
+    : $bad->("martyrology latin [$mla]");
 
   my $html = ribbon_controls($el->{version}, $el->{date}, 'general', 'English') . ribbon_html($el, 'English', 'general');
   $html =~ /name="version"/ && $html =~ /name="date"/ && $html =~ /name="edition"/
@@ -2372,23 +2369,22 @@ ED
     ? $ok->('Guadalupe page has both modes')
     : $bad->('Guadalupe page modes');
   $html =~ /AAS 52/ ? $ok->('AAS attribution') : $bad->('AAS attribution');
-  ($html =~ /except at the reading of the Martyrology/
-      && $html =~ /while the Martyrology is being read at Prime/
-      && $html =~ /praeterquam ad lectionem Martyrologii/
-      && $html =~ /dum legitur Martyrologium, ad Primam/
-      && $html =~ /holds for the recitation in choir or in common/
-      && $html =~ /not of obligation/
-      && $html =~ /\[to be sourced\]/
-      && $html !~ /not required in order to satisfy the obligation/
-      && $html !~ /laudabiliter/)
-    ? $ok->('Prime quotes posture and marks the obligation unsourced')
+  ($html =~ /Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum/
+      && $html =~ /Ordinarium Breviarii, ad Primam/
+      && $html =~ /Translation, not a quoted source/
+      && $html =~ /not required in order to satisfy the obligation/
+      && $html =~ /V\. Pretiósa in conspéctu Dómini/
+      && $html !~ /No article was found which says/
+      && $html !~ /except at the reading of the Martyrology/)
+    ? $ok->('Prime quotes the Ordinary as the Martyrology rubric')
     : $bad->('Martyrology note');
-  ($genhtml =~ /except at the reading of the Martyrology/ && $genhtml =~ /\[to be sourced\]/)
+  ($genhtml =~ /Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum/
+      && $genhtml =~ /Ordinarium Breviarii, ad Primam/)
     ? $ok->('Prime Martyrology note on a day with no booklet')
     : $bad->('feria Prime note');
   my $skp = ribbon_skeleton_html('en', $el, 'Prima', $el->{hours}{Prima}, []);
-  ($skp =~ /all sit while it is read/ && $skp !~ /not required/ && $skp !~ /Preti/)
-    ? $ok->('Prime skeleton states posture only')
+  ($skp =~ /laudabiliter/ && $skp =~ /Preti/)
+    ? $ok->('Prime skeleton names laudabiliter')
     : $bad->('Prime skeleton');
   my $q230 = ribbon_quote('BR-230');
   ($q230->{en_ok} && $q230->{en} =~ /Gloria Patri is omitted from the last responsory/
@@ -2436,10 +2432,11 @@ ED
   print $fh $doc;
   close $fh;
   $doc =~ /Latin still \[to be sourced\] \| 0/ ? $ok->('gap doc latin 0') : $bad->('gap doc count');
-  ($doc =~ /Sought in the 1960 Codex and not found/ && $doc =~ /praeterquam ad lectionem Martyrologii/
-      && $doc =~ /extra chorum/)
-    ? $ok->('gap doc records the unsourced Martyrology obligation')
-    : $bad->('gap doc sought section');
+  ($doc =~ /Ordinarium Breviarii, ad Primam/
+      && $doc =~ /Deinde in Choro legitur Martyrologium/
+      && $doc !~ /marks the obligation, the unprinted book/)
+    ? $ok->('gap doc takes the Martyrology from the Ordinary')
+    : $bad->('gap doc Martyrology');
   ($doc =~ /two-asterisk rule/ && $doc =~ /Sicut erat/ && $doc !~ /open question/)
     ? $ok->('gap doc records the responsory gaps and asks nothing about marks')
     : $bad->('gap doc responsory');

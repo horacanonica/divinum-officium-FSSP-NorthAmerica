@@ -226,31 +226,6 @@ number: 260
 topic: When the preces are said
 file: web/www/horas/Help/Rubrics/Breviary 1960.html
 
-@@ BR-261
-corpus: breviary
-number: 261
-page: 641
-topic: Posture rules hold for choir or common recitation
-file: web/www/horas/Help/Rubrics/Breviary 1960.html
-
-@@ BR-266
-corpus: breviary
-number: 266
-page: 641
-topic: At Prime all stand except while the Martyrology is read
-file: web/www/horas/Help/Rubrics/Breviary 1960.html
-en: e) at Prime, from the repetition of the antiphon to the end, except at the reading of the Martyrology, unless they are to kneel at the collects;
-la: e)ad Primam, ab expleta antiphona usque ad finem, praeterquam ad lectionem Martyrologii, nisi genuflectendum sit ad orationes;
-
-@@ BR-268
-corpus: breviary
-number: 268
-page: 642
-topic: All sit while the Martyrology is read at Prime
-file: web/www/horas/Help/Rubrics/Breviary 1960.html
-en: c) while the Martyrology is being read at Prime, unless another posture is prescribed.
-la: c) dum legitur Martyrologium, ad Primam, nisi aliter statuatur.
-
 @@ BR-229
 corpus: breviary
 number: 229
