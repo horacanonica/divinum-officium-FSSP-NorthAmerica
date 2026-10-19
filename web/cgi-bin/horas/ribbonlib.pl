@@ -29,6 +29,8 @@ my @RIBBON_LANGS = qw(English Espanol Francais Deutsch Latin);
 my %RIBBON_CORPUS = (
   general  => 'General Rubrics.html',
   breviary => 'Breviary 1960.html',
+  # Part III of the Codex. Latin of these articles is not in aas52-la.txt.
+  missal   => 'Missal1960 rubrics.html',
 );
 
 sub ribbon_root {
@@ -189,6 +191,22 @@ sub ribbon_load_english {
     my $path = "$dir/$RIBBON_CORPUS{$corpus}";
     $RIBBON_EN{$corpus} = ribbon_html_to_text(ribbon_slurp($path));
   }
+}
+
+sub ribbon_corpus_text {
+  my ($corpus) = @_;
+  return $RIBBON_EN{$corpus} // '';
+}
+
+sub ribbon_corpus_filename {
+  my ($corpus) = @_;
+  return $RIBBON_CORPUS{$corpus} // '';
+}
+
+sub ribbon_la_page {
+  my ($n) = @_;
+  my $row = $RIBBON_LA{$n} or return '';
+  return $row->{page} || '';
 }
 
 sub ribbon_parse_edition {
@@ -987,6 +1005,7 @@ sub ribbon_html {
   }
 
   my $shape = ribbon_shape_html($code, $facts);
+  my $comm  = ribbon_commemorations_html($code, $facts);
   my $feast = ribbon_booklet_feast($facts);
   if ($feast) {
     my $which = ($pray && $pray eq 'booklet') ? 'booklet' : 'book';
@@ -1007,6 +1026,7 @@ sub ribbon_html {
       . ribbon_ribbons_html($code, $edition_id, $facts, 'book') . '</div>';
     $out .= '<div class="pray-panel booklet-panel">'
       . ribbon_ribbons_html($code, $edition_id, $facts, 'booklet') . '</div>';
+    $out .= $comm;
     $out .= $shape;
     $out .= '<div class="pray-panel book-panel">'
       . ribbon_hours_html($code, $edition_id, $facts, 'book') . '</div>';
@@ -1015,6 +1035,7 @@ sub ribbon_html {
     $out .= '</div>';
   } else {
     $out .= ribbon_ribbons_html($code, $edition_id, $facts, '');
+    $out .= $comm;
     $out .= $shape;
     $out .= ribbon_hours_html($code, $edition_id, $facts, '');
   }
@@ -2120,6 +2141,10 @@ li.slot-note { list-style: none; margin-left: -1.2em; font-size: 0.92em; }
 .resp-box ol { margin: 0.4em 0 0.6em 1.2em; padding: 0; }
 .resp-box li { margin: 0.35em 0; }
 .resp-ex { margin: 0.6em 0; }
+.comm-box { border: 1px solid maroon; padding: 0.7em 0.9em; margin: 1.1em 0 1.4em; }
+.comm-box h3, .comm-box h4 { color: maroon; }
+.comm-box h4 { margin: 0.9em 0 0.3em; }
+ul.comm-today { margin: 0.3em 0 0.6em 1.2em; }
 </style>
 CSS
 }
@@ -2235,6 +2260,12 @@ Two wordings are still sought. The page keeps a commentary label on each.
 
 - An official text of the two-asterisk rule (after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse). The row is commentary from the Confraternity of SS. Peter and Paul, *Instructions for the Recitation of the Divine Office*, adapted from Hausmann, *Learning the Breviary*, §23, pp. 34–35. N. 230, *eadem ultima pars*, is partial support for repeating the last part. The Dessain breviary prints every division as an asterisk, so a second division is a second asterisk.
 - An official text that the *Gloria Patri* at the end of a responsory leaves out *Sicut erat*. N. 230 says *dicitur Gloria Patri* and *eadem ultima pars*, and does not name the second half of the doxology. The older pointer is Rubricae Generales tit. XIII n. 4 and tit. XXVII n. 2. The model those rubrics name is the third responsory of the first Sunday of Advent, *Missus est Gabriel*. The explicit omission stays `[to be sourced]`, pending Dave's check of his Dessain at that Advent responsory.
+- The English of AAS n. 108, the place of a commemoration. AAS n. 108 says privileged commemorations are made at Lauds, at Vespers and at every Mass, and ordinary commemorations only at Lauds, at a conventual Mass and at a low Mass. The project file `General Rubrics.html` has no sentence of that article. The article it numbers 108 is the list of privileged commemorations, which AAS 52 numbers n. 109. The page quotes the Latin of n. 108 and the English list beside the Latin of n. 109.
+- A rubric that the collects of one Hour of the Office may not exceed three. N. 435 of the Missal rubrics does limit the collects of a Mass to three, and the page quotes that English article. The Office hour is the claim still open.
+- An explicit rubric that commemorations are never said at Terce, Sext, None or Compline. N. 108 names Lauds and Vespers. N. 248 leaves the collect of Prime and Compline unchanged.
+- A rubric that, when several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed. N. 249 says the commemorations of the Office are concluded only after the last. N. 115 gives the formula of a prayer, in the Mass and in the Office, from the one to whom that prayer is addressed. N. 437 says the commemorations at Mass are said under one conclusion.
+- Latin of the Missal rubrics, articles 269 onward, including the collects (nn. 433–465), the secrets (n. 480), the postcommunions (n. 505) and the Masses of the dead (n. 398). The stored AAS text, `aas52-la.txt`, stops at n. 268. The English is quoted from `web/www/horas/Help/Rubrics/Missal1960 rubrics.html`. Those articles are not catalogue rows, because the catalogue requires a Latin text.
+- An explicit rubric that Oremus is said before the second collect at Mass. N. 249, Oremus before each collect, is a rubric of the Office. N. 480 says the secret is said without Dominus vobiscum and without Oremus.
 
 ## Screen labels with no Latin wording
 
@@ -2578,9 +2609,74 @@ ED
       && $doc !~ /^- `plain\.antiphons`/m)
     ? $ok->('gap doc records the responsory gaps and asks nothing about marks')
     : $bad->('gap doc responsory');
+  ($doc =~ /English of AAS n\. 108/
+      && $doc =~ /collects of one Hour of the Office/
+      && $doc =~ /Terce, Sext, None or Compline/
+      && $doc =~ /last prayer is addressed/
+      && $doc =~ /articles 269 onward/
+      && $doc =~ /second collect at Mass/
+      && $doc =~ /Latin still \[to be sourced\] \| 0/)
+    ? $ok->('gap doc lists the commemoration gaps and keeps the catalogue Latin at 0')
+    : $bad->('gap doc commemorations');
+
+  my $m435 = ribbon_slice_article(ribbon_corpus_text('missal'), 435);
+  ($m435 =~ /exceed three/ && $m435 !~ /436\./)
+    ? $ok->('missal n. 435 is the three-collect limit')
+    : $bad->('missal 435 slice');
+  my $m436 = ribbon_slice_article(ribbon_corpus_text('missal'), 436);
+  ($m436 =~ /own conclusion/ && $m436 =~ /444/ && $m436 !~ /437\./)
+    ? $ok->('missal n. 436 own conclusion')
+    : $bad->('missal 436 slice');
+  my $m480 = ribbon_slice_article(ribbon_corpus_text('missal'), 480);
+  ($m480 =~ /without Dominus vobiscum or Oremus/ && $m480 !~ /481\./)
+    ? $ok->('missal n. 480 secret without Oremus')
+    : $bad->('missal 480 slice');
+
+  my $dec = ribbon_resolve('12-04-2026', 'Rubrics 1960 - 1960');
+  my $dL = join(',', @{ $dec->{hours}{Laudes}{comms} || [] });
+  my $dV = join(',', @{ $dec->{hours}{Vespera}{comms} || [] });
+  ($dec->{winner} =~ /12-04/ && $dL =~ /Adv1-5/ && $dL =~ /12-04o/ && $dV =~ /Adv1-5/ && $dV !~ /12-04o/)
+    ? $ok->('4 Dec Lauds has feria and Barbara; Vespers the feria')
+    : $bad->("4 Dec winner=$dec->{winner} L=$dL V=$dV");
+  my $dhtml = ribbon_html($dec, 'English', 'general');
+  ($dhtml =~ /id="commemorations"/ && $dhtml =~ /id="comm-mass"/ && $dhtml =~ /id="comm-examples"/
+      && $dhtml =~ /Oremus is said before each collect/
+      && $dhtml !~ /Oremus once/ && $dhtml !~ /no repeated Oremus/
+      && $dhtml =~ /Officia commemorata non habent lectionem/
+      && $dhtml =~ /sub unica conclusione/
+      && $dhtml =~ /absque antiphona et versu/
+      && $dhtml =~ /Oremus dicitur ante quamlibet/
+      && $dhtml =~ /4 December 2026/ && $dhtml =~ /30 June 2026/
+      && $dhtml =~ /Tempora\/Adv1-5/ && $dhtml =~ /Sancti\/12-04o/
+      && $dhtml =~ /exceed three/ && $dhtml =~ /Missal1960 rubrics\.html/
+      && $dhtml =~ /without Dominus vobiscum or Oremus/
+      && $dhtml =~ /in a Mass of St\. Peter or of St\. Paul/
+      && $dhtml =~ /Letter b only/
+      && $dhtml =~ /Commemorationes privilegiatae fiunt in Laudibus/
+      && $dhtml =~ /N\. 111 is quoted in the other part/
+      && $dhtml =~ /\[to be sourced\]/)
+    ? $ok->('commemorations section quotes Office and Mass')
+    : $bad->('commemorations section');
+
+  my $jun = ribbon_resolve('06-30-2026', 'Rubrics 1960 - 1960');
+  (!@{ $jun->{hours}{Laudes}{comms} || [] } && ribbon_sub_unica($jun->{winner}))
+    ? $ok->('30 June has Sub unica concl and no separate commemoration')
+    : $bad->('30 June comms ' . join(',', @{ $jun->{hours}{Laudes}{comms} || [] }) . " winner=$jun->{winner}");
+  my $jhtml = ribbon_html($jun, 'English', 'general');
+  ($jhtml =~ /Sub unica concl/ && $jhtml =~ /other apostle/ && $jhtml =~ /30 June 2026/)
+    ? $ok->('30 June page names the joint conclusion')
+    : $bad->('30 June page');
+  my $jla = ribbon_html($jun, 'Latin', 'general');
+  ($jla =~ /In Officio/ && $jla =~ /In Missa/ && $jla =~ /sub unica conclusione, orationi diei/
+      && $jla =~ /Oratio Officii diei semper dicitur sub sua conclusione/
+      && $jla !~ /Oremus once/)
+    ? $ok->('Latin view keeps the Office articles and the Mass cross-reference')
+    : $bad->('Latin commemorations');
 
   print $fail ? "FAILED $fail\n" : "ALL OK\n";
   return $fail ? 1 : 0;
 }
+
+require "$Bin/ribboncomm.pl";
 
 1;

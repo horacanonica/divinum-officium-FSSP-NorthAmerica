@@ -1246,3 +1246,266 @@ en: Passiontide. Passion Sunday, responsory 3. The Gloria Patri is omitted, and 
 es: Tiempo de Pasión. Domingo de Pasión, responsorio 3. Se omite el Gloria Patri, y se reanuda todo el responsorio desde el principio hasta el verso.
 fr: Temps de la Passion. Dimanche de la Passion, répons 3. Le Gloria Patri est omis, et tout le répons est repris depuis le début jusqu'au verset.
 de: Passionszeit. Passionssonntag, Responsorium 3. Das Gloria Patri wird weggelassen, und das ganze Responsorium wird vom Anfang bis zum Vers wieder aufgenommen.
+
+[ui.comm.title]
+en: Commemorations
+es: Conmemoraciones
+fr: Commémoraisons
+de: Kommemorationen
+la: Commemorationes
+
+[ui.comm.when]
+en: Which commemorations a day admits
+es: Qué conmemoraciones admite un día
+fr: Quelles commémoraisons un jour admet
+de: Welche Kommemorationen ein Tag zulässt
+
+[ui.comm.where]
+en: Where a commemoration is said
+es: Dónde se dice una conmemoración
+fr: Où une commémoraison se dit
+de: Wo eine Kommemoration gebetet wird
+
+[ui.comm.how]
+en: The form of a commemoration
+es: La forma de una conmemoración
+fr: La forme d'une commémoraison
+de: Die Form einer Kommemoration
+
+[ui.comm.concl]
+en: The conclusion of the prayers
+es: La conclusión de las oraciones
+fr: La conclusion des oraisons
+de: Der Schluss der Orationen
+
+[ui.comm.joint]
+en: Peter and Paul under one conclusion
+es: Pedro y Pablo bajo una sola conclusión
+fr: Pierre et Paul sous une seule conclusion
+de: Petrus und Paulus unter einem Schluss
+
+[ui.comm.examples]
+en: Worked examples
+es: Ejemplos
+fr: Exemples
+de: Beispiele
+
+[ui.comm.today]
+en: This day
+es: Este día
+fr: Ce jour
+de: Dieser Tag
+
+[plain.comm.when]
+en: A commemoration is either privileged or ordinary (n. 107). On a 1st class day only a privileged commemoration is admitted. On a 2nd class Sunday, only one, of a 2nd class feast, and it is omitted if a privileged commemoration is to be made. On another 2nd class day, only one, privileged or ordinary. On a 3rd or 4th class day, only two (n. 111). Any commemoration beyond that number is omitted (n. 114). The season is commemorated first; the others follow the table of precedence (n. 113). The same rules govern occurrence and concurrence (n. 106). Concurrence is the meeting of Vespers (n. 103): the higher class is preferred (n. 104); if the two are equal, second Vespers are of the current day and the following day is commemorated (n. 105).
+es: Una conmemoración es privilegiada u ordinaria (n. 107). En un día de I clase solo se admite una privilegiada. En un domingo de II clase, una sola, de una fiesta de II clase, y se omite si hay que hacer una privilegiada. En otro día de II clase, una sola, privilegiada u ordinaria. En un día de III o IV clase, solo dos (n. 111). La que pase de ese número se omite (n. 114). El tiempo se conmemora primero; las demás siguen la tabla de precedencia (n. 113). Las mismas reglas valen en ocurrencia y en concurrencia (n. 106). La concurrencia es el encuentro de las vísperas (n. 103): se prefieren las de clase superior (n. 104); si las dos son iguales, las segundas vísperas son del día corriente y se conmemora el día siguiente (n. 105).
+fr: Une commémoraison est privilégiée ou ordinaire (n. 107). Un jour de Ire classe n'admet qu'une commémoraison privilégiée. Un dimanche de IIe classe n'en admet qu'une, d'une fête de IIe classe, et on l'omet s'il faut faire une commémoraison privilégiée. Un autre jour de IIe classe n'en admet qu'une, privilégiée ou ordinaire. Un jour de IIIe ou de IVe classe n'en admet que deux (n. 111). Celle qui dépasse ce nombre est omise (n. 114). Le temps est commémoré le premier ; les autres suivent la table de préséance (n. 113). Les mêmes règles valent dans l'occurrence et dans la concurrence (n. 106). La concurrence est la rencontre des vêpres (n. 103) : on préfère celles de la classe supérieure (n. 104) ; si les deux sont égales, les secondes vêpres sont du jour courant et l'on commémore le jour suivant (n. 105).
+de: Eine Kommemoration ist privilegiert oder gewöhnlich (Nr. 107). Ein Tag I. Klasse lässt nur eine privilegierte zu. Ein Sonntag II. Klasse nur eine, von einem Fest II. Klasse, und sie entfällt, wenn eine privilegierte zu verrichten ist. Ein anderer Tag II. Klasse nur eine, privilegiert oder gewöhnlich. Ein Tag III. oder IV. Klasse nur zwei (Nr. 111). Was über diese Zahl hinausgeht, entfällt (Nr. 114). Der Zeitkreis wird zuerst kommemoriert; die übrigen folgen der Vorrangtafel (Nr. 113). Dieselben Regeln gelten bei Okkurrenz und bei Konkurrenz (Nr. 106). Konkurrenz ist das Zusammentreffen der Vesper (Nr. 103): die höhere Klasse wird vorgezogen (Nr. 104); sind beide gleich, ist die zweite Vesper vom laufenden Tag und der folgende Tag wird kommemoriert (Nr. 105).
+
+[plain.comm.gap.three]
+en: No rubric was found that limits the collects of one Hour of the Office to three. N. 435, in the general rubrics of the Missal, does say that the collects of a Mass may not exceed three, and that article is quoted in the Mass part. [to be sourced]
+es: No se ha encontrado una rúbrica que limite a tres las oraciones de una hora del Oficio. El n. 435, en las rúbricas generales del Misal, sí dice que las oraciones de una misa no pueden pasar de tres, y ese artículo se cita en la parte de la Misa. [to be sourced]
+fr: On n'a pas trouvé de rubrique qui limite à trois les oraisons d'une heure de l'Office. Le n. 435, dans les rubriques générales du missel, dit bien que les oraisons d'une messe ne peuvent pas dépasser trois, et cet article est cité dans la partie de la messe. [to be sourced]
+de: Eine Rubrik, die die Orationen einer Hore des Offiziums auf drei begrenzt, wurde nicht gefunden. Nr. 435 in den allgemeinen Rubriken des Messbuchs sagt, dass die Orationen einer Messe drei nicht überschreiten dürfen, und dieser Artikel wird im Messeteil zitiert. [to be sourced]
+
+[plain.comm.where]
+en: N. 214: a commemorated office has no lesson in the office of the day. There is no ninth lesson of the commemorated feast. N. 248: the collect at Prime and at Compline is not changed, except on All Souls and at Prime in the Sacred Triduum.
+es: N. 214: un oficio conmemorado no tiene lección en el oficio del día. No hay lección novena de la fiesta conmemorada. N. 248: la oración de Prima y de Completas no cambia, salvo en Todos los Fieles Difuntos y en Prima del Triduo sacro.
+fr: N. 214 : un office commémoré n'a pas de leçon dans l'office du jour. Il n'y a pas de neuvième leçon de la fête commémorée. N. 248 : l'oraison de prime et de complies ne change pas, sauf à la Commémoraison de tous les fidèles défunts et à prime du Triduum sacré.
+de: Nr. 214: ein kommemoriertes Offizium hat keine Lesung im Offizium des Tages. Es gibt keine neunte Lesung des kommemorierten Festes. Nr. 248: die Oration in der Prim und in der Komplet ändert sich nicht, außer an Allerseelen und in der Prim des heiligen Triduums.
+
+[plain.comm.place]
+en: AAS 52 n. 108: privileged commemorations are made at Lauds and at Vespers, and ordinary commemorations only at Lauds. The project English file has no sentence of that article. Its n. 108 is the list of privileged commemorations, which AAS 52 numbers n. 109. [to be sourced]
+es: AAS 52 n. 108: las conmemoraciones privilegiadas se hacen en Laudes y en Vísperas, y las ordinarias solo en Laudes. El archivo inglés del proyecto no tiene la frase de ese artículo. Su n. 108 es la lista de las conmemoraciones privilegiadas, que AAS 52 numera n. 109. [to be sourced]
+fr: AAS 52 n. 108 : les commémoraisons privilégiées se font aux laudes et aux vêpres, et les ordinaires aux laudes seulement. Le fichier anglais du projet n'a pas la phrase de cet article. Son n. 108 est la liste des commémoraisons privilégiées, qu'AAS 52 numérote n. 109. [to be sourced]
+de: AAS 52 Nr. 108: privilegierte Kommemorationen geschehen in den Laudes und in der Vesper, gewöhnliche nur in den Laudes. Die englische Projektdatei hat den Satz dieses Artikels nicht. Ihre Nr. 108 ist die Liste der privilegierten Kommemorationen, die AAS 52 als Nr. 109 zählt. [to be sourced]
+
+[plain.comm.gap.minor]
+en: An explicit rubric that commemorations are never said at Terce, Sext, None or Compline was not found. N. 108 names Lauds and Vespers, and n. 248 leaves the collect of Prime and Compline unchanged. [to be sourced]
+es: No se ha encontrado una rúbrica explícita que diga que las conmemoraciones nunca se dicen en Tercia, Sexta, Nona o Completas. El n. 108 nombra Laudes y Vísperas, y el n. 248 deja sin cambiar la oración de Prima y Completas. [to be sourced]
+fr: On n'a pas trouvé de rubrique explicite disant que les commémoraisons ne se disent jamais à tierce, sexte, none ou complies. Le n. 108 nomme les laudes et les vêpres, et le n. 248 laisse inchangée l'oraison de prime et de complies. [to be sourced]
+de: Eine ausdrückliche Rubrik, dass Kommemorationen in Terz, Sext, Non oder Komplet nie gebetet werden, wurde nicht gefunden. Nr. 108 nennt Laudes und Vesper, und Nr. 248 lässt die Oration von Prim und Komplet unverändert. [to be sourced]
+
+[plain.comm.how]
+en: A commemoration stands after the collect of the day. It is the antiphon of the Benedictus or of the Magnificat of the commemorated office, the verse which precedes that antiphon, and the collect (n. 251). The collect of the day is said with its own conclusion, except where n. 110 a joins another prayer under the same conclusion. The collects of the commemorations are concluded only after the last one. Oremus is said before each collect (n. 249).
+es: Una conmemoración se pone después de la oración del día. Es la antífona del Benedictus o del Magnificat del oficio conmemorado, el verso que precede a esa antífona, y la oración (n. 251). La oración del día se dice con su conclusión, salvo donde el n. 110 a junta otra oración bajo la misma conclusión. Las oraciones de las conmemoraciones se concluyen solo después de la última. Se dice Oremus antes de cada oración (n. 249).
+fr: Une commémoraison se place après l'oraison du jour. Elle est l'antienne du Benedictus ou du Magnificat de l'office commémoré, le verset qui précède cette antienne, et l'oraison (n. 251). L'oraison du jour se dit avec sa conclusion, sauf là où le n. 110 a joint une autre oraison sous la même conclusion. Les oraisons des commémoraisons ne se concluent qu'après la dernière. On dit Oremus avant chaque oraison (n. 249).
+de: Eine Kommemoration steht nach der Oration des Tages. Sie ist die Antiphon zum Benedictus oder zum Magnificat des kommemorierten Offiziums, der Vers, der dieser Antiphon vorausgeht, und die Oration (Nr. 251). Die Oration des Tages wird mit ihrem eigenen Schluss gebetet, außer wo Nr. 110 a eine andere Oration unter demselben Schluss anfügt. Die Orationen der Kommemorationen werden erst nach der letzten beschlossen. Vor jeder Oration wird Oremus gesagt (Nr. 249).
+
+[plain.comm.concl]
+en: N. 115 gives the long conclusion according to the one to whom the prayer is addressed: Per Dominum when it is addressed to the Father; Per eundem when the Son is named at the beginning; Qui tecum when the Son is named at the end; Qui vivis when the prayer is addressed to the Son; eiusdem Spiritus Sancti when the Holy Spirit has been named. The project English of n. 115 is damaged and is quoted as the file has it.
+es: El n. 115 da la conclusión larga según a quién se dirige la oración: Per Dominum si se dirige al Padre; Per eundem si el Hijo se nombra al principio; Qui tecum si el Hijo se nombra al fin; Qui vivis si la oración se dirige al Hijo; eiusdem Spiritus Sancti si se ha nombrado al Espíritu Santo. El inglés del proyecto del n. 115 está dañado y se cita tal como está en el archivo.
+fr: Le n. 115 donne la longue conclusion selon celui à qui l'oraison s'adresse : Per Dominum si elle s'adresse au Père ; Per eundem si le Fils est nommé au début ; Qui tecum si le Fils est nommé à la fin ; Qui vivis si l'oraison s'adresse au Fils ; eiusdem Spiritus Sancti si le Saint-Esprit a été nommé. L'anglais du projet du n. 115 est abîmé et il est cité tel que le fichier le donne.
+de: Nr. 115 gibt den langen Schluss danach, an wen die Oration gerichtet ist: Per Dominum, wenn sie an den Vater gerichtet ist; Per eundem, wenn der Sohn am Anfang genannt wird; Qui tecum, wenn der Sohn am Ende genannt wird; Qui vivis, wenn die Oration an den Sohn gerichtet ist; eiusdem Spiritus Sancti, wenn der Heilige Geist genannt wurde. Das englische Projekt von Nr. 115 ist beschädigt und wird so zitiert, wie die Datei es hat.
+
+[plain.comm.gap.last]
+en: A rubric that, when several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed, was not found in these sources. N. 249 says the commemorations are concluded only after the last, and n. 115 gives the formula of a prayer. [to be sourced]
+es: No se ha encontrado en estas fuentes una rúbrica que diga que, cuando varias oraciones se dicen bajo una sola conclusión, la fórmula se toma de cómo se dirige la última oración. El n. 249 dice que las conmemoraciones se concluyen solo después de la última, y el n. 115 da la fórmula de una oración. [to be sourced]
+fr: On n'a pas trouvé dans ces sources une rubrique disant que, lorsque plusieurs oraisons se disent sous une seule conclusion, la formule se prend de la manière dont la dernière oraison est adressée. Le n. 249 dit que les commémoraisons ne se concluent qu'après la dernière, et le n. 115 donne la formule d'une oraison. [to be sourced]
+de: Eine Rubrik, dass bei mehreren Orationen unter einem Schluss die Formel davon genommen wird, wie die letzte Oration angeredet ist, wurde in diesen Quellen nicht gefunden. Nr. 249 sagt, dass die Kommemorationen erst nach der letzten beschlossen werden, und Nr. 115 gibt die Formel einer Oration. [to be sourced]
+
+[plain.comm.joint]
+en: In the office of St Peter or of St Paul the oration of the other apostle is added at Lauds and at Vespers, under one conclusion, without antiphon or verse (n. 110 a). The two orations count as one. The files that carry the rule Sub unica concl are Sancti/06-30, Sancti/06-30nl1, Sancti/01-25r, Sancti/01-25nl1r, Sancti/02-22, Sancti/02-22f, Sancti/01-18 and Sancti/08-01f. Sancti/11-18, the dedication of the basilicas, does not carry that rule. Letter b of the same article is the Mass: the other apostle's prayer is added to the collect of the day under a single conclusion. The Mass part sets that letter out.
+es: En el oficio de san Pedro o de san Pablo la oración del otro apóstol se añade en Laudes y en Vísperas, bajo una sola conclusión, sin antífona ni verso (n. 110 a). Las dos oraciones cuentan por una. Los archivos que llevan la regla Sub unica concl son Sancti/06-30, Sancti/06-30nl1, Sancti/01-25r, Sancti/01-25nl1r, Sancti/02-22, Sancti/02-22f, Sancti/01-18 y Sancti/08-01f. Sancti/11-18, la dedicación de las basílicas, no lleva esa regla. La letra b del mismo artículo es la Misa: la oración del otro apóstol se añade a la oración del día bajo una sola conclusión. La parte de la Misa expone esa letra.
+fr: Dans l'office de saint Pierre ou de saint Paul, l'oraison de l'autre apôtre est ajoutée aux laudes et aux vêpres, sous une seule conclusion, sans antienne ni verset (n. 110 a). Les deux oraisons comptent pour une. Les fichiers qui portent la règle Sub unica concl sont Sancti/06-30, Sancti/06-30nl1, Sancti/01-25r, Sancti/01-25nl1r, Sancti/02-22, Sancti/02-22f, Sancti/01-18 et Sancti/08-01f. Sancti/11-18, la dédicace des basiliques, ne porte pas cette règle. La lettre b du même article est la messe : l'oraison de l'autre apôtre est ajoutée à l'oraison du jour sous une seule conclusion. La partie de la messe expose cette lettre.
+de: Im Offizium des hl. Petrus oder des hl. Paulus wird die Oration des anderen Apostels in den Laudes und in der Vesper hinzugefügt, unter einem Schluss, ohne Antiphon und ohne Vers (Nr. 110 a). Die zwei Orationen zählen als eine. Die Dateien mit der Regel Sub unica concl sind Sancti/06-30, Sancti/06-30nl1, Sancti/01-25r, Sancti/01-25nl1r, Sancti/02-22, Sancti/02-22f, Sancti/01-18 und Sancti/08-01f. Sancti/11-18, die Weihe der Basiliken, trägt diese Regel nicht. Buchstabe b desselben Artikels ist die Messe: die Oration des anderen Apostels wird der Oration des Tages unter einem Schluss hinzugefügt. Der Messeteil setzt diesen Buchstaben auseinander.
+
+[plain.comm.ex1]
+en: 4 December 2026, universal calendar. St Peter Chrysologus, 3rd class (Sancti/12-04). At Lauds the engine records the Advent feria (Tempora/Adv1-5) and St Barbara (Sancti/12-04o). At Vespers, only the feria. Lauds: Oremus, oration of the day, its own conclusion (the file ends it Per Dominum). Then the season, first (n. 113): antiphon of the Benedictus of the feria, the verse, Oremus, oration, no conclusion. Then St Barbara: antiphon of the Benedictus, verse, Oremus, oration, and the conclusion, because that collect is the last (n. 249). At Vespers the feria is the only commemoration, so its oration is concluded.
+es: 4 de diciembre de 2026, calendario universal. San Pedro Crisólogo, III clase (Sancti/12-04). En Laudes el motor registra la feria de Adviento (Tempora/Adv1-5) y a santa Bárbara (Sancti/12-04o). En Vísperas, solo la feria. Laudes: Oremus, oración del día, su conclusión (el archivo la termina Per Dominum). Luego el tiempo, primero (n. 113): antífona del Benedictus de la feria, el verso, Oremus, oración, sin conclusión. Luego santa Bárbara: antífona del Benedictus, verso, Oremus, oración, y la conclusión, porque esa oración es la última (n. 249). En Vísperas la feria es la única conmemoración, así que su oración se concluye.
+fr: 4 décembre 2026, calendrier universel. Saint Pierre Chrysologue, IIIe classe (Sancti/12-04). Aux laudes le moteur enregistre la férie de l'Avent (Tempora/Adv1-5) et sainte Barbe (Sancti/12-04o). Aux vêpres, la férie seule. Laudes : Oremus, oraison du jour, sa conclusion (le fichier la termine par Per Dominum). Puis le temps, en premier (n. 113) : antienne du Benedictus de la férie, le verset, Oremus, oraison, sans conclusion. Puis sainte Barbe : antienne du Benedictus, verset, Oremus, oraison, et la conclusion, parce que cette oraison est la dernière (n. 249). Aux vêpres la férie est la seule commémoraison, donc son oraison est conclue.
+de: 4. Dezember 2026, allgemeiner Kalender. Hl. Petrus Chrysologus, III. Klasse (Sancti/12-04). In den Laudes verzeichnet der Rechner die Adventsferie (Tempora/Adv1-5) und die hl. Barbara (Sancti/12-04o). In der Vesper nur die Ferie. Laudes: Oremus, Oration des Tages, ihr eigener Schluss (die Datei endet sie mit Per Dominum). Dann der Zeitkreis, zuerst (Nr. 113): Antiphon zum Benedictus der Ferie, der Vers, Oremus, Oration, kein Schluss. Dann die hl. Barbara: Antiphon zum Benedictus, Vers, Oremus, Oration, und der Schluss, weil diese Oration die letzte ist (Nr. 249). In der Vesper ist die Ferie die einzige Kommemoration, also wird ihre Oration beschlossen.
+
+[plain.comm.ex2]
+en: 30 June 2026, universal calendar. The Commemoration of St Paul (Sancti/06-30), 3rd class. The file carries Sub unica concl, and the engine records no separate commemoration. N. 110 a: at Lauds and at Vespers the oration of St Peter is added to the oration of the day under one conclusion, without antiphon or verse. The text is Sancti/01-25, section Commemoratio4, whose 1960 line omits the antiphon and the verse.
+es: 30 de junio de 2026, calendario universal. La Conmemoración de san Pablo (Sancti/06-30), III clase. El archivo lleva Sub unica concl, y el motor no registra una conmemoración aparte. N. 110 a: en Laudes y en Vísperas la oración de san Pedro se añade a la oración del día bajo una sola conclusión, sin antífona ni verso. El texto es Sancti/01-25, sección Commemoratio4, cuya línea de 1960 omite la antífona y el verso.
+fr: 30 juin 2026, calendrier universel. La Commémoraison de saint Paul (Sancti/06-30), IIIe classe. Le fichier porte Sub unica concl, et le moteur n'enregistre pas de commémoraison séparée. N. 110 a : aux laudes et aux vêpres l'oraison de saint Pierre est ajoutée à l'oraison du jour sous une seule conclusion, sans antienne ni verset. Le texte est Sancti/01-25, section Commemoratio4, dont la ligne de 1960 omet l'antienne et le verset.
+de: 30. Juni 2026, allgemeiner Kalender. Die Kommemoration des hl. Paulus (Sancti/06-30), III. Klasse. Die Datei trägt Sub unica concl, und der Rechner verzeichnet keine eigene Kommemoration. Nr. 110 a: in den Laudes und in der Vesper wird die Oration des hl. Petrus der Oration des Tages unter einem Schluss hinzugefügt, ohne Antiphon und ohne Vers. Der Text ist Sancti/01-25, Abschnitt Commemoratio4, dessen Zeile von 1960 die Antiphon und den Vers weglässt.
+
+[plain.comm.hour]
+en: {hour}: {names}
+es: {hour}: {names}
+fr: {hour} : {names}
+de: {hour}: {names}
+
+[plain.comm.none]
+en: The engine records no commemoration at any hour.
+es: El motor no registra conmemoración en ninguna hora.
+fr: Le moteur n'enregistre de commémoraison à aucune heure.
+de: Der Rechner verzeichnet in keiner Hore eine Kommemoration.
+
+[plain.comm.unica]
+en: The winner file carries Sub unica concl. N. 110 a adds the other apostle's oration under one conclusion, without antiphon or verse, so it is not a separate commemoration in the engine's list.
+es: El archivo del oficio lleva Sub unica concl. El n. 110 a añade la oración del otro apóstol bajo una sola conclusión, sin antífona ni verso, así que no es una conmemoración aparte en la lista del motor.
+fr: Le fichier de l'office porte Sub unica concl. Le n. 110 a ajoute l'oraison de l'autre apôtre sous une seule conclusion, sans antienne ni verset, ce qui n'est donc pas une commémoraison séparée dans la liste du moteur.
+de: Die Datei des Offiziums trägt Sub unica concl. Nr. 110 a fügt die Oration des anderen Apostels unter einem Schluss hinzu, ohne Antiphon und ohne Vers, und sie ist daher keine eigene Kommemoration in der Liste des Rechners.
+
+[plain.comm.listnote]
+en: The list below is the project English of the article numbered 108 in General Rubrics.html. AAS 52 numbers that list n. 109.
+es: La lista de abajo es el inglés del proyecto del artículo numerado 108 en General Rubrics.html. AAS 52 numera esa lista n. 109.
+fr: La liste ci-dessous est l'anglais du projet de l'article numéroté 108 dans General Rubrics.html. AAS 52 numérote cette liste n. 109.
+de: Die Liste unten ist das englische Projekt des Artikels, der in General Rubrics.html als 108 nummeriert ist. AAS 52 zählt diese Liste als Nr. 109.
+
+[ui.comm.office]
+en: In the Office
+es: En el Oficio
+fr: Dans l'Office
+de: Im Offizium
+la: In Officio
+
+[ui.comm.mass]
+en: At Mass
+es: En la Misa
+fr: À la messe
+de: In der Messe
+la: In Missa
+
+[ui.comm.mass.which]
+en: Which collects the Mass admits
+es: Qué oraciones admite la Misa
+fr: Quelles oraisons la messe admet
+de: Welche Orationen die Messe zulässt
+
+[ui.comm.mass.form]
+en: How the Mass collects are concluded
+es: Cómo se concluyen las oraciones de la Misa
+fr: Comment les oraisons de la messe se concluent
+de: Wie die Orationen der Messe beschlossen werden
+
+[ui.comm.mass.other]
+en: Ordered, votive and Requiem collects
+es: Oraciones imperadas, votivas y de difuntos
+fr: Oraisons impérées, votives et des défunts
+de: Angeordnete, votive und Totenorationen
+
+[ui.comm.mass.peter]
+en: Peter and Paul at Mass
+es: Pedro y Pablo en la Misa
+fr: Pierre et Paul à la messe
+de: Petrus und Paulus in der Messe
+
+[ui.comm.letter]
+en: Letter {let} only
+es: Solo la letra {let}
+fr: La lettre {let} seulement
+de: Nur Buchstabe {let}
+la: Littera {let} tantum
+
+[ui.rubrics_missal]
+en: General rubrics of the Missal, n. {n}
+es: Rúbricas generales del Misal, n. {n}
+fr: Rubriques générales du missel, n. {n}
+de: Allgemeine Rubriken des Messbuchs, Nr. {n}
+la: Rubricae generales Missalis, n. {n}
+
+[plain.comm.bridge]
+en: N. 106: what is laid down for commemorations applies both to the Mass and to the Office, in occurrence and in concurrence. The Office part says at which hours a commemoration is prayed, and in what form. The Mass part says which collects are added at the Mass of the same day, and how the collect, the secret and the postcommunion are concluded.
+es: N. 106: lo que se establece para las conmemoraciones vale tanto para la Misa como para el Oficio, en ocurrencia y en concurrencia. La parte del Oficio dice en qué horas se reza una conmemoración y en qué forma. La parte de la Misa dice qué oraciones se añaden en la misa del mismo día, y cómo se concluyen la oración, la secreta y la poscomunión.
+fr: N. 106 : ce qui est établi pour les commémoraisons vaut tant pour la messe que pour l'office, dans l'occurrence et dans la concurrence. La partie de l'Office dit à quelles heures une commémoraison se prie, et sous quelle forme. La partie de la messe dit quelles oraisons sont ajoutées à la messe du même jour, et comment l'oraison, la secrète et la postcommunion se concluent.
+de: Nr. 106: was für die Kommemorationen festgesetzt ist, gilt sowohl für die Messe als auch für das Offizium, bei Okkurrenz und bei Konkurrenz. Der Offiziumsteil sagt, in welchen Horen eine Kommemoration gebetet wird und in welcher Form. Der Messeteil sagt, welche Orationen in der Messe desselben Tages hinzugefügt werden und wie Oration, Sekret und Postcommunio beschlossen werden.
+
+[plain.comm.see]
+en: N. {n} is quoted in the other part of this section.
+es: El n. {n} está citado en la otra parte de esta sección.
+fr: Le n. {n} est cité dans l'autre partie de cette section.
+de: Nr. {n} ist im anderen Teil dieses Abschnitts zitiert.
+
+[plain.comm.mass.lead]
+en: The Mass of the day admits the same commemorations, within the same limits (n. 106, n. 111). A commemoration at Mass is a collect, together with its secret and its postcommunion (nn. 433, 480, 505). The antiphon and the verse of n. 251 belong to the Office.
+es: La misa del día admite las mismas conmemoraciones, dentro de los mismos límites (n. 106, n. 111). Una conmemoración en la Misa es una oración, junto con su secreta y su poscomunión (nn. 433, 480, 505). La antífona y el verso del n. 251 pertenecen al Oficio.
+fr: La messe du jour admet les mêmes commémoraisons, dans les mêmes limites (n. 106, n. 111). Une commémoraison à la messe est une oraison, avec sa secrète et sa postcommunion (nn. 433, 480, 505). L'antienne et le verset du n. 251 appartiennent à l'Office.
+de: Die Messe des Tages lässt dieselben Kommemorationen zu, in denselben Grenzen (Nr. 106, Nr. 111). Eine Kommemoration in der Messe ist eine Oration, zusammen mit ihrem Sekret und ihrer Postcommunio (Nr. 433, 480, 505). Die Antiphon und der Vers von Nr. 251 gehören zum Offizium.
+
+[plain.comm.mass.which]
+en: After the collect of the Mass, how many further collects are admitted depends on the day (n. 434). The number includes not only commemorations but also collects prescribed by the rubrics, an oratio imperata, and a votive collect (n. 433). On a 1st class day, in a 1st class votive Mass, and in a sung Mass that is not conventual, nothing further is admitted except a collect said under a single conclusion and one privileged commemoration. On a 3rd or 4th class day, two further collects are admitted. N. 435: a collect beyond the number set for the day is omitted, and under no pretext may the collects exceed three.
+es: Después de la oración de la Misa, cuántas oraciones más se admiten depende del día (n. 434). El número incluye no solo las conmemoraciones, sino también las oraciones prescritas por las rúbricas, una oración imperada y una oración votiva (n. 433). En un día de I clase, en una misa votiva de I clase y en una misa cantada que no es conventual, no se admite nada más, salvo una oración que se dice bajo una sola conclusión y una conmemoración privilegiada. En un día de III o IV clase se admiten dos oraciones más. N. 435: la oración que pase del número fijado para el día se omite, y bajo ningún pretexto las oraciones pueden pasar de tres.
+fr: Après l'oraison de la messe, le nombre des oraisons suivantes dépend du jour (n. 434). Ce nombre comprend non seulement les commémoraisons, mais aussi les oraisons prescrites par les rubriques, une oraison impérée et une oraison votive (n. 433). Un jour de Ire classe, une messe votive de Ire classe et une messe chantée non conventuelle n'admettent rien de plus, sauf une oraison dite sous une seule conclusion et une commémoraison privilégiée. Un jour de IIIe ou de IVe classe admet deux oraisons de plus. N. 435 : l'oraison qui dépasse le nombre fixé pour le jour est omise, et les oraisons ne peuvent sous aucun prétexte dépasser trois.
+de: Nach der Oration der Messe hängt die Zahl der weiteren Orationen vom Tag ab (Nr. 434). Die Zahl umfasst nicht nur Kommemorationen, sondern auch die von den Rubriken vorgeschriebenen Orationen, eine oratio imperata und eine Votivoration (Nr. 433). An einem Tag I. Klasse, in einer Votivmesse I. Klasse und in einer gesungenen Messe, die nicht Konventsmesse ist, wird nichts weiter zugelassen außer einer Oration unter einem Schluss und einer privilegierten Kommemoration. An einem Tag III. oder IV. Klasse werden zwei weitere Orationen zugelassen. Nr. 435: eine Oration über die für den Tag festgesetzte Zahl entfällt, und unter keinem Vorwand dürfen die Orationen drei überschreiten.
+
+[plain.comm.mass.form]
+en: The collect of the Mass is said under its own conclusion, unless another collect is joined to it under the same conclusion (n. 436, nn. 444–445). The commemorations are always said under one conclusion, and so are an oratio imperata and a votive collect (n. 437). The secrets are as many as the collects, in the same order, and concluded in the same manner, and they are said without Dominus vobiscum and without Oremus (n. 480). The postcommunions follow the collects in number, manner and order (n. 505). The words of the long conclusion are n. 115, the same article as in the Office.
+es: La oración de la Misa se dice bajo su conclusión, a menos que otra oración se le junte bajo la misma conclusión (n. 436, nn. 444–445). Las conmemoraciones se dicen siempre bajo una sola conclusión, y lo mismo una oración imperada y una oración votiva (n. 437). Las secretas son tantas como las oraciones, en el mismo orden, y se concluyen del mismo modo, y se dicen sin Dominus vobiscum y sin Oremus (n. 480). Las poscomuniones siguen a las oraciones en número, modo y orden (n. 505). Las palabras de la conclusión larga son el n. 115, el mismo artículo que en el Oficio.
+fr: L'oraison de la messe se dit sous sa conclusion, à moins qu'une autre oraison ne lui soit jointe sous la même conclusion (n. 436, nn. 444–445). Les commémoraisons se disent toujours sous une seule conclusion, et de même une oraison impérée et une oraison votive (n. 437). Les secrètes sont aussi nombreuses que les oraisons, dans le même ordre, et elles se concluent de la même manière ; elles se disent sans Dominus vobiscum et sans Oremus (n. 480). Les postcommunions suivent les oraisons pour le nombre, la manière et l'ordre (n. 505). Les mots de la longue conclusion sont le n. 115, le même article que dans l'Office.
+de: Die Oration der Messe wird unter ihrem eigenen Schluss gebetet, es sei denn, eine andere Oration wird ihr unter demselben Schluss angefügt (Nr. 436, Nr. 444–445). Die Kommemorationen werden immer unter einem Schluss gebetet, ebenso eine oratio imperata und eine Votivoration (Nr. 437). Die Sekrete sind so viele wie die Orationen, in derselben Ordnung, und werden auf dieselbe Weise beschlossen; sie werden ohne Dominus vobiscum und ohne Oremus gebetet (Nr. 480). Die Postcommuniones folgen den Orationen in Zahl, Weise und Ordnung (Nr. 505). Die Worte des langen Schlusses sind Nr. 115, derselbe Artikel wie im Offizium.
+
+[plain.comm.gap.oremus]
+en: No rubric was found that says Oremus is said before the second collect at Mass. N. 249, which says Oremus before each collect, is a rubric of the Office. N. 480 says the secret is said without Oremus. [to be sourced]
+es: No se ha encontrado una rúbrica que diga que se dice Oremus antes de la segunda oración en la Misa. El n. 249, que dice Oremus antes de cada oración, es una rúbrica del Oficio. El n. 480 dice que la secreta se dice sin Oremus. [to be sourced]
+fr: On n'a pas trouvé de rubrique disant qu'Oremus se dit avant la seconde oraison à la messe. Le n. 249, qui dit Oremus avant chaque oraison, est une rubrique de l'Office. Le n. 480 dit que la secrète se dit sans Oremus. [to be sourced]
+de: Eine Rubrik, dass vor der zweiten Oration in der Messe Oremus gesagt wird, wurde nicht gefunden. Nr. 249, die Oremus vor jeder Oration sagt, ist eine Rubrik des Offiziums. Nr. 480 sagt, dass das Sekret ohne Oremus gebetet wird. [to be sourced]
+
+[plain.comm.mass.other]
+en: An oratio imperata is a collect which the local ordinary may order for a grave public need (n. 454). Only one may be ordered. It is never said under a single conclusion with the collect of the Mass; it is placed after the privileged commemorations; and it is prohibited on 1st and 2nd class days, in 1st and 2nd class votive Masses, in sung Masses, and when the privileged commemorations already fill the number set for the day (n. 457). One for the departed is said only on a 4th class feria and in a low 4th class votive or Requiem Mass (n. 458). On a 4th class day a priest may add one votive collect in a low non-conventual Mass, in the last place, and not so as to go past three collects (nn. 461, 463). A Mass of the dead makes no commemoration of the office of the day (n. 391). Its collects are those of n. 398.
+es: Una oración imperada es una oración que el ordinario del lugar puede mandar por una grave necesidad pública (n. 454). Solo puede mandarse una. Nunca se dice bajo una sola conclusión con la oración de la Misa; se pone después de las conmemoraciones privilegiadas; y está prohibida en los días de I y II clase, en las misas votivas de I y II clase, en las misas cantadas, y cuando las conmemoraciones privilegiadas ya llenan el número fijado para el día (n. 457). La de difuntos se dice solo en una feria de IV clase y en una misa votiva o de réquiem de IV clase rezada (n. 458). En un día de IV clase el sacerdote puede añadir una oración votiva en una misa rezada no conventual, en el último lugar, y sin pasar de tres oraciones (nn. 461, 463). Una misa de difuntos no hace conmemoración del oficio del día (n. 391). Sus oraciones son las del n. 398.
+fr: Une oraison impérée est une oraison que l'ordinaire du lieu peut ordonner pour un grave besoin public (n. 454). Une seule peut être ordonnée. Elle ne se dit jamais sous une seule conclusion avec l'oraison de la messe ; elle se place après les commémoraisons privilégiées ; et elle est interdite les jours de Ire et de IIe classe, aux messes votives de Ire et de IIe classe, aux messes chantées, et lorsque les commémoraisons privilégiées remplissent déjà le nombre fixé pour le jour (n. 457). Celle des défunts se dit seulement à une férie de IVe classe et à une messe votive ou de requiem de IVe classe basse (n. 458). Un jour de IVe classe, le prêtre peut ajouter une oraison votive à une messe basse non conventuelle, à la dernière place, et sans dépasser trois oraisons (nn. 461, 463). Une messe des morts ne fait pas de commémoraison de l'office du jour (n. 391). Ses oraisons sont celles du n. 398.
+de: Eine oratio imperata ist eine Oration, die der Ortsordinarius bei einer schweren öffentlichen Not anordnen kann (Nr. 454). Nur eine darf angeordnet werden. Sie wird nie unter einem Schluss mit der Oration der Messe gebetet; sie steht nach den privilegierten Kommemorationen; und sie ist verboten an Tagen I. und II. Klasse, in Votivmessen I. und II. Klasse, in gesungenen Messen und wenn die privilegierten Kommemorationen die für den Tag festgesetzte Zahl schon füllen (Nr. 457). Eine für die Verstorbenen wird nur an einer Ferie IV. Klasse und in einer stillen Votiv- oder Requiemmesse IV. Klasse gebetet (Nr. 458). An einem Tag IV. Klasse darf der Priester in einer stillen Messe, die nicht Konventsmesse ist, eine Votivoration an letzter Stelle hinzufügen, und nicht so, dass drei Orationen überschritten werden (Nr. 461, 463). Eine Totenmesse macht keine Kommemoration des Offiziums des Tages (Nr. 391). Ihre Orationen sind die von Nr. 398.
+
+[plain.comm.mass.peter]
+en: At Mass, as in the Office, Peter and Paul are never separated (n. 110). Letter b: in a Mass of St Peter or of St Paul, the prayer of the other apostle is added to the collect of the day under a single conclusion, and the two prayers count as one. The whole article, including the Office rule without antiphon or verse, is quoted in the Office part.
+es: En la Misa, como en el Oficio, Pedro y Pablo no se separan (n. 110). Letra b: en una misa de san Pedro o de san Pablo, la oración del otro apóstol se añade a la oración del día bajo una sola conclusión, y las dos oraciones cuentan por una. El artículo entero, incluida la regla del Oficio sin antífona ni verso, se cita en la parte del Oficio.
+fr: À la messe, comme dans l'Office, Pierre et Paul ne se séparent pas (n. 110). Lettre b : à une messe de saint Pierre ou de saint Paul, l'oraison de l'autre apôtre est ajoutée à l'oraison du jour sous une seule conclusion, et les deux oraisons comptent pour une. L'article entier, y compris la règle de l'Office sans antienne ni verset, est cité dans la partie de l'Office.
+de: In der Messe wie im Offizium werden Petrus und Paulus nicht getrennt (Nr. 110). Buchstabe b: in einer Messe des hl. Petrus oder des hl. Paulus wird die Oration des anderen Apostels der Oration des Tages unter einem Schluss hinzugefügt, und die zwei Orationen zählen als eine. Der ganze Artikel, einschließlich der Offiziumsregel ohne Antiphon und ohne Vers, wird im Offiziumsteil zitiert.
+
+[plain.comm.mex1]
+en: 4 December 2026, the Mass of St Peter Chrysologus, 3rd class, universal calendar. The Office on this day records the Advent feria and St Barbara at Lauds. At Mass those are the further collects (n. 106): the season first (n. 113), then St Barbara. Collect of the Mass, under its own conclusion (n. 436). Then the feria, a privileged commemoration, and St Barbara, an ordinary one, under one conclusion (n. 437). That is three collects, the limit of n. 435. At a sung Mass that is not conventual, only the privileged commemoration is admitted (n. 111 a, n. 434 a), so St Barbara is omitted and the feria remains. The secret and the postcommunion follow the same number and the same order (n. 480, n. 505).
+es: 4 de diciembre de 2026, la misa de san Pedro Crisólogo, III clase, calendario universal. El Oficio de este día registra en Laudes la feria de Adviento y a santa Bárbara. En la Misa esas son las oraciones que se añaden (n. 106): primero el tiempo (n. 113), luego santa Bárbara. Oración de la Misa, bajo su conclusión (n. 436). Luego la feria, conmemoración privilegiada, y santa Bárbara, ordinaria, bajo una sola conclusión (n. 437). Son tres oraciones, el límite del n. 435. En una misa cantada que no es conventual solo se admite la conmemoración privilegiada (n. 111 a, n. 434 a), así que santa Bárbara se omite y queda la feria. La secreta y la poscomunión siguen el mismo número y el mismo orden (n. 480, n. 505).
+fr: 4 décembre 2026, la messe de saint Pierre Chrysologue, IIIe classe, calendrier universel. L'office de ce jour enregistre aux laudes la férie de l'Avent et sainte Barbe. À la messe, ce sont les oraisons ajoutées (n. 106) : le temps d'abord (n. 113), puis sainte Barbe. Oraison de la messe, sous sa conclusion (n. 436). Puis la férie, commémoraison privilégiée, et sainte Barbe, ordinaire, sous une seule conclusion (n. 437). Cela fait trois oraisons, la limite du n. 435. À une messe chantée non conventuelle, seule la commémoraison privilégiée est admise (n. 111 a, n. 434 a) : sainte Barbe est donc omise et la férie demeure. La secrète et la postcommunion suivent le même nombre et le même ordre (n. 480, n. 505).
+de: 4. Dezember 2026, die Messe des hl. Petrus Chrysologus, III. Klasse, allgemeiner Kalender. Das Offizium dieses Tages verzeichnet in den Laudes die Adventsferie und die hl. Barbara. In der Messe sind das die hinzugefügten Orationen (Nr. 106): zuerst der Zeitkreis (Nr. 113), dann die hl. Barbara. Oration der Messe, unter ihrem eigenen Schluss (Nr. 436). Dann die Ferie, eine privilegierte Kommemoration, und die hl. Barbara, eine gewöhnliche, unter einem Schluss (Nr. 437). Das sind drei Orationen, die Grenze von Nr. 435. In einer gesungenen Messe, die nicht Konventsmesse ist, wird nur die privilegierte Kommemoration zugelassen (Nr. 111 a, Nr. 434 a), also entfällt die hl. Barbara und die Ferie bleibt. Sekret und Postcommunio folgen derselben Zahl und derselben Ordnung (Nr. 480, Nr. 505).
+
+[plain.comm.mex2]
+en: 30 June 2026, the Mass of the Commemoration of St Paul, 3rd class, universal calendar. N. 110 b: the collect of St Peter is added to the collect of the day under a single conclusion, and the two count as one. Collect of St Paul, then the collect of St Peter, one conclusion. The file Sancti/06-30 carries Sub unica concl. The words "without antiphon or verse" are in n. 110 a, which is the Office, not in letter b.
+es: 30 de junio de 2026, la misa de la Conmemoración de san Pablo, III clase, calendario universal. N. 110 b: la oración de san Pedro se añade a la oración del día bajo una sola conclusión, y las dos cuentan por una. Oración de san Pablo, luego la oración de san Pedro, una sola conclusión. El archivo Sancti/06-30 lleva Sub unica concl. Las palabras «sin antífona ni verso» están en el n. 110 a, que es el Oficio, no en la letra b.
+fr: 30 juin 2026, la messe de la Commémoraison de saint Paul, IIIe classe, calendrier universel. N. 110 b : l'oraison de saint Pierre est ajoutée à l'oraison du jour sous une seule conclusion, et les deux comptent pour une. Oraison de saint Paul, puis l'oraison de saint Pierre, une seule conclusion. Le fichier Sancti/06-30 porte Sub unica concl. Les mots « sans antienne ni verset » sont au n. 110 a, qui est l'Office, et non à la lettre b.
+de: 30. Juni 2026, die Messe der Kommemoration des hl. Paulus, III. Klasse, allgemeiner Kalender. Nr. 110 b: die Oration des hl. Petrus wird der Oration des Tages unter einem Schluss hinzugefügt, und die zwei zählen als eine. Oration des hl. Paulus, dann die Oration des hl. Petrus, ein Schluss. Die Datei Sancti/06-30 trägt Sub unica concl. Die Worte „ohne Antiphon und ohne Vers“ stehen in Nr. 110 a, das ist das Offizium, nicht in Buchstabe b.
+
+[plain.comm.today.mass]
+en: At the Mass of this day, a commemoration recorded above is a collect added after the collect of the Mass (n. 433), within the number that nn. 111 and 434 allow. The same name is commemorated at the hour named above and at that Mass.
+es: En la misa de este día, una conmemoración registrada arriba es una oración que se añade después de la oración de la Misa (n. 433), dentro del número que permiten los nn. 111 y 434. El mismo nombre se conmemora en la hora nombrada arriba y en esa misa.
+fr: À la messe de ce jour, une commémoraison enregistrée ci-dessus est une oraison ajoutée après l'oraison de la messe (n. 433), dans le nombre que les nn. 111 et 434 permettent. Le même nom est commémoré à l'heure nommée ci-dessus et à cette messe.
+de: In der Messe dieses Tages ist eine oben verzeichnete Kommemoration eine Oration, die nach der Oration der Messe hinzugefügt wird (Nr. 433), innerhalb der Zahl, die Nr. 111 und 434 zulassen. Derselbe Name wird in der oben genannten Hore und in dieser Messe kommemoriert.
+
+[plain.comm.today.unica]
+en: At Mass as well as at Lauds and at Vespers, n. 110 adds the other apostle's prayer under one conclusion.
+es: En la Misa, igual que en Laudes y en Vísperas, el n. 110 añade la oración del otro apóstol bajo una sola conclusión.
+fr: À la messe comme aux laudes et aux vêpres, le n. 110 ajoute l'oraison de l'autre apôtre sous une seule conclusion.
+de: In der Messe wie in den Laudes und in der Vesper fügt Nr. 110 die Oration des anderen Apostels unter einem Schluss hinzu.

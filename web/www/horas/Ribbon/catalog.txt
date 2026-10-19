@@ -247,6 +247,91 @@ page: 636
 topic: Peculiarities in saying the responsories are noted in place
 file: web/www/horas/Help/Rubrics/Breviary 1960.html
 
+@@ GR-103
+corpus: general
+number: 103
+topic: Concurrence is the meeting of Vespers with the following day's first Vespers
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-104
+corpus: general
+number: 104
+topic: In concurrence the Vespers of the higher class are preferred
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-105
+corpus: general
+number: 105
+topic: When concurring Vespers are of the same class, second Vespers are of the current day
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-106
+corpus: general
+number: 106
+topic: Commemoration rules apply to Mass and Office, in occurrence and in concurrence
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-107
+corpus: general
+number: 107
+topic: Commemorations are privileged or ordinary
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-110
+corpus: general
+number: 110
+topic: Peter and Paul are commemorated together under one conclusion
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-111
+corpus: general
+number: 111
+topic: How many commemorations each class of day admits
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-112
+corpus: general
+number: 112
+topic: A commemoration of the same Person, the season, or the same saint is excluded
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-113
+corpus: general
+number: 113
+topic: A commemoration of the season is said first
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-114
+corpus: general
+number: 114
+topic: A commemoration beyond the number set for the day is omitted
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+
+@@ GR-115
+corpus: general
+number: 115
+topic: The conclusion of a prayer follows the one to whom it is addressed
+file: web/www/horas/Help/Rubrics/General Rubrics.html
+en_damaged: 1
+
+@@ BR-214
+corpus: breviary
+number: 214
+topic: A commemorated office has no lesson in the office of the day
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-249
+corpus: breviary
+number: 249
+topic: The day's collect has its conclusion; commemorations are concluded only at the last; Oremus before each
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
+@@ BR-250
+corpus: breviary
+number: 250
+topic: Commemorations follow the general rubrics
+file: web/www/horas/Help/Rubrics/Breviary 1960.html
+
 @@ BR-233
 corpus: breviary
 number: 233

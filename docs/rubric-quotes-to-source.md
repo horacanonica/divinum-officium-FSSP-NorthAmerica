@@ -10,12 +10,12 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 
 | | |
 | --- | --- |
-| Quotations in the catalogue | 38 |
-| English sourced from the project files | 38 |
+| Quotations in the catalogue | 52 |
+| English sourced from the project files | 52 |
 | English still [to be sourced] | 0 |
-| Latin sourced from AAS 52 (1960) | 38 |
+| Latin sourced from AAS 52 (1960) | 52 |
 | Latin still [to be sourced] | 0 |
-| Plain-language strings with no Latin wording | 57 |
+| Plain-language strings with no Latin wording | 95 |
 
 ## Catalogue
 
@@ -36,6 +36,7 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 | BR-197 | The two schemes of psalms at Matins and Lauds | sourced | AAS 52 (1960), p. 632, n. 197 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-203 | The Athanasian Creed is said only on Trinity Sunday | sourced | AAS 52 (1960), p. 633, n. 203 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-211 | Three lessons close each nocturn | sourced | AAS 52 (1960), p. 633, n. 211 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-214 | A commemorated office has no lesson in the office of the day | sourced | AAS 52 (1960), p. 634, n. 214 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-217 | First nocturn lessons are from Scripture | sourced | AAS 52 (1960), p. 634, n. 217 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-218 | Second nocturn lessons are of the saint, a sermon, or the Common | sourced | AAS 52 (1960), p. 634, n. 218 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-219 | Third nocturn lessons are the homily on the gospel | sourced, file damaged | AAS 52 (1960), p. 634, n. 219 | web/www/horas/Help/Rubrics/Breviary 1960.html |
@@ -51,8 +52,21 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 | BR-242 | The short lesson at Prime is of the season | sourced | AAS 52 (1960), p. 638, n. 242 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-246 | A collect closes each Hour | sourced | AAS 52 (1960), p. 638, n. 246 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-248 | The collect at Prime and Compline is not changed | sourced | AAS 52 (1960), p. 639, n. 248 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-249 | The day's collect has its conclusion; commemorations are concluded only at the last; Oremus before each | sourced | AAS 52 (1960), p. 639, n. 249 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-250 | Commemorations follow the general rubrics | sourced | AAS 52 (1960), p. 639, n. 250 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-251 | A commemoration follows the collect of the day | sourced | AAS 52 (1960), p. 639, n. 251 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-260 | When the preces are said | sourced | AAS 52 (1960), p. 640, n. 260 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| GR-103 | Concurrence is the meeting of Vespers with the following day's first Vespers | sourced | AAS 52 (1960), p. 614, n. 103 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-104 | In concurrence the Vespers of the higher class are preferred | sourced | AAS 52 (1960), p. 614, n. 104 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-105 | When concurring Vespers are of the same class, second Vespers are of the current day | sourced | AAS 52 (1960), p. 614, n. 105 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-106 | Commemoration rules apply to Mass and Office, in occurrence and in concurrence | sourced | AAS 52 (1960), p. 615, n. 106 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-107 | Commemorations are privileged or ordinary | sourced | AAS 52 (1960), p. 615, n. 107 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-110 | Peter and Paul are commemorated together under one conclusion | sourced | AAS 52 (1960), p. 615, n. 110 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-111 | How many commemorations each class of day admits | sourced | AAS 52 (1960), p. 615, n. 111 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-112 | A commemoration of the same Person, the season, or the same saint is excluded | sourced | AAS 52 (1960), p. 616, n. 112 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-113 | A commemoration of the season is said first | sourced | AAS 52 (1960), p. 616, n. 113 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-114 | A commemoration beyond the number set for the day is omitted | sourced | AAS 52 (1960), p. 616, n. 114 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-115 | The conclusion of a prayer follows the one to whom it is addressed | sourced, file damaged | AAS 52 (1960), p. 616, n. 115 | web/www/horas/Help/Rubrics/General Rubrics.html |
 | GR-25 | Ferias of the 3rd class in Lent are preferred to feasts of the 3rd class | sourced | AAS 52 (1960), p. 600, n. 25 | web/www/horas/Help/Rubrics/General Rubrics.html |
 | GR-37 | A 1st class feast begins with First Vespers; 2nd and 3rd class run from Matins | sourced | AAS 52 (1960), p. 602, n. 37 | web/www/horas/Help/Rubrics/General Rubrics.html |
 | GR-91-12 | Precedence table — proper feasts of the 1st class | sourced | AAS 52 (1960), p. 611, n. 91 | web/www/horas/Help/Rubrics/General Rubrics.html |
@@ -108,11 +122,44 @@ Two wordings are still sought. The page keeps a commentary label on each.
 
 - An official text of the two-asterisk rule (after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse). The row is commentary from the Confraternity of SS. Peter and Paul, *Instructions for the Recitation of the Divine Office*, adapted from Hausmann, *Learning the Breviary*, §23, pp. 34–35. N. 230, *eadem ultima pars*, is partial support for repeating the last part. The Dessain breviary prints every division as an asterisk, so a second division is a second asterisk.
 - An official text that the *Gloria Patri* at the end of a responsory leaves out *Sicut erat*. N. 230 says *dicitur Gloria Patri* and *eadem ultima pars*, and does not name the second half of the doxology. The older pointer is Rubricae Generales tit. XIII n. 4 and tit. XXVII n. 2. The model those rubrics name is the third responsory of the first Sunday of Advent, *Missus est Gabriel*. The explicit omission stays `[to be sourced]`, pending Dave's check of his Dessain at that Advent responsory.
+- The English of AAS n. 108, the place of a commemoration. AAS n. 108 says privileged commemorations are made at Lauds, at Vespers and at every Mass, and ordinary commemorations only at Lauds, at a conventual Mass and at a low Mass. The project file `General Rubrics.html` has no sentence of that article. The article it numbers 108 is the list of privileged commemorations, which AAS 52 numbers n. 109. The page quotes the Latin of n. 108 and the English list beside the Latin of n. 109.
+- A rubric that the collects of one Hour of the Office may not exceed three. N. 435 of the Missal rubrics does limit the collects of a Mass to three, and the page quotes that English article. The Office hour is the claim still open.
+- An explicit rubric that commemorations are never said at Terce, Sext, None or Compline. N. 108 names Lauds and Vespers. N. 248 leaves the collect of Prime and Compline unchanged.
+- A rubric that, when several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed. N. 249 says the commemorations of the Office are concluded only after the last. N. 115 gives the formula of a prayer, in the Mass and in the Office, from the one to whom that prayer is addressed. N. 437 says the commemorations at Mass are said under one conclusion.
+- Latin of the Missal rubrics, articles 269 onward, including the collects (nn. 433–465), the secrets (n. 480), the postcommunions (n. 505) and the Masses of the dead (n. 398). The stored AAS text, `aas52-la.txt`, stops at n. 268. The English is quoted from `web/www/horas/Help/Rubrics/Missal1960 rubrics.html`. Those articles are not catalogue rows, because the catalogue requires a Latin text.
+- An explicit rubric that Oremus is said before the second collect at Mass. N. 249, Oremus before each collect, is a rubric of the Office. N. 480 says the secret is said without Dominus vobiscum and without Oremus.
 
 ## Screen labels with no Latin wording
 
 Hour names, section names, and the short rubrical sentences that are ordinary Latin have a `la:` line. The strings below are screen labels or explanations. In Latin view they show the English sentence, and the page does not add `[to be sourced]`.
 
+- `plain.comm.bridge`
+- `plain.comm.concl`
+- `plain.comm.ex1`
+- `plain.comm.ex2`
+- `plain.comm.gap.last`
+- `plain.comm.gap.minor`
+- `plain.comm.gap.oremus`
+- `plain.comm.gap.three`
+- `plain.comm.hour`
+- `plain.comm.how`
+- `plain.comm.joint`
+- `plain.comm.listnote`
+- `plain.comm.mass.form`
+- `plain.comm.mass.lead`
+- `plain.comm.mass.other`
+- `plain.comm.mass.peter`
+- `plain.comm.mass.which`
+- `plain.comm.mex1`
+- `plain.comm.mex2`
+- `plain.comm.none`
+- `plain.comm.place`
+- `plain.comm.see`
+- `plain.comm.today.mass`
+- `plain.comm.today.unica`
+- `plain.comm.unica`
+- `plain.comm.when`
+- `plain.comm.where`
 - `plain.lauds.festive`
 - `plain.lauds.weekday`
 - `plain.minor.festive`
@@ -136,6 +183,17 @@ Hour names, section names, and the short rubrical sentences that are ordinary La
 - `ui.calendar`
 - `ui.col_incipit`
 - `ui.col_source`
+- `ui.comm.concl`
+- `ui.comm.examples`
+- `ui.comm.how`
+- `ui.comm.joint`
+- `ui.comm.mass.form`
+- `ui.comm.mass.other`
+- `ui.comm.mass.peter`
+- `ui.comm.mass.which`
+- `ui.comm.today`
+- `ui.comm.when`
+- `ui.comm.where`
 - `ui.commem_file`
 - `ui.edition`
 - `ui.edition_soon`
