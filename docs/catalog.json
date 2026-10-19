@@ -4,7 +4,7 @@
   "releases": {
     "la": "epub-library-la"
   },
-  "updated": "2026-10-18T13:14:57Z",
+  "updated": "2026-10-19T16:20:24Z",
   "languages": "Latin",
   "variants": [
     {
@@ -8997,8 +8997,40 @@
       "name": "St. Francis of Assisi Church, Lincoln",
       "region": "Midwest",
       "place": "Lincoln, Nebraska",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "cc5aecabeba1ddbd388aebf258c50968244ea6c89379cf5e4b2d1c8e36dd15e7"
+        },
+        "2027": {
+          "la": "cc5aecabeba1ddbd388aebf258c50968244ea6c89379cf5e4b2d1c8e36dd15e7"
+        },
+        "2028": {
+          "la": "cc5aecabeba1ddbd388aebf258c50968244ea6c89379cf5e4b2d1c8e36dd15e7"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-francis-of-assisi-church-lincoln-ne-2026-la.epub",
+          "bytes": 14815837,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-francis-of-assisi-church-lincoln-ne-2027-la.epub",
+          "bytes": 14816845,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-francis-of-assisi-church-lincoln-ne-2028-la.epub",
+          "bytes": 14847700,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Parish",
@@ -9080,13 +9112,13 @@
       "place": "Maple Hill, Kansas",
       "built": {
         "2026": {
-          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
+          "la": "cf91f6d53011ec8e1541f674f8c0e0e759160cf26144e116c838f3cd43af3c3e"
         },
         "2027": {
-          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
+          "la": "cf91f6d53011ec8e1541f674f8c0e0e759160cf26144e116c838f3cd43af3c3e"
         },
         "2028": {
-          "la": "9456eb6c49f08bf3dcb7c0c580a24797e59006ce4b550682863782ac3e49a03a"
+          "la": "cf91f6d53011ec8e1541f674f8c0e0e759160cf26144e116c838f3cd43af3c3e"
         }
       },
       "files": [
@@ -9094,7 +9126,7 @@
           "type": "year",
           "year": 2026,
           "name": "maple-hill-2026-la.epub",
-          "bytes": 14810754,
+          "bytes": 14813777,
           "variant": "la"
         },
         {
@@ -9198,8 +9230,40 @@
       "name": "St. Joseph Parish, Rockdale",
       "region": "Midwest",
       "place": "Rockdale, Illinois",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "7bb40d6b2776acf37d5a8716cea659f1eb3f73e90306b76a220c3dd70b12a1ff"
+        },
+        "2027": {
+          "la": "7bb40d6b2776acf37d5a8716cea659f1eb3f73e90306b76a220c3dd70b12a1ff"
+        },
+        "2028": {
+          "la": "7bb40d6b2776acf37d5a8716cea659f1eb3f73e90306b76a220c3dd70b12a1ff"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-joseph-parish-rockdale-il-2026-la.epub",
+          "bytes": 14813590,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-joseph-parish-rockdale-il-2027-la.epub",
+          "bytes": 14813714,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-joseph-parish-rockdale-il-2028-la.epub",
+          "bytes": 14843853,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -9281,13 +9345,13 @@
       "place": "Quincy, Illinois",
       "built": {
         "2026": {
-          "la": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f"
+          "la": "79fb53baf0a012ee667738e0a0337eb4f57c67b13450552ed943fe95b075ce9b"
         },
         "2027": {
-          "la": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f"
+          "la": "79fb53baf0a012ee667738e0a0337eb4f57c67b13450552ed943fe95b075ce9b"
         },
         "2028": {
-          "la": "89a44b5d42953913c93483d1c7df18f67dbeca2e982292c7811e58925f5f824f"
+          "la": "79fb53baf0a012ee667738e0a0337eb4f57c67b13450552ed943fe95b075ce9b"
         }
       },
       "files": [
@@ -9295,7 +9359,7 @@
           "type": "year",
           "year": 2026,
           "name": "quincy-2026-la.epub",
-          "bytes": 14811715,
+          "bytes": 14814738,
           "variant": "la"
         },
         {
@@ -9309,7 +9373,7 @@
           "type": "year",
           "year": 2028,
           "name": "quincy-2028-la.epub",
-          "bytes": 14845423,
+          "bytes": 14845424,
           "variant": "la"
         }
       ],
@@ -9399,8 +9463,40 @@
       "name": "St. Rose Philippine Duchesne Catholic Church, Westwood",
       "region": "Midwest",
       "place": "Westwood, Kansas",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "66089f17d285461c4f14846a88ff1acfc108614b7aef6a03b781b8abc1f59caa"
+        },
+        "2027": {
+          "la": "66089f17d285461c4f14846a88ff1acfc108614b7aef6a03b781b8abc1f59caa"
+        },
+        "2028": {
+          "la": "66089f17d285461c4f14846a88ff1acfc108614b7aef6a03b781b8abc1f59caa"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-rose-philippine-duchesne-catholic-church-westwood-ks-2026-la.epub",
+          "bytes": 14817727,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-rose-philippine-duchesne-catholic-church-westwood-ks-2027-la.epub",
+          "bytes": 14818407,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-rose-philippine-duchesne-catholic-church-westwood-ks-2028-la.epub",
+          "bytes": 14845376,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Parish",
@@ -9480,8 +9576,40 @@
       "name": "St. Stanislaus Church, South Bend",
       "region": "Midwest",
       "place": "South Bend, Indiana",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "8b8f8f8f0c62a551798508d6569494b2ee842021e6d0f4f303e6dfaed52476e4"
+        },
+        "2027": {
+          "la": "8b8f8f8f0c62a551798508d6569494b2ee842021e6d0f4f303e6dfaed52476e4"
+        },
+        "2028": {
+          "la": "8b8f8f8f0c62a551798508d6569494b2ee842021e6d0f4f303e6dfaed52476e4"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-stanislaus-church-south-bend-in-2026-la.epub",
+          "bytes": 14813170,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-stanislaus-church-south-bend-in-2027-la.epub",
+          "bytes": 14815672,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-stanislaus-church-south-bend-in-2028-la.epub",
+          "bytes": 14847787,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Parish",
@@ -9561,8 +9689,40 @@
       "name": "Archdiocese of Montreal",
       "region": "Canada",
       "place": "Montreal, Quebec",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "29707d365215573e1d9ff20ac8fc479e0aff206a8fe871ae84b69a5f70dd368f"
+        },
+        "2027": {
+          "la": "29707d365215573e1d9ff20ac8fc479e0aff206a8fe871ae84b69a5f70dd368f"
+        },
+        "2028": {
+          "la": "29707d365215573e1d9ff20ac8fc479e0aff206a8fe871ae84b69a5f70dd368f"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-montreal-2026-la.epub",
+          "bytes": 14816807,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-montreal-2027-la.epub",
+          "bytes": 14815612,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-montreal-2028-la.epub",
+          "bytes": 14845814,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -9621,8 +9781,40 @@
       "name": "Archdiocese of Ottawa",
       "region": "Canada",
       "place": "Ottawa, Ontario",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "92fa11c9ba80e4df32878ee6ac3a3b0b9ca7dcc681aeefd86a9958200ed40779"
+        },
+        "2027": {
+          "la": "92fa11c9ba80e4df32878ee6ac3a3b0b9ca7dcc681aeefd86a9958200ed40779"
+        },
+        "2028": {
+          "la": "92fa11c9ba80e4df32878ee6ac3a3b0b9ca7dcc681aeefd86a9958200ed40779"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-ottawa-2026-la.epub",
+          "bytes": 14812416,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-ottawa-2027-la.epub",
+          "bytes": 14810526,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-ottawa-2028-la.epub",
+          "bytes": 14841816,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -9674,8 +9866,40 @@
       "name": "Archdiocese of Québec",
       "region": "Canada",
       "place": "Quebec, Quebec",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "06dc9f8310f2156bed27b7867ae20101823d26cbfa9b17c21df88b6d53c808ed"
+        },
+        "2027": {
+          "la": "06dc9f8310f2156bed27b7867ae20101823d26cbfa9b17c21df88b6d53c808ed"
+        },
+        "2028": {
+          "la": "06dc9f8310f2156bed27b7867ae20101823d26cbfa9b17c21df88b6d53c808ed"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-quebec-2026-la.epub",
+          "bytes": 14808508,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-quebec-2027-la.epub",
+          "bytes": 14809829,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-quebec-2028-la.epub",
+          "bytes": 14843025,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -9727,8 +9951,40 @@
       "name": "Archdiocese of Vancouver",
       "region": "Canada",
       "place": "Vancouver, British Columbia",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "47a9aef488a9208ae57fd577ac98179cb00724063eeabe9731c53a6fb4dc8603"
+        },
+        "2027": {
+          "la": "47a9aef488a9208ae57fd577ac98179cb00724063eeabe9731c53a6fb4dc8603"
+        },
+        "2028": {
+          "la": "47a9aef488a9208ae57fd577ac98179cb00724063eeabe9731c53a6fb4dc8603"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "archdiocese-of-vancouver-2026-la.epub",
+          "bytes": 14808300,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "archdiocese-of-vancouver-2027-la.epub",
+          "bytes": 14810889,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "archdiocese-of-vancouver-2028-la.epub",
+          "bytes": 14842191,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -9780,8 +10036,40 @@
       "name": "Diocese of Calgary",
       "region": "Canada",
       "place": "Calgary, Alberta",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "9b0f4e25346458a292619faca579320f0c13e386605d44ef29c8b40a82e9f7f5"
+        },
+        "2027": {
+          "la": "9b0f4e25346458a292619faca579320f0c13e386605d44ef29c8b40a82e9f7f5"
+        },
+        "2028": {
+          "la": "9b0f4e25346458a292619faca579320f0c13e386605d44ef29c8b40a82e9f7f5"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-calgary-2026-la.epub",
+          "bytes": 14805344,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-calgary-2027-la.epub",
+          "bytes": 14806976,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-calgary-2028-la.epub",
+          "bytes": 14840363,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -9833,8 +10121,40 @@
       "name": "Diocese of Saskatoon",
       "region": "Canada",
       "place": "Saskatoon, Saskatchewan",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "4ea4971fef9e268d8c2877fdcd54db2acded87ee6783da75c3790caa5d27e881"
+        },
+        "2027": {
+          "la": "4ea4971fef9e268d8c2877fdcd54db2acded87ee6783da75c3790caa5d27e881"
+        },
+        "2028": {
+          "la": "4ea4971fef9e268d8c2877fdcd54db2acded87ee6783da75c3790caa5d27e881"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-saskatoon-2026-la.epub",
+          "bytes": 14812851,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-saskatoon-2027-la.epub",
+          "bytes": 14813661,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-saskatoon-2028-la.epub",
+          "bytes": 14843527,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -9886,8 +10206,40 @@
       "name": "Diocese of St. Catharines",
       "region": "Canada",
       "place": "St. Catharines, Ontario",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "abebcc71deda2ca44ccc7559f3376ff79863be8e8c8a33db457c942776da9ca9"
+        },
+        "2027": {
+          "la": "abebcc71deda2ca44ccc7559f3376ff79863be8e8c8a33db457c942776da9ca9"
+        },
+        "2028": {
+          "la": "abebcc71deda2ca44ccc7559f3376ff79863be8e8c8a33db457c942776da9ca9"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "diocese-of-st-catharines-2026-la.epub",
+          "bytes": 14810962,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "diocese-of-st-catharines-2027-la.epub",
+          "bytes": 14810810,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "diocese-of-st-catharines-2028-la.epub",
+          "bytes": 14841926,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -9939,8 +10291,40 @@
       "name": "FSSP Canada",
       "region": "Canada",
       "place": "Fraternity calendar for Canada",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "515b15cdcf1b368fbf7da410ada165cd82b96b75b327b5fd90e37e5e3ced8a13"
+        },
+        "2027": {
+          "la": "515b15cdcf1b368fbf7da410ada165cd82b96b75b327b5fd90e37e5e3ced8a13"
+        },
+        "2028": {
+          "la": "515b15cdcf1b368fbf7da410ada165cd82b96b75b327b5fd90e37e5e3ced8a13"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "fssp-canada-2026-la.epub",
+          "bytes": 14802351,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "fssp-canada-2027-la.epub",
+          "bytes": 14804211,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "fssp-canada-2028-la.epub",
+          "bytes": 14835797,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "FSSP",
@@ -9978,8 +10362,40 @@
       "name": "Holy Family Parish, Vancouver",
       "region": "Canada",
       "place": "Vancouver, British Columbia",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "d1e367eb992c7dc77514569242a2dc6b3d8f102852fd48d867d48afdae46c4f0"
+        },
+        "2027": {
+          "la": "d1e367eb992c7dc77514569242a2dc6b3d8f102852fd48d867d48afdae46c4f0"
+        },
+        "2028": {
+          "la": "d1e367eb992c7dc77514569242a2dc6b3d8f102852fd48d867d48afdae46c4f0"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "holy-family-parish-vancouver-bc-2026-la.epub",
+          "bytes": 14807961,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "holy-family-parish-vancouver-bc-2027-la.epub",
+          "bytes": 14810541,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "holy-family-parish-vancouver-bc-2028-la.epub",
+          "bytes": 14841849,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Diocese",
@@ -10031,8 +10447,40 @@
       "name": "St. Aloysius Parish, Thorold",
       "region": "Canada",
       "place": "Thorold, Ontario",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "1372710e159a4df67ee46c6e7042af5186aca24b3c97040d42e933d3e235cc4f"
+        },
+        "2027": {
+          "la": "1372710e159a4df67ee46c6e7042af5186aca24b3c97040d42e933d3e235cc4f"
+        },
+        "2028": {
+          "la": "1372710e159a4df67ee46c6e7042af5186aca24b3c97040d42e933d3e235cc4f"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-aloysius-parish-thorold-on-2026-la.epub",
+          "bytes": 14815152,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-aloysius-parish-thorold-on-2027-la.epub",
+          "bytes": 14813722,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-aloysius-parish-thorold-on-2028-la.epub",
+          "bytes": 14845126,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Parish",
