@@ -4,7 +4,7 @@
   "releases": {
     "la": "epub-library-la"
   },
-  "updated": "2026-10-19T16:20:24Z",
+  "updated": "2026-10-20T13:47:24Z",
   "languages": "Latin",
   "variants": [
     {
@@ -10541,13 +10541,13 @@
       "place": "Thorold, Ontario",
       "built": {
         "2026": {
-          "la": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958"
+          "la": "7243f91bdb54d7bf4124306f7a83d36fee78e209168a739270f921a084364cce"
         },
         "2027": {
-          "la": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958"
+          "la": "7243f91bdb54d7bf4124306f7a83d36fee78e209168a739270f921a084364cce"
         },
         "2028": {
-          "la": "d37007c1ccb39e944b770da6b68e9eae6071999a9513345242da376f447f5958"
+          "la": "7243f91bdb54d7bf4124306f7a83d36fee78e209168a739270f921a084364cce"
         }
       },
       "files": [
@@ -10555,21 +10555,21 @@
           "type": "year",
           "year": 2026,
           "name": "niagara-2026-la.epub",
-          "bytes": 14808469,
+          "bytes": 14813018,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2027,
           "name": "niagara-2027-la.epub",
-          "bytes": 14811574,
+          "bytes": 14811575,
           "variant": "la"
         },
         {
           "type": "year",
           "year": 2028,
           "name": "niagara-2028-la.epub",
-          "bytes": 14840594,
+          "bytes": 14842993,
           "variant": "la"
         }
       ],
@@ -10631,8 +10631,40 @@
       "name": "St. Anthony Church, Calgary",
       "region": "Canada",
       "place": "Calgary, Alberta",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "5bd375a61989ff18436a1d3f7d1a23887ab03813d446d79036c77f426e80644d"
+        },
+        "2027": {
+          "la": "5bd375a61989ff18436a1d3f7d1a23887ab03813d446d79036c77f426e80644d"
+        },
+        "2028": {
+          "la": "5bd375a61989ff18436a1d3f7d1a23887ab03813d446d79036c77f426e80644d"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "st-anthony-church-calgary-ab-2026-la.epub",
+          "bytes": 14807600,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "st-anthony-church-calgary-ab-2027-la.epub",
+          "bytes": 14809962,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "st-anthony-church-calgary-ab-2028-la.epub",
+          "bytes": 14843266,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Parish",
@@ -10691,8 +10723,40 @@
       "name": "Église Saint-Zéphirin-de-Stadacona, Québec",
       "region": "Canada",
       "place": "Quebec, Quebec",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "e29e2992bd2a05268d3e7036c916935ae5a2859306badffc9c359a9967096bb4"
+        },
+        "2027": {
+          "la": "e29e2992bd2a05268d3e7036c916935ae5a2859306badffc9c359a9967096bb4"
+        },
+        "2028": {
+          "la": "e29e2992bd2a05268d3e7036c916935ae5a2859306badffc9c359a9967096bb4"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "eglise-saint-zephirin-de-stadacona-quebec-qc-2026-la.epub",
+          "bytes": 14812342,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "eglise-saint-zephirin-de-stadacona-quebec-qc-2027-la.epub",
+          "bytes": 14813829,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "eglise-saint-zephirin-de-stadacona-quebec-qc-2028-la.epub",
+          "bytes": 14844632,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Parish",
@@ -10751,8 +10815,40 @@
       "name": "Église St-Irénée, Montréal",
       "region": "Canada",
       "place": "Montréal, Quebec",
-      "built": {},
-      "files": [],
+      "built": {
+        "2026": {
+          "la": "32eb138d7dbd4d20b6daac3bdd2d45d7600db2b0fff55c54e47766da45bef700"
+        },
+        "2027": {
+          "la": "32eb138d7dbd4d20b6daac3bdd2d45d7600db2b0fff55c54e47766da45bef700"
+        },
+        "2028": {
+          "la": "32eb138d7dbd4d20b6daac3bdd2d45d7600db2b0fff55c54e47766da45bef700"
+        }
+      },
+      "files": [
+        {
+          "type": "year",
+          "year": 2026,
+          "name": "eglise-st-irenee-montreal-qc-2026-la.epub",
+          "bytes": 14821924,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2027,
+          "name": "eglise-st-irenee-montreal-qc-2027-la.epub",
+          "bytes": 14820733,
+          "variant": "la"
+        },
+        {
+          "type": "year",
+          "year": 2028,
+          "name": "eglise-st-irenee-montreal-qc-2028-la.epub",
+          "bytes": 14852205,
+          "variant": "la"
+        }
+      ],
       "feasts": [
         {
           "layer": "Parish",
@@ -10820,13 +10916,13 @@
       "place": "Guadalajara, Jalisco",
       "built": {
         "2026": {
-          "la": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042"
+          "la": "0b9cc247788f861ed6fb7be24fbfea9b69c55726cb87f20d23bb9ddab830ec22"
         },
         "2027": {
-          "la": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042"
+          "la": "0b9cc247788f861ed6fb7be24fbfea9b69c55726cb87f20d23bb9ddab830ec22"
         },
         "2028": {
-          "la": "171d87853eaa86acd88d19df7a6c67a890e4070f0926acdf48dbd28b86389042"
+          "la": "0b9cc247788f861ed6fb7be24fbfea9b69c55726cb87f20d23bb9ddab830ec22"
         }
       },
       "files": [
@@ -10834,7 +10930,7 @@
           "type": "year",
           "year": 2026,
           "name": "guadalajara-2026-la.epub",
-          "bytes": 14824970,
+          "bytes": 14827995,
           "variant": "la"
         },
         {
@@ -10848,7 +10944,7 @@
           "type": "year",
           "year": 2028,
           "name": "guadalajara-2028-la.epub",
-          "bytes": 14860245,
+          "bytes": 14860246,
           "variant": "la"
         }
       ],
