@@ -1,0 +1,57 @@
+# Combined-propers booklet — not built yet.
+#
+# Every file listed here is a first- or second-class feast, on an FSSP
+# North America calendar, whose Matins uses material a physical 1960
+# Breviarium Romanum does not print. The ribbon page says to print that
+# proper separately. The list is written by scripts/booklet_required_propers.pl
+# together with docs/booklet-required-propers.md.
+#
+# A line is a file the engine reads, without ".txt". When a booklet exists,
+# a tab and a URL or site path follow:
+#   Sancti/12-12s	https://example.invalid/booklet#12-12s
+# Until then the line has no URL. The note is shown, and data-booklet stays empty.
+Sancti/01-25nl1r
+Sancti/01-29nl1
+Sancti/03-07f
+Sancti/03-17n
+Sancti/03-17nl1
+Sancti/03-17nl2
+Sancti/03-21ch
+Sancti/03-21nl1
+Sancti/05-07m
+Sancti/05-07nl1
+Sancti/05-13nl2
+Sancti/06-13nl1
+Sancti/06-15nl1
+Sancti/06-21nia
+Sancti/06-21nl1
+Sancti/06-28nl1
+Sancti/06-30nl1
+Sancti/07-16nl1
+Sancti/07-19ch
+Sancti/07-19nl1
+Sancti/07-22nl1
+Sancti/08-02bal
+Sancti/08-02nl1
+Sancti/08-03s
+Sancti/08-09nl1
+Sancti/08-26nl1
+Sancti/08-30nl1
+Sancti/08-30q
+Sancti/09-03nl1
+Sancti/09-03nl2
+Sancti/09-03sc
+Sancti/09-12nl1
+Sancti/09-26nl1n
+Sancti/10-03nl1
+Sancti/10-04nl1
+Sancti/11-04nl1
+Sancti/11-13nl1
+Sancti/11-15nl2
+Sancti/11-22nl1
+Sancti/11-25nia
+Sancti/11-25nl1
+Sancti/12-03nl1
+Sancti/12-12s
+Sancti/12-13nl1r
+Sancti/12-13sc

@@ -1,0 +1,1511 @@
+# Interface and plain-language strings.
+# la is included only where the wording is ordinary liturgical Latin.
+# A missing la line is shown from English with the marker [to be sourced].
+
+[ui.title]
+en: Ribbon helper
+es: Ayuda de cintas
+fr: Aide pour les signets
+de: Bänder im Brevier
+la: Signacula
+
+[ui.intro]
+en: Where to put the ribbons today, and how each hour is ordered. The office itself is the one this site already resolves for the calendar and the date. The quotations are the 1960 rubrics.
+es: Dónde colocar las cintas hoy, y cómo se ordena cada hora. El oficio es el que este sitio ya resuelve para el calendario y la fecha. Las citas son las rúbricas de 1960.
+fr: Où placer les signets aujourd'hui, et comment chaque heure est ordonnée. L'office est celui que ce site résout déjà pour le calendrier et la date. Les citations sont les rubriques de 1960.
+de: Wohin die Bänder heute gehören, und wie jede Hore geordnet ist. Das Offizium ist das, welches diese Seite für Kalender und Datum bereits ermittelt. Die Zitate sind die Rubriken von 1960.
+
+[ui.calendar]
+en: Local calendar
+es: Calendario local
+fr: Calendrier local
+de: Lokaler Kalender
+
+[ui.date]
+en: Date
+es: Fecha
+fr: Date
+de: Datum
+la: Dies
+
+[ui.edition]
+en: Physical breviary
+es: Breviario impreso
+fr: Bréviaire imprimé
+de: Gedrucktes Brevier
+
+[ui.language]
+en: Language
+es: Lengua
+fr: Langue
+de: Sprache
+la: Lingua
+
+[ui.edition_soon]
+en: Feature coming soon. This choice shows the general structure only, with no page numbers.
+es: Función aún por venir. Esta opción muestra solo la estructura general, sin números de página.
+fr: Fonction à venir. Ce choix montre seulement la structure générale, sans numéros de page.
+de: Funktion folgt. Diese Wahl zeigt nur die allgemeine Gliederung, ohne Seitenzahlen.
+
+[ui.volume_note]
+en: When a printed edition is added, its page numbers depend on which volume covers the temporal cycle of the day (Advent, Christmas, Epiphany, Septuagesima, Lent, Paschaltide, or after Pentecost). The page will name the volume to hold. The same part of the office can sit on a different page in each volume.
+es: Cuando se añada una edición impresa, los números de página dependerán del volumen que cubra el ciclo temporal del día (Adviento, Navidad, Epifanía, Septuagésima, Cuaresma, tiempo pascual o después de Pentecostés). La página dirá qué volumen tener en la mano. La misma parte del oficio puede estar en una página distinta en cada volumen.
+fr: Quand une édition imprimée sera ajoutée, les numéros de page dépendront du volume qui couvre le cycle temporal du jour (Avent, Noël, Épiphanie, Septuagésime, Carême, temps pascal ou après la Pentecôte). La page nommera le volume à prendre. La même partie de l'office peut se trouver à une page différente dans chaque volume.
+de: Wenn eine gedruckte Ausgabe hinzukommt, hängen die Seitenzahlen davon ab, welcher Band den Zeitkreis des Tages umfasst (Advent, Weihnachten, Epiphanie, Septuagesima, Fastenzeit, Osterzeit oder nach Pfingsten). Die Seite nennt den Band, den man zur Hand nimmt. Derselbe Teil des Offiziums kann in jedem Band auf einer anderen Seite stehen.
+
+[ui.office]
+en: Open this day in the office
+es: Abrir este día en el oficio
+fr: Ouvrir ce jour dans l'office
+de: Diesen Tag im Offizium öffnen
+
+[ui.why]
+en: What is celebrated, and why
+es: Qué se celebra, y por qué
+fr: Ce qui est célébré, et pourquoi
+de: Was gefeiert wird, und warum
+
+[ui.ribbons]
+en: Ribbons
+es: Cintas
+fr: Signets
+de: Bänder
+la: Signacula
+
+[ui.shape]
+en: Shape of this office
+es: Forma de este oficio
+fr: Forme de cet office
+de: Gestalt dieses Offiziums
+
+[ui.hours]
+en: Hour by hour
+es: Hora por hora
+fr: Heure par heure
+de: Hore für Hore
+
+[ui.quote_en]
+en: English, from the project text of the 1960 rubrics
+es: Inglés, según el texto del proyecto de las rúbricas de 1960
+fr: Anglais, d'après le texte du projet des rubriques de 1960
+de: Englisch, nach dem Projekttext der Rubriken von 1960
+
+[ui.quote_la]
+en: Latin, AAS 52 (1960)
+es: Latín, AAS 52 (1960)
+fr: Latin, AAS 52 (1960)
+de: Latein, AAS 52 (1960)
+la: Latine, AAS 52 (1960)
+
+[ui.en_damaged]
+en: The project English of this article is damaged in places. It is quoted as the file has it. The Latin beside it is the AAS text.
+es: El inglés del proyecto en este artículo está dañado en algunos lugares. Se cita tal como está en el archivo. El latín junto a él es el texto de AAS.
+fr: L'anglais du projet pour cet article est abîmé par endroits. Il est cité tel que le fichier le donne. Le latin à côté est le texte des AAS.
+de: Das englische Projekt dieses Artikels ist stellenweise beschädigt. Es wird so zitiert, wie die Datei es hat. Das Latein daneben ist der AAS-Text.
+
+[ui.engine]
+en: Resolved by the office engine, not by a second set of rubrics.
+es: Resuelto por el motor del oficio, no por un segundo cuerpo de rúbricas.
+fr: Résolu par le moteur de l'office, non par un second corps de rubriques.
+de: Vom Offiziumsrechner ermittelt, nicht durch ein zweites Rubrikenwerk.
+
+[ui.page]
+en: p.
+es: p.
+fr: p.
+de: S.
+la: p.
+
+[ui.hold]
+en: Hold {label}.
+es: Tenga a mano {label}.
+fr: Prenez {label}.
+de: Nehmen Sie {label} zur Hand.
+
+[ui.no_volume]
+en: This edition has no volume covering {season}.
+es: Esta edición no tiene un volumen que cubra {season}.
+fr: Cette édition n'a pas de volume qui couvre {season}.
+de: Diese Ausgabe hat keinen Band für {season}.
+
+[ui.unused]
+en: Not used for this office.
+es: No se usa en este oficio.
+fr: Non employé pour cet office.
+de: Für dieses Offizium nicht gebraucht.
+
+[ui.open]
+en: Open {file}
+es: Abrir {file}
+fr: Ouvrir {file}
+de: {file} aufschlagen
+
+[ui.commem_file]
+en: Commemorated from {file}
+es: Conmemoración desde {file}
+fr: Commémoré depuis {file}
+de: Kommemoriert aus {file}
+
+[ui.lessons]
+en: Lessons at Matins
+es: Lecciones de Maitines
+fr: Leçons des matines
+de: Lesungen der Matutin
+la: Lectiones ad Matutinum
+
+[ui.col_n]
+en: Lesson
+es: Lección
+fr: Leçon
+de: Lesung
+la: Lectio
+
+[ui.col_nocturn]
+en: Nocturn
+es: Nocturno
+fr: Nocturne
+de: Nokturn
+la: Nocturnus
+
+[ui.col_kind]
+en: Kind
+es: Clase
+fr: Sorte
+de: Art
+la: Genus
+
+[ui.col_source]
+en: Taken from
+es: Tomada de
+fr: Prise de
+de: Genommen aus
+
+[ui.col_incipit]
+en: Begins
+es: Comienza
+fr: Commence
+de: Anfang
+
+[ui.not1960]
+en: These quotations are the 1960 Code. The calendar you chose is not a 1960 calendar, so the Code may not be the law of that office. The structure below is still what the engine resolved.
+es: Estas citas son el Código de 1960. El calendario elegido no es un calendario de 1960, de modo que el Código puede no ser la ley de ese oficio. La estructura de abajo es, con todo, la que resolvió el motor.
+fr: Ces citations sont le Code de 1960. Le calendrier choisi n'est pas un calendrier de 1960, et le Code peut ne pas être la loi de cet office. La structure ci-dessous est pourtant celle que le moteur a résolue.
+de: Diese Zitate sind der Codex von 1960. Der gewählte Kalender ist kein Kalender von 1960, und der Codex muss nicht das Recht dieses Offiziums sein. Die Gliederung unten ist dennoch die, welche der Rechner ermittelt hat.
+
+[ui.scheme]
+en: scheme {n}
+es: esquema {n}
+fr: schéma {n}
+de: Schema {n}
+
+[ui.sunday_psalms]
+en: Sunday psalms
+es: Salmos del domingo
+fr: Psaumes du dimanche
+de: Sonntagpsalmen
+la: Psalmi de dominica
+
+[ui.weekday_psalms]
+en: Weekday psalms
+es: Salmos de la feria
+fr: Psaumes du jour de la semaine
+de: Psalmen des Wochentags
+la: Psalmi de feria
+
+[ui.vespers_1]
+en: First Vespers
+es: Primeras vísperas
+fr: Premières vêpres
+de: Erste Vesper
+la: I Vesperae
+
+[ui.vespers_2]
+en: Second Vespers
+es: Segundas vísperas
+fr: Secondes vêpres
+de: Zweite Vesper
+la: II Vesperae
+
+[ui.vespers_day]
+en: Vespers of the day
+es: Vísperas del día
+fr: Vêpres du jour
+de: Vesper des Tages
+
+[ui.rubrics_general]
+en: General Rubrics, n. {n}
+es: Rúbricas generales, n. {n}
+fr: Rubriques générales, n. {n}
+de: Allgemeine Rubriken, Nr. {n}
+la: Rubricae generales, n. {n}
+
+[ui.rubrics_breviary]
+en: Breviary rubrics, n. {n}
+es: Rúbricas del breviario, n. {n}
+fr: Rubriques du bréviaire, n. {n}
+de: Brevier-Rubriken, Nr. {n}
+la: Rubricae generales Breviarii, n. {n}
+
+[ui.psalter_detail]
+en: {which}, {scheme}
+es: {which}, {scheme}
+fr: {which}, {scheme}
+de: {which}, {scheme}
+
+[sec.psalterium]
+en: Psalter
+es: Salterio
+fr: Psautier
+de: Psalter
+la: Psalterium
+
+[sec.tempora]
+en: Proper of the Season
+es: Propio del Tiempo
+fr: Propre du Temps
+de: Eigen der Zeit
+la: Proprium de Tempore
+
+[sec.sancti]
+en: Proper of Saints
+es: Propio de los Santos
+fr: Propre des Saints
+de: Eigen der Heiligen
+la: Proprium Sanctorum
+
+[sec.commune]
+en: Common of Saints
+es: Común de los Santos
+fr: Commun des Saints
+de: Commune der Heiligen
+la: Commune Sanctorum
+
+[sec.ordinarium]
+en: Ordinary
+es: Ordinario
+fr: Ordinaire
+de: Ordinarium
+la: Ordinarium
+
+[hora.Matutinum]
+en: Matins
+es: Maitines
+fr: Matines
+de: Matutin
+la: Matutinum
+
+[hora.Laudes]
+en: Lauds
+es: Laudes
+fr: Laudes
+de: Laudes
+la: Laudes
+
+[hora.Prima]
+en: Prime
+es: Prima
+fr: Prime
+de: Prim
+la: Prima
+
+[hora.Tertia]
+en: Terce
+es: Tercia
+fr: Tierce
+de: Terz
+la: Tertia
+
+[hora.Sexta]
+en: Sext
+es: Sexta
+fr: Sexte
+de: Sext
+la: Sexta
+
+[hora.Nona]
+en: None
+es: Nona
+fr: None
+de: Non
+la: Nona
+
+[hora.Vespera]
+en: Vespers
+es: Vísperas
+fr: Vêpres
+de: Vesper
+la: Vesperae
+
+[hora.Completorium]
+en: Compline
+es: Completas
+fr: Complies
+de: Komplet
+la: Completorium
+
+[month.1]
+en: January
+es: enero
+fr: janvier
+de: Januar
+la: Ianuarius
+
+[month.2]
+en: February
+es: febrero
+fr: février
+de: Februar
+la: Februarius
+
+[month.3]
+en: March
+es: marzo
+fr: mars
+de: März
+la: Martius
+
+[month.4]
+en: April
+es: abril
+fr: avril
+de: April
+la: Aprilis
+
+[month.5]
+en: May
+es: mayo
+fr: mai
+de: Mai
+la: Maius
+
+[month.6]
+en: June
+es: junio
+fr: juin
+de: Juni
+la: Iunius
+
+[month.7]
+en: July
+es: julio
+fr: juillet
+de: Juli
+la: Iulius
+
+[month.8]
+en: August
+es: agosto
+fr: août
+de: August
+la: Augustus
+
+[month.9]
+en: September
+es: septiembre
+fr: septembre
+de: September
+la: September
+
+[month.10]
+en: October
+es: octubre
+fr: octobre
+de: Oktober
+la: October
+
+[month.11]
+en: November
+es: noviembre
+fr: novembre
+de: November
+la: November
+
+[month.12]
+en: December
+es: diciembre
+fr: décembre
+de: Dezember
+la: December
+
+[dow.0]
+en: Sunday
+es: domingo
+fr: dimanche
+de: Sonntag
+la: Dominica
+
+[dow.1]
+en: Monday
+es: lunes
+fr: lundi
+de: Montag
+la: Feria II
+
+[dow.2]
+en: Tuesday
+es: martes
+fr: mardi
+de: Dienstag
+la: Feria III
+
+[dow.3]
+en: Wednesday
+es: miércoles
+fr: mercredi
+de: Mittwoch
+la: Feria IV
+
+[dow.4]
+en: Thursday
+es: jueves
+fr: jeudi
+de: Donnerstag
+la: Feria V
+
+[dow.5]
+en: Friday
+es: viernes
+fr: vendredi
+de: Freitag
+la: Feria VI
+
+[dow.6]
+en: Saturday
+es: sábado
+fr: samedi
+de: Samstag
+la: Sabbato
+
+[kind.festive]
+en: festive Office
+es: oficio festivo
+fr: office festif
+de: Festoffizium
+la: Officium festivum
+
+[kind.semifestive]
+en: semifestive Office
+es: oficio semifestivo
+fr: office semi-festif
+de: halbfestliches Offizium
+la: Officium semifestivum
+
+[kind.ordinary]
+en: ordinary Office
+es: oficio ordinario
+fr: office ordinaire
+de: gewöhnliches Offizium
+la: Officium ordinarium
+
+[kind.ferial]
+en: ferial Office
+es: oficio ferial
+fr: office férial
+de: Ferialoffizium
+la: Officium feriale
+
+[kind.sunday]
+en: Sunday Office
+es: oficio dominical
+fr: office du dimanche
+de: Sonntagsoffizium
+la: Officium dominicale
+
+[kind.sunday_special]
+en: Sunday Office of Easter or Pentecost
+es: oficio dominical de Pascua o Pentecostés
+fr: office du dimanche de Pâques ou de la Pentecôte
+de: Sonntagsoffizium von Ostern oder Pfingsten
+la: Officium dominicae Paschatis aut Pentecostes
+
+[part.invitatory]
+en: Invitatory
+es: Invitatorio
+fr: Invitatoire
+de: Invitatorium
+la: Invitatorium
+
+[part.hymn]
+en: Hymn
+es: Himno
+fr: Hymne
+de: Hymnus
+la: Hymnus
+
+[part.antiphons]
+en: Antiphons
+es: Antífonas
+fr: Antiennes
+de: Antiphonen
+la: Antiphonae
+
+[part.psalms]
+en: Psalms
+es: Salmos
+fr: Psaumes
+de: Psalmen
+la: Psalmi
+
+[part.verse]
+en: Verse
+es: Versículo
+fr: Verset
+de: Vers
+la: Versus
+
+[part.lessons]
+en: Lessons
+es: Lecciones
+fr: Leçons
+de: Lesungen
+la: Lectiones
+
+[part.capitulum]
+en: Chapter
+es: Capítulo
+fr: Chapitre
+de: Kapitel
+la: Capitulum
+
+[part.collect]
+en: Collect
+es: Oración
+fr: Oraison
+de: Oration
+la: Oratio
+
+[part.commemoration]
+en: Commemoration
+es: Conmemoración
+fr: Commémoraison
+de: Kommemoration
+la: Commemoratio
+
+[part.preces]
+en: Preces
+es: Preces
+fr: Prières
+de: Preces
+la: Preces
+
+[part.lectio_brevis]
+en: Short lesson
+es: Lección breve
+fr: Leçon brève
+de: Kurzlesung
+la: Lectio brevis
+
+[part.te_deum]
+en: Te Deum
+es: Te Deum
+fr: Te Deum
+de: Te Deum
+la: Te Deum
+
+[part.athanasian]
+en: Athanasian Creed
+es: Símbolo Atanasiano
+fr: Symbole d'Athanase
+de: Athanasianisches Glaubensbekenntnis
+la: Symbolum Athanasianum
+
+[lk.scripture]
+en: Scripture
+es: Escritura
+fr: Écriture
+de: Schrift
+la: de Scriptura
+
+[lk.legend]
+en: Life of the saint
+es: Vida del santo
+fr: Vie du saint
+de: Leben des Heiligen
+la: de vita Sancti
+
+[lk.homily]
+en: Homily on the gospel
+es: Homilía del evangelio
+fr: Homélie sur l'évangile
+de: Homilie über das Evangelium
+la: de homilia in Evangelium
+
+[lk.contracted]
+en: Contracted lesson
+es: Lección contracta
+fr: Leçon contractée
+de: Zusammengezogene Lesung
+la: lectio contracta
+
+[lk.abridged]
+en: abridged lesson of the saint
+es: lección abreviada del santo
+fr: leçon abrégée du saint
+de: gekürzte Lesung des Heiligen
+
+[lk.commune]
+en: From the Common
+es: Del Común
+fr: Du Commun
+de: Aus dem Commune
+la: de Communi
+
+[season.Adv]
+en: Advent
+es: Adviento
+fr: Avent
+de: Advent
+la: Adventus
+
+[season.Nat]
+en: Christmas
+es: Navidad
+fr: Noël
+de: Weihnachten
+la: Nativitas
+
+[season.Epi]
+en: Epiphany
+es: Epifanía
+fr: Épiphanie
+de: Epiphanie
+la: Epiphania
+
+[season.Quadp]
+en: Septuagesima
+es: Septuagésima
+fr: Septuagésime
+de: Septuagesima
+la: Septuagesima
+
+[season.Quad]
+en: Lent
+es: Cuaresma
+fr: Carême
+de: Fastenzeit
+la: Quadragesima
+
+[season.Pasc]
+en: Paschaltide
+es: Tiempo pascual
+fr: Temps pascal
+de: Osterzeit
+la: Tempus paschale
+
+[season.Pent]
+en: after Pentecost
+es: después de Pentecostés
+fr: après la Pentecôte
+de: nach Pfingsten
+la: post Pentecosten
+
+[plain.why.elevated]
+en: On the universal calendar ({gversion}) the office is {goffice} ({grank}). {gfeast} is only commemorated: a 3rd-class Lenten feria is preferred to a 3rd-class feast. On this calendar ({calendar}) the feast is {lrank}, so the {kind} is said. The feria is commemorated.
+es: En el calendario universal ({gversion}) el oficio es {goffice} ({grank}). {gfeast} solo se conmemora: una feria de Cuaresma de III clase se prefiere a una fiesta de III clase. En este calendario ({calendar}) la fiesta es {lrank}, y por eso se reza el {kind}. La feria se conmemora.
+fr: Dans le calendrier universel ({gversion}) l'office est {goffice} ({grank}). {gfeast} n'est que commémoré : une férie de Carême de IIIe classe l'emporte sur une fête de IIIe classe. Dans ce calendrier ({calendar}) la fête est {lrank}, et l'on dit donc l'{kind}. La férie est commémorée.
+de: Im allgemeinen Kalender ({gversion}) ist das Offizium {goffice} ({grank}). {gfeast} wird nur kommemoriert: eine Fastenferie III. Klasse geht einem Fest III. Klasse vor. In diesem Kalender ({calendar}) ist das Fest {lrank}; deshalb wird das {kind} gebetet. Die Ferie wird kommemoriert.
+
+[plain.why.rankup]
+en: On the universal calendar ({gversion}) this feast is {grank}. On this calendar ({calendar}) it is {lrank}, so the {kind} follows the higher rank.
+es: En el calendario universal ({gversion}) esta fiesta es {grank}. En este calendario ({calendar}) es {lrank}, y el {kind} sigue el grado más alto.
+fr: Dans le calendrier universel ({gversion}) cette fête est {grank}. Dans ce calendrier ({calendar}) elle est {lrank}, et l'{kind} suit le rang le plus élevé.
+de: Im allgemeinen Kalender ({gversion}) ist dieses Fest {grank}. In diesem Kalender ({calendar}) ist es {lrank}; das {kind} folgt dem höheren Grad.
+
+[plain.why.same]
+en: This calendar celebrates the same office as {gversion}: {office}, {rank}.
+es: Este calendario celebra el mismo oficio que {gversion}: {office}, {rank}.
+fr: Ce calendrier célèbre le même office que {gversion} : {office}, {rank}.
+de: Dieser Kalender feiert dasselbe Offizium wie {gversion}: {office}, {rank}.
+
+[plain.why.other]
+en: This calendar ({calendar}) celebrates {loffice} ({lrank}). {gversion} celebrates {goffice} ({grank}).
+es: Este calendario ({calendar}) celebra {loffice} ({lrank}). {gversion} celebra {goffice} ({grank}).
+fr: Ce calendrier ({calendar}) célèbre {loffice} ({lrank}). {gversion} célèbre {goffice} ({grank}).
+de: Dieser Kalender ({calendar}) feiert {loffice} ({lrank}). {gversion} feiert {goffice} ({grank}).
+
+[plain.matins.nine]
+en: Matins has three nocturns and nine lessons.
+es: Maitines tiene tres nocturnos y nueve lecciones.
+fr: Les matines ont trois nocturnes et neuf leçons.
+de: Die Matutin hat drei Nokturnen und neun Lesungen.
+la: Ad Matutinum tres nocturni et novem lectiones.
+
+[plain.matins.three]
+en: Matins has one nocturn and three lessons.
+es: Maitines tiene un nocturno y tres lecciones.
+fr: Les matines ont un nocturne et trois leçons.
+de: Die Matutin hat eine Nokturn und drei Lesungen.
+la: Ad Matutinum unus nocturnus et tres lectiones.
+
+[plain.matins.easter]
+en: Matins has one nocturn of three psalms and three lessons.
+es: Maitines tiene un nocturno de tres salmos y tres lecciones.
+fr: Les matines ont un nocturne de trois psaumes et trois leçons.
+de: Die Matutin hat eine Nokturn mit drei Psalmen und drei Lesungen.
+la: Ad Matutinum unus nocturnus trium psalmorum et trium lectionum.
+
+[plain.lauds.festive]
+en: At Lauds the antiphons are of the feast and the psalms are the Sunday psalms ({scheme}).
+es: En Laudes las antífonas son de la fiesta y los salmos son los del domingo ({scheme}).
+fr: Aux laudes les antiennes sont de la fête et les psaumes sont ceux du dimanche ({scheme}).
+de: In den Laudes sind die Antiphonen vom Fest und die Psalmen die Sonntagpsalmen ({scheme}).
+
+[plain.lauds.weekday]
+en: At Lauds the antiphons and psalms are from the weekday Psalter ({scheme}).
+es: En Laudes las antífonas y los salmos son del salterio ferial ({scheme}).
+fr: Aux laudes les antiennes et les psaumes sont du psautier du jour ({scheme}).
+de: In den Laudes sind Antiphonen und Psalmen aus dem Wochentagspsalter ({scheme}).
+
+[plain.prime]
+en: The short lesson at Prime is of the season, as in the Ordinary.
+es: La lección breve de Prima es del tiempo, como en el Ordinario.
+fr: La leçon brève de prime est du temps, comme à l'ordinaire.
+de: Die Kurzlesung in der Prim ist vom Zeitkreis, wie im Ordinarium.
+
+[plain.minor.festive]
+en: At Terce, Sext and None the psalms are the Sunday psalms, and the antiphons are taken from Lauds.
+es: En Tercia, Sexta y Nona los salmos son los del domingo, y las antífonas se toman de Laudes.
+fr: A tierce, sexte et none les psaumes sont ceux du dimanche, et les antiennes sont prises aux laudes.
+de: In Terz, Sext und Non sind die Psalmen die Sonntagpsalmen, und die Antiphonen werden aus den Laudes genommen.
+
+[plain.minor.weekday]
+en: At Terce, Sext and None the antiphons and psalms are from the weekday Psalter.
+es: En Tercia, Sexta y Nona las antífonas y los salmos son del salterio ferial.
+fr: A tierce, sexte et none les antiennes et les psaumes sont du psautier du jour.
+de: In Terz, Sext und Non sind Antiphonen und Psalmen aus dem Wochentagspsalter.
+
+[plain.vespers]
+en: These are {which}. What is proper is marked on the lines below; the rest is the Ordinary or the Psalter.
+es: Son las {which}. Lo propio está marcado en las líneas de abajo; lo demás es el Ordinario o el Salterio.
+fr: Ce sont les {which}. Ce qui est propre est marqué aux lignes ci-dessous ; le reste est l'ordinaire ou le psautier.
+de: Dies ist die {which}. Was eigen ist, steht in den Zeilen unten; das Übrige ist das Ordinarium oder der Psalter.
+
+[plain.compline.sunday]
+en: Compline is of Sunday.
+es: Completas es del domingo.
+fr: Les complies sont du dimanche.
+de: Die Komplet ist vom Sonntag.
+la: Completorium de dominica.
+
+[plain.compline.weekday]
+en: Compline is of the weekday.
+es: Completas es de la feria.
+fr: Les complies sont du jour de la semaine.
+de: Die Komplet ist vom Wochentag.
+la: Completorium de feria.
+
+[plain.preces.yes]
+en: The preces are said at this hour.
+es: Las preces se dicen en esta hora.
+fr: Les prières se disent à cette heure.
+de: Die Preces werden in dieser Hore gebetet.
+
+[plain.preces.no]
+en: The preces are not said at this hour.
+es: Las preces no se dicen en esta hora.
+fr: Les prières ne se disent pas à cette heure.
+de: Die Preces werden in dieser Hore nicht gebetet.
+
+[plain.commemoration]
+en: Commemorated: {name}. A commemoration is the antiphon, verse and collect of that office, said after the collect of the day. It is not added as a further lesson at Matins.
+es: Conmemoración: {name}. Una conmemoración es la antífona, el versículo y la oración de ese oficio, después de la oración del día. No se añade como una lección más en Maitines.
+fr: Commémoraison : {name}. Une commémoraison est l'antienne, le verset et l'oraison de cet office, après l'oraison du jour. Elle n'est pas ajoutée comme leçon supplémentaire aux matines.
+de: Kommemoration: {name}. Eine Kommemoration ist die Antiphon, der Vers und die Oration jenes Offiziums, nach der Oration des Tages. Sie wird nicht als weitere Lesung in der Matutin angefügt.
+
+[plain.antiphons]
+en: The antiphons are said in full before and after the psalms.
+es: Las antífonas se dicen enteras antes y después de los salmos.
+fr: Les antiennes se disent en entier avant et après les psaumes.
+de: Die Antiphonen werden vor und nach den Psalmen ganz gebetet.
+
+[plain.collect]
+en: The collect stands at the end of the hour. At Prime and at Compline it is the collect of the Ordinary, except on the days the rubrics name.
+es: La oración está al fin de la hora. En Prima y en Completas es la oración del Ordinario, salvo los días que nombran las rúbricas.
+fr: L'oraison est à la fin de l'heure. A prime et à complies c'est l'oraison de l'ordinaire, sauf les jours que les rubriques nomment.
+de: Die Oration steht am Ende der Hore. In der Prim und in der Komplet ist es die Oration des Ordinariums, außer an den Tagen, welche die Rubriken nennen.
+
+[plain.tedeum.yes]
+en: The Te Deum is said after the last lesson, instead of a last responsory.
+es: El Te Deum se dice después de la última lección, en lugar del último responsorio.
+fr: Le Te Deum se dit après la dernière leçon, à la place du dernier répons.
+de: Das Te Deum wird nach der letzten Lesung gebetet, anstelle des letzten Responsoriums.
+la: Hymnus Te Deum dicitur post ultimam lectionem.
+
+[plain.tedeum.no]
+en: The Te Deum is not said. A responsory follows the last lesson.
+es: El Te Deum no se dice. Un responsorio sigue a la última lección.
+fr: Le Te Deum ne se dit pas. Un répons suit la dernière leçon.
+de: Das Te Deum wird nicht gebetet. Ein Responsorium folgt auf die letzte Lesung.
+
+[plain.creed.no]
+en: The Athanasian Creed is not said at Prime. It is said only on Trinity Sunday.
+es: El Símbolo Atanasiano no se dice en Prima. Solo se dice el domingo de la Santísima Trinidad.
+fr: Le Symbole d'Athanase ne se dit pas à prime. Il se dit seulement le dimanche de la Très Sainte Trinité.
+de: Das Athanasianische Glaubensbekenntnis wird in der Prim nicht gebetet. Es wird nur am Dreifaltigkeitssonntag gebetet.
+
+[plain.creed.yes]
+en: The Athanasian Creed is said at Prime, after the psalms and before the antiphon is repeated.
+es: El Símbolo Atanasiano se dice en Prima, después de los salmos y antes de repetir la antífona.
+fr: Le Symbole d'Athanase se dit à prime, après les psaumes et avant de répéter l'antienne.
+de: Das Athanasianische Glaubensbekenntnis wird in der Prim gebetet, nach den Psalmen und bevor die Antiphon wiederholt wird.
+
+[plain.first.yes]
+en: First Vespers are said on the evening before.
+es: Las primeras vísperas se dicen la víspera por la tarde.
+fr: Les premières vêpres se disent la veille au soir.
+de: Die erste Vesper wird am Vorabend gebetet.
+la: I Vesperae dicuntur vespere praecedenti.
+
+[plain.first.no]
+en: This office does not, of itself, begin the evening before.
+es: Este oficio, de suyo, no empieza la víspera por la tarde.
+fr: Cet office ne commence pas, de soi, la veille au soir.
+de: Dieses Offizium beginnt von sich aus nicht am Vorabend.
+
+[plain.lessons.festive]
+en: In a festive or semifestive Office the first nocturn is Scripture (proper or from the Common), the second is the life of the saint or the Common, and the third is the homily on the gospel.
+es: En un oficio festivo o semifestivo el primer nocturno es Escritura (propia o del Común), el segundo es la vida del santo o el Común, y el tercero es la homilía del evangelio.
+fr: Dans un office festif ou semi-festif le premier nocturne est l'Écriture (propre ou du commun), le second est la vie du saint ou le commun, et le troisième est l'homélie sur l'évangile.
+de: In einem festlichen oder halbfestlichen Offizium ist die erste Nokturn Schrift (eigen oder aus dem Commune), die zweite das Leben des Heiligen oder das Commune, und die dritte die Homilie über das Evangelium.
+
+[plain.lessons.sunday]
+en: On a Sunday the first two lessons are the occurring Scripture, joined as the rubrics say, and the third is the homily on the gospel.
+es: En domingo las dos primeras lecciones son la Escritura del día, unidas como dicen las rúbricas, y la tercera es la homilía del evangelio.
+fr: Le dimanche les deux premières leçons sont l'Écriture occurrente, réunies comme le disent les rubriques, et la troisième est l'homélie sur l'évangile.
+de: Am Sonntag sind die ersten zwei Lesungen die Schrift des Tages, verbunden wie die Rubriken es sagen, und die dritte ist die Homilie über das Evangelium.
+
+[plain.lessons.ordinary]
+en: In an ordinary Office the first two lessons are Scripture and the third is of the feast, often the contracted lesson.
+es: En un oficio ordinario las dos primeras lecciones son Escritura y la tercera es de la fiesta, a menudo la lección contracta.
+fr: Dans un office ordinaire les deux premières leçons sont l'Écriture et la troisième est de la fête, souvent la leçon contractée.
+de: In einem gewöhnlichen Offizium sind die ersten zwei Lesungen Schrift und die dritte vom Fest, oft die zusammengezogene Lesung.
+
+[plain.lessons.ferial]
+en: On a feria with a homily, the three lessons are that homily. On a feria without one, they are the occurring Scripture.
+es: En una feria con homilía, las tres lecciones son esa homilía. En una feria sin ella, son la Escritura del día.
+fr: Une férie avec homélie a pour trois leçons cette homélie. Une férie sans homélie a l'Écriture occurrente.
+de: An einer Ferie mit Homilie sind die drei Lesungen diese Homilie. An einer Ferie ohne Homilie sind sie die Schrift des Tages.
+
+[ui.skeleton]
+en: Skeleton
+es: Esquema
+fr: Schéma
+de: Gerüst
+la: Schema
+
+[sk.from]
+en: from the {place}{file}
+es: del {place}{file}
+fr: source : {place}{file}
+de: aus dem {place}{file}
+la: e {place}{file}
+
+[sk.from_lauds]
+en: from Lauds —
+es: de Laudes —
+fr: des laudes —
+de: aus den Laudes —
+la: e Laudibus —
+
+[sk.place.ordinary]
+en: Ordinary
+es: Ordinario
+fr: ordinaire
+de: Ordinarium
+la: Ordinario
+
+[sk.place.psalter]
+en: Psalter
+es: Salterio
+fr: psautier
+de: Psalter
+la: Psalterio
+
+[sk.place.tempora]
+en: Proper of the Season
+es: Propio del Tiempo
+fr: propre du temps
+de: Proprium de Tempore
+la: Proprio de Tempore
+
+[sk.place.sancti]
+en: Proper of Saints
+es: Propio de los Santos
+fr: propre des saints
+de: Proprium Sanctorum
+la: Proprio Sanctorum
+
+[sk.place.commune]
+en: Common
+es: Común
+fr: commun
+de: Commune
+la: Communi
+
+[sk.place.local]
+en: particular proper
+es: propio particular
+fr: propre particulier
+de: besonderen Proprium
+la: Proprio particulari
+
+[sk.place.unresolved]
+en: Ordinary or the Psalter
+es: Ordinario o el Salterio
+fr: ordinaire ou le psautier
+de: Ordinarium oder Psalter
+la: Ordinario vel Psalterio
+
+[sk.book.in]
+en: in the printed breviary
+es: en el breviario impreso
+fr: dans le bréviaire imprimé
+de: im gedruckten Brevier
+la: in Breviario impresso
+
+[sk.book.out]
+en: not in the standard printed breviary — print this proper separately
+es: no está en el breviario impreso habitual — imprima este propio aparte
+fr: pas dans le bréviaire imprimé ordinaire — imprimer ce propre à part
+de: nicht im gewöhnlichen gedruckten Brevier — dieses Proprium gesondert drucken
+
+[sk.nocturn]
+en: Nocturn {n}
+es: Nocturno {n}
+fr: Nocturne {n}
+de: Nokturn {n}
+la: Nocturnus {n}
+
+[sk.lessons]
+en: Lessons {a}–{b}: {kind}
+es: Lecciones {a}–{b}: {kind}
+fr: Leçons {a}–{b} : {kind}
+de: Lesungen {a}–{b}: {kind}
+la: Lectiones {a}–{b}: {kind}
+
+[sk.lesson]
+en: Lesson {n}: {kind}
+es: Lección {n}: {kind}
+fr: Leçon {n} : {kind}
+de: Lesung {n}: {kind}
+la: Lectio {n}: {kind}
+
+[sk.lessons_plain]
+en: Lessons {a}–{b}
+es: Lecciones {a}–{b}
+fr: Leçons {a}–{b}
+de: Lesungen {a}–{b}
+la: Lectiones {a}–{b}
+
+[sk.slot_order]
+en: The printed book does not number the slot of the abridged lesson. The order used here is the one above: the abridged lesson, then two lessons from the Common.
+es: El breviario impreso no numera el lugar de la lección abreviada. El orden usado aquí es el de arriba: la lección abreviada y después dos lecciones del Común.
+fr: Le bréviaire imprimé ne numérote pas la place de la leçon abrégée. L'ordre suivi ici est celui ci-dessus : la leçon abrégée, puis deux leçons du commun.
+de: Das gedruckte Brevier nummeriert die Stelle der gekürzten Lesung nicht. Die hier gebrauchte Ordnung ist die obige: die gekürzte Lesung, danach zwei Lesungen aus dem Commune.
+
+[sk.engine_life]
+en: The three older life lessons this site reads ({file}, lessons 4–6)
+es: Las tres lecciones antiguas de la vida que este sitio lee ({file}, lecciones 4–6)
+fr: Les trois anciennes leçons de la vie que ce site lit ({file}, leçons 4–6)
+de: Die drei älteren Lebenslesungen, die diese Seite liest ({file}, Lesungen 4–6)
+
+[sk.table_note]
+en: The table is what this site reads. The skeleton above is where a printed 1960 breviary has the lessons.
+es: La tabla es lo que este sitio lee. El esquema de arriba dice dónde tiene las lecciones un breviario impreso de 1960.
+fr: Le tableau est ce que ce site lit. Le schéma ci-dessus dit où un bréviaire imprimé de 1960 a les leçons.
+de: Die Tabelle ist, was diese Seite liest. Das Gerüst oben sagt, wo ein gedrucktes Brevier von 1960 die Lesungen hat.
+
+[sk.ants_psalms]
+en: Antiphons and psalms
+es: Antífonas y salmos
+fr: Antiennes et psaumes
+de: Antiphonen und Psalmen
+la: Antiphonae et psalmi
+
+[sk.said]
+en: said
+es: se dicen
+fr: se disent
+de: werden gebetet
+la: dicuntur
+
+[sk.omitted]
+en: omitted
+es: se omiten
+fr: s'omettent
+de: entfallen
+la: omittuntur
+
+[ui.how]
+en: How to pray
+es: Cómo rezar
+fr: Comment prier
+de: Wie man betet
+
+[ui.mode.book]
+en: Breviary only
+es: Solo el breviario
+fr: Bréviaire seul
+de: Nur das Brevier
+la: Breviarium tantum
+
+[ui.mode.booklet]
+en: Breviary + propers booklet
+es: Breviario y folleto de propios
+fr: Bréviaire et livret des propres
+de: Brevier und Proprienheft
+la: Breviarium et libellus propriorum
+
+[ui.mode.book_lead]
+en: How to pray this office from the printed 1960 breviary alone.
+es: Cómo rezar este oficio solo con el breviario impreso de 1960.
+fr: Comment prier cet office avec le seul bréviaire imprimé de 1960.
+de: Wie man dieses Offizium allein aus dem gedruckten Brevier von 1960 betet.
+
+[ui.mode.booklet_lead]
+en: How to pray this office with the propers booklet inserted.
+es: Cómo rezar este oficio con el folleto de propios intercalado.
+fr: Comment prier cet office avec le livret des propres inséré.
+de: Wie man dieses Offizium mit eingelegtem Proprienheft betet.
+
+[sec.booklet]
+en: Propers booklet
+es: Folleto de propios
+fr: Livret des propres
+de: Proprienheft
+la: Libellus propriorum
+
+[sk.place.booklet]
+en: propers booklet
+es: folleto de propios
+fr: livret des propres
+de: Proprienheft
+la: libello propriorum
+
+[sk.booklet.soon]
+en: Booklet coming soon.
+es: Folleto próximamente.
+fr: Livret à venir.
+de: Proprienheft folgt.
+
+[sk.booklet.link]
+en: Open the propers booklet
+es: Abrir el folleto de propios
+fr: Ouvrir le livret des propres
+de: Proprienheft öffnen
+
+[sk.booklet.insert]
+en: Insert the propers booklet here ({file}).
+es: Intercale aquí el folleto de propios ({file}).
+fr: Insérez ici le livret des propres ({file}).
+de: Legen Sie hier das Proprienheft ein ({file}).
+
+[sk.from_common]
+en: This proper is not in the printed breviary. Read it from the Common.
+es: Este propio no está en el breviario impreso. Léalo en el Común.
+fr: Ce propre n'est pas dans le bréviaire imprimé. Lisez-le au commun.
+de: Dieses Proprium steht nicht im gedruckten Brevier. Lesen Sie es aus dem Commune.
+
+[sk.table_book]
+en: The table is what this site reads. In the printed breviary, lesson 4 is the abridged life and lessons 5 and 6 are from the Common.
+es: La tabla es lo que este sitio lee. En el breviario impreso, la lección 4 es la vida abreviada y las lecciones 5 y 6 son del Común.
+fr: Le tableau est ce que ce site lit. Dans le bréviaire imprimé, la leçon 4 est la vie abrégée et les leçons 5 et 6 viennent du commun.
+de: Die Tabelle ist, was diese Seite liest. Im gedruckten Brevier ist Lesung 4 die gekürzte Lebenslesung und die Lesungen 5 und 6 sind aus dem Commune.
+
+[sk.table_booklet_life]
+en: The table is what this site reads. With the booklet, Nocturn II uses these three life lessons.
+es: La tabla es lo que este sitio lee. Con el folleto, el nocturno II usa estas tres lecciones de la vida.
+fr: Le tableau est ce que ce site lit. Avec le livret, le nocturne II emploie ces trois leçons de la vie.
+de: Die Tabelle ist, was diese Seite liest. Mit dem Heft gebraucht der II. Nokturn diese drei Lebenslesungen.
+
+[sk.table_book_common]
+en: The table is what this site reads. These lessons are not in the printed breviary. With the book alone they are read from the Common.
+es: La tabla es lo que este sitio lee. Estas lecciones no están en el breviario impreso. Solo con el libro se leen del Común.
+fr: Le tableau est ce que ce site lit. Ces leçons ne sont pas dans le bréviaire imprimé. Avec le livre seul, on les lit au commun.
+de: Die Tabelle ist, was diese Seite liest. Diese Lesungen stehen nicht im gedruckten Brevier. Allein mit dem Buch liest man sie aus dem Commune.
+
+[sk.table_booklet_proper]
+en: The table is what this site reads. With the booklet, the skeleton uses these proper lessons.
+es: La tabla es lo que este sitio lee. Con el folleto, el esquema usa estas lecciones propias.
+fr: Le tableau est ce que ce site lit. Avec le livret, le schéma emploie ces leçons propres.
+de: Die Tabelle ist, was diese Seite liest. Mit dem Heft gebraucht das Gerüst diese eigenen Lesungen.
+
+[plain.martyrology]
+en: In choir the Martyrology is read. Outside choir, reading it is laudabiliter (commendable): praiseworthy, but not required in order to satisfy the obligation. If it is omitted, continue with V. Pretiósa in conspéctu Dómini.
+es: En el coro se lee el Martirologio. Fuera del coro, leerlo es laudabiliter (laudable): digno de alabanza, pero no exigido para cumplir la obligación. Si se omite, se continúa con V. Pretiósa in conspéctu Dómini.
+fr: Au chœur on lit le martyrologe. Hors du chœur, le lire est laudabiliter (louable) : digne de louange, mais non exigé pour satisfaire à l'obligation. S'il est omis, on continue par V. Pretiósa in conspéctu Dómini.
+de: Im Chor wird das Martyrologium gelesen. Außerhalb des Chores ist das Lesen laudabiliter (lobenswert): lobenswert, aber nicht erforderlich, um der Pflicht zu genügen. Wird es ausgelassen, fährt man fort mit V. Pretiósa in conspéctu Dómini.
+la: In choro Martyrologium legitur. Extra chorum laudabiliter legitur: laudabile est, non vero ad obligationem implendam necessarium. Si omittitur, pergitur cum V. Pretiósa in conspéctu Dómini.
+
+[sk.martyrology]
+en: Martyrology — read in choir; outside choir, laudabiliter. If omitted, continue with V. Pretiósa in conspéctu Dómini.
+es: Martirologio — se lee en el coro; fuera del coro, laudabiliter. Si se omite, se continúa con V. Pretiósa in conspéctu Dómini.
+fr: Martyrologe — lu au chœur ; hors du chœur, laudabiliter. S'il est omis, on continue par V. Pretiósa in conspéctu Dómini.
+de: Martyrologium — im Chor gelesen; außerhalb des Chores laudabiliter. Wird es ausgelassen, weiter mit V. Pretiósa in conspéctu Dómini.
+la: Martyrologium — in choro legitur; extra chorum laudabiliter. Si omittitur, V. Pretiósa in conspéctu Dómini.
+
+[ui.martyrology.cite]
+en: Ordinarium Breviarii, ad Primam
+es: Ordinarium Breviarii, ad Primam
+fr: Ordinarium Breviarii, ad Primam
+de: Ordinarium Breviarii, ad Primam
+la: Ordinarium Breviarii, ad Primam
+
+[ui.martyrology.tr]
+en: Translation, not a quoted source: Then the Martyrology is read in choir, which is commendably done even outside choir.
+es: Traducción, no una fuente citada: Luego se lee el Martirologio en el coro, lo cual se hace también laudablemente fuera del coro.
+fr: Traduction, et non une source citée : Ensuite le martyrologe est lu au chœur, ce qui se fait aussi louablement hors du chœur.
+de: Übersetzung, keine zitierte Quelle: Danach wird das Martyrologium im Chor gelesen, was auch außerhalb des Chores lobenswert geschieht.
+
+[ui.resp.title]
+en: How to read a responsory
+es: Cómo se lee un responsorio
+fr: Comment lire un répons
+de: Wie man ein Responsorium liest
+
+[ui.resp.dessain]
+en: In the Dessain breviary every division is an asterisk (*), never a cross or any other mark. The second division is simply a second *.
+es: En el breviario Dessain cada división es un asterisco (*), nunca una cruz ni otra señal. La segunda división es simplemente un segundo *.
+fr: Dans le bréviaire Dessain chaque division est un astérisque (*), jamais une croix ni un autre signe. La deuxième division est simplement un deuxième *.
+de: Im Brevier von Dessain ist jede Abteilung ein Sternchen (*), nie ein Kreuz oder ein anderes Zeichen. Die zweite Abteilung ist einfach ein zweites *.
+
+[ui.resp.one]
+en: One asterisk. Say the whole responsory, then the verse, then repeat from the * to the verse.
+es: Un asterisco. Se dice todo el responsorio, luego el verso, y se repite desde el * hasta el verso.
+fr: Un astérisque. On dit tout le répons, puis le verset, puis on reprend depuis le * jusqu'au verset.
+de: Ein Sternchen. Man sagt das ganze Responsorium, dann den Vers, und wiederholt vom * bis zum Vers.
+
+[ui.resp.last]
+en: Last responsory of a nocturn. After that repetition, say Glória Patri, et Fílio, et Spirítui Sancto (without Sicut erat), then repeat from the * to the verse again.
+es: Último responsorio de un nocturno. Después de esa repetición se dice Glória Patri, et Fílio, et Spirítui Sancto (sin el Sicut erat), y se repite de nuevo desde el * hasta el verso.
+fr: Dernier répons d'un nocturne. Après cette reprise on dit Glória Patri, et Fílio, et Spirítui Sancto (sans le Sicut erat), puis on reprend encore depuis le * jusqu'au verset.
+de: Letztes Responsorium eines Nokturns. Nach jener Wiederholung sagt man Glória Patri, et Fílio, et Spirítui Sancto (ohne Sicut erat), und wiederholt noch einmal vom * bis zum Vers.
+
+[ui.resp.sicut]
+en: Rubricae Generales before 1960, tit. XIII n. 4: “dicitur Gloria Patri cum repetitione partis Responsorii, eo modo quo notatur in tertio Responsorio primae Dominicae de Adventu, nisi aliter in propriis locis signetur.” Tit. XXVII n. 2 says Gloria Patri with the repetition of part of the responsory at the end of the third, sixth and eighth, which is the rule at the end of the last responsory of each nocturn. The model is the third responsory of the first Sunday of Advent, Missus est Gabriel. Commentary, not the wording of n. 230: “without Sicut erat”. N. 230, “eadem ultima pars”, is partial support. The explicit omission is still to be checked in the Dessain breviary at that Advent responsory.
+es: Rúbricas generales anteriores a 1960, tít. XIII n. 4: “dicitur Gloria Patri cum repetitione partis Responsorii, eo modo quo notatur in tertio Responsorio primae Dominicae de Adventu, nisi aliter in propriis locis signetur.” El tít. XXVII n. 2 dice el Gloria Patri con la repetición de parte del responsorio al fin del tercero, sexto y octavo, que es la regla al fin del último responsorio de cada nocturno. El modelo es el tercer responsorio del primer domingo de Adviento, Missus est Gabriel. Comentario, no el texto del n. 230: “sin el Sicut erat”. El n. 230, “eadem ultima pars”, es un apoyo parcial. La omisión explícita queda por comprobar en el breviario Dessain en ese responsorio de Adviento.
+fr: Rubriques générales d'avant 1960, tit. XIII n. 4 : « dicitur Gloria Patri cum repetitione partis Responsorii, eo modo quo notatur in tertio Responsorio primae Dominicae de Adventu, nisi aliter in propriis locis signetur. » Le tit. XXVII n. 2 dit le Gloria Patri avec la répétition d'une partie du répons à la fin du troisième, du sixième et du huitième, ce qui est la règle à la fin du dernier répons de chaque nocturne. Le modèle est le troisième répons du premier dimanche de l'Avent, Missus est Gabriel. Commentaire, et non le texte du n. 230 : « sans le Sicut erat ». Le n. 230, « eadem ultima pars », est un appui partiel. L'omission explicite reste à vérifier dans le bréviaire Dessain à ce répons de l'Avent.
+de: Rubricae Generales vor 1960, Tit. XIII Nr. 4: „dicitur Gloria Patri cum repetitione partis Responsorii, eo modo quo notatur in tertio Responsorio primae Dominicae de Adventu, nisi aliter in propriis locis signetur.“ Tit. XXVII Nr. 2 sagt das Gloria Patri mit der Wiederholung eines Teils des Responsoriums am Ende des dritten, sechsten und achten, und das ist die Regel am Ende des letzten Responsoriums jedes Nokturns. Das Muster ist das dritte Responsorium des ersten Adventssonntags, Missus est Gabriel. Kommentar, nicht der Wortlaut von Nr. 230: „ohne Sicut erat“. Nr. 230, „eadem ultima pars“, ist eine teilweise Stütze. Die ausdrückliche Weglassung ist noch im Brevier von Dessain an jenem Adventsresponsorium zu prüfen.
+
+[ui.resp.two]
+en: Two asterisks. After the verse, repeat from the first * up to the second * and stop. After the Gloria, repeat from the second * to the verse.
+es: Dos asteriscos. Después del verso se repite desde el primer * hasta el segundo * y se para. Después del Gloria se repite desde el segundo * hasta el verso.
+fr: Deux astérisques. Après le verset, on reprend du premier * jusqu'au second * et l'on s'arrête. Après le Gloria, on reprend du second * jusqu'au verset.
+de: Zwei Sternchen. Nach dem Vers wiederholt man vom ersten * bis zum zweiten * und hält an. Nach dem Gloria wiederholt man vom zweiten * bis zum Vers.
+
+[ui.resp.two_source]
+en: This row is commentary, not an article of the Codex: Instructions for the Recitation of the Divine Office, Confraternity of SS. Peter and Paul, adapted from Hausmann, Learning the Breviary, §23, pp. 34–35. N. 230, “eadem ultima pars”, is partial support for repeating the last part, not a text of the two-asterisk rule.
+es: Esta línea es un comentario, no un artículo del Código: Instructions for the Recitation of the Divine Office, Cofradía de los Santos Pedro y Pablo, adaptado de Hausmann, Learning the Breviary, §23, pp. 34–35. El n. 230, “eadem ultima pars”, es un apoyo parcial para repetir la última parte, no un texto de la regla de los dos asteriscos.
+fr: Cette ligne est un commentaire, non un article du code : Instructions for the Recitation of the Divine Office, Confrérie des saints Pierre et Paul, adapté de Hausmann, Learning the Breviary, §23, pp. 34–35. Le n. 230, « eadem ultima pars », est un appui partiel pour répéter la dernière partie, non un texte de la règle des deux astérisques.
+de: Diese Zeile ist ein Kommentar, kein Artikel des Codex: Instructions for the Recitation of the Divine Office, Bruderschaft der hll. Petrus und Paulus, nach Hausmann, Learning the Breviary, §23, S. 34–35. Nr. 230, „eadem ultima pars“, ist eine teilweise Stütze für die Wiederholung des letzten Teils, kein Text der Zwei-Sternchen-Regel.
+
+[ui.resp.passion]
+en: In Passiontide the Gloria Patri is omitted from the last responsory of each nocturn, and the whole responsory is said again from the beginning up to, but not including, the verse. The same kind of cue is followed where the book notes a peculiarity (n. 231), for example the first responsory of Christmas, and Aspiciens a longe, the first responsory of the first Sunday of Advent.
+es: En el tiempo de Pasión se omite el Gloria Patri en el último responsorio de cada nocturno, y se dice de nuevo todo el responsorio desde el principio hasta el verso, sin incluirlo. La misma clase de señal se sigue donde el libro anota una particularidad (n. 231), por ejemplo el primer responsorio de Navidad, y Aspiciens a longe, el primer responsorio del primer domingo de Adviento.
+fr: Au temps de la Passion, le Gloria Patri est omis au dernier répons de chaque nocturne, et tout le répons est redit depuis le début jusqu'au verset, sans l'inclure. On suit le même genre d'indication là où le livre note une particularité (n. 231), par exemple le premier répons de Noël, et Aspiciens a longe, le premier répons du premier dimanche de l'Avent.
+de: In der Passionszeit wird das Gloria Patri beim letzten Responsorium jedes Nokturns weggelassen, und das ganze Responsorium wird von Anfang an bis zum Vers, ihn nicht eingeschlossen, noch einmal gesagt. Dieselbe Art von Hinweis gilt, wo das Buch eine Besonderheit vermerkt (Nr. 231), zum Beispiel das erste Responsorium von Weihnachten und Aspiciens a longe, das erste Responsorium des ersten Adventssonntags.
+
+[ui.resp.pasch]
+en: In Paschaltide an Alleluia is added at the end of the responsory, before the verse, unless one is already there. None is added after the verse (n. 229).
+es: En el tiempo pascual se añade un Aleluya al fin del responsorio, antes del verso, a no ser que ya lo haya. No se añade ninguno después del verso (n. 229).
+fr: Au temps pascal, un Alléluia est ajouté à la fin du répons, avant le verset, à moins qu'il n'y en ait déjà un. On n'en ajoute pas après le verset (n. 229).
+de: In der Osterzeit wird ein Alleluja an das Ende des Responsoriums gesetzt, vor den Vers, sofern nicht schon eines dasteht. Nach dem Vers wird keines hinzugefügt (Nr. 229).
+
+[ui.resp.site]
+en: Divinum Officium prints every repeat in full, so the said form can be checked on the office page.
+es: Divinum Officium imprime cada repetición por entero, de modo que la forma dicha se puede comprobar en la página del oficio.
+fr: Divinum Officium imprime chaque reprise en entier, de sorte que la forme dite se vérifie sur la page de l'office.
+de: Divinum Officium druckt jede Wiederholung ganz aus, sodass die gesprochene Form auf der Offiziumsseite nachgeprüft werden kann.
+
+[ui.resp.marks]
+en: With the marks
+es: Con las señales
+fr: Avec les signes
+de: Mit den Zeichen
+
+[ui.resp.said]
+en: Said in full
+es: Dicho por entero
+fr: Dit en entier
+de: Ganz gesprochen
+
+[ui.resp.ex1]
+en: One asterisk, and the last of a nocturn. Common of a Martyr, responsory 3, Iste cognovit.
+es: Un asterisco, y el último de un nocturno. Común de un mártir, responsorio 3, Iste cognovit.
+fr: Un astérisque, et le dernier d'un nocturne. Commun d'un martyr, répons 3, Iste cognovit.
+de: Ein Sternchen, und das letzte eines Nokturns. Commune eines Märtyrers, Responsorium 3, Iste cognovit.
+
+[ui.resp.ex2]
+en: Two asterisks. First Sunday of Advent, responsory 6, Obsecro, Domine. After the verse: Sicut locutus es, veni. After the Gloria: Et libera nos.
+es: Dos asteriscos. Primer domingo de Adviento, responsorio 6, Obsecro, Domine. Después del verso: Sicut locutus es, veni. Después del Gloria: Et libera nos.
+fr: Deux astérisques. Premier dimanche de l'Avent, répons 6, Obsecro, Domine. Après le verset : Sicut locutus es, veni. Après le Gloria : Et libera nos.
+de: Zwei Sternchen. Erster Adventssonntag, Responsorium 6, Obsecro, Domine. Nach dem Vers: Sicut locutus es, veni. Nach dem Gloria: Et libera nos.
+
+[ui.resp.ex3]
+en: Passiontide. Passion Sunday, responsory 3. The Gloria Patri is omitted, and the whole responsory is resumed from the beginning up to the verse.
+es: Tiempo de Pasión. Domingo de Pasión, responsorio 3. Se omite el Gloria Patri, y se reanuda todo el responsorio desde el principio hasta el verso.
+fr: Temps de la Passion. Dimanche de la Passion, répons 3. Le Gloria Patri est omis, et tout le répons est repris depuis le début jusqu'au verset.
+de: Passionszeit. Passionssonntag, Responsorium 3. Das Gloria Patri wird weggelassen, und das ganze Responsorium wird vom Anfang bis zum Vers wieder aufgenommen.
+
+[ui.comm.title]
+en: Commemorations
+es: Conmemoraciones
+fr: Commémoraisons
+de: Kommemorationen
+la: Commemorationes
+
+[ui.comm.when]
+en: Which commemorations a day admits
+es: Qué conmemoraciones admite un día
+fr: Quelles commémoraisons un jour admet
+de: Welche Kommemorationen ein Tag zulässt
+
+[ui.comm.where]
+en: Where a commemoration is said
+es: Dónde se dice una conmemoración
+fr: Où une commémoraison se dit
+de: Wo eine Kommemoration gebetet wird
+
+[ui.comm.how]
+en: The form of a commemoration
+es: La forma de una conmemoración
+fr: La forme d'une commémoraison
+de: Die Form einer Kommemoration
+
+[ui.comm.concl]
+en: The conclusion of the prayers
+es: La conclusión de las oraciones
+fr: La conclusion des oraisons
+de: Der Schluss der Orationen
+
+[ui.comm.joint]
+en: Peter and Paul under one conclusion
+es: Pedro y Pablo bajo una sola conclusión
+fr: Pierre et Paul sous une seule conclusion
+de: Petrus und Paulus unter einem Schluss
+
+[ui.comm.examples]
+en: Worked examples
+es: Ejemplos
+fr: Exemples
+de: Beispiele
+
+[ui.comm.today]
+en: This day
+es: Este día
+fr: Ce jour
+de: Dieser Tag
+
+[plain.comm.when]
+en: A commemoration is either privileged or ordinary (n. 107). On a 1st class day only a privileged commemoration is admitted. On a 2nd class Sunday, only one, of a 2nd class feast, and it is omitted if a privileged commemoration is to be made. On another 2nd class day, only one, privileged or ordinary. On a 3rd or 4th class day, only two (n. 111). Any commemoration beyond that number is omitted (n. 114). The season is commemorated first; the others follow the table of precedence (n. 113). The same rules govern occurrence and concurrence (n. 106). Concurrence is the meeting of Vespers (n. 103): the higher class is preferred (n. 104); if the two are equal, second Vespers are of the current day and the following day is commemorated (n. 105).
+es: Una conmemoración es privilegiada u ordinaria (n. 107). En un día de I clase solo se admite una privilegiada. En un domingo de II clase, una sola, de una fiesta de II clase, y se omite si hay que hacer una privilegiada. En otro día de II clase, una sola, privilegiada u ordinaria. En un día de III o IV clase, solo dos (n. 111). La que pase de ese número se omite (n. 114). El tiempo se conmemora primero; las demás siguen la tabla de precedencia (n. 113). Las mismas reglas valen en ocurrencia y en concurrencia (n. 106). La concurrencia es el encuentro de las vísperas (n. 103): se prefieren las de clase superior (n. 104); si las dos son iguales, las segundas vísperas son del día corriente y se conmemora el día siguiente (n. 105).
+fr: Une commémoraison est privilégiée ou ordinaire (n. 107). Un jour de Ire classe n'admet qu'une commémoraison privilégiée. Un dimanche de IIe classe n'en admet qu'une, d'une fête de IIe classe, et on l'omet s'il faut faire une commémoraison privilégiée. Un autre jour de IIe classe n'en admet qu'une, privilégiée ou ordinaire. Un jour de IIIe ou de IVe classe n'en admet que deux (n. 111). Celle qui dépasse ce nombre est omise (n. 114). Le temps est commémoré le premier ; les autres suivent la table de préséance (n. 113). Les mêmes règles valent dans l'occurrence et dans la concurrence (n. 106). La concurrence est la rencontre des vêpres (n. 103) : on préfère celles de la classe supérieure (n. 104) ; si les deux sont égales, les secondes vêpres sont du jour courant et l'on commémore le jour suivant (n. 105).
+de: Eine Kommemoration ist privilegiert oder gewöhnlich (Nr. 107). Ein Tag I. Klasse lässt nur eine privilegierte zu. Ein Sonntag II. Klasse nur eine, von einem Fest II. Klasse, und sie entfällt, wenn eine privilegierte zu verrichten ist. Ein anderer Tag II. Klasse nur eine, privilegiert oder gewöhnlich. Ein Tag III. oder IV. Klasse nur zwei (Nr. 111). Was über diese Zahl hinausgeht, entfällt (Nr. 114). Der Zeitkreis wird zuerst kommemoriert; die übrigen folgen der Vorrangtafel (Nr. 113). Dieselben Regeln gelten bei Okkurrenz und bei Konkurrenz (Nr. 106). Konkurrenz ist das Zusammentreffen der Vesper (Nr. 103): die höhere Klasse wird vorgezogen (Nr. 104); sind beide gleich, ist die zweite Vesper vom laufenden Tag und der folgende Tag wird kommemoriert (Nr. 105).
+
+[plain.comm.gap.three]
+en: No rubric was found that limits the collects of one Hour of the Office to three. N. 435, in the general rubrics of the Missal, does say that the collects of a Mass may not exceed three, and that article is quoted in the Mass part. [to be sourced]
+es: No se ha encontrado una rúbrica que limite a tres las oraciones de una hora del Oficio. El n. 435, en las rúbricas generales del Misal, sí dice que las oraciones de una misa no pueden pasar de tres, y ese artículo se cita en la parte de la Misa. [to be sourced]
+fr: On n'a pas trouvé de rubrique qui limite à trois les oraisons d'une heure de l'Office. Le n. 435, dans les rubriques générales du missel, dit bien que les oraisons d'une messe ne peuvent pas dépasser trois, et cet article est cité dans la partie de la messe. [to be sourced]
+de: Eine Rubrik, die die Orationen einer Hore des Offiziums auf drei begrenzt, wurde nicht gefunden. Nr. 435 in den allgemeinen Rubriken des Messbuchs sagt, dass die Orationen einer Messe drei nicht überschreiten dürfen, und dieser Artikel wird im Messeteil zitiert. [to be sourced]
+
+[plain.comm.where]
+en: N. 214: a commemorated office has no lesson in the office of the day. There is no ninth lesson of the commemorated feast. N. 248: the collect at Prime and at Compline is not changed, except on All Souls and at Prime in the Sacred Triduum.
+es: N. 214: un oficio conmemorado no tiene lección en el oficio del día. No hay lección novena de la fiesta conmemorada. N. 248: la oración de Prima y de Completas no cambia, salvo en Todos los Fieles Difuntos y en Prima del Triduo sacro.
+fr: N. 214 : un office commémoré n'a pas de leçon dans l'office du jour. Il n'y a pas de neuvième leçon de la fête commémorée. N. 248 : l'oraison de prime et de complies ne change pas, sauf à la Commémoraison de tous les fidèles défunts et à prime du Triduum sacré.
+de: Nr. 214: ein kommemoriertes Offizium hat keine Lesung im Offizium des Tages. Es gibt keine neunte Lesung des kommemorierten Festes. Nr. 248: die Oration in der Prim und in der Komplet ändert sich nicht, außer an Allerseelen und in der Prim des heiligen Triduums.
+
+[plain.comm.place]
+en: AAS 52 n. 108: privileged commemorations are made at Lauds and at Vespers, and ordinary commemorations only at Lauds. The project English file has no sentence of that article. Its n. 108 is the list of privileged commemorations, which AAS 52 numbers n. 109. [to be sourced]
+es: AAS 52 n. 108: las conmemoraciones privilegiadas se hacen en Laudes y en Vísperas, y las ordinarias solo en Laudes. El archivo inglés del proyecto no tiene la frase de ese artículo. Su n. 108 es la lista de las conmemoraciones privilegiadas, que AAS 52 numera n. 109. [to be sourced]
+fr: AAS 52 n. 108 : les commémoraisons privilégiées se font aux laudes et aux vêpres, et les ordinaires aux laudes seulement. Le fichier anglais du projet n'a pas la phrase de cet article. Son n. 108 est la liste des commémoraisons privilégiées, qu'AAS 52 numérote n. 109. [to be sourced]
+de: AAS 52 Nr. 108: privilegierte Kommemorationen geschehen in den Laudes und in der Vesper, gewöhnliche nur in den Laudes. Die englische Projektdatei hat den Satz dieses Artikels nicht. Ihre Nr. 108 ist die Liste der privilegierten Kommemorationen, die AAS 52 als Nr. 109 zählt. [to be sourced]
+
+[plain.comm.gap.minor]
+en: An explicit rubric that commemorations are never said at Terce, Sext, None or Compline was not found. N. 108 names Lauds and Vespers, and n. 248 leaves the collect of Prime and Compline unchanged. [to be sourced]
+es: No se ha encontrado una rúbrica explícita que diga que las conmemoraciones nunca se dicen en Tercia, Sexta, Nona o Completas. El n. 108 nombra Laudes y Vísperas, y el n. 248 deja sin cambiar la oración de Prima y Completas. [to be sourced]
+fr: On n'a pas trouvé de rubrique explicite disant que les commémoraisons ne se disent jamais à tierce, sexte, none ou complies. Le n. 108 nomme les laudes et les vêpres, et le n. 248 laisse inchangée l'oraison de prime et de complies. [to be sourced]
+de: Eine ausdrückliche Rubrik, dass Kommemorationen in Terz, Sext, Non oder Komplet nie gebetet werden, wurde nicht gefunden. Nr. 108 nennt Laudes und Vesper, und Nr. 248 lässt die Oration von Prim und Komplet unverändert. [to be sourced]
+
+[plain.comm.how]
+en: A commemoration stands after the collect of the day. It is the antiphon of the Benedictus or of the Magnificat of the commemorated office, the verse which precedes that antiphon, and the collect (n. 251). The collect of the day is said with its own conclusion, except where n. 110 a joins another prayer under the same conclusion. The collects of the commemorations are concluded only after the last one. Oremus is said before each collect (n. 249).
+es: Una conmemoración se pone después de la oración del día. Es la antífona del Benedictus o del Magnificat del oficio conmemorado, el verso que precede a esa antífona, y la oración (n. 251). La oración del día se dice con su conclusión, salvo donde el n. 110 a junta otra oración bajo la misma conclusión. Las oraciones de las conmemoraciones se concluyen solo después de la última. Se dice Oremus antes de cada oración (n. 249).
+fr: Une commémoraison se place après l'oraison du jour. Elle est l'antienne du Benedictus ou du Magnificat de l'office commémoré, le verset qui précède cette antienne, et l'oraison (n. 251). L'oraison du jour se dit avec sa conclusion, sauf là où le n. 110 a joint une autre oraison sous la même conclusion. Les oraisons des commémoraisons ne se concluent qu'après la dernière. On dit Oremus avant chaque oraison (n. 249).
+de: Eine Kommemoration steht nach der Oration des Tages. Sie ist die Antiphon zum Benedictus oder zum Magnificat des kommemorierten Offiziums, der Vers, der dieser Antiphon vorausgeht, und die Oration (Nr. 251). Die Oration des Tages wird mit ihrem eigenen Schluss gebetet, außer wo Nr. 110 a eine andere Oration unter demselben Schluss anfügt. Die Orationen der Kommemorationen werden erst nach der letzten beschlossen. Vor jeder Oration wird Oremus gesagt (Nr. 249).
+
+[plain.comm.concl]
+en: N. 115 gives the long conclusion according to the one to whom the prayer is addressed: Per Dominum when it is addressed to the Father; Per eundem when the Son is named at the beginning; Qui tecum when the Son is named at the end; Qui vivis when the prayer is addressed to the Son; eiusdem Spiritus Sancti when the Holy Spirit has been named. The project English of n. 115 is damaged and is quoted as the file has it.
+es: El n. 115 da la conclusión larga según a quién se dirige la oración: Per Dominum si se dirige al Padre; Per eundem si el Hijo se nombra al principio; Qui tecum si el Hijo se nombra al fin; Qui vivis si la oración se dirige al Hijo; eiusdem Spiritus Sancti si se ha nombrado al Espíritu Santo. El inglés del proyecto del n. 115 está dañado y se cita tal como está en el archivo.
+fr: Le n. 115 donne la longue conclusion selon celui à qui l'oraison s'adresse : Per Dominum si elle s'adresse au Père ; Per eundem si le Fils est nommé au début ; Qui tecum si le Fils est nommé à la fin ; Qui vivis si l'oraison s'adresse au Fils ; eiusdem Spiritus Sancti si le Saint-Esprit a été nommé. L'anglais du projet du n. 115 est abîmé et il est cité tel que le fichier le donne.
+de: Nr. 115 gibt den langen Schluss danach, an wen die Oration gerichtet ist: Per Dominum, wenn sie an den Vater gerichtet ist; Per eundem, wenn der Sohn am Anfang genannt wird; Qui tecum, wenn der Sohn am Ende genannt wird; Qui vivis, wenn die Oration an den Sohn gerichtet ist; eiusdem Spiritus Sancti, wenn der Heilige Geist genannt wurde. Das englische Projekt von Nr. 115 ist beschädigt und wird so zitiert, wie die Datei es hat.
+
+[plain.comm.gap.last]
+en: A rubric that, when several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed, was not found in these sources. N. 249 says the commemorations are concluded only after the last, and n. 115 gives the formula of a prayer. [to be sourced]
+es: No se ha encontrado en estas fuentes una rúbrica que diga que, cuando varias oraciones se dicen bajo una sola conclusión, la fórmula se toma de cómo se dirige la última oración. El n. 249 dice que las conmemoraciones se concluyen solo después de la última, y el n. 115 da la fórmula de una oración. [to be sourced]
+fr: On n'a pas trouvé dans ces sources une rubrique disant que, lorsque plusieurs oraisons se disent sous une seule conclusion, la formule se prend de la manière dont la dernière oraison est adressée. Le n. 249 dit que les commémoraisons ne se concluent qu'après la dernière, et le n. 115 donne la formule d'une oraison. [to be sourced]
+de: Eine Rubrik, dass bei mehreren Orationen unter einem Schluss die Formel davon genommen wird, wie die letzte Oration angeredet ist, wurde in diesen Quellen nicht gefunden. Nr. 249 sagt, dass die Kommemorationen erst nach der letzten beschlossen werden, und Nr. 115 gibt die Formel einer Oration. [to be sourced]
+
+[plain.comm.joint]
+en: In the office of St Peter or of St Paul the oration of the other apostle is added at Lauds and at Vespers, under one conclusion, without antiphon or verse (n. 110 a). The two orations count as one. The files that carry the rule Sub unica concl are Sancti/06-30, Sancti/06-30nl1, Sancti/01-25r, Sancti/01-25nl1r, Sancti/02-22, Sancti/02-22f, Sancti/01-18 and Sancti/08-01f. Sancti/11-18, the dedication of the basilicas, does not carry that rule. Letter b of the same article is the Mass: the other apostle's prayer is added to the collect of the day under a single conclusion. The Mass part sets that letter out.
+es: En el oficio de san Pedro o de san Pablo la oración del otro apóstol se añade en Laudes y en Vísperas, bajo una sola conclusión, sin antífona ni verso (n. 110 a). Las dos oraciones cuentan por una. Los archivos que llevan la regla Sub unica concl son Sancti/06-30, Sancti/06-30nl1, Sancti/01-25r, Sancti/01-25nl1r, Sancti/02-22, Sancti/02-22f, Sancti/01-18 y Sancti/08-01f. Sancti/11-18, la dedicación de las basílicas, no lleva esa regla. La letra b del mismo artículo es la Misa: la oración del otro apóstol se añade a la oración del día bajo una sola conclusión. La parte de la Misa expone esa letra.
+fr: Dans l'office de saint Pierre ou de saint Paul, l'oraison de l'autre apôtre est ajoutée aux laudes et aux vêpres, sous une seule conclusion, sans antienne ni verset (n. 110 a). Les deux oraisons comptent pour une. Les fichiers qui portent la règle Sub unica concl sont Sancti/06-30, Sancti/06-30nl1, Sancti/01-25r, Sancti/01-25nl1r, Sancti/02-22, Sancti/02-22f, Sancti/01-18 et Sancti/08-01f. Sancti/11-18, la dédicace des basiliques, ne porte pas cette règle. La lettre b du même article est la messe : l'oraison de l'autre apôtre est ajoutée à l'oraison du jour sous une seule conclusion. La partie de la messe expose cette lettre.
+de: Im Offizium des hl. Petrus oder des hl. Paulus wird die Oration des anderen Apostels in den Laudes und in der Vesper hinzugefügt, unter einem Schluss, ohne Antiphon und ohne Vers (Nr. 110 a). Die zwei Orationen zählen als eine. Die Dateien mit der Regel Sub unica concl sind Sancti/06-30, Sancti/06-30nl1, Sancti/01-25r, Sancti/01-25nl1r, Sancti/02-22, Sancti/02-22f, Sancti/01-18 und Sancti/08-01f. Sancti/11-18, die Weihe der Basiliken, trägt diese Regel nicht. Buchstabe b desselben Artikels ist die Messe: die Oration des anderen Apostels wird der Oration des Tages unter einem Schluss hinzugefügt. Der Messeteil setzt diesen Buchstaben auseinander.
+
+[plain.comm.ex1]
+en: 4 December 2026, universal calendar. St Peter Chrysologus, 3rd class (Sancti/12-04). At Lauds the engine records the Advent feria (Tempora/Adv1-5) and St Barbara (Sancti/12-04o). At Vespers, only the feria. Lauds: Oremus, oration of the day, its own conclusion (the file ends it Per Dominum). Then the season, first (n. 113): antiphon of the Benedictus of the feria, the verse, Oremus, oration, no conclusion. Then St Barbara: antiphon of the Benedictus, verse, Oremus, oration, and the conclusion, because that collect is the last (n. 249). At Vespers the feria is the only commemoration, so its oration is concluded.
+es: 4 de diciembre de 2026, calendario universal. San Pedro Crisólogo, III clase (Sancti/12-04). En Laudes el motor registra la feria de Adviento (Tempora/Adv1-5) y a santa Bárbara (Sancti/12-04o). En Vísperas, solo la feria. Laudes: Oremus, oración del día, su conclusión (el archivo la termina Per Dominum). Luego el tiempo, primero (n. 113): antífona del Benedictus de la feria, el verso, Oremus, oración, sin conclusión. Luego santa Bárbara: antífona del Benedictus, verso, Oremus, oración, y la conclusión, porque esa oración es la última (n. 249). En Vísperas la feria es la única conmemoración, así que su oración se concluye.
+fr: 4 décembre 2026, calendrier universel. Saint Pierre Chrysologue, IIIe classe (Sancti/12-04). Aux laudes le moteur enregistre la férie de l'Avent (Tempora/Adv1-5) et sainte Barbe (Sancti/12-04o). Aux vêpres, la férie seule. Laudes : Oremus, oraison du jour, sa conclusion (le fichier la termine par Per Dominum). Puis le temps, en premier (n. 113) : antienne du Benedictus de la férie, le verset, Oremus, oraison, sans conclusion. Puis sainte Barbe : antienne du Benedictus, verset, Oremus, oraison, et la conclusion, parce que cette oraison est la dernière (n. 249). Aux vêpres la férie est la seule commémoraison, donc son oraison est conclue.
+de: 4. Dezember 2026, allgemeiner Kalender. Hl. Petrus Chrysologus, III. Klasse (Sancti/12-04). In den Laudes verzeichnet der Rechner die Adventsferie (Tempora/Adv1-5) und die hl. Barbara (Sancti/12-04o). In der Vesper nur die Ferie. Laudes: Oremus, Oration des Tages, ihr eigener Schluss (die Datei endet sie mit Per Dominum). Dann der Zeitkreis, zuerst (Nr. 113): Antiphon zum Benedictus der Ferie, der Vers, Oremus, Oration, kein Schluss. Dann die hl. Barbara: Antiphon zum Benedictus, Vers, Oremus, Oration, und der Schluss, weil diese Oration die letzte ist (Nr. 249). In der Vesper ist die Ferie die einzige Kommemoration, also wird ihre Oration beschlossen.
+
+[plain.comm.ex2]
+en: 30 June 2026, universal calendar. The Commemoration of St Paul (Sancti/06-30), 3rd class. The file carries Sub unica concl, and the engine records no separate commemoration. N. 110 a: at Lauds and at Vespers the oration of St Peter is added to the oration of the day under one conclusion, without antiphon or verse. The text is Sancti/01-25, section Commemoratio4, whose 1960 line omits the antiphon and the verse.
+es: 30 de junio de 2026, calendario universal. La Conmemoración de san Pablo (Sancti/06-30), III clase. El archivo lleva Sub unica concl, y el motor no registra una conmemoración aparte. N. 110 a: en Laudes y en Vísperas la oración de san Pedro se añade a la oración del día bajo una sola conclusión, sin antífona ni verso. El texto es Sancti/01-25, sección Commemoratio4, cuya línea de 1960 omite la antífona y el verso.
+fr: 30 juin 2026, calendrier universel. La Commémoraison de saint Paul (Sancti/06-30), IIIe classe. Le fichier porte Sub unica concl, et le moteur n'enregistre pas de commémoraison séparée. N. 110 a : aux laudes et aux vêpres l'oraison de saint Pierre est ajoutée à l'oraison du jour sous une seule conclusion, sans antienne ni verset. Le texte est Sancti/01-25, section Commemoratio4, dont la ligne de 1960 omet l'antienne et le verset.
+de: 30. Juni 2026, allgemeiner Kalender. Die Kommemoration des hl. Paulus (Sancti/06-30), III. Klasse. Die Datei trägt Sub unica concl, und der Rechner verzeichnet keine eigene Kommemoration. Nr. 110 a: in den Laudes und in der Vesper wird die Oration des hl. Petrus der Oration des Tages unter einem Schluss hinzugefügt, ohne Antiphon und ohne Vers. Der Text ist Sancti/01-25, Abschnitt Commemoratio4, dessen Zeile von 1960 die Antiphon und den Vers weglässt.
+
+[plain.comm.hour]
+en: {hour}: {names}
+es: {hour}: {names}
+fr: {hour} : {names}
+de: {hour}: {names}
+
+[plain.comm.none]
+en: The engine records no commemoration at any hour.
+es: El motor no registra conmemoración en ninguna hora.
+fr: Le moteur n'enregistre de commémoraison à aucune heure.
+de: Der Rechner verzeichnet in keiner Hore eine Kommemoration.
+
+[plain.comm.unica]
+en: The winner file carries Sub unica concl. N. 110 a adds the other apostle's oration under one conclusion, without antiphon or verse, so it is not a separate commemoration in the engine's list.
+es: El archivo del oficio lleva Sub unica concl. El n. 110 a añade la oración del otro apóstol bajo una sola conclusión, sin antífona ni verso, así que no es una conmemoración aparte en la lista del motor.
+fr: Le fichier de l'office porte Sub unica concl. Le n. 110 a ajoute l'oraison de l'autre apôtre sous une seule conclusion, sans antienne ni verset, ce qui n'est donc pas une commémoraison séparée dans la liste du moteur.
+de: Die Datei des Offiziums trägt Sub unica concl. Nr. 110 a fügt die Oration des anderen Apostels unter einem Schluss hinzu, ohne Antiphon und ohne Vers, und sie ist daher keine eigene Kommemoration in der Liste des Rechners.
+
+[plain.comm.listnote]
+en: The list below is the project English of the article numbered 108 in General Rubrics.html. AAS 52 numbers that list n. 109.
+es: La lista de abajo es el inglés del proyecto del artículo numerado 108 en General Rubrics.html. AAS 52 numera esa lista n. 109.
+fr: La liste ci-dessous est l'anglais du projet de l'article numéroté 108 dans General Rubrics.html. AAS 52 numérote cette liste n. 109.
+de: Die Liste unten ist das englische Projekt des Artikels, der in General Rubrics.html als 108 nummeriert ist. AAS 52 zählt diese Liste als Nr. 109.
+
+[ui.comm.office]
+en: In the Office
+es: En el Oficio
+fr: Dans l'Office
+de: Im Offizium
+la: In Officio
+
+[ui.comm.mass]
+en: At Mass
+es: En la Misa
+fr: À la messe
+de: In der Messe
+la: In Missa
+
+[ui.comm.mass.which]
+en: Which collects the Mass admits
+es: Qué oraciones admite la Misa
+fr: Quelles oraisons la messe admet
+de: Welche Orationen die Messe zulässt
+
+[ui.comm.mass.form]
+en: How the Mass collects are concluded
+es: Cómo se concluyen las oraciones de la Misa
+fr: Comment les oraisons de la messe se concluent
+de: Wie die Orationen der Messe beschlossen werden
+
+[ui.comm.mass.other]
+en: Ordered, votive and Requiem collects
+es: Oraciones imperadas, votivas y de difuntos
+fr: Oraisons impérées, votives et des défunts
+de: Angeordnete, votive und Totenorationen
+
+[ui.comm.mass.peter]
+en: Peter and Paul at Mass
+es: Pedro y Pablo en la Misa
+fr: Pierre et Paul à la messe
+de: Petrus und Paulus in der Messe
+
+[ui.comm.letter]
+en: Letter {let} only
+es: Solo la letra {let}
+fr: La lettre {let} seulement
+de: Nur Buchstabe {let}
+la: Littera {let} tantum
+
+[ui.rubrics_missal]
+en: General rubrics of the Missal, n. {n}
+es: Rúbricas generales del Misal, n. {n}
+fr: Rubriques générales du missel, n. {n}
+de: Allgemeine Rubriken des Messbuchs, Nr. {n}
+la: Rubricae generales Missalis, n. {n}
+
+[plain.comm.bridge]
+en: N. 106: what is laid down for commemorations applies both to the Mass and to the Office, in occurrence and in concurrence. The Office part says at which hours a commemoration is prayed, and in what form. The Mass part says which collects are added at the Mass of the same day, and how the collect, the secret and the postcommunion are concluded.
+es: N. 106: lo que se establece para las conmemoraciones vale tanto para la Misa como para el Oficio, en ocurrencia y en concurrencia. La parte del Oficio dice en qué horas se reza una conmemoración y en qué forma. La parte de la Misa dice qué oraciones se añaden en la misa del mismo día, y cómo se concluyen la oración, la secreta y la poscomunión.
+fr: N. 106 : ce qui est établi pour les commémoraisons vaut tant pour la messe que pour l'office, dans l'occurrence et dans la concurrence. La partie de l'Office dit à quelles heures une commémoraison se prie, et sous quelle forme. La partie de la messe dit quelles oraisons sont ajoutées à la messe du même jour, et comment l'oraison, la secrète et la postcommunion se concluent.
+de: Nr. 106: was für die Kommemorationen festgesetzt ist, gilt sowohl für die Messe als auch für das Offizium, bei Okkurrenz und bei Konkurrenz. Der Offiziumsteil sagt, in welchen Horen eine Kommemoration gebetet wird und in welcher Form. Der Messeteil sagt, welche Orationen in der Messe desselben Tages hinzugefügt werden und wie Oration, Sekret und Postcommunio beschlossen werden.
+
+[plain.comm.see]
+en: N. {n} is quoted in the other part of this section.
+es: El n. {n} está citado en la otra parte de esta sección.
+fr: Le n. {n} est cité dans l'autre partie de cette section.
+de: Nr. {n} ist im anderen Teil dieses Abschnitts zitiert.
+
+[plain.comm.mass.lead]
+en: The Mass of the day admits the same commemorations, within the same limits (n. 106, n. 111). A commemoration at Mass is a collect, together with its secret and its postcommunion (nn. 433, 480, 505). The antiphon and the verse of n. 251 belong to the Office.
+es: La misa del día admite las mismas conmemoraciones, dentro de los mismos límites (n. 106, n. 111). Una conmemoración en la Misa es una oración, junto con su secreta y su poscomunión (nn. 433, 480, 505). La antífona y el verso del n. 251 pertenecen al Oficio.
+fr: La messe du jour admet les mêmes commémoraisons, dans les mêmes limites (n. 106, n. 111). Une commémoraison à la messe est une oraison, avec sa secrète et sa postcommunion (nn. 433, 480, 505). L'antienne et le verset du n. 251 appartiennent à l'Office.
+de: Die Messe des Tages lässt dieselben Kommemorationen zu, in denselben Grenzen (Nr. 106, Nr. 111). Eine Kommemoration in der Messe ist eine Oration, zusammen mit ihrem Sekret und ihrer Postcommunio (Nr. 433, 480, 505). Die Antiphon und der Vers von Nr. 251 gehören zum Offizium.
+
+[plain.comm.mass.which]
+en: After the collect of the Mass, how many further collects are admitted depends on the day (n. 434). The number includes not only commemorations but also collects prescribed by the rubrics, an oratio imperata, and a votive collect (n. 433). On a 1st class day, in a 1st class votive Mass, and in a sung Mass that is not conventual, nothing further is admitted except a collect said under a single conclusion and one privileged commemoration. On a 3rd or 4th class day, two further collects are admitted. N. 435: a collect beyond the number set for the day is omitted, and under no pretext may the collects exceed three.
+es: Después de la oración de la Misa, cuántas oraciones más se admiten depende del día (n. 434). El número incluye no solo las conmemoraciones, sino también las oraciones prescritas por las rúbricas, una oración imperada y una oración votiva (n. 433). En un día de I clase, en una misa votiva de I clase y en una misa cantada que no es conventual, no se admite nada más, salvo una oración que se dice bajo una sola conclusión y una conmemoración privilegiada. En un día de III o IV clase se admiten dos oraciones más. N. 435: la oración que pase del número fijado para el día se omite, y bajo ningún pretexto las oraciones pueden pasar de tres.
+fr: Après l'oraison de la messe, le nombre des oraisons suivantes dépend du jour (n. 434). Ce nombre comprend non seulement les commémoraisons, mais aussi les oraisons prescrites par les rubriques, une oraison impérée et une oraison votive (n. 433). Un jour de Ire classe, une messe votive de Ire classe et une messe chantée non conventuelle n'admettent rien de plus, sauf une oraison dite sous une seule conclusion et une commémoraison privilégiée. Un jour de IIIe ou de IVe classe admet deux oraisons de plus. N. 435 : l'oraison qui dépasse le nombre fixé pour le jour est omise, et les oraisons ne peuvent sous aucun prétexte dépasser trois.
+de: Nach der Oration der Messe hängt die Zahl der weiteren Orationen vom Tag ab (Nr. 434). Die Zahl umfasst nicht nur Kommemorationen, sondern auch die von den Rubriken vorgeschriebenen Orationen, eine oratio imperata und eine Votivoration (Nr. 433). An einem Tag I. Klasse, in einer Votivmesse I. Klasse und in einer gesungenen Messe, die nicht Konventsmesse ist, wird nichts weiter zugelassen außer einer Oration unter einem Schluss und einer privilegierten Kommemoration. An einem Tag III. oder IV. Klasse werden zwei weitere Orationen zugelassen. Nr. 435: eine Oration über die für den Tag festgesetzte Zahl entfällt, und unter keinem Vorwand dürfen die Orationen drei überschreiten.
+
+[plain.comm.mass.form]
+en: The collect of the Mass is said under its own conclusion, unless another collect is joined to it under the same conclusion (n. 436, nn. 444–445). The commemorations are always said under one conclusion, and so are an oratio imperata and a votive collect (n. 437). The secrets are as many as the collects, in the same order, and concluded in the same manner, and they are said without Dominus vobiscum and without Oremus (n. 480). The postcommunions follow the collects in number, manner and order (n. 505). The words of the long conclusion are n. 115, the same article as in the Office.
+es: La oración de la Misa se dice bajo su conclusión, a menos que otra oración se le junte bajo la misma conclusión (n. 436, nn. 444–445). Las conmemoraciones se dicen siempre bajo una sola conclusión, y lo mismo una oración imperada y una oración votiva (n. 437). Las secretas son tantas como las oraciones, en el mismo orden, y se concluyen del mismo modo, y se dicen sin Dominus vobiscum y sin Oremus (n. 480). Las poscomuniones siguen a las oraciones en número, modo y orden (n. 505). Las palabras de la conclusión larga son el n. 115, el mismo artículo que en el Oficio.
+fr: L'oraison de la messe se dit sous sa conclusion, à moins qu'une autre oraison ne lui soit jointe sous la même conclusion (n. 436, nn. 444–445). Les commémoraisons se disent toujours sous une seule conclusion, et de même une oraison impérée et une oraison votive (n. 437). Les secrètes sont aussi nombreuses que les oraisons, dans le même ordre, et elles se concluent de la même manière ; elles se disent sans Dominus vobiscum et sans Oremus (n. 480). Les postcommunions suivent les oraisons pour le nombre, la manière et l'ordre (n. 505). Les mots de la longue conclusion sont le n. 115, le même article que dans l'Office.
+de: Die Oration der Messe wird unter ihrem eigenen Schluss gebetet, es sei denn, eine andere Oration wird ihr unter demselben Schluss angefügt (Nr. 436, Nr. 444–445). Die Kommemorationen werden immer unter einem Schluss gebetet, ebenso eine oratio imperata und eine Votivoration (Nr. 437). Die Sekrete sind so viele wie die Orationen, in derselben Ordnung, und werden auf dieselbe Weise beschlossen; sie werden ohne Dominus vobiscum und ohne Oremus gebetet (Nr. 480). Die Postcommuniones folgen den Orationen in Zahl, Weise und Ordnung (Nr. 505). Die Worte des langen Schlusses sind Nr. 115, derselbe Artikel wie im Offizium.
+
+[plain.comm.gap.oremus]
+en: No rubric was found that says Oremus is said before the second collect at Mass. N. 249, which says Oremus before each collect, is a rubric of the Office. N. 480 says the secret is said without Oremus. [to be sourced]
+es: No se ha encontrado una rúbrica que diga que se dice Oremus antes de la segunda oración en la Misa. El n. 249, que dice Oremus antes de cada oración, es una rúbrica del Oficio. El n. 480 dice que la secreta se dice sin Oremus. [to be sourced]
+fr: On n'a pas trouvé de rubrique disant qu'Oremus se dit avant la seconde oraison à la messe. Le n. 249, qui dit Oremus avant chaque oraison, est une rubrique de l'Office. Le n. 480 dit que la secrète se dit sans Oremus. [to be sourced]
+de: Eine Rubrik, dass vor der zweiten Oration in der Messe Oremus gesagt wird, wurde nicht gefunden. Nr. 249, die Oremus vor jeder Oration sagt, ist eine Rubrik des Offiziums. Nr. 480 sagt, dass das Sekret ohne Oremus gebetet wird. [to be sourced]
+
+[plain.comm.mass.other]
+en: An oratio imperata is a collect which the local ordinary may order for a grave public need (n. 454). Only one may be ordered. It is never said under a single conclusion with the collect of the Mass; it is placed after the privileged commemorations; and it is prohibited on 1st and 2nd class days, in 1st and 2nd class votive Masses, in sung Masses, and when the privileged commemorations already fill the number set for the day (n. 457). One for the departed is said only on a 4th class feria and in a low 4th class votive or Requiem Mass (n. 458). On a 4th class day a priest may add one votive collect in a low non-conventual Mass, in the last place, and not so as to go past three collects (nn. 461, 463). A Mass of the dead makes no commemoration of the office of the day (n. 391). Its collects are those of n. 398.
+es: Una oración imperada es una oración que el ordinario del lugar puede mandar por una grave necesidad pública (n. 454). Solo puede mandarse una. Nunca se dice bajo una sola conclusión con la oración de la Misa; se pone después de las conmemoraciones privilegiadas; y está prohibida en los días de I y II clase, en las misas votivas de I y II clase, en las misas cantadas, y cuando las conmemoraciones privilegiadas ya llenan el número fijado para el día (n. 457). La de difuntos se dice solo en una feria de IV clase y en una misa votiva o de réquiem de IV clase rezada (n. 458). En un día de IV clase el sacerdote puede añadir una oración votiva en una misa rezada no conventual, en el último lugar, y sin pasar de tres oraciones (nn. 461, 463). Una misa de difuntos no hace conmemoración del oficio del día (n. 391). Sus oraciones son las del n. 398.
+fr: Une oraison impérée est une oraison que l'ordinaire du lieu peut ordonner pour un grave besoin public (n. 454). Une seule peut être ordonnée. Elle ne se dit jamais sous une seule conclusion avec l'oraison de la messe ; elle se place après les commémoraisons privilégiées ; et elle est interdite les jours de Ire et de IIe classe, aux messes votives de Ire et de IIe classe, aux messes chantées, et lorsque les commémoraisons privilégiées remplissent déjà le nombre fixé pour le jour (n. 457). Celle des défunts se dit seulement à une férie de IVe classe et à une messe votive ou de requiem de IVe classe basse (n. 458). Un jour de IVe classe, le prêtre peut ajouter une oraison votive à une messe basse non conventuelle, à la dernière place, et sans dépasser trois oraisons (nn. 461, 463). Une messe des morts ne fait pas de commémoraison de l'office du jour (n. 391). Ses oraisons sont celles du n. 398.
+de: Eine oratio imperata ist eine Oration, die der Ortsordinarius bei einer schweren öffentlichen Not anordnen kann (Nr. 454). Nur eine darf angeordnet werden. Sie wird nie unter einem Schluss mit der Oration der Messe gebetet; sie steht nach den privilegierten Kommemorationen; und sie ist verboten an Tagen I. und II. Klasse, in Votivmessen I. und II. Klasse, in gesungenen Messen und wenn die privilegierten Kommemorationen die für den Tag festgesetzte Zahl schon füllen (Nr. 457). Eine für die Verstorbenen wird nur an einer Ferie IV. Klasse und in einer stillen Votiv- oder Requiemmesse IV. Klasse gebetet (Nr. 458). An einem Tag IV. Klasse darf der Priester in einer stillen Messe, die nicht Konventsmesse ist, eine Votivoration an letzter Stelle hinzufügen, und nicht so, dass drei Orationen überschritten werden (Nr. 461, 463). Eine Totenmesse macht keine Kommemoration des Offiziums des Tages (Nr. 391). Ihre Orationen sind die von Nr. 398.
+
+[plain.comm.mass.peter]
+en: At Mass, as in the Office, Peter and Paul are never separated (n. 110). Letter b: in a Mass of St Peter or of St Paul, the prayer of the other apostle is added to the collect of the day under a single conclusion, and the two prayers count as one. The whole article, including the Office rule without antiphon or verse, is quoted in the Office part.
+es: En la Misa, como en el Oficio, Pedro y Pablo no se separan (n. 110). Letra b: en una misa de san Pedro o de san Pablo, la oración del otro apóstol se añade a la oración del día bajo una sola conclusión, y las dos oraciones cuentan por una. El artículo entero, incluida la regla del Oficio sin antífona ni verso, se cita en la parte del Oficio.
+fr: À la messe, comme dans l'Office, Pierre et Paul ne se séparent pas (n. 110). Lettre b : à une messe de saint Pierre ou de saint Paul, l'oraison de l'autre apôtre est ajoutée à l'oraison du jour sous une seule conclusion, et les deux oraisons comptent pour une. L'article entier, y compris la règle de l'Office sans antienne ni verset, est cité dans la partie de l'Office.
+de: In der Messe wie im Offizium werden Petrus und Paulus nicht getrennt (Nr. 110). Buchstabe b: in einer Messe des hl. Petrus oder des hl. Paulus wird die Oration des anderen Apostels der Oration des Tages unter einem Schluss hinzugefügt, und die zwei Orationen zählen als eine. Der ganze Artikel, einschließlich der Offiziumsregel ohne Antiphon und ohne Vers, wird im Offiziumsteil zitiert.
+
+[plain.comm.mex1]
+en: 4 December 2026, the Mass of St Peter Chrysologus, 3rd class, universal calendar. The Office on this day records the Advent feria and St Barbara at Lauds. At Mass those are the further collects (n. 106): the season first (n. 113), then St Barbara. Collect of the Mass, under its own conclusion (n. 436). Then the feria, a privileged commemoration, and St Barbara, an ordinary one, under one conclusion (n. 437). That is three collects, the limit of n. 435. At a sung Mass that is not conventual, only the privileged commemoration is admitted (n. 111 a, n. 434 a), so St Barbara is omitted and the feria remains. The secret and the postcommunion follow the same number and the same order (n. 480, n. 505).
+es: 4 de diciembre de 2026, la misa de san Pedro Crisólogo, III clase, calendario universal. El Oficio de este día registra en Laudes la feria de Adviento y a santa Bárbara. En la Misa esas son las oraciones que se añaden (n. 106): primero el tiempo (n. 113), luego santa Bárbara. Oración de la Misa, bajo su conclusión (n. 436). Luego la feria, conmemoración privilegiada, y santa Bárbara, ordinaria, bajo una sola conclusión (n. 437). Son tres oraciones, el límite del n. 435. En una misa cantada que no es conventual solo se admite la conmemoración privilegiada (n. 111 a, n. 434 a), así que santa Bárbara se omite y queda la feria. La secreta y la poscomunión siguen el mismo número y el mismo orden (n. 480, n. 505).
+fr: 4 décembre 2026, la messe de saint Pierre Chrysologue, IIIe classe, calendrier universel. L'office de ce jour enregistre aux laudes la férie de l'Avent et sainte Barbe. À la messe, ce sont les oraisons ajoutées (n. 106) : le temps d'abord (n. 113), puis sainte Barbe. Oraison de la messe, sous sa conclusion (n. 436). Puis la férie, commémoraison privilégiée, et sainte Barbe, ordinaire, sous une seule conclusion (n. 437). Cela fait trois oraisons, la limite du n. 435. À une messe chantée non conventuelle, seule la commémoraison privilégiée est admise (n. 111 a, n. 434 a) : sainte Barbe est donc omise et la férie demeure. La secrète et la postcommunion suivent le même nombre et le même ordre (n. 480, n. 505).
+de: 4. Dezember 2026, die Messe des hl. Petrus Chrysologus, III. Klasse, allgemeiner Kalender. Das Offizium dieses Tages verzeichnet in den Laudes die Adventsferie und die hl. Barbara. In der Messe sind das die hinzugefügten Orationen (Nr. 106): zuerst der Zeitkreis (Nr. 113), dann die hl. Barbara. Oration der Messe, unter ihrem eigenen Schluss (Nr. 436). Dann die Ferie, eine privilegierte Kommemoration, und die hl. Barbara, eine gewöhnliche, unter einem Schluss (Nr. 437). Das sind drei Orationen, die Grenze von Nr. 435. In einer gesungenen Messe, die nicht Konventsmesse ist, wird nur die privilegierte Kommemoration zugelassen (Nr. 111 a, Nr. 434 a), also entfällt die hl. Barbara und die Ferie bleibt. Sekret und Postcommunio folgen derselben Zahl und derselben Ordnung (Nr. 480, Nr. 505).
+
+[plain.comm.mex2]
+en: 30 June 2026, the Mass of the Commemoration of St Paul, 3rd class, universal calendar. N. 110 b: the collect of St Peter is added to the collect of the day under a single conclusion, and the two count as one. Collect of St Paul, then the collect of St Peter, one conclusion. The file Sancti/06-30 carries Sub unica concl. The words "without antiphon or verse" are in n. 110 a, which is the Office, not in letter b.
+es: 30 de junio de 2026, la misa de la Conmemoración de san Pablo, III clase, calendario universal. N. 110 b: la oración de san Pedro se añade a la oración del día bajo una sola conclusión, y las dos cuentan por una. Oración de san Pablo, luego la oración de san Pedro, una sola conclusión. El archivo Sancti/06-30 lleva Sub unica concl. Las palabras «sin antífona ni verso» están en el n. 110 a, que es el Oficio, no en la letra b.
+fr: 30 juin 2026, la messe de la Commémoraison de saint Paul, IIIe classe, calendrier universel. N. 110 b : l'oraison de saint Pierre est ajoutée à l'oraison du jour sous une seule conclusion, et les deux comptent pour une. Oraison de saint Paul, puis l'oraison de saint Pierre, une seule conclusion. Le fichier Sancti/06-30 porte Sub unica concl. Les mots « sans antienne ni verset » sont au n. 110 a, qui est l'Office, et non à la lettre b.
+de: 30. Juni 2026, die Messe der Kommemoration des hl. Paulus, III. Klasse, allgemeiner Kalender. Nr. 110 b: die Oration des hl. Petrus wird der Oration des Tages unter einem Schluss hinzugefügt, und die zwei zählen als eine. Oration des hl. Paulus, dann die Oration des hl. Petrus, ein Schluss. Die Datei Sancti/06-30 trägt Sub unica concl. Die Worte „ohne Antiphon und ohne Vers“ stehen in Nr. 110 a, das ist das Offizium, nicht in Buchstabe b.
+
+[plain.comm.today.mass]
+en: At the Mass of this day, a commemoration recorded above is a collect added after the collect of the Mass (n. 433), within the number that nn. 111 and 434 allow. The same name is commemorated at the hour named above and at that Mass.
+es: En la misa de este día, una conmemoración registrada arriba es una oración que se añade después de la oración de la Misa (n. 433), dentro del número que permiten los nn. 111 y 434. El mismo nombre se conmemora en la hora nombrada arriba y en esa misa.
+fr: À la messe de ce jour, une commémoraison enregistrée ci-dessus est une oraison ajoutée après l'oraison de la messe (n. 433), dans le nombre que les nn. 111 et 434 permettent. Le même nom est commémoré à l'heure nommée ci-dessus et à cette messe.
+de: In der Messe dieses Tages ist eine oben verzeichnete Kommemoration eine Oration, die nach der Oration der Messe hinzugefügt wird (Nr. 433), innerhalb der Zahl, die Nr. 111 und 434 zulassen. Derselbe Name wird in der oben genannten Hore und in dieser Messe kommemoriert.
+
+[plain.comm.today.unica]
+en: At Mass as well as at Lauds and at Vespers, n. 110 adds the other apostle's prayer under one conclusion.
+es: En la Misa, igual que en Laudes y en Vísperas, el n. 110 añade la oración del otro apóstol bajo una sola conclusión.
+fr: À la messe comme aux laudes et aux vêpres, le n. 110 ajoute l'oraison de l'autre apôtre sous une seule conclusion.
+de: In der Messe wie in den Laudes und in der Vesper fügt Nr. 110 die Oration des anderen Apostels unter einem Schluss hinzu.
