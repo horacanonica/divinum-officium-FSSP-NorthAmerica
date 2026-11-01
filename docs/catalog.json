@@ -4,7 +4,7 @@
   "releases": {
     "la": "epub-library-la"
   },
-  "updated": "2026-10-20T13:47:24Z",
+  "updated": "2026-11-01T15:05:13Z",
   "languages": "Latin",
   "variants": [
     {
@@ -15,8 +15,8 @@
   "fingerprint": "v2",
   "rubrics": "1960",
   "window": {
-    "start": "2026-10",
-    "end": "2028-10",
+    "start": "2026-11",
+    "end": "2028-11",
     "years": [
       2026,
       2027,
