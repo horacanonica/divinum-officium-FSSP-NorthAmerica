@@ -14,6 +14,7 @@ our %RIBBON_LA;
 our %RIBBON_EN;
 our %RIBBON_EDITIONS;
 our @RIBBON_EDITION_ORDER;
+
 # Future combined-propers booklet (FSSP + USA + diocese + parish).
 # booklets.txt maps a particular file to a URL or path. Nothing is filled in yet,
 # so the page shows the print-separately note and does not invent a link.
@@ -23,14 +24,19 @@ our $RIBBON_HOOKS;
 
 my @RIBBON_HOURS = qw(Matutinum Laudes Prima Tertia Sexta Nona Vespera Completorium);
 my %RIBBON_LANG = (
-  English => 'en', Espanol => 'es', Francais => 'fr', Deutsch => 'de', Latin => 'la',
+  English => 'en',
+  Espanol => 'es',
+  Francais => 'fr',
+  Deutsch => 'de',
+  Latin => 'la',
 );
 my @RIBBON_LANGS = qw(English Espanol Francais Deutsch Latin);
 my %RIBBON_CORPUS = (
-  general  => 'General Rubrics.html',
+  general => 'General Rubrics.html',
   breviary => 'Breviary 1960.html',
+
   # Part III of the Codex. Latin of these articles is not in aas52-la.txt.
-  missal   => 'Missal1960 rubrics.html',
+  missal => 'Missal1960 rubrics.html',
 );
 
 sub ribbon_root {
@@ -56,29 +62,46 @@ sub ribbon_boot {
 sub ribbon_install_hooks {
   return if $RIBBON_HOOKS++;
   no warnings 'redefine';
-  my $b  = \&setbuild;
+  my $b = \&setbuild;
   my $b1 = \&setbuild1;
   my $b2 = \&setbuild2;
-  my $c  = \&setcomment;
+  my $c = \&setcomment;
   *setbuild = sub {
     push @RIBBON_EVENTS, {
-      kind => 'src', file => $_[0] // '', name => $_[1] // '', comment => $_[2] // '', hora => $hora
-    };
+        kind => 'src',
+        file => $_[0] // '',
+        name => $_[1] // '',
+        comment => $_[2] // '',
+        hora => $hora,
+      };
     $b->(@_);
   };
   *setbuild1 = sub {
-    push @RIBBON_EVENTS, { kind => 'lab', label => $_[0] // '', comment => $_[1] // '', hora => $hora };
+    push @RIBBON_EVENTS, {
+        kind => 'lab',
+        label => $_[0] // '',
+        comment => $_[1] // '',
+        hora => $hora,
+      };
     $b1->(@_);
   };
   *setbuild2 = sub {
-    push @RIBBON_EVENTS, { kind => 'note', comment => $_[0] // '', hora => $hora };
+    push @RIBBON_EVENTS, {
+        kind => 'note',
+        comment => $_[0] // '',
+        hora => $hora,
+      };
     $b2->(@_);
   };
   *setcomment = sub {
     push @RIBBON_EVENTS, {
-      kind => 'cmt', label => $_[0] // '', comment => $_[1] // '',
-      ind => $_[2], prefix => $_[4] // '', hora => $hora
-    };
+        kind => 'cmt',
+        label => $_[0] // '',
+        comment => $_[1] // '',
+        ind => $_[2],
+        prefix => $_[4] // '',
+        hora => $hora,
+      };
     $c->(@_);
   };
 }
@@ -93,9 +116,11 @@ sub ribbon_slurp {
 sub ribbon_load_strings {
   my $text = ribbon_slurp(ribbon_root() . '/strings.txt');
   my $id;
+
   for my $line (split /\n/, $text) {
     if ($line =~ /^\[(.+)\]\s*$/) { $id = $1; next; }
     next if !defined $id || $line =~ /^\s*#/ || $line =~ /^\s*$/;
+
     if ($line =~ /^(en|es|fr|de|la):\s*(.*)$/) {
       $RIBBON_STRINGS{$id}{$1} = $2;
     }
@@ -106,14 +131,16 @@ sub ribbon_load_catalog {
   my $text = ribbon_slurp(ribbon_root() . '/catalog.txt');
   my $id;
   my $cur;
+
   for my $line (split /\n/, $text) {
     if ($line =~ /^@@\s+(\S+)\s*$/) {
       $id = $1;
-      $cur = { id => $id };
+      $cur = {id => $id};
       $RIBBON_CATALOG{$id} = $cur;
       next;
     }
     next if !defined $id || $line =~ /^\s*#/ || $line =~ /^\s*$/;
+
     if ($line =~ /^([A-Za-z0-9_]+):\s*(.*)$/) {
       $cur->{$1} = $2;
     }
@@ -127,13 +154,21 @@ sub ribbon_load_latin {
     return unless defined $n;
     my $body = $buf // '';
     $body =~ s/\s+\z//;
-    $RIBBON_LA{$n} = { page => $page, la => $body };
+    $RIBBON_LA{$n} = {
+      page => $page,
+      la => $body,
+    };
   };
+
   for my $line (split /\n/, $text, -1) {
     if (!defined $n && $line =~ /^\s*#/) { next; }
+
     if ($line =~ /^@@\s+(\d+)\s*$/) {
       $store->();
-      $n = $1; $page = ''; $buf = ''; $on = 0;
+      $n = $1;
+      $page = '';
+      $buf = '';
+      $on = 0;
       next;
     }
     next unless defined $n;
@@ -143,14 +178,6 @@ sub ribbon_load_latin {
     $buf .= "$line\n" if $on;
   }
   $store->();
-}
-
-sub ribbon_norm {
-  my ($s) = @_;
-  $s //= '';
-  $s =~ s/\s+/ /g;
-  $s =~ s/^\s+|\s+$//g;
-  return $s;
 }
 
 sub ribbon_html_to_text {
@@ -171,6 +198,7 @@ sub ribbon_slice_article {
   return '' unless $text =~ /(?:^|\n|[ \t])($n)\.\s/;
   my $rest = substr($text, $-[1]);
   my $cut;
+
   while ($rest =~ /(?:^|\n)\s*(\d+)\.\s/g) {
     next if $1 <= $n;
     next if $-[1] == 0;
@@ -187,6 +215,7 @@ sub ribbon_slice_article {
 
 sub ribbon_load_english {
   my $dir = "$Bin/../../www/horas/Help/Rubrics";
+
   for my $corpus (keys %RIBBON_CORPUS) {
     my $path = "$dir/$RIBBON_CORPUS{$corpus}";
     $RIBBON_EN{$corpus} = ribbon_html_to_text(ribbon_slurp($path));
@@ -211,27 +240,51 @@ sub ribbon_la_page {
 
 sub ribbon_parse_edition {
   my ($text) = @_;
-  my %ed = (id => '', names => {}, volumes => [], coming_soon => 0);
+  my %ed = (
+    id => '',
+    names => {},
+    volumes => [],
+    coming_soon => 0,
+  );
   my $vol;
+
   for my $line (split /\n/, $text) {
     $line =~ s/\r\z//;
     next if $line =~ /^\s*#/ || $line =~ /^\s*$/;
+
     if ($line =~ /^volume:\s*(.+?)\s*$/) {
-      $vol = { id => $1, labels => {}, seasons => {}, pages => {} };
-      push @{ $ed{volumes} }, $vol;
+      $vol = {
+        id => $1,
+        labels => {},
+        seasons => {},
+        pages => {},
+      };
+      push @{$ed{volumes}}, $vol;
       next;
     }
+
     if ($line !~ /\t/ && $line =~ /^([^\t:]+):\s*(.*?)\s*$/) {
       my ($k, $v) = ($1, $2);
-      if ($k eq 'id') { $ed{id} = $v; }
-      elsif ($k eq 'coming_soon') { $ed{coming_soon} = ($v && $v ne '0') ? 1 : 0; }
-      elsif ($k =~ /^name\.([a-z]+)\z/) { $ed{names}{$1} = $v; }
-      elsif ($vol && $k =~ /^label\.([a-z]+)\z/) { $vol->{labels}{$1} = $v; }
-      elsif ($vol && $k eq 'seasons') { $vol->{seasons}{$_} = 1 for split /\s+/, $v; }
+
+      if ($k eq 'id') {
+        $ed{id} = $v;
+      } elsif ($k eq 'coming_soon') {
+        $ed{coming_soon} = ($v && $v ne '0') ? 1 : 0;
+      } elsif ($k =~ /^name\.([a-z]+)\z/) {
+        $ed{names}{$1} = $v;
+      } elsif ($vol && $k =~ /^label\.([a-z]+)\z/) {
+        $vol->{labels}{$1} = $v;
+      } elsif ($vol && $k eq 'seasons') {
+        $vol->{seasons}{$_} = 1 for split /\s+/, $v;
+      }
       next;
     }
+
     if ($vol && $line =~ /^([^\t]+)\t([^\t]*)(?:\t(.*))?\s*$/) {
-      $vol->{pages}{$1} = { page => $2, note => defined $3 ? $3 : '' };
+      $vol->{pages}{$1} = {
+        page => $2,
+        note => defined $3 ? $3 : '',
+      };
     }
   }
   return \%ed;
@@ -241,16 +294,17 @@ sub ribbon_load_editions {
   %RIBBON_EDITIONS = ();
   @RIBBON_EDITION_ORDER = ();
   my $dir = ribbon_root() . '/editions';
+
   for my $path (sort glob "$dir/*.edition") {
     next if basename($path) =~ /^_/;
     my $ed = ribbon_parse_edition(ribbon_slurp($path));
     next unless $ed->{id};
     $ed->{path} = $path;
-    $RIBBON_EDITIONS{ $ed->{id} } = $ed;
+    $RIBBON_EDITIONS{$ed->{id}} = $ed;
   }
   @RIBBON_EDITION_ORDER = sort {
     return -1 if $a eq 'general';
-    return 1  if $b eq 'general';
+    return 1 if $b eq 'general';
     ($RIBBON_EDITIONS{$a}{names}{en} // $a) cmp ($RIBBON_EDITIONS{$b}{names}{en} // $b);
   } keys %RIBBON_EDITIONS;
 }
@@ -271,25 +325,25 @@ sub ribbon_volume_label {
 # sentences), labeled "cf. n. X". Not a translation of the English sentence.
 # A letter is 'a' or 'b'. A sentence spec is '2' or '1-2'.
 our %RIBBON_CF = (
-  'plain.antiphons'        => [[191]],
-  'plain.creed.yes'        => [[203]],
-  'plain.creed.no'         => [[203]],
-  'plain.prime'            => [[242]],
-  'plain.collect'          => [[246], [248]],
-  'plain.commemoration'    => [[251]],
-  'plain.tedeum.no'        => [[239]],
-  'plain.preces.yes'       => [[260]],
-  'plain.first.no'         => [[37, 'b']],
-  'plain.lessons.sunday'   => [[220]],
+  'plain.antiphons' => [[191]],
+  'plain.creed.yes' => [[203]],
+  'plain.creed.no' => [[203]],
+  'plain.prime' => [[242]],
+  'plain.collect' => [[246], [248]],
+  'plain.commemoration' => [[251]],
+  'plain.tedeum.no' => [[239]],
+  'plain.preces.yes' => [[260]],
+  'plain.first.no' => [[37, 'b']],
+  'plain.lessons.sunday' => [[220]],
   'plain.lessons.ordinary' => [[221]],
-  'plain.lessons.ferial'   => [[222]],
-  'plain.lessons.festive'  => [[217, 'a'], [218, 'a']],
-  'lk.abridged'            => [[221, 'b']],
-  'sk.from_common'         => [[218, 'a']],
-  'sk.slot_order'          => [[218, 'a']],
-  'ui.resp.last'           => [[230, '1-2']],
-  'ui.resp.passion'        => [[230, '1-2']],
-  'ui.resp.pasch'          => [[229]],
+  'plain.lessons.ferial' => [[222]],
+  'plain.lessons.festive' => [[217, 'a'], [218, 'a']],
+  'lk.abridged' => [[221, 'b']],
+  'sk.from_common' => [[218, 'a']],
+  'sk.slot_order' => [[218, 'a']],
+  'ui.resp.last' => [[230, '1-2']],
+  'ui.resp.passion' => [[230, '1-2']],
+  'ui.resp.pasch' => [[229]],
 );
 
 sub ribbon_la_body {
@@ -306,15 +360,18 @@ sub ribbon_la_piece {
   my $body = ribbon_la_body($n);
   return '' if $body eq '';
   return $body if !defined $spec || $spec eq '';
+
   if ($spec =~ /^(\d+)-(\d+)\z/) {
     my @s = split /(?<=\.)\s+/, $body;
     return '' if $1 < 1 || $2 > @s;
     return join(' ', @s[$1 - 1 .. $2 - 1]);
   }
+
   if ($spec =~ /^(\d+)\z/) {
     my @s = split /(?<=\.)\s+/, $body;
     return $s[$1 - 1] // '';
   }
+
   if ($spec =~ /^([a-z])\z/) {
     my $let = $1;
     my $next = chr(ord($let) + 1);
@@ -328,6 +385,7 @@ sub ribbon_cf_text {
   my ($id) = @_;
   my $parts = $RIBBON_CF{$id} or return '';
   my @out;
+
   for my $p (@$parts) {
     my ($n, $spec) = @$p;
     my $piece = ribbon_la_piece($n, $spec);
@@ -339,22 +397,26 @@ sub ribbon_cf_text {
 }
 
 sub ribbon_s {
+
   my ($code, $id, $slots) = @_;
   my $pack = $RIBBON_STRINGS{$id};
   my $text;
   my $sourced = 1;
   my $cf = ($code eq 'la') ? ribbon_cf_text($id) : '';
+
   if ($cf ne '') {
     $text = $cf;
   } elsif ($pack && defined $pack->{$code} && $pack->{$code} ne '') {
     $text = $pack->{$code};
   } elsif ($code eq 'la' && $pack && defined $pack->{en} && $pack->{en} ne '') {
+
     # Screen labels and explanations. English, with no rubric marker.
     $text = $pack->{en};
   } else {
     $text = $id;
     $sourced = 0;
   }
+
   if ($slots) {
     $text =~ s/\{(\w+)\}/defined $slots->{$1} ? $slots->{$1} : "{$1}"/ge;
   }
@@ -397,15 +459,17 @@ sub ribbon_month_length {
 
 sub ribbon_season_code {
   my ($week, $month) = @_;
-  $week  //= '';
+  $week //= '';
   $month ||= 0;
   return 'Quadp' if $week =~ /^Quadp/i;
-  return 'Quad'  if $week =~ /^Quad/i;
-  return 'Adv'   if $week =~ /^Adv/i;
-  return 'Nat'   if $week =~ /^Nat/i;
-  return 'Pasc'  if $week =~ /^Pasc/i;
-  return 'Pent'  if $week =~ /^Pent/i;
+  return 'Quad' if $week =~ /^Quad/i;
+  return 'Adv' if $week =~ /^Adv/i;
+  return 'Nat' if $week =~ /^Nat/i;
+  return 'Pasc' if $week =~ /^Pasc/i;
+  return 'Pent' if $week =~ /^Pent/i;
+
   if ($week =~ /^Epi/i) {
+
     # The engine reuses Epi for the unused Epiphany Sundays just before Advent.
     # A printed breviary still has those days in the volume after Pentecost.
     return 'Pent' if $month >= 9;
@@ -429,11 +493,11 @@ sub ribbon_stem {
 
 sub ribbon_section {
   my ($file) = @_;
-  return 'psalterium'  if $file =~ /^Psalterium/i;
-  return 'tempora'     if $file =~ /Tempora/i;
-  return 'sancti'      if $file =~ /Sancti/i;
-  return 'commune'     if $file =~ /Commune/i;
-  return 'ordinarium'  if $file =~ /Ordinarium/i;
+  return 'psalterium' if $file =~ /^Psalterium/i;
+  return 'tempora' if $file =~ /Tempora/i;
+  return 'sancti' if $file =~ /Sancti/i;
+  return 'commune' if $file =~ /Commune/i;
+  return 'ordinarium' if $file =~ /Ordinarium/i;
   return '';
 }
 
@@ -444,6 +508,7 @@ sub ribbon_office_name {
   return '' unless ref $h eq 'HASH';
   my $n = $h->{Officium} // '';
   $n =~ s/\s+\z//;
+
   if ($n eq '') {
     my $rank = $h->{Rank} // '';
     ($n) = split /;;/, $rank;
@@ -457,24 +522,30 @@ sub ribbon_versions_table {
   my $path = "$Bin/../../www/Tabulae/data.txt";
   open my $fh, '<:encoding(UTF-8)', $path or die "Cannot read $path: $!";
   my $header = <$fh>;
+
   while (my $line = <$fh>) {
     chomp $line;
     next if $line eq '';
     my ($ver, $kal, $tr, $str, $base) = split /,/, $line, 6;
-    $t{$ver} = { kalendar => $kal // '', base => $base // '' };
+    $t{$ver} = {
+      kalendar => $kal // '',
+      base => $base // '',
+    };
   }
   return \%t;
 }
 
 sub ribbon_stock_version {
+
   my ($version) = @_;
   my $table = ribbon_versions_table();
   my %stock = map { $_ => 1 } qw(1570 1888 1906 1939 1954 1955 1960);
   my $cur = $version;
   my $guard = 0;
+
   while ($cur && $guard++ < 12) {
     my $row = $table->{$cur} or last;
-    return $cur if $stock{ $row->{kalendar} // '' };
+    return $cur if $stock{$row->{kalendar} // ''};
     last if !$row->{base} || $row->{base} eq $cur;
     $cur = $row->{base};
   }
@@ -500,6 +571,7 @@ sub ribbon_prepare {
 sub ribbon_incipit {
   my ($num, $source) = @_;
   my $text = '';
+
   if ($source =~ /Commune/i && $commune{"Lectio$num"}) {
     $text = $commune{"Lectio$num"};
   } elsif ($source =~ /Tempora/i && $scriptura{"Lectio$num"}) {
@@ -512,6 +584,7 @@ sub ribbon_incipit {
     $text = $scriptura{"Lectio$num"};
   }
   return '' unless $text;
+
   for my $line (split /\n/, $text) {
     next if $line =~ /^\s*$/;
     next if $line =~ /^\s*[\#\$\@\&]/;
@@ -530,33 +603,40 @@ sub ribbon_lessons_from {
   my ($events, $nocturns) = @_;
   my $nless = ($nocturns || 1) * 3;
   my @L;
+
   for my $i (1 .. $nless) {
     $L[$i] = {
-      n => $i, nocturn => int(($i - 1) / 3) + 1,
-      kind => '', source => '', note => ''
+      n => $i,
+      nocturn => int(($i - 1) / 3) + 1,
+      kind => '',
+      source => '',
+      note => '',
     };
   }
+
   for my $e (@$events) {
     next unless ($e->{kind} // '') eq 'note';
     my $c = $e->{comment} // '';
+
     if ($c =~ /Lectio(\d+)-(\d+) from (\S+)/) {
       for my $i ($1 .. $2) {
         next if $i < 1 || $i > $nless || $L[$i]{source};
         $L[$i]{source} = $3;
-        $L[$i]{kind}   = 'scripture';
-        $L[$i]{note}   = $c;
+        $L[$i]{kind} = 'scripture';
+        $L[$i]{note} = $c;
       }
     } elsif ($c =~ /Lectio(\d+) ex Sancti/) {
       my $i = $1;
       my $end = ($i % 3 == 1) ? $i + 2 : $i;
       $end = $nless if $end > $nless;
+
       for my $j ($i .. $end) {
         next if $L[$j]{source};
         $L[$j]{source} = $winner;
         $L[$j]{kind} =
             ($L[$j]{nocturn} == 3) ? 'homily'
           : ($L[$j]{nocturn} == 2) ? 'legend'
-          :                          'scripture';
+          : 'scripture';
       }
       $L[$i]{note} = $c;
     } elsif ($c =~ /Lectio(\d+) ex (.+)/) {
@@ -564,21 +644,23 @@ sub ribbon_lessons_from {
       my $end = ($i % 3 == 1) ? $i + 2 : $i;
       $end = $nless if $end > $nless;
       my $src = ($rest =~ /\.txt/) ? $rest : ($commune || $winner);
+
       for my $j ($i .. $end) {
         next if $L[$j]{source};
         $L[$j]{source} = $src;
         $L[$j]{kind} =
             ($L[$j]{nocturn} == 3) ? 'homily'
           : ($L[$j]{nocturn} == 2) ? 'legend'
-          :                          'scripture';
+          : 'scripture';
       }
       $L[$i]{note} = $c;
     } elsif ($c =~ /de scriptura|ex scriptura/i) {
       my $i = ($c =~ /Lectio(\d+)/) ? $1 : 1;
+
       if ($i >= 1 && $i <= $nless && !$L[$i]{source}) {
         $L[$i]{source} = $scriptura || $winner;
-        $L[$i]{kind}   = 'scripture';
-        $L[$i]{note}   = $c;
+        $L[$i]{kind} = 'scripture';
+        $L[$i]{note} = $c;
       }
     } elsif ($c =~ /Diverged to Homily/i && $L[3]) {
       $L[3]{kind} = 'homily';
@@ -588,7 +670,7 @@ sub ribbon_lessons_from {
       $L[3]{note} = $c;
     } elsif ($c =~ /Homily from Evang/i) {
       for my $i (1 .. $nless) {
-        $L[$i]{kind}   = 'homily' unless $L[$i]{kind};
+        $L[$i]{kind} = 'homily' unless $L[$i]{kind};
         $L[$i]{source} = $winner unless $L[$i]{source};
       }
     } elsif ($c =~ /fit una|Contract scripture/i) {
@@ -596,6 +678,7 @@ sub ribbon_lessons_from {
     }
   }
   my @out;
+
   for my $i (1 .. $nless) {
     $L[$i]{incipit} = ribbon_incipit($i, $L[$i]{source} // '');
     push @out, $L[$i];
@@ -604,6 +687,7 @@ sub ribbon_lessons_from {
 }
 
 sub ribbon_hour_facts {
+
   my ($events) = @_;
   my %part;
   my @order;
@@ -611,33 +695,41 @@ sub ribbon_hour_facts {
     my ($id, $file, $name) = @_;
     return unless $id;
     push @order, $id unless exists $part{$id};
-    $part{$id} = { id => $id, file => $file // '', name => $name // '' };
+    $part{$id} = {
+      id => $id,
+      file => $file // '',
+      name => $name // '',
+    };
   };
   my @comms;
   my $preces;
   my $sunday = 0;
-  my $creed  = 0;
+  my $creed = 0;
+
   for my $e (@$events) {
     my $kind = $e->{kind} // '';
+
     if ($kind eq 'src') {
       my $name = $e->{name} // '';
-      my $cmt  = $e->{comment} // '';
+      my $cmt = $e->{comment} // '';
+
       # The psalm scheme is often filed under the day key (Day2, Prima Day2)
       # with the comment "Psalmi ord", and the short lesson under a season key.
       my $id =
-          $name =~ /^Invit/i              ? 'invitatory'
-        : $name =~ /Hymnus/i              ? 'hymn'
-        : $name =~ /^Ant\b|Antiphona/i    ? 'antiphons'
-        : $name =~ /Psalmi|Psalm/i        ? 'psalms'
-        : $cmt  =~ /Psalmi/i              ? 'psalms'
-        : $name =~ /Versum|Versus/i       ? 'verse'
-        : $name =~ /Capitulum/i           ? 'capitulum'
-        : $name =~ /Oratio/i              ? 'collect'
-        : $name =~ /Lectio brevis/i       ? 'lectio_brevis'
-        : $cmt  =~ /Lectio brevis/i       ? 'lectio_brevis'
-        :                                   '';
+          $name =~ /^Invit/i ? 'invitatory'
+        : $name =~ /Hymnus/i ? 'hymn'
+        : $name =~ /^Ant\b|Antiphona/i ? 'antiphons'
+        : $name =~ /Psalmi|Psalm/i ? 'psalms'
+        : $cmt =~ /Psalmi/i ? 'psalms'
+        : $name =~ /Versum|Versus/i ? 'verse'
+        : $name =~ /Capitulum/i ? 'capitulum'
+        : $name =~ /Oratio/i ? 'collect'
+        : $name =~ /Lectio brevis/i ? 'lectio_brevis'
+        : $cmt =~ /Lectio brevis/i ? 'lectio_brevis'
+        : '';
       my $path = ribbon_resolve_label($e->{file});
       $remember->($id, $path, $name);
+
       # At Matins the proper or common antiphons carry the psalm numbers and
       # replace the weekday scheme that was loaded first.
       if ($name =~ /Ant Matutinum/i && $cmt =~ /subst/i) {
@@ -646,7 +738,7 @@ sub ribbon_hour_facts {
     } elsif ($kind eq 'note') {
       my $c = $e->{comment} // '';
       $sunday = 1 if $c =~ /Psalmi dominica/i;
-      $creed  = 1 if $c =~ /Quicumque/i;
+      $creed = 1 if $c =~ /Quicumque/i;
       if ($c =~ /^(\S+\.txt):\s*\d+/) { push @comms, $1; }
     } elsif ($kind eq 'lab') {
       if (($e->{label} // '') =~ /Preces/i) {
@@ -660,12 +752,12 @@ sub ribbon_hour_facts {
   }
   $part{psalms}{sunday} = $sunday if $part{psalms};
   return {
-    parts  => \%part,
-    order  => \@order,
-    comms  => \@comms,
+    parts => \%part,
+    order => \@order,
+    comms => \@comms,
     preces => $preces,
     sunday => $sunday,
-    creed  => $creed,
+    creed => $creed,
   };
 }
 
@@ -678,6 +770,7 @@ sub ribbon_run_hour {
   precedence($date);
   my @script = getordinarium('Latin', $hora);
   @script = specials(\@script, 'Latin');
+
   if ($h eq 'Matutinum') {
     for my $block (@script) {
       eval { resolve_refs($block, 'Latin'); };
@@ -686,25 +779,26 @@ sub ribbon_run_hour {
   my @events = @RIBBON_EVENTS;
   my $sum = ribbon_hour_facts(\@events);
   $sum->{vespera} = $vespera;
-  $sum->{laudes}  = $laudes;
-  $sum->{rank}    = $rank;
-  $sum->{winner}  = $winner;
+  $sum->{laudes} = $laudes;
+  $sum->{rank} = $rank;
+  $sum->{winner} = $winner;
   $sum->{commune} = $commune;
   $sum->{commemoratio} = $commemoratio;
-  $sum->{events}  = \@events;
+  $sum->{events} = \@events;
   return $sum;
 }
 
 sub ribbon_kind_of {
   my ($file, $rankline, $rank, $dow) = @_;
   $rankline //= '';
-  $file     //= '';
+  $file //= '';
   if ($file =~ /Pasc0-0|Pasc7-0/) { return 'sunday_special'; }
   if ($rankline =~ /Dominica/i) { return 'sunday'; }
+
   if ($file =~ /Sancti|Commune/i || $rankline =~ /S\.|Ss\.|Sanct/i) {
-    return 'festive'     if $rank >= 6;
+    return 'festive' if $rank >= 6;
     return 'semifestive' if $rank >= 5 && $rank < 6;
-    return 'ordinary'    if $file =~ /Sancti|Commune/i;
+    return 'ordinary' if $file =~ /Sancti|Commune/i;
   }
   return 'ferial';
 }
@@ -712,6 +806,7 @@ sub ribbon_kind_of {
 sub ribbon_capture_names {
   my ($file) = @_;
   my %n;
+
   for my $lang (@RIBBON_LANGS) {
     $n{$lang} = ribbon_office_name($lang, $file);
     $n{$lang} = $n{Latin} if $n{$lang} eq '' && $lang ne 'Latin';
@@ -726,7 +821,8 @@ sub ribbon_resolve {
 
   my $mat = ribbon_run_hour($date, 'Matutinum');
   my $nocturns = ($rule =~ /9 lectiones/i) ? 3 : 1;
-  for my $e (@{ $mat->{events} }) {
+
+  for my $e (@{$mat->{events}}) {
     $nocturns = 3 if ($e->{comment} // '') =~ /9 lectiones/;
     $nocturns = 1 if ($e->{comment} // '') =~ /3 lectiones|One nocturn/;
   }
@@ -735,6 +831,7 @@ sub ribbon_resolve {
   my @lessons = ribbon_lessons_from($mat->{events}, $nocturns);
 
   my %names_rank;
+
   for my $lang (@RIBBON_LANGS) {
     $names_rank{$lang} = rankname($lang);
   }
@@ -743,30 +840,37 @@ sub ribbon_resolve {
   my $season = ribbon_season_code($week, $month);
 
   my %hours = (Matutinum => $mat);
+
   for my $h (@RIBBON_HOURS) {
     next if $h eq 'Matutinum';
     $hours{$h} = ribbon_run_hour($date, $h);
   }
 
   my $local_winner = $mat->{winner};
-  my $local_key    = ribbon_feast_key($local_winner);
+  my $local_key = ribbon_feast_key($local_winner);
   my $prev = prevnext($date, -1);
   my $first = ribbon_run_hour($prev, 'Vespera');
-  my $first_vespers = ($first->{vespera} && $first->{vespera} == 1
+  my $first_vespers =
+    (    $first->{vespera}
+      && $first->{vespera} == 1
       && ribbon_feast_key($first->{winner}) ne ''
       && ribbon_feast_key($first->{winner}) eq $local_key) ? 1 : 0;
 
   my %general;
+
   if ($stock ne $version) {
     ribbon_prepare($stock);
     my $gmat = ribbon_run_hour($date, 'Matutinum');
     my $glau = ribbon_run_hour($date, 'Laudes');
     %general = (
       version => $stock,
-      winner  => $gmat->{winner},
-      rank    => $gmat->{rank},
-      names   => ribbon_capture_names($gmat->{winner}),
-      rank_name => { Latin => rankname('Latin'), English => rankname('English') },
+      winner => $gmat->{winner},
+      rank => $gmat->{rank},
+      names => ribbon_capture_names($gmat->{winner}),
+      rank_name => {
+        Latin => rankname('Latin'),
+        English => rankname('English'),
+      },
       laudes_comm => $glau->{commemoratio} || '',
       matins_comm => $gmat->{commemoratio} || '',
     );
@@ -776,16 +880,17 @@ sub ribbon_resolve {
   } else {
     %general = (
       version => $version,
-      winner  => $local_winner,
-      rank    => $mat->{rank},
-      names   => {},
-      same    => 1,
+      winner => $local_winner,
+      rank => $mat->{rank},
+      names => {},
+      same => 1,
     );
   }
 
   my $why = 'other';
   my $gkey = ribbon_feast_key($general{winner});
   my $gcomm = ribbon_feast_key($general{laudes_comm} || $general{matins_comm} || '');
+
   if ($general{same}) {
     $why = 'same';
   } elsif ($local_winner =~ /Sancti/i && $general{winner} =~ /Tempora/i && $gcomm eq $local_key && $local_key ne '') {
@@ -798,25 +903,34 @@ sub ribbon_resolve {
 
   my $vnum = $hours{Vespera}{vespera} || 0;
   return {
-    date => $date, version => $version, stock => $stock,
+    date => $date,
+    version => $version,
+    stock => $stock,
     is_1960 => ($version =~ /1960/ ? 1 : 0),
-    month => $month, day => $day, year => $year, dow => $dayofweek,
-    week => $week, season => $season,
-    winner => $local_winner, rank => $mat->{rank},
+    month => $month,
+    day => $day,
+    year => $year,
+    dow => $dayofweek,
+    week => $week,
+    season => $season,
+    winner => $local_winner,
+    rank => $mat->{rank},
     rank_name => \%names_rank,
     names => ribbon_capture_names($local_winner),
     commune => $mat->{commune} || '',
     commune_names => ribbon_capture_names($mat->{commune}),
     scriptura => $scriptura || '',
-    kind => $kind, why => $why,
-    nocturns => $nocturns, tedeum => $tedeum,
+    kind => $kind,
+    why => $why,
+    nocturns => $nocturns,
+    tedeum => $tedeum,
     lessons => \@lessons,
     hours => \%hours,
     first_vespers => $first_vespers,
     vespera => $vnum,
     laudes_scheme => $hours{Laudes}{laudes} || $mat->{laudes} || 1,
     general => \%general,
-    dayname => [ @dayname ],
+    dayname => [@dayname],
   };
 }
 
@@ -829,19 +943,25 @@ sub v_page {
 sub ribbon_find_page {
   my ($edition_id, $season, @keys) = @_;
   my $ed = $RIBBON_EDITIONS{$edition_id} or return;
-  return unless @{ $ed->{volumes} || [] };
+  return unless @{$ed->{volumes} || []};
   my $vol;
-  for my $v (@{ $ed->{volumes} }) {
+
+  for my $v (@{$ed->{volumes}}) {
     if ($season && $v->{seasons}{$season}) { $vol = $v; last; }
   }
   my $page;
+
   if ($vol) {
     for my $k (@keys) {
       my $row = v_page($vol, $k);
       if ($row) { $page = $row; last; }
     }
   }
-  return { volume => $vol, page => $page ? $page->{page} : undef, note => $page ? $page->{note} : '' };
+  return {
+    volume => $vol,
+    page => $page ? $page->{page} : undef,
+    note => $page ? $page->{note} : '',
+  };
 }
 
 sub ribbon_keys_for {
@@ -863,6 +983,7 @@ sub ribbon_page_span {
 }
 
 sub ribbon_quote {
+
   my ($id) = @_;
   my $c = $RIBBON_CATALOG{$id} or return;
   my $corpus = $c->{corpus} || '';
@@ -874,6 +995,7 @@ sub ribbon_quote {
   my $la = $la_full;
   my $en_ok = ($en_full ne '');
   my $la_ok = ($la_full ne '');
+
   if (defined $c->{en} && $c->{en} ne '') {
     if (index(ribbon_norm($en_full), ribbon_norm($c->{en})) >= 0) {
       $en = $c->{en};
@@ -883,6 +1005,7 @@ sub ribbon_quote {
       $en_ok = 0;
     }
   }
+
   if (defined $c->{la} && $c->{la} ne '') {
     if (index(ribbon_norm($la_full), ribbon_norm($c->{la})) >= 0) {
       $la = $c->{la};
@@ -894,33 +1017,45 @@ sub ribbon_quote {
   }
   my $page = $c->{page} || $la_row->{page} || '';
   return {
-    id => $id, topic => $c->{topic} || '', number => $num, corpus => $corpus,
-    file => $c->{file} || '', page => $page, en => $en, la => $la,
-    en_ok => $en_ok, la_ok => $la_ok, en_damaged => ($c->{en_damaged} ? 1 : 0),
+    id => $id,
+    topic => $c->{topic} || '',
+    number => $num,
+    corpus => $corpus,
+    file => $c->{file} || '',
+    page => $page,
+    en => $en,
+    la => $la,
+    en_ok => $en_ok,
+    la_ok => $la_ok,
+    en_damaged => ($c->{en_damaged} ? 1 : 0),
   };
 }
 
 sub ribbon_quote_html {
   my ($code, $id) = @_;
   my $q = ribbon_quote($id);
+
   if (!$q) {
     return '<blockquote class="rubric">[to be sourced]</blockquote>';
   }
   my $cite_id = $q->{corpus} eq 'breviary' ? 'ui.rubrics_breviary' : 'ui.rubrics_general';
   my $html = '<blockquote class="rubric">';
-  $html .= '<p class="cite"><b>' . ribbon_sh($code, $cite_id, { n => $q->{number} }) . '</b>';
+  $html .= '<p class="cite"><b>' . ribbon_sh($code, $cite_id, {n => $q->{number}}) . '</b>';
   $html .= '<br>' . ribbon_h($q->{file}) if $q->{file};
   $html .= '</p>';
+
   if ($q->{en_ok}) {
     my $body = ribbon_h($q->{en});
     $body =~ s/\n/<br>\n/g;
     $html .= '<p><i>' . ribbon_sh($code, 'ui.quote_en') . '</i><br>' . $body . '</p>';
+
     if ($q->{en_damaged}) {
       $html .= '<p class="ribbon-note">' . ribbon_sh($code, 'ui.en_damaged') . '</p>';
     }
   } else {
     $html .= '<p><i>' . ribbon_sh($code, 'ui.quote_en') . '</i><br>[to be sourced]</p>';
   }
+
   if ($q->{la_ok}) {
     my $body = ribbon_h($q->{la});
     $body =~ s/\n/<br>\n/g;
@@ -935,12 +1070,14 @@ sub ribbon_quote_html {
 }
 
 sub ribbon_part_line {
+
   my ($code, $edition, $season, $hour, $part, $file, $extra) = @_;
   my $label = ribbon_sh($code, "part.$part");
   my $src = $file ? ribbon_h($file) : '';
   my $found = ribbon_find_page($edition, $season, ribbon_keys_for($hour, $part, $file));
   my $page = ribbon_page_span($code, $found);
   my $more = $extra ? ' — ' . ribbon_h($extra) : '';
+
   return "<li><b>$label</b>" . ($src ? ": $src" : '') . $more . $page . "</li>\n";
 }
 
@@ -958,31 +1095,36 @@ sub ribbon_html {
 
   my $title = $facts->{names}{$lang} || $facts->{names}{Latin} || '';
   my $rankn = $facts->{rank_name}{$lang} || $facts->{rank_name}{Latin} || '';
-  my $kind  = ribbon_s($code, 'kind.' . $facts->{kind});
+  my $kind = ribbon_s($code, 'kind.' . $facts->{kind});
   $out .= '<h2>' . ribbon_h($title) . '</h2>';
-  $out .= '<p class="ribbon-note">' . ribbon_h($rankn) . ' — ' . ribbon_h($kind)
-    . '<br>' . ribbon_sh($code, 'ui.engine') . '</p>';
+  $out .=
+      '<p class="ribbon-note">'
+    . ribbon_h($rankn) . ' — '
+    . ribbon_h($kind) . '<br>'
+    . ribbon_sh($code, 'ui.engine') . '</p>';
 
   $out .= '<h2>' . ribbon_sh($code, 'ui.why') . '</h2>';
   my $g = $facts->{general};
   my $slots = {
     gversion => $g->{version} || $facts->{stock},
-    goffice  => ($g->{names}{$lang} || $g->{names}{Latin} || $g->{winner} || ''),
-    grank    => ($g->{rank_name}{$lang} || $g->{rank_name}{English} || $g->{rank_name}{Latin} || ''),
-    gfeast   => ($g->{comm_names}{$lang} || $g->{comm_names}{Latin} || ''),
+    goffice => ($g->{names}{$lang} || $g->{names}{Latin} || $g->{winner} || ''),
+    grank => ($g->{rank_name}{$lang} || $g->{rank_name}{English} || $g->{rank_name}{Latin} || ''),
+    gfeast => ($g->{comm_names}{$lang} || $g->{comm_names}{Latin} || ''),
     calendar => $facts->{version},
-    lrank    => $rankn,
-    loffice  => $title,
-    office   => $title,
-    rank     => $rankn,
-    kind     => $kind,
+    lrank => $rankn,
+    loffice => $title,
+    office => $title,
+    rank => $rankn,
+    kind => $kind,
   };
   my $why_id = 'plain.why.' . ($facts->{why} || 'other');
   $out .= '<p>' . ribbon_sh($code, $why_id, $slots) . '</p>';
+
   if ($facts->{kind} eq 'festive') {
     $out .= '<p>' . ribbon_sh($code, $facts->{first_vespers} ? 'plain.first.yes' : 'plain.first.no') . '</p>';
   }
   my @why_q;
+
   if ($facts->{why} eq 'elevated') {
     @why_q = qw(GR-25 GR-91-22 GR-91-24 GR-91-12 GR-37);
   } elsif ($facts->{kind} eq 'festive') {
@@ -994,19 +1136,21 @@ sub ribbon_html {
 
   # Volume banner
   my $probe = ribbon_find_page($edition_id, $facts->{season}, 'section:psalterium');
-  if ($ed && @{ $ed->{volumes} || [] }) {
+
+  if ($ed && @{$ed->{volumes} || []}) {
     if ($probe && $probe->{volume}) {
       my $label = ribbon_volume_label($probe->{volume}, $code);
-      $out .= '<p class="volume"><b>' . ribbon_sh($code, 'ui.hold', { label => $label }) . '</b></p>';
+      $out .= '<p class="volume"><b>' . ribbon_sh($code, 'ui.hold', {label => $label}) . '</b></p>';
     } else {
       my $sname = ribbon_s($code, 'season.' . ($facts->{season} || 'Pent'));
-      $out .= '<p class="ribbon-note">' . ribbon_sh($code, 'ui.no_volume', { season => $sname }) . '</p>';
+      $out .= '<p class="ribbon-note">' . ribbon_sh($code, 'ui.no_volume', {season => $sname}) . '</p>';
     }
   }
 
   my $shape = ribbon_shape_html($code, $facts);
-  my $comm  = ribbon_commemorations_html($code, $facts);
+  my $comm = ribbon_commemorations_html($code, $facts);
   my $feast = ribbon_booklet_feast($facts);
+
   if ($feast) {
     my $which = ($pray && $pray eq 'booklet') ? 'booklet' : 'book';
     $out .= '<h2>' . ribbon_sh($code, 'ui.how') . '</h2>';
@@ -1020,18 +1164,18 @@ sub ribbon_html {
     $out .= '<label for="pray-booklet">' . ribbon_sh($code, 'ui.mode.booklet') . '</label>';
     $out .= '</div>';
     $out .= '<p class="pray-lead book-lead">' . ribbon_sh($code, 'ui.mode.book_lead') . '</p>';
-    $out .= '<p class="pray-lead booklet-lead">' . ribbon_sh($code, 'ui.mode.booklet_lead') . ' '
+    $out .=
+        '<p class="pray-lead booklet-lead">'
+      . ribbon_sh($code, 'ui.mode.booklet_lead') . ' '
       . ribbon_booklet_status_html($code, $feast) . '</p>';
-    $out .= '<div class="pray-panel book-panel">'
-      . ribbon_ribbons_html($code, $edition_id, $facts, 'book') . '</div>';
-    $out .= '<div class="pray-panel booklet-panel">'
-      . ribbon_ribbons_html($code, $edition_id, $facts, 'booklet') . '</div>';
+    $out .= '<div class="pray-panel book-panel">' . ribbon_ribbons_html($code, $edition_id, $facts, 'book') . '</div>';
+    $out .=
+      '<div class="pray-panel booklet-panel">' . ribbon_ribbons_html($code, $edition_id, $facts, 'booklet') . '</div>';
     $out .= $comm;
     $out .= $shape;
-    $out .= '<div class="pray-panel book-panel">'
-      . ribbon_hours_html($code, $edition_id, $facts, 'book') . '</div>';
-    $out .= '<div class="pray-panel booklet-panel">'
-      . ribbon_hours_html($code, $edition_id, $facts, 'booklet') . '</div>';
+    $out .= '<div class="pray-panel book-panel">' . ribbon_hours_html($code, $edition_id, $facts, 'book') . '</div>';
+    $out .=
+      '<div class="pray-panel booklet-panel">' . ribbon_hours_html($code, $edition_id, $facts, 'booklet') . '</div>';
     $out .= '</div>';
   } else {
     $out .= ribbon_ribbons_html($code, $edition_id, $facts, '');
@@ -1047,12 +1191,12 @@ sub ribbon_shape_html {
   my ($code, $facts) = @_;
   my $out = '<h2>' . ribbon_sh($code, 'ui.shape') . '</h2>';
   my @shape =
-      $facts->{kind} eq 'festive'        ? qw(BR-167)
-    : $facts->{kind} eq 'semifestive'    ? qw(BR-168)
-    : $facts->{kind} eq 'ordinary'       ? qw(BR-169 BR-177)
-    : $facts->{kind} eq 'sunday'         ? qw(BR-165 BR-166)
+      $facts->{kind} eq 'festive' ? qw(BR-167)
+    : $facts->{kind} eq 'semifestive' ? qw(BR-168)
+    : $facts->{kind} eq 'ordinary' ? qw(BR-169 BR-177)
+    : $facts->{kind} eq 'sunday' ? qw(BR-165 BR-166)
     : $facts->{kind} eq 'sunday_special' ? qw(BR-163)
-    :                                      qw(BR-170 BR-171);
+    : qw(BR-170 BR-171);
   $out .= ribbon_quote_html($code, $_) for @shape;
   return $out;
 }
@@ -1060,6 +1204,7 @@ sub ribbon_shape_html {
 sub ribbon_hours_html {
   my ($code, $edition_id, $facts, $mode) = @_;
   my $out = '<h2>' . ribbon_sh($code, 'ui.hours') . '</h2>';
+
   for my $h (@RIBBON_HOURS) {
     $out .= ribbon_hour_html($code, $edition_id, $facts, $h, $mode);
   }
@@ -1072,12 +1217,26 @@ sub ribbon_ribbons_html {
   my $out = '<h2>' . ribbon_sh($code, 'ui.ribbons') . '</h2>';
   $out .= '<ul class="ribbons">';
   my $psalm_file = $facts->{hours}{Matutinum}{parts}{psalms}{file} || 'Psalterium';
-  my $which_ps = $facts->{hours}{Laudes}{sunday} ? ribbon_s($code, 'ui.sunday_psalms') : ribbon_s($code, 'ui.weekday_psalms');
-  my $scheme = ribbon_s($code, 'ui.scheme', { n => $facts->{laudes_scheme} || 1 });
-  $out .= ribbon_section_row($code, $edition_id, $facts, 'psalterium', $psalm_file,
-    ribbon_s($code, 'ui.psalter_detail', { which => $which_ps, scheme => $scheme }));
+  my $which_ps =
+    $facts->{hours}{Laudes}{sunday} ? ribbon_s($code, 'ui.sunday_psalms') : ribbon_s($code, 'ui.weekday_psalms');
+  my $scheme = ribbon_s($code, 'ui.scheme', {n => $facts->{laudes_scheme} || 1});
+  $out .= ribbon_section_row(
+    $code,
+    $edition_id,
+    $facts,
+    'psalterium',
+    $psalm_file,
+    ribbon_s(
+      $code,
+      'ui.psalter_detail', {
+        which => $which_ps,
+        scheme => $scheme,
+      },
+    ),
+  );
 
   my $tempora = '';
+
   for my $cand ($facts->{winner}, $facts->{scriptura}, $facts->{hours}{Laudes}{commemoratio}) {
     if ($cand && $cand =~ /Tempora/i) { $tempora = $cand; last; }
   }
@@ -1086,30 +1245,31 @@ sub ribbon_ribbons_html {
   if ($mode eq '') {
     my $sancti = ($facts->{winner} =~ /Sancti/i) ? $facts->{winner} : '';
     my $sancti_note = '';
+
     if (!$sancti) {
-      for my $c (@{ $facts->{hours}{Laudes}{comms} || [] }, $facts->{hours}{Laudes}{commemoratio}) {
+      for my $c (@{$facts->{hours}{Laudes}{comms} || []}, $facts->{hours}{Laudes}{commemoratio}) {
         if ($c && $c =~ /Sancti/i) { $sancti = $c; $sancti_note = 'commem'; last; }
       }
     }
     $out .= ribbon_section_row($code, $edition_id, $facts, 'sancti', $sancti, $sancti_note);
   } else {
     my @sancti = ribbon_sancti_files($facts, $mode);
+
     if (!@sancti) {
       $out .= ribbon_section_row($code, $edition_id, $facts, 'sancti', '', '');
     } else {
       my $label = ribbon_sh($code, 'sec.sancti');
-      my $detail = join '<br>', map { ribbon_sh($code, 'ui.open', { file => $_ }) } @sancti;
-      my $found = ribbon_find_page($edition_id, $facts->{season},
-        'section:sancti:' . $sancti[0], 'section:sancti');
+      my $detail = join '<br>', map { ribbon_sh($code, 'ui.open', {file => $_}) } @sancti;
+      my $found = ribbon_find_page($edition_id, $facts->{season}, 'section:sancti:' . $sancti[0], 'section:sancti');
       my $page = ribbon_page_span($code, $found);
       $out .= "<li><b>$label</b><br>$detail$page</li>\n";
     }
+
     if ($mode eq 'booklet') {
       my $file = ribbon_booklet_feast($facts);
       my $label = ribbon_sh($code, 'sec.booklet');
-      my $detail = ribbon_sh($code, 'sk.booklet.insert', { file => $file });
-      $out .= '<li><b>' . $label . '</b><br>' . $detail . ' '
-        . ribbon_booklet_status_html($code, $file) . "</li>\n";
+      my $detail = ribbon_sh($code, 'sk.booklet.insert', {file => $file});
+      $out .= '<li><b>' . $label . '</b><br>' . $detail . ' ' . ribbon_booklet_status_html($code, $file) . "</li>\n";
     }
   }
 
@@ -1120,21 +1280,22 @@ sub ribbon_ribbons_html {
 }
 
 sub ribbon_section_row {
+
   my ($code, $edition, $facts, $sec, $file, $note) = @_;
   my $label = ribbon_sh($code, "sec.$sec");
-  my $found = ribbon_find_page($edition, $facts->{season},
-    $file ? ("section:$sec:" . ribbon_stem($file)) : (),
-    "section:$sec");
+  my $found =
+    ribbon_find_page($edition, $facts->{season}, $file ? ("section:$sec:" . ribbon_stem($file)) : (), "section:$sec");
   my $page = ribbon_page_span($code, $found);
   my $detail;
+
   if (!$file) {
     $detail = ribbon_sh($code, 'ui.unused');
   } elsif ($note eq 'commem') {
-    $detail = ribbon_sh($code, 'ui.commem_file', { file => $file });
+    $detail = ribbon_sh($code, 'ui.commem_file', {file => $file});
   } elsif ($note) {
     $detail = ribbon_h($note) . ($file && $file ne 'Ordinarium' ? ' — ' . ribbon_h($file) : '');
   } else {
-    $detail = ribbon_sh($code, 'ui.open', { file => $file });
+    $detail = ribbon_sh($code, 'ui.open', {file => $file});
   }
   return "<li><b>$label</b><br>$detail$page</li>\n";
 }
@@ -1149,10 +1310,10 @@ sub ribbon_resolve_label {
   my $wo = $winner{Officium} // '';
   my $co = $commune{Officium} // '';
   for ($wo, $co) { s/\s+\z//; s/\n.*//s; }
-  return $winner  if $wo ne '' && index($label, $wo) == 0;
+  return $winner if $wo ne '' && index($label, $wo) == 0;
   return $commune if $co ne '' && index($label, $co) == 0;
   return $commune if $label =~ /^Commune\b/i && $commune;
-  return $winner  if $winner =~ m{/};
+  return $winner if $winner =~ m{/};
   return $label;
 }
 
@@ -1160,6 +1321,7 @@ sub ribbon_load_booklets {
   %RIBBON_BOOKLET = ();
   my $path = ribbon_root() . '/booklets.txt';
   open my $fh, '<:encoding(UTF-8)', $path or return;
+
   while (my $line = <$fh>) {
     chomp $line;
     next if $line =~ /^\s*$/ || $line =~ /^\s*#/;
@@ -1169,6 +1331,7 @@ sub ribbon_load_booklets {
     $file =~ s/^\s+|\s+\z//g;
     $href = '' if !defined $href;
     $href =~ s/^\s+|\s+\z//g;
+
     # A file with no URL is still in the booklet. The note is shown; the link stays empty.
     $RIBBON_BOOKLET{$file} = $href;
   }
@@ -1206,7 +1369,11 @@ sub ribbon_book_fallback {
   my $com = ribbon_commune_stem($facts);
   return $class if $com eq '';
   return {
-    place => 'commune', file => $com, book => 1, booklet => '', substituted => 1,
+    place => 'commune',
+    file => $com,
+    book => 1,
+    booklet => '',
+    substituted => 1,
   };
 }
 
@@ -1215,8 +1382,9 @@ sub ribbon_view_class {
   my ($class, $facts, $mode) = @_;
   $mode //= '';
   return ribbon_book_fallback($class, $facts) if $mode eq 'book';
+
   if ($mode eq 'booklet' && $class && !$class->{book}) {
-    return { %$class, place => 'booklet' };
+    return {%$class, place => 'booklet'};
   }
   return $class;
 }
@@ -1225,8 +1393,13 @@ sub ribbon_booklet_status_html {
   my ($code, $file) = @_;
   my $href = (defined $file && exists $RIBBON_BOOKLET{$file}) ? ($RIBBON_BOOKLET{$file} // '') : '';
   my $attr = ' data-file="' . ribbon_h($file) . '" data-booklet="' . ribbon_h($href) . '"';
+
   if ($href) {
-    return '<a class="print-proper"' . $attr . ' href="' . ribbon_h($href) . '">'
+    return
+        '<a class="print-proper"'
+      . $attr
+      . ' href="'
+      . ribbon_h($href) . '">'
       . ribbon_sh($code, 'sk.booklet.link') . '</a>';
   }
   return '<span class="booklet-soon"' . $attr . '>' . ribbon_sh($code, 'sk.booklet.soon') . '</span>';
@@ -1243,16 +1416,18 @@ sub ribbon_sancti_files {
     return if $f eq '' || $seen{$f}++;
     push @out, $f;
   };
+
   if (($mode || '') ne 'booklet') {
     my $abr = ribbon_abridged_life($facts);
     $add->($abr->{roman}) if $abr && $abr->{roman};
   }
+
   for my $h (@RIBBON_HOURS) {
     my $sum = $facts->{hours}{$h} or next;
     my $parts = $sum->{parts} || {};
+
     for my $pid (keys %$parts) {
-      my $c = ribbon_view_class(
-        ribbon_part_class($h, $pid, $parts->{$pid}{file}), $facts, $mode);
+      my $c = ribbon_view_class(ribbon_part_class($h, $pid, $parts->{$pid}{file}), $facts, $mode);
       $add->($c->{file}) if ($c->{place} || '') eq 'sancti' && $c->{book};
     }
   }
@@ -1273,22 +1448,26 @@ sub ribbon_universal_ensure {
   my @up;
   my $cur = 'Rubrics 1960 - 1960';
   my %seen;
+
   while ($cur && !$seen{$cur}++) {
     push @up, $cur;
     $cur = $table->{$cur}{base} || '';
     $cur =~ s/^\s+|\s+\z//g;
   }
   my %day;
+
   for my $ver (reverse @up) {
     my $kal = $table->{$ver}{kalendar} or next;
     my $path = "$Bin/../../www/Tabulae/Kalendaria/$kal.txt";
     open my $fh, '<:encoding(UTF-8)', $path or next;
+
     while (my $line = <$fh>) {
       chomp $line;
       next if $line =~ /^\s*$/ || $line =~ /^\s*[#*]/;
       next unless $line =~ /=/;
       my ($day, $files) = split /=/, $line, 3;
       next unless $day && $day =~ /^\d\d-\d\d\z/;
+
       if (!$files || $files eq 'XXXXX') {
         delete $day{$day};
         next;
@@ -1300,6 +1479,7 @@ sub ribbon_universal_ensure {
   }
   %RIBBON_UNIV_DAY = %day;
   %RIBBON_UNIV_STEM = ();
+
   for my $files (values %day) {
     $RIBBON_UNIV_STEM{$_} = 1 for @$files;
   }
@@ -1310,7 +1490,11 @@ sub ribbon_office_doc {
   my $stem = ribbon_stem($file);
   return $RIBBON_OFFICE_DOC{$stem} if exists $RIBBON_OFFICE_DOC{$stem};
   my $path = "$datafolder/Latin/$stem.txt";
-  my %doc = (include => '', sec => {});
+  my %doc = (
+    include => '',
+    sec => {},
+  );
+
   if (open my $fh, '<:encoding(UTF-8)', $path) {
     my $key = '';
     my @body;
@@ -1318,8 +1502,10 @@ sub ribbon_office_doc {
       return unless $key ne '';
       $doc{sec}{$key} = join "\n", @body;
     };
+
     while (my $line = <$fh>) {
       chomp $line;
+
       if ($line =~ /^\s*\[([^\]]+)\]\s*$/) {
         $flush->();
         $key = $1;
@@ -1327,6 +1513,7 @@ sub ribbon_office_doc {
         @body = ();
         next;
       }
+
       if ($key eq '' && $line =~ /^\s*@([^\s:]+)\s*$/) {
         $doc{include} ||= $1;
         next;
@@ -1343,12 +1530,17 @@ sub ribbon_office_doc {
 sub ribbon_first_include {
   my ($body) = @_;
   my $inc;
+
   for my $line (split /\n/, $body // '') {
     next if $line =~ /^\s*$/;
     next if $line =~ /^\s*\(/;
     next if $line =~ /^\s*&/;
+
     if ($line =~ /^\s*@([^\s:]*)(?::([^\s:]+))?/) {
-      $inc ||= { file => $1 // '', key => $2 // '' };
+      $inc ||= {
+        file => $1 // '',
+        key => $2 // '',
+      };
       next;
     }
     return;
@@ -1362,8 +1554,10 @@ sub ribbon_section_owner {
   my $stem = ribbon_stem($file);
   return $stem if !$stem || $seen->{$stem . '|' . ($key // '')}++;
   my $doc = ribbon_office_doc($stem);
+
   if ($key && exists $doc->{sec}{$key}) {
     my $inc = ribbon_first_include($doc->{sec}{$key});
+
     if ($inc) {
       my $next = $inc->{file} || $stem;
       my $nkey = $inc->{key} || $key;
@@ -1385,6 +1579,7 @@ sub ribbon_section_prose {
   return '' unless $key && exists $doc->{sec}{$key};
   my $body = $doc->{sec}{$key};
   my $inc = ribbon_first_include($body);
+
   if ($inc) {
     my $next = $inc->{file} || $stem;
     my $nkey = $inc->{key} || $key;
@@ -1392,6 +1587,7 @@ sub ribbon_section_prose {
     return ribbon_section_prose($next, $nkey, $seen);
   }
   my @lines;
+
   for my $line (split /\n/, $body) {
     next if $line =~ /^\s*$/ || $line =~ /^\s*\(/ || $line =~ /^\s*[@\$&]/;
     push @lines, $line;
@@ -1423,6 +1619,7 @@ sub ribbon_same_text {
   return 1 if $a eq $b;
   my $m = length($a) < length($b) ? length($a) : length($b);
   my $n = 0;
+
   for my $i (0 .. $m - 1) {
     last if substr($a, $i, 1) ne substr($b, $i, 1);
     $n++;
@@ -1448,74 +1645,148 @@ sub ribbon_in_roman_sancti {
 sub ribbon_classify {
   my ($file, $key) = @_;
   $file = ribbon_stem($file // '');
-  my $blank = { place => 'unresolved', file => '', book => 1, booklet => '' };
+  my $blank = {
+    place => 'unresolved',
+    file => '',
+    book => 1,
+    booklet => '',
+  };
   return $blank if $file eq '';
+
   if ($file =~ m{^Psalterium/Psalmi}i) {
-    return { place => 'psalter', file => $file, book => 1, booklet => '' };
+    return {
+      place => 'psalter',
+      file => $file,
+      book => 1,
+      booklet => '',
+    };
   }
+
   if ($file =~ m{^Psalterium/}i || $file =~ /Ordinarium/i) {
-    return { place => 'ordinary', file => $file, book => 1, booklet => '' };
+    return {
+      place => 'ordinary',
+      file => $file,
+      book => 1,
+      booklet => '',
+    };
   }
+
   if ($file =~ m{^Tempora/}i) {
-    return { place => 'tempora', file => $file, book => 1, booklet => '' };
+    return {
+      place => 'tempora',
+      file => $file,
+      book => 1,
+      booklet => '',
+    };
   }
+
   if ($file =~ m{^Commune/}i && $file !~ /CommuneM/i) {
-    return { place => 'commune', file => $file, book => 1, booklet => '' };
+    return {
+      place => 'commune',
+      file => $file,
+      book => 1,
+      booklet => '',
+    };
   }
   my $owner = $key ? ribbon_section_owner($file, $key) : $file;
   $owner = ribbon_stem($owner);
+
   if ($owner =~ m{^Commune/}i && $owner !~ /CommuneM/i) {
-    return { place => 'commune', file => $owner, book => 1, booklet => '' };
+    return {
+      place => 'commune',
+      file => $owner,
+      book => 1,
+      booklet => '',
+    };
   }
+
   if ($owner =~ m{^Tempora/}i) {
-    return { place => 'tempora', file => $owner, book => 1, booklet => '' };
+    return {
+      place => 'tempora',
+      file => $owner,
+      book => 1,
+      booklet => '',
+    };
   }
+
   if ($owner =~ m{^Psalterium/Psalmi}i) {
-    return { place => 'psalter', file => $owner, book => 1, booklet => '' };
+    return {
+      place => 'psalter',
+      file => $owner,
+      book => 1,
+      booklet => '',
+    };
   }
+
   if (ribbon_in_roman_sancti($owner)) {
-    return { place => 'sancti', file => $owner, book => 1, booklet => '' };
+    return {
+      place => 'sancti',
+      file => $owner,
+      book => 1,
+      booklet => '',
+    };
   }
   ribbon_universal_ensure();
   my ($md) = ribbon_base($owner) =~ /^(\d\d-\d\d)/;
+
   if ($md && $RIBBON_UNIV_DAY{$md} && $key) {
     my $prose = ribbon_section_prose($owner, $key);
-    for my $uni (@{ $RIBBON_UNIV_DAY{$md} }) {
+
+    for my $uni (@{$RIBBON_UNIV_DAY{$md}}) {
       my $u = $uni =~ m{/} ? $uni : "Sancti/$uni";
       next if ribbon_stem($u) eq $owner;
+
       if (ribbon_same_text($prose, ribbon_section_prose($u, $key))) {
-        return { place => 'sancti', file => ribbon_stem($u), book => 1, booklet => '' };
+        return {
+          place => 'sancti',
+          file => ribbon_stem($u),
+          book => 1,
+          booklet => '',
+        };
       }
     }
   }
   return {
-    place => 'local', file => $owner, book => 0,
+    place => 'local',
+    file => $owner,
+    book => 0,
     booklet => ribbon_booklet_href($owner),
   };
 }
 
 sub ribbon_where_html {
+
   my ($code, $class) = @_;
   my $place = ribbon_s($code, 'sk.place.' . ($class->{place} || 'unresolved'));
   my $file = ($class->{file} && $class->{place} ne 'unresolved') ? ' (' . $class->{file} . ')' : '';
-  my $from = ribbon_sh($code, 'sk.from', { place => $place, file => $file });
+  my $from = ribbon_sh(
+    $code,
+    'sk.from', {
+      place => $place,
+      file => $file,
+    },
+  );
   my $book;
+
   if ($class->{book}) {
     $book = '<span class="in-book">' . ribbon_sh($code, 'sk.book.in') . '</span>';
+
     if ($class->{substituted}) {
       $book .= ' <span class="from-common">' . ribbon_sh($code, 'sk.from_common') . '</span>';
     }
   } else {
+
     my $stem = ribbon_stem($class->{file} // '');
     my $listed = $stem ne '' && exists $RIBBON_BOOKLET{$stem};
     my $href = $class->{booklet} || ($listed ? ($RIBBON_BOOKLET{$stem} // '') : '');
     my $note = ribbon_sh($code, 'sk.book.out');
-    my $attr = ' class="print-proper" data-file="' . ribbon_h($class->{file})
-      . '" data-booklet="' . ribbon_h($href) . '"';
+    my $attr =
+      ' class="print-proper" data-file="' . ribbon_h($class->{file}) . '" data-booklet="' . ribbon_h($href) . '"';
+
     $book = '<span' . $attr . '>' . $note . '</span>';
+
     if ($href) {
-      $book .= ' <a' . $attr . ' href="' . ribbon_h($href) . '">'
-        . ribbon_sh($code, 'sk.booklet.link') . '</a>';
+      $book .= ' <a' . $attr . ' href="' . ribbon_h($href) . '">' . ribbon_sh($code, 'sk.booklet.link') . '</a>';
     } elsif ($listed) {
       $book .= ' <span class="booklet-soon">' . ribbon_sh($code, 'sk.booklet.soon') . '</span>';
     }
@@ -1525,22 +1796,46 @@ sub ribbon_where_html {
 
 my %RIBBON_PART_KEY = (
   Matutinum => {
-    invitatory => 'Invit', hymn => 'Hymnus Matutinum', antiphons => 'Ant Matutinum',
-    capitulum => 'Capitulum Laudes', collect => 'Oratio',
+    invitatory => 'Invit',
+    hymn => 'Hymnus Matutinum',
+    antiphons => 'Ant Matutinum',
+    capitulum => 'Capitulum Laudes',
+    collect => 'Oratio',
   },
   Laudes => {
-    hymn => 'Hymnus Laudes', antiphons => 'Ant Laudes', capitulum => 'Capitulum Laudes',
-    verse => 'Versum 2', collect => 'Oratio',
+    hymn => 'Hymnus Laudes',
+    antiphons => 'Ant Laudes',
+    capitulum => 'Capitulum Laudes',
+    verse => 'Versum 2',
+    collect => 'Oratio',
   },
-  Prima => { collect => 'Oratio', lectio_brevis => '' },
-  Tertia => { capitulum => 'Capitulum Tertia', verse => 'Versum Tertia', collect => 'Oratio' },
-  Sexta  => { capitulum => 'Capitulum Sexta', verse => 'Versum Sexta', collect => 'Oratio' },
-  Nona   => { capitulum => 'Capitulum Nona', verse => 'Versum Nona', collect => 'Oratio' },
+  Prima => {
+    collect => 'Oratio',
+    lectio_brevis => '',
+  },
+  Tertia => {
+    capitulum => 'Capitulum Tertia',
+    verse => 'Versum Tertia',
+    collect => 'Oratio',
+  },
+  Sexta => {
+    capitulum => 'Capitulum Sexta',
+    verse => 'Versum Sexta',
+    collect => 'Oratio',
+  },
+  Nona => {
+    capitulum => 'Capitulum Nona',
+    verse => 'Versum Nona',
+    collect => 'Oratio',
+  },
   Vespera => {
-    hymn => 'Hymnus Vespera', antiphons => 'Ant Vespera', capitulum => 'Capitulum Laudes',
-    verse => 'Versum 3', collect => 'Oratio',
+    hymn => 'Hymnus Vespera',
+    antiphons => 'Ant Vespera',
+    capitulum => 'Capitulum Laudes',
+    verse => 'Versum 3',
+    collect => 'Oratio',
   },
-  Completorium => { capitulum => 'Capitulum Completorium' },
+  Completorium => {capitulum => 'Capitulum Completorium'},
 );
 
 sub ribbon_part_class {
@@ -1607,6 +1902,7 @@ sub ribbon_one_lesson_key {
 sub ribbon_roman_on {
   my ($md) = @_;
   ribbon_universal_ensure();
+
   if ($RIBBON_UNIV_DAY{$md} && $RIBBON_UNIV_DAY{$md}[0]) {
     my $f = $RIBBON_UNIV_DAY{$md}[0];
     $f = "Sancti/$f" unless $f =~ m{/};
@@ -1629,25 +1925,29 @@ sub ribbon_abridged_life {
   return $finish->(undef) unless $facts && ($facts->{rank} || 0) >= 5 && ($facts->{nocturns} || 0) == 3;
   my ($mo, $da) = split /-/, $facts->{date} // '';
   return $finish->(undef) unless defined $mo && $mo ne '';
+
   my $md = sprintf('%02d-%02d', $mo, $da);
   my $winner = ribbon_stem($facts->{winner});
   my $title = ribbon_feast_title($winner);
   my $roman = ribbon_roman_on($md);
   my $use;
+
   if ($roman && ribbon_same_title($title, ribbon_feast_title($roman))) {
     my $rr = ribbon_rank_num_of($roman);
     $use = $roman if defined $rr && $rr < 5 && ribbon_one_lesson_key($roman);
   }
+
   if (!$use) {
-    my ($L4) = grep { ($_->{n} || 0) == 4 } @{ $facts->{lessons} || [] };
+    my ($L4) = grep { ($_->{n} || 0) == 4 } @{$facts->{lessons} || []};
     my $src = ribbon_stem($L4->{source} // '');
+
     if ($src && ribbon_in_roman_sancti($src) && ribbon_same_title($title, ribbon_feast_title($src))) {
       my $sr = ribbon_rank_num_of($src);
       $use = $src if defined $sr && $sr < 5 && ribbon_one_lesson_key($src);
     }
   }
   return $finish->(undef) unless $use;
-  my @life = grep { ($_->{n} || 0) >= 4 && ($_->{n} || 0) <= 6 } @{ $facts->{lessons} || [] };
+  my @life = grep { ($_->{n} || 0) >= 4 && ($_->{n} || 0) <= 6 } @{$facts->{lessons} || []};
   return $finish->(undef) unless @life;
   my $engine = ribbon_stem($life[0]{source} // '');
   return $finish->(undef) if $engine =~ m{^Commune/}i;
@@ -1655,37 +1955,51 @@ sub ribbon_abridged_life {
   $engine = $owned if $owned;
   my $com = ribbon_stem($facts->{commune} || '');
   $com = "Commune/$com" if $com ne '' && $com !~ m{/};
-  return $finish->({
-    roman   => ribbon_stem($use),
-    key     => ribbon_one_lesson_key($use),
-    engine  => $engine || $winner,
-    commune => $com,
-    winner  => $winner,
-  });
+  return $finish->(
+    {
+      roman => ribbon_stem($use),
+      key => ribbon_one_lesson_key($use),
+      engine => $engine || $winner,
+      commune => $com,
+      winner => $winner,
+    }
+  );
 }
 
 sub ribbon_lesson_groups {
   my ($lessons, $noct) = @_;
   my @g;
-  for my $L (@{ $lessons || [] }) {
+
+  for my $L (@{$lessons || []}) {
     next unless ($L->{nocturn} || 0) == $noct;
     my $c = ribbon_classify($L->{source}, 'Lectio' . $L->{n});
+
     # A third-class proprium does not print a third nocturn. Those homily
     # lessons are not in the 1960 book when the feast is said with nine lessons.
     if (($L->{n} || 0) >= 7 && $c->{book} && ($c->{place} || '') eq 'sancti') {
       my $r = ribbon_rank_num_of($c->{file});
+
       if (defined $r && $r < 5) {
         $c = {
-          %$c, book => 0, place => 'local',
+          %$c,
+          book => 0,
+          place => 'local',
           booklet => ribbon_booklet_href($c->{file}),
         };
       }
     }
     my $sig = join "\x1e", ($L->{kind} || ''), $c->{place}, $c->{file}, $c->{book};
+
     if (@g && $g[-1]{sig} eq $sig && $g[-1]{b} == $L->{n} - 1) {
       $g[-1]{b} = $L->{n};
     } else {
-      push @g, { a => $L->{n}, b => $L->{n}, kind => $L->{kind} || '', sig => $sig, class => $c };
+      push @g, {
+          a => $L->{n},
+          b => $L->{n},
+          kind => $L->{kind} || '',
+          sig => $sig,
+          class => $c,
+        };
     }
   }
   return @g;
@@ -1707,38 +2021,73 @@ sub ribbon_skeleton_html {
     }
     my @rom = qw(I II III);
     my $nn = $facts->{nocturns} || 1;
+
     for my $noct (1 .. $nn) {
-      my $head = ribbon_sh($code, 'sk.nocturn', { n => $rom[$noct - 1] || $noct });
+      my $head = ribbon_sh($code, 'sk.nocturn', {n => $rom[$noct - 1] || $noct});
       my @inner;
+
       if ($part->{antiphons} || $part->{psalms}) {
         my $src = $part->{antiphons} || $part->{psalms};
         my $c = $view->(ribbon_part_class($h, $part->{antiphons} ? 'antiphons' : 'psalms', $src->{file}));
         push @inner, '<li>' . ribbon_sh($code, 'sk.ants_psalms') . ' — ' . ribbon_where_html($code, $c) . '</li>';
       }
       my $abr = ($noct == 2) ? ribbon_abridged_life($facts) : undef;
+
       if ($abr && $mode eq 'booklet') {
         my $flag = {
-          place => 'booklet', file => $abr->{winner}, book => 0,
+          place => 'booklet',
+          file => $abr->{winner},
+          book => 0,
           booklet => ribbon_booklet_href($abr->{winner}),
         };
-        push @inner, '<li>' . ribbon_sh($code, 'sk.engine_life', { file => $abr->{engine} })
-          . ' — ' . ribbon_where_html($code, $flag) . '</li>';
+        push @inner,
+            '<li>'
+          . ribbon_sh($code, 'sk.engine_life', {file => $abr->{engine}}) . ' — '
+          . ribbon_where_html($code, $flag) . '</li>';
       } elsif ($abr) {
-        my $proper = { place => 'sancti', file => $abr->{roman}, book => 1, booklet => '' };
-        my $common = { place => 'commune', file => $abr->{commune}, book => 1, booklet => '' };
+        my $proper = {
+          place => 'sancti',
+          file => $abr->{roman},
+          book => 1,
+          booklet => '',
+        };
+        my $common = {
+          place => 'commune',
+          file => $abr->{commune},
+          book => 1,
+          booklet => '',
+        };
         my $kind = ribbon_s($code, 'lk.abridged');
-        push @inner, '<li>' . ribbon_h(ribbon_s($code, 'sk.lesson', { n => 4, kind => $kind }))
-          . ' — ' . ribbon_where_html($code, $proper) . '</li>';
-        push @inner, '<li>' . ribbon_h(ribbon_s($code, 'sk.lessons_plain', { a => 5, b => 6 }))
-          . ' — ' . ribbon_where_html($code, $common) . '</li>';
+        push @inner,
+            '<li>'
+          . ribbon_h(ribbon_s($code, 'sk.lesson', {n => 4, kind => $kind})) . ' — '
+          . ribbon_where_html($code, $proper) . '</li>';
+        push @inner,
+            '<li>'
+          . ribbon_h(ribbon_s($code, 'sk.lessons_plain', {a => 5, b => 6})) . ' — '
+          . ribbon_where_html($code, $common) . '</li>';
         push @inner, '<li class="slot-note">' . ribbon_sh($code, 'sk.slot_order') . '</li>';
       } else {
         for my $g (ribbon_lesson_groups($facts->{lessons}, $noct)) {
           my $c = $view->($g->{class});
           my $kind = $g->{kind} ? ribbon_s($code, 'lk.' . $g->{kind}) : '';
-          my $lab = $g->{a} == $g->{b}
-            ? ribbon_s($code, 'sk.lesson', { n => $g->{a}, kind => $kind })
-            : ribbon_s($code, 'sk.lessons', { a => $g->{a}, b => $g->{b}, kind => $kind });
+          my $lab =
+            $g->{a} == $g->{b}
+            ? ribbon_s(
+              $code,
+              'sk.lesson', {
+                n => $g->{a},
+                kind => $kind,
+              },
+            )
+            : ribbon_s(
+              $code,
+              'sk.lessons', {
+                a => $g->{a},
+                b => $g->{b},
+                kind => $kind,
+              },
+            );
           push @inner, '<li>' . ribbon_h($lab) . ' — ' . ribbon_where_html($code, $c) . '</li>';
         }
       }
@@ -1749,51 +2098,63 @@ sub ribbon_skeleton_html {
     if ($h eq 'Prima' && $facts->{kind} eq 'festive' && !$part->{antiphons}) {
       my $la = $facts->{hours}{Laudes}{parts}{antiphons};
       my $c = $la ? $view->(ribbon_part_class('Laudes', 'antiphons', $la->{file})) : ribbon_classify('', '');
-      $push->(ribbon_sh($code, 'part.antiphons') . ' — ' . ribbon_sh($code, 'sk.from_lauds')
-        . ' ' . ribbon_where_html($code, $c));
+      $push->(ribbon_sh($code, 'part.antiphons') . ' — '
+          . ribbon_sh($code, 'sk.from_lauds') . ' '
+          . ribbon_where_html($code, $c));
     }
+
     if ($h =~ /^(?:Tertia|Sexta|Nona)\z/ && ($facts->{kind} eq 'festive' || $sum->{sunday}) && !$part->{antiphons}) {
       my $la = $facts->{hours}{Laudes}{parts}{antiphons};
       my $c = $la ? $view->(ribbon_part_class('Laudes', 'antiphons', $la->{file})) : ribbon_classify('', '');
-      $push->(ribbon_sh($code, 'part.antiphons') . ' — ' . ribbon_sh($code, 'sk.from_lauds')
-        . ' ' . ribbon_where_html($code, $c));
+      $push->(ribbon_sh($code, 'part.antiphons') . ' — '
+          . ribbon_sh($code, 'sk.from_lauds') . ' '
+          . ribbon_where_html($code, $c));
     }
+
     for my $pid (qw(antiphons psalms hymn capitulum verse lectio_brevis collect)) {
       next unless $part->{$pid};
       my $c = $view->(ribbon_part_class($h, $pid, $part->{$pid}{file}));
       my $extra = '';
+
       if ($pid eq 'psalms') {
-        $extra = ' — ' . ribbon_h($part->{$pid}{sunday} || $sum->{sunday}
-          ? ribbon_s($code, 'ui.sunday_psalms')
-          : ribbon_s($code, 'ui.weekday_psalms'));
+        $extra = ' — '
+          . ribbon_h(
+            $part->{$pid}{sunday} || $sum->{sunday}
+            ? ribbon_s($code, 'ui.sunday_psalms')
+            : ribbon_s($code, 'ui.weekday_psalms')
+          );
       }
       $push->(ribbon_sh($code, "part.$pid") . ' — ' . ribbon_where_html($code, $c) . $extra);
     }
+
     if (defined $sum->{preces}) {
-      $push->(ribbon_sh($code, 'part.preces') . ' — '
-        . ribbon_sh($code, $sum->{preces} ? 'sk.said' : 'sk.omitted'));
+      $push->(ribbon_sh($code, 'part.preces') . ' — ' . ribbon_sh($code, $sum->{preces} ? 'sk.said' : 'sk.omitted'));
     }
+
     if ($h eq 'Prima') {
-      $push->(ribbon_sh($code, 'part.athanasian') . ' — '
-        . ribbon_sh($code, $sum->{creed} ? 'sk.said' : 'sk.omitted'));
+      $push->(ribbon_sh($code, 'part.athanasian') . ' — ' . ribbon_sh($code, $sum->{creed} ? 'sk.said' : 'sk.omitted'));
       $push->(ribbon_sh($code, 'sk.martyrology'));
     }
-    for my $f (@{ $comms || [] }) {
+
+    for my $f (@{$comms || []}) {
       my $c = ribbon_classify($f, 'Oratio');
       my $name = ribbon_office_name(ribbon_lang_from_code($code), $f) || $f;
-      $push->(ribbon_sh($code, 'part.commemoration') . ' — ' . ribbon_h($name) . ' — '
-        . ribbon_where_html($code, $c));
+      $push->(ribbon_sh($code, 'part.commemoration') . ' — ' . ribbon_h($name) . ' — ' . ribbon_where_html($code, $c));
     }
   }
 
   return '' unless @li;
-  return '<div class="skeleton"><p class="skeleton-title"><b>' . ribbon_sh($code, 'ui.skeleton')
-    . '</b></p><ol class="skeleton">' . join('', @li) . "</ol></div>\n";
+  return
+      '<div class="skeleton"><p class="skeleton-title"><b>'
+    . ribbon_sh($code, 'ui.skeleton')
+    . '</b></p><ol class="skeleton">'
+    . join('', @li)
+    . "</ol></div>\n";
 }
 
 sub ribbon_verse_html {
   my ($text) = @_;
-  my @lines = grep { /\S/ } split /\n/, $text;
+  my @lines = grep {/\S/} split /\n/, $text;
   return '<p>' . join("<br>\n", map { ribbon_h($_) } @lines) . '</p>';
 }
 
@@ -1801,20 +2162,24 @@ sub ribbon_responsory_html {
   my ($code) = @_;
   my ($sicut) = ribbon_s($code, 'ui.resp.sicut');
   my $sicut_html = ribbon_h($sicut);
+
   # The explicit "without Sicut erat" wording is still an open rubric claim.
   $sicut_html .= ' [to be sourced]';
   my $out = '<div class="resp-box"><h4>' . ribbon_sh($code, 'ui.resp.title') . '</h4>';
   $out .= '<p>' . ribbon_sh($code, 'ui.resp.dessain') . '</p><ol>';
   $out .= '<li>' . ribbon_sh($code, 'ui.resp.one') . '</li>';
   $out .= '<li>' . ribbon_sh($code, 'ui.resp.last') . ' ' . $sicut_html . '</li>';
-  $out .= '<li>' . ribbon_sh($code, 'ui.resp.two')
-    . ' <span class="ribbon-note">' . ribbon_sh($code, 'ui.resp.two_source') . '</span></li>';
+  $out .= '<li>'
+    . ribbon_sh($code, 'ui.resp.two')
+    . ' <span class="ribbon-note">'
+    . ribbon_sh($code, 'ui.resp.two_source')
+    . '</span></li>';
   $out .= '<li>' . ribbon_sh($code, 'ui.resp.passion') . '</li>';
   $out .= '<li>' . ribbon_sh($code, 'ui.resp.pasch') . '</li>';
   $out .= '</ol><p>' . ribbon_sh($code, 'ui.resp.site') . '</p>';
 
   my @examples = (
-    [ 'ui.resp.ex1', <<'TXT', <<'SAID' ],
+    ['ui.resp.ex1', <<'TXT', <<'SAID'],
 R. Iste cognóvit justítiam, et vidit mirabília magna, et exorávit Altíssimum
 * Et invéntus est in número Sanctórum.
 V. Iste est qui contémpsit vitam mundi, et pervénit ad cæléstia regna.
@@ -1825,7 +2190,7 @@ R. Et invéntus est in número Sanctórum.
 V. Glória Patri, et Fílio, * et Spirítui Sancto.
 R. Et invéntus est in número Sanctórum.
 SAID
-    [ 'ui.resp.ex2', <<'TXT', <<'SAID' ],
+    ['ui.resp.ex2', <<'TXT', <<'SAID'],
 R. Obsecro, Dómine, mitte quem missúrus es: vide afflictiónem pópuli tui:
 * Sicut locútus es, veni, * Et líbera nos.
 V. Qui regis Israël, inténde, qui dedúcis velut ovem Joseph, qui sedes super Chérubim.
@@ -1836,7 +2201,7 @@ R. Sicut locútus es, veni.
 V. Glória Patri, et Fílio, * et Spirítui Sancto.
 R. Et líbera nos.
 SAID
-    [ 'ui.resp.ex3', <<'TXT', <<'SAID' ],
+    ['ui.resp.ex3', <<'TXT', <<'SAID'],
 R. Usquequo exaltábitur inimícus meus super me?
 * Réspice, et exáudi me, Dómine, Deus meus.
 V. Qui tríbulant me, exsultábunt si motus fúero: ego autem in misericórdia tua sperábo.
@@ -1847,6 +2212,7 @@ R. Réspice, et exáudi me, Dómine, Deus meus.
 R. Usquequo exaltábitur inimícus meus super me? * Réspice, et exáudi me, Dómine, Deus meus.
 SAID
   );
+
   for my $ex (@examples) {
     $out .= '<div class="resp-ex"><p><b>' . ribbon_sh($code, $ex->[0]) . '</b></p>';
     $out .= '<p><i>' . ribbon_sh($code, 'ui.resp.marks') . '</i></p>' . ribbon_verse_html($ex->[1]);
@@ -1865,7 +2231,8 @@ sub ribbon_martyrology_latin {
   my $text = <$fh>;
   close $fh;
   return '' unless defined $text;
-  return $1 if $text =~ m{/:(\s*Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum\.)\s*:/};
+  return $1
+    if $text =~ m{/:(\s*Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum\.)\s*:/};
   return '';
 }
 
@@ -1873,9 +2240,13 @@ sub ribbon_martyrology_quote_html {
   my ($code) = @_;
   my $la = ribbon_martyrology_latin();
   return '' if $la eq '';
-  my $html = '<blockquote class="rubric ordinary"><p class="cite"><b>'
-    . ribbon_sh($code, 'ui.martyrology.cite') . '</b></p><p>'
-    . ribbon_h($la) . "</p></blockquote>\n";
+  my $html =
+      '<blockquote class="rubric ordinary"><p class="cite"><b>'
+    . ribbon_sh($code, 'ui.martyrology.cite')
+    . '</b></p><p>'
+    . ribbon_h($la)
+    . "</p></blockquote>\n";
+
   # The Latin page already shows the Ordinary sentence. The rendering is a translation.
   $html .= '<p class="ribbon-note">' . ribbon_sh($code, 'ui.martyrology.tr') . "</p>\n" if $code ne 'la';
   return $html;
@@ -1887,6 +2258,7 @@ sub ribbon_hour_html {
   my $sum = $facts->{hours}{$h} or return '';
   my $out = '<h3>' . ribbon_sh($code, "hora.$h") . '</h3>';
   my @q;
+
   if ($h eq 'Matutinum') {
     if ($facts->{kind} eq 'sunday_special') {
       $out .= '<p>' . ribbon_sh($code, 'plain.matins.easter') . '</p>';
@@ -1899,24 +2271,26 @@ sub ribbon_hour_html {
       @q = qw(BR-162 BR-211);
     }
     my $lesson_plain =
-        $facts->{kind} =~ /festive/     ? 'plain.lessons.festive'
-      : $facts->{kind} eq 'sunday'      ? 'plain.lessons.sunday'
-      : $facts->{kind} eq 'ordinary'    ? 'plain.lessons.ordinary'
-      :                                   'plain.lessons.ferial';
+        $facts->{kind} =~ /festive/ ? 'plain.lessons.festive'
+      : $facts->{kind} eq 'sunday' ? 'plain.lessons.sunday'
+      : $facts->{kind} eq 'ordinary' ? 'plain.lessons.ordinary'
+      : 'plain.lessons.ferial';
     $out .= '<p>' . ribbon_sh($code, $lesson_plain) . '</p>';
-    push @q, $facts->{kind} =~ /festive/  ? qw(BR-217 BR-218 BR-219)
-            : $facts->{kind} eq 'sunday'   ? qw(BR-220)
-            : $facts->{kind} eq 'ordinary' ? qw(BR-221)
-            :                                qw(BR-222);
+    push @q,
+        $facts->{kind} =~ /festive/ ? qw(BR-217 BR-218 BR-219)
+      : $facts->{kind} eq 'sunday' ? qw(BR-220)
+      : $facts->{kind} eq 'ordinary' ? qw(BR-221)
+      : qw(BR-222);
     $out .= '<p>' . ribbon_sh($code, $facts->{tedeum} ? 'plain.tedeum.yes' : 'plain.tedeum.no') . '</p>';
     push @q, $facts->{tedeum} ? 'BR-237' : 'BR-238';
     $out .= '<p>' . ribbon_sh($code, 'plain.antiphons') . '</p>';
     push @q, 'BR-191';
     $out .= ribbon_responsory_html($code);
   } elsif ($h eq 'Laudes') {
-    my $scheme = ribbon_s($code, 'ui.scheme', { n => $facts->{laudes_scheme} || 1 });
+    my $scheme = ribbon_s($code, 'ui.scheme', {n => $facts->{laudes_scheme} || 1});
     my $fest = $facts->{kind} =~ /festive/ || $sum->{sunday};
-    $out .= '<p>' . ribbon_sh($code, $fest ? 'plain.lauds.festive' : 'plain.lauds.weekday', { scheme => $scheme }) . '</p>';
+    $out .=
+      '<p>' . ribbon_sh($code, $fest ? 'plain.lauds.festive' : 'plain.lauds.weekday', {scheme => $scheme}) . '</p>';
     @q = qw(BR-197);
     $out .= ribbon_collect_block($code, $sum);
     push @q, qw(BR-246 BR-248) if $sum->{parts}{collect};
@@ -1931,7 +2305,7 @@ sub ribbon_hour_html {
     $out .= '<p>' . ribbon_sh($code, $fest ? 'plain.minor.festive' : 'plain.minor.weekday') . '</p>';
   } elsif ($h eq 'Vespera') {
     my $which_id = $facts->{vespera} == 1 ? 'ui.vespers_1' : $facts->{vespera} == 3 ? 'ui.vespers_2' : 'ui.vespers_day';
-    $out .= '<p>' . ribbon_sh($code, 'plain.vespers', { which => ribbon_s($code, $which_id) }) . '</p>';
+    $out .= '<p>' . ribbon_sh($code, 'plain.vespers', {which => ribbon_s($code, $which_id)}) . '</p>';
   } elsif ($h eq 'Completorium') {
     $out .= '<p>' . ribbon_sh($code, $sum->{sunday} ? 'plain.compline.sunday' : 'plain.compline.weekday') . '</p>';
   }
@@ -1945,18 +2319,26 @@ sub ribbon_hour_html {
   # "file.txt: rank" note, at Lauds and Vespers) list one. The day's
   # commemorated office is remembered on every hour and is not said at the
   # little hours or at Compline.
-  my @comms = @{ $sum->{comms} || [] };
+  my @comms = @{$sum->{comms} || []};
   my %seen;
   @comms = grep { $_ && !$seen{$_}++ } @comms;
+
   if (@comms) {
     my @names;
+
     for my $f (@comms) {
-      my $n = ribbon_office_name($code eq 'la' ? 'Latin' : ($code eq 'es' ? 'Espanol' : $code eq 'fr' ? 'Francais' : $code eq 'de' ? 'Deutsch' : 'English'), $f);
+      my $n = ribbon_office_name(
+        $code eq 'la'
+        ? 'Latin'
+        : ($code eq 'es' ? 'Espanol' : $code eq 'fr' ? 'Francais' : $code eq 'de' ? 'Deutsch' : 'English'),
+        $f,
+      );
+
       # The language argument above is clumsy; use the facts names when the file matches.
       $n = ribbon_office_name(ribbon_lang_from_code($code), $f) if !$n;
       push @names, $n || $f;
     }
-    $out .= '<p>' . ribbon_sh($code, 'plain.commemoration', { name => join('; ', @names) }) . '</p>';
+    $out .= '<p>' . ribbon_sh($code, 'plain.commemoration', {name => join('; ', @names)}) . '</p>';
     push @q, 'BR-251' if $h =~ /^(?:Laudes|Vespera)\z/;
   }
 
@@ -1964,33 +2346,41 @@ sub ribbon_hour_html {
   $out .= ribbon_lesson_table($code, $facts, $mode) if $h eq 'Matutinum';
   $out .= '<ul class="hour-parts">';
   my $parts = $sum->{parts};
+
   for my $pid (qw(invitatory hymn antiphons psalms verse lessons capitulum collect lectio_brevis)) {
     next unless $parts->{$pid};
     my $file = $parts->{$pid}{file};
     my $extra = '';
+
     if ($mode eq 'book' || $mode eq 'booklet') {
       my $c = ribbon_view_class(ribbon_part_class($h, $pid, $file), $facts, $mode);
       $file = $c->{file} if $c->{file};
+
       if ($c->{substituted}) {
         $extra = ribbon_s($code, 'sk.from_common');
       } elsif ($mode eq 'booklet' && !$c->{book}) {
         my $stem = ribbon_stem($c->{file});
+
         if ($stem && exists $RIBBON_BOOKLET{$stem} && ($RIBBON_BOOKLET{$stem} // '') eq '') {
           $extra = ribbon_s($code, 'sk.booklet.soon');
         }
       }
     }
+
     if ($pid eq 'psalms') {
-      my $ps = $parts->{$pid}{sunday} || $sum->{sunday}
+      my $ps =
+        $parts->{$pid}{sunday} || $sum->{sunday}
         ? ribbon_s($code, 'ui.sunday_psalms')
         : ribbon_s($code, 'ui.weekday_psalms');
       $extra = $extra ? "$extra — $ps" : $ps;
     }
     $out .= ribbon_part_line($code, $edition, $facts->{season}, $h, $pid, $file, $extra);
   }
+
   if ($h eq 'Matutinum') {
     $out .= ribbon_part_line($code, $edition, $facts->{season}, $h, 'te_deum', '', $facts->{tedeum} ? 'Te Deum' : '');
   }
+
   if (@comms) {
     $out .= ribbon_part_line($code, $edition, $facts->{season}, $h, 'commemoration', $comms[0], '');
   }
@@ -2001,7 +2391,7 @@ sub ribbon_hour_html {
 
 sub ribbon_lang_from_code {
   my ($code) = @_;
-  return 'Latin'   if $code eq 'la';
+  return 'Latin' if $code eq 'la';
   return 'Espanol' if $code eq 'es';
   return 'Francais' if $code eq 'fr';
   return 'Deutsch' if $code eq 'de';
@@ -2020,22 +2410,41 @@ sub ribbon_lesson_table {
   return '' unless @$rows;
   my $html = '<h3>' . ribbon_sh($code, 'ui.lessons') . '</h3>';
   my $note =
-      ($mode eq 'book' && ribbon_abridged_life($facts))    ? 'sk.table_book'
+      ($mode eq 'book' && ribbon_abridged_life($facts)) ? 'sk.table_book'
     : ($mode eq 'booklet' && ribbon_abridged_life($facts)) ? 'sk.table_booklet_life'
-    : ($mode eq 'book' && ribbon_booklet_feast($facts))    ? 'sk.table_book_common'
+    : ($mode eq 'book' && ribbon_booklet_feast($facts)) ? 'sk.table_book_common'
     : ($mode eq 'booklet' && ribbon_booklet_feast($facts)) ? 'sk.table_booklet_proper'
-    : ribbon_abridged_life($facts)                         ? 'sk.table_note'
-    :                                                        '';
+    : ribbon_abridged_life($facts) ? 'sk.table_note'
+    : '';
   $html .= '<p>' . ribbon_sh($code, $note) . '</p>' if $note;
   $html .= '<table class="lessons" border="1" cellpadding="4" cellspacing="0">';
-  $html .= '<tr><th>' . ribbon_sh($code, 'ui.col_n') . '</th><th>' . ribbon_sh($code, 'ui.col_nocturn')
-    . '</th><th>' . ribbon_sh($code, 'ui.col_kind') . '</th><th>' . ribbon_sh($code, 'ui.col_source')
-    . '</th><th>' . ribbon_sh($code, 'ui.col_incipit') . '</th></tr>';
+  $html .=
+      '<tr><th>'
+    . ribbon_sh($code, 'ui.col_n')
+    . '</th><th>'
+    . ribbon_sh($code, 'ui.col_nocturn')
+    . '</th><th>'
+    . ribbon_sh($code, 'ui.col_kind')
+    . '</th><th>'
+    . ribbon_sh($code, 'ui.col_source')
+    . '</th><th>'
+    . ribbon_sh($code, 'ui.col_incipit')
+    . '</th></tr>';
+
   for my $L (@$rows) {
     my $kind = $L->{kind} ? ribbon_sh($code, 'lk.' . $L->{kind}) : '';
-    $html .= '<tr><td>' . ribbon_h($L->{n}) . '</td><td>' . ribbon_h($L->{nocturn})
-      . '</td><td>' . $kind . '</td><td>' . ribbon_h($L->{source})
-      . '</td><td>' . ribbon_h($L->{incipit}) . '</td></tr>';
+    $html .=
+        '<tr><td>'
+      . ribbon_h($L->{n})
+      . '</td><td>'
+      . ribbon_h($L->{nocturn})
+      . '</td><td>'
+      . $kind
+      . '</td><td>'
+      . ribbon_h($L->{source})
+      . '</td><td>'
+      . ribbon_h($L->{incipit})
+      . '</td></tr>';
   }
   $html .= '</table>';
   return $html;
@@ -2048,6 +2457,7 @@ sub ribbon_controls {
   my $html = '<div class="ribbon-controls">';
   $html .= '<p><label>' . ribbon_sh($code, 'ui.calendar') . ' ';
   $html .= '<select name="version" onchange="this.form.submit()">';
+
   for my $v (getdialog('versions')) {
     my $sel = ($v eq $version) ? ' selected' : '';
     $html .= '<option value="' . ribbon_h($v) . "\"$sel>" . ribbon_h($v) . '</option>';
@@ -2056,11 +2466,13 @@ sub ribbon_controls {
 
   $html .= '<p><label>' . ribbon_sh($code, 'ui.date') . ' ';
   $html .= '<select name="date" onchange="this.form.submit()">';
+
   for my $yy (($y - 1) .. ($y + 1)) {
     for my $mm (1 .. 12) {
       my $mlen = ribbon_month_length($yy, $mm);
       my $mname = ribbon_s($code, 'month.' . $mm);
       $html .= '<optgroup label="' . ribbon_h("$mname $yy") . '">';
+
       for my $dd (1 .. $mlen) {
         my $val = sprintf('%02d-%02d-%04d', $mm, $dd, $yy);
         my $dow = ribbon_dow($yy, $mm, $dd);
@@ -2075,19 +2487,22 @@ sub ribbon_controls {
 
   $html .= '<p><label>' . ribbon_sh($code, 'ui.edition') . ' ';
   $html .= '<select name="edition" onchange="this.form.submit()">';
+
   for my $id (@RIBBON_EDITION_ORDER) {
     my $sel = ($id eq $edition) ? ' selected' : '';
     $html .= '<option value="' . ribbon_h($id) . "\"$sel>" . ribbon_h(ribbon_edition_label($id, $code)) . '</option>';
   }
   $html .= '</select></label></p>';
   my $ed = $RIBBON_EDITIONS{$edition};
-  if (!$ed || $ed->{coming_soon} || !@{ $ed->{volumes} || [] }) {
+
+  if (!$ed || $ed->{coming_soon} || !@{$ed->{volumes} || []}) {
     $html .= '<p class="ribbon-note">' . ribbon_sh($code, 'ui.edition_soon') . '</p>' if $ed && $ed->{coming_soon};
     $html .= '<p class="ribbon-note">' . ribbon_sh($code, 'ui.volume_note') . '</p>';
   }
 
   $html .= '<p><label>' . ribbon_sh($code, 'ui.language') . ' ';
   $html .= '<select name="lang" onchange="this.form.submit()">';
+
   for my $L (@RIBBON_LANGS) {
     my $sel = ($L eq $lang) ? ' selected' : '';
     my $lab = $L eq 'Espanol' ? 'Español' : $L eq 'Francais' ? 'Français' : $L eq 'Latin' ? 'Latine' : $L;
@@ -2151,10 +2566,13 @@ CSS
 
 sub ribbon_strings_missing_la {
   my @ids;
+
   for my $id (sort keys %RIBBON_STRINGS) {
     next if $RIBBON_CF{$id};
+
     # Latin view shows the Ordinarium sentence and skips this rendering.
     next if $id eq 'ui.martyrology.tr';
+
     # The explicit Sicut erat omission is an open claim and keeps its marker.
     next if $id eq 'ui.resp.sicut';
     my $la = $RIBBON_STRINGS{$id}{la};
@@ -2179,14 +2597,23 @@ sub ribbon_check_md {
   $md .= "- **Status:** $it->{status}\n";
   $md .= "- **Article:** $it->{article}\n" if defined $it->{article} && $it->{article} ne '';
   $md .= "- **Source:** $it->{source}\n" if defined $it->{source} && $it->{source} ne '';
+
   if (defined $it->{page_claim} && $it->{page_claim} ne '') {
     $md .= "\n**Claim on the page.** $it->{page_claim}\n";
   }
-  my @parts = @{ $it->{parts} || [] };
+  my @parts = @{$it->{parts} || []};
+
   if (!@parts) {
-    push @parts, { label => 'English quote', text => $it->{en} } if defined $it->{en};
-    push @parts, { label => 'Latin quote', text => $it->{la} } if defined $it->{la};
+    push @parts, {
+        label => 'English quote',
+        text => $it->{en},
+      } if defined $it->{en};
+    push @parts, {
+        label => 'Latin quote',
+        text => $it->{la},
+      } if defined $it->{la};
   }
+
   for my $p (@parts) {
     $md .= "\n**$p->{label}**\n\n" . ribbon_md_quote($p->{text}) . "\n";
   }
@@ -2201,6 +2628,7 @@ sub ribbon_must_extract {
 }
 
 sub ribbon_gaps_markdown {
+
   my $n = 0;
   my $en_ok = 0;
   my $en_gap = 0;
@@ -2209,16 +2637,22 @@ sub ribbon_gaps_markdown {
   my @rows;
   my @items;
   my %damage = (
-    'BR-165' => 'The English file has "the arrangement of thew Office". Quoted as the file has it. The owner decides whether that corrupt English should stay on the page. The Latin is shown beside it.',
-    'BR-169' => 'The English file has "from the Proper of the Common" and "proper of from the common". Latin n. 169 a has "e Proprio vel Communi" and "nisi propria aut de Communi assignentur". Quoted as the file has it.',
+    'BR-165' =>
+      'The English file has "the arrangement of thew Office". Quoted as the file has it. The owner decides whether that corrupt English should stay on the page. The Latin is shown beside it.',
+    'BR-169' =>
+      'The English file has "from the Proper of the Common" and "proper of from the common". Latin n. 169 a has "e Proprio vel Communi" and "nisi propria aut de Communi assignentur". Quoted as the file has it.',
     'BR-171' => 'The English file has "on If rids". Latin n. 171 a has "in feriis". Quoted as the file has it.',
-    'BR-219' => 'The English file letters the second clause "h)". Latin n. 219 letters it "b)". Quoted as the file has it.',
+    'BR-219' =>
+      'The English file letters the second clause "h)". Latin n. 219 letters it "b)". Quoted as the file has it.',
     'BR-221' => 'The English file has "The first and second lessons as are said". Quoted as the file has it.',
-    'GR-115' => 'The English file has "they Son" and "would without end". Latin n. 115 has "Per eundem Dominum nostrum" and "per omnia saecula saeculorum". Quoted as the file has it.',
+    'GR-115' =>
+      'The English file has "they Son" and "would without end". Latin n. 115 has "Per eundem Dominum nostrum" and "per omnia saecula saeculorum". Quoted as the file has it.',
   );
   my %extra = (
-    'GR-91-22' => 'The English file spells "Thurday". The page quotes that spelling. The Latin is "a feria V post cineres".',
-    'BR-233' => 'The page quotes letter b only. The text below is the snippet the page shows, and it occurs inside the article.',
+    'GR-91-22' =>
+      'The English file spells "Thurday". The page quotes that spelling. The Latin is "a feria V post cineres".',
+    'BR-233' =>
+      'The page quotes letter b only. The text below is the snippet the page shows, and it occurs inside the article.',
   );
 
   for my $id (sort keys %RIBBON_CATALOG) {
@@ -2236,6 +2670,7 @@ sub ribbon_gaps_markdown {
 
     my $status = 'sourced';
     my $note = $extra{$id} || '';
+
     if (!$q->{en_ok} || !$q->{la_ok}) {
       $status = 'still unsourced';
       $note = 'The catalogue row did not match the file. Nothing was invented to fill it.';
@@ -2243,61 +2678,74 @@ sub ribbon_gaps_markdown {
       $status = 'needs-judgment';
       $note = $damage{$id} || 'The English file is damaged. Quoted as the file has it.';
     }
-    my $en_full = ribbon_slice_article($RIBBON_EN{ $q->{corpus} } || '', $q->{number});
+    my $en_full = ribbon_slice_article($RIBBON_EN{$q->{corpus}} || '', $q->{number});
     my $la_full = ribbon_la_body($q->{number});
-    die "English quote $id is not in the sliced article" if $q->{en_ok} && index(ribbon_norm($en_full), ribbon_norm($q->{en})) < 0;
-    die "Latin quote $id is not in aas52-la.txt n. $q->{number}" if $q->{la_ok} && index(ribbon_norm($la_full), ribbon_norm($q->{la})) < 0;
+    die "English quote $id is not in the sliced article"
+      if $q->{en_ok} && index(ribbon_norm($en_full), ribbon_norm($q->{en})) < 0;
+    die "Latin quote $id is not in aas52-la.txt n. $q->{number}"
+      if $q->{la_ok} && index(ribbon_norm($la_full), ribbon_norm($q->{la})) < 0;
     push @items, {
-      id => $id,
-      claim => $q->{topic},
-      status => $status,
-      article => "n. $q->{number}",
-      source => "English: `$q->{file}`. Latin: AAS 52 (1960), p. $q->{page}, n. $q->{number}, `web/www/horas/Ribbon/aas52-la.txt`.",
-      en => $q->{en},
-      la => $q->{la},
-      note => $note,
-    };
+        id => $id,
+        claim => $q->{topic},
+        status => $status,
+        article => "n. $q->{number}",
+        source =>
+        "English: `$q->{file}`. Latin: AAS 52 (1960), p. $q->{page}, n. $q->{number}, `web/www/horas/Ribbon/aas52-la.txt`.",
+        en => $q->{en},
+        la => $q->{la},
+        note => $note,
+      };
   }
 
   my $rub = "$Bin/../../www/horas/Help/Rubrics";
   my $r13 = ribbon_slurp("$rub/R13.txt");
-  my $r13n4 = ribbon_must_extract('R13 n. 4', $r13, qr/(4\. In fine ultimi Responsorii cuiusque Nocturni dicitur Gloria Patri cum\nrepetitione partis Responsorii, eo modo quo notatur in tertio Responsorio prime\nDominice de Adventu, nisi aliter in propriis locis signetur\.)/s);
+  my $r13n4 = ribbon_must_extract(
+    'R13 n. 4',
+    $r13,
+    qr/(4\. In fine ultimi Responsorii cuiusque Nocturni dicitur Gloria Patri cum\nrepetitione partis Responsorii, eo modo quo notatur in tertio Responsorio prime\nDominice de Adventu, nisi aliter in propriis locis signetur\.)/s,
+  );
   push @items, {
-    id => 'RG-13-4',
-    claim => 'At the end of the last responsory of each nocturn, Gloria Patri is said with the repetition of part of the responsory, in the manner noted at the third responsory of the first Sunday of Advent',
-    status => 'sourced',
-    article => 'Rubricae Generales before 1960, tit. XIII n. 4',
-    source => '`web/www/horas/Help/Rubrics/R13.txt`',
-    la => $r13n4,
-    note => 'The page quotes from "dicitur Gloria Patri" through "signetur", with the file\'s spelling "prime Dominice" (the line in the file breaks between those two words). It does not restore "primae Dominicae". This article does not say "without Sicut erat".',
-  };
+      id => 'RG-13-4',
+      claim =>
+      'At the end of the last responsory of each nocturn, Gloria Patri is said with the repetition of part of the responsory, in the manner noted at the third responsory of the first Sunday of Advent',
+      status => 'sourced',
+      article => 'Rubricae Generales before 1960, tit. XIII n. 4',
+      source => '`web/www/horas/Help/Rubrics/R13.txt`',
+      la => $r13n4,
+      note =>
+      'The page quotes from "dicitur Gloria Patri" through "signetur", with the file\'s spelling "prime Dominice" (the line in the file breaks between those two words). It does not restore "primae Dominicae". This article does not say "without Sicut erat".',
+    };
 
   my $r27 = ribbon_slurp("$rub/R27.txt");
   my $r27n2 = ribbon_must_extract(
-    'R27 n. 2', $r27,
-    qr/(in fine tertii,\nsexti, et octavi dicitur Gloria Patri cum repetitione partis Responsorii: quod\nregulare est in fine ultimi Responsorii cuiuslibet Nocturni, tam in Officio\nnovem quam trium Lectionum)/s
+    'R27 n. 2',
+    $r27,
+    qr/(in fine tertii,\nsexti, et octavi dicitur Gloria Patri cum repetitione partis Responsorii: quod\nregulare est in fine ultimi Responsorii cuiuslibet Nocturni, tam in Officio\nnovem quam trium Lectionum)/s,
   );
   push @items, {
-    id => 'RG-27-2',
-    claim => 'Gloria Patri with the repetition of part of the responsory, at the end of the third, sixth and eighth, is the regular rule at the end of the last responsory of each nocturn',
-    status => 'sourced',
-    article => 'Rubricae Generales before 1960, tit. XXVII n. 2',
-    source => '`web/www/horas/Help/Rubrics/R27.txt`',
-    la => $r27n2,
-    note => 'The page paraphrases this in English and does not put it in quotation marks. The paraphrase omits "tam in Officio novem quam trium Lectionum". The quoted lines above are the file. This article does not say "without Sicut erat".',
-  };
+      id => 'RG-27-2',
+      claim =>
+      'Gloria Patri with the repetition of part of the responsory, at the end of the third, sixth and eighth, is the regular rule at the end of the last responsory of each nocturn',
+      status => 'sourced',
+      article => 'Rubricae Generales before 1960, tit. XXVII n. 2',
+      source => '`web/www/horas/Help/Rubrics/R27.txt`',
+      la => $r27n2,
+      note =>
+      'The page paraphrases this in English and does not put it in quotation marks. The paraphrase omits "tam in Officio novem quam trium Lectionum". The quoted lines above are the file. This article does not say "without Sicut erat".',
+    };
 
   my $mart = ribbon_martyrology_latin();
   die 'Martyrology sentence missing from the Ordinary' if $mart eq '';
   push @items, {
-    id => 'ORD-martyrology',
-    claim => 'At Prime the Martyrology is read in choir, and reading it outside choir is laudabiliter',
-    status => 'sourced',
-    article => 'Ordinarium Breviarii, ad Primam',
-    source => '`web/www/horas/Latin/Psalterium/Common/Rubricae.txt`',
-    la => $mart,
-    note => 'The page cites this as the Ordinary, not as a Codex article. The English under it is marked as a translation, not a quoted source. AAS 52 nn. 266 and 268 are about posture and are not quoted on the page.',
-  };
+      id => 'ORD-martyrology',
+      claim => 'At Prime the Martyrology is read in choir, and reading it outside choir is laudabiliter',
+      status => 'sourced',
+      article => 'Ordinarium Breviarii, ad Primam',
+      source => '`web/www/horas/Latin/Psalterium/Common/Rubricae.txt`',
+      la => $mart,
+      note =>
+      'The page cites this as the Ordinary, not as a Codex article. The English under it is marked as a translation, not a quoted source. AAS 52 nn. 266 and 268 are about posture and are not quoted on the page.',
+    };
 
   my $en110 = ribbon_slice_article(ribbon_corpus_text('general'), 110);
   my $en110flat = $en110;
@@ -2307,15 +2755,17 @@ sub ribbon_gaps_markdown {
   my $la110b = ribbon_la_piece(110, 'b');
   die 'n. 110 b Latin lost Missa S. Petri' if $la110b !~ /Missa S\. Petri/;
   push @items, {
-    id => 'GR-110-b',
-    claim => 'In a Mass of St Peter or of St Paul, the prayer of the other apostle is added under one conclusion',
-    status => 'sourced',
-    article => 'n. 110, letter b',
-    source => 'English: `web/www/horas/Help/Rubrics/General Rubrics.html`. Latin: AAS 52 (1960), n. 110, `web/www/horas/Ribbon/aas52-la.txt`.',
-    en => $en110b,
-    la => $la110b,
-    note => 'The Mass part quotes this letter alone. The whole article is GR-110. The words "without antiphon or verse" are in letter a, which is the Office.',
-  };
+      id => 'GR-110-b',
+      claim => 'In a Mass of St Peter or of St Paul, the prayer of the other apostle is added under one conclusion',
+      status => 'sourced',
+      article => 'n. 110, letter b',
+      source =>
+      'English: `web/www/horas/Help/Rubrics/General Rubrics.html`. Latin: AAS 52 (1960), n. 110, `web/www/horas/Ribbon/aas52-la.txt`.',
+      en => $en110b,
+      la => $la110b,
+      note =>
+      'The Mass part quotes this letter alone. The whole article is GR-110. The words "without antiphon or verse" are in letter a, which is the Office.',
+    };
 
   my $adv = ribbon_section_body("$Bin/../../www/horas/Latin/Tempora/Adv1-0.txt", 'Responsory3');
   die 'Advent responsory 3 missing' if $adv eq '' || $adv !~ /Missus est/;
@@ -2327,182 +2777,288 @@ sub ribbon_gaps_markdown {
   die 'Gloria or Gloria1 missing' if $gloria !~ /Sicut erat/ || $gloria1 eq '' || $gloria1 =~ /Sicut erat/;
 
   push @items, {
-    id => 'OPEN-sicut',
-    claim => 'The Gloria Patri at the end of a responsory leaves out Sicut erat',
-    status => 'needs-judgment',
-    article => 'n. 230 does not say it. The pointer is Rubricae Generales tit. XIII n. 4 and tit. XXVII n. 2.',
-    source => 'Searched `Breviary 1960.html` n. 230, `aas52-la.txt` n. 230, `R13.txt`, `R27.txt`, `Monastic rubrics.html` n. 223, `Prayers.txt`, and `Latin/Tempora/Adv1-0.txt`. No rubric sentence says "without Sicut erat" or "sine Sicut erat".',
-    page_claim => 'The responsory row says Glória Patri, et Fílio, et Spirítui Sancto (without Sicut erat). The page keeps [to be sourced] on that omission. The explicit omission stays [to be sourced], pending Dave\'s check of his Dessain at that Advent responsory.',
-    parts => [
-      { label => 'English n. 230, Breviary 1960.html', text => ribbon_slice_article(ribbon_corpus_text('breviary'), 230) },
-      { label => 'Latin n. 230, aas52-la.txt', text => ribbon_la_body(230) },
-      { label => 'Prayers.txt [Gloria1], the responsory doxology', text => $gloria1 },
-      { label => 'Prayers.txt [Gloria], which includes the second half', text => $gloria },
-      { label => 'Latin/Tempora/Adv1-0.txt [Responsory3], Missus est Gabriel', text => $adv },
-    ],
-    note => 'N. 230 says "dicitur Gloria Patri" and "eadem ultima pars" and does not name the second half of the doxology. Tit. XIII n. 4 says the manner is the one noted at the third responsory of the first Sunday of Advent, Missus est Gabriel. [Gloria1] is only the first half. [Gloria] adds "R. Sicut erat in princípio...". That is the project\'s stored prayer text, not a rubric that states the omission. The marker stays. Monastic n. 223 has the same shape as Roman n. 230 and likewise does not name Sicut erat.',
-  };
+      id => 'OPEN-sicut',
+      claim => 'The Gloria Patri at the end of a responsory leaves out Sicut erat',
+      status => 'needs-judgment',
+      article => 'n. 230 does not say it. The pointer is Rubricae Generales tit. XIII n. 4 and tit. XXVII n. 2.',
+      source =>
+      'Searched `Breviary 1960.html` n. 230, `aas52-la.txt` n. 230, `R13.txt`, `R27.txt`, `Monastic rubrics.html` n. 223, `Prayers.txt`, and `Latin/Tempora/Adv1-0.txt`. No rubric sentence says "without Sicut erat" or "sine Sicut erat".',
+      page_claim =>
+      'The responsory row says Glória Patri, et Fílio, et Spirítui Sancto (without Sicut erat). The page keeps [to be sourced] on that omission. The explicit omission stays [to be sourced], pending Dave\'s check of his Dessain at that Advent responsory.',
+      parts => [
+        {
+          label => 'English n. 230, Breviary 1960.html',
+          text => ribbon_slice_article(ribbon_corpus_text('breviary'), 230),
+        }, {
+          label => 'Latin n. 230, aas52-la.txt',
+          text => ribbon_la_body(230),
+        }, {
+          label => 'Prayers.txt [Gloria1], the responsory doxology',
+          text => $gloria1,
+        }, {
+          label => 'Prayers.txt [Gloria], which includes the second half',
+          text => $gloria,
+        }, {
+          label => 'Latin/Tempora/Adv1-0.txt [Responsory3], Missus est Gabriel',
+          text => $adv,
+        },
+      ],
+      note =>
+      'N. 230 says "dicitur Gloria Patri" and "eadem ultima pars" and does not name the second half of the doxology. Tit. XIII n. 4 says the manner is the one noted at the third responsory of the first Sunday of Advent, Missus est Gabriel. [Gloria1] is only the first half. [Gloria] adds "R. Sicut erat in princípio...". That is the project\'s stored prayer text, not a rubric that states the omission. The marker stays. Monastic n. 223 has the same shape as Roman n. 230 and likewise does not name Sicut erat.',
+    };
 
   push @items, {
-    id => 'OPEN-asterisk',
-    claim => 'Two asterisks: after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse',
-    status => 'still unsourced',
-    article => 'No article states the two-asterisk rule.',
-    source => 'Searched `Breviary 1960.html` nn. 191, 202, 229–233, the same articles in `aas52-la.txt`, `R13.txt`, `R27.txt`, and `Latin/Psalterium/Common/Rubricae.txt`. Hausmann, Learning the Breviary, is not in the repo.',
-    page_claim => 'The row is labeled commentary, not an article of the Codex: Instructions for the Recitation of the Divine Office, Confraternity of SS. Peter and Paul, adapted from Hausmann, §23, pp. 34–35. N. 230, "eadem ultima pars", is partial support for repeating the last part, not a text of the two-asterisk rule.',
-    la => $adv6,
-    note => 'N. 191\'s asterisk is where the antiphon intonation ends. N. 202\'s asterisk is the pause in a psalm verse. Neither is the two-asterisk responsory rule. The block above is [Responsory6] of `web/www/horas/Latin/Tempora/Adv1-0.txt` (Obsecro, Domine). It shows the divisions the page describes. It is an office text, not a rubric. The marker is not added to this row; the row is already labeled commentary.',
-  };
+      id => 'OPEN-asterisk',
+      claim =>
+      'Two asterisks: after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse',
+      status => 'still unsourced',
+      article => 'No article states the two-asterisk rule.',
+      source =>
+      'Searched `Breviary 1960.html` nn. 191, 202, 229–233, the same articles in `aas52-la.txt`, `R13.txt`, `R27.txt`, and `Latin/Psalterium/Common/Rubricae.txt`. Hausmann, Learning the Breviary, is not in the repo.',
+      page_claim =>
+      'The row is labeled commentary, not an article of the Codex: Instructions for the Recitation of the Divine Office, Confraternity of SS. Peter and Paul, adapted from Hausmann, §23, pp. 34–35. N. 230, "eadem ultima pars", is partial support for repeating the last part, not a text of the two-asterisk rule.',
+      la => $adv6,
+      note =>
+      'N. 191\'s asterisk is where the antiphon intonation ends. N. 202\'s asterisk is the pause in a psalm verse. Neither is the two-asterisk responsory rule. The block above is [Responsory6] of `web/www/horas/Latin/Tempora/Adv1-0.txt` (Obsecro, Domine). It shows the divisions the page describes. It is an office text, not a rubric. The marker is not added to this row; the row is already labeled commentary.',
+    };
 
   push @items, {
-    id => 'OPEN-108-en',
-    claim => 'English of AAS n. 108, the place where a commemoration is made',
-    status => 'still unsourced',
-    article => 'AAS 52 n. 108. The project English file has no sentence of that article.',
-    source => 'Searched `web/www/horas/Help/Rubrics/General Rubrics.html` (it numbers the privileged list as 108 and has no 109), the rest of `Help/Rubrics/`, and the repo for "privileged commemorations are made" and "Commemorationes privilegiatae fiunt". The Latin is only in `aas52-la.txt`.',
-    page_claim => 'The block for n. 108 shows [to be sourced] in the English line. The Latin of n. 108 is quoted under it. The list the English file numbers 108 is shown beside Latin n. 109.',
-    la => ribbon_la_body(108),
-    note => 'Latin n. 108 is sourced and is the next item\'s problem only in the way the page summarizes it. There is no English sentence of this article in the repo, so the English marker stays.',
-  };
+      id => 'OPEN-108-en',
+      claim => 'English of AAS n. 108, the place where a commemoration is made',
+      status => 'still unsourced',
+      article => 'AAS 52 n. 108. The project English file has no sentence of that article.',
+      source =>
+      'Searched `web/www/horas/Help/Rubrics/General Rubrics.html` (it numbers the privileged list as 108 and has no 109), the rest of `Help/Rubrics/`, and the repo for "privileged commemorations are made" and "Commemorationes privilegiatae fiunt". The Latin is only in `aas52-la.txt`.',
+      page_claim =>
+      'The block for n. 108 shows [to be sourced] in the English line. The Latin of n. 108 is quoted under it. The list the English file numbers 108 is shown beside Latin n. 109.',
+      la => ribbon_la_body(108),
+      note =>
+      'Latin n. 108 is sourced and is the next item\'s problem only in the way the page summarizes it. There is no English sentence of this article in the repo, so the English marker stays.',
+    };
 
   push @items, {
-    id => 'OPEN-108-summary',
-    claim => 'The page\'s English summary of AAS n. 108 names only Lauds and Vespers',
-    status => 'needs-judgment',
-    article => 'n. 108',
-    source => '`web/www/horas/Ribbon/aas52-la.txt` n. 108. The page sentence is `plain.comm.place` in `web/www/horas/Ribbon/strings.txt`.',
-    page_claim => 'AAS 52 n. 108: privileged commemorations are made at Lauds and at Vespers, and ordinary commemorations only at Lauds.',
-    la => ribbon_la_body(108),
-    note => 'The Latin also says privileged commemorations are made "necnon in omnibus Missis", and ordinary ones "tantum in Laudibus, in Missis conventualibus et in omnibus Missis lectis". The page sentence drops the Mass clauses. It was not rewritten. The same shortening is in `plain.comm.gap.minor`, which says n. 108 names Lauds and Vespers.',
-  };
+      id => 'OPEN-108-summary',
+      claim => 'The page\'s English summary of AAS n. 108 names only Lauds and Vespers',
+      status => 'needs-judgment',
+      article => 'n. 108',
+      source =>
+      '`web/www/horas/Ribbon/aas52-la.txt` n. 108. The page sentence is `plain.comm.place` in `web/www/horas/Ribbon/strings.txt`.',
+      page_claim =>
+      'AAS 52 n. 108: privileged commemorations are made at Lauds and at Vespers, and ordinary commemorations only at Lauds.',
+      la => ribbon_la_body(108),
+      note =>
+      'The Latin also says privileged commemorations are made "necnon in omnibus Missis", and ordinary ones "tantum in Laudibus, in Missis conventualibus et in omnibus Missis lectis". The page sentence drops the Mass clauses. It was not rewritten. The same shortening is in `plain.comm.gap.minor`, which says n. 108 names Lauds and Vespers.',
+    };
 
   my $r30 = ribbon_slurp("$rub/R30.txt");
   my $r30n4 = ribbon_must_extract('R30 n. 4', $r30, qr/(4\. Si Oratio dirigatur ad Patrem,.*?)(?=\n\n5\.|\n5\. )/s);
   my $r30n5 = ribbon_must_extract('R30 n. 5', $r30, qr/(5\. Quando plures Orationes dicuntur,.*)\z/s);
 
   push @items, {
-    id => 'OPEN-three',
-    claim => 'The collects of one Hour of the Office may not exceed three',
-    status => 'still unsourced',
-    article => 'No Office article says this. N. 435 is a Missal article.',
-    source => 'Searched `General Rubrics.html`, `Breviary 1960.html`, `Missal1960 rubrics.html`, `aas52-la.txt` (it stops at n. 268), and pre-1960 `rubrics.txt` / `R30.txt` tit. XXX. No Ritus servandus is in the repo.',
-    page_claim => 'No rubric was found that limits the collects of one Hour of the Office to three. The page keeps [to be sourced] on that sentence.',
-    parts => [
-      { label => 'Missal n. 435, the three-collect limit of a Mass', text => ribbon_slice_article(ribbon_corpus_text('missal'), 435) },
-      { label => 'English n. 111, commemorations admitted, not a limit of three collects', text => ribbon_slice_article(ribbon_corpus_text('general'), 111) },
-      { label => 'Latin n. 111, aas52-la.txt', text => ribbon_la_body(111) },
-    ],
-    note => 'N. 435 says the collects of a Mass may not exceed three, and the page quotes that article in the Mass part. N. 111 limits commemorations (one or two, by class), not every collect of an Hour. The Office claim stays [to be sourced].',
-  };
+      id => 'OPEN-three',
+      claim => 'The collects of one Hour of the Office may not exceed three',
+      status => 'still unsourced',
+      article => 'No Office article says this. N. 435 is a Missal article.',
+      source =>
+      'Searched `General Rubrics.html`, `Breviary 1960.html`, `Missal1960 rubrics.html`, `aas52-la.txt` (it stops at n. 268), and pre-1960 `rubrics.txt` / `R30.txt` tit. XXX. No Ritus servandus is in the repo.',
+      page_claim =>
+      'No rubric was found that limits the collects of one Hour of the Office to three. The page keeps [to be sourced] on that sentence.',
+      parts => [
+        {
+          label => 'Missal n. 435, the three-collect limit of a Mass',
+          text => ribbon_slice_article(ribbon_corpus_text('missal'), 435),
+        }, {
+          label => 'English n. 111, commemorations admitted, not a limit of three collects',
+          text => ribbon_slice_article(ribbon_corpus_text('general'), 111),
+        }, {
+          label => 'Latin n. 111, aas52-la.txt',
+          text => ribbon_la_body(111),
+        },
+      ],
+      note =>
+      'N. 435 says the collects of a Mass may not exceed three, and the page quotes that article in the Mass part. N. 111 limits commemorations (one or two, by class), not every collect of an Hour. The Office claim stays [to be sourced].',
+    };
 
   push @items, {
-    id => 'OPEN-minor',
-    claim => 'Commemorations are never said at Terce, Sext, None or Compline',
-    status => 'still unsourced',
-    article => 'No article says the explicit negative.',
-    source => 'Searched the 1960 English files, `aas52-la.txt`, and `R30.txt` tit. XXX.',
-    page_claim => 'An explicit rubric that commemorations are never said at Terce, Sext, None or Compline was not found. The page keeps [to be sourced].',
-    parts => [
-      { label => 'English n. 248', text => ribbon_slice_article(ribbon_corpus_text('breviary'), 248) },
-      { label => 'Latin n. 108, aas52-la.txt', text => ribbon_la_body(108) },
-      { label => 'Latin n. 248, aas52-la.txt', text => ribbon_la_body(248) },
-      { label => 'R30.txt tit. XXX n. 2', text => ribbon_must_extract('R30 n. 2', $r30, qr/(2\. Ad Primam et Completorium numquam mutantur Orationes,.*?)(?=\n\n3\.|\n3\. )/s) },
-    ],
-    note => 'N. 108 names where commemorations are made: Lauds, Vespers, and Masses. It does not name Terce, Sext, None, or Compline, and it does not say "never". N. 248 leaves the collect at Prime and Compline unchanged. R30 n. 2 says the oration said at Lauds is said at Terce, Sext and None on certain days. That is the collect of the day. The explicit negative was not found. The page sentence was left as it is. It understates n. 108 by not mentioning Masses; see OPEN-108-summary.',
-  };
+      id => 'OPEN-minor',
+      claim => 'Commemorations are never said at Terce, Sext, None or Compline',
+      status => 'still unsourced',
+      article => 'No article says the explicit negative.',
+      source => 'Searched the 1960 English files, `aas52-la.txt`, and `R30.txt` tit. XXX.',
+      page_claim =>
+      'An explicit rubric that commemorations are never said at Terce, Sext, None or Compline was not found. The page keeps [to be sourced].',
+      parts => [
+        {
+          label => 'English n. 248',
+          text => ribbon_slice_article(ribbon_corpus_text('breviary'), 248),
+        }, {
+          label => 'Latin n. 108, aas52-la.txt',
+          text => ribbon_la_body(108),
+        }, {
+          label => 'Latin n. 248, aas52-la.txt',
+          text => ribbon_la_body(248),
+        }, {
+          label => 'R30.txt tit. XXX n. 2',
+          text => ribbon_must_extract(
+            'R30 n. 2', $r30, qr/(2\. Ad Primam et Completorium numquam mutantur Orationes,.*?)(?=\n\n3\.|\n3\. )/s
+          ),
+        },
+      ],
+      note =>
+      'N. 108 names where commemorations are made: Lauds, Vespers, and Masses. It does not name Terce, Sext, None, or Compline, and it does not say "never". N. 248 leaves the collect at Prime and Compline unchanged. R30 n. 2 says the oration said at Lauds is said at Terce, Sext and None on certain days. That is the collect of the day. The explicit negative was not found. The page sentence was left as it is. It understates n. 108 by not mentioning Masses; see OPEN-108-summary.',
+    };
 
   push @items, {
-    id => 'OPEN-last',
-    claim => 'When several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed',
-    status => 'needs-judgment',
-    article => '1960 nn. 115, 249 and 437 do not say this. Pre-1960 tit. XXX nn. 4–5 are the nearest text in the repo.',
-    source => '`web/www/horas/Help/Rubrics/R30.txt`, and the 1960 articles quoted below. Also searched `Monastic rubrics.html` n. 238, which repeats the shape of n. 249 and does not name the last prayer\'s addressee.',
-    page_claim => 'A rubric that, when several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed, was not found in these sources. The page keeps [to be sourced]. The sentence was not rewritten.',
-    parts => [
-      { label => 'English n. 115', text => ribbon_slice_article(ribbon_corpus_text('general'), 115) },
-      { label => 'Latin n. 115, aas52-la.txt', text => ribbon_la_body(115) },
-      { label => 'English n. 249', text => ribbon_slice_article(ribbon_corpus_text('breviary'), 249) },
-      { label => 'Latin n. 249, aas52-la.txt', text => ribbon_la_body(249) },
-      { label => 'Missal n. 437', text => ribbon_slice_article(ribbon_corpus_text('missal'), 437) },
-      { label => 'R30.txt tit. XXX n. 4', text => $r30n4 },
-      { label => 'R30.txt tit. XXX n. 5', text => $r30n5 },
-    ],
-    note => 'N. 249 says the commemorations are concluded only after the last, and Oremus is said before each. N. 115 gives the formula from the one to whom that prayer is addressed. N. 437 says commemorations at Mass are said under one conclusion. R30 n. 5 says only the first oration is said under its own conclusion and the others are not concluded except at the last oration. None of these says that the formula is taken from the way the last prayer is addressed. The marker stays.',
-  };
+      id => 'OPEN-last',
+      claim =>
+      'When several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed',
+      status => 'needs-judgment',
+      article =>
+      '1960 nn. 115, 249 and 437 do not say this. Pre-1960 tit. XXX nn. 4–5 are the nearest text in the repo.',
+      source =>
+      '`web/www/horas/Help/Rubrics/R30.txt`, and the 1960 articles quoted below. Also searched `Monastic rubrics.html` n. 238, which repeats the shape of n. 249 and does not name the last prayer\'s addressee.',
+      page_claim =>
+      'A rubric that, when several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed, was not found in these sources. The page keeps [to be sourced]. The sentence was not rewritten.',
+      parts => [
+        {
+          label => 'English n. 115',
+          text => ribbon_slice_article(ribbon_corpus_text('general'), 115),
+        }, {
+          label => 'Latin n. 115, aas52-la.txt',
+          text => ribbon_la_body(115),
+        }, {
+          label => 'English n. 249',
+          text => ribbon_slice_article(ribbon_corpus_text('breviary'), 249),
+        }, {
+          label => 'Latin n. 249, aas52-la.txt',
+          text => ribbon_la_body(249),
+        }, {
+          label => 'Missal n. 437',
+          text => ribbon_slice_article(ribbon_corpus_text('missal'), 437),
+        }, {
+          label => 'R30.txt tit. XXX n. 4',
+          text => $r30n4,
+        }, {
+          label => 'R30.txt tit. XXX n. 5',
+          text => $r30n5,
+        },
+      ],
+      note =>
+      'N. 249 says the commemorations are concluded only after the last, and Oremus is said before each. N. 115 gives the formula from the one to whom that prayer is addressed. N. 437 says commemorations at Mass are said under one conclusion. R30 n. 5 says only the first oration is said under its own conclusion and the others are not concluded except at the last oration. None of these says that the formula is taken from the way the last prayer is addressed. The marker stays.',
+    };
 
   my $n468 = ribbon_slice_article(ribbon_corpus_text('missal'), 468);
   die 'missal 468 missing' if $n468 !~ /second collect/;
   push @items, {
-    id => 'OPEN-oremus',
-    claim => 'Oremus is said before the second collect at Mass',
-    status => 'needs-judgment',
-    article => 'N. 249 is an Office rubric. N. 480 says the secret is said without Oremus. N. 468 is the Missal sentence that does name a second collect.',
-    source => '`web/www/horas/Help/Rubrics/Missal1960 rubrics.html` n. 468. Also searched that file for Oremus, and `Breviary 1960.html` n. 249.',
-    page_claim => 'No rubric was found that says Oremus is said before the second collect at Mass. The page keeps [to be sourced]. The sentence was not rewritten.',
-    parts => [
-      { label => 'Missal n. 468', text => $n468 },
-      { label => 'Missal n. 480', text => ribbon_slice_article(ribbon_corpus_text('missal'), 480) },
-      { label => 'Office n. 249', text => ribbon_slice_article(ribbon_corpus_text('breviary'), 249) },
-    ],
-    note => 'N. 468 is about Masses with several lessons, and only the shortened form used outside conventual Masses and ordinations. It says that after Dominus vobiscum, Et cum spiritu tuo and Oremus is said in the usual way, to say the second collect without the Flectamus genua, followed by other commemorations. It does not state a general rule that every second collect at Mass, including a commemoration, is preceded by Oremus. The page\'s "none was found" is therefore too broad, and n. 468 is not the general rule either. Left for the owner.',
-  };
+      id => 'OPEN-oremus',
+      claim => 'Oremus is said before the second collect at Mass',
+      status => 'needs-judgment',
+      article =>
+      'N. 249 is an Office rubric. N. 480 says the secret is said without Oremus. N. 468 is the Missal sentence that does name a second collect.',
+      source =>
+      '`web/www/horas/Help/Rubrics/Missal1960 rubrics.html` n. 468. Also searched that file for Oremus, and `Breviary 1960.html` n. 249.',
+      page_claim =>
+      'No rubric was found that says Oremus is said before the second collect at Mass. The page keeps [to be sourced]. The sentence was not rewritten.',
+      parts => [
+        {
+          label => 'Missal n. 468',
+          text => $n468,
+        }, {
+          label => 'Missal n. 480',
+          text => ribbon_slice_article(ribbon_corpus_text('missal'), 480),
+        }, {
+          label => 'Office n. 249',
+          text => ribbon_slice_article(ribbon_corpus_text('breviary'), 249),
+        },
+      ],
+      note =>
+      'N. 468 is about Masses with several lessons, and only the shortened form used outside conventual Masses and ordinations. It says that after Dominus vobiscum, Et cum spiritu tuo and Oremus is said in the usual way, to say the second collect without the Flectamus genua, followed by other commemorations. It does not state a general rule that every second collect at Mass, including a commemoration, is preceded by Oremus. The page\'s "none was found" is therefore too broad, and n. 468 is not the general rule either. Left for the owner.',
+    };
 
   push @items, {
-    id => 'OPEN-ninth',
-    claim => 'There is no ninth lesson of a commemorated feast',
-    status => 'needs-judgment',
-    article => 'n. 214',
-    source => '`web/www/horas/Help/Rubrics/Breviary 1960.html` and `aas52-la.txt`, n. 214. The page sentence is `plain.comm.where`.',
-    page_claim => 'N. 214: a commemorated office has no lesson in the office of the day. There is no ninth lesson of the commemorated feast.',
-    en => ribbon_slice_article(ribbon_corpus_text('breviary'), 214),
-    la => ribbon_la_body(214),
-    note => 'The article says a commemorated office has no lesson in the office of the day. It does not say "ninth lesson". The second sentence was left on the page.',
-  };
+      id => 'OPEN-ninth',
+      claim => 'There is no ninth lesson of a commemorated feast',
+      status => 'needs-judgment',
+      article => 'n. 214',
+      source =>
+      '`web/www/horas/Help/Rubrics/Breviary 1960.html` and `aas52-la.txt`, n. 214. The page sentence is `plain.comm.where`.',
+      page_claim =>
+      'N. 214: a commemorated office has no lesson in the office of the day. There is no ninth lesson of the commemorated feast.',
+      en => ribbon_slice_article(ribbon_corpus_text('breviary'), 214),
+      la => ribbon_la_body(214),
+      note =>
+      'The article says a commemorated office has no lesson in the office of the day. It does not say "ninth lesson". The second sentence was left on the page.',
+    };
 
   push @items, {
-    id => 'OPEN-passion',
-    claim => 'Where the book notes a peculiarity (n. 231), the examples are the first responsory of Christmas and Aspiciens a longe',
-    status => 'needs-judgment',
-    article => 'n. 231',
-    source => '`Breviary 1960.html` and `aas52-la.txt`, n. 231. The page sentence is `ui.resp.passion`.',
-    page_claim => 'The same kind of cue is followed where the book notes a peculiarity (n. 231), for example the first responsory of Christmas, and Aspiciens a longe, the first responsory of the first Sunday of Advent.',
-    en => ribbon_slice_article(ribbon_corpus_text('breviary'), 231),
-    la => ribbon_la_body(231),
-    note => 'N. 231 says peculiarities are indicated in their places. It does not name Christmas or Aspiciens a longe. The Passiontide omission of the Gloria is n. 230, which the page also quotes. The examples were left in the sentence.',
-  };
+      id => 'OPEN-passion',
+      claim =>
+      'Where the book notes a peculiarity (n. 231), the examples are the first responsory of Christmas and Aspiciens a longe',
+      status => 'needs-judgment',
+      article => 'n. 231',
+      source => '`Breviary 1960.html` and `aas52-la.txt`, n. 231. The page sentence is `ui.resp.passion`.',
+      page_claim =>
+      'The same kind of cue is followed where the book notes a peculiarity (n. 231), for example the first responsory of Christmas, and Aspiciens a longe, the first responsory of the first Sunday of Advent.',
+      en => ribbon_slice_article(ribbon_corpus_text('breviary'), 231),
+      la => ribbon_la_body(231),
+      note =>
+      'N. 231 says peculiarities are indicated in their places. It does not name Christmas or Aspiciens a longe. The Passiontide omission of the Gloria is n. 230, which the page also quotes. The examples were left in the sentence.',
+    };
 
   push @items, {
-    id => 'OPEN-limits',
-    claim => 'The Mass of the day admits the same commemorations, within the same limits, as the Office',
-    status => 'needs-judgment',
-    article => 'nn. 106, 111 and 434',
-    source => '`General Rubrics.html` nn. 106 and 111, `Missal1960 rubrics.html` n. 434, and `aas52-la.txt` nn. 106 and 111. The page sentence is `plain.comm.mass.lead`.',
-    page_claim => 'The Mass of the day admits the same commemorations, within the same limits (n. 106, n. 111).',
-    parts => [
-      { label => 'English n. 111', text => ribbon_slice_article(ribbon_corpus_text('general'), 111) },
-      { label => 'Latin n. 106, aas52-la.txt', text => ribbon_la_body(106) },
-      { label => 'Latin n. 111, aas52-la.txt', text => ribbon_la_body(111) },
-      { label => 'Latin n. 108, aas52-la.txt', text => ribbon_la_body(108) },
-      { label => 'Missal n. 434', text => ribbon_slice_article(ribbon_corpus_text('missal'), 434) },
-    ],
-    note => 'N. 106 says the commemoration rules apply to Mass and Office. N. 111 and n. 434 are parallel, but n. 434 also counts collects that are not commemorations, and it names votive Masses. N. 108 does not put an ordinary commemoration at every Mass. The lead sentence was left as it is. The later Mass paragraphs quote n. 434 and the sung-Mass limit.',
-  };
+      id => 'OPEN-limits',
+      claim => 'The Mass of the day admits the same commemorations, within the same limits, as the Office',
+      status => 'needs-judgment',
+      article => 'nn. 106, 111 and 434',
+      source =>
+      '`General Rubrics.html` nn. 106 and 111, `Missal1960 rubrics.html` n. 434, and `aas52-la.txt` nn. 106 and 111. The page sentence is `plain.comm.mass.lead`.',
+      page_claim => 'The Mass of the day admits the same commemorations, within the same limits (n. 106, n. 111).',
+      parts => [
+        {
+          label => 'English n. 111',
+          text => ribbon_slice_article(ribbon_corpus_text('general'), 111),
+        }, {
+          label => 'Latin n. 106, aas52-la.txt',
+          text => ribbon_la_body(106),
+        }, {
+          label => 'Latin n. 111, aas52-la.txt',
+          text => ribbon_la_body(111),
+        }, {
+          label => 'Latin n. 108, aas52-la.txt',
+          text => ribbon_la_body(108),
+        }, {
+          label => 'Missal n. 434',
+          text => ribbon_slice_article(ribbon_corpus_text('missal'), 434),
+        },
+      ],
+      note =>
+      'N. 106 says the commemoration rules apply to Mass and Office. N. 111 and n. 434 are parallel, but n. 434 also counts collects that are not commemorations, and it names votive Masses. N. 108 does not put an ordinary commemoration at every Mass. The lead sentence was left as it is. The later Mass paragraphs quote n. 434 and the sung-Mass limit.',
+    };
 
   my $n333 = ribbon_slice_article(ribbon_corpus_text('missal'), 333);
   die 'missal 333 missing' if $n333 !~ /no other commemoration/;
   push @items, {
-    id => 'OPEN-333',
-    claim => 'On a 1st class day the only further collects are one under a single conclusion and one privileged commemoration',
-    status => 'needs-judgment',
-    article => 'n. 434 a, which points at n. 333',
-    source => '`web/www/horas/Help/Rubrics/Missal1960 rubrics.html` nn. 434 and 333. The page sentence is `plain.comm.mass.which`.',
-    page_claim => 'On a 1st class day, in a 1st class votive Mass, and in a sung Mass that is not conventual, nothing further is admitted except a collect said under a single conclusion and one privileged commemoration.',
-    parts => [
-      { label => 'Missal n. 434', text => ribbon_slice_article(ribbon_corpus_text('missal'), 434) },
-      { label => 'Missal n. 333', text => $n333 },
-    ],
-    note => 'N. 434 a ends with "the rule in 333 being observed". N. 333, the Mass of the actual consecration of a church, admits the collect of the mystery or saint under one conclusion and no other commemoration, even a privileged one. The page summary does not mention n. 333. It was not rewritten.',
-  };
+      id => 'OPEN-333',
+      claim =>
+      'On a 1st class day the only further collects are one under a single conclusion and one privileged commemoration',
+      status => 'needs-judgment',
+      article => 'n. 434 a, which points at n. 333',
+      source =>
+      '`web/www/horas/Help/Rubrics/Missal1960 rubrics.html` nn. 434 and 333. The page sentence is `plain.comm.mass.which`.',
+      page_claim =>
+      'On a 1st class day, in a 1st class votive Mass, and in a sung Mass that is not conventual, nothing further is admitted except a collect said under a single conclusion and one privileged commemoration.',
+      parts => [
+        {
+          label => 'Missal n. 434',
+          text => ribbon_slice_article(ribbon_corpus_text('missal'), 434),
+        }, {
+          label => 'Missal n. 333',
+          text => $n333,
+        },
+      ],
+      note =>
+      'N. 434 a ends with "the rule in 333 being observed". N. 333, the Mass of the actual consecration of a church, admits the collect of the mystery or saint under one conclusion and no other commemoration, even a privileged one. The page summary does not mention n. 333. It was not rewritten.',
+    };
 
   my @missal = (
     [433, 'What the word collects covers at Mass', 0],
@@ -2515,36 +3071,45 @@ sub ribbon_gaps_markdown {
     [505, 'The postcommunions follow the collects in number, manner and order', 0],
     [454, 'An oratio imperata is a collect the ordinary may order for a grave public need', 0],
     [457, 'How an oratio imperata is limited', 0],
-    [458, 'An oratio imperata for the departed is said only on a 4th class feria and in a low 4th class votive or Requiem', 0],
+    [
+      458,
+      'An oratio imperata for the departed is said only on a 4th class feria and in a low 4th class votive or Requiem',
+      0,
+    ],
     [461, 'A priest may add one votive collect on a 4th class day in a low non-conventual Mass', 0],
     [463, 'A votive collect is last and must not bring the collects past three', 0],
     [391, 'A Mass of the dead makes no commemoration of the office of the day', 0],
     [398, 'Collects in Masses of the dead', 1],
   );
   my $missal_file = 'web/www/horas/Help/Rubrics/Missal1960 rubrics.html';
+
   for my $row (@missal) {
     my ($num, $claim, $damaged) = @$row;
     my $en = ribbon_slice_article(ribbon_corpus_text('missal'), $num);
     die "missal n. $num did not slice" if $en eq '' || $en !~ /^\s*$num\./;
-    my $note = 'Latin of the Missal rubrics, articles 269 onward, is not in `aas52-la.txt`, which stops at n. 268. Searched the repo for a Latin text of these articles and did not find one. The page quotes the English and marks the Latin [to be sourced].';
+    my $note =
+      'Latin of the Missal rubrics, articles 269 onward, is not in `aas52-la.txt`, which stops at n. 268. Searched the repo for a Latin text of these articles and did not find one. The page quotes the English and marks the Latin [to be sourced].';
     my $status = 'still unsourced';
+
     if ($damaged) {
       $status = 'needs-judgment';
-      $note .= ' The English file has "whether sung of low Masses". The page marks that article damaged and still quotes it.';
+      $note .=
+        ' The English file has "whether sung of low Masses". The page marks that article damaged and still quotes it.';
     }
     push @items, {
-      id => "MS-$num",
-      claim => $claim,
-      status => $status,
-      article => "n. $num",
-      source => "English: `$missal_file`. Latin: not in the repo.",
-      en => $en,
-      note => $note,
-    };
+        id => "MS-$num",
+        claim => $claim,
+        status => $status,
+        article => "n. $num",
+        source => "English: `$missal_file`. Latin: not in the repo.",
+        en => $en,
+        note => $note,
+      };
   }
 
   my %count;
   $count{$_->{status}}++ for @items;
+
   my $sourced_n = $count{'sourced'} || 0;
   my $unsourced_n = $count{'still unsourced'} || 0;
   my $judge_n = $count{'needs-judgment'} || 0;
@@ -2634,7 +3199,7 @@ These plain lines show the stored AAS 52 article, labeled *cf. n. X*, and not a 
 Hour names, section names, and the short rubrical sentences that are ordinary Latin have a `la:` line. The strings below are screen labels or explanations. In Latin view they show the English sentence, and the page does not add `[to be sourced]`.
 
 MD
-  $md .= join("\n", map { "- `$_`" } @no_la) . "\n";
+  $md .= join("\n", map {"- `$_`"} @no_la) . "\n";
   return $md;
 }
 
@@ -2665,6 +3230,7 @@ sub ribbon_selftest {
   $q22->{en_ok} && $q22->{la_ok} ? $ok->('GR-91-22 both') : $bad->("GR-91-22 en=$q22->{en_ok} la=$q22->{la_ok}");
 
   my $gaps = 0;
+
   for my $id (keys %RIBBON_CATALOG) {
     my $q = ribbon_quote($id);
     $gaps++ if !$q->{en_ok} || !$q->{la_ok};
@@ -2706,8 +3272,7 @@ ED
     ? $ok->('volume III after Pentecost')
     : $bad->('volume III');
 
-  $RIBBON_EDITIONS{general} && $RIBBON_EDITIONS{general}{coming_soon}
-    && !@{ $RIBBON_EDITIONS{general}{volumes} }
+  $RIBBON_EDITIONS{general} && $RIBBON_EDITIONS{general}{coming_soon} && !@{$RIBBON_EDITIONS{general}{volumes}}
     ? $ok->('general edition has no volumes')
     : $bad->('general edition');
   (grep { $_ eq 'general' } @RIBBON_EDITION_ORDER)
@@ -2721,29 +3286,31 @@ ED
   ($el->{commune} =~ /C4/ && ($el->{hours}{Laudes}{commemoratio} || '') =~ /Quad4/)
     ? $ok->('El Paso common and feria commemoration')
     : $bad->("commune=$el->{commune} laudes-comm=$el->{hours}{Laudes}{commemoratio}");
-  (@{ $el->{hours}{Laudes}{comms} } && $el->{hours}{Laudes}{comms}[0] =~ /Quad4/
-      && @{ $el->{hours}{Vespera}{comms} }
-      && !@{ $el->{hours}{Prima}{comms} }
-      && !@{ $el->{hours}{Completorium}{comms} })
+  (      @{$el->{hours}{Laudes}{comms}}
+      && $el->{hours}{Laudes}{comms}[0] =~ /Quad4/
+      && @{$el->{hours}{Vespera}{comms}}
+      && !@{$el->{hours}{Prima}{comms}}
+      && !@{$el->{hours}{Completorium}{comms}})
     ? $ok->('commemoration only at Lauds and Vespers')
-    : $bad->('commemoration hours L=' . join(',', @{ $el->{hours}{Laudes}{comms} })
-      . ' P=' . join(',', @{ $el->{hours}{Prima}{comms} }));
-  (($el->{hours}{Prima}{parts}{psalms}{file} || '') =~ /Psalmi minor/
+    : $bad->('commemoration hours L='
+      . join(',', @{$el->{hours}{Laudes}{comms}}) . ' P='
+      . join(',', @{$el->{hours}{Prima}{comms}}));
+  (      ($el->{hours}{Prima}{parts}{psalms}{file} || '') =~ /Psalmi minor/
       && ($el->{hours}{Prima}{parts}{lectio_brevis}{file} || '') =~ /Prima/)
     ? $ok->('Prime psalms and short lesson')
-    : $bad->('Prime parts ' . join(',', sort keys %{ $el->{hours}{Prima}{parts} }));
+    : $bad->('Prime parts ' . join(',', sort keys %{$el->{hours}{Prima}{parts}}));
   (($el->{hours}{Matutinum}{parts}{psalms}{file} || '') =~ /Confessoris|C4/)
     ? $ok->('Matins psalms from the Common')
     : $bad->('Matins psalms ' . ($el->{hours}{Matutinum}{parts}{psalms}{file} // ''));
   $el->{why} eq 'elevated' ? $ok->('El Paso elevated') : $bad->("why=$el->{why} general=$el->{general}{winner}");
   $el->{tedeum} ? $ok->('El Paso Te Deum') : $bad->('El Paso Te Deum');
   $el->{first_vespers} ? $ok->('El Paso first vespers') : $bad->('El Paso first vespers');
-  (grep { $_->{n} == 1 && $_->{source} =~ /C4/ } @{ $el->{lessons} })
+  (grep { $_->{n} == 1 && $_->{source} =~ /C4/ } @{$el->{lessons}})
     ? $ok->('lessons 1-3 from the Common')
     : $bad->('lesson 1 source ' . ($el->{lessons}[0]{source} // ''));
-  (grep { $_->{n} == 4 && ($_->{kind} || '') eq 'legend' } @{ $el->{lessons} })
+  (grep { $_->{n} == 4 && ($_->{kind} || '') eq 'legend' } @{$el->{lessons}})
     ? $ok->('lesson 4 is the life')
-    : $bad->('lesson 4 kind ' . join(',', map { $_->{n} . ':' . $_->{kind} . ':' . $_->{source} } @{ $el->{lessons} }));
+    : $bad->('lesson 4 kind ' . join(',', map { $_->{n} . ':' . $_->{kind} . ':' . $_->{source} } @{$el->{lessons}}));
   my $life = ribbon_classify($el->{lessons}[3]{source}, 'Lectio4');
   ($life->{place} eq 'sancti' && $life->{file} =~ /03-17/ && $life->{file} !~ /nl/)
     ? $ok->('Patrick life text is the universal file')
@@ -2753,22 +3320,34 @@ ED
     ? $ok->('Patrick book prints one abridged lesson')
     : $bad->('abridged ' . ($abr ? "$abr->{roman} $abr->{key} $abr->{commune}" : 'undef'));
   my $sk = ribbon_skeleton_html('en', $el, 'Matutinum', $el->{hours}{Matutinum}, [], 'book');
-  ($sk =~ /class="skeleton"/ && $sk =~ /Nocturn I/ && $sk =~ /Lessons 1/
-      && $sk =~ /Lesson 4: abridged lesson of the saint/ && $sk =~ /Sancti\/03-17/
-      && $sk =~ /Lessons 5/ && $sk =~ /Commune\/C4/ && $sk =~ /in the printed breviary/
-      && $sk =~ /order used here/ && $sk !~ /Some arrange/ && $sk !~ /03-17nl1/
+  (      $sk =~ /class="skeleton"/
+      && $sk =~ /Nocturn I/
+      && $sk =~ /Lessons 1/
+      && $sk =~ /Lesson 4: abridged lesson of the saint/
+      && $sk =~ /Sancti\/03-17/
+      && $sk =~ /Lessons 5/
+      && $sk =~ /Commune\/C4/
+      && $sk =~ /in the printed breviary/
+      && $sk =~ /order used here/
+      && $sk !~ /Some arrange/
+      && $sk !~ /03-17nl1/
       && $sk !~ /print this proper separately/)
     ? $ok->('El Paso breviary-only Nocturn II')
     : $bad->('El Paso book skeleton');
   my $sklet = ribbon_skeleton_html('en', $el, 'Matutinum', $el->{hours}{Matutinum}, [], 'booklet');
-  ($sklet =~ /three older life lessons/ && $sklet =~ /Sancti\/03-17/
-      && $sklet =~ /data-file="Sancti\/03-17nl1"/ && $sklet =~ /Booklet coming soon/
-      && $sklet =~ /propers booklet/ && $sklet !~ /abridged lesson of the saint/)
+  (      $sklet =~ /three older life lessons/
+      && $sklet =~ /Sancti\/03-17/
+      && $sklet =~ /data-file="Sancti\/03-17nl1"/
+      && $sklet =~ /Booklet coming soon/
+      && $sklet =~ /propers booklet/
+      && $sklet !~ /abridged lesson of the saint/)
     ? $ok->('El Paso booklet Nocturn II is the three life lessons')
     : $bad->('El Paso booklet skeleton');
   my $q218 = ribbon_quote('BR-218');
-  ($q218->{en_ok} && $q218->{en} =~ /made up by lessons taken from the Common/
-      && $q218->{la_ok} && $q218->{la} =~ /numerus ternarius completur lectionibus de Communi/)
+  (      $q218->{en_ok}
+      && $q218->{en} =~ /made up by lessons taken from the Common/
+      && $q218->{la_ok}
+      && $q218->{la} =~ /numerus ternarius completur lectionibus de Communi/)
     ? $ok->('BR-218 both languages')
     : $bad->('BR-218 quote');
   my $gu = ribbon_resolve('12-12-2026', 'Rubrics 1960 - Diocese of Phoenix');
@@ -2779,15 +3358,22 @@ ED
     ? $ok->('Phoenix Guadalupe')
     : $bad->("Phoenix winner=$gu->{winner}");
   my $gbook = ribbon_skeleton_html('en', $gu, 'Matutinum', $gu->{hours}{Matutinum}, [], 'book');
-  ($gbook =~ /Commune\/C11/ && $gbook =~ /This proper is not in the printed breviary/
-      && $gbook =~ /Sancti\/12-08/ && $gbook !~ /data-file="Sancti\/12-12s"/
-      && $gbook =~ /Lessons 1/ && $gbook =~ /Lessons 7/)
+  (      $gbook =~ /Commune\/C11/
+      && $gbook =~ /This proper is not in the printed breviary/
+      && $gbook =~ /Sancti\/12-08/
+      && $gbook !~ /data-file="Sancti\/12-12s"/
+      && $gbook =~ /Lessons 1/
+      && $gbook =~ /Lessons 7/)
     ? $ok->('Guadalupe breviary-only stays in the book')
     : $bad->('Guadalupe book skeleton');
   my $gsk = ribbon_skeleton_html('en', $gu, 'Matutinum', $gu->{hours}{Matutinum}, [], 'booklet');
-  ($gsk =~ /print this proper separately/ && $gsk =~ /data-booklet=""/ && $gsk =~ /data-file="Sancti\/12-12s"/
-      && $gsk =~ /Booklet coming soon/ && $gsk =~ /propers booklet/
-      && $gsk =~ /Lessons 7.{1,3}9: Homily/ && $gsk =~ /Antiphons and psalms/)
+  (      $gsk =~ /print this proper separately/
+      && $gsk =~ /data-booklet=""/
+      && $gsk =~ /data-file="Sancti\/12-12s"/
+      && $gsk =~ /Booklet coming soon/
+      && $gsk =~ /propers booklet/
+      && $gsk =~ /Lessons 7.{1,3}9: Homily/
+      && $gsk =~ /Antiphons and psalms/)
     ? $ok->('particular proper flagged, booklet link empty')
     : $bad->('Guadalupe skeleton');
   my $rb = ribbon_ribbons_html('en', 'general', $el, 'book');
@@ -2819,10 +3405,12 @@ ED
     ? $ok->('universal feria')
     : $bad->("universal winner=$gen->{winner} kind=$gen->{kind} nocturns=$gen->{nocturns}");
   my $genhtml = ribbon_html($gen, 'English', 'general');
-  $genhtml !~ /pray-modes/ ? $ok->('a day without a booklet feast has one instruction')
+  $genhtml !~ /pray-modes/
+    ? $ok->('a day without a booklet feast has one instruction')
     : $bad->('universal page showed the mode toggle');
   my $aas = ribbon_slurp(ribbon_root() . '/aas52-la.txt');
-  $aas !~ /laudabiliter/i ? $ok->('AAS 52 transcription has no laudabiliter')
+  $aas !~ /laudabiliter/i
+    ? $ok->('AAS 52 transcription has no laudabiliter')
     : $bad->('unexpected laudabiliter in aas52-la.txt');
   $aas !~ /Pretiosa in conspectu/i && $aas !~ /extra chorum/i
     ? $ok->('AAS 52 has no Pretiosa verse and no extra chorum')
@@ -2832,7 +3420,8 @@ ED
     ? $ok->('Ordinary Martyrology sentence')
     : $bad->("martyrology latin [$mla]");
 
-  my $html = ribbon_controls($el->{version}, $el->{date}, 'general', 'English') . ribbon_html($el, 'English', 'general');
+  my $html =
+    ribbon_controls($el->{version}, $el->{date}, 'general', 'English') . ribbon_html($el, 'English', 'general');
   $html =~ /name="version"/ && $html =~ /name="date"/ && $html =~ /name="edition"/
     ? $ok->('three dropdowns')
     : $bad->('three dropdowns');
@@ -2843,19 +3432,22 @@ ED
   $html =~ /numerus ternarius completur lectionibus de Communi/
     ? $ok->('art. 218 on the El Paso page')
     : $bad->('art. 218 missing on the page');
-  $html =~ /abridged lesson of the saint/ && $html =~ /print this proper separately/
-    && $html =~ /id="pray-book"[^>]*checked/ && $html =~ /Breviary only/
-    && $html =~ /Breviary \+ propers booklet/ && $html =~ /Booklet coming soon/
-    && $html !~ /Some arrange/
+       $html =~ /abridged lesson of the saint/
+    && $html =~ /print this proper separately/
+    && $html =~ /id="pray-book"[^>]*checked/
+    && $html =~ /Breviary only/
+    && $html =~ /Breviary \+ propers booklet/ && $html =~ /Booklet coming soon/ && $html !~ /Some arrange/
     ? $ok->('El Paso page states the book and the booklet')
     : $bad->('El Paso page skeleton');
   my $guhtml = ribbon_html($gu, 'English', 'general', 'booklet');
-  ($guhtml =~ /id="pray-booklet"[^>]*checked/ && $guhtml =~ /Sancti\/12-12s/
-      && $guhtml =~ /Booklet coming soon/ && $guhtml =~ /Commune\/C11/)
+  (      $guhtml =~ /id="pray-booklet"[^>]*checked/
+      && $guhtml =~ /Sancti\/12-12s/
+      && $guhtml =~ /Booklet coming soon/
+      && $guhtml =~ /Commune\/C11/)
     ? $ok->('Guadalupe page has both modes')
     : $bad->('Guadalupe page modes');
   $html =~ /AAS 52/ ? $ok->('AAS attribution') : $bad->('AAS attribution');
-  ($html =~ /Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum/
+  (      $html =~ /Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum/
       && $html =~ /Ordinarium Breviarii, ad Primam/
       && $html =~ /Translation, not a quoted source/
       && $html =~ /not required in order to satisfy the obligation/
@@ -2864,7 +3456,7 @@ ED
       && $html !~ /except at the reading of the Martyrology/)
     ? $ok->('Prime quotes the Ordinary as the Martyrology rubric')
     : $bad->('Martyrology note');
-  ($genhtml =~ /Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum/
+  (      $genhtml =~ /Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum/
       && $genhtml =~ /Ordinarium Breviarii, ad Primam/)
     ? $ok->('Prime Martyrology note on a day with no booklet')
     : $bad->('feria Prime note');
@@ -2873,22 +3465,31 @@ ED
     ? $ok->('Prime skeleton names laudabiliter')
     : $bad->('Prime skeleton');
   my $q230 = ribbon_quote('BR-230');
-  ($q230->{en_ok} && $q230->{en} =~ /Gloria Patri is omitted from the last responsory/
-      && $q230->{la_ok} && $q230->{la} =~ /omittitur Gloria Patri/)
+  (      $q230->{en_ok}
+      && $q230->{en} =~ /Gloria Patri is omitted from the last responsory/
+      && $q230->{la_ok}
+      && $q230->{la} =~ /omittitur Gloria Patri/)
     ? $ok->('BR-230 Gloria at the last responsory')
     : $bad->('BR-230');
   my $q233 = ribbon_quote('BR-233');
-  ($q233->{en_ok} && $q233->{en} =~ /Gloria Patri and the repetition of the last part/
-      && $q233->{la_ok} && $q233->{la} =~ /omittitur Gloria Patri et repetitio/)
+  (      $q233->{en_ok}
+      && $q233->{en} =~ /Gloria Patri and the repetition of the last part/
+      && $q233->{la_ok}
+      && $q233->{la} =~ /omittitur Gloria Patri et repetitio/)
     ? $ok->('BR-233b Sunday responsory')
     : $bad->('BR-233');
-  ($html =~ /class="resp-box"/ && $html =~ /second \*/
+  (      $html =~ /class="resp-box"/
+      && $html =~ /second \*/
       && $html =~ /never a cross or any other mark/
       && $html =~ /without Sicut erat/
-      && $html =~ /Iste cognóvit/ && $html =~ /Sicut locútus es, veni, \*/
-      && $html =~ /Et líbera nos/ && $html =~ /Usquequo exaltábitur/
-      && $html =~ /Hausmann/ && $html =~ /\[to be sourced\]/
-      && $html =~ /In fine ultimi responsorii cuiusque Nocturni, post repetitam ultimam partem responsorii, dicitur Gloria Patri/
+      && $html =~ /Iste cognóvit/
+      && $html =~ /Sicut locútus es, veni, \*/
+      && $html =~ /Et líbera nos/
+      && $html =~ /Usquequo exaltábitur/
+      && $html =~ /Hausmann/
+      && $html =~ /\[to be sourced\]/
+      && $html =~
+      /In fine ultimi responsorii cuiusque Nocturni, post repetitam ultimam partem responsorii, dicitur Gloria Patri/
       && $html =~ /Peculiaritates in dicendis responsoriis forte occurrentes, suis locis indicantur/
       && $html =~ /no Alleluia is added after the verse/
       && $html =~ /prints every repeat in full/)
@@ -2904,27 +3505,33 @@ ED
   my $la = ribbon_html($el, 'Latin', 'general');
   $la =~ /praeferuntur festis III classis/ ? $ok->('Latin quote on the page') : $bad->('Latin quote');
   $la =~ /\[to be sourced\]/ ? $ok->('Sicut erat omission still marked') : $bad->('expected the Sicut erat marker');
+
   for my $id (sort keys %RIBBON_CF) {
     my $cf = ribbon_s('la', $id);
+
     if ($cf !~ /^cf\. n\. / || $cf =~ /\[to be sourced\]/) {
       $bad->("cf label $id");
       next;
     }
-    for my $p (@{ $RIBBON_CF{$id} }) {
+
+    for my $p (@{$RIBBON_CF{$id}}) {
       my $piece = ribbon_la_piece($p->[0], $p->[1]);
+
       if ($piece eq '' || index(ribbon_la_body($p->[0]), $piece) < 0 || index($cf, $piece) < 0) {
         $bad->("cf piece $id n.$p->[0]");
       }
     }
   }
   my $s12 = ribbon_la_piece(230, '1-2');
-  ($s12 =~ /dicitur Gloria Patri, et deinde iterum resumitur eadem ultima pars/
-      && $s12 =~ /Attamen, in Officio temporis Passionis/ && $s12 !~ /Requiem/)
+  (      $s12 =~ /dicitur Gloria Patri, et deinde iterum resumitur eadem ultima pars/
+      && $s12 =~ /Attamen, in Officio temporis Passionis/
+      && $s12 !~ /Requiem/)
     ? $ok->('n. 230 sentences 1-2')
     : $bad->('n. 230 sentences');
   my $r13 = ribbon_slurp("$Bin/../../www/horas/Help/Rubrics/R13.txt");
   my $r27 = ribbon_slurp("$Bin/../../www/horas/Help/Rubrics/R27.txt");
-  ($r13 =~ /repetitione partis Responsorii/ && $r13 =~ /nisi aliter in propriis locis signetur/
+  (      $r13 =~ /repetitione partis Responsorii/
+      && $r13 =~ /nisi aliter in propriis locis signetur/
       && $r27 =~ /Gloria Patri cum repetitione partis Responsorii/)
     ? $ok->('pre-1960 Gloria Patri pointer is in R13 and R27')
     : $bad->('R13/R27 pointer');
@@ -2945,12 +3552,16 @@ ED
     ['ui', qr/How to pray/],
   );
   my $la_ok = 1;
+
   for my $row (@la_need) {
     next if $la =~ $row->[1];
     $la_ok = 0;
     $bad->("Latin view missing $row->[0]");
   }
-  $la_ok = 0 if $la =~ /How to pray \[to be sourced\]/ || $la =~ /The antiphons are said in full/ || $la =~ /Translation, not a quoted source/;
+  $la_ok = 0
+    if $la =~ /How to pray \[to be sourced\]/
+    || $la =~ /The antiphons are said in full/
+    || $la =~ /Translation, not a quoted source/;
   $la =~ /How to pray \[to be sourced\]/ && $bad->('Latin view marked a screen label');
   $la =~ /The antiphons are said in full/ && $bad->('Latin view kept the English antiphon sentence');
   $la =~ /Translation, not a quoted source/ && $bad->('Latin view showed the Martyrology translation');
@@ -2969,18 +3580,21 @@ ED
   print $fh $doc;
   close $fh;
   $doc =~ /Latin still \[to be sourced\] \| 0/ ? $ok->('gap doc latin 0') : $bad->('gap doc count');
-  ($doc =~ /Ordinarium Breviarii, ad Primam/
+  (      $doc =~ /Ordinarium Breviarii, ad Primam/
       && $doc =~ /Deinde in Choro legitur Martyrologium/
       && $doc !~ /marks the obligation, the unprinted book/)
     ? $ok->('gap doc takes the Martyrology from the Ordinary')
     : $bad->('gap doc Martyrology');
-  ($doc =~ /two-asterisk rule/ && $doc =~ /Sicut erat/ && $doc =~ /Missus est Gabriel/
-      && $doc =~ /pending Dave's check/ && $doc !~ /open question/
+  (      $doc =~ /two-asterisk rule/
+      && $doc =~ /Sicut erat/
+      && $doc =~ /Missus est Gabriel/
+      && $doc =~ /pending Dave's check/
+      && $doc !~ /open question/
       && $doc =~ /does not add `\[to be sourced\]`/
       && $doc !~ /^- `plain\.antiphons`/m)
     ? $ok->('gap doc records the responsory gaps and asks nothing about marks')
     : $bad->('gap doc responsory');
-  ($doc =~ /English of AAS n\. 108/
+  (      $doc =~ /English of AAS n\. 108/
       && $doc =~ /collects of one Hour of the Office/
       && $doc =~ /Terce, Sext, None or Compline/
       && $doc =~ /last prayer is addressed/
@@ -3004,22 +3618,28 @@ ED
     : $bad->('missal 480 slice');
 
   my $dec = ribbon_resolve('12-04-2026', 'Rubrics 1960 - 1960');
-  my $dL = join(',', @{ $dec->{hours}{Laudes}{comms} || [] });
-  my $dV = join(',', @{ $dec->{hours}{Vespera}{comms} || [] });
+  my $dL = join(',', @{$dec->{hours}{Laudes}{comms} || []});
+  my $dV = join(',', @{$dec->{hours}{Vespera}{comms} || []});
   ($dec->{winner} =~ /12-04/ && $dL =~ /Adv1-5/ && $dL =~ /12-04o/ && $dV =~ /Adv1-5/ && $dV !~ /12-04o/)
     ? $ok->('4 Dec Lauds has feria and Barbara; Vespers the feria')
     : $bad->("4 Dec winner=$dec->{winner} L=$dL V=$dV");
   my $dhtml = ribbon_html($dec, 'English', 'general');
-  ($dhtml =~ /id="commemorations"/ && $dhtml =~ /id="comm-mass"/ && $dhtml =~ /id="comm-examples"/
+  (      $dhtml =~ /id="commemorations"/
+      && $dhtml =~ /id="comm-mass"/
+      && $dhtml =~ /id="comm-examples"/
       && $dhtml =~ /Oremus is said before each collect/
-      && $dhtml !~ /Oremus once/ && $dhtml !~ /no repeated Oremus/
+      && $dhtml !~ /Oremus once/
+      && $dhtml !~ /no repeated Oremus/
       && $dhtml =~ /Officia commemorata non habent lectionem/
       && $dhtml =~ /sub unica conclusione/
       && $dhtml =~ /absque antiphona et versu/
       && $dhtml =~ /Oremus dicitur ante quamlibet/
-      && $dhtml =~ /4 December 2026/ && $dhtml =~ /30 June 2026/
-      && $dhtml =~ /Tempora\/Adv1-5/ && $dhtml =~ /Sancti\/12-04o/
-      && $dhtml =~ /exceed three/ && $dhtml =~ /Missal1960 rubrics\.html/
+      && $dhtml =~ /4 December 2026/
+      && $dhtml =~ /30 June 2026/
+      && $dhtml =~ /Tempora\/Adv1-5/
+      && $dhtml =~ /Sancti\/12-04o/
+      && $dhtml =~ /exceed three/
+      && $dhtml =~ /Missal1960 rubrics\.html/
       && $dhtml =~ /without Dominus vobiscum or Oremus/
       && $dhtml =~ /in a Mass of St\. Peter or of St\. Paul/
       && $dhtml =~ /Letter b only/
@@ -3030,15 +3650,17 @@ ED
     : $bad->('commemorations section');
 
   my $jun = ribbon_resolve('06-30-2026', 'Rubrics 1960 - 1960');
-  (!@{ $jun->{hours}{Laudes}{comms} || [] } && ribbon_sub_unica($jun->{winner}))
+  (!@{$jun->{hours}{Laudes}{comms} || []} && ribbon_sub_unica($jun->{winner}))
     ? $ok->('30 June has Sub unica concl and no separate commemoration')
-    : $bad->('30 June comms ' . join(',', @{ $jun->{hours}{Laudes}{comms} || [] }) . " winner=$jun->{winner}");
+    : $bad->('30 June comms ' . join(',', @{$jun->{hours}{Laudes}{comms} || []}) . " winner=$jun->{winner}");
   my $jhtml = ribbon_html($jun, 'English', 'general');
   ($jhtml =~ /Sub unica concl/ && $jhtml =~ /other apostle/ && $jhtml =~ /30 June 2026/)
     ? $ok->('30 June page names the joint conclusion')
     : $bad->('30 June page');
   my $jla = ribbon_html($jun, 'Latin', 'general');
-  ($jla =~ /In Officio/ && $jla =~ /In Missa/ && $jla =~ /sub unica conclusione, orationi diei/
+  (      $jla =~ /In Officio/
+      && $jla =~ /In Missa/
+      && $jla =~ /sub unica conclusione, orationi diei/
       && $jla =~ /Oratio Officii diei semper dicitur sub sua conclusione/
       && $jla !~ /Oremus once/)
     ? $ok->('Latin view keeps the Office articles and the Mass cross-reference')

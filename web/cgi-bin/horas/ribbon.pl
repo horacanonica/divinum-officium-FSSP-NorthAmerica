@@ -17,9 +17,9 @@ use DivinumOfficium::LanguageTextTools
 use DivinumOfficium::RunTimeOptions qw(check_version);
 use DivinumOfficium::Date qw(prevnext);
 
-our $Ck       = 0;
-our $missa    = 0;
-our $version  = '';
+our $Ck = 0;
+our $missa = 0;
+our $version = '';
 our @dayname;
 our $winner;
 our $commemoratio;
@@ -44,18 +44,18 @@ our $communerule;
 our $duplex;
 our $buildscript = '';
 our $column = 1;
-our $error  = '';
-our $debug  = '';
+our $error = '';
+our $debug = '';
 our $expand = 'tota';
 our $votive = 'Hodie';
-our $lang1  = 'Latin';
-our $lang2  = 'Latin';
+our $lang1 = 'Latin';
+our $lang2 = 'Latin';
 our $langfb = 'English';
-our $hora   = '';
-our $date1  = '';
+our $hora = '';
+our $date1 = '';
 our $priest = 0;
 our $psalmvar = 0;
-our $only   = 1;
+our $only = 1;
 our $caller = 0;
 our $expandind = 0;
 our $searchvalue = 0;
@@ -84,9 +84,11 @@ require "$Bin/ribbonlib.pl";
 ribbon_boot();
 
 our $q = CGI->new;
+
 if (@ARGV && $ARGV[0] eq '--check') {
   exit ribbon_selftest();
 }
+
 if (@ARGV && $ARGV[0] eq '--gaps') {
   my $path = "$Bin/../../../docs/rubric-quotes-to-source.md";
   open my $fh, '>:encoding(UTF-8)', $path or die $!;
@@ -99,6 +101,7 @@ my $version_in = $q->param('version') // '';
 $version = check_version($version_in) || 'Rubrics 1960 - 1960';
 my $date = $q->param('date') || $q->param('date1') || '';
 $date =~ s/\//-/g;
+
 if ($date !~ /^\d{2}-\d{2}-\d{4}$/) {
   $hora = 'Matutinum';
   $date = gettoday();
@@ -117,21 +120,30 @@ $browsertime = '1';
 $officium = 'ribbon.pl';
 
 htmlHead('Signacula', '');
+
 # htmlHead opens the office's POST form. This page is a GET of three selects,
 # so that form is closed and a shareable one is opened in its place.
 print '</FORM>';
 print ribbon_style();
 print '<H1><FONT COLOR="MAROON" SIZE="+1"><B><I>Divinum Officium</I></B></FONT> '
-  . '<FONT COLOR="RED" SIZE="+1">' . ribbon_h(ribbon_s(ribbon_code($lang), 'ui.title')) . '</FONT></H1>';
+  . '<FONT COLOR="RED" SIZE="+1">'
+  . ribbon_h(ribbon_s(ribbon_code($lang), 'ui.title'))
+  . '</FONT></H1>';
 print '<p style="text-align:center">' . ribbon_sh(ribbon_code($lang), 'ui.intro') . '</p>';
 print '<FORM ACTION="ribbon.pl" METHOD="get">';
 print ribbon_controls($version, $date, $edition, $lang);
 my $code = ribbon_code($lang);
-print '<p style="text-align:center"><A HREF="officium.pl?date1=' . ribbon_h($date)
-  . '&version=' . ribbon_h($version) . '&lang2=' . ribbon_h($lang eq 'Latin' ? 'Latin' : $lang) . '">'
-  . ribbon_sh($code, 'ui.office') . '</A></p>';
+print '<p style="text-align:center"><A HREF="officium.pl?date1='
+  . ribbon_h($date)
+  . '&version='
+  . ribbon_h($version)
+  . '&lang2='
+  . ribbon_h($lang eq 'Latin' ? 'Latin' : $lang) . '">'
+  . ribbon_sh($code, 'ui.office')
+  . '</A></p>';
 
 my $facts = eval { ribbon_resolve($date, $version) };
+
 if ($@) {
   print '<p style="color:red">' . ribbon_h($@) . '</p>';
 } else {
