@@ -2163,6 +2163,43 @@ sub ribbon_strings_missing_la {
   return @ids;
 }
 
+sub ribbon_md_quote {
+  my ($text) = @_;
+  $text = '' unless defined $text;
+  $text =~ s/\r//g;
+  $text =~ s/\A\n+//;
+  $text =~ s/\s+\z//;
+  $text = '(no text in the file)' if $text eq '';
+  return join("\n", map { '> ' . $_ } split /\n/, $text, -1) . "\n";
+}
+
+sub ribbon_check_md {
+  my ($it) = @_;
+  my $md = "### $it->{id}. $it->{claim}\n\n";
+  $md .= "- **Status:** $it->{status}\n";
+  $md .= "- **Article:** $it->{article}\n" if defined $it->{article} && $it->{article} ne '';
+  $md .= "- **Source:** $it->{source}\n" if defined $it->{source} && $it->{source} ne '';
+  if (defined $it->{page_claim} && $it->{page_claim} ne '') {
+    $md .= "\n**Claim on the page.** $it->{page_claim}\n";
+  }
+  my @parts = @{ $it->{parts} || [] };
+  if (!@parts) {
+    push @parts, { label => 'English quote', text => $it->{en} } if defined $it->{en};
+    push @parts, { label => 'Latin quote', text => $it->{la} } if defined $it->{la};
+  }
+  for my $p (@parts) {
+    $md .= "\n**$p->{label}**\n\n" . ribbon_md_quote($p->{text}) . "\n";
+  }
+  $md .= "**Note.** $it->{note}\n" if defined $it->{note} && $it->{note} ne '';
+  return $md . "\n";
+}
+
+sub ribbon_must_extract {
+  my ($label, $text, $re) = @_;
+  return $1 if $text =~ $re;
+  die "checklist extract failed: $label";
+}
+
 sub ribbon_gaps_markdown {
   my $n = 0;
   my $en_ok = 0;
@@ -2170,6 +2207,20 @@ sub ribbon_gaps_markdown {
   my $la_ok = 0;
   my $la_gap = 0;
   my @rows;
+  my @items;
+  my %damage = (
+    'BR-165' => 'The English file has "the arrangement of thew Office". Quoted as the file has it. The owner decides whether that corrupt English should stay on the page. The Latin is shown beside it.',
+    'BR-169' => 'The English file has "from the Proper of the Common" and "proper of from the common". Latin n. 169 a has "e Proprio vel Communi" and "nisi propria aut de Communi assignentur". Quoted as the file has it.',
+    'BR-171' => 'The English file has "on If rids". Latin n. 171 a has "in feriis". Quoted as the file has it.',
+    'BR-219' => 'The English file letters the second clause "h)". Latin n. 219 letters it "b)". Quoted as the file has it.',
+    'BR-221' => 'The English file has "The first and second lessons as are said". Quoted as the file has it.',
+    'GR-115' => 'The English file has "they Son" and "would without end". Latin n. 115 has "Per eundem Dominum nostrum" and "per omnia saecula saeculorum". Quoted as the file has it.',
+  );
+  my %extra = (
+    'GR-91-22' => 'The English file spells "Thurday". The page quotes that spelling. The Latin is "a feria V post cineres".',
+    'BR-233' => 'The page quotes letter b only. The text below is the snippet the page shows, and it occurs inside the article.',
+  );
+
   for my $id (sort keys %RIBBON_CATALOG) {
     my $q = ribbon_quote($id);
     $n++;
@@ -2177,26 +2228,346 @@ sub ribbon_gaps_markdown {
     $en_gap += $q->{en_ok} ? 0 : 1;
     $la_ok += $q->{la_ok} ? 1 : 0;
     $la_gap += $q->{la_ok} ? 0 : 1;
-    my $en = $q->{en_ok} ? ($q->{en_damaged} ? 'sourced, file damaged' : 'sourced') : '[to be sourced]';
-    my $la = $q->{la_ok} ? "AAS 52 (1960), p. $q->{page}, n. $q->{number}" : '[to be sourced]';
+    my $en_label = $q->{en_ok} ? ($q->{en_damaged} ? 'sourced, file damaged' : 'sourced') : '[to be sourced]';
+    my $la_label = $q->{la_ok} ? "AAS 52 (1960), p. $q->{page}, n. $q->{number}" : '[to be sourced]';
     my $topic = $q->{topic};
     $topic =~ s/\|/\//g;
-    push @rows, "| $id | $topic | $en | $la | $q->{file} |";
+    push @rows, "| $id | $topic | $en_label | $la_label | $q->{file} |";
+
+    my $status = 'sourced';
+    my $note = $extra{$id} || '';
+    if (!$q->{en_ok} || !$q->{la_ok}) {
+      $status = 'still unsourced';
+      $note = 'The catalogue row did not match the file. Nothing was invented to fill it.';
+    } elsif ($q->{en_damaged}) {
+      $status = 'needs-judgment';
+      $note = $damage{$id} || 'The English file is damaged. Quoted as the file has it.';
+    }
+    my $en_full = ribbon_slice_article($RIBBON_EN{ $q->{corpus} } || '', $q->{number});
+    my $la_full = ribbon_la_body($q->{number});
+    die "English quote $id is not in the sliced article" if $q->{en_ok} && index(ribbon_norm($en_full), ribbon_norm($q->{en})) < 0;
+    die "Latin quote $id is not in aas52-la.txt n. $q->{number}" if $q->{la_ok} && index(ribbon_norm($la_full), ribbon_norm($q->{la})) < 0;
+    push @items, {
+      id => $id,
+      claim => $q->{topic},
+      status => $status,
+      article => "n. $q->{number}",
+      source => "English: `$q->{file}`. Latin: AAS 52 (1960), p. $q->{page}, n. $q->{number}, `web/www/horas/Ribbon/aas52-la.txt`.",
+      en => $q->{en},
+      la => $q->{la},
+      note => $note,
+    };
   }
+
+  my $rub = "$Bin/../../www/horas/Help/Rubrics";
+  my $r13 = ribbon_slurp("$rub/R13.txt");
+  my $r13n4 = ribbon_must_extract('R13 n. 4', $r13, qr/(4\. In fine ultimi Responsorii cuiusque Nocturni dicitur Gloria Patri cum\nrepetitione partis Responsorii, eo modo quo notatur in tertio Responsorio prime\nDominice de Adventu, nisi aliter in propriis locis signetur\.)/s);
+  push @items, {
+    id => 'RG-13-4',
+    claim => 'At the end of the last responsory of each nocturn, Gloria Patri is said with the repetition of part of the responsory, in the manner noted at the third responsory of the first Sunday of Advent',
+    status => 'sourced',
+    article => 'Rubricae Generales before 1960, tit. XIII n. 4',
+    source => '`web/www/horas/Help/Rubrics/R13.txt`',
+    la => $r13n4,
+    note => 'The page quotes from "dicitur Gloria Patri" through "signetur", with the file\'s spelling "prime Dominice" (the line in the file breaks between those two words). It does not restore "primae Dominicae". This article does not say "without Sicut erat".',
+  };
+
+  my $r27 = ribbon_slurp("$rub/R27.txt");
+  my $r27n2 = ribbon_must_extract(
+    'R27 n. 2', $r27,
+    qr/(in fine tertii,\nsexti, et octavi dicitur Gloria Patri cum repetitione partis Responsorii: quod\nregulare est in fine ultimi Responsorii cuiuslibet Nocturni, tam in Officio\nnovem quam trium Lectionum)/s
+  );
+  push @items, {
+    id => 'RG-27-2',
+    claim => 'Gloria Patri with the repetition of part of the responsory, at the end of the third, sixth and eighth, is the regular rule at the end of the last responsory of each nocturn',
+    status => 'sourced',
+    article => 'Rubricae Generales before 1960, tit. XXVII n. 2',
+    source => '`web/www/horas/Help/Rubrics/R27.txt`',
+    la => $r27n2,
+    note => 'The page paraphrases this in English and does not put it in quotation marks. The paraphrase omits "tam in Officio novem quam trium Lectionum". The quoted lines above are the file. This article does not say "without Sicut erat".',
+  };
+
+  my $mart = ribbon_martyrology_latin();
+  die 'Martyrology sentence missing from the Ordinary' if $mart eq '';
+  push @items, {
+    id => 'ORD-martyrology',
+    claim => 'At Prime the Martyrology is read in choir, and reading it outside choir is laudabiliter',
+    status => 'sourced',
+    article => 'Ordinarium Breviarii, ad Primam',
+    source => '`web/www/horas/Latin/Psalterium/Common/Rubricae.txt`',
+    la => $mart,
+    note => 'The page cites this as the Ordinary, not as a Codex article. The English under it is marked as a translation, not a quoted source. AAS 52 nn. 266 and 268 are about posture and are not quoted on the page.',
+  };
+
+  my $en110 = ribbon_slice_article(ribbon_corpus_text('general'), 110);
+  my $en110flat = $en110;
+  $en110flat =~ s/\s+/ /g;
+  my $en110b = ribbon_must_extract('n. 110 b English', $en110flat, qr/(b\)\s*.*?)(?=\s*c\)|\z)/s);
+  die 'n. 110 b English lost the Mass sentence' if $en110b !~ /Mass of St\. Peter/i;
+  my $la110b = ribbon_la_piece(110, 'b');
+  die 'n. 110 b Latin lost Missa S. Petri' if $la110b !~ /Missa S\. Petri/;
+  push @items, {
+    id => 'GR-110-b',
+    claim => 'In a Mass of St Peter or of St Paul, the prayer of the other apostle is added under one conclusion',
+    status => 'sourced',
+    article => 'n. 110, letter b',
+    source => 'English: `web/www/horas/Help/Rubrics/General Rubrics.html`. Latin: AAS 52 (1960), n. 110, `web/www/horas/Ribbon/aas52-la.txt`.',
+    en => $en110b,
+    la => $la110b,
+    note => 'The Mass part quotes this letter alone. The whole article is GR-110. The words "without antiphon or verse" are in letter a, which is the Office.',
+  };
+
+  my $adv = ribbon_section_body("$Bin/../../www/horas/Latin/Tempora/Adv1-0.txt", 'Responsory3');
+  die 'Advent responsory 3 missing' if $adv eq '' || $adv !~ /Missus est/;
+  my $adv6 = ribbon_section_body("$Bin/../../www/horas/Latin/Tempora/Adv1-0.txt", 'Responsory6');
+  die 'Advent responsory 6 missing' if $adv6 eq '' || $adv6 !~ /Obsecro/;
+  my $prayers = "$Bin/../../www/horas/Latin/Psalterium/Common/Prayers.txt";
+  my $gloria = ribbon_section_body($prayers, 'Gloria');
+  my $gloria1 = ribbon_section_body($prayers, 'Gloria1');
+  die 'Gloria or Gloria1 missing' if $gloria !~ /Sicut erat/ || $gloria1 eq '' || $gloria1 =~ /Sicut erat/;
+
+  push @items, {
+    id => 'OPEN-sicut',
+    claim => 'The Gloria Patri at the end of a responsory leaves out Sicut erat',
+    status => 'needs-judgment',
+    article => 'n. 230 does not say it. The pointer is Rubricae Generales tit. XIII n. 4 and tit. XXVII n. 2.',
+    source => 'Searched `Breviary 1960.html` n. 230, `aas52-la.txt` n. 230, `R13.txt`, `R27.txt`, `Monastic rubrics.html` n. 223, `Prayers.txt`, and `Latin/Tempora/Adv1-0.txt`. No rubric sentence says "without Sicut erat" or "sine Sicut erat".',
+    page_claim => 'The responsory row says Glória Patri, et Fílio, et Spirítui Sancto (without Sicut erat). The page keeps [to be sourced] on that omission. The explicit omission stays [to be sourced], pending Dave\'s check of his Dessain at that Advent responsory.',
+    parts => [
+      { label => 'English n. 230, Breviary 1960.html', text => ribbon_slice_article(ribbon_corpus_text('breviary'), 230) },
+      { label => 'Latin n. 230, aas52-la.txt', text => ribbon_la_body(230) },
+      { label => 'Prayers.txt [Gloria1], the responsory doxology', text => $gloria1 },
+      { label => 'Prayers.txt [Gloria], which includes the second half', text => $gloria },
+      { label => 'Latin/Tempora/Adv1-0.txt [Responsory3], Missus est Gabriel', text => $adv },
+    ],
+    note => 'N. 230 says "dicitur Gloria Patri" and "eadem ultima pars" and does not name the second half of the doxology. Tit. XIII n. 4 says the manner is the one noted at the third responsory of the first Sunday of Advent, Missus est Gabriel. [Gloria1] is only the first half. [Gloria] adds "R. Sicut erat in princípio...". That is the project\'s stored prayer text, not a rubric that states the omission. The marker stays. Monastic n. 223 has the same shape as Roman n. 230 and likewise does not name Sicut erat.',
+  };
+
+  push @items, {
+    id => 'OPEN-asterisk',
+    claim => 'Two asterisks: after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse',
+    status => 'still unsourced',
+    article => 'No article states the two-asterisk rule.',
+    source => 'Searched `Breviary 1960.html` nn. 191, 202, 229–233, the same articles in `aas52-la.txt`, `R13.txt`, `R27.txt`, and `Latin/Psalterium/Common/Rubricae.txt`. Hausmann, Learning the Breviary, is not in the repo.',
+    page_claim => 'The row is labeled commentary, not an article of the Codex: Instructions for the Recitation of the Divine Office, Confraternity of SS. Peter and Paul, adapted from Hausmann, §23, pp. 34–35. N. 230, "eadem ultima pars", is partial support for repeating the last part, not a text of the two-asterisk rule.',
+    la => $adv6,
+    note => 'N. 191\'s asterisk is where the antiphon intonation ends. N. 202\'s asterisk is the pause in a psalm verse. Neither is the two-asterisk responsory rule. The block above is [Responsory6] of `web/www/horas/Latin/Tempora/Adv1-0.txt` (Obsecro, Domine). It shows the divisions the page describes. It is an office text, not a rubric. The marker is not added to this row; the row is already labeled commentary.',
+  };
+
+  push @items, {
+    id => 'OPEN-108-en',
+    claim => 'English of AAS n. 108, the place where a commemoration is made',
+    status => 'still unsourced',
+    article => 'AAS 52 n. 108. The project English file has no sentence of that article.',
+    source => 'Searched `web/www/horas/Help/Rubrics/General Rubrics.html` (it numbers the privileged list as 108 and has no 109), the rest of `Help/Rubrics/`, and the repo for "privileged commemorations are made" and "Commemorationes privilegiatae fiunt". The Latin is only in `aas52-la.txt`.',
+    page_claim => 'The block for n. 108 shows [to be sourced] in the English line. The Latin of n. 108 is quoted under it. The list the English file numbers 108 is shown beside Latin n. 109.',
+    la => ribbon_la_body(108),
+    note => 'Latin n. 108 is sourced and is the next item\'s problem only in the way the page summarizes it. There is no English sentence of this article in the repo, so the English marker stays.',
+  };
+
+  push @items, {
+    id => 'OPEN-108-summary',
+    claim => 'The page\'s English summary of AAS n. 108 names only Lauds and Vespers',
+    status => 'needs-judgment',
+    article => 'n. 108',
+    source => '`web/www/horas/Ribbon/aas52-la.txt` n. 108. The page sentence is `plain.comm.place` in `web/www/horas/Ribbon/strings.txt`.',
+    page_claim => 'AAS 52 n. 108: privileged commemorations are made at Lauds and at Vespers, and ordinary commemorations only at Lauds.',
+    la => ribbon_la_body(108),
+    note => 'The Latin also says privileged commemorations are made "necnon in omnibus Missis", and ordinary ones "tantum in Laudibus, in Missis conventualibus et in omnibus Missis lectis". The page sentence drops the Mass clauses. It was not rewritten. The same shortening is in `plain.comm.gap.minor`, which says n. 108 names Lauds and Vespers.',
+  };
+
+  my $r30 = ribbon_slurp("$rub/R30.txt");
+  my $r30n4 = ribbon_must_extract('R30 n. 4', $r30, qr/(4\. Si Oratio dirigatur ad Patrem,.*?)(?=\n\n5\.|\n5\. )/s);
+  my $r30n5 = ribbon_must_extract('R30 n. 5', $r30, qr/(5\. Quando plures Orationes dicuntur,.*)\z/s);
+
+  push @items, {
+    id => 'OPEN-three',
+    claim => 'The collects of one Hour of the Office may not exceed three',
+    status => 'still unsourced',
+    article => 'No Office article says this. N. 435 is a Missal article.',
+    source => 'Searched `General Rubrics.html`, `Breviary 1960.html`, `Missal1960 rubrics.html`, `aas52-la.txt` (it stops at n. 268), and pre-1960 `rubrics.txt` / `R30.txt` tit. XXX. No Ritus servandus is in the repo.',
+    page_claim => 'No rubric was found that limits the collects of one Hour of the Office to three. The page keeps [to be sourced] on that sentence.',
+    parts => [
+      { label => 'Missal n. 435, the three-collect limit of a Mass', text => ribbon_slice_article(ribbon_corpus_text('missal'), 435) },
+      { label => 'English n. 111, commemorations admitted, not a limit of three collects', text => ribbon_slice_article(ribbon_corpus_text('general'), 111) },
+      { label => 'Latin n. 111, aas52-la.txt', text => ribbon_la_body(111) },
+    ],
+    note => 'N. 435 says the collects of a Mass may not exceed three, and the page quotes that article in the Mass part. N. 111 limits commemorations (one or two, by class), not every collect of an Hour. The Office claim stays [to be sourced].',
+  };
+
+  push @items, {
+    id => 'OPEN-minor',
+    claim => 'Commemorations are never said at Terce, Sext, None or Compline',
+    status => 'still unsourced',
+    article => 'No article says the explicit negative.',
+    source => 'Searched the 1960 English files, `aas52-la.txt`, and `R30.txt` tit. XXX.',
+    page_claim => 'An explicit rubric that commemorations are never said at Terce, Sext, None or Compline was not found. The page keeps [to be sourced].',
+    parts => [
+      { label => 'English n. 248', text => ribbon_slice_article(ribbon_corpus_text('breviary'), 248) },
+      { label => 'Latin n. 108, aas52-la.txt', text => ribbon_la_body(108) },
+      { label => 'Latin n. 248, aas52-la.txt', text => ribbon_la_body(248) },
+      { label => 'R30.txt tit. XXX n. 2', text => ribbon_must_extract('R30 n. 2', $r30, qr/(2\. Ad Primam et Completorium numquam mutantur Orationes,.*?)(?=\n\n3\.|\n3\. )/s) },
+    ],
+    note => 'N. 108 names where commemorations are made: Lauds, Vespers, and Masses. It does not name Terce, Sext, None, or Compline, and it does not say "never". N. 248 leaves the collect at Prime and Compline unchanged. R30 n. 2 says the oration said at Lauds is said at Terce, Sext and None on certain days. That is the collect of the day. The explicit negative was not found. The page sentence was left as it is. It understates n. 108 by not mentioning Masses; see OPEN-108-summary.',
+  };
+
+  push @items, {
+    id => 'OPEN-last',
+    claim => 'When several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed',
+    status => 'needs-judgment',
+    article => '1960 nn. 115, 249 and 437 do not say this. Pre-1960 tit. XXX nn. 4–5 are the nearest text in the repo.',
+    source => '`web/www/horas/Help/Rubrics/R30.txt`, and the 1960 articles quoted below. Also searched `Monastic rubrics.html` n. 238, which repeats the shape of n. 249 and does not name the last prayer\'s addressee.',
+    page_claim => 'A rubric that, when several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed, was not found in these sources. The page keeps [to be sourced]. The sentence was not rewritten.',
+    parts => [
+      { label => 'English n. 115', text => ribbon_slice_article(ribbon_corpus_text('general'), 115) },
+      { label => 'Latin n. 115, aas52-la.txt', text => ribbon_la_body(115) },
+      { label => 'English n. 249', text => ribbon_slice_article(ribbon_corpus_text('breviary'), 249) },
+      { label => 'Latin n. 249, aas52-la.txt', text => ribbon_la_body(249) },
+      { label => 'Missal n. 437', text => ribbon_slice_article(ribbon_corpus_text('missal'), 437) },
+      { label => 'R30.txt tit. XXX n. 4', text => $r30n4 },
+      { label => 'R30.txt tit. XXX n. 5', text => $r30n5 },
+    ],
+    note => 'N. 249 says the commemorations are concluded only after the last, and Oremus is said before each. N. 115 gives the formula from the one to whom that prayer is addressed. N. 437 says commemorations at Mass are said under one conclusion. R30 n. 5 says only the first oration is said under its own conclusion and the others are not concluded except at the last oration. None of these says that the formula is taken from the way the last prayer is addressed. The marker stays.',
+  };
+
+  my $n468 = ribbon_slice_article(ribbon_corpus_text('missal'), 468);
+  die 'missal 468 missing' if $n468 !~ /second collect/;
+  push @items, {
+    id => 'OPEN-oremus',
+    claim => 'Oremus is said before the second collect at Mass',
+    status => 'needs-judgment',
+    article => 'N. 249 is an Office rubric. N. 480 says the secret is said without Oremus. N. 468 is the Missal sentence that does name a second collect.',
+    source => '`web/www/horas/Help/Rubrics/Missal1960 rubrics.html` n. 468. Also searched that file for Oremus, and `Breviary 1960.html` n. 249.',
+    page_claim => 'No rubric was found that says Oremus is said before the second collect at Mass. The page keeps [to be sourced]. The sentence was not rewritten.',
+    parts => [
+      { label => 'Missal n. 468', text => $n468 },
+      { label => 'Missal n. 480', text => ribbon_slice_article(ribbon_corpus_text('missal'), 480) },
+      { label => 'Office n. 249', text => ribbon_slice_article(ribbon_corpus_text('breviary'), 249) },
+    ],
+    note => 'N. 468 is about Masses with several lessons, and only the shortened form used outside conventual Masses and ordinations. It says that after Dominus vobiscum, Et cum spiritu tuo and Oremus is said in the usual way, to say the second collect without the Flectamus genua, followed by other commemorations. It does not state a general rule that every second collect at Mass, including a commemoration, is preceded by Oremus. The page\'s "none was found" is therefore too broad, and n. 468 is not the general rule either. Left for the owner.',
+  };
+
+  push @items, {
+    id => 'OPEN-ninth',
+    claim => 'There is no ninth lesson of a commemorated feast',
+    status => 'needs-judgment',
+    article => 'n. 214',
+    source => '`web/www/horas/Help/Rubrics/Breviary 1960.html` and `aas52-la.txt`, n. 214. The page sentence is `plain.comm.where`.',
+    page_claim => 'N. 214: a commemorated office has no lesson in the office of the day. There is no ninth lesson of the commemorated feast.',
+    en => ribbon_slice_article(ribbon_corpus_text('breviary'), 214),
+    la => ribbon_la_body(214),
+    note => 'The article says a commemorated office has no lesson in the office of the day. It does not say "ninth lesson". The second sentence was left on the page.',
+  };
+
+  push @items, {
+    id => 'OPEN-passion',
+    claim => 'Where the book notes a peculiarity (n. 231), the examples are the first responsory of Christmas and Aspiciens a longe',
+    status => 'needs-judgment',
+    article => 'n. 231',
+    source => '`Breviary 1960.html` and `aas52-la.txt`, n. 231. The page sentence is `ui.resp.passion`.',
+    page_claim => 'The same kind of cue is followed where the book notes a peculiarity (n. 231), for example the first responsory of Christmas, and Aspiciens a longe, the first responsory of the first Sunday of Advent.',
+    en => ribbon_slice_article(ribbon_corpus_text('breviary'), 231),
+    la => ribbon_la_body(231),
+    note => 'N. 231 says peculiarities are indicated in their places. It does not name Christmas or Aspiciens a longe. The Passiontide omission of the Gloria is n. 230, which the page also quotes. The examples were left in the sentence.',
+  };
+
+  push @items, {
+    id => 'OPEN-limits',
+    claim => 'The Mass of the day admits the same commemorations, within the same limits, as the Office',
+    status => 'needs-judgment',
+    article => 'nn. 106, 111 and 434',
+    source => '`General Rubrics.html` nn. 106 and 111, `Missal1960 rubrics.html` n. 434, and `aas52-la.txt` nn. 106 and 111. The page sentence is `plain.comm.mass.lead`.',
+    page_claim => 'The Mass of the day admits the same commemorations, within the same limits (n. 106, n. 111).',
+    parts => [
+      { label => 'English n. 111', text => ribbon_slice_article(ribbon_corpus_text('general'), 111) },
+      { label => 'Latin n. 106, aas52-la.txt', text => ribbon_la_body(106) },
+      { label => 'Latin n. 111, aas52-la.txt', text => ribbon_la_body(111) },
+      { label => 'Latin n. 108, aas52-la.txt', text => ribbon_la_body(108) },
+      { label => 'Missal n. 434', text => ribbon_slice_article(ribbon_corpus_text('missal'), 434) },
+    ],
+    note => 'N. 106 says the commemoration rules apply to Mass and Office. N. 111 and n. 434 are parallel, but n. 434 also counts collects that are not commemorations, and it names votive Masses. N. 108 does not put an ordinary commemoration at every Mass. The lead sentence was left as it is. The later Mass paragraphs quote n. 434 and the sung-Mass limit.',
+  };
+
+  my $n333 = ribbon_slice_article(ribbon_corpus_text('missal'), 333);
+  die 'missal 333 missing' if $n333 !~ /no other commemoration/;
+  push @items, {
+    id => 'OPEN-333',
+    claim => 'On a 1st class day the only further collects are one under a single conclusion and one privileged commemoration',
+    status => 'needs-judgment',
+    article => 'n. 434 a, which points at n. 333',
+    source => '`web/www/horas/Help/Rubrics/Missal1960 rubrics.html` nn. 434 and 333. The page sentence is `plain.comm.mass.which`.',
+    page_claim => 'On a 1st class day, in a 1st class votive Mass, and in a sung Mass that is not conventual, nothing further is admitted except a collect said under a single conclusion and one privileged commemoration.',
+    parts => [
+      { label => 'Missal n. 434', text => ribbon_slice_article(ribbon_corpus_text('missal'), 434) },
+      { label => 'Missal n. 333', text => $n333 },
+    ],
+    note => 'N. 434 a ends with "the rule in 333 being observed". N. 333, the Mass of the actual consecration of a church, admits the collect of the mystery or saint under one conclusion and no other commemoration, even a privileged one. The page summary does not mention n. 333. It was not rewritten.',
+  };
+
+  my @missal = (
+    [433, 'What the word collects covers at Mass', 0],
+    [434, 'Which further collects each class of day admits', 0],
+    [435, 'The collects of a Mass may not exceed three', 0],
+    [436, 'The collect of the Mass has its own conclusion unless another is joined to it', 0],
+    [437, 'Commemorations, an oratio imperata, and a votive collect are said under one conclusion', 0],
+    [444, 'When a second collect is added under a single conclusion', 0],
+    [480, 'The secret is said without Dominus vobiscum and without Oremus, in the same number and order', 0],
+    [505, 'The postcommunions follow the collects in number, manner and order', 0],
+    [454, 'An oratio imperata is a collect the ordinary may order for a grave public need', 0],
+    [457, 'How an oratio imperata is limited', 0],
+    [458, 'An oratio imperata for the departed is said only on a 4th class feria and in a low 4th class votive or Requiem', 0],
+    [461, 'A priest may add one votive collect on a 4th class day in a low non-conventual Mass', 0],
+    [463, 'A votive collect is last and must not bring the collects past three', 0],
+    [391, 'A Mass of the dead makes no commemoration of the office of the day', 0],
+    [398, 'Collects in Masses of the dead', 1],
+  );
+  my $missal_file = 'web/www/horas/Help/Rubrics/Missal1960 rubrics.html';
+  for my $row (@missal) {
+    my ($num, $claim, $damaged) = @$row;
+    my $en = ribbon_slice_article(ribbon_corpus_text('missal'), $num);
+    die "missal n. $num did not slice" if $en eq '' || $en !~ /^\s*$num\./;
+    my $note = 'Latin of the Missal rubrics, articles 269 onward, is not in `aas52-la.txt`, which stops at n. 268. Searched the repo for a Latin text of these articles and did not find one. The page quotes the English and marks the Latin [to be sourced].';
+    my $status = 'still unsourced';
+    if ($damaged) {
+      $status = 'needs-judgment';
+      $note .= ' The English file has "whether sung of low Masses". The page marks that article damaged and still quotes it.';
+    }
+    push @items, {
+      id => "MS-$num",
+      claim => $claim,
+      status => $status,
+      article => "n. $num",
+      source => "English: `$missal_file`. Latin: not in the repo.",
+      en => $en,
+      note => $note,
+    };
+  }
+
+  my %count;
+  $count{$_->{status}}++ for @items;
+  my $sourced_n = $count{'sourced'} || 0;
+  my $unsourced_n = $count{'still unsourced'} || 0;
+  my $judge_n = $count{'needs-judgment'} || 0;
   my @no_la = ribbon_strings_missing_la();
+
   my $md = <<"MD";
-# Rubric quotations still to be sourced
+# Rubric quotation review checklist
 
-The ribbon helper quotes the 1960 *Codex Rubricarum*.
+The ribbon helper quotes the 1960 *Codex Rubricarum*. Every quote below was read out of a file in this repo. English of articles 1–268 is the project HTML after the tags are removed, which is the text the page shows. Latin of those articles is the `la:` body in `web/www/horas/Ribbon/aas52-la.txt`, attributed to Acta Apostolicae Sedis, vol. 52 (1960). A quote that is not in the file is not printed. Where the page's sentence goes beyond the article, or the English file is corrupt, the status is needs-judgment and the page sentence was left as it is.
 
-- English is taken from `web/www/horas/Help/Rubrics/General Rubrics.html` (articles 1–137) and `web/www/horas/Help/Rubrics/Breviary 1960.html` (articles 138–268). Those files are the English source of the 1960 catalogue. The pre-1960 Rubricae Generales are cited only for the manner of *Gloria Patri* at a responsory: tit. XIII n. 4 in `web/www/horas/Help/Rubrics/R13.txt`, and tit. XXVII n. 2 in `web/www/horas/Help/Rubrics/R27.txt`.
-- Latin is taken from the plain-text transcription at <https://clemensdsh.xyz/posts/aas-1960-rubricae-et-calendarium-latin/>, which was OCR'd from the AAS page images and collated with them. Every Latin quotation is attributed to **Acta Apostolicae Sedis, vol. 52 (1960)**, with the printed page and the article number. The transcription is only the working copy.
-- Stored Latin: `web/www/horas/Ribbon/aas52-la.txt`. The catalogue of what the page cites: `web/www/horas/Ribbon/catalog.txt`.
+- English catalogue: `web/www/horas/Help/Rubrics/General Rubrics.html` (articles 1–137) and `web/www/horas/Help/Rubrics/Breviary 1960.html` (articles 138–268).
+- Latin catalogue: `web/www/horas/Ribbon/aas52-la.txt`. The transcription was the working copy. The citation is AAS 52 (1960), with the printed page and the article.
+- Missal English: `web/www/horas/Help/Rubrics/Missal1960 rubrics.html`. Latin of articles 269 onward is not in `aas52-la.txt`.
+- Pre-1960: `web/www/horas/Help/Rubrics/R13.txt` (tit. XIII n. 4), `R27.txt` (tit. XXVII n. 2), `R30.txt` (tit. XXX).
 
 ## Counts
 
 | | |
 | --- | --- |
+| Checklist items | ${\(scalar @items)} |
+| sourced | $sourced_n |
+| still unsourced | $unsourced_n |
+| needs-judgment | $judge_n |
 | Quotations in the catalogue | $n |
 | English sourced from the project files | $en_ok |
 | English still [to be sourced] | $en_gap |
@@ -2204,17 +2575,20 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*.
 | Latin still [to be sourced] | $la_gap |
 | Plain-language strings with no Latin wording | ${\(scalar @no_la)} |
 
-## Catalogue
+Status **sourced** means the quote below is in the named file at that article. **still unsourced** means no file in the repo states the claim, and the page keeps [to be sourced]. **needs-judgment** means a file was found and is quoted, and the page's sentence is not quite what that file says, or the English file is corrupt. Those page sentences were not rewritten.
+
+## Catalogue index
 
 | Id | Topic | English | Latin | File |
 | --- | --- | --- | --- | --- |
 MD
-  $md .= join("\n", @rows) . "\n";
+  $md .= join("\n", @rows) . "\n\n";
+  $md .= "## Checklist\n\n";
+  $md .= ribbon_check_md($_) for @items;
   $md .= <<'MD';
-
 ## English articles quoted as the file has them
 
-These project transcriptions are visibly damaged. They are still quoted, because those files are the English source, and the AAS Latin is shown beside them.
+These project transcriptions are visibly damaged. They are still quoted, because those files are the English source, and the AAS Latin is shown beside them. Each is a needs-judgment row in the checklist.
 
 | Article | What is wrong in the project file |
 | --- | --- |
@@ -2223,6 +2597,7 @@ These project transcriptions are visibly damaged. They are still quoted, because
 | 171 | "on If rids" where the sentence should name ferias |
 | 219 | the second clause is lettered "h)" |
 | 221 | "The first and second lessons as are said" |
+| 115 | "they Son"; "would without end" |
 
 ## Restorations checked against the AAS page images
 
@@ -2254,19 +2629,6 @@ The Martyrology at Prime quotes the Ordinary, `web/www/horas/Latin/Psalterium/Co
 
 These plain lines show the stored AAS 52 article, labeled *cf. n. X*, and not a translation of the English: `plain.antiphons` (n. 191), `plain.creed.yes` and `plain.creed.no` (n. 203), `plain.prime` (n. 242), `plain.collect` (nn. 246 and 248), `plain.commemoration` (n. 251), `plain.tedeum.no` (n. 239), `plain.preces.yes` (n. 260), `plain.first.no` (n. 37 b), `plain.lessons.sunday` (n. 220), `plain.lessons.ordinary` (n. 221), `plain.lessons.ferial` (n. 222), `plain.lessons.festive` (nn. 217 a and 218 a), `lk.abridged` (n. 221 b), `sk.from_common` and `sk.slot_order` (n. 218 a), `ui.resp.last` and `ui.resp.passion` (n. 230, first two sentences), `ui.resp.pasch` (n. 229). `plain.preces.no` stays the English sentence.
 
-## Still open
-
-Two wordings are still sought. The page keeps a commentary label on each.
-
-- An official text of the two-asterisk rule (after the verse, repeat from the first asterisk up to the second and stop; after the Gloria, repeat from the second asterisk to the verse). The row is commentary from the Confraternity of SS. Peter and Paul, *Instructions for the Recitation of the Divine Office*, adapted from Hausmann, *Learning the Breviary*, §23, pp. 34–35. N. 230, *eadem ultima pars*, is partial support for repeating the last part. The Dessain breviary prints every division as an asterisk, so a second division is a second asterisk.
-- An official text that the *Gloria Patri* at the end of a responsory leaves out *Sicut erat*. N. 230 says *dicitur Gloria Patri* and *eadem ultima pars*, and does not name the second half of the doxology. The older pointer is Rubricae Generales tit. XIII n. 4 and tit. XXVII n. 2. The model those rubrics name is the third responsory of the first Sunday of Advent, *Missus est Gabriel*. The explicit omission stays `[to be sourced]`, pending Dave's check of his Dessain at that Advent responsory.
-- The English of AAS n. 108, the place of a commemoration. AAS n. 108 says privileged commemorations are made at Lauds, at Vespers and at every Mass, and ordinary commemorations only at Lauds, at a conventual Mass and at a low Mass. The project file `General Rubrics.html` has no sentence of that article. The article it numbers 108 is the list of privileged commemorations, which AAS 52 numbers n. 109. The page quotes the Latin of n. 108 and the English list beside the Latin of n. 109.
-- A rubric that the collects of one Hour of the Office may not exceed three. N. 435 of the Missal rubrics does limit the collects of a Mass to three, and the page quotes that English article. The Office hour is the claim still open.
-- An explicit rubric that commemorations are never said at Terce, Sext, None or Compline. N. 108 names Lauds and Vespers. N. 248 leaves the collect of Prime and Compline unchanged.
-- A rubric that, when several prayers are said under one conclusion, the formula is taken from the way the last prayer is addressed. N. 249 says the commemorations of the Office are concluded only after the last. N. 115 gives the formula of a prayer, in the Mass and in the Office, from the one to whom that prayer is addressed. N. 437 says the commemorations at Mass are said under one conclusion.
-- Latin of the Missal rubrics, articles 269 onward, including the collects (nn. 433–465), the secrets (n. 480), the postcommunions (n. 505) and the Masses of the dead (n. 398). The stored AAS text, `aas52-la.txt`, stops at n. 268. The English is quoted from `web/www/horas/Help/Rubrics/Missal1960 rubrics.html`. Those articles are not catalogue rows, because the catalogue requires a Latin text.
-- An explicit rubric that Oremus is said before the second collect at Mass. N. 249, Oremus before each collect, is a rubric of the Office. N. 480 says the secret is said without Dominus vobiscum and without Oremus.
-
 ## Screen labels with no Latin wording
 
 Hour names, section names, and the short rubrical sentences that are ordinary Latin have a `la:` line. The strings below are screen labels or explanations. In Latin view they show the English sentence, and the page does not add `[to be sourced]`.
@@ -2274,6 +2636,15 @@ Hour names, section names, and the short rubrical sentences that are ordinary La
 MD
   $md .= join("\n", map { "- `$_`" } @no_la) . "\n";
   return $md;
+}
+
+sub ribbon_section_body {
+  my ($path, $name) = @_;
+  my $text = ribbon_slurp($path);
+  return '' unless $text =~ /(?:\A|\n)\[\Q$name\E\]\r?\n(.*?)(?=\r?\n\[|\z)/s;
+  my $body = $1;
+  $body =~ s/\s+\z//;
+  return $body;
 }
 
 sub ribbon_selftest {
