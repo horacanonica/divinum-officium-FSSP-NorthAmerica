@@ -12,9 +12,9 @@ The ribbon helper quotes the 1960 *Codex Rubricarum*. Every quote below was read
 | | |
 | --- | --- |
 | Checklist items | 83 |
-| sourced | 50 |
-| still unsourced | 18 |
-| needs-judgment | 15 |
+| sourced | 56 |
+| still unsourced | 19 |
+| needs-judgment | 8 |
 | Quotations in the catalogue | 52 |
 | English sourced from the project files | 52 |
 | English still [to be sourced] | 0 |
@@ -31,13 +31,13 @@ Status **sourced** means the quote below is in the named file at that article. *
 | BR-161 | Matins of three nocturns and nine lessons | sourced | AAS 52 (1960), p. 625, n. 161 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-162 | Matins of one nocturn, nine psalms and three lessons | sourced | AAS 52 (1960), p. 625, n. 162 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-163 | Easter and Pentecost have one nocturn of three psalms and three lessons | sourced | AAS 52 (1960), p. 625, n. 163 | web/www/horas/Help/Rubrics/Breviary 1960.html |
-| BR-165 | What the Sunday Office is | sourced, file damaged | AAS 52 (1960), p. 626, n. 165 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-165 | What the Sunday Office is | sourced | AAS 52 (1960), p. 626, n. 165 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-166 | Order of the Sunday Office | sourced | AAS 52 (1960), p. 626, n. 166 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-167 | Order of the festive Office (1st class) | sourced | AAS 52 (1960), p. 626, n. 167 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-168 | Order of the semifestive Office (2nd class) | sourced | AAS 52 (1960), p. 627, n. 168 | web/www/horas/Help/Rubrics/Breviary 1960.html |
-| BR-169 | Order of the ordinary Office (3rd class) | sourced, file damaged | AAS 52 (1960), p. 627, n. 169 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-169 | Order of the ordinary Office (3rd class) | sourced | AAS 52 (1960), p. 627, n. 169 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-170 | What the ferial Office is | sourced | AAS 52 (1960), p. 628, n. 170 | web/www/horas/Help/Rubrics/Breviary 1960.html |
-| BR-171 | Order of the ferial Office | sourced, file damaged | AAS 52 (1960), p. 628, n. 171 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-171 | Order of the ferial Office | sourced | AAS 52 (1960), p. 628, n. 171 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-177 | Proper antiphons and psalms on some 3rd class feasts | sourced | AAS 52 (1960), p. 629, n. 177 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-191 | Antiphons are said in full | sourced | AAS 52 (1960), p. 631, n. 191 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-197 | The two schemes of psalms at Matins and Lauds | sourced | AAS 52 (1960), p. 632, n. 197 | web/www/horas/Help/Rubrics/Breviary 1960.html |
@@ -46,9 +46,9 @@ Status **sourced** means the quote below is in the named file at that article. *
 | BR-214 | A commemorated office has no lesson in the office of the day | sourced | AAS 52 (1960), p. 634, n. 214 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-217 | First nocturn lessons are from Scripture | sourced | AAS 52 (1960), p. 634, n. 217 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-218 | Second nocturn lessons are of the saint, a sermon, or the Common | sourced | AAS 52 (1960), p. 634, n. 218 | web/www/horas/Help/Rubrics/Breviary 1960.html |
-| BR-219 | Third nocturn lessons are the homily on the gospel | sourced, file damaged | AAS 52 (1960), p. 634, n. 219 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-219 | Third nocturn lessons are the homily on the gospel | sourced | AAS 52 (1960), p. 634, n. 219 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-220 | Order of the three lessons on a Sunday | sourced | AAS 52 (1960), p. 634, n. 220 | web/www/horas/Help/Rubrics/Breviary 1960.html |
-| BR-221 | Order of the three lessons in an ordinary Office | sourced, file damaged | AAS 52 (1960), p. 635, n. 221 | web/www/horas/Help/Rubrics/Breviary 1960.html |
+| BR-221 | Order of the three lessons in an ordinary Office | sourced | AAS 52 (1960), p. 635, n. 221 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-222 | Order of the three lessons in a ferial Office | sourced | AAS 52 (1960), p. 635, n. 222 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-229 | Alleluia before the verse of a responsory in Paschaltide | sourced | AAS 52 (1960), p. 636, n. 229 | web/www/horas/Help/Rubrics/Breviary 1960.html |
 | BR-230 | Gloria Patri at the end of the last responsory of a nocturn | sourced | AAS 52 (1960), p. 636, n. 230 | web/www/horas/Help/Rubrics/Breviary 1960.html |
@@ -73,7 +73,7 @@ Status **sourced** means the quote below is in the named file at that article. *
 | GR-112 | A commemoration of the same Person, the season, or the same saint is excluded | sourced | AAS 52 (1960), p. 616, n. 112 | web/www/horas/Help/Rubrics/General Rubrics.html |
 | GR-113 | A commemoration of the season is said first | sourced | AAS 52 (1960), p. 616, n. 113 | web/www/horas/Help/Rubrics/General Rubrics.html |
 | GR-114 | A commemoration beyond the number set for the day is omitted | sourced | AAS 52 (1960), p. 616, n. 114 | web/www/horas/Help/Rubrics/General Rubrics.html |
-| GR-115 | The conclusion of a prayer follows the one to whom it is addressed | sourced, file damaged | AAS 52 (1960), p. 616, n. 115 | web/www/horas/Help/Rubrics/General Rubrics.html |
+| GR-115 | The conclusion of a prayer follows the one to whom it is addressed | sourced | AAS 52 (1960), p. 616, n. 115 | web/www/horas/Help/Rubrics/General Rubrics.html |
 | GR-25 | Ferias of the 3rd class in Lent are preferred to feasts of the 3rd class | sourced | AAS 52 (1960), p. 600, n. 25 | web/www/horas/Help/Rubrics/General Rubrics.html |
 | GR-37 | A 1st class feast begins with First Vespers; 2nd and 3rd class run from Matins | sourced | AAS 52 (1960), p. 602, n. 37 | web/www/horas/Help/Rubrics/General Rubrics.html |
 | GR-91-12 | Precedence table — proper feasts of the 1st class | sourced | AAS 52 (1960), p. 611, n. 91 | web/www/horas/Help/Rubrics/General Rubrics.html |
@@ -153,13 +153,13 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 ### BR-165. What the Sunday Office is
 
-- **Status:** needs-judgment
+- **Status:** sourced
 - **Article:** n. 165
 - **Source:** English: `web/www/horas/Help/Rubrics/Breviary 1960.html`. Latin: AAS 52 (1960), p. 626, n. 165, `web/www/horas/Ribbon/aas52-la.txt`.
 
 **English quote**
 
-> 165. The Sunday Office belongs to Sundays on which no feast occurs which takes precedence over the Sunday itself. The following, however, have a special arrangement of thew Office:
+> 165. The Sunday Office belongs to Sundays on which no feast occurs which takes precedence over the Sunday itself. The following, however, have a special arrangement of the Office:
 > a) Easter and Pentecost Sundays;
 > b) the Sunday within the Octave of Christmas
 
@@ -170,7 +170,6 @@ Status **sourced** means the quote below is in the named file at that article. *
 > a) dominicae Paschatis et Pentecostes;
 > b) dominica infra octavam Nativitatis Domini.
 
-**Note.** The English file has "the arrangement of thew Office". Quoted as the file has it. The owner decides whether that corrupt English should stay on the page. The Latin is shown beside it.
 
 ### BR-166. Order of the Sunday Office
 
@@ -262,14 +261,14 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 ### BR-169. Order of the ordinary Office (3rd class)
 
-- **Status:** needs-judgment
+- **Status:** sourced
 - **Article:** n. 169
 - **Source:** English: `web/www/horas/Help/Rubrics/Breviary 1960.html`. Latin: AAS 52 (1960), p. 627, n. 169, `web/www/horas/Ribbon/aas52-la.txt`.
 
 **English quote**
 
 > 169. The ordinary Office belongs to feasts of the 3rd class and to the Saturday Office of the Blessed Virgin Mary. Its order is as follows:
-> a) At Matins invitatory and Hymn from the Proper of the Common; antiphons, psalms and verse of the single nocturn from the Psalter for the current weekday, unless they are assigned as proper of from the common (No. 177); first and second lessons with their responsories from the Scripture as indicated in No 221 a; third lesson of the feast (No 221 b) and the hymn Te Deum is said
+> a) At Matins invitatory and Hymn from the Proper or the Common; antiphons, psalms and verse of the single nocturn from the Psalter for the current weekday, unless they are assigned as proper or from the Common (No. 177); first and second lessons with their responsories from the Scripture as indicated in No 221 a; third lesson of the feast (No 221 b) and the hymn Te Deum is said
 > b) at Lauds and at Vespers: antiphons and psalms as in the Psalter for the current weekday, unless they are assigned as proper or from the Common (No. 177); the rest as in the Proper or the Common.
 > c) At Prime: antiphon and psalms from the Psalter for the current weekday; little chapter and remainder as in the Ordinary; short lesson of the Season.
 > d) At Terce, Sext and None: antiphons and psalms as in the Psalter for the current weekday; the rest from the feast, as in the Proper or the Common.
@@ -285,7 +284,6 @@ Status **sourced** means the quote below is in the named file at that article. *
 > d)Ad Tertiam, Sextam et Nonam: antiphonae et psalmi ut in Psalterio de currenti hebdomadae die; reliqua de festo, ut in Proprio vel Communi.
 > e)Completorium: de currenti hebdomadae die.
 
-**Note.** The English file has "from the Proper of the Common" and "proper of from the common". Latin n. 169 a has "e Proprio vel Communi" and "nisi propria aut de Communi assignentur". Quoted as the file has it.
 
 ### BR-170. What the ferial Office is
 
@@ -309,14 +307,14 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 ### BR-171. Order of the ferial Office
 
-- **Status:** needs-judgment
+- **Status:** sourced
 - **Article:** n. 171
 - **Source:** English: `web/www/horas/Help/Rubrics/Breviary 1960.html`. Latin: AAS 52 (1960), p. 628, n. 171, `web/www/horas/Ribbon/aas52-la.txt`.
 
 **English quote**
 
 > 171. The order of the ferial Office is as follows:
-> a) At Matins: invitatory and hymn from the Psalter or the Ordinary, according to the different occasions; antiphons, psalms and verse of the single nocturn from the Psalter, of the current weekday; on If rids, three lessons from the occurring Scripture or from the homily on the gospel of the day with their responsories; on vigils, three proper lessons of the homily with responsories of the current feria. The hymn Te Deum is said only on the ferias of Christmastide and Eastertide; in other seasons a third responsory is said.
+> a) At Matins: invitatory and hymn from the Psalter or the Ordinary, according to the different occasions; antiphons, psalms and verse of the single nocturn from the Psalter, of the current weekday; on ferias, three lessons from the occurring Scripture or from the homily on the gospel of the day with their responsories; on vigils, three proper lessons of the homily with responsories of the current feria. The hymn Te Deum is said only on the ferias of Christmastide and Eastertide; in other seasons a third responsory is said.
 > b) At Lauds and at Vespers: all as in the Psalter, of the current weekday, and in the Ordinary, according to the different seasons, except for those things which are assigned as proper. On ferias the proper collect is taken, if the feria has one, otherwise the collect of the preceding Sunday, unless some other is assigned; on vigils the proper collect is said.
 > c) At Prime: antiphon, unless a proper one is assigned, and psalms from the Psalter, of the current weekday; little chapter and remainder as in the Ordinary; short lesson of the Season.
 > d) At Terce, Sext and None: antiphon, unless a proper one is assigned, and psalms from the Psalter, of the current weekday; little chapter and remainder as in the Ordinary, according to the different seasons; collect as at Lauds.
@@ -332,7 +330,6 @@ Status **sourced** means the quote below is in the named file at that article. *
 > d)Ad Tertiam, Sextam et Nonam: antiphona, nisi propria assignetur, et psalmi e Psalterio de currenti hebdomadae die; capitulum et reliqua, ut in Ordinario, iuxta diversitatem temporum; oratio ut ad Laudes.
 > e)Completorium: de currenti hebdomadae die.
 
-**Note.** The English file has "on If rids". Latin n. 171 a has "in feriis". Quoted as the file has it.
 
 ### BR-177. Proper antiphons and psalms on some 3rd class feasts
 
@@ -476,7 +473,7 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 ### BR-219. Third nocturn lessons are the homily on the gospel
 
-- **Status:** needs-judgment
+- **Status:** sourced
 - **Article:** n. 219
 - **Source:** English: `web/www/horas/Help/Rubrics/Breviary 1960.html`. Latin: AAS 52 (1960), p. 634, n. 219, `web/www/horas/Ribbon/aas52-la.txt`.
 
@@ -484,7 +481,7 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 > 219. The three lessons of the third nocturn are:
 > a) in a festive and in a semifestive Office, of the homily on the gospel of the day;
-> h) in the Offices of the Sacred Triduum, from the Epistles of St. Paul the Apostle, as in the Proper.
+> b) in the Offices of the Sacred Triduum, from the Epistles of St. Paul the Apostle, as in the Proper.
 > III Lessons in an Office of one nocturn
 
 
@@ -494,7 +491,6 @@ Status **sourced** means the quote below is in the named file at that article. *
 > a)in Officio festivo et semifestivo, de homilia in Evangelium diei;
 > b)in Officiis Tridui sacri, de Epistolis B. Pauli Apostoli, ut in Proprio.
 
-**Note.** The English file letters the second clause "h)". Latin n. 219 letters it "b)". Quoted as the file has it.
 
 ### BR-220. Order of the three lessons on a Sunday
 
@@ -518,14 +514,14 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 ### BR-221. Order of the three lessons in an ordinary Office
 
-- **Status:** needs-judgment
+- **Status:** sourced
 - **Article:** n. 221
 - **Source:** English: `web/www/horas/Help/Rubrics/Breviary 1960.html`. Latin: AAS 52 (1960), p. 635, n. 221, `web/www/horas/Ribbon/aas52-la.txt`.
 
 **English quote**
 
 > 221. In an ordinary Office, the order of the three lessons is as follows:
-> a) The first and second lessons as are said from the Scripture; and this as is ordinarily the occurring Scripture, unless there are proper or specially assigned lessons. The first lesson from sacred Scripture is that which is now given as first in the Breviary. The second, however, is formed by combining the present second and third lessons into one, the intervening responsory being omitted.
+> a) The first and second lessons are said from the Scripture; and this as is ordinarily the occurring Scripture, unless there are proper or specially assigned lessons. The first lesson from sacred Scripture is that which is now given as first in the Breviary. The second, however, is formed by combining the present second and third lessons into one, the intervening responsory being omitted.
 > b) The third lesson is of the feast, namely the proper lesson which in the past was commonly called the "abridged" (contracta) lesson. If there is no abridged lesson, the proper lessons formerly of the second nocturn are combined into one. But if the feast lacks proper lessons, the fourth lesson from the Common is taken as the third lesson.
 
 
@@ -535,7 +531,6 @@ Status **sourced** means the quote below is in the named file at that article. *
 > a)Lectio prima et secunda dicuntur de Scriptura; et quidem ordinarie de Scriptura occurrenti, nisi propriae vel specialiter assignatae habeantur. Prima autem lectio Sacrae Scripturae ea est, quae in Breviario ut prima notatur; altera vero efficitur ex secunda et tertia in unam coniunctis, omisso responsorio intermedio.
 > b)Lectio tertia dicitur de festo, scilicet propria, quae antea communiter vocabatur « contracta »; qua deficiente, sumitur lectio propria (olim secundi Nocturni) simul coniunctae. Si vero festum caret lectionibus propriis, pro tertia lectione sumitur quarta de Communi.
 
-**Note.** The English file has "The first and second lessons as are said". Quoted as the file has it.
 
 ### BR-222. Order of the three lessons in a ferial Office
 
@@ -980,7 +975,7 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 ### GR-115. The conclusion of a prayer follows the one to whom it is addressed
 
-- **Status:** needs-judgment
+- **Status:** sourced
 - **Article:** n. 115
 - **Source:** English: `web/www/horas/Help/Rubrics/General Rubrics.html`. Latin: AAS 52 (1960), p. 616, n. 115, `web/www/horas/Ribbon/aas52-la.txt`.
 
@@ -988,8 +983,8 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 > 115. The conclusion of prayer both in the Mass and in the office is as follows:
 >  a) if the prayer is addressed to the Father it is concluded: Through our Lord Jesus Christ, thy Son, who liveth and reigneth with thee in the unity of the Holy Spirit, God, world without end. Amen;
->  b) if the prayer is addressed to the Father, but mention is made of the Son in the beginning of it, it is concluded: Through the same Jesus Christ, they Son, our Lord, etc., as above;
->  c) if the prayer is addressed to the Father, but mention is made of the Son at the end, it is concluded: Who liveth and reigneth with thee in the unity of the Holy Spirit, God, would without end. Amen;
+>  b) if the prayer is addressed to the Father, but mention is made of the Son in the beginning of it, it is concluded: Through the same Jesus Christ, thy Son, our Lord, etc., as above;
+>  c) if the prayer is addressed to the Father, but mention is made of the Son at the end, it is concluded: Who liveth and reigneth with thee in the unity of the Holy Spirit, God, world without end. Amen;
 >  d) if the prayer is addressed to the Son, it is concluded: Who livest and reignest with God the Father in the unity of the Holy Spirit, God, world without end. Amen;
 >  e) if mention has been made of the Holy Spirit in the prayer, in the conclusion is said: in the unity of the same Holy Spirit, etc.
 
@@ -1003,7 +998,6 @@ Status **sourced** means the quote below is in the named file at that article. *
 > d) si oratio dirigitur ad Filium, concluditur: Qui vivis et regnas cum Deo Patre in unitate Spiritus Sancti, Deus, per omnia saecula saeculorum. Amen;
 > e) si in oratione facta est mentio Spiritus Sancti, in conclusione dicitur: …in unitate eiusdem Spiritus Sancti, etc.
 
-**Note.** The English file has "they Son" and "would without end". Latin n. 115 has "Per eundem Dominum nostrum" and "per omnia saecula saeculorum". Quoted as the file has it.
 
 ### GR-25. Ferias of the 3rd class in Lent are preferred to feasts of the 3rd class
 
@@ -1340,8 +1334,8 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 > 115. The conclusion of prayer both in the Mass and in the office is as follows:
 >  a) if the prayer is addressed to the Father it is concluded: Through our Lord Jesus Christ, thy Son, who liveth and reigneth with thee in the unity of the Holy Spirit, God, world without end. Amen;
->  b) if the prayer is addressed to the Father, but mention is made of the Son in the beginning of it, it is concluded: Through the same Jesus Christ, they Son, our Lord, etc., as above;
->  c) if the prayer is addressed to the Father, but mention is made of the Son at the end, it is concluded: Who liveth and reigneth with thee in the unity of the Holy Spirit, God, would without end. Amen;
+>  b) if the prayer is addressed to the Father, but mention is made of the Son in the beginning of it, it is concluded: Through the same Jesus Christ, thy Son, our Lord, etc., as above;
+>  c) if the prayer is addressed to the Father, but mention is made of the Son at the end, it is concluded: Who liveth and reigneth with thee in the unity of the Holy Spirit, God, world without end. Amen;
 >  d) if the prayer is addressed to the Son, it is concluded: Who livest and reignest with God the Father in the unity of the Holy Spirit, God, world without end. Amen;
 >  e) if mention has been made of the Holy Spirit in the prayer, in the conclusion is said: in the unity of the same Holy Spirit, etc.
 
@@ -1736,7 +1730,7 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 ### MS-398. Collects in Masses of the dead
 
-- **Status:** needs-judgment
+- **Status:** still unsourced
 - **Article:** n. 398
 - **Source:** English: `web/www/horas/Help/Rubrics/Missal1960 rubrics.html`. Latin: not in the repo.
 
@@ -1744,26 +1738,31 @@ Status **sourced** means the quote below is in the named file at that article. *
 
 > 398. With regard to the collects in Masses of the dead, the following rules are to be observed:
 > 
-> a) all Masses of the dead, whether sung of low Masses, of themselves are said with a single collect, unless a collect ordered (imperata) for the departed must be added according to no. 458, or a votive collect for the departed may be added according to no. 464;
+> a) all Masses of the dead, whether sung or low Masses, of themselves are said with a single collect, unless a collect ordered (imperata) for the departed must be added according to no. 458, or a votive collect for the departed may be added according to no. 464;
 > 
 > b) in 4th class Masses of the dead, if they are applied for certain of the departed, the appropriate collect is said, as in the missal among the various prayers for the departed; if they are applied for the departed in general, or if the designation is unknown, the collect Fidelium (O God, Creator and Redeemer of all the faithful), is said;
 > 
 > c) in Masses of the Dead, any collect which is not for the departed is prohibited.
 
-**Note.** Latin of the Missal rubrics, articles 269 onward, is not in `aas52-la.txt`, which stops at n. 268. Searched the repo for a Latin text of these articles and did not find one. The page quotes the English and marks the Latin [to be sourced]. The English file has "whether sung of low Masses". The page marks that article damaged and still quotes it.
+**Note.** Latin of the Missal rubrics, articles 269 onward, is not in `aas52-la.txt`, which stops at n. 268. Searched the repo for a Latin text of these articles and did not find one. The page quotes the English and marks the Latin [to be sourced].
 
-## English articles quoted as the file has them
+## English typos corrected in the source files
 
-These project transcriptions are visibly damaged. They are still quoted, because those files are the English source, and the AAS Latin is shown beside them. Each is a needs-judgment row in the checklist.
+Clear typos in the project English were corrected in the files, checked against the Latin, and the page now quotes the corrected text. The damaged flags were cleared. One clause of n. 221 was left.
 
-| Article | What is wrong in the project file |
-| --- | --- |
-| 165 | "the arrangement of thew Office" |
-| 169 | "Proper of the Common"; "proper of from the common" |
-| 171 | "on If rids" where the sentence should name ferias |
-| 219 | the second clause is lettered "h)" |
-| 221 | "The first and second lessons as are said" |
-| 115 | "they Son"; "would without end" |
+| Article | Before | After | Latin read |
+| --- | --- | --- | --- |
+| 165 | thew Office | the Office | `aas52-la.txt` n. 165: *Habent tamen peculiarem ordinationem Officii* |
+| 169, invitatory | Proper of the Common | Proper or the Common | `aas52-la.txt` n. 169 a: *e Proprio vel Communi* |
+| 169, antiphons | proper of from the common | proper or from the Common | `aas52-la.txt` n. 169 a: *nisi propria aut de Communi assignentur* |
+| 171 | on If rids | on ferias | `aas52-la.txt` n. 171 a: *in feriis* |
+| 219 | the second clause lettered h) | b) | `aas52-la.txt` n. 219: *b)in Officiis Tridui sacri* |
+| 221 | lessons as are said | lessons are said | `aas52-la.txt` n. 221 a: *Lectio prima et secunda dicuntur de Scriptura* |
+| 115 b | they Son | thy Son | `aas52-la.txt` n. 115 a *Filium tuum*, and n. 115 b *Per eundem Dominum nostrum, etc. ut supra* |
+| 115 c | would without end | world without end | `aas52-la.txt` n. 115 c: *per omnia saecula saeculorum* |
+| Missal 398 | sung of low Masses | sung or low Masses | AAS 52 OCR, https://www.vatican.va/archive/aas/documents/AAS-52-1960-ocr.pdf, the page headed 664, n. 398 a: *omnes Missae defunctorum, sive in cantu sive lectae* |
+
+N. 221 still says "and this as is ordinarily the occurring Scripture". The Latin is *et quidem ordinarie de Scriptura occurrenti*. That is not a one-word typo, so it was left.
 
 ## Restorations checked against the AAS page images
 

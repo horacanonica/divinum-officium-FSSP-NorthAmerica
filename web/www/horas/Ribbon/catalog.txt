@@ -76,7 +76,6 @@ corpus: breviary
 number: 165
 topic: What the Sunday Office is
 file: web/www/horas/Help/Rubrics/Breviary 1960.html
-en_damaged: 1
 
 @@ BR-166
 corpus: breviary
@@ -101,7 +100,6 @@ corpus: breviary
 number: 169
 topic: Order of the ordinary Office (3rd class)
 file: web/www/horas/Help/Rubrics/Breviary 1960.html
-en_damaged: 1
 
 @@ BR-170
 corpus: breviary
@@ -114,7 +112,6 @@ corpus: breviary
 number: 171
 topic: Order of the ferial Office
 file: web/www/horas/Help/Rubrics/Breviary 1960.html
-en_damaged: 1
 
 @@ BR-177
 corpus: breviary
@@ -163,7 +160,6 @@ corpus: breviary
 number: 219
 topic: Third nocturn lessons are the homily on the gospel
 file: web/www/horas/Help/Rubrics/Breviary 1960.html
-en_damaged: 1
 
 @@ BR-220
 corpus: breviary
@@ -176,7 +172,6 @@ corpus: breviary
 number: 221
 topic: Order of the three lessons in an ordinary Office
 file: web/www/horas/Help/Rubrics/Breviary 1960.html
-en_damaged: 1
 
 @@ BR-222
 corpus: breviary
@@ -312,7 +307,6 @@ corpus: general
 number: 115
 topic: The conclusion of a prayer follows the one to whom it is addressed
 file: web/www/horas/Help/Rubrics/General Rubrics.html
-en_damaged: 1
 
 @@ BR-214
 corpus: breviary

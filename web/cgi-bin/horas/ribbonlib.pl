@@ -2636,18 +2636,7 @@ sub ribbon_gaps_markdown {
   my $la_gap = 0;
   my @rows;
   my @items;
-  my %damage = (
-    'BR-165' =>
-      'The English file has "the arrangement of thew Office". Quoted as the file has it. The owner decides whether that corrupt English should stay on the page. The Latin is shown beside it.',
-    'BR-169' =>
-      'The English file has "from the Proper of the Common" and "proper of from the common". Latin n. 169 a has "e Proprio vel Communi" and "nisi propria aut de Communi assignentur". Quoted as the file has it.',
-    'BR-171' => 'The English file has "on If rids". Latin n. 171 a has "in feriis". Quoted as the file has it.',
-    'BR-219' =>
-      'The English file letters the second clause "h)". Latin n. 219 letters it "b)". Quoted as the file has it.',
-    'BR-221' => 'The English file has "The first and second lessons as are said". Quoted as the file has it.',
-    'GR-115' =>
-      'The English file has "they Son" and "would without end". Latin n. 115 has "Per eundem Dominum nostrum" and "per omnia saecula saeculorum". Quoted as the file has it.',
-  );
+  my %damage = ();
   my %extra = (
     'GR-91-22' =>
       'The English file spells "Thurday". The page quotes that spelling. The Latin is "a feria V post cineres".',
@@ -3079,7 +3068,7 @@ sub ribbon_gaps_markdown {
     [461, 'A priest may add one votive collect on a 4th class day in a low non-conventual Mass', 0],
     [463, 'A votive collect is last and must not bring the collects past three', 0],
     [391, 'A Mass of the dead makes no commemoration of the office of the day', 0],
-    [398, 'Collects in Masses of the dead', 1],
+    [398, 'Collects in Masses of the dead', 0],
   );
   my $missal_file = 'web/www/horas/Help/Rubrics/Missal1960 rubrics.html';
 
@@ -3151,18 +3140,23 @@ MD
   $md .= "## Checklist\n\n";
   $md .= ribbon_check_md($_) for @items;
   $md .= <<'MD';
-## English articles quoted as the file has them
+## English typos corrected in the source files
 
-These project transcriptions are visibly damaged. They are still quoted, because those files are the English source, and the AAS Latin is shown beside them. Each is a needs-judgment row in the checklist.
+Clear typos in the project English were corrected in the files, checked against the Latin, and the page now quotes the corrected text. The damaged flags were cleared. One clause of n. 221 was left.
 
-| Article | What is wrong in the project file |
-| --- | --- |
-| 165 | "the arrangement of thew Office" |
-| 169 | "Proper of the Common"; "proper of from the common" |
-| 171 | "on If rids" where the sentence should name ferias |
-| 219 | the second clause is lettered "h)" |
-| 221 | "The first and second lessons as are said" |
-| 115 | "they Son"; "would without end" |
+| Article | Before | After | Latin read |
+| --- | --- | --- | --- |
+| 165 | thew Office | the Office | `aas52-la.txt` n. 165: *Habent tamen peculiarem ordinationem Officii* |
+| 169, invitatory | Proper of the Common | Proper or the Common | `aas52-la.txt` n. 169 a: *e Proprio vel Communi* |
+| 169, antiphons | proper of from the common | proper or from the Common | `aas52-la.txt` n. 169 a: *nisi propria aut de Communi assignentur* |
+| 171 | on If rids | on ferias | `aas52-la.txt` n. 171 a: *in feriis* |
+| 219 | the second clause lettered h) | b) | `aas52-la.txt` n. 219: *b)in Officiis Tridui sacri* |
+| 221 | lessons as are said | lessons are said | `aas52-la.txt` n. 221 a: *Lectio prima et secunda dicuntur de Scriptura* |
+| 115 b | they Son | thy Son | `aas52-la.txt` n. 115 a *Filium tuum*, and n. 115 b *Per eundem Dominum nostrum, etc. ut supra* |
+| 115 c | would without end | world without end | `aas52-la.txt` n. 115 c: *per omnia saecula saeculorum* |
+| Missal 398 | sung of low Masses | sung or low Masses | AAS 52 OCR, https://www.vatican.va/archive/aas/documents/AAS-52-1960-ocr.pdf, the page headed 664, n. 398 a: *omnes Missae defunctorum, sive in cantu sive lectae* |
+
+N. 221 still says "and this as is ordinarily the occurring Scripture". The Latin is *et quidem ordinarie de Scriptura occurrenti*. That is not a one-word typo, so it was left.
 
 ## Restorations checked against the AAS page images
 

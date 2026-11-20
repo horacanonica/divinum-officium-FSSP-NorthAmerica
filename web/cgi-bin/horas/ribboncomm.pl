@@ -161,12 +161,7 @@ sub ribbon_comm_spec {
       key => 'plain.comm.mass.other',
     }, {
       kind => 'm',
-      ns => [454, 457, 458, 461, 463, 391],
-      damaged => {398 => 1},
-    }, {
-      kind => 'm',
-      ns => [398],
-      damaged => {398 => 1},
+      ns => [454, 457, 458, 461, 463, 391, 398],
     },
 
     {
