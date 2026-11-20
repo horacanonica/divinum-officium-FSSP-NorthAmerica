@@ -4,6 +4,8 @@
 # web/www/horas/Ribbon/strings.txt under ui.comm.* and plain.comm.*.
 # Latin of Missal articles (n. 269 on) is not in aas52-la.txt.
 
+use utf8;
+
 our $datafolder;
 
 sub ribbon_comm_spec {
@@ -131,7 +133,7 @@ sub ribbon_comm_spec {
     {kind => 'place'},
     {
       kind => 'm',
-      ns => [433, 434, 435],
+      ns => [433, 434, 435, 333],
     },
 
     {
@@ -147,6 +149,8 @@ sub ribbon_comm_spec {
     }, {
       kind => 'p',
       key => 'plain.comm.gap.oremus',
+    }, {
+      kind => 'ritus',
     }, {
       kind => 'q',
       ids => [qw(GR-115)],
@@ -360,6 +364,31 @@ sub ribbon_comm_today_html {
   return $out;
 }
 
+sub ribbon_ritus_html {
+
+  my ($code) = @_;
+  my $path = "$Bin/../../www/horas/Help/Rubrics/Ritus_servandus_1962.txt";
+  my $text = ribbon_slurp($path);
+  my ($n1) = $text =~ /^(Dicto hymno Gloria in excelsis,.*)$/m;
+  my ($n2) = $text =~
+    /(Si plures orationes sint dicendæ, idem in eis, in voce, extensione manuum, et capitis inclinatione, quod supra dictum est, observatur\.)/;
+
+  die 'Ritus servandus tit. V n. 1 was not found in the file' if !defined $n1 || $n1 eq '';
+  die 'Ritus servandus tit. V n. 2 sentence was not found in the file' if !defined $n2 || $n2 eq '';
+  my $rel = 'web/www/horas/Help/Rubrics/Ritus_servandus_1962.txt';
+  my $html = '<blockquote class="rubric">';
+  $html .= '<p class="cite"><b>' . ribbon_sh($code, 'ui.ritus.cite', {n => 1}) . '</b>';
+  $html .= '<br>' . ribbon_h($rel) . '</p>';
+  $html .= '<p>' . ribbon_h($n1) . '</p>';
+  $html .= '</blockquote>';
+  $html .= '<blockquote class="rubric">';
+  $html .= '<p class="cite"><b>' . ribbon_sh($code, 'ui.ritus.cite', {n => 2}) . '</b>';
+  $html .= '<br>' . ribbon_h($rel) . '</p>';
+  $html .= '<p>' . ribbon_h($n2) . '</p>';
+  $html .= '</blockquote>';
+  return $html;
+}
+
 sub ribbon_commemorations_html {
   my ($code, $facts) = @_;
   my %seen_q;
@@ -397,6 +426,8 @@ sub ribbon_commemorations_html {
       }
     } elsif ($kind eq 'letter') {
       $out .= ribbon_letter_html($code, $b->{n}, $b->{let});
+    } elsif ($kind eq 'ritus') {
+      $out .= ribbon_ritus_html($code);
     } elsif ($kind eq 'today') {
       $out .= ribbon_comm_today_html($code, $facts);
     }
