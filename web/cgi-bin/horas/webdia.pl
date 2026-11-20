@@ -180,7 +180,8 @@ sub htmlEnd {
   if ($error) { print "<P ALIGN='CENTER'><FONT COLOR='red'>$error</FONT></P>\n"; }
   if ($debug) { print "<P ALIGN='center'><FONT COLOR='blue'>$debug</FONT></P>\n"; }
   horasjsend();
-  print "<div class='pwa-nav'><button onclick='history.back()' title='Back'>&#8592;</button><button onclick=\"location.href='/cgi-bin/horas/Pofficium.pl'\" title='Home'>&#8962;</button><button onclick='history.forward()' title='Forward'>&#8594;</button></div><script>
+  print
+    "<div class='pwa-nav'><button onclick='history.back()' title='Back'>&#8592;</button><button onclick=\"location.href='/cgi-bin/horas/Pofficium.pl'\" title='Home'>&#8962;</button><button onclick='history.forward()' title='Forward'>&#8594;</button></div><script>
 if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js');
 (function(){
   var key='do-scroll:'+location.pathname+location.search;
