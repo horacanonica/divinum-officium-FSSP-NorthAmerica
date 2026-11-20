@@ -1,0 +1,165 @@
+================================================================================
+De defectibus in celebratione Missae occurrentibus
+Missale Romanum, editio typica, typis Vaticanis, 1962
+(same typica as Ritus_servandus_1962.txt in this folder)
+================================================================================
+
+Working Latin-only transcription from:
+  https://www.ceremoniaire.net/pastorale1950/docs/de_defectibus_1962.html
+Cross-check against the typica scans cited in Ritus_servandus_1962.txt,
+where this text follows Ritus servandus title XIV.
+The site's 2007 French translation and notes were not copied.
+The 1960 Code of Rubrics is AAS 52:
+  https://www.vatican.va/archive/aas/documents/AAS-52-1960-ocr.pdf
+IntraText LAT0820 is a pre-1962 edition, for comparison only:
+  https://www.intratext.com/IXT/LAT0820/_PC.HTM
+This plain-text file is a study transcription and should be checked against
+the typica scan.
+
+--------------------------------------------------------------------------------
+
+DE DEFECTIBUS IN CELEBRATIONE MISSÆ OCCURRENTIBUS
+
+I
+
+Sacerdos celebraturus omnem adhibeat diligentiam, ne desit aliquid ex requisitis ad Sacramentum Eucharistiæ conficiendum. Potest autem defectus contingere ex parte materiæ consecrandæ, et ex parte formæ adhibendæ, et ex parte ministri conficientis. Quidquid enim horum deficit, scilicet materia debita, forma cum intentione, et Ordo sacerdotalis in conficiente, non conficitur Sacramentum. Et his exsistentibus, quibuscumque aliis deficientibus, veritas adest Sacramenti. Alii vero sunt defectus, qui, in Missæ celebratione occurrentes, etsi veritatem Sacramenti non impediant, possunt tamen aut cum peccato, aut cum scandalo contingere.
+
+II — De defectibus materiæ
+
+Defectus ex parte materiæ possunt contingere, si aliquid desit ex iis quæ ad ipsam requiruntur. Requiritur enim, ut sit panis triticeus et vinum de vite : et ut huiusmodi materia consecranda, in actu Consecrationis, sit coram sacerdote.
+
+III — De defectu panis
+
+Si panis non sit triticeus, vel, si triticeus, admixtus sit granis alterius generis in tanta quantitate ut non maneat panis triticeus, vel sit alioqui corruptus, non conficitur Sacramentum.
+
+2. Si sit confectus de aqua rosacea, vel alterius distillationis, dubium est an conficiatur.
+
+3. Si cœperit corrumpi, sed non sit corruptus ; similiter si non sit azymus, secundum morem Ecclesiæ Latinæ, conficitur, sed conficiens graviter peccat.
+
+4. Si celebrans ante Consecrationem advertit hostiam esse corruptam, aut non esse triticeam ; remota illa hostia, aliam ponat, et facta oblatione, saltem mente concepta, prosequatur ab eo loco ubi desivit.
+
+5. Si id advertit post Consecrationem, etiam post illius hostiæ sumptionem, posita alia, faciat oblationem, ut supra, et a Consecratione incipiat, scilicet ab illis verbis : Qui pridie quam pateretur ; et illam priorem, si non sumpsit, sumat post sumptionem Corporis et Sanguinis, vel alicubi reverenter conservet. Si autem sumpserit, nihilominus sumat eam, quam consecravit : quia præceptum de perfectione Sacramenti, maioris est ponderis, quam quod a ieiunis sumatur.
+
+6. Quod si hoc contingat post sumptionem Sanguinis, apponi debet rursus novus panis et vinum cum aqua ; et, facta prius oblatione, ut supra, sacerdos consecret, incipiendo ab illis verbis : Qui pridie ; ac statim sumat utrumque, et prosequatur Missam, ne Sacramentum remaneat imperfectum, et ut debitus servetur ordo.
+
+7. Si hostia consecrata dispareat, vel casu aliquo, ut vento, vel ab aliquo animali accepta, et nequeat reperiri ; tunc altera consecretur ab eo loco incipiendo : Qui pridie quam pateretur, facta eius prius oblatione, ut supra.
+
+8. Casibus de quibus supra 5-7, elevatio Sacramenti omittatur, et omnia fiant vitando, quantum fieri potest, fidelium scandalum vel admirationem.
+
+IV — De defectu vini
+
+Si vinum sit factum penitus acetum, vel penitus putridum, vel de uvis acerbis seu non maturis expressum, vel ei admixtum tantum aquæ ut vinum sit corruptum, non conficitur Sacramentum.
+
+2. Si vinum cœperit acescere, vel corrumpi, vel fuerit aliquantum acre, vel mustum de uvis tunc expressum, vel non fuerit admixta aqua, vel fuerit admixta aqua rosacea seu alterius distillationis, conficitur Sacramentum, sed conficiens graviter peccat.
+
+3. Si celebrans ante Consecrationem Sanguinis, quamvis post Consecrationem Corporis, advertat aut vinum, aut aquam, aut utrumque non esse in calice ; debet statim apponere vinum cum aqua, et facta oblatione, ut supra, consecrare : incipiendo ab illis verbis : Simili modo, etc.
+
+4. Si post verba Consecrationis advertat vinum non fuisse positum, sed aquam ; deposita aqua in aliquod vas, iterum vinum cum aqua ponat in calice, et consecret, resumendo a verbis prædictis : Simili modo, etc.
+
+5. Si hoc advertat post sumptionem Corporis, vel huiusmodi aquæ, apponat aliam hostiam iterum consecrandam, et vinum cum aqua in calice, offerat utrumque, et consecret, et sumat, quamvis non sit ieiunus.
+
+6. Casibus de quibus supra 3-5, elevatio Sacramenti omittatur, et omnia fiant vitando, quantum fieri potest, fidelium scandalum vel admirationem.
+
+7. Si quis percipiat ante Consecrationem, vel post Consecrationem, totum vinum esse acetum, vel alias corruptum : idem servetur quod supra, ac si deprehenderet non esse positum vinum, vel solam aquam fuisse appositam in calice.
+
+8. Si autem celebrans ante Consecrationem calicis advertat, non fuisse appositam aquam : statim ponat eam, et proferat verba Consecrationis. Si id advertat post Consecrationem calicis : nullo modo apponat, quia non est de necessitate Sacramenti.
+
+9. Si materia quæ esset apponenda, ratione defectus vel panis vel vini, non posset ullo modo haberi : si id sit ante Consecrationem Corporis, ulterius procedi non debet : si post Consecrationem Corporis, aut etiam vini, deprehenditur defectus alterius speciei, altera iam consecrata : tunc, si nullo modo haberi possit, procedendum erit, et Missa absolvenda, ita tamen, ut prætermittantur verba et signa, quæ pertinent ad speciem deficientem. Quod si exspectando aliquamdiu haberi possit : exspectandum erit, ne sacrificium remaneat imperfectum.
+
+V — De defectibus formæ
+
+Defectus ex parte formæ possunt contingere, si aliquid desit ex iis quæ ad integritatem verborum in ipsa consecratione requiruntur. Verba autem Consecrationis, quæ sunt forma huius Sacramenti, sunt hæc : Hoc est enim Corpus meum. Et : Hic est enim Calix Sanguinis mei, novi et æterni testamenti : mysterium fidei : qui pro vobis et pro multis effundetur in remissionem peccatorum. Si quis autem aliquid diminueret, vel immutaret de forma Consecrationis Corporis et Sanguinis, et in ipsa verborum immutatione verba idem non significarent, non conficeret Sacramentum. Si vero aliquid adderet vel detraheret, quod significationem non mutaret, conficeret quidem, sed gravissime peccaret.
+
+2. Si celebrans non recordetur se dixisse ea quæ in Consecratione communiter dicuntur, non debet propterea turbari. Si tamen certo ei constet, se omisisse aliquid eorum quæ sunt de necessitate Sacramenti, id est, formam Consecrationis, seu partem : resumat ipsam formam, et cetera prosequatur per ordinem. Si vero valde probabiliter dubitet, se aliquid essentiale omisisse : iteret formam saltem sub tacita condicione. Si autem non sunt de necessitate Sacramenti, non resumat, sed procedat ulterius.
+
+VI — De defectibus ministri
+
+Defectus ex parte ministri possunt contingere quoad ea quæ in ipso requiruntur. Hæc autem sunt : in primis intentio, deinde dispositio animæ, dispositio corporalis, dispositio vestimentorum, dispositio in ministerio ipso quoad ea quæ in ipso possunt occurrere.
+
+VII — De defectu intentionis
+
+Si quis non intendit conficere, sed delusorie aliquid agere : item si aliquæ hostiæ ex oblivione remaneant in altari, vel aliqua pars vini, vel aliqua hostia lateat, cum non intendat consecrare nisi quæ super corporale sunt : item si quis habeat coram se undecim hostias, et intendat consecrare solum decem, non determinans quas decem intendit : in his casibus non consecrat, quia requiritur intentio. Secus, si putans quidem esse decem, tamen omnes voluit consecrare quas coram se habebat : nam tunc omnes erunt consecratæ : atque ideo quilibet sacerdos talem semper intentionem habere deberet, scilicet consecrandi eas omnes quas ante se super corporale ad consecrandum positas habet.
+
+2. Si sacerdos, putans se tenere unam hostiam, post Consecrationem invenerit fuisse duas simul iunctas, in sumptione sumat simul utramque. Quod si deprehendat post sumptionem Corporis et Sanguinis aut etiam post ablutionem, reliquias aliquas relictas consecratas, eas sumat, sive parvæ sint sive magnæ, quia ad idem sacrificium spectant.
+
+3. Si vero relicta sit hostia integra consecrata, eam in tabernaculo cum aliis reponat : si hoc fieri nequit, eam sumat.
+
+4. Si intentio non sit actualis in ipsa Consecratione propter evagationem mentis, sed virtualis, cum accedens ad altare intendat facere quod facit Ecclesia, conficitur Sacramentum, etsi curare debet sacerdos, ut etiam actualem intentionem adhibeat.
+
+VIII — De defectibus dispositionis animæ
+
+Si quis in peccato mortali aut aliqua pœna ecclesiastica impeditus, celebret, conficit quidem Sacramentum, sed gravissime peccat.
+
+IX — De defectibus dispositionis corporis
+
+Si sacerdos ante Missam non sit ieiunus per tres saltem horas quoad cibum solidum et potum alcoholicum, et per unam saltem horam quoad potum non alcoholicum, non potest celebrare. Aquæ tamen sumptione ieiunium non frangitur.
+
+2. Infirmi, quamvis non decumbant, potum non alcoholicum, et veras ac proprias medicinas, sive liquidas sive solidas, ante Missæ celebrationem sine temporis limite sumere possunt.
+
+3. Enixe invitantur sacerdotes, qui id præstare valeant, ut venerandam ac vetustam eucharistici ieiunii formam ante Missam servent.
+
+X — De defectibus in ministerio ipso occurrentibus
+
+Possunt etiam defectus occurrere in ministerio ipso, si aliquid ex requisitis ad illud desit : ut si celebretur in loco non sacro, vel legitime non deputato, vel in altari non consecrato, vel tribus mappis non cooperto ; si non adsint luminaria cerea ; si non sit tempus debitum celebrandi, quod est ab una hora ante auroram usque ad unam horam post meridiem communiter, nisi pro quibusdam Missis aliud tempus statutum sit, vel Ordinarius loci quasdam Missas etiam horis vespertinis permiserit ; si omittat aliquid ex vestibus sacerdotalibus ; si vestes sacerdotales et mappæ non sint ab Episcopo, vel ab alio hanc habente potestatem benedictæ ; si non adsit clericus, vel alius deserviens in Missa, vel adsit qui deservire non debet, ut mulier ; si non adsit calix cum patena conveniens, cuius cuppa debet esse aurea vel argentea vel stannea, non ærea vel vitrea ; si corporalia non sint munda, quæ debent esse ex lino, nec serico in medio ornata, et ab Episcopo vel ab alio hanc habente potestatem benedicta, ut etiam superius dictum est ; si celebret capite cooperto sine dispensatione ; si non adsit Missale, licet memoriter sciret Missam, quam intendit dicere.
+
+2. Si, sacerdote celebrante, violetur ecclesia ante Canonem, dimittatur Missa : si post Canonem, non dimittatur. Si timeatur incursus hostium, vel alluvionis, vel ruina loci ubi celebratur, ante Consecrationem dimittatur Missa ; post Consecrationem vero sacerdos accelerare poterit sumptionem Sacramenti, omissis omnibus aliis.
+
+3. Si sacerdos ante Consecrationem graviter infirmetur, vel in syncopen inciderit aut moriatur, prætermittitur Missa. Si post Consecrationem Corporis tantum, ante Consecrationem Sanguinis, vel utroque consecrato id accidit, Missa per alium sacerdotem expleatur ab eo loco ubi ille desiit, et in casu necessitatis etiam per non ieiunum. Si autem non obierit, sed fuerit infirmus, adeo tamen ut possit communicare, et non adsit alia hostia consecrata, sacerdos, qui Missam supplet, dividat hostiam, et unam partem præbeat infirmo, aliam ipse sumat. Si autem semiprolata forma Corporis obiit sacerdos, quia non est facta Consecratio, non est necesse ut Missa per alium suppleatur. Si vero obierit semiprolata forma Sanguinis, tunc alter prosequatur Missam, et super eundem calicem repetat integram formam ab eo loco : Simili modo, postquam cenatum est ; vel posset super alium calicem præparatum integram formam proferre, et hostiam primi sacerdotis, et Sanguinem a se consecratum sumere, ac deinde calicem relictum semiconsecratum.
+
+4. Si quis extra huiusmodi casus necessitatis integra Sacramenta non sumpserit, gravissime peccat.
+
+5. Si musca, vel aranea, vel aliquid aliud ceciderit in calicem ante Consecrationem, proiciat vinum in locum decentem, et aliud ponat in calice, misceat parum aquæ, offerat, ut supra, et prosequatur Missam : si post Consecrationem ceciderit musca aut aliquid eiusmodi, extrahat eam, et lavet cum vino, finita Missa comburat, et combustio ac lotio huiusmodi in sacrarium proiciatur.
+
+6. Si aliquid venenosum ceciderit in calicem, vel quod provocaret vomitum, vinum consecratum reponendum est in alio calice aqua pleno, ita ut species vini dissolvantur ; et huiusmodi aqua in sacrarium proiciatur. Aliud autem vinum cum aqua apponendum est, denuo consecrandum.
+
+7. Si aliquid venenatum contingerit hostiam consecratam, tunc alteram consecret, et sumat eo modo quo dictum est, et illa mittatur in calicem aqua plenum, ut supra n. 6 de Sanguine dictum est.
+
+8. Si sumendo Sanguinem, particula remanserit in calice, digito ad labium calicis eam adducat, et sumat ante purificationem, vel infundat aquam et sumat.
+
+9. Si hostia ante Consecrationem inveniatur fracta, nisi populo evidenter appareat, talis hostia consecretur : si autem scandalum populo esse possit, alia accipiatur et offeratur : quod si illius hostiæ iam erat facta oblatio, eam post ablutionem sumat. Quod si ante oblationem hostia appareat confracta, accipiatur altera integra, si citra scandalum aut longam moram fieri poterit.
+
+10. Si hostia consecrata dilabatur in calicem, propterea nihil est reiterandum ; sed sacerdos Missam prosequatur, faciendo cæremonias et signa consueta cum residua parte hostiæ quæ non est madefacta Sanguine, si commode potest. Si vero tota fuerit madefacta, non extrahat eam, sed omnia dicat, omittendo signa, et sumat pariter Corpus et Sanguinem, signans se cum calice, et dicens : Corpus et Sanguis Domini nostri, etc.
+
+11. Si in hieme Sanguis congeletur in calice, involvatur calix pannis calefactis : si id non proficeret, ponatur in ferventi aqua prope altare, dummodo in calicem non intret, donec liquefiat.
+
+12. Si aliquid de Sanguine Christi ceciderit, si aliqua tantum gutta effusa est, sufficit ut super eas parum aquæ fundatur, purificatorio postea abstergenda ; secus vero corporale vel tobalea vel locus, meliore quo fieri potest modo, lavetur, et aqua postea in sacrarium mittatur.
+
+13. At si contingat totum Sanguinem post Consecrationem effundi, si quidem aliquid vel parum remansit, illud sumatur, et de effuso reliquo Sanguine, fiat, ut dictum est. Si vero nihil omnino remansit, ponat iterum vinum et aquam, et consecret ab eo loco : Simili modo, postquam cenatum est, etc., facta prius tamen calicis oblatione, ut supra.
+
+14. Si quis evomat Eucharistiam, vomitus colligatur et in aliquem decentem locum mittatur.
+
+15. Si hostia consecrata, vel aliqua eius particula dilabatur in terram, reverenter accipiatur, et parum aquæ in locum ubi cecidit fundatur et purificatorio abstergatur. Si cadat super vestes, non est necesse ut indumentum abluatur. Si super vestes mulieris cadat, ipsa particulam accipiat et sumat.
+
+16. Possunt etiam defectus in ministerio ipso occurrere, si sacerdos ignoret ritus et cæremonias ipsas in eo servandas, de quibus omnibus in superioribus rubricis copiose dictum est.
+
+--------------------------------------------------------------------------------
+
+Orationes dicendæ cum sacerdos induitur sacerdotalibus paramentis
+
+Cum lavat manus, dicat :
+
+Da, Domine, virtutem manibus meis ad abstergendam omnem maculam ; ut sine pollutione mentis et corporis valeam tibi servire.
+
+Ad amictum, dum ponitur super caput, dicat :
+
+Impone, Domine, capiti meo galeam salutis, ad expugnandos diabolicos incursus.
+
+Ad albam, cum ea induitur :
+
+Dealba me, Domine, et munda cor meum ; ut, in Sanguine Agni dealbatus, gaudiis perfruar sempiternis.
+
+Ad cingulum, dum se cingit :
+
+Præcinge me, Domine, cingulo puritatis, et exstingue in lumbis meis humorem libidinis ; ut maneat in me virtus continentiæ et castitatis.
+
+Ad manipulum, dum imponitur bracchio sinistro :
+
+Merear, Domine, portare manipulum fletus et doloris ; ut cum exsultatione recipiam mercedem laboris.
+
+Ad stolam, dum imponitur collo :
+
+Redde mihi, Domine, stolam immortalitatis, quam perdidi in prævaricatione primi parentis : et, quamvis indignus accedo ad tuum sacrum mysterium, merear tamen gaudium sempiternum.
+
+Ad casulam, dum assumitur :
+
+Domine, qui dixisti : Iugum meum suave est, et onus meum leve : fac, ut istud portare sic valeam, quod consequar tuam gratiam. Amen.
